@@ -1,0 +1,123 @@
+no,technical_name,name
+1,account_cancel,Cancel Journal Entries
+2,account_bank_statement_import,Account Bank Statement Import
+3,hr_contract,Employee Contracts
+4,rating,Customer Rating
+5,fetchmail,Email Gateway
+6,sale,Sales
+7,website_form,Generic Form Controller
+8,account_accountant,Accounting and Finance
+9,base_action_rule,Automated Action Rules
+10,website_blog,Blogs
+11,barcodes,Barcodes
+12,web,Web
+13,base_setup,Initial Setup Tools
+14,analytic,Analytic Accounting
+15,contacts,Contacts Directory
+16,auth_crypt,Password Encryption
+17,sale_mrp,Sales and MRP Management
+18,website_theme_install,Website Theme Install
+19,website_slides,Slides
+20,purchase_mrp,Purchase and MRP Management
+21,web_editor,Web Editor
+22,web_settings_dashboard,Odoo Settings Dashboard
+23,website_sale,eCommerce
+24,sale_expense,Sales Expense
+25,board,Dashboards
+26,mail,Discuss
+27,website_project,Website Project
+28,portal_sale,Portal Sale
+29,sale_stock,Sales and Warehouse Management
+30,website_partner,Website Partner
+31,stock,Inventory Management
+32,website,Website Builder
+33,portal_stock,Portal Stock
+34,product,Products & Pricelists
+35,purchase,Purchase Management
+36,hr,Employee Directory
+37,bus,IM Bus
+38,base_import,Base import
+39,website_payment,Payment: Website Integration
+40,account,Invoicing
+41,web_calendar,Web Calendar
+42,base,Base
+43,portal,Portal
+44,l10n_generic_coa,Generic - Accounting
+45,report,Report
+46,auth_signup,Signup
+47,payment,Payment Acquirer
+48,hr_expense,Expense Tracker
+49,website_sale_stock,Website Sale Stock - Website Delivery Information
+50,website_mail,Website Mail
+51,resource,Resource
+52,web_planner,Planner
+53,decimal_precision,Decimal Precision Configuration
+54,web_diagram,Odoo Web Diagram
+55,mrp,Manufacturing
+56,account_asset,Assets Management
+57,web_kanban,Base Kanban
+58,project,Project
+59,procurement,Procurements
+60,web_tour,Tours
+61,website_portal_sale,Website Portal for Sales
+62,calendar,Calendar
+63,payment_transfer,Transfer Payment Acquirer
+64,web_kanban_gauge,Gauge Widget for Kanban
+65,website_portal,Website Portal
+66,procurement_jit,Just In Time Scheduling
+67,sales_team,Sales Teams
+68,stock_account,WMS Accounting
+,
+69,aos_base_account,WMS Accounting
+70,product_dke,WMS Accounting
+71,news_feed,WMS Accounting
+72,payment_transaction_bugfixing,WMS Accounting
+73,aos_l10n_id,WMS Accounting
+74,account_dke,WMS Accounting
+75,theme_bootswatch,WMS Accounting
+76,website_sale_require_login,WMS Accounting
+77,web_dynamic_dashboard,WMS Accounting
+78,cron_do_reserve,WMS Accounting
+79,mail_type_dke,WMS Accounting
+80,sale_discount_expense,WMS Accounting
+81,credit_point,WMS Accounting
+82,aos_contacts,WMS Accounting
+83,stock_valuation_categ,WMS Accounting
+84,stock_dke,WMS Accounting
+85,website_sale_suggest_create_account,WMS Accounting
+86,jkw_accounting,WMS Accounting
+87,account_acquirer_custom,WMS Accounting
+88,delivery_rajaongkir,WMS Accounting
+89,vit_dotmatrix,WMS Accounting
+90,jasper_reports,WMS Accounting
+91,website_sale_delivery,WMS Accounting
+92,efaktur,WMS Accounting
+93,document,WMS Accounting
+94,mrp_average_cost,WMS Accounting
+95,sale_fixed_address,WMS Accounting
+96,dke_makloon,WMS Accounting
+97,dev_export_excel,WMS Accounting
+98,report_xlsx,WMS Accounting
+99,midtrans_odoo,WMS Accounting
+100,delivery,WMS Accounting
+101,ir_slide,WMS Accounting
+102,jasper_load,WMS Accounting
+103,io_api,WMS Accounting
+104,mass_editing,WMS Accounting
+105,google_drive_odoo,WMS Accounting
+106,jasper_bstb,WMS Accounting
+107,cloud_base,WMS Accounting
+108,account_bca_api,WMS Accounting
+109,auth_signup_dke,WMS Accounting
+110,product_video,WMS Accounting
+111,mrp_no_picking,WMS Accounting
+112,web_export_view,WMS Accounting
+113,utm,WMS Accounting
+114,cron_stock_reserve,WMS Accounting
+115,partner2user,WMS Accounting
+116,account_invoice_written,WMS Accounting
+117,notification,WMS Accounting
+118,credit_point_trigger,WMS Accounting
+119,base_location_mnn,WMS Accounting
+120,backend_theme_enterprise,WMS Accounting
+121,report_xlsx_dke,WMS Accounting
