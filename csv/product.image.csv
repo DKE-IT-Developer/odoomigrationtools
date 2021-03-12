@@ -1,0 +1,15 @@
+model,product.image,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Name
+4,__last_update,datetime,,Last Modified on
+5,image,binary,,Image
+6,write_uid,many2one,res.users,Last Updated by
+7,product_tmpl_id,many2one,product.template,Related Product
+8,write_date,datetime,,Last Updated on
+9,create_date,datetime,,Created on
+10,id,integer,,ID
+,,,,
+,,,,
+,,,,

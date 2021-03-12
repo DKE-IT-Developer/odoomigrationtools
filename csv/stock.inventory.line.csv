@@ -1,0 +1,28 @@
+model,stock.inventory.line,transient,False
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,write_uid,many2one,res.users,Last Updated by
+3,package_id,many2one,stock.quant.package,Pack
+4,product_qty,float,,Checked Quantity
+5,theoretical_qty,float,,Theoretical Quantity
+6,product_code,char,,Product Code
+7,location_id,many2one,stock.location,Location
+8,id,integer,,ID
+9,create_uid,many2one,res.users,Created by
+10,location_name,char,,Location Name
+11,__last_update,datetime,,Last Modified on
+12,partner_id,many2one,res.partner,Owner
+13,company_id,many2one,res.company,Company
+14,state,selection,,Status
+15,product_name,char,,Product Name
+16,prodlot_name,char,,Serial Number Name
+17,inventory_id,many2one,stock.inventory,Inventory
+18,inventory_location_id,many2one,stock.location,Location
+19,write_date,datetime,,Last Updated on
+20,display_name,char,,Display Name
+21,product_id,many2one,product.product,Product
+22,product_uom_id,many2one,product.uom,Product Unit of Measure
+23,prod_lot_id,many2one,stock.production.lot,Lot/Serial Number
+,,,,
+,,,,
+,,,,

@@ -1,0 +1,23 @@
+model,base.action.rule.lead.test,transient,False
+no,field,type,relation,string
+1,customer,boolean,,Is a Customer
+2,create_uid,many2one,res.users,Created by
+3,user_id,many2one,res.users,Responsible
+4,name,char,,Subject
+5,__last_update,datetime,,Last Modified on
+6,date_action_last,datetime,,Last Action
+7,write_uid,many2one,res.users,Last Updated by
+8,priority,boolean,,Priority
+9,state,selection,,Status
+10,deadline,boolean,,Deadline
+11,is_assigned_to_admin,boolean,,Assigned to admin user
+12,write_date,datetime,,Last Updated on
+13,active,boolean,,Active
+14,line_ids,one2many,base.action.rule.line.test,Line ids
+15,create_date,datetime,,Created on
+16,partner_id,many2one,res.partner,Partner
+17,id,integer,,ID
+18,display_name,char,,Display Name
+,,,,
+,,,,
+,,,,

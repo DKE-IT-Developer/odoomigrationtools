@@ -1,0 +1,18 @@
+model,stock.pack.operation.lot,transient,False
+no,field,type,relation,string
+1,lot_id,many2one,stock.production.lot,Lot/Serial Number
+2,create_uid,many2one,res.users,Created by
+3,display_name,char,,Display Name
+4,__last_update,datetime,,Last Modified on
+5,lot_name,char,,Lot/Serial Number
+6,qty_todo,float,,To Do
+7,qty,float,,Done
+8,write_date,datetime,,Last Updated on
+9,operation_id,many2one,stock.pack.operation,Operation id
+10,create_date,datetime,,Created on
+11,write_uid,many2one,res.users,Last Updated by
+12,id,integer,,ID
+13,plus_visible,boolean,,Plus visible
+,,,,
+,,,,
+,,,,

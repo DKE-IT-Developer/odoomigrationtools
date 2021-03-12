@@ -1,0 +1,70 @@
+model,hr.employee,transient,False
+no,field,type,relation,string
+1,message_follower_ids,one2many,mail.followers,Followers
+2,address_id,many2one,res.partner,Working Address
+3,code,char,,Code
+4,create_date,datetime,,Created on
+5,coach_id,many2one,hr.employee,Coach
+6,resource_id,many2one,resource.resource,Resource
+7,color,integer,,Color Index
+8,message_channel_ids,many2many,mail.channel,Followers (Channels)
+9,image,binary,,Photo
+10,marital,selection,,Marital Status
+11,sinid,char,,SIN No
+12,manager,boolean,,Is a Manager
+13,gender,selection,,Gender
+14,identification_id,char,,Identification No
+15,children,integer,,Number of Children
+16,city,char,,City
+17,time_efficiency,float,,Efficiency Factor
+18,display_name,char,,Display Name
+19,contract_id,many2one,hr.contract,Current Contract
+20,message_is_follower,boolean,,Is Follower
+21,__last_update,datetime,,Last Modified on
+22,work_phone,char,,Work Phone
+23,message_last_post,datetime,,Last Message Date
+24,company_id,many2one,res.company,Company
+25,medic_exam,date,,Medical Examination Date
+26,id,integer,,ID
+27,parent_id,many2one,hr.employee,Manager
+28,message_needaction_counter,integer,,Number of Actions
+29,last_login,datetime,,Latest Connection
+30,category_ids,many2many,hr.employee.category,Tags
+31,contracts_count,integer,,Contracts
+32,vehicle,char,,Company Vehicle
+33,message_unread_counter,integer,,Unread Messages Counter
+34,message_partner_ids,many2many,res.partner,Followers (Partners)
+35,department_id,many2one,hr.department,Department
+36,mobile_phone,char,,Work Mobile
+37,vehicle_distance,integer,,Home-Work Dist.
+38,create_uid,many2one,res.users,Created by
+39,bank_account_id,many2one,res.partner.bank,Bank Account Number
+40,child_ids,one2many,hr.employee,Subordinates
+41,country_id,many2one,res.country,Nationality (Country)
+42,write_date,datetime,,Last Updated on
+43,active,boolean,,Active
+44,calendar_id,many2one,resource.calendar,Working Time
+45,write_uid,many2one,res.users,Last Updated by
+46,work_email,char,,Work Email
+47,job_id,many2one,hr.job,Job Title
+48,message_needaction,boolean,,Action Needed
+49,work_location,char,,Work Location
+50,image_medium,binary,,Medium-sized photo
+51,name,char,,Name
+52,user_id,many2one,res.users,User
+53,name_related,char,,Resource Name
+54,notes,text,,Notes
+55,image_small,binary,,Small-sized photo
+56,address_home_id,many2one,res.partner,Home Address
+57,passport_id,char,,Passport No
+58,birthday,date,,Date of Birth
+59,contract_ids,one2many,hr.contract,Contracts
+60,place_of_birth,char,,Place of Birth
+61,message_ids,one2many,mail.message,Messages
+62,login,char,,Login
+63,message_unread,boolean,,Unread Messages
+64,ssnid,char,,SSN No
+65,resource_type,selection,,Resource Type
+,,,,
+,,,,
+,,,,

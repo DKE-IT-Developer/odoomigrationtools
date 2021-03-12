@@ -1,0 +1,19 @@
+model,ir.model.constraint,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,date_update,datetime,,Update Date
+3,display_name,char,,Display Name
+4,name,char,,Constraint
+5,definition,char,,Definition
+6,date_init,datetime,,Initialization Date
+7,__last_update,datetime,,Last Modified on
+8,module,many2one,ir.module.module,Module
+9,write_uid,many2one,res.users,Last Updated by
+10,write_date,datetime,,Last Updated on
+11,create_date,datetime,,Created on
+12,model,many2one,ir.model,Model
+13,type,char,,Constraint Type
+14,id,integer,,ID
+,,,,
+,,,,
+,,,,

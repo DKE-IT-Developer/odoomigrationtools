@@ -1,0 +1,33 @@
+model,account.bank.statement.line,transient,False
+no,field,type,relation,string
+1,unique_import_id,char,,Import ID
+2,create_date,datetime,,Created on
+3,statement_id,many2one,account.bank.statement,Statement
+4,sequence,integer,,Sequence
+5,company_id,many2one,res.company,Company
+6,journal_currency_id,many2one,res.currency,Currency
+7,partner_id,many2one,res.partner,Partner
+8,bank_account_id,many2one,res.partner.bank,Bank Account
+9,create_uid,many2one,res.users,Created by
+10,display_name,char,,Display Name
+11,__last_update,datetime,,Last Modified on
+12,partner_name,char,,Partner name
+13,journal_id,many2one,account.journal,Journal
+14,id,integer,,ID
+15,note,text,,Notes
+16,state,selection,,Status
+17,ref,char,,Reference
+18,account_id,many2one,account.account,Counterpart Account
+19,move_name,char,,Journal Entry Name
+20,write_date,datetime,,Last Updated on
+21,date,date,,Date
+22,write_uid,many2one,res.users,Last Updated by
+23,journal_entry_ids,one2many,account.move,Journal Entries
+24,currency_id,many2one,res.currency,Currency
+25,name,char,,Label
+26,amount,monetary,,Amount
+27,amount_currency,monetary,,Amount currency
+,,,,
+28,pending,boolean,,Pending
+,,,,
+,,,,

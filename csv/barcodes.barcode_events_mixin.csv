@@ -1,0 +1,9 @@
+model,barcodes.barcode_events_mixin,transient,False
+no,field,type,relation,string
+1,_barcode_scanned,char,,Barcode Scanned
+2,display_name,char,,Display Name
+3,id,integer,,ID
+4,__last_update,datetime,,Last Modified on
+,,,,
+,,,,
+,,,,

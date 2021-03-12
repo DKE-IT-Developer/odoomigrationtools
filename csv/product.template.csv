@@ -1,0 +1,147 @@
+model,product.template,transient,False
+no,field,type,relation,string
+1,reordering_max_qty,float,,Reordering max qty
+2,incoming_qty,float,,Incoming
+3,standard_price,float,,Cost
+4,write_uid,many2one,res.users,Last Updated by
+5,availability,selection,,Availability
+6,display_name,char,,Display Name
+7,item_ids,one2many,product.pricelist.item,Pricelist Items
+8,route_from_categ_ids,many2many,stock.location.route,Category Routes
+9,company_id,many2one,res.company,Company
+10,property_valuation,selection,,Inventory Valuation
+11,rating_count,integer,,Rating count
+12,track_service,selection,,Track Service
+13,public_categ_ids,many2many,product.public.category,Website Product Category
+14,pricelist_id,many2one,product.pricelist,Pricelist
+15,property_stock_account_input,many2one,account.account,Stock Input Account
+16,bom_ids,one2many,mrp.bom,Bill of Materials
+17,warehouse_id,many2one,stock.warehouse,Warehouse
+18,route_ids,many2many,stock.location.route,Routes
+19,website_description,html,,Description for the website
+20,website_style_ids,many2many,product.style,Styles
+21,rental,boolean,,Can be Rent
+22,deferred_revenue_category_id,many2one,account.asset.category,Deferred Revenue Type
+23,image_medium,binary,,Medium-sized image
+24,name,char,,Name
+25,packaging_ids,one2many,product.packaging,Logistical Units
+26,property_account_expense_id,many2one,account.account,Expense Account
+27,seller_ids,one2many,product.supplierinfo,Vendors
+28,product_image_ids,one2many,product.image,Images
+29,website_message_ids,one2many,mail.message,Website Comments
+30,accessory_product_ids,many2many,product.product,Accessory Products
+31,message_follower_ids,one2many,mail.followers,Followers
+32,create_date,datetime,,Created on
+33,weight,float,,Weight
+34,sequence,integer,,Sequence
+35,message_needaction,boolean,,Action Needed
+36,bom_count,integer,,# Bill of Material
+37,attribute_line_ids,one2many,product.attribute.line,Product Attributes
+38,currency_id,many2one,res.currency,Currency
+39,website_public_price,float,,Website public price
+40,mo_count,integer,,# Manufacturing Orders
+41,virtual_available,float,,Forecasted Quantity
+42,description_picking,text,,Description on Picking
+43,sale_delay,float,,Customer Lead Time
+44,message_unread_counter,integer,,Unread Messages Counter
+45,barcode,char,,Barcode
+46,active,boolean,,Active
+47,website_price_difference,boolean,,Website price difference
+48,product_variant_count,integer,,# Product Variants
+49,property_stock_account_output,many2one,account.account,Stock Output Account
+50,lst_price,float,,Public Price
+51,reordering_min_qty,float,,Reordering min qty
+52,message_unread,boolean,,Unread Messages
+53,message_needaction_counter,integer,,Number of Actions
+54,warranty,float,,Warranty
+55,property_stock_procurement,many2one,stock.location,Procurement Location
+56,list_price,float,,Sale Price
+57,color,integer,,Color Index
+58,purchase_line_warn_msg,text,,Message for Purchase Order Line
+59,image,binary,,Image
+60,sale_line_warn_msg,text,,Message for Sales Order Line
+61,qty_available,float,,Quantity On Hand
+62,can_be_expensed,boolean,,Can be Expensed
+63,create_uid,many2one,res.users,Created by
+64,asset_category_id,many2one,account.asset.category,Asset Type
+65,sale_ok,boolean,,Can be Sold
+66,message_is_follower,boolean,,Is Follower
+67,__last_update,datetime,,Last Modified on
+68,purchase_method,selection,,Control Purchase Bills
+69,purchase_ok,boolean,,Can be Purchased
+70,message_last_post,datetime,,Last Message Date
+71,website_price,float,,Website price
+72,rating_last_value,float,,Rating Last Value
+73,property_cost_method,selection,,Costing Method
+74,type,selection,,Product Type
+75,property_stock_production,many2one,stock.location,Production Location
+76,supplier_taxes_id,many2many,account.tax,Vendor Taxes
+77,volume,float,,Volume
+78,website_meta_description,text,,Website meta description
+79,property_stock_inventory,many2one,stock.location,Inventory Location
+80,cost_method,char,,Cost method
+81,valuation,char,,Valuation
+82,purchase_line_warn,selection,,Purchase Order Line
+83,alternative_product_ids,many2many,product.template,Alternative Products
+84,product_variant_ids,one2many,product.product,Products
+85,description_sale,text,,Sale Description
+86,image_small,binary,,Small-sized image
+87,description_purchase,text,,Purchase Description
+88,sales_count,integer,,# Sales
+89,website_meta_keywords,char,,Website meta keywords
+90,rating_ids,one2many,rating.rating,Rating
+91,sale_line_warn,selection,,Sales Order Line
+92,nbr_reordering_rules,integer,,Reordering Rules
+93,message_channel_ids,many2many,mail.channel,Followers (Channels)
+94,message_partner_ids,many2many,res.partner,Followers (Partners)
+95,uom_id,many2one,product.uom,Unit of Measure
+96,default_code,char,,Internal Reference
+97,location_id,many2one,stock.location,Location
+98,message_ids,one2many,mail.message,Messages
+99,availability_warning,text,,Availability Warning
+100,id,integer,,ID
+101,website_meta_title,char,,Website meta title
+102,uom_po_id,many2one,product.uom,Purchase Unit of Measure
+103,website_published,boolean,,Visible in Website
+104,website_url,char,,Website URL
+105,property_account_income_id,many2one,account.account,Income Account
+106,description,text,,Description
+107,price,float,,Price
+108,expense_policy,selection,,Re-Invoice Expenses
+109,write_date,datetime,,Last Updated on
+110,categ_id,many2one,product.category,Internal Category
+111,purchase_count,integer,,# Purchases
+112,tracking,selection,,Tracking
+113,produce_delay,float,,Manufacturing Lead Time
+114,property_account_creditor_price_difference,many2one,account.account,Price Difference Account
+115,website_sequence,integer,,Website Sequence
+116,outgoing_qty,float,,Outgoing
+117,invoice_policy,selection,,Invoicing Policy
+118,taxes_id,many2many,account.tax,Customer Taxes
+119,website_size_x,integer,,Size X
+120,website_size_y,integer,,Size Y
+121,product_variant_id,many2one,product.product,Product
+,,,,
+122,delivery_carrier_product,boolean,,Delivery Service
+123,video_url,char,,Video URL
+124,review_ids,one2many,product.review,Reviews
+125,brand_ids,many2many,product.brand,Product Brand
+126,tag_ids,many2many,product.tag,Product Tag
+127,discount_ids,one2many,product.discount,Discounts
+128,qty_check,boolean,,Check Qty on E-commerce
+129,hs_code,char,,HS Code
+130,sell_mobile,boolean,,Sell to Mobile App
+131,rebrand_reference_product_id,many2one,product.template,Original Product
+132,banner_ids,many2many,sale.banner,Banner
+133,discount,float,,Default Discount to this Product
+134,fp_export,boolean,,OB Is Exported
+135,product_group_id,many2one,product.group,Group
+136,description_mobile,text,,Description
+137,materi_ids,many2many,res.materi,File Materi
+138,rebrand_customer_id,many2one,res.partner,Rebrand Customer
+139,task_id,many2one,project.task,Task
+140,expert_ids,many2many,expert.condition,Expert System Conditions
+141,fp_date,datetime,,OB Exported Date
+142,discussion_ids,one2many,product.discussion,Discussions
+,,,,
+,,,,

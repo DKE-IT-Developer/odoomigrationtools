@@ -1,0 +1,40 @@
+model,purchase.order.line,transient,False
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,product_uom,many2one,product.uom,Product Unit of Measure
+3,analytic_tag_ids,many2many,account.analytic.tag,Analytic Tags
+4,price_unit,float,,Unit Price
+5,qty_invoiced,float,,Billed Qty
+6,write_uid,many2one,res.users,Last Updated by
+7,currency_id,many2one,res.currency,Currency
+8,product_qty,float,,Quantity
+9,date_order,datetime,,Order Date
+10,partner_id,many2one,res.partner,Partner
+11,id,integer,,ID
+12,qty_received,float,,Received Qty
+13,create_uid,many2one,res.users,Created by
+14,procurement_ids,one2many,procurement.order,Associated Procurements
+15,price_tax,monetary,,Tax
+16,__last_update,datetime,,Last Modified on
+17,sequence,integer,,Sequence
+18,company_id,many2one,res.company,Company
+19,move_ids,one2many,stock.move,Reservation
+20,state,selection,,Status
+21,account_analytic_id,many2one,account.analytic.account,Analytic Account
+22,order_id,many2one,purchase.order,Order Reference
+23,price_subtotal,monetary,,Subtotal
+24,write_date,datetime,,Last Updated on
+25,display_name,char,,Display Name
+26,name,text,,Description
+27,price_total,monetary,,Total
+28,product_id,many2one,product.product,Product
+29,date_planned,datetime,,Scheduled Date
+30,invoice_lines,one2many,account.invoice.line,Bill Lines
+31,taxes_id,many2many,account.tax,Taxes
+,,,,
+32,order_name,char,,Order
+33,qty_available,float,,Stock Qty
+34,delivery_status,selection,,Delivery Status
+35,vendor_name,char,,Vendor
+,,,,
+,,,,

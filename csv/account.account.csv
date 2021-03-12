@@ -1,0 +1,24 @@
+model,account.account,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,internal_type,selection,,Internal Type
+3,display_name,char,,Display Name
+4,name,char,,Name
+5,__last_update,datetime,,Last Modified on
+6,deprecated,boolean,,Deprecated
+7,tag_ids,many2many,account.account.tag,Tags
+8,company_id,many2one,res.company,Company
+9,write_uid,many2one,res.users,Last Updated by
+10,currency_id,many2one,res.currency,Account Currency
+11,note,text,,Internal Notes
+12,code,char,,Code
+13,write_date,datetime,,Last Updated on
+14,user_type_id,many2one,account.account.type,Type
+15,create_date,datetime,,Created on
+16,last_time_entries_checked,datetime,,Latest Invoices & Payments Matching Date
+17,id,integer,,ID
+18,reconcile,boolean,,Allow Reconciliation
+19,tax_ids,many2many,account.tax,Default Taxes
+,,,,
+,,,,
+,,,,

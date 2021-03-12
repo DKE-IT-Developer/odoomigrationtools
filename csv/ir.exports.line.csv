@@ -1,0 +1,14 @@
+model,ir.exports.line,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,name,char,,Field Name
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,write_date,datetime,,Last Updated on
+7,display_name,char,,Display Name
+8,export_id,many2one,ir.exports,Export
+9,id,integer,,ID
+,,,,
+,,,,
+,,,,

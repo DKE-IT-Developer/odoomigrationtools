@@ -1,0 +1,39 @@
+model,base.config.settings,transient,True
+no,field,type,relation,string
+1,rml_footer,text,,Custom Report Footer *
+2,create_date,datetime,,Created on
+3,rml_header,text,,RML Header *
+4,rml_paper_format,selection,,Paper Format *
+5,company_share_product,boolean,,Share product to all companies
+6,write_uid,many2one,res.users,Last Updated by
+7,module_google_calendar,boolean,,Allow the users to synchronize their calendar  with Google Calendar
+8,group_product_variant,selection,,Product Variants
+9,font,many2one,res.font,Font *
+10,module_auth_oauth,boolean,,Use external authentication providers (OAuth)
+11,id,integer,,ID
+12,company_share_partner,boolean,,Share partners to all companies
+13,create_uid,many2one,res.users,Created by
+14,display_name,char,,Display Name
+15,__last_update,datetime,,Last Modified on
+16,company_id,many2one,res.company,Company
+17,module_base_import,boolean,,Allow users to import data from CSV/XLS/XLSX/ODS files
+18,auth_signup_uninvited,boolean,,Allow external users to sign up
+19,module_portal,boolean,,Activate the customer portal
+20,rml_footer_readonly,text,,Report Footer *
+21,group_multi_currency,boolean,,Allow multi currencies
+22,auth_signup_template_user_id,many2one,res.users,Template user for new users created through signup
+23,alias_domain,char,,Alias Domain
+24,paperformat_id,many2one,report.paperformat,Paper format *
+25,module_google_drive,boolean,,Attach Google documents to any record
+26,custom_footer,boolean,,Custom footer *
+27,module_share,boolean,,Allow documents sharing
+28,rml_header3,text,,RML Internal Header for Landscape Reports *
+29,write_date,datetime,,Last Updated on
+30,fail_counter,integer,,Fail Mail
+31,auth_signup_reset_password,boolean,,Enable password reset from Login page
+32,module_inter_company_rules,boolean,,Manage Inter Company
+33,group_multi_company,boolean,,Manage multiple companies
+34,rml_header2,text,,RML Internal Header *
+,,,,
+,,,,
+,,,,

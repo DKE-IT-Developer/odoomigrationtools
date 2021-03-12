@@ -1,0 +1,18 @@
+model,product.attribute,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Name
+4,__last_update,datetime,,Last Modified on
+5,sequence,integer,,Sequence
+6,attribute_line_ids,one2many,product.attribute.line,Lines
+7,value_ids,one2many,product.attribute.value,Values
+8,write_uid,many2one,res.users,Last Updated by
+9,write_date,datetime,,Last Updated on
+10,create_variant,boolean,,Create variant
+11,create_date,datetime,,Created on
+12,type,selection,,Type
+13,id,integer,,ID
+,,,,
+,,,,
+,,,,

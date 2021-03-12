@@ -1,0 +1,24 @@
+model,account.register.payments,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,hide_payment_method,boolean,,Hide payment method
+4,__last_update,datetime,,Last Modified on
+5,communication,char,,Memo
+6,company_id,many2one,res.company,Company
+7,journal_id,many2one,account.journal,Payment Journal
+8,currency_id,many2one,res.currency,Currency
+9,payment_method_code,char,,Code
+10,amount,monetary,,Payment Amount
+11,payment_type,selection,,Payment Type
+12,write_date,datetime,,Last Updated on
+13,payment_date,date,,Payment Date
+14,create_date,datetime,,Created on
+15,write_uid,many2one,res.users,Last Updated by
+16,partner_id,many2one,res.partner,Partner
+17,id,integer,,ID
+18,partner_type,selection,,Partner type
+19,payment_method_id,many2one,account.payment.method,Payment Method Type
+,,,,
+,,,,
+,,,,

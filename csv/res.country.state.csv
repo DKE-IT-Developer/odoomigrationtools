@@ -1,0 +1,18 @@
+model,res.country.state,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,code,char,,State Code
+3,display_name,char,,Display Name
+4,name,char,,State Name
+5,__last_update,datetime,,Last Modified on
+6,country_id,many2one,res.country,Country
+7,write_uid,many2one,res.users,Last Updated by
+8,write_date,datetime,,Last Updated on
+9,create_date,datetime,,Created on
+10,id,integer,,ID
+,,,,
+11,area_ids,many2many,area.category,Area ids
+12,city_ids,one2many,res.city.ongkir,Cities
+13,kabupaten_line,one2many,res.kabupaten,Kabupaten
+,,,,
+,,,,

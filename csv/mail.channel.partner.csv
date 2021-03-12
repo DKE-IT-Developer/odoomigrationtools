@@ -1,0 +1,18 @@
+model,mail.channel.partner,transient,False
+no,field,type,relation,string
+1,seen_message_id,many2one,mail.message,Last Seen
+2,create_uid,many2one,res.users,Created by
+3,display_name,char,,Display Name
+4,is_minimized,boolean,,Conversation is minimized
+5,__last_update,datetime,,Last Modified on
+6,is_pinned,boolean,,Is pinned on the interface
+7,write_uid,many2one,res.users,Last Updated by
+8,channel_id,many2one,mail.channel,Channel
+9,fold_state,selection,,Conversation Fold State
+10,write_date,datetime,,Last Updated on
+11,create_date,datetime,,Created on
+12,partner_id,many2one,res.partner,Recipient
+13,id,integer,,ID
+,,,,
+,,,,
+,,,,

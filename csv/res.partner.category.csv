@@ -1,0 +1,20 @@
+model,res.partner.category,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,parent_right,integer,,Right parent
+3,display_name,char,,Display Name
+4,name,char,,Tag Name
+5,__last_update,datetime,,Last Modified on
+6,color,integer,,Color Index
+7,child_ids,one2many,res.partner.category,Child Tags
+8,write_uid,many2one,res.users,Last Updated by
+9,parent_id,many2one,res.partner.category,Parent Category
+10,parent_left,integer,,Left parent
+11,write_date,datetime,,Last Updated on
+12,active,boolean,,Active
+13,create_date,datetime,,Created on
+14,partner_ids,many2many,res.partner,Partners
+15,id,integer,,ID
+,,,,
+,,,,
+,,,,

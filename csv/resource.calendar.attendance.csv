@@ -1,0 +1,19 @@
+model,resource.calendar.attendance,transient,False
+no,field,type,relation,string
+1,dayofweek,selection,,Day of Week
+2,create_uid,many2one,res.users,Created by
+3,calendar_id,many2one,resource.calendar,Resource's Calendar
+4,display_name,char,,Display Name
+5,name,char,,Name
+6,__last_update,datetime,,Last Modified on
+7,date_from,date,,Starting Date
+8,write_uid,many2one,res.users,Last Updated by
+9,hour_from,float,,Work from
+10,hour_to,float,,Work to
+11,write_date,datetime,,Last Updated on
+12,date_to,date,,End Date
+13,create_date,datetime,,Created on
+14,id,integer,,ID
+,,,,
+,,,,
+,,,,

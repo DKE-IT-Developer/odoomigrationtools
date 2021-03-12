@@ -1,0 +1,88 @@
+model,project.task,transient,False
+no,field,type,relation,string
+1,message_follower_ids,one2many,mail.followers,Followers
+2,create_date,datetime,,Create date
+3,sequence,integer,,Sequence
+4,color,integer,,Color Index
+5,message_channel_ids,many2many,mail.channel,Followers (Channels)
+6,date_end,datetime,,Ending Date
+7,write_uid,many2one,res.users,Last Updated by
+8,legend_blocked,char,,Kanban Blocked Explanation
+9,planned_hours,float,,Initially Planned Hours
+10,partner_id,many2one,res.partner,Nama Dokter
+11,id,integer,,ID
+12,create_uid,many2one,res.users,Created by
+13,displayed_image_id,many2one,ir.attachment,Displayed Image
+14,user_id,many2one,res.users,Assigned to
+15,attachment_ids,one2many,ir.attachment,Attachments
+16,__last_update,datetime,,Last Modified on
+17,date_start,datetime,,Starting Date
+18,message_last_post,datetime,,Last Message Date
+19,company_id,many2one,res.company,Company
+20,message_ids,one2many,mail.message,Messages
+21,priority,selection,,Priority
+22,message_needaction,boolean,,Action Needed
+23,message_is_follower,boolean,,Is Follower
+24,manager_id,many2one,res.users,Project Manager
+25,message_unread_counter,integer,,Unread Messages Counter
+26,project_id,many2one,project.project,Project
+27,date_last_stage_update,datetime,,Last Stage Update
+28,date_assign,datetime,,Assigning Date
+29,description,html,,Description
+30,message_partner_ids,many2many,res.partner,Followers (Partners)
+31,kanban_state,selection,,Kanban State
+32,legend_done,char,,Kanban Valid Explanation
+33,write_date,datetime,,Write date
+34,active,boolean,,Active
+35,display_name,char,,Display Name
+36,legend_normal,char,,Kanban Ongoing Explanation
+37,stage_id,many2one,project.task.type,Stage
+38,name,char,,Task Title
+39,date_deadline,date,,Deadline
+40,notes,text,,Notes
+41,tag_ids,many2many,project.tags,Tags
+42,message_unread,boolean,,Unread Messages
+43,message_needaction_counter,integer,,Number of Actions
+44,user_email,char,,User Email
+45,remaining_hours,float,,Remaining Hours
+,,,,
+46,is_rangkapdua,boolean,,Rangkap Dua Dokumen
+47,stage_sequence,integer,,Stage Sequence
+48,tanggal_cetak,date,,Tanggal Cetak
+49,expired_date,date,,Expired Date
+50,date_invoice_after_do,char,,Date Invoice
+51,type_doc,selection,,Type Dokumen
+52,bank,selection,,Bank
+53,pay_price,float,,Jumlah Pembayaran
+54,na_bpom,char,,NA BPOM
+55,makloon_poproduksi_ids,one2many,makloon.po.produksi,Purchase Order
+56,file_name_surat_kuasa,char,,Upload File
+57,user_name,char,,User Name
+58,no_resi,char,,Nomor Resi
+59,makloon_product_ids,one2many,makloon.product.line,Product
+60,file_surat_kuasa,binary,,Surat Kuasa Pembagian Merek(optional)
+61,successor_task_ids,one2many,project.task,Successors
+62,sale_order_id,many2one,sale.order,Sales Order Dokter
+63,tanggal_pembayaran,date,,Tanggal Pembayaran
+64,makloon_so_dokter_ids,one2many,makloon.so.dokter,Sales Order
+65,mak_line_ids,one2many,makloon.document.line,Document
+66,makloon_po_cetaklabel,one2many,makloon.po.cetaklabel,Purchase Order
+67,file_perjanjian_lisensi,binary,,Surat Perjanjian Lisensi(optional)
+68,no_batch,char,,Nomor Batch
+69,product_tmpl_ids,one2many,product.template,Products
+70,predecessor_task_id,many2one,project.task,Predecessor
+71,is_cetak,boolean,,Sudah Dicetak
+72,file_name_perjanjian_lisensi,char,,Upload File
+73,makloon_merek_ids,one2many,makloon.merek.line,Detail Produk
+74,difference_month,integer,,Distance
+75,date_today,char,,Date Today
+76,is_legalisir,boolean,,Legalisir PKS Gizi dan Dokter
+77,passwordnya,char,,Password
+78,tanggal_submit,date,,Tanggal Submit Produk
+79,date_invoice_label,date,,Date Invoice
+80,is_readonly,boolean,,Readonly
+81,date_invoice_before_do,char,,Date Invoice
+82,tanggal_kirim,date,,Tanggal Kirim
+83,is_kirim,boolean,,Sudah Dikirim
+,,,,
+,,,,

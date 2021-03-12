@@ -1,0 +1,32 @@
+model,account.analytic.line,transient,False
+no,field,type,relation,string
+1,code,char,,Code
+2,create_date,datetime,,Created on
+3,write_uid,many2one,res.users,Last Updated by
+4,company_currency_id,many2one,res.currency,Currency
+5,analytic_amount_currency,monetary,,Amount Currency
+6,partner_id,many2one,res.partner,Partner
+7,id,integer,,ID
+8,create_uid,many2one,res.users,Created by
+9,user_id,many2one,res.users,User
+10,__last_update,datetime,,Last Modified on
+11,tag_ids,many2many,account.analytic.tag,Tags
+12,company_id,many2one,res.company,Company
+13,ref,char,,Ref.
+14,account_id,many2one,account.analytic.account,Analytic Account
+15,general_account_id,many2one,account.account,Financial Account
+16,write_date,datetime,,Last Updated on
+17,date,date,,Date
+18,display_name,char,,Display Name
+19,move_id,many2one,account.move.line,Move Line
+20,product_id,many2one,product.product,Product
+21,currency_id,many2one,res.currency,Account Currency
+22,name,char,,Description
+23,product_uom_id,many2one,product.uom,Unit of Measure
+24,so_line,many2one,sale.order.line,Sale Order Line
+25,amount,monetary,,Amount
+26,unit_amount,float,,Quantity
+27,amount_currency,monetary,,Amount currency
+,,,,
+,,,,
+,,,,

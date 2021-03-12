@@ -1,0 +1,25 @@
+model,ir.model,transient,False
+no,field,type,relation,string
+1,info,text,,Information
+2,create_uid,many2one,res.users,Created by
+3,inherited_model_ids,many2many,ir.model,Inherited models
+4,access_ids,one2many,ir.model.access,Access
+5,display_name,char,,Display Name
+6,name,char,,Model Description
+7,__last_update,datetime,,Last Modified on
+8,field_id,one2many,ir.model.fields,Fields
+9,website_form_access,boolean,,Allowed to use in forms
+10,modules,char,,In Apps
+11,write_uid,many2one,res.users,Last Updated by
+12,state,selection,,Type
+13,transient,boolean,,Transient Model
+14,website_form_default_field_id,many2one,ir.model.fields,Field for custom form data
+15,write_date,datetime,,Last Updated on
+16,id,integer,,ID
+17,create_date,datetime,,Created on
+18,model,char,,Model
+19,view_ids,one2many,ir.ui.view,Views
+20,website_form_label,char,,Label for form action
+,,,,
+,,,,
+,,,,

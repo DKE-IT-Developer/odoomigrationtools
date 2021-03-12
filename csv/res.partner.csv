@@ -1,0 +1,181 @@
+model,res.partner,transient,False
+no,field,type,relation,string
+1,signup_valid,boolean,,Signup Token is Valid
+2,sale_order_count,integer,,# of Sales Order
+3,bank_account_count,integer,,Bank
+4,purchase_order_count,integer,,# of Purchase Order
+5,write_uid,many2one,res.users,Last Updated by
+6,contact_address,char,,Complete Address
+7,property_product_pricelist,many2one,product.pricelist,Sale Pricelist
+8,signup_url,char,,Signup URL
+9,journal_item_count,integer,,Journal Items
+10,parent_name,char,,Parent name
+11,display_name,char,,Display Name
+12,opt_out,boolean,,Opt-Out
+13,title,many2one,res.partner.title,Title
+14,company_id,many2one,res.company,Company
+15,commercial_company_name,char,,Company Name Entity
+16,parent_id,many2one,res.partner,Related Company
+17,contracts_count,integer,,Contracts
+18,employee,boolean,,Employee
+19,supplier_invoice_count,integer,,# Vendor Bills
+20,property_supplier_payment_term_id,many2one,account.payment.term,Vendor Payment Terms
+21,customer,boolean,,Is a Customer
+22,fax,char,,Fax
+23,channel_ids,many2many,mail.channel,Channels
+24,child_ids,one2many,res.partner,Contacts
+25,user_ids,one2many,res.users,Users
+26,calendar_last_notif_ack,datetime,,Last notification marked as read from base Calendar
+27,image_medium,binary,,Medium-sized image
+28,name,char,,Name
+29,debit_limit,monetary,,Payable Limit
+30,signup_token,char,,Signup token
+31,contract_ids,one2many,account.analytic.account,Contracts
+32,commercial_partner_id,many2one,res.partner,Commercial Entity
+33,message_follower_ids,one2many,mail.followers,Followers
+34,total_invoiced,monetary,,Total Invoiced
+35,notify_email,selection,,Email Messages and Notifications
+36,message_needaction,boolean,,Action Needed
+37,has_unreconciled_entries,boolean,,Has unreconciled entries
+38,currency_id,many2one,res.currency,Currency
+39,street,char,,Street
+40,task_ids,one2many,project.task,Tasks
+41,country_id,many2one,res.country,Country
+42,tz_offset,char,,Timezone offset
+43,debit,monetary,,Total Payable
+44,supplier,boolean,,Is a Vendor
+45,message_unread_counter,integer,,Unread Messages Counter
+46,ref,char,,Internal Reference
+47,email,char,,Email
+48,picking_warn,selection,,Stock Picking
+49,city,char,,City
+50,street2,char,,Street2
+51,barcode,char,,Barcode
+52,state_id,many2one,res.country.state,State
+53,active,boolean,,Active
+54,tz,selection,,Timezone
+55,signup_expiration,datetime,,Signup expiration
+56,issued_total,monetary,,Journal Items
+57,zip,char,,Zip
+58,__last_update,datetime,,Last Modified on
+59,credit,monetary,,Total Receivable
+60,message_bounce,integer,,Bounce
+61,is_company,boolean,,Is a Company
+62,message_unread,boolean,,Unread Messages
+63,message_needaction_counter,integer,,Number of Actions
+64,comment,text,,Notes
+65,sale_warn,selection,,Sales Order
+66,purchase_warn,selection,,Purchase Order
+67,color,integer,,Color Index
+68,image,binary,,Image
+69,invoice_ids,one2many,account.invoice,Invoices
+70,team_id,many2one,crm.team,Sales Team
+71,create_date,datetime,,Created on
+72,trust,selection,,Degree of trust you have in this debtor
+73,property_payment_term_id,many2one,account.payment.term,Customer Payment Terms
+74,create_uid,many2one,res.users,Created by
+75,user_id,many2one,res.users,Salesperson
+76,message_is_follower,boolean,,Is Follower
+77,ref_company_ids,one2many,res.company,Companies that refers to partner
+78,message_last_post,datetime,,Last Message Date
+79,email_formatted,char,,Formatted Email
+80,im_status,char,,IM Status
+81,last_website_so_id,many2one,sale.order,Last Online Sale Order
+82,last_time_entries_checked,datetime,,Latest Invoices & Payments Matching Date
+83,type,selection,,Address Type
+84,vat,char,,TIN
+85,function,char,,Job Position
+86,picking_warn_msg,text,,Message for Stock Picking
+87,payment_token_count,integer,,Count Payment Token
+88,phone,char,,Phone
+89,website_meta_description,text,,Website meta description
+90,task_count,integer,,# Tasks
+91,payment_token_ids,one2many,payment.token,Payment Tokens
+92,property_purchase_currency_id,many2one,res.currency,Supplier Currency
+93,sale_order_ids,one2many,sale.order,Sales Order
+94,image_small,binary,,Small-sized image
+95,website_meta_keywords,char,,Website meta keywords
+96,invoice_warn_msg,text,,Message for Invoice
+97,website,char,,Website
+98,property_account_payable_id,many2one,account.account,Account Payable
+99,message_channel_ids,many2many,mail.channel,Followers (Channels)
+100,message_partner_ids,many2many,res.partner,Followers (Partners)
+101,company_type,selection,,Company Type
+102,signup_type,char,,Signup Token Type
+103,property_account_receivable_id,many2one,account.account,Account Receivable
+104,message_ids,one2many,mail.message,Messages
+105,date,date,,Date
+106,self,many2one,res.partner,Self
+107,invoice_warn,selection,,Invoice
+108,id,integer,,ID
+109,property_account_position_id,many2one,account.fiscal.position,Fiscal Position
+110,website_meta_title,char,,Website meta title
+111,company_name,char,,Company Name
+112,property_stock_supplier,many2one,stock.location,Vendor Location
+113,website_published,boolean,,Visible in Website
+114,website_url,char,,Website URL
+115,bank_ids,one2many,res.partner.bank,Banks
+116,write_date,datetime,,Last Updated on
+117,property_stock_customer,many2one,stock.location,Customer Location
+118,website_short_description,text,,Website Partner Short Description
+119,category_id,many2many,res.partner.category,Tags
+120,lang,selection,,Language
+121,credit_limit,float,,Credit Limit
+122,purchase_warn_msg,text,,Message for Purchase Order
+123,mobile,char,,Mobile
+124,partner_share,boolean,,Share Partner
+125,website_description,html,,Website Partner Full Description
+126,sale_warn_msg,text,,Message for Sales Order
+,,,,
+127,id_number,char,,ID Number
+128,kelurahan_id,many2one,res.kelurahan,Kelurahan
+129,state_npwp,selection,,Status
+130,street_npwp_2,char,,Street 2
+131,street_npwp_1,char,,Street 1
+132,is_npwp,boolean,,Is NPWP Address?
+133,main_street,char,,Main Street
+134,property_delivery_carrier_id,many2one,delivery.carrier,Delivery Method
+135,kecamatan_npwp_id,many2one,res.kecamatan,Kecamatan
+136,blok,char,,Blok
+137,city_npwp,char,,city
+138,trust_value,float,,Trust Value
+139,sell_value,monetary,,Total Sell Value
+140,kecamatan_id,many2one,res.kecamatan,Kecamatan
+141,ongkir_city_id,many2one,res.city.ongkir,City/Location
+142,kabupaten_id,many2one,res.kabupaten,Kabupaten
+143,area_categ_id,many2one,area.category,Area
+144,date_birth,date,,Date Birth
+145,npa_idi,char,,NPA-IDI
+146,npwp_street,char,,NPWP Street
+147,rt_npwp,char,,RT
+148,ktp,char,,KTP
+149,image_url,char,,URL Image
+150,purchase_value,monetary,,Total Purchase Value
+151,attn,char,,Attention
+152,nama_npwp,char,,Nama Npwp
+153,credit_point_history_ids,one2many,credit.point.history,Credit Points History
+154,is_premium,boolean,,Is Premium Customer
+155,cluster,selection,,Cluster
+156,credit_point,float,,Credit Points
+157,rt,char,,RT
+158,rw,char,,RW
+159,nomor_npwp,char,,Nomor
+160,kelurahan_npwp_id,many2one,res.kelurahan,Kelurahan
+161,npwp_name,char,,NPWP Name
+162,blok_npwp,char,,Blok
+163,available_for_chat,boolean,,Available for Chat
+164,code_transaction,selection,,Kode Transaksi
+165,npwp,char,,NPWP
+166,npwp_no,char,,No NPWP
+167,kode_pos_npwp,char,,kode pos
+168,nomor,char,,Nomor
+169,rw_npwp,char,,RW
+170,fp_export,boolean,,LT Is Exported
+171,ongkir_subdistrict_id,many2one,res.subdistrict.ongkir,Subdistrict
+172,propinsi_npwp,many2one,res.country.state,Province
+173,nickname,char,,Nick Name
+174,fp_date,datetime,,LT Exported Date
+175,kabupaten_npwp_id,many2one,res.kabupaten,Kabupaten
+176,file_binary,binary,,Dokumen Profesi
+,,,,
+,,,,

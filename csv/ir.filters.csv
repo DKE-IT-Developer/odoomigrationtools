@@ -1,0 +1,21 @@
+model,ir.filters,transient,False
+no,field,type,relation,string
+1,sort,text,,Sort
+2,model_id,selection,,Model
+3,domain,text,,Domain
+4,user_id,many2one,res.users,User
+5,name,char,,Filter Name
+6,create_uid,many2one,res.users,Created by
+7,__last_update,datetime,,Last Modified on
+8,write_uid,many2one,res.users,Last Updated by
+9,is_default,boolean,,Default filter
+10,create_date,datetime,,Created on
+11,context,text,,Context
+12,active,boolean,,Active
+13,display_name,char,,Display Name
+14,write_date,datetime,,Last Updated on
+15,id,integer,,ID
+16,action_id,many2one,ir.actions.actions,Action
+,,,,
+,,,,
+,,,,

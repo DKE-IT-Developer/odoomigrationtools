@@ -1,0 +1,13 @@
+model,stock.immediate.transfer,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,__last_update,datetime,,Last Modified on
+4,write_uid,many2one,res.users,Last Updated by
+5,pick_id,many2one,stock.picking,Pick id
+6,write_date,datetime,,Last Updated on
+7,create_date,datetime,,Created on
+8,id,integer,,ID
+,,,,
+,,,,
+,,,,

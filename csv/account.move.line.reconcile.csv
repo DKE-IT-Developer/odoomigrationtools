@@ -1,0 +1,17 @@
+model,account.move.line.reconcile,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,__last_update,datetime,,Last Modified on
+4,writeoff,float,,Write-Off amount
+5,company_id,many2one,res.company,Company
+6,write_uid,many2one,res.users,Last Updated by
+7,credit,float,,Credit amount
+8,write_date,datetime,,Last Updated on
+9,debit,float,,Debit amount
+10,trans_nbr,integer,,# of Transaction
+11,create_date,datetime,,Created on
+12,id,integer,,ID
+,,,,
+,,,,
+,,,,

@@ -1,0 +1,15 @@
+model,slide.embed,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,__last_update,datetime,,Last Modified on
+4,url,char,,Third Party Website URL
+5,write_uid,many2one,res.users,Last Updated by
+6,write_date,datetime,,Last Updated on
+7,count_views,integer,,# Views
+8,slide_id,many2one,slide.slide,Presentation
+9,id,integer,,ID
+10,display_name,char,,Display Name
+,,,,
+,,,,
+,,,,

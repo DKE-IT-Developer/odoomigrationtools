@@ -1,0 +1,23 @@
+model,product.public.category,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,image_medium,binary,,Medium-sized image
+3,display_name,char,,Display Name
+4,name,char,,Name
+5,sequence,integer,,Sequence
+6,image,binary,,Image
+7,__last_update,datetime,,Last Modified on
+8,image_small,binary,,Small-sized image
+9,write_uid,many2one,res.users,Last Updated by
+10,parent_id,many2one,product.public.category,Parent Category
+11,website_meta_description,text,,Website meta description
+12,website_meta_title,char,,Website meta title
+13,write_date,datetime,,Last Updated on
+14,website_meta_keywords,char,,Website meta keywords
+15,child_id,one2many,product.public.category,Children Categories
+16,id,integer,,ID
+17,create_date,datetime,,Created on
+,,,,
+18,product_template_ids,many2many,product.template,Product Template
+,,,,
+,,,,

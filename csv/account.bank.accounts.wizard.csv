@@ -1,0 +1,16 @@
+model,account.bank.accounts.wizard,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,account_type,selection,,Account type
+3,__last_update,datetime,,Last Modified on
+4,bank_account_id,many2one,wizard.multi.charts.accounts,Bank Account
+5,acc_name,char,,Account Name.
+6,write_uid,many2one,res.users,Last Updated by
+7,currency_id,many2one,res.currency,Account Currency
+8,write_date,datetime,,Last Updated on
+9,create_date,datetime,,Created on
+10,id,integer,,ID
+11,display_name,char,,Display Name
+,,,,
+,,,,
+,,,,

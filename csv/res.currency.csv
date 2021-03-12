@@ -1,0 +1,21 @@
+model,res.currency,transient,False
+no,field,type,relation,string
+1,rate_ids,one2many,res.currency.rate,Rates
+2,display_name,char,,Display Name
+3,name,char,,Currency
+4,decimal_places,integer,,Decimal places
+5,create_uid,many2one,res.users,Created by
+6,rounding,float,,Rounding Factor
+7,symbol,char,,Symbol
+8,__last_update,datetime,,Last Modified on
+9,write_uid,many2one,res.users,Last Updated by
+10,active,boolean,,Active
+11,rate,float,,Current Rate
+12,write_date,datetime,,Last Updated on
+13,date,date,,Date
+14,position,selection,,Symbol Position
+15,create_date,datetime,,Created on
+16,id,integer,,ID
+,,,,
+,,,,
+,,,,

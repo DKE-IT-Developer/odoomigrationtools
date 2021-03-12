@@ -1,0 +1,117 @@
+model,res.company,transient,False
+no,field,type,relation,string
+1,fiscalyear_lock_date,date,,Lock Date
+2,bank_account_code_prefix,char,,Prefix of the bank accounts
+3,cash_account_code_prefix,char,,Prefix of the cash accounts
+4,rml_footer,text,,Custom Report Footer
+5,create_date,datetime,,Created on
+6,rml_header,text,,Rml header
+7,sale_note,text,,Default Terms and Conditions
+8,rml_paper_format,selection,,Paper Format
+9,security_lead,float,,Sales Safety Days
+10,accounts_code_digits,integer,,Number of digits in an account code
+11,write_uid,many2one,res.users,Last Updated by
+12,currency_id,many2one,res.currency,Currency
+13,anglo_saxon_accounting,boolean,,Use anglo-saxon accounting
+14,logo_web,binary,,Logo web
+15,po_lead,float,,Purchase Lead Time
+16,fiscalyear_last_day,integer,,Fiscalyear last day
+17,logo,binary,,Image
+18,font,many2one,res.font,Font
+19,partner_id,many2one,res.partner,Partner
+20,expects_chart_of_accounts,boolean,,Expects a Chart of Accounts
+21,account_no,char,,Account No.
+22,city,char,,City
+23,property_stock_valuation_account_id,many2one,account.account,Account Template for Stock Valuation
+24,display_name,char,,Display Name
+25,zip,char,,Zip
+26,parent_id,many2one,res.company,Parent Company
+27,transfer_account_id,many2one,account.account,Inter-Banks Transfer Account
+28,bank_journal_ids,one2many,account.journal,Bank Journals
+29,sequence,integer,,Sequence
+30,country_id,many2one,res.country,Country
+31,expense_currency_exchange_account_id,many2one,account.account,Loss Exchange Rate Account
+32,id,integer,,ID
+33,property_stock_account_output_categ_id,many2one,account.account,Output Account for Stock Valuation
+34,paperformat_id,many2one,report.paperformat,Paper format
+35,rml_footer_readonly,text,,Report Footer
+36,po_double_validation_amount,monetary,,Double validation amount
+37,po_lock,selection,,Purchase Order Modification
+38,property_stock_account_input_categ_id,many2one,account.account,Input Account for Stock Valuation
+39,period_lock_date,date,,Lock Date for Non-Advisers
+40,website,char,,Website
+41,propagation_minimum_delta,integer,,Minimum Delta for Propagation of a Date Change on moves linked together
+42,fax,char,,Fax
+43,bank_ids,one2many,res.partner.bank,Bank Accounts
+44,manufacturing_lead,float,,Manufacturing Lead Time
+45,street2,char,,Street2
+46,child_ids,one2many,res.company,Child Companies
+47,custom_footer,boolean,,Custom footer
+48,phone,char,,Phone
+49,user_ids,many2many,res.users,Accepted Users
+50,rml_header2,text,,RML Internal Header
+51,rml_header3,text,,RML Internal Header for Landscape Reports
+52,write_date,datetime,,Last Updated on
+53,rml_header1,char,,Company Tagline
+54,company_registry,char,,Company registry
+55,create_uid,many2one,res.users,Created by
+56,name,char,,Company Name
+57,project_time_mode_id,many2one,product.uom,Project Time Unit
+58,po_double_validation,selection,,Levels of Approvals
+59,chart_template_id,many2one,account.chart.template,Chart template id
+60,__last_update,datetime,,Last Modified on
+61,overdue_msg,text,,Overdue Payments Message
+62,currency_exchange_journal_id,many2one,account.journal,Exchange Gain or Loss Journal
+63,street,char,,Street
+64,vat,char,,Tax ID
+65,state_id,many2one,res.country.state,Fed. State
+66,fiscalyear_last_month,selection,,Fiscalyear last month
+67,tax_calculation_rounding_method,selection,,Tax Calculation Rounding Method
+68,internal_transit_location_id,many2one,stock.location,Internal Transit Location
+69,email,char,,Email
+70,income_currency_exchange_account_id,many2one,account.account,Gain Exchange Rate Account
+,,,,
+71,waboxapp_phone_number_broadcast,char,,Waboxapp Phone Number for Broadcast
+72,premium_partner_days_limit,integer,,Premium partner days limit
+73,kelurahan_id,many2one,res.kelurahan,Kelurahan
+74,warkana_firebase_authorization,char,,WArkana Firebase Authorization
+75,product_deposit_id,many2one,product.product,Product deposit id
+76,sale_deposit_account_id,many2one,account.account,Sale deposit account id
+77,discount_efaktur_display,selection,,Display discount on efaktur
+78,bca_api_account_number,char,,Account Number
+79,blok,char,,Blok
+80,bca_api_base_url,char,,Base URL
+81,discount_account_id,many2one,account.account,Discount Account
+82,premium_partner_value_limit,monetary,,Premium partner value limit
+83,ongkir_city_id,many2one,res.city.ongkir,Location
+84,java_path,char,,Java Path
+85,kabupaten_id,many2one,res.kabupaten,Kabupaten
+86,credit_point_feed_create,float,,CP for Posting Feed
+87,waboxapp_token,char,,Waboxapp Token
+88,escpos_gs,integer,,GS
+89,rt,char,,RT
+90,bca_api_access_token,char,,Access Token
+91,rw,char,,RW
+92,bca_api_pending_statement_id,many2one,account.bank.statement,BCA Pending Statement
+93,notification_partner_id,many2one,res.partner,Notification Partner
+94,waboxapp_phone_number,char,,Waboxapp Phone Number
+95,bca_api_corporate_id,char,,Corporate ID
+96,warkana_firebase_token,char,,WArkana Firebase Token
+97,kecamatan_id,many2one,res.kecamatan,Kecamatan
+98,bca_api_client_id,char,,Client ID
+99,count_last_invoices_to_trust,integer,,Count last invoices to trust
+100,warkana_customer_ok,boolean,,Allow WArkana for Customer
+101,nomor,char,,Nomor
+102,bca_api_api_secret,char,,API Secret
+103,ongkir_subdistrict_id,many2one,res.subdistrict.ongkir,Subdistrict
+104,normal_partner_days_limit,integer,,Normal partner days limit
+105,warkana_internal_ok,boolean,,Allow WArkana for Internal
+106,purchase_discount_account_id,many2one,account.account,Purchase Discount Account
+107,bca_api_journal_id,many2one,account.journal,BCA Journal
+108,good_partner_days_limit,integer,,Good partner days limit
+109,bca_api_api_key,char,,API Key
+110,bca_api_client_secret,char,,Client Secret
+111,escpos_esc,integer,,ESC
+112,minimum_days,integer,,Number of Min Transaction
+,,,,
+,,,,

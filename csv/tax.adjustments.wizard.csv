@@ -1,0 +1,21 @@
+model,tax.adjustments.wizard,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,reason,char,,Justification
+4,__last_update,datetime,,Last Modified on
+5,adjustment_type,selection,,Adjustment Type
+6,credit_account_id,many2one,account.account,Credit account
+7,journal_id,many2one,account.journal,Journal
+8,write_uid,many2one,res.users,Last Updated by
+9,company_currency_id,many2one,res.currency,Company currency id
+10,amount,monetary,,Amount
+11,write_date,datetime,,Last Updated on
+12,date,date,,Date
+13,create_date,datetime,,Created on
+14,debit_account_id,many2one,account.account,Debit account
+15,id,integer,,ID
+16,tax_id,many2one,account.tax,Adjustment Tax
+,,,,
+,,,,
+,,,,

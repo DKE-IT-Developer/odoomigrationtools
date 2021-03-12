@@ -1,0 +1,20 @@
+model,stock.history,transient,False
+no,field,type,relation,string
+1,display_name,char,,Display Name
+2,product_id,many2one,product.product,Product
+3,__last_update,datetime,,Last Modified on
+4,inventory_value,float,,Inventory Value
+5,price_unit_on_quant,float,,Value
+6,company_id,many2one,res.company,Company
+7,source,char,,Source
+8,product_categ_id,many2one,product.category,Product Category
+9,product_template_id,many2one,product.template,Product Template
+10,date,datetime,,Operation Date
+11,serial_number,char,,Lot/Serial Number
+12,location_id,many2one,stock.location,Location
+13,id,integer,,ID
+14,move_id,many2one,stock.move,Stock Move
+15,quantity,float,,Product Quantity
+,,,,
+,,,,
+,,,,

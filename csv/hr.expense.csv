@@ -1,0 +1,42 @@
+model,hr.expense,transient,False
+no,field,type,relation,string
+1,message_follower_ids,one2many,mail.followers,Followers
+2,create_date,datetime,,Created on
+3,reference,char,,Bill Reference
+4,message_needaction,boolean,,Action Needed
+5,message_channel_ids,many2many,mail.channel,Followers (Channels)
+6,message_partner_ids,many2many,res.partner,Followers (Partners)
+7,write_uid,many2one,res.users,Last Updated by
+8,currency_id,many2one,res.currency,Currency
+9,payment_mode,selection,,Payment By
+10,id,integer,,ID
+11,account_id,many2one,account.account,Account
+12,analytic_account_id,many2one,account.analytic.account,Analytic Account
+13,create_uid,many2one,res.users,Created by
+14,employee_id,many2one,hr.employee,Employee
+15,display_name,char,,Display Name
+16,message_is_follower,boolean,,Is Follower
+17,__last_update,datetime,,Last Modified on
+18,message_last_post,datetime,,Last Message Date
+19,company_id,many2one,res.company,Company
+20,message_ids,one2many,mail.message,Messages
+21,state,selection,,Status
+22,message_unread_counter,integer,,Unread Messages Counter
+23,tax_ids,many2many,account.tax,Taxes
+24,description,text,,Description
+25,attachment_number,integer,,Number of Attachments
+26,write_date,datetime,,Last Updated on
+27,date,date,,Date
+28,name,char,,Expense Description
+29,message_unread,boolean,,Unread Messages
+30,total_amount,float,,Total
+31,product_uom_id,many2one,product.uom,Unit of Measure
+32,untaxed_amount,float,,Subtotal
+33,product_id,many2one,product.product,Product
+34,unit_amount,float,,Unit Price
+35,sheet_id,many2one,hr.expense.sheet,Expense Report
+36,message_needaction_counter,integer,,Number of Actions
+37,quantity,float,,Quantity
+,,,,
+,,,,
+,,,,

@@ -1,0 +1,23 @@
+model,res.partner.bank,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,bank_bic,char,,Bank Identifier Code
+4,__last_update,datetime,,Last Modified on
+5,sequence,integer,,Sequence
+6,company_id,many2one,res.company,Company
+7,bank_name,char,,Name
+8,bank_id,many2one,res.bank,Bank
+9,currency_id,many2one,res.currency,Currency
+10,journal_id,one2many,account.journal,Account Journal
+11,acc_type,char,,Acc type
+12,write_date,datetime,,Last Updated on
+13,sanitized_acc_number,char,,Sanitized Account Number
+14,create_date,datetime,,Created on
+15,write_uid,many2one,res.users,Last Updated by
+16,partner_id,many2one,res.partner,Account Holder
+17,id,integer,,ID
+18,acc_number,char,,Account Number
+,,,,
+,,,,
+,,,,

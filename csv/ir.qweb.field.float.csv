@@ -1,0 +1,8 @@
+model,ir.qweb.field.float,transient,False
+no,field,type,relation,string
+1,display_name,char,,Display Name
+2,id,integer,,ID
+3,__last_update,datetime,,Last Modified on
+,,,,
+,,,,
+,,,,

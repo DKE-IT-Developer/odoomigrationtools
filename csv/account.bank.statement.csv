@@ -1,0 +1,43 @@
+model,account.bank.statement,transient,False
+no,field,type,relation,string
+1,message_follower_ids,one2many,mail.followers,Followers
+2,create_date,datetime,,Created on
+3,reference,char,,External Reference
+4,message_needaction,boolean,,Action Needed
+5,message_channel_ids,many2many,mail.channel,Followers (Channels)
+6,message_partner_ids,many2many,res.partner,Followers (Partners)
+7,balance_start,monetary,,Starting Balance
+8,company_id,many2one,res.company,Company
+9,currency_id,many2one,res.currency,Currency
+10,id,integer,,ID
+11,create_uid,many2one,res.users,Created by
+12,difference,monetary,,Difference
+13,user_id,many2one,res.users,Responsible
+14,date_done,datetime,,Closed On
+15,message_is_follower,boolean,,Is Follower
+16,__last_update,datetime,,Last Modified on
+17,message_last_post,datetime,,Last Message Date
+18,journal_id,many2one,account.journal,Journal
+19,message_ids,one2many,mail.message,Messages
+20,state,selection,,Status
+21,all_lines_reconciled,boolean,,All lines reconciled
+22,message_unread_counter,integer,,Unread Messages Counter
+23,cashbox_start_id,many2one,account.bank.statement.cashbox,Starting Cashbox
+24,cashbox_end_id,many2one,account.bank.statement.cashbox,Ending Cashbox
+25,journal_type,selection,,Type
+26,is_difference_zero,boolean,,Is zero
+27,move_line_ids,one2many,account.move.line,Entry lines
+28,total_entry_encoding,monetary,,Transactions Subtotal
+29,write_date,datetime,,Last Updated on
+30,date,date,,Date
+31,display_name,char,,Display Name
+32,write_uid,many2one,res.users,Last Updated by
+33,name,char,,Reference
+34,balance_end,monetary,,Computed Balance
+35,message_needaction_counter,integer,,Number of Actions
+36,line_ids,one2many,account.bank.statement.line,Statement lines
+37,message_unread,boolean,,Unread Messages
+38,balance_end_real,monetary,,Ending Balance
+,,,,
+,,,,
+,,,,

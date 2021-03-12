@@ -1,0 +1,12 @@
+model,report.stock.lines.date,transient,False
+no,field,type,relation,string
+1,display_name,char,,Display Name
+2,product_id,many2one,product.product,Product
+3,__last_update,datetime,,Last Modified on
+4,active,boolean,,Active
+5,date,datetime,,Date of latest Inventory
+6,id,integer,,ID
+7,move_date,datetime,,Date of latest Stock Move
+,,,,
+,,,,
+,,,,

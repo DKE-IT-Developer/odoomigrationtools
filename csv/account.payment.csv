@@ -1,0 +1,38 @@
+model,account.payment,transient,False
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,communication,char,,Memo
+3,company_id,many2one,res.company,Company
+4,currency_id,many2one,res.currency,Currency
+5,invoice_ids,many2many,account.invoice,Invoices
+6,payment_difference,monetary,,Payment difference
+7,partner_id,many2one,res.partner,Partner
+8,id,integer,,ID
+9,payment_method_id,many2one,account.payment.method,Payment Method Type
+10,create_uid,many2one,res.users,Created by
+11,display_name,char,,Display Name
+12,__last_update,datetime,,Last Modified on
+13,payment_difference_handling,selection,,Payment Difference
+14,journal_id,many2one,account.journal,Payment Journal
+15,state,selection,,Status
+16,writeoff_account_id,many2one,account.account,Difference Account
+17,payment_date,date,,Payment Date
+18,move_name,char,,Journal Entry Name
+19,has_invoices,boolean,,Has invoices
+20,partner_type,selection,,Partner type
+21,move_line_ids,one2many,account.move.line,Move line ids
+22,write_date,datetime,,Last Updated on
+23,payment_transaction_id,many2one,payment.transaction,Payment Transaction
+24,payment_token_id,many2one,payment.token,Saved payment token
+25,write_uid,many2one,res.users,Last Updated by
+26,name,char,,Name
+27,hide_payment_method,boolean,,Hide payment method
+28,payment_method_code,char,,Code
+29,destination_journal_id,many2one,account.journal,Transfer To
+30,amount,monetary,,Payment Amount
+31,payment_type,selection,,Payment Type
+32,payment_reference,char,,Payment reference
+33,destination_account_id,many2one,account.account,Destination account id
+,,,,
+,,,,
+,,,,

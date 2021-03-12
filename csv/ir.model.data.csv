@@ -1,0 +1,21 @@
+model,ir.model.data,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,noupdate,boolean,,Non Updatable
+3,display_name,char,,Display Name
+4,name,char,,External Identifier
+5,reference,char,,Reference
+6,__last_update,datetime,,Last Modified on
+7,date_init,datetime,,Init Date
+8,date_update,datetime,,Update Date
+9,module,char,,Module
+10,write_uid,many2one,res.users,Last Updated by
+11,complete_name,char,,Complete ID
+12,write_date,datetime,,Last Updated on
+13,create_date,datetime,,Created on
+14,model,char,,Model Name
+15,res_id,integer,,Record ID
+16,id,integer,,ID
+,,,,
+,,,,
+,,,,

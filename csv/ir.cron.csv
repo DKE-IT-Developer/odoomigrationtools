@@ -1,0 +1,24 @@
+model,ir.cron,transient,False
+no,field,type,relation,string
+1,function,char,,Method
+2,create_uid,many2one,res.users,Created by
+3,args,text,,Arguments
+4,user_id,many2one,res.users,User
+5,name,char,,Name
+6,__last_update,datetime,,Last Modified on
+7,interval_number,integer,,Interval number
+8,interval_type,selection,,Interval Unit
+9,numbercall,integer,,Number of Calls
+10,nextcall,datetime,,Next Execution Date
+11,priority,integer,,Priority
+12,doall,boolean,,Repeat Missed
+13,write_date,datetime,,Last Updated on
+14,active,boolean,,Active
+15,create_date,datetime,,Created on
+16,model,char,,Object
+17,write_uid,many2one,res.users,Last Updated by
+18,id,integer,,ID
+19,display_name,char,,Display Name
+,,,,
+,,,,
+,,,,

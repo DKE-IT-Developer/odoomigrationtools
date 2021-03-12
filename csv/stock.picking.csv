@@ -1,0 +1,72 @@
+model,stock.picking,transient,False
+no,field,type,relation,string
+1,origin,char,,Source Document
+2,message_follower_ids,one2many,mail.followers,Followers
+3,has_scrap_move,boolean,,Has Scrap Moves
+4,date_done,datetime,,Date of Transfer
+5,message_needaction,boolean,,Action Needed
+6,message_channel_ids,many2many,mail.channel,Followers (Channels)
+7,message_partner_ids,many2many,res.partner,Followers (Partners)
+8,write_uid,many2one,res.users,Last Updated by
+9,launch_pack_operations,boolean,,Launch Pack Operations
+10,pack_operation_product_ids,one2many,stock.pack.operation,Non pack
+11,partner_id,many2one,res.partner,Partner
+12,message_ids,one2many,mail.message,Messages
+13,backorder_id,many2one,stock.picking,Back Order of
+14,purchase_id,many2one,purchase.order,Purchase Orders
+15,note,text,,Notes
+16,group_id,many2one,procurement.group,Procurement Group
+17,display_name,char,,Display Name
+18,message_is_follower,boolean,,Is Follower
+19,picking_type_id,many2one,stock.picking.type,Picking Type
+20,location_id,many2one,stock.location,Source Location Zone
+21,move_type,selection,,Delivery Type
+22,message_last_post,datetime,,Last Message Date
+23,company_id,many2one,res.company,Company
+24,id,integer,,ID
+25,priority,selection,,Priority
+26,state,selection,,Status
+27,picking_type_code,selection,,Type of Operation
+28,picking_type_entire_packs,boolean,,Allow moving packs
+29,message_unread_counter,integer,,Unread Messages Counter
+30,owner_id,many2one,res.partner,Owner
+31,move_lines,one2many,stock.move,Stock Moves
+32,name,char,,Reference
+33,create_uid,many2one,res.users,Created by
+34,min_date,datetime,,Scheduled Date
+35,printed,boolean,,Printed
+36,write_date,datetime,,Last Updated on
+37,message_unread,boolean,,Unread Messages
+38,date,datetime,,Creation Date
+39,pack_operation_ids,one2many,stock.pack.operation,Related Packing Operations
+40,pack_operation_exist,boolean,,Has Pack Operations
+41,pack_operation_pack_ids,one2many,stock.pack.operation,Pack
+42,recompute_pack_op,boolean,,Recompute pack operation?
+43,__last_update,datetime,,Last Modified on
+44,create_date,datetime,,Created on
+45,product_id,many2one,product.product,Product
+46,location_dest_id,many2one,stock.location,Destination Location Zone
+47,max_date,datetime,,Max. Expected Date
+48,quant_reserved_exist,boolean,,Has quants already reserved
+49,sale_id,many2one,sale.order,Sale Order
+50,message_needaction_counter,integer,,Number of Actions
+,,,,
+51,number_of_packages,integer,,Number of Packages
+52,carrier_id,many2one,delivery.carrier,Carrier
+53,package_ids,many2many,stock.quant.package,Packages
+54,tracking_details,one2many,stock.picking.tracking.details,Tracking Details
+55,printer_data,text,,Printer Data
+56,weight_bulk,float,,Bulk Weight
+57,delivery_type,selection,,Provider
+58,volume,float,,Volume
+59,location_source_transit_id,many2one,stock.location,Source Location Before Transit
+60,carrier_tracking_ref,char,,Tracking Reference
+61,weight,float,,Weight
+62,shipping_weight,float,,Weight for Shipping
+63,delivered,boolean,,Delivered
+64,weight_uom_id,many2one,product.uom,Unit of Measure
+65,location_dest_transit_id,many2one,stock.location,Destination Location After Transit
+66,carrier_price,float,,Shipping Cost
+67,is_transit,boolean,,Transit
+,,,,
+,,,,

@@ -1,0 +1,21 @@
+model,mail.message.subtype,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,description,text,,Description
+4,sequence,integer,,Sequence
+5,default,boolean,,Default
+6,res_model,char,,Model
+7,__last_update,datetime,,Last Modified on
+8,write_uid,many2one,res.users,Last Updated by
+9,parent_id,many2one,mail.message.subtype,Parent
+10,internal,boolean,,Internal Only
+11,write_date,datetime,,Last Updated on
+12,relation_field,char,,Relation field
+13,create_date,datetime,,Created on
+14,hidden,boolean,,Hidden
+15,id,integer,,ID
+16,name,char,,Message Type
+,,,,
+,,,,
+,,,,

@@ -1,0 +1,16 @@
+model,mrp.workcenter.productivity.loss,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Reason
+4,loss_type,selection,,Effectiveness Category
+5,__last_update,datetime,,Last Modified on
+6,sequence,integer,,Sequence
+7,manual,boolean,,Is a Blocking Reason
+8,write_uid,many2one,res.users,Last Updated by
+9,write_date,datetime,,Last Updated on
+10,create_date,datetime,,Created on
+11,id,integer,,ID
+,,,,
+,,,,
+,,,,

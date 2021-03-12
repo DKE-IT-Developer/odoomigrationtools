@@ -1,0 +1,19 @@
+model,calendar.attendee,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,__last_update,datetime,,Last Modified on
+4,access_token,char,,Invitation Token
+5,id,integer,,ID
+6,email,char,,Email
+7,event_id,many2one,calendar.event,Meeting linked
+8,state,selection,,Status
+9,write_date,datetime,,Last Updated on
+10,common_name,char,,Common name
+11,create_date,datetime,,Created on
+12,write_uid,many2one,res.users,Last Updated by
+13,partner_id,many2one,res.partner,Contact
+14,availability,selection,,Free/Busy
+,,,,
+,,,,
+,,,,

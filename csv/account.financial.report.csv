@@ -1,0 +1,28 @@
+model,account.financial.report,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,children_ids,one2many,account.financial.report,Account Report
+3,display_name,char,,Display Name
+4,name,char,,Report Name
+5,__last_update,datetime,,Last Modified on
+6,level,integer,,Level
+7,sequence,integer,,Sequence
+8,style_overwrite,selection,,Financial Report Style
+9,sign,selection,,Sign on Reports
+10,parent_id,many2one,account.financial.report,Parent
+11,account_type_ids,many2many,account.account.type,Account Types
+12,account_ids,many2many,account.account,Accounts
+13,write_date,datetime,,Last Updated on
+14,account_report_id,many2one,account.financial.report,Report Value
+15,display_detail,selection,,Display details
+16,create_date,datetime,,Created on
+17,write_uid,many2one,res.users,Last Updated by
+18,type,selection,,Type
+19,id,integer,,ID
+,,,,
+20,display_bottom_value,boolean,,Display Bottom Value
+21,account_counterpart_ids,many2many,account.account,Account Counterparts
+22,value_type,selection,,Value Type
+23,display_top_label,boolean,,Display Top Label
+,,,,
+,,,,

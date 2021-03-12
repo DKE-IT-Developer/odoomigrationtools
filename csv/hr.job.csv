@@ -1,0 +1,33 @@
+model,hr.job,transient,False
+no,field,type,relation,string
+1,message_follower_ids,one2many,mail.followers,Followers
+2,create_date,datetime,,Created on
+3,employee_ids,one2many,hr.employee,Employees
+4,message_needaction,boolean,,Action Needed
+5,message_channel_ids,many2many,mail.channel,Followers (Channels)
+6,message_partner_ids,many2many,res.partner,Followers (Partners)
+7,write_uid,many2one,res.users,Last Updated by
+8,message_ids,one2many,mail.message,Messages
+9,create_uid,many2one,res.users,Created by
+10,display_name,char,,Display Name
+11,message_is_follower,boolean,,Is Follower
+12,__last_update,datetime,,Last Modified on
+13,message_last_post,datetime,,Last Message Date
+14,company_id,many2one,res.company,Company
+15,id,integer,,ID
+16,state,selection,,Status
+17,expected_employees,integer,,Total Forecasted Employees
+18,message_unread_counter,integer,,Unread Messages Counter
+19,department_id,many2one,hr.department,Department
+20,description,text,,Job Description
+21,write_date,datetime,,Last Updated on
+22,requirements,text,,Requirements
+23,no_of_hired_employee,integer,,Hired Employees
+24,name,char,,Job Title
+25,no_of_recruitment,integer,,Expected New Employees
+26,message_unread,boolean,,Unread Messages
+27,no_of_employee,integer,,Current Number of Employees
+28,message_needaction_counter,integer,,Number of Actions
+,,,,
+,,,,
+,,,,

@@ -1,0 +1,31 @@
+model,product.category,transient,False
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,write_uid,many2one,res.users,Last Updated by
+3,product_count,integer,,# Products
+4,total_route_ids,many2many,stock.location.route,Total routes
+5,child_id,one2many,product.category,Child Categories
+6,property_stock_valuation_account_id,many2one,account.account,Stock Valuation Account
+7,id,integer,,ID
+8,removal_strategy_id,many2one,product.removal,Force Removal Strategy
+9,create_uid,many2one,res.users,Created by
+10,property_account_creditor_price_difference_categ,many2one,account.account,Price Difference Account
+11,display_name,char,,Display Name
+12,parent_id,many2one,product.category,Parent Category
+13,property_valuation,selection,,Inventory Valuation
+14,property_stock_account_output_categ_id,many2one,account.account,Stock Output Account
+15,property_account_income_categ_id,many2one,account.account,Income Account
+16,property_cost_method,selection,,Costing Method
+17,type,selection,,Category Type
+18,property_stock_account_input_categ_id,many2one,account.account,Stock Input Account
+19,property_stock_journal,many2one,account.journal,Stock Journal
+20,property_account_expense_categ_id,many2one,account.account,Expense Account
+21,route_ids,many2many,stock.location.route,Routes
+22,write_date,datetime,,Last Updated on
+23,parent_right,integer,,Right Parent
+24,name,char,,Name
+25,__last_update,datetime,,Last Modified on
+26,parent_left,integer,,Left Parent
+,,,,
+,,,,
+,,,,

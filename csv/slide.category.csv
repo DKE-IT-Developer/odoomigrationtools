@@ -1,0 +1,21 @@
+model,slide.category,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,nbr_presentations,integer,,Number of Presentations
+3,total,integer,,Total
+4,display_name,char,,Display Name
+5,name,char,,Name
+6,nbr_videos,integer,,Number of Videos
+7,slide_ids,one2many,slide.slide,Slides
+8,__last_update,datetime,,Last Modified on
+9,sequence,integer,,Sequence
+10,write_uid,many2one,res.users,Last Updated by
+11,channel_id,many2one,slide.channel,Channel
+12,nbr_infographics,integer,,Number of Infographics
+13,nbr_documents,integer,,Number of Documents
+14,create_date,datetime,,Created on
+15,write_date,datetime,,Last Updated on
+16,id,integer,,ID
+,,,,
+,,,,
+,,,,

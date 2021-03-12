@@ -1,0 +1,32 @@
+model,base.action.rule,transient,False
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,filter_pre_id,many2one,ir.filters,Before Update Filter
+3,sequence,integer,,Sequence
+4,server_action_ids,many2many,ir.actions.server,Server Actions
+5,write_uid,many2one,res.users,Last Updated by
+6,trg_date_range_type,selection,,Delay type
+7,trg_date_range,integer,,Delay after trigger date
+8,id,integer,,ID
+9,create_uid,many2one,res.users,Created by
+10,filter_pre_domain,char,,Before Update Domain
+11,display_name,char,,Display Name
+12,__last_update,datetime,,Last Modified on
+13,on_change_fields,char,,On Change Fields Trigger
+14,filter_id,many2one,ir.filters,Filter
+15,model_id,many2one,ir.model,Related Document Model
+16,trg_date_resource_field_id,many2one,ir.model.fields,Use employee work schedule
+17,trg_date_id,many2one,ir.model.fields,Trigger Date
+18,write_date,datetime,,Last Updated on
+19,active,boolean,,Active
+20,act_followers,many2many,res.partner,Add Followers
+21,kind,selection,,When to Run
+22,filter_domain,char,,Domain
+23,name,char,,Rule Name
+24,act_user_id,many2one,res.users,Set Responsible
+25,last_run,datetime,,Last run
+26,trg_date_calendar_id,many2one,resource.calendar,Use Calendar
+27,model,char,,Model
+,,,,
+,,,,
+,,,,

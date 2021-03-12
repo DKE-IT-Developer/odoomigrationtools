@@ -1,0 +1,55 @@
+model,ir.actions.server,transient,False
+no,field,type,relation,string
+1,code,text,,Python Code
+2,create_date,datetime,,Created on
+3,help,html,,Action Description
+4,sequence,integer,,Sequence
+5,crud_model_id,many2one,ir.model,Create/Write Target Model
+6,ref_object,reference,,Reference record
+7,write_uid,many2one,res.users,Last Updated by
+8,xml_id,char,,External ID
+9,partner_to,char,,To (Partners)
+10,id_object,reference,,Record
+11,crud_model_name,char,,Create/Write Target Model Name
+12,id,integer,,ID
+13,subject,char,,Subject
+14,create_uid,many2one,res.users,Created by
+15,display_name,char,,Display Name
+16,__last_update,datetime,,Last Modified on
+17,use_create,selection,,Creation Policy
+18,wkf_field_id,many2one,ir.model.fields,Relation Field
+19,wkf_model_id,many2one,ir.model,Target Model
+20,state,selection,,Action To Do
+21,id_value,char,,Record ID
+22,usage,char,,Action Usage
+23,model_name,char,,Model
+24,type,char,,Action Type
+25,website_published,boolean,,Available on the Website
+26,website_url,char,,Website Url
+27,action_id,many2one,ir.actions.actions,Client Action
+28,model_id,many2one,ir.model,Base Model
+29,sub_model_object_field,many2one,ir.model.fields,Sub-field
+30,use_relational_model,selection,,Relational Target Model
+31,child_ids,many2many,ir.actions.server,Child Actions
+32,body_html,html,,Body
+33,link_new_record,boolean,,Attach the new record
+34,wkf_transition_id,many2one,workflow.transition,Signal to Trigger
+35,email_to,char,,To (Emails)
+36,sub_object,many2one,ir.model,Sub-model
+37,use_write,selection,,Update Policy
+38,condition,char,,Condition
+39,copyvalue,char,,Placeholder Expression
+40,fields_lines,one2many,ir.server.object.lines,Value Mapping
+41,name,char,,Action Name
+42,write_expression,char,,Expression
+43,wkf_model_name,char,,Target Model Name
+44,menu_ir_values_id,many2one,ir.values,More Menu entry
+45,model_object_field,many2one,ir.model.fields,Field
+46,email_from,char,,From
+47,link_field_id,many2one,ir.model.fields,Link using field
+48,write_date,datetime,,Last Updated on
+49,website_path,char,,Website Path
+50,template_id,many2one,mail.template,Email Template
+,,,,
+,,,,
+,,,,

@@ -1,0 +1,21 @@
+model,hr.expense.register.payment.wizard,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,hide_payment_method,boolean,,Hide payment method
+4,__last_update,datetime,,Last Modified on
+5,communication,char,,Memo
+6,company_id,many2one,res.company,Company
+7,journal_id,many2one,account.journal,Payment Method
+8,currency_id,many2one,res.currency,Currency
+9,amount,monetary,,Payment Amount
+10,write_date,datetime,,Last Updated on
+11,id,integer,,ID
+12,create_date,datetime,,Created on
+13,write_uid,many2one,res.users,Last Updated by
+14,partner_id,many2one,res.partner,Partner
+15,payment_date,date,,Payment Date
+16,payment_method_id,many2one,account.payment.method,Payment Type
+,,,,
+,,,,
+,,,,

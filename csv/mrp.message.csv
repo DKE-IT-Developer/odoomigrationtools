@@ -1,0 +1,20 @@
+model,mrp.message,transient,False
+no,field,type,relation,string
+1,valid_until,date,,Validity Date
+2,create_uid,many2one,res.users,Created by
+3,display_name,char,,Display Name
+4,name,text,,Name
+5,__last_update,datetime,,Last Modified on
+6,write_uid,many2one,res.users,Last Updated by
+7,product_tmpl_id,many2one,product.template,Product Template
+8,bom_id,many2one,mrp.bom,Bill of Material
+9,write_date,datetime,,Last Updated on
+10,workcenter_id,many2one,mrp.workcenter,Work Center
+11,routing_id,many2one,mrp.routing,Routing
+12,create_date,datetime,,Created on
+13,message,html,,Message
+14,id,integer,,ID
+15,product_id,many2one,product.product,Product
+,,,,
+,,,,
+,,,,

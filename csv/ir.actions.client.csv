@@ -1,0 +1,23 @@
+model,ir.actions.client,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,xml_id,char,,External ID
+3,display_name,char,,Display Name
+4,help,html,,Action Description
+5,name,char,,Action Name
+6,__last_update,datetime,,Last Modified on
+7,res_model,char,,Destination Model
+8,write_uid,many2one,res.users,Last Updated by
+9,params_store,binary,,Params storage
+10,tag,char,,Client action tag
+11,params,binary,,Supplementary arguments
+12,context,char,,Context Value
+13,usage,char,,Action Usage
+14,create_date,datetime,,Created on
+15,write_date,datetime,,Last Updated on
+16,type,char,,Action Type
+17,id,integer,,ID
+18,target,selection,,Target Window
+,,,,
+,,,,
+,,,,

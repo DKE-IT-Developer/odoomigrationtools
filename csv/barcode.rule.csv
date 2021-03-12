@@ -1,0 +1,19 @@
+model,barcode.rule,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Rule Name
+4,sequence,integer,,Sequence
+5,pattern,char,,Barcode Pattern
+6,__last_update,datetime,,Last Modified on
+7,write_uid,many2one,res.users,Last Updated by
+8,encoding,selection,,Encoding
+9,alias,char,,Alias
+10,write_date,datetime,,Last Updated on
+11,barcode_nomenclature_id,many2one,barcode.nomenclature,Barcode Nomenclature
+12,create_date,datetime,,Created on
+13,type,selection,,Type
+14,id,integer,,ID
+,,,,
+,,,,
+,,,,

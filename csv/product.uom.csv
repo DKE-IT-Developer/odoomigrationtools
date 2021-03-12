@@ -1,0 +1,19 @@
+model,product.uom,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Unit of Measure
+4,__last_update,datetime,,Last Modified on
+5,rounding,float,,Rounding Precision
+6,factor_inv,float,,Bigger Ratio
+7,write_uid,many2one,res.users,Last Updated by
+8,active,boolean,,Active
+9,write_date,datetime,,Last Updated on
+10,factor,float,,Ratio
+11,uom_type,selection,,Type
+12,create_date,datetime,,Created on
+13,category_id,many2one,product.uom.categ,Category
+14,id,integer,,ID
+,,,,
+,,,,
+,,,,

@@ -1,0 +1,18 @@
+model,sale.advance.payment.inv,transient,True
+no,field,type,relation,string
+1,count,integer,,# of Orders
+2,create_uid,many2one,res.users,Created by
+3,display_name,char,,Display Name
+4,product_id,many2one,product.product,Down Payment Product
+5,__last_update,datetime,,Last Modified on
+6,deposit_taxes_id,many2many,account.tax,Customer Taxes
+7,advance_payment_method,selection,,What do you want to invoice?
+8,write_uid,many2one,res.users,Last Updated by
+9,amount,float,,Down Payment Amount
+10,write_date,datetime,,Last Updated on
+11,deposit_account_id,many2one,account.account,Income Account
+12,create_date,datetime,,Created on
+13,id,integer,,ID
+,,,,
+,,,,
+,,,,

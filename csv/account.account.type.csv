@@ -1,0 +1,16 @@
+model,account.account.type,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Account Type
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,note,text,,Description
+7,write_date,datetime,,Last Updated on
+8,create_date,datetime,,Created on
+9,include_initial_balance,boolean,,Bring Accounts Balance Forward
+10,type,selection,,Type
+11,id,integer,,ID
+,,,,
+,,,,
+,,,,

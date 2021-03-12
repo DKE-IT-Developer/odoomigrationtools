@@ -1,0 +1,25 @@
+model,stock.location.path,transient,False
+no,field,type,relation,string
+1,location_from_id,many2one,stock.location,Source Location
+2,create_uid,many2one,res.users,Created by
+3,route_sequence,integer,,Route Sequence
+4,display_name,char,,Display Name
+5,name,char,,Operation Name
+6,__last_update,datetime,,Last Modified on
+7,auto,selection,,Automatic Move
+8,picking_type_id,many2one,stock.picking.type,Picking Type
+9,sequence,integer,,Sequence
+10,company_id,many2one,res.company,Company
+11,warehouse_id,many2one,stock.warehouse,Warehouse
+12,delay,integer,,Delay (days)
+13,route_id,many2one,stock.location.route,Route
+14,location_dest_id,many2one,stock.location,Destination Location
+15,write_date,datetime,,Last Updated on
+16,active,boolean,,Active
+17,create_date,datetime,,Created on
+18,write_uid,many2one,res.users,Last Updated by
+19,propagate,boolean,,Propagate cancel and split
+20,id,integer,,ID
+,,,,
+,,,,
+,,,,

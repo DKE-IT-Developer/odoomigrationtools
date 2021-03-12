@@ -1,0 +1,36 @@
+model,account.chart.template,transient,False
+no,field,type,relation,string
+1,bank_account_code_prefix,char,,Prefix of the bank accounts
+2,cash_account_code_prefix,char,,Prefix of the main cash accounts
+3,create_date,datetime,,Created on
+4,write_uid,many2one,res.users,Last Updated by
+5,currency_id,many2one,res.currency,Currency
+6,visible,boolean,,Can be Visible?
+7,property_account_receivable_id,many2one,account.account.template,Receivable Account
+8,property_stock_valuation_account_id,many2one,account.account.template,Account Template for Stock Valuation
+9,id,integer,,ID
+10,create_uid,many2one,res.users,Created by
+11,complete_tax_set,boolean,,Complete Set of Taxes
+12,display_name,char,,Display Name
+13,__last_update,datetime,,Last Modified on
+14,transfer_account_id,many2one,account.account.template,Transfer Account
+15,company_id,many2one,res.company,Company
+16,expense_currency_exchange_account_id,many2one,account.account.template,Loss Exchange Rate Account
+17,property_stock_account_output_categ_id,many2one,account.account.template,Output Account for Stock Valuation
+18,tax_template_ids,one2many,account.tax.template,Tax Template List
+19,parent_id,many2one,account.chart.template,Parent Chart Template
+20,property_account_income_categ_id,many2one,account.account.template,Category of Income Account
+21,property_stock_account_input_categ_id,many2one,account.account.template,Input Account for Stock Valuation
+22,property_account_income_id,many2one,account.account.template,Income Account on Product Template
+23,property_account_expense_categ_id,many2one,account.account.template,Category of Expense Account
+24,account_ids,one2many,account.account.template,Associated Account Templates
+25,write_date,datetime,,Last Updated on
+26,use_anglo_saxon,boolean,,Use Anglo-Saxon accounting
+27,code_digits,integer,,# of Digits
+28,name,char,,Name
+29,property_account_expense_id,many2one,account.account.template,Expense Account on Product Template
+30,property_account_payable_id,many2one,account.account.template,Payable Account
+31,income_currency_exchange_account_id,many2one,account.account.template,Gain Exchange Rate Account
+,,,,
+,,,,
+,,,,

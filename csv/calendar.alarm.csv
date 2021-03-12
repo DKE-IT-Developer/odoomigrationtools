@@ -1,0 +1,17 @@
+model,calendar.alarm,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Name
+4,__last_update,datetime,,Last Modified on
+5,interval,selection,,Unit
+6,write_uid,many2one,res.users,Last Updated by
+7,duration_minutes,integer,,Duration in minutes
+8,write_date,datetime,,Last Updated on
+9,duration,integer,,Amount
+10,create_date,datetime,,Created on
+11,type,selection,,Type
+12,id,integer,,ID
+,,,,
+,,,,
+,,,,

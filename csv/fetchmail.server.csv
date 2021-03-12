@@ -1,0 +1,30 @@
+model,fetchmail.server,transient,False
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,write_uid,many2one,res.users,Last Updated by
+3,active,boolean,,Active
+4,port,integer,,Port
+5,create_uid,many2one,res.users,Created by
+6,configuration,text,,Configuration
+7,display_name,char,,Display Name
+8,script,char,,Script
+9,object_id,many2one,ir.model,Create a New Record
+10,id,integer,,ID
+11,priority,integer,,Server Priority
+12,attach,boolean,,Keep Attachments
+13,state,selection,,Status
+14,type,selection,,Server Type
+15,action_id,many2one,ir.actions.server,Server Action
+16,user,char,,Username
+17,write_date,datetime,,Last Updated on
+18,date,datetime,,Last Fetch Date
+19,password,char,,Password
+20,name,char,,Name
+21,is_ssl,boolean,,SSL/TLS
+22,__last_update,datetime,,Last Modified on
+23,server,char,,Server Name
+24,message_ids,one2many,mail.mail,Messages
+25,original,boolean,,Keep Original
+,,,,
+,,,,
+,,,,

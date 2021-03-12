@@ -1,0 +1,44 @@
+model,payment.acquirer,transient,False
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,done_msg,html,,Done Message
+3,fees_implemented,boolean,,Fees Computation Supported
+4,fees_active,boolean,,Add Extra Fees
+5,image,binary,,Image
+6,token_implemented,boolean,,Saving Card Data supported
+7,company_id,many2one,res.company,Company
+8,cancel_msg,html,,Cancel Message
+9,registration_view_template_id,many2one,ir.ui.view,S2S Form Template
+10,module_id,many2one,ir.module.module,Corresponding Module
+11,fees_dom_fixed,float,,Fixed domestic fees
+12,fees_int_fixed,float,,Fixed international fees
+13,id,integer,,ID
+14,create_uid,many2one,res.users,Created by
+15,display_name,char,,Display Name
+16,__last_update,datetime,,Last Modified on
+17,save_token,selection,,Store Card Data
+18,journal_id,many2one,account.journal,Payment Journal
+19,module_state,selection,,Installation State
+20,environment,selection,,Environment
+21,provider,selection,,Provider
+22,website_published,boolean,,Visible in Portal / Website
+23,website_url,char,,Website URL
+24,auto_confirm,selection,,Order Confirmation
+25,description,html,,Description
+26,pending_msg,html,,Pending Message
+27,post_msg,html,,Thanks Message
+28,fees_int_var,float,,Variable international fees (in percents)
+29,write_date,datetime,,Last Updated on
+30,pre_msg,html,,Help Message
+31,write_uid,many2one,res.users,Last Updated by
+32,error_msg,html,,Error Message
+33,image_medium,binary,,Medium-sized image
+34,fees_dom_var,float,,Variable domestic fees (in percents)
+35,name,char,,Name
+36,image_small,binary,,Small-sized image
+37,view_template_id,many2one,ir.ui.view,Form Button Template
+38,sequence,integer,,Sequence
+,,,,
+39,payment_channel,boolean,,Payment Channel
+,,,,
+,,,,

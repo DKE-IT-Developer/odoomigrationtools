@@ -1,0 +1,12 @@
+model,workflow.triggers,transient,False
+no,field,type,relation,string
+1,display_name,char,,Display Name
+2,__last_update,datetime,,Last Modified on
+3,instance_id,many2one,workflow.instance,Destination Instance
+4,workitem_id,many2one,workflow.workitem,Workitem
+5,model,char,,Object
+6,res_id,integer,,Resource ID
+7,id,integer,,ID
+,,,,
+,,,,
+,,,,

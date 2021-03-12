@@ -1,0 +1,16 @@
+model,procurement.group,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,procurement_ids,one2many,procurement.order,Procurements
+3,display_name,char,,Display Name
+4,name,char,,Reference
+5,__last_update,datetime,,Last Modified on
+6,move_type,selection,,Delivery Type
+7,write_uid,many2one,res.users,Last Updated by
+8,write_date,datetime,,Last Updated on
+9,create_date,datetime,,Created on
+10,partner_id,many2one,res.partner,Partner
+11,id,integer,,ID
+,,,,
+,,,,
+,,,,

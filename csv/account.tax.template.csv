@@ -1,0 +1,30 @@
+model,account.tax.template,transient,False
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,sequence,integer,,Sequence
+3,children_tax_ids,many2many,account.tax.template,Children Taxes
+4,write_uid,many2one,res.users,Last Updated by
+5,include_base_amount,boolean,,Affect Subsequent Taxes
+6,id,integer,,ID
+7,account_id,many2one,account.account.template,Tax Account
+8,create_uid,many2one,res.users,Created by
+9,display_name,char,,Display Name
+10,__last_update,datetime,,Last Modified on
+11,tag_ids,many2many,account.account.tag,Account tag
+12,company_id,many2one,res.company,Company
+13,analytic,boolean,,Analytic Cost
+14,description,char,,Display on Invoices
+15,tax_adjustment,boolean,,Tax adjustment
+16,type_tax_use,selection,,Tax Scope
+17,refund_account_id,many2one,account.account.template,Tax Account on Refunds
+18,write_date,datetime,,Last Updated on
+19,active,boolean,,Active
+20,amount_type,selection,,Tax Computation
+21,name,char,,Tax Name
+22,tax_group_id,many2one,account.tax.group,Tax Group
+23,chart_template_id,many2one,account.chart.template,Chart Template
+24,amount,float,,Amount
+25,price_include,boolean,,Included in Price
+,,,,
+,,,,
+,,,,

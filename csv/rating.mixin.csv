@@ -1,0 +1,11 @@
+model,rating.mixin,transient,False
+no,field,type,relation,string
+1,display_name,char,,Display Name
+2,__last_update,datetime,,Last Modified on
+3,rating_count,integer,,Rating count
+4,rating_last_value,float,,Rating Last Value
+5,rating_ids,one2many,rating.rating,Rating
+6,id,integer,,ID
+,,,,
+,,,,
+,,,,

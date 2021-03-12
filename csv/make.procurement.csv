@@ -1,0 +1,21 @@
+model,make.procurement,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,product_id,many2one,product.product,Product
+4,route_ids,many2many,stock.location.route,Preferred Routes
+5,date_planned,date,,Planned Date
+6,write_uid,many2one,res.users,Last Updated by
+7,res_model,char,,Res Model
+8,__last_update,datetime,,Last Modified on
+9,qty,float,,Quantity
+10,product_tmpl_id,many2one,product.template,Template
+11,uom_id,many2one,product.uom,Unit of Measure
+12,write_date,datetime,,Last Updated on
+13,create_date,datetime,,Created on
+14,warehouse_id,many2one,stock.warehouse,Warehouse
+15,id,integer,,ID
+16,product_variant_count,integer,,Variant Number
+,,,,
+,,,,
+,,,,

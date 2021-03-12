@@ -1,0 +1,26 @@
+model,stock.quant.package,transient,False
+no,field,type,relation,string
+1,ancestor_ids,one2many,stock.quant.package,Ancestors
+2,create_uid,many2one,res.users,Created by
+3,children_ids,one2many,stock.quant.package,Contained Packages
+4,parent_right,integer,,Right Parent
+5,display_name,char,,Display Name
+6,name,char,,Package Reference
+7,__last_update,datetime,,Last Modified on
+8,children_quant_ids,one2many,stock.quant,All Bulk Content
+9,company_id,many2one,res.company,Company
+10,write_uid,many2one,res.users,Last Updated by
+11,parent_id,many2one,stock.quant.package,Parent Package
+12,parent_left,integer,,Left Parent
+13,quant_ids,one2many,stock.quant,Bulk Content
+14,write_date,datetime,,Last Updated on
+15,packaging_id,many2one,product.packaging,Package Type
+16,create_date,datetime,,Created on
+17,location_id,many2one,stock.location,Location
+18,id,integer,,ID
+19,owner_id,many2one,res.partner,Owner
+,,,,
+20,weight,float,,Weight
+21,shipping_weight,float,,Shipping Weight
+,,,,
+,,,,

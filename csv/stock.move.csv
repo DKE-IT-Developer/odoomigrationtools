@@ -1,0 +1,82 @@
+model,stock.move,transient,False
+no,field,type,relation,string
+1,origin,char,,Source Document
+2,create_date,datetime,,Creation Date
+3,move_dest_id,many2one,stock.move,Destination Move
+4,product_uom,many2one,product.uom,Unit of Measure
+5,move_orig_ids,one2many,stock.move,Original Move
+6,has_tracking,selection,,Product with Tracking
+7,price_unit,float,,Unit Price
+8,product_uom_qty,float,,Quantity
+9,company_id,many2one,res.company,Company
+10,date,datetime,,Date
+11,workorder_id,many2one,mrp.workorder,Work Order To Consume
+12,product_qty,float,,Real Quantity
+13,unit_factor,float,,Unit Factor
+14,partner_id,many2one,res.partner,Destination Address 
+15,availability,float,,Forecasted Quantity
+16,active_move_lot_ids,one2many,stock.move.lots,Lots
+17,remaining_qty,float,,Remaining Quantity
+18,note,text,,Notes
+19,picking_id,many2one,stock.picking,Transfer Reference
+20,display_name,char,,Display Name
+21,consume_unbuild_id,many2one,mrp.unbuild,Consume Unbuild Order
+22,picking_type_id,many2one,stock.picking.type,Picking Type
+23,location_id,many2one,stock.location,Source Location
+24,sequence,integer,,Sequence
+25,is_done,boolean,,Done
+26,linked_move_operation_ids,one2many,stock.move.operation.link,Linked Operations
+27,id,integer,,ID
+28,priority,selection,,Priority
+29,to_refund_so,boolean,,To Refund in SO
+30,state,selection,,Status
+31,quant_ids,many2many,stock.quant,Moved Quants
+32,ordered_qty,float,,Ordered Quantity
+33,origin_returned_move_id,many2one,stock.move,Origin return move
+34,product_packaging,many2one,product.packaging,Preferred Packaging
+35,bom_line_id,many2one,mrp.bom.line,BoM Line
+36,product_tmpl_id,many2one,product.template,Product Template
+37,quantity_available,float,,Quantity Available
+38,returned_move_ids,one2many,stock.move,All returned moves
+39,date_expected,datetime,,Expected Date
+40,procurement_id,many2one,procurement.order,Procurement
+41,backorder_id,many2one,stock.picking,Back Order of
+42,create_uid,many2one,res.users,Created by
+43,raw_material_production_id,many2one,mrp.production,Production Order for raw materials
+44,quantity_done,float,,Quantity
+45,warehouse_id,many2one,stock.warehouse,Warehouse
+46,inventory_id,many2one,stock.inventory,Inventory
+47,partially_available,boolean,,Partially Available
+48,propagate,boolean,,Propagate cancel and split
+49,split_from,many2one,stock.move,Move Split From
+50,restrict_partner_id,many2one,res.partner,Owner 
+51,procure_method,selection,,Supply Method
+52,scrapped,boolean,,Scrapped
+53,write_uid,many2one,res.users,Last Updated by
+54,purchase_line_id,many2one,purchase.order.line,Purchase Order Line
+55,restrict_lot_id,many2one,stock.production.lot,Lot/Serial Number
+56,group_id,many2one,procurement.group,Procurement Group
+57,name,char,,Description
+58,route_ids,many2many,stock.location.route,Destination route
+59,lot_ids,many2many,stock.production.lot,Lots/Serial Numbers
+60,__last_update,datetime,,Last Modified on
+61,move_lot_ids,one2many,stock.move.lots,Lots
+62,picking_partner_id,many2one,res.partner,Transfer Destination Address
+63,quantity_done_store,float,,Quantity done store
+64,string_availability_info,text,,Availability
+65,reserved_availability,float,,Quantity Reserved
+66,location_dest_id,many2one,stock.location,Destination Location
+67,production_id,many2one,mrp.production,Production Order for finished products
+68,write_date,datetime,,Last Updated on
+69,operation_id,many2one,mrp.routing.workcenter,Operation To Consume
+70,push_rule_id,many2one,stock.location.path,Push Rule
+71,product_id,many2one,product.product,Product
+72,rule_id,many2one,procurement.rule,Procurement Rule
+73,reserved_quant_ids,one2many,stock.quant,Reserved quants
+74,unbuild_id,many2one,mrp.unbuild,Unbuild Order
+,,,,
+75,weight,float,,Weight
+76,qty_final,float,,Stock Final
+77,weight_uom_id,many2one,product.uom,Weight Unit of Measure
+,,,,
+,,,,

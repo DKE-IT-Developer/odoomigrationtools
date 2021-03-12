@@ -1,0 +1,61 @@
+model,mrp.production,transient,False
+no,field,type,relation,string
+1,origin,char,,Source
+2,message_follower_ids,one2many,mail.followers,Followers
+3,create_date,datetime,,Created on
+4,message_needaction,boolean,,Action Needed
+5,message_channel_ids,many2many,mail.channel,Followers (Channels)
+6,message_partner_ids,many2many,res.partner,Followers (Partners)
+7,availability,selection,,Availability
+8,write_uid,many2one,res.users,Last Updated by
+9,scrap_ids,one2many,stock.scrap,Scraps
+10,sale_ref,char,,Sale Reference
+11,product_qty,float,,Quantity To Produce
+12,message_ids,one2many,mail.message,Messages
+13,priority,selection,,Priority
+14,procurement_group_id,many2one,procurement.group,Procurement Group
+15,sale_name,char,,Sale Name
+16,location_src_id,many2one,stock.location,Raw Materials Location
+17,message_is_follower,boolean,,Is Follower
+18,picking_type_id,many2one,stock.picking.type,Picking Type
+19,date_start,datetime,,Start Date
+20,message_last_post,datetime,,Last Message Date
+21,company_id,many2one,res.company,Company
+22,has_moves,boolean,,Has moves
+23,id,integer,,ID
+24,product_tmpl_id,many2one,product.template,Product Template
+25,state,selection,,State
+26,bom_id,many2one,mrp.bom,Bill of Material
+27,message_unread_counter,integer,,Unread Messages Counter
+28,workorder_done_count,integer,,# Done Work Orders
+29,user_id,many2one,res.users,Responsible
+30,create_uid,many2one,res.users,Created by
+31,date_finished,datetime,,End Date
+32,qty_produced,float,,Quantity Produced
+33,procurement_ids,one2many,procurement.order,Related Procurements
+34,routing_id,many2one,mrp.routing,Routing
+35,move_finished_ids,one2many,stock.move,Finished Products
+36,propagate,boolean,,Propagate cancel and split
+37,write_date,datetime,,Last Updated on
+38,display_name,char,,Display Name
+39,scrap_count,integer,,Scrap Move
+40,name,char,,Reference
+41,unreserve_visible,boolean,,Inventory Unreserve Visible
+42,check_to_done,boolean,,Check Produced Qty
+43,workorder_ids,one2many,mrp.workorder,Work Orders
+44,date_planned_start,datetime,,Deadline Start
+45,product_id,many2one,product.product,Product
+46,move_raw_ids,one2many,stock.move,Raw Materials
+47,product_uom_id,many2one,product.uom,Product Unit of Measure
+48,workorder_count,integer,,# Work Orders
+49,__last_update,datetime,,Last Modified on
+50,post_visible,boolean,,Inventory Post Visible
+51,date_planned_finished,datetime,,Deadline End
+52,location_dest_id,many2one,stock.location,Finished Products Location
+53,message_unread,boolean,,Unread Messages
+54,message_needaction_counter,integer,,Number of Actions
+,,,,
+55,company_currency_id,many2one,res.currency,Company Currency
+56,unit_cost,float,,Unit Cost
+,,,,
+,,,,

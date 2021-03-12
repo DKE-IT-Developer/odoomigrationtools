@@ -1,0 +1,11 @@
+model,website.seo.metadata,transient,False
+no,field,type,relation,string
+1,display_name,char,,Display Name
+2,__last_update,datetime,,Last Modified on
+3,website_meta_description,text,,Website meta description
+4,website_meta_title,char,,Website meta title
+5,website_meta_keywords,char,,Website meta keywords
+6,id,integer,,ID
+,,,,
+,,,,
+,,,,

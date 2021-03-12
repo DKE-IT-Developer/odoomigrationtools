@@ -1,0 +1,39 @@
+model,ir.module.module,transient,False
+no,field,type,relation,string
+1,menus_by_module,text,,Menus
+2,maintainer,char,,Maintainer
+3,contributors,text,,Contributors
+4,sequence,integer,,Sequence
+5,demo,boolean,,Demo Data
+6,write_uid,many2one,res.users,Last Updated by
+7,views_by_module,text,,Views
+8,create_date,datetime,,Created on
+9,id,integer,,ID
+10,create_uid,many2one,res.users,Created by
+11,display_name,char,,Display Name
+12,description_html,html,,Description HTML
+13,author,char,,Author
+14,published_version,char,,Published Version
+15,installed_version,char,,Latest Version
+16,icon_image,binary,,Icon
+17,application,boolean,,Application
+18,state,selection,,Status
+19,website,char,,Website
+20,description,text,,Description
+21,auto_install,boolean,,Automatic Installation
+22,write_date,datetime,,Last Updated on
+23,icon,char,,Icon URL
+24,reports_by_module,text,,Reports
+25,name,char,,Technical Name
+26,license,selection,,License
+27,url,char,,URL
+28,__last_update,datetime,,Last Modified on
+29,latest_version,char,,Installed Version
+30,summary,char,,Summary
+31,dependencies_id,one2many,ir.module.module.dependency,Dependencies
+32,shortdesc,char,,Module Name
+33,image_ids,one2many,ir.attachment,Screenshots
+34,category_id,many2one,ir.module.category,Category
+,,,,
+,,,,
+,,,,

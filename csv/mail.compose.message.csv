@@ -1,0 +1,59 @@
+model,mail.compose.message,transient,True
+no,field,type,relation,string
+1,auto_delete_message,boolean,,Delete Message Copy
+2,create_date,datetime,,Created on
+3,no_auto_thread,boolean,,No threading for answers
+4,auto_delete,boolean,,Delete Emails
+5,mail_server_id,many2one,ir.mail_server,Outgoing mail server
+6,notification_ids,one2many,mail.notification,Notifications
+7,write_uid,many2one,res.users,Last Updated by
+8,notify,boolean,,Notify followers
+9,email_from,char,,From
+10,needaction,boolean,,Need Action
+11,active_domain,text,,Active domain
+12,id,integer,,ID
+13,subject,char,,Subject
+14,composition_mode,selection,,Composition mode
+15,create_uid,many2one,res.users,Created by
+16,display_name,char,,Display Name
+17,attachment_ids,many2many,ir.attachment,Attachments
+18,__last_update,datetime,,Last Modified on
+19,is_log,boolean,,Log an Internal Note
+20,parent_id,many2one,mail.message,Parent Message
+21,subtype_id,many2one,mail.message.subtype,Subtype
+22,partner_ids,many2many,res.partner,Additional Contacts
+23,res_id,integer,,Related Document ID
+24,message_id,char,,Message-Id
+25,body,html,,Contents
+26,model,char,,Related Document Model
+27,record_name,char,,Message Record Name
+28,description,char,,Description
+29,channel_ids,many2many,mail.channel,Channels
+30,child_ids,one2many,mail.message,Child Messages
+31,write_date,datetime,,Last Updated on
+32,date,datetime,,Date
+33,path,char,,Discussion Path
+34,author_id,many2one,res.partner,Author
+35,use_active_domain,boolean,,Use active domain
+36,needaction_partner_ids,many2many,res.partner,Partners with Need Action
+37,starred_partner_ids,many2many,res.partner,Favorited By
+38,website_published,boolean,,Published
+39,author_avatar,binary,,Author's avatar
+40,reply_to,char,,Reply-To
+41,starred,boolean,,Starred
+42,message_type,selection,,Type
+43,template_id,many2one,mail.template,Use template
+,,,,
+44,reference,char,,Reference
+45,broadcast_image,binary,,Image
+46,broadcast,boolean,,Broadcast
+47,notification_type,selection,,Type
+48,partner_id,many2one,res.partner,Recipient
+49,dke_type,selection,,Message Type
+50,user_id,many2one,res.users,Recipient User
+51,name,char,,Identifier
+52,error_message,char,,Error Message
+53,notification_state,selection,,State
+54,notification_subtype_id,many2one,notification.subtype,Notification Subtype
+,,,,
+,,,,

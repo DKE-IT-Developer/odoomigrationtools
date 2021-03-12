@@ -1,0 +1,59 @@
+model,sale.order.line,transient,False
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,qty_to_invoice,float,,To Invoice
+3,analytic_tag_ids,many2many,account.analytic.tag,Analytic Tags
+4,price_unit,float,,Unit Price
+5,product_uom_qty,float,,Quantity
+6,price_subtotal,monetary,,Subtotal
+7,write_uid,many2one,res.users,Last Updated by
+8,currency_id,many2one,res.currency,Currency
+9,id,integer,,ID
+10,price_reduce_taxexcl,monetary,,Price Reduce Tax excl
+11,create_uid,many2one,res.users,Created by
+12,procurement_ids,one2many,procurement.order,Procurements
+13,price_tax,monetary,,Taxes
+14,product_uom,many2one,product.uom,Unit of Measure
+15,qty_delivered_updateable,boolean,,Can Edit Delivered
+16,customer_lead,float,,Delivery Lead Time
+17,layout_category_sequence,integer,,Layout Sequence
+18,company_id,many2one,res.company,Company
+19,product_tmpl_id,many2one,product.template,Product Template
+20,state,selection,,Order Status
+21,order_partner_id,many2one,res.partner,Customer
+22,product_packaging,many2one,product.packaging,Packaging
+23,order_id,many2one,sale.order,Order Reference
+24,qty_invoiced,float,,Invoiced
+25,sequence,integer,,Sequence
+26,discount,float,,Discount (%)
+27,write_date,datetime,,Last Updated on
+28,price_reduce,monetary,,Price Reduce
+29,display_name,char,,Display Name
+30,qty_delivered,float,,Delivered
+31,layout_category_id,many2one,sale.layout_category,Section
+32,tax_id,many2many,account.tax,Taxes
+33,price_reduce_taxinc,monetary,,Price Reduce Tax inc
+34,price_total,monetary,,Total
+35,invoice_status,selection,,Invoice Status
+36,name,text,,Description
+37,invoice_lines,many2many,account.invoice.line,Invoice Lines
+38,__last_update,datetime,,Last Modified on
+39,salesman_id,many2one,res.users,Salesperson
+40,route_id,many2one,stock.location.route,Route
+41,product_id,many2one,product.product,Product
+,,,,
+42,percentage_margin,float,,Percentage Margin
+43,amount_margin,float,,Product Margin
+44,qty_returned,float,,Returned
+45,product_standard_price,float,,Product Cost
+46,ongkir_city_id,many2one,res.city.ongkir,City
+47,product_qty,float,,Quantity
+48,date_order,datetime,,Date Order
+49,is_delivery,boolean,,Is a Delivery
+50,qty_received,float,,Received
+51,area_categ_id,many2one,area.category,Area
+52,subtotal_standard_price,float,,Subtotal Product Cost
+53,state_id,many2one,res.country.state,Province
+54,date_order_clean,date,,Date (only) Order
+,,,,
+,,,,

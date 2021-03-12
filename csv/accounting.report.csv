@@ -1,0 +1,24 @@
+model,accounting.report,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,__last_update,datetime,,Last Modified on
+4,filter_cmp,selection,,Filter by
+5,date_from,date,,Start Date
+6,enable_filter,boolean,,Enable Comparison
+7,company_id,many2one,res.company,Company
+8,date_to_cmp,date,,End Date
+9,journal_ids,many2many,account.journal,Journals
+10,date_from_cmp,date,,Start Date
+11,label_filter,char,,Column Label
+12,debit_credit,boolean,,Display Debit/Credit Columns
+13,write_date,datetime,,Last Updated on
+14,date_to,date,,End Date
+15,create_date,datetime,,Created on
+16,account_report_id,many2one,account.financial.report,Account Reports
+17,write_uid,many2one,res.users,Last Updated by
+18,id,integer,,ID
+19,target_move,selection,,Target Moves
+,,,,
+,,,,
+,,,,

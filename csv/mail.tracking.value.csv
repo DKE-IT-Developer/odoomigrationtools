@@ -1,0 +1,28 @@
+model,mail.tracking.value,transient,False
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,write_date,datetime,,Last Updated on
+3,old_value_monetary,float,,Old Value Monetary
+4,new_value_text,text,,New Value Text
+5,write_uid,many2one,res.users,Last Updated by
+6,id,integer,,ID
+7,create_uid,many2one,res.users,Created by
+8,display_name,char,,Display Name
+9,old_value_datetime,datetime,,Old Value DateTime
+10,__last_update,datetime,,Last Modified on
+11,field,char,,Changed Field
+12,new_value_datetime,datetime,,New Value Datetime
+13,new_value_integer,integer,,New Value Integer
+14,field_type,char,,Field Type
+15,new_value_monetary,float,,New Value Monetary
+16,old_value_text,text,,Old Value Text
+17,field_desc,char,,Field Description
+18,mail_message_id,many2one,mail.message,Message ID
+19,new_value_char,char,,New Value Char
+20,old_value_char,char,,Old Value Char
+21,new_value_float,float,,New Value Float
+22,old_value_float,float,,Old Value Float
+23,old_value_integer,integer,,Old Value Integer
+,,,,
+,,,,
+,,,,

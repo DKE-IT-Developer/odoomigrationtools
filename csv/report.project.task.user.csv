@@ -1,0 +1,25 @@
+model,report.project.task.user,transient,False
+no,field,type,relation,string
+1,stage_id,many2one,project.task.type,Stage
+2,user_id,many2one,res.users,Assigned To
+3,name,char,,Task Title
+4,date_deadline,date,,Deadline
+5,__last_update,datetime,,Last Modified on
+6,nbr,integer,,# of Tasks
+7,opening_days,float,,# Days to Assign
+8,date_start,datetime,,Assignation Date
+9,delay_endings_days,float,,# Days to Deadline
+10,closing_days,float,,# Days to Close
+11,company_id,many2one,res.company,Company
+12,priority,selection,,Priority
+13,no_of_days,integer,,# Working Days
+14,state,selection,,Kanban State
+15,date_last_stage_update,datetime,,Last Stage Update
+16,id,integer,,ID
+17,display_name,char,,Display Name
+18,project_id,many2one,project.project,Project
+19,partner_id,many2one,res.partner,Contact
+20,date_end,datetime,,Ending Date
+,,,,
+,,,,
+,,,,

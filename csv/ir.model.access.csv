@@ -1,0 +1,20 @@
+model,ir.model.access,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,perm_read,boolean,,Read Access
+3,name,char,,Name
+4,__last_update,datetime,,Last Modified on
+5,id,integer,,ID
+6,write_uid,many2one,res.users,Last Updated by
+7,active,boolean,,Active
+8,write_date,datetime,,Last Updated on
+9,perm_unlink,boolean,,Delete Access
+10,perm_write,boolean,,Write Access
+11,create_date,datetime,,Created on
+12,model_id,many2one,ir.model,Object
+13,group_id,many2one,res.groups,Group
+14,perm_create,boolean,,Create Access
+15,display_name,char,,Display Name
+,,,,
+,,,,
+,,,,

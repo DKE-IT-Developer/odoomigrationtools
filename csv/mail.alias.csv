@@ -1,0 +1,21 @@
+model,mail.alias,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,alias_parent_thread_id,integer,,Parent Record Thread ID
+3,alias_defaults,text,,Default Values
+4,alias_contact,selection,,Alias Contact Security
+5,alias_parent_model_id,many2one,ir.model,Parent Model
+6,__last_update,datetime,,Last Modified on
+7,write_uid,many2one,res.users,Last Updated by
+8,alias_force_thread_id,integer,,Record Thread ID
+9,create_date,datetime,,Created on
+10,alias_model_id,many2one,ir.model,Aliased Model
+11,write_date,datetime,,Last Updated on
+12,display_name,char,,Display Name
+13,alias_domain,char,,Alias domain
+14,alias_name,char,,Alias Name
+15,id,integer,,ID
+16,alias_user_id,many2one,res.users,Owner
+,,,,
+,,,,
+,,,,

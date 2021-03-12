@@ -1,0 +1,50 @@
+model,slide.channel,transient,False
+no,field,type,relation,string
+1,promote_strategy,selection,,Featuring Policy
+2,message_follower_ids,one2many,mail.followers,Followers
+3,custom_slide_id,many2one,slide.slide,Slide to Promote
+4,access_error_msg,html,,Error Message
+5,create_date,datetime,,Created on
+6,nbr_presentations,integer,,Number of Presentations
+7,message_needaction,boolean,,Action Needed
+8,message_channel_ids,many2many,mail.channel,Followers (Channels)
+9,message_partner_ids,many2many,res.partner,Followers (Partners)
+10,write_uid,many2one,res.users,Last Updated by
+11,share_template_id,many2one,mail.template,Shared Template
+12,can_see,boolean,,Can See
+13,total,integer,,Total
+14,id,integer,,ID
+15,create_uid,many2one,res.users,Created by
+16,can_upload,boolean,,Can Upload
+17,message_is_follower,boolean,,Is Follower
+18,nbr_videos,integer,,Number of Videos
+19,promoted_slide_id,many2one,slide.slide,Featured Slide
+20,slide_ids,one2many,slide.slide,Slides
+21,sequence,integer,,Sequence
+22,message_last_post,datetime,,Last Message Date
+23,message_ids,one2many,mail.message,Messages
+24,publish_template_id,many2one,mail.template,Published Template
+25,website_meta_title,char,,Website meta title
+26,category_ids,one2many,slide.category,Categories
+27,nbr_documents,integer,,Number of Documents
+28,message_unread_counter,integer,,Unread Messages Counter
+29,website_published,boolean,,Visible in Website
+30,website_url,char,,Website URL
+31,description,html,,Description
+32,visibility,selection,,Visibility
+33,website_meta_description,text,,Website meta description
+34,write_date,datetime,,Last Updated on
+35,active,boolean,,Active
+36,display_name,char,,Display Name
+37,group_ids,many2many,res.groups,Channel Groups
+38,name,char,,Name
+39,upload_group_ids,many2many,res.groups,Upload Groups
+40,__last_update,datetime,,Last Modified on
+41,can_see_full,boolean,,Full Access
+42,nbr_infographics,integer,,Number of Infographics
+43,website_meta_keywords,char,,Website meta keywords
+44,message_unread,boolean,,Unread Messages
+45,message_needaction_counter,integer,,Number of Actions
+,,,,
+,,,,
+,,,,

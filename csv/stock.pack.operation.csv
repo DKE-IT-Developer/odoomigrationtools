@@ -1,0 +1,36 @@
+model,stock.pack.operation,transient,False
+no,field,type,relation,string
+1,lots_visible,boolean,,Lots visible
+2,create_date,datetime,,Created on
+3,result_package_id,many2one,stock.quant.package,Destination Package
+4,write_uid,many2one,res.users,Last Updated by
+5,package_id,many2one,stock.quant.package,Source Package
+6,product_qty,float,,To Do
+7,to_loc,char,,To
+8,location_id,many2one,stock.location,Source Location
+9,id,integer,,ID
+10,remaining_qty,float,,Remaining Qty
+11,qty_done_uom_ordered,float,,Quantity Done
+12,display_name,char,,Display Name
+13,__last_update,datetime,,Last Modified on
+14,is_done,boolean,,Done
+15,linked_move_operation_ids,one2many,stock.move.operation.link,Linked Moves
+16,state,selection,,Status
+17,ordered_qty,float,,Ordered Quantity
+18,qty_done,float,,Done
+19,owner_id,many2one,res.partner,Owner
+20,picking_source_location_id,many2one,stock.location,Source Location Zone
+21,create_uid,many2one,res.users,Created by
+22,fresh_record,boolean,,Newly created pack operation
+23,write_date,datetime,,Last Updated on
+24,date,datetime,,Date
+25,picking_destination_location_id,many2one,stock.location,Destination Location Zone
+26,product_id,many2one,product.product,Product
+27,product_uom_id,many2one,product.uom,Unit of Measure
+28,pack_lot_ids,one2many,stock.pack.operation.lot,Lots/Serial Numbers Used
+29,location_dest_id,many2one,stock.location,Destination Location
+30,from_loc,char,,From
+31,picking_id,many2one,stock.picking,Stock Picking
+,,,,
+,,,,
+,,,,

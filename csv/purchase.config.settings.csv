@@ -1,0 +1,25 @@
+model,purchase.config.settings,transient,True
+no,field,type,relation,string
+1,group_uom,selection,,Units of Measure
+2,company_currency_id,many2one,res.currency,Currency
+3,display_name,char,,Display Name
+4,module_stock_dropshipping,selection,,Dropshipping
+5,group_costing_method,selection,,Costing Methods
+6,module_purchase_requisition,selection,,Calls for Tenders
+7,__last_update,datetime,,Last Modified on
+8,company_id,many2one,res.company,Company
+9,write_uid,many2one,res.users,Last Updated by
+10,group_warning_purchase,selection,,Warning
+11,group_manage_vendor_price,selection,,Vendor Price
+12,po_lead,float,,Purchase Lead Time *
+13,po_double_validation,selection,,Levels of Approvals *
+14,write_date,datetime,,Last Updated on
+15,id,integer,,ID
+16,create_date,datetime,,Created on
+17,group_product_variant,selection,,Product Variants
+18,po_lock,selection,,Purchase Order Modification *
+19,create_uid,many2one,res.users,Created by
+20,po_double_validation_amount,monetary,,Double validation amount *
+,,,,
+,,,,
+,,,,

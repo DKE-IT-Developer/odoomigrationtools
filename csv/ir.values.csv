@@ -1,0 +1,23 @@
+model,ir.values,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,value_unpickle,text,,Default value or action reference
+3,user_id,many2one,res.users,User
+4,name,char,,Name
+5,model_id,many2one,ir.model,Model (change only)
+6,key2,char,,Qualifier
+7,__last_update,datetime,,Last Modified on
+8,company_id,many2one,res.company,Company
+9,value,text,,Value
+10,write_uid,many2one,res.users,Last Updated by
+11,create_date,datetime,,Created on
+12,key,selection,,Type
+13,write_date,datetime,,Last Updated on
+14,display_name,char,,Display Name
+15,model,char,,Model Name
+16,res_id,integer,,Record ID
+17,id,integer,,ID
+18,action_id,many2one,ir.actions.actions,Action (change only)
+,,,,
+,,,,
+,,,,

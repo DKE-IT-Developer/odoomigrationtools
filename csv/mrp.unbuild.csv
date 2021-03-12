@@ -1,0 +1,35 @@
+model,mrp.unbuild,transient,False
+no,field,type,relation,string
+1,message_follower_ids,one2many,mail.followers,Followers
+2,create_date,datetime,,Created on
+3,has_tracking,selection,,Tracking
+4,message_channel_ids,many2many,mail.channel,Followers (Channels)
+5,message_partner_ids,many2many,res.partner,Followers (Partners)
+6,write_uid,many2one,res.users,Last Updated by
+7,product_qty,float,,Quantity
+8,lot_id,many2one,stock.production.lot,Lot
+9,location_id,many2one,stock.location,Location
+10,id,integer,,ID
+11,create_uid,many2one,res.users,Created by
+12,display_name,char,,Display Name
+13,message_is_follower,boolean,,Is Follower
+14,__last_update,datetime,,Last Modified on
+15,produce_line_ids,one2many,stock.move,Produce line ids
+16,message_last_post,datetime,,Last Message Date
+17,message_ids,one2many,mail.message,Messages
+18,message_needaction,boolean,,Action Needed
+19,state,selection,,Status
+20,consume_line_ids,one2many,stock.move,Consume line ids
+21,mo_id,many2one,mrp.production,Manufacturing Order
+22,bom_id,many2one,mrp.bom,Bill of Material
+23,message_unread_counter,integer,,Unread Messages Counter
+24,write_date,datetime,,Last Updated on
+25,name,char,,Reference
+26,product_id,many2one,product.product,Product
+27,product_uom_id,many2one,product.uom,Unit of Measure
+28,location_dest_id,many2one,stock.location,Destination Location
+29,message_unread,boolean,,Unread Messages
+30,message_needaction_counter,integer,,Number of Actions
+,,,,
+,,,,
+,,,,

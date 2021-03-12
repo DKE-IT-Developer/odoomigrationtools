@@ -1,0 +1,19 @@
+model,payment.token,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Name
+4,short_name,char,,Short name
+5,__last_update,datetime,,Last Modified on
+6,write_uid,many2one,res.users,Last Updated by
+7,acquirer_ref,char,,Acquirer Ref.
+8,acquirer_id,many2one,payment.acquirer,Acquirer Account
+9,write_date,datetime,,Last Updated on
+10,active,boolean,,Active
+11,create_date,datetime,,Created on
+12,partner_id,many2one,res.partner,Partner
+13,id,integer,,ID
+14,payment_ids,one2many,payment.transaction,Payment Transactions
+,,,,
+,,,,
+,,,,

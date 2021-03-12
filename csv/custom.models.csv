@@ -1,0 +1,1959 @@
+model,res.subdistrict.ongkir,transient,False
+no,field,type,relation,string
+1,province,char,,Province
+2,create_uid,many2one,res.users,Created by
+3,display_name,char,,Name
+4,name,char,,Name
+5,zip,char,,ZIP
+6,__last_update,datetime,,Last Modified on
+7,country_id,many2one,res.country,Country
+8,ongkir_city_id,many2one,res.city.ongkir,City
+9,write_uid,many2one,res.users,Last Updated by
+10,create_date,datetime,,Created on
+11,postal_code,char,,Postal code
+12,subdistrict_id,char,,Subdistrict Code
+13,write_date,datetime,,Last Updated on
+14,state_id,many2one,res.country.state,State
+15,subdistrict_name,char,,Subdistrict Name
+16,province_id,char,,Province id
+17,type,char,,Type
+18,id,integer,,ID
+,,,,
+,,,,
+model,makloon.po.produksi,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,stage_id,many2one,project.task.type,Stage
+3,display_name,char,,Display Name
+4,task_id,many2one,project.task,Task
+5,__last_update,datetime,,Last Modified on
+6,stage_sequence,integer,,Stage Sequence
+7,po_id,many2one,purchase.order,Purchase Order
+8,write_uid,many2one,res.users,Last Updated by
+9,write_date,datetime,,Last Updated on
+10,create_date,datetime,,Created on
+11,id,integer,,ID
+,,,,
+,,,,
+model,kpi.progress.interval,transient,False
+failed to get fields list of kpi.progress.interval
+,,,,
+model,analysis.account.move.line,transient,False
+no,field,type,relation,string
+1,account_type_name,char,,Account Type
+2,display_name,char,,Display Name
+3,__last_update,datetime,,Last Modified on
+4,abs_balance,float,,Absolute Balance
+5,company_id,many2one,res.company,Company
+6,id,integer,,ID
+7,reversed_balance,float,,Reversed Balance
+8,move_date,date,,Date
+9,balance,float,,Balance
+10,partner_id,many2one,res.partner,Partner
+11,account_name,char,,Account
+12,accont_code,char,,Code
+,,,,
+,,,,
+model,cloud.settings,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,googleteam_drive,boolean,,Team Drive
+3,sync_logs,boolean,,Log sync activities
+4,display_name,char,,Display Name
+5,googledrive_drive,char,,Google Drive
+6,__last_update,datetime,,Last Modified on
+7,googledrive_redirect_uri,char,,Redirect URL
+8,write_uid,many2one,res.users,Last Updated by
+9,googledrive_client_secret,char,,App Secret Key
+10,write_date,datetime,,Last Updated on
+11,create_date,datetime,,Created on
+12,synced_model_ids,many2many,sync.model,List of synced Odoo Models
+13,googledrive_client_id,char,,App Client ID
+14,id,integer,,ID
+15,cloud_client_state,selection,,State
+,,,,
+,,,,
+model,crm.merge.opportunity,transient,True
+failed to get fields list of crm.merge.opportunity
+,,,,
+model,wizard.report.purchase.summary,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,end_date,date,,End Date
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,write_date,datetime,,Last Updated on
+7,id,integer,,ID
+8,create_date,datetime,,Created on
+9,partner_id,many2one,res.partner,Customer
+10,start_date,date,,Start Date
+,,,,
+,,,,
+model,add.product.wizard,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,wizard_makloon_product_ids,one2many,makloon.product.line.wizard,Product
+3,task_id,many2one,project.task,Task
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,create_date,datetime,,Created on
+7,write_date,datetime,,Last Updated on
+8,display_name,char,,Display Name
+9,id,integer,,ID
+,,,,
+,,,,
+model,jasper.create.data.template,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,__last_update,datetime,,Last Modified on
+4,filename,char,,File Name
+5,depth,integer,,Depth
+6,write_date,datetime,,Last Updated on
+7,create_date,datetime,,Created on
+8,model,many2one,ir.model,Model
+9,write_uid,many2one,res.users,Last Updated by
+10,data,binary,,XML
+11,id,integer,,ID
+,,,,
+,,,,
+model,mail.fcm.notification,transient,False
+failed to get fields list of mail.fcm.notification
+,,,,
+model,crm.lost.reason,transient,False
+failed to get fields list of crm.lost.reason
+,,,,
+model,notification.notification,transient,False
+no,field,type,relation,string
+1,body,text,,Message Body
+2,create_uid,many2one,res.users,Created by
+3,user_id,many2one,res.users,User
+4,name,char,,Title
+5,__last_update,datetime,,Last Modified on
+6,object_id,integer,,Object ID
+7,write_uid,many2one,res.users,Last Updated by
+8,is_read,boolean,,Read
+9,object_name,char,,Object Name
+10,write_date,datetime,,Last Updated on
+11,date,datetime,,Date
+12,display_name,char,,Display Name
+13,create_date,datetime,,Created on
+14,id,integer,,ID
+,,,,
+,,,,
+model,base.partner.merge.automatic.wizard,transient,True
+failed to get fields list of base.partner.merge.automatic.wizard
+,,,,
+model,news.feed,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,like_ids,one2many,news.feed.like,Likes
+3,display_name,char,,Display Name
+4,name,text,,Caption
+5,is_discussion,boolean,,Is Discussion?
+6,__last_update,datetime,,Last Modified on
+7,image,binary,,Image
+8,sender_id,many2one,res.users,Sender
+9,reply_ids,one2many,news.feed.reply,Reply
+10,write_uid,many2one,res.users,Last Updated by
+11,write_date,datetime,,Last Updated on
+12,id,integer,,ID
+13,create_date,datetime,,Created on
+14,is_liked,boolean,,Is Liked
+15,product_id,many2one,product.template,Product
+,,,,
+,,,,
+model,wizard.report.sale.summary,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,product_id,many2one,product.product,Product
+4,end_date,date,,End Date
+5,__last_update,datetime,,Last Modified on
+6,write_uid,many2one,res.users,Last Updated by
+7,start_date,date,,Start Date
+8,write_date,datetime,,Last Updated on
+9,create_date,datetime,,Created on
+10,partner_id,many2one,res.partner,Customer
+11,id,integer,,ID
+,,,,
+,,,,
+model,generate.faktur.pajak,transient,True
+no,field,type,relation,string
+1,dot2,char,,Dot
+2,strip2,char,,Strip
+3,display_name,char,,Display Name
+4,create_uid,many2one,res.users,Created by
+5,dot,char,,Dot
+6,__last_update,datetime,,Last Modified on
+7,nomor_perusahaan,char,,Nomor Perusahaan
+8,write_uid,many2one,res.users,Last Updated by
+9,nomor_faktur_awal,char,,Nomor Faktur Awal
+10,tahun,char,,Tahun Penerbit
+11,nomor_faktur_akhir,char,,Nomor Faktur Akhir
+12,write_date,datetime,,Last Updated on
+13,strip,char,,Strip
+14,id,integer,,ID
+15,create_date,datetime,,Created on
+16,type,selection,,Type
+17,fp_company_id,many2one,res.company,Company
+18,nomor_akhir,char,,Nomor Faktur Akhir
+19,nomor_awal,char,,Nomor Faktur Awal
+,,,,
+,,,,
+model,setting.tanggal.do,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,name,date,,Tanggal DO
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,write_date,datetime,,Last Updated on
+7,display_name,char,,Display Name
+8,id,integer,,ID
+,,,,
+,,,,
+model,product.review,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,user_id,many2one,res.users,User
+3,product_id,many2one,product.product,Product
+4,__last_update,datetime,,Last Modified on
+5,review_text,text,,Review Text
+6,review_image,binary,,Review Image
+7,write_uid,many2one,res.users,Last Updated by
+8,product_template_id,many2one,product.template,Product
+9,write_date,datetime,,Last Updated on
+10,reviewer_name,char,,Reviewer Name
+11,create_date,datetime,,Created on
+12,partner_id,many2one,res.partner,Partner
+13,id,integer,,ID
+14,display_name,char,,Display Name
+,,,,
+,,,,
+model,dev.export.fields,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,many2one,ir.model.fields,Name
+4,__last_update,datetime,,Last Modified on
+5,sequence,integer,,Sequence
+6,label,char,,Label
+7,write_uid,many2one,res.users,Last Updated by
+8,write_date,datetime,,Last Updated on
+9,create_date,datetime,,Created on
+10,model_id,many2one,ir.model,model
+11,export_id,many2one,dev.export,Export
+12,id,integer,,ID
+13,ref_field,many2one,ir.model.fields,Relation Field
+,,,,
+,,,,
+model,crm.lead.tag,transient,False
+failed to get fields list of crm.lead.tag
+,,,,
+model,ir.slide,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,__last_update,datetime,,Last Modified on
+4,write_uid,many2one,res.users,Last Updated by
+5,images,many2one,ir.attachment,Images
+6,write_date,datetime,,Last Updated on
+7,active,boolean,,Active
+8,display_name,char,,Display Name
+9,id,integer,,ID
+,,,,
+,,,,
+model,res.kabupaten,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,name,char,,Kabupaten
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,write_date,datetime,,Last Updated on
+7,state_id,many2one,res.country.state,Province
+8,id,integer,,ID
+9,kecamatan_line,one2many,res.kecamatan,Kecamatan
+10,display_name,char,,Display Name
+,,,,
+,,,,
+model,analysis.stock.move,transient,False
+no,field,type,relation,string
+1,__last_update,datetime,,Last Modified on
+2,date_expected,datetime,,Expected Date
+3,location_name,char,,Location
+4,location_other_name,char,,Location From/To
+5,move_type,char,,Move Type (In/Out)
+6,categ_name,char,,Product Category
+7,company_id,many2one,res.company,Company
+8,location_other_usage,char,,Location From/To Category
+9,id,integer,,ID
+10,product_signed_qty,float,,Signed Qty
+11,product_qty,float,,Qty
+12,date,datetime,,Date
+13,current_cost,float,,Current Cost
+14,signed_value_current_cost,float,,Signed Value (Current Cost)
+15,product_name,char,,Product
+16,value_current_cost,float,,Value (Current Cost)
+17,display_name,char,,Display Name
+,,,,
+,,,,
+model,res.localization.update,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Name
+4,__last_update,datetime,,Last Modified on
+5,lastModified,date,,Last updated
+6,write_uid,many2one,res.users,Last Updated by
+7,create_date,datetime,,Created on
+8,write_date,datetime,,Last Updated on
+9,numberOfUpdates,integer,,Number of updates
+10,id,integer,,ID
+,,,,
+,,,,
+model,dev.export.file.excel,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,__last_update,datetime,,Last Modified on
+4,file_name,char,,Export Excel
+5,write_uid,many2one,res.users,Last Updated by
+6,excel_file,binary,,Export Excel
+7,write_date,datetime,,Last Updated on
+8,display_name,char,,Display Name
+9,id,integer,,ID
+,,,,
+,,,,
+model,kpi.progress,transient,False
+failed to get fields list of kpi.progress
+,,,,
+model,labour.cost.profile,transient,False
+no,field,type,relation,string
+1,message_follower_ids,one2many,mail.followers,Followers
+2,display_name,char,,Display Name
+3,name,char,,Name
+4,message_is_follower,boolean,,Is Follower
+5,create_uid,many2one,res.users,Created by
+6,message_needaction,boolean,,Action Needed
+7,message_channel_ids,many2many,mail.channel,Followers (Channels)
+8,message_partner_ids,many2many,res.partner,Followers (Partners)
+9,__last_update,datetime,,Last Modified on
+10,message_last_post,datetime,,Last Message Date
+11,company_id,many2one,res.company,Company
+12,write_uid,many2one,res.users,Last Updated by
+13,company_currency_id,many2one,res.currency,Company Currency
+14,message_needaction_counter,integer,,Number of Actions
+15,write_date,datetime,,Last Updated on
+16,message_ids,one2many,mail.message,Messages
+17,create_date,datetime,,Created on
+18,message_unread_counter,integer,,Unread Messages Counter
+19,message_unread,boolean,,Unread Messages
+20,id,integer,,ID
+21,hour_cost,float,,Cost per Hour
+,,,,
+,,,,
+model,wizard.report.purchase.order,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,write_date,datetime,,Last Updated on
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,paper_size,selection,,Paper Size
+7,report_type,selection,,Type
+8,display_name,char,,Display Name
+9,id,integer,,ID
+,,,,
+,,,,
+model,crm.partner.binding,transient,True
+failed to get fields list of crm.partner.binding
+,,,,
+model,makloon.product.line,transient,False
+no,field,type,relation,string
+1,task_id,many2one,project.task,Task
+2,stage_id,many2one,project.task.type,Stage
+3,display_name,char,,Display Name
+4,stock_box,float,,Stock Box
+5,is_readonly,boolean,,Readonly
+6,create_uid,many2one,res.users,Created by
+7,bahan_label,selection,,Bahan Label
+8,__last_update,datetime,,Last Modified on
+9,write_uid,many2one,res.users,Last Updated by
+10,create_date,datetime,,Created on
+11,kemasan,selection,,Kemasan
+12,write_date,datetime,,Last Updated on
+13,stock_sticker,float,,Stock Sticker
+14,stock_dke,float,,Stock DKE
+15,stock_ciawi,float,,Stock Ciawi
+16,product_box_id,many2one,product.template,Nama Box
+17,product_id,many2one,product.template,Nama Produk
+18,id,integer,,ID
+19,product_sticker_id,many2one,product.template,Nama Sticker
+,,,,
+,,,,
+model,crm.lead2opportunity.partner.mass,transient,True
+failed to get fields list of crm.lead2opportunity.partner.mass
+,,,,
+model,report.analytic,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,__last_update,datetime,,Last Modified on
+4,write_uid,many2one,res.users,Last Updated by
+5,write_date,datetime,,Last Updated on
+6,display_name,char,,Display Name
+7,id,integer,,ID
+,,,,
+,,,,
+model,makloon.so.dokter,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,stage_id,many2one,project.task.type,Stage
+3,display_name,char,,Display Name
+4,task_id,many2one,project.task,Task
+5,__last_update,datetime,,Last Modified on
+6,stage_sequence,integer,,Stage Sequence
+7,tanggal_so,date,,Tanggal SO
+8,write_uid,many2one,res.users,Last Updated by
+9,write_date,datetime,,Last Updated on
+10,create_date,datetime,,Created on
+11,so_id,many2one,sale.order,Purchase Order
+12,id,integer,,ID
+,,,,
+,,,,
+model,fp.invoice.export,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,__last_update,datetime,,Last Modified on
+4,data,binary,,Download
+5,filename,char,,File Name
+6,write_date,datetime,,Last Updated on
+7,create_date,datetime,,Created on
+8,write_uid,many2one,res.users,Last Updated by
+9,type,selection,,Type
+10,id,integer,,ID
+,,,,
+,,,,
+model,crm.activity.log,transient,True
+failed to get fields list of crm.activity.log
+,,,,
+model,delivery.price.rule,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,__last_update,datetime,,Last Modified on
+3,list_price,float,,Sale Price
+4,name,char,,Name
+5,sequence,integer,,Sequence
+6,max_value,float,,Maximum Value
+7,standard_price,float,,Cost Price
+8,carrier_id,many2one,delivery.carrier,Carrier
+9,write_uid,many2one,res.users,Last Updated by
+10,list_base_price,float,,Sale Base Price
+11,variable,selection,,Variable
+12,variable_factor,selection,,Variable Factor
+13,write_date,datetime,,Last Updated on
+14,operator,selection,,Operator
+15,create_date,datetime,,Created on
+16,id,integer,,ID
+17,display_name,char,,Display Name
+,,,,
+,,,,
+model,faktur.pajak.inv,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,__last_update,datetime,,Last Modified on
+4,faktur_invoice_ids,one2many,change.invoice.faktur,Faktur Pajak
+5,write_uid,many2one,res.users,Last Updated by
+6,load_faktur,boolean,,Load Faktur Pajak
+7,write_date,datetime,,Last Updated on
+8,create_date,datetime,,Created on
+9,type,selection,,Type
+10,id,integer,,ID
+,,,,
+,,,,
+model,expert.condition,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Name
+4,sequence,integer,,Sequence
+5,id,integer,,ID
+6,__last_update,datetime,,Last Modified on
+7,write_uid,many2one,res.users,Last Updated by
+8,option_ids,one2many,expert.option,Options
+9,write_date,datetime,,Last Updated on
+10,create_date,datetime,,Created on
+11,desc,text,,Description
+12,final,boolean,,Final
+13,product_tmpl_ids,many2many,product.template,Products
+14,first,boolean,,First
+,,,,
+,,,,
+model,account.invoice.tag,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,name,char,,Name
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,write_date,datetime,,Last Updated on
+7,display_name,char,,Display Name
+8,id,integer,,ID
+,,,,
+,,,,
+model,crm.lead.lost,transient,True
+failed to get fields list of crm.lead.lost
+,,,,
+model,utm.campaign,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,name,char,,Campaign Name
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,write_date,datetime,,Last Updated on
+7,display_name,char,,Display Name
+8,id,integer,,ID
+,,,,
+,,,,
+model,kpi.kpi,transient,False
+failed to get fields list of kpi.kpi
+,,,,
+model,nomor.faktur.pajak,transient,False
+no,field,type,relation,string
+1,message_follower_ids,one2many,mail.followers,Followers
+2,nomor_urut,char,,Nomor Urut
+3,message_needaction,boolean,,Action Needed
+4,message_channel_ids,many2many,mail.channel,Followers (Channels)
+5,message_partner_ids,many2many,res.partner,Followers (Partners)
+6,number,char,,Nomor eFaktur
+7,nomor_perusahaan,char,,Nomor Perusahaan
+8,write_uid,many2one,res.users,Last Updated by
+9,currency_id,many2one,res.currency,Currency
+10,create_date,datetime,,Created on
+11,partner_id,many2one,res.partner,Partner
+12,message_ids,one2many,mail.message,Messages
+13,create_uid,many2one,res.users,Created by
+14,amount_untaxed,monetary,,Untaxed Amount
+15,message_is_follower,boolean,,Is Follower
+16,__last_update,datetime,,Last Modified on
+17,message_last_post,datetime,,Last Message Date
+18,company_id,many2one,res.company,Invoice Company
+19,id,integer,,ID
+20,amount_tax,monetary,,Tax Amount
+21,state,selection,,Status
+22,fp_company_id,many2one,res.company,Faktur Pajak Company
+23,invoice_revisi_id,many2one,account.invoice,Revision Invoice
+24,message_unread_counter,integer,,Unread Messages Counter
+25,type,selection,,Type
+26,date_invoice,date,,Date Used
+27,partner_revisi_id,many2one,res.partner,Revision Partner
+28,write_date,datetime,,Last Updated on
+29,display_name,char,,Display Name
+30,name,char,,Nomor Faktur
+31,invoice_id,many2one,account.invoice,Invoice No
+32,tahun_penerbit,char,,Tahun Penerbit
+33,message_unread,boolean,,Unread Messages
+34,message_needaction_counter,integer,,Number of Actions
+,,,,
+,,,,
+model,sale.banner,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Title
+4,__last_update,datetime,,Last Modified on
+5,product_public_categ_id,many2one,product.public.category,Product Public Category
+6,image,binary,,Image
+7,write_uid,many2one,res.users,Last Updated by
+8,product_template_ids,many2many,product.template,Product Template
+9,write_date,datetime,,Last Updated on
+10,create_date,datetime,,Created on
+11,id,integer,,ID
+,,,,
+,,,,
+model,change.invoice.faktur,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,__last_update,datetime,,Last Modified on
+4,invoice_id,many2one,account.invoice,Invoices
+5,company_id,many2one,res.company,Company
+6,wizard_id,many2one,faktur.pajak.inv,Wizard
+7,type_faktur,selection,,Type
+8,faktur_id,many2one,nomor.faktur.pajak,Faktur Pajak
+9,write_date,datetime,,Last Updated on
+10,create_date,datetime,,Created on
+11,write_uid,many2one,res.users,Last Updated by
+12,type_invoice,selection,,Type
+13,id,integer,,ID
+,,,,
+,,,,
+model,crm.lead2opportunity.partner,transient,True
+failed to get fields list of crm.lead2opportunity.partner
+,,,,
+model,web.dashboard.kpi.target,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,block_id,many2one,web.dashboard.block,Block
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,write_date,datetime,,Last Updated on
+7,create_date,datetime,,Created on
+8,type,selection,,Date Type
+9,id,integer,,ID
+10,target,float,,KPI Target
+,,,,
+,,,,
+model,account.asset.anual.depreciation.line,transient,False
+no,field,type,relation,string
+1,asset_id,many2one,account.asset.asset,Asset
+2,method_number,integer,,Number of Depreciations
+3,code,char,,Code
+4,display_name,char,,Display Name
+5,name,char,,Name
+6,__last_update,datetime,,Last Modified on
+7,categ_name,char,,Category Name
+8,value,char,,Purchase Value
+9,id,integer,,ID
+10,depreciation_amount,char,,Depreciation Amount
+11,residual_value,char,,Residual Value
+12,date,date,,Purchase Date
+13,year,char,,Depreciation Year
+14,cumulative_depreciation_amount,char,,Cumulative Depreciation Amount
+15,categ_id,many2one,account.asset.category,Category
+16,method,char,,Method
+,,,,
+,,,,
+model,kpi.unit.type,transient,False
+failed to get fields list of kpi.unit.type
+,,,,
+model,analysis.sale,transient,False
+no,field,type,relation,string
+1,state_name,char,,Customer Address (State)
+2,product_uom_qty,float,,Product Qty
+3,date_order,datetime,,Date Order
+4,partner_id,many2one,res.partner,Customer
+5,id,integer,,ID
+6,display_name,char,,Display Name
+7,__last_update,datetime,,Last Modified on
+8,partner_name,char,,Customer
+9,sale_gross,float,,Gross Sales
+10,company_id,many2one,res.company,Company
+11,saleperson_name,char,,Saleperson
+12,product_name,char,,Product
+13,sale_total,float,,Total Net Sales
+14,sale_state,char,,Sale Order Status
+15,sale_discount,float,,Discount Amount
+16,sale_tax,float,,Tax Amount
+17,sale_margin,float,,Total Margin
+18,product_category_name,char,,Product Category
+19,delivered_qty,float,,Delivered Qty
+20,saleteam_name,char,,Salesteam
+21,sale_cost,float,,Total Cost
+22,invoice_status,char,,Invoice Status
+23,invoiced_qty,float,,Invoiced Qty
+24,saleperson_id,many2one,res.users,Saleperson
+,,,,
+,,,,
+model,production.order,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,user_id,many2one,res.users,Assigned To
+3,name,char,,Name
+4,picking_type_id,many2one,stock.picking.type,Type
+5,order_line_ids,one2many,production.order.line,Production Lines
+6,notes,text,,Notes
+7,__last_update,datetime,,Last Modified on
+8,write_uid,many2one,res.users,Last Updated by
+9,invoice_ids,one2many,account.invoice,Invoices
+10,state,selection,,Status
+11,write_date,datetime,,Last Updated on
+12,date,date,,Order Date
+13,display_name,char,,Display Name
+14,create_date,datetime,,Created on
+15,partner_ref,char,,Partner ref.
+16,partner_id,many2one,res.partner,Supplier
+17,id,integer,,ID
+,,,,
+,,,,
+model,stock.card.wizard,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,whs_id,many2many,stock.warehouse,Warehouse
+3,display_name,char,,Display Name
+4,end_date,date,,End Date
+5,__last_update,datetime,,Last Modified on
+6,write_uid,many2one,res.users,Last Updated by
+7,write_date,datetime,,Last Updated on
+8,id,integer,,ID
+9,create_date,datetime,,Created on
+10,start_date,date,,Start Date
+,,,,
+,,,,
+model,res.kelurahan,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Kelurahan
+4,zip,char,,Kode Post
+5,__last_update,datetime,,Last Modified on
+6,kecamatan_id,many2one,res.kecamatan,Kecamatan
+7,write_uid,many2one,res.users,Last Updated by
+8,create_date,datetime,,Created on
+9,kabupaten_id,many2one,res.kabupaten,Kabupaten
+10,write_date,datetime,,Last Updated on
+11,state_id,many2one,res.country.state,Province
+12,id,integer,,ID
+,,,,
+,,,,
+model,dev.export,transient,False
+no,field,type,relation,string
+1,header_set_underline,boolean,,Underline
+2,company_set_border_color,char,,Border Color
+3,write_uid,many2one,res.users,Last Updated by
+4,line_val_set_font_size,integer,,Text Size
+5,header_set_bg_color,char,,Background Color
+6,display_name,char,,Display Name
+7,val_set_italic,boolean,,Italic
+8,line_label_set_underline,boolean,,Underline
+9,group_set_bg_color,char,,Background Color
+10,ref_ir_value,many2one,ir.values,Sidebar Button
+11,company_set_font_color,char,,Text Color
+12,line_lable_set_bg_color,char,,Background Color
+13,label_set_font_size,integer,,Text Size
+14,template,selection,,Template
+15,header_set_font_size,integer,,Text Size
+16,line_val_set_italic,boolean,,Italic
+17,header_set_font_color,char,,Text Color
+18,company_set_italic,boolean,,Italic
+19,name,char,,Action Name
+20,group_set_italic,boolean,,Italic
+21,relational_model_id,many2one,ir.model,Relational Field Model
+22,is_sum,boolean,,Print Sum
+23,line_label_set_bold,boolean,,Bold
+24,create_date,datetime,,Created on
+25,val_set_underline,boolean,,Underline
+26,header_set_border,boolean,,Border
+27,print_company_detail,boolean,,Print Company Detail
+28,line_val_set_font_name,char,,Text Style
+29,company_set_font_size,integer,,Text Size
+30,ref_ir_act_window,many2one,ir.actions.act_window,Sidebar action
+31,group_set_border_color,char,,Border Color
+32,relational_field,many2one,ir.model.fields,Sub Model
+33,val_align,selection,,Text Align
+34,line_label_align,selection,,Text Align
+35,val_set_font_color,char,,Text Color
+36,val_set_border,boolean,,Border
+37,model_id,many2one,ir.model,Applies to
+38,label_set_italic,boolean,,Italic
+39,line_label_set_border_color,char,,Border Color
+40,company_set_font_name,char,,Text Style
+41,val_set_font_name,char,,Text Style
+42,active,boolean,,Active
+43,val_set_bold,boolean,,Bold
+44,label_set_bold,boolean,,Bold
+45,line_val_set_underline,boolean,,Underline
+46,val_set_font_size,integer,,Text Size
+47,company_align,selection,,Text Align
+48,line_val_set_border,boolean,,Border
+49,sub_group_by_field_id,many2one,ir.model.fields,Sub Group By
+50,line_label_set_font_color,char,,Text Color
+51,lable_set_bg_color,char,,Background Color
+52,label_set_font_name,char,,Text Style
+53,header_set_font_name,char,,Text Style
+54,line_label_set_italic,boolean,,Italic
+55,relational_fields_ids,one2many,dev.relational.field,Relational Fields
+56,total_font_color,char,,Total Font Color
+57,create_uid,many2one,res.users,Created by
+58,group_set_font_size,integer,,Text Size
+59,__last_update,datetime,,Last Modified on
+60,line_label_set_border,boolean,,Border
+61,label_set_border,boolean,,Border
+62,group_by_field_id,many2one,ir.model.fields,Group By Field
+63,split_sheet,boolean,,Record per sheet
+64,company_set_border,boolean,,Border
+65,line_val_set_border_color,char,,Border Color
+66,header_set_border_color,char,,Border Color
+67,line_val_set_font_color,char,,Text Color
+68,header_text,char,,Header Text
+69,line_label_set_font_name,char,,Text Style
+70,header_set_italic,boolean,,Italic
+71,label_set_border_color,char,,Border Color
+72,group_set_bold,boolean,,Bold
+73,file_name,char,,Excel Sheet Name
+74,line_val_set_bg_color,char,,Background Color
+75,company_set_underline,boolean,,Underline
+76,group_set_underline,boolean,,Underline
+77,label_set_font_color,char,,Text Color
+78,line_val_set_bold,boolean,,Bold
+79,val_set_border_color,char,,Border Color
+80,id,integer,,ID
+81,group_align,selection,,Text Align
+82,sub_group_set_bg_color,char,,Subgroup Background Color
+83,group_set_font_color,char,,Text Color
+84,company_set_bg_color,char,,Background Color
+85,total_color,char,,Sum Background Color
+86,company_set_bold,boolean,,Bold
+87,label_align,selection,,Text Align
+88,val_set_bg_color,char,,Background Color
+89,header_align,selection,,Text Align
+90,group_set_font_name,char,,Text Style
+91,line_label_set_font_size,integer,,Text Size
+92,write_date,datetime,,Last Updated on
+93,label_set_underline,boolean,,Underline
+94,header_set_bold,boolean,,Bold
+95,line_val_align,selection,,Text Align
+96,is_group_by,boolean,,Group By
+97,group_set_border,boolean,,Border
+98,export_fields_ids,one2many,dev.export.fields,Fields
+,,,,
+,,,,
+model,mass.editing.wizard,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,__last_update,datetime,,Last Modified on
+4,write_uid,many2one,res.users,Last Updated by
+5,write_date,datetime,,Last Updated on
+6,display_name,char,,Display Name
+7,id,integer,,ID
+,,,,
+,,,,
+model,mass.object,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,model_id,many2one,ir.model,Model
+3,display_name,char,,Display Name
+4,name,char,,Name
+5,__last_update,datetime,,Last Modified on
+6,write_uid,many2one,res.users,Last Updated by
+7,ref_ir_act_window_id,many2one,ir.actions.act_window,Sidebar action
+8,field_ids,many2many,ir.model.fields,Fields
+9,ref_ir_value_id,many2one,ir.values,Sidebar button
+10,create_date,datetime,,Created on
+11,write_date,datetime,,Last Updated on
+12,model_list,char,,Model List
+13,id,integer,,ID
+,,,,
+,,,,
+model,res.city.ongkir,transient,False
+no,field,type,relation,string
+1,province,char,,Province
+2,create_uid,many2one,res.users,Created by
+3,display_name,char,,Name
+4,name,char,,Name
+5,zip,char,,ZIP
+6,__last_update,datetime,,Last Modified on
+7,city_id,char,,City Code
+8,country_id,many2one,res.country,Country
+9,write_uid,many2one,res.users,Last Updated by
+10,create_date,datetime,,Created on
+11,postal_code,char,,Postal code
+12,write_date,datetime,,Last Updated on
+13,state_id,many2one,res.country.state,State
+14,city_name,char,,City Name
+15,area_ids,many2many,area.category,Area ids
+16,province_id,char,,Province id
+17,type,char,,type
+18,id,integer,,ID
+,,,,
+,,,,
+model,web.dashboard,transient,False
+no,field,type,relation,string
+1,menu_id,many2one,ir.ui.menu,Generated Menu
+2,create_date,datetime,,Created on
+3,sequence,integer,,Sequence
+4,iteration_model_id,many2one,ir.model,Iteration Model
+5,write_uid,many2one,res.users,Last Updated by
+6,tableau_server_url,char,,Tableau Server
+7,id,integer,,ID
+8,create_uid,many2one,res.users,Created by
+9,dashboard_source,selection,,Dashboard Source
+10,__last_update,datetime,,Last Modified on
+11,iteration_limit,integer,,Limit
+12,iteration_activate_record_rules,boolean,,Activate Record Rules
+13,tableau_url,char,,Tableau Dashboard
+14,iteration_model,char,,Model
+15,iteration_sort_by,many2one,ir.model.fields,Sort By
+16,write_date,datetime,,Last Updated on
+17,display_name,char,,Display Name
+18,iteration_sort,selection,,Sort
+19,block_ids,one2many,web.dashboard.block,Blocks
+20,hide_individually,boolean,,Hide as an Individual Dashboard
+21,parent_menu_id,many2one,ir.ui.menu,Add Dashboard Under Menu
+22,group_ids,many2many,res.groups,Groups
+23,iteration_domain,char,,Iteration Filter
+24,name,char,,Name
+25,iteration_user_field_id,many2one,ir.model.fields,User Field
+,,,,
+,,,,
+model,sync.model,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,domain,text,,Filtering
+3,display_name,char,,Display Name
+4,name,char,,Folder name
+5,model_id,many2one,ir.model,Model to sync
+6,__last_update,datetime,,Last Modified on
+7,nosyncd,boolean,,Not synced
+8,last_sync_datetime,datetime,,Direct Sync Time
+9,sync_object_ids,one2many,sync.object,Objects Folders
+10,write_uid,many2one,res.users,Last Updated by
+11,create_date,datetime,,Created on
+12,sequence,integer,,Sequence
+13,key,char,,ID in client
+14,write_date,datetime,,Last Updated on
+15,path,char,,Path
+16,model,char,,Model
+17,synced_name,char,,Synced name
+18,last_backward_sync_datetime,datetime,,Direct Backward Sync Time
+19,id,integer,,ID
+,,,,
+,,,,
+model,dev.relational.field,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,many2one,ir.model.fields,Name
+4,__last_update,datetime,,Last Modified on
+5,sequence,integer,,Sequence
+6,label,char,,Label
+7,write_uid,many2one,res.users,Last Updated by
+8,write_date,datetime,,Last Updated on
+9,create_date,datetime,,Created on
+10,model_id,many2one,ir.model,model
+11,export_id,many2one,dev.export,Export
+12,id,integer,,ID
+13,ref_field,many2one,ir.model.fields,Relation Field
+,,,,
+,,,,
+model,product.tag,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Name
+4,__last_update,datetime,,Last Modified on
+5,image,binary,,Image
+6,write_uid,many2one,res.users,Last Updated by
+7,product_template_ids,many2many,product.template,Product Template
+8,write_date,datetime,,Last Updated on
+9,create_date,datetime,,Created on
+10,id,integer,,ID
+,,,,
+,,,,
+model,area.category,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Name
+4,__last_update,datetime,,Last Modified on
+5,state_ids,many2many,res.country.state,Provinces
+6,write_uid,many2one,res.users,Last Updated by
+7,city_ids,many2many,res.city.ongkir,Cities
+8,write_date,datetime,,Last Updated on
+9,create_date,datetime,,Created on
+10,id,integer,,ID
+,,,,
+,,,,
+model,mart.consumption,transient,False
+no,field,type,relation,string
+1,box_value,float,,Box
+2,week,char,,Week
+3,create_uid,many2one,res.users,Created by
+4,plastik_value,float,,Plastik
+5,display_name,char,,Display Name
+6,name,char,,Name
+7,__last_update,datetime,,Last Modified on
+8,write_uid,many2one,res.users,Last Updated by
+9,rm_value,float,,Raw Material
+10,year,char,,Year
+11,month,char,,Month
+12,total_hpp_value,float,,Total HPP
+13,write_date,datetime,,Last Updated on
+14,hpp_value,float,,HPP
+15,date,char,,Date
+16,create_date,datetime,,Created on
+17,stiker_value,float,,Stiker
+18,other_value,float,,Other
+19,id,integer,,ID
+20,kemasan_value,float,,Kemasan
+,,,,
+,,,,
+model,document.name,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,stage_id,many2one,project.task.type,Alur Proses
+3,display_name,char,,Display Name
+4,name,char,,Name
+5,__last_update,datetime,,Last Modified on
+6,type_doc,selection,,Type Dokumen
+7,write_date,datetime,,Last Updated on
+8,create_date,datetime,,Created on
+9,write_uid,many2one,res.users,Last Updated by
+10,id,integer,,ID
+,,,,
+,,,,
+model,product.discussion,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,text,,Discussion
+4,__last_update,datetime,,Last Modified on
+5,image,binary,,Image
+6,sender_id,many2one,res.users,Sender
+7,reply_ids,one2many,product.discussion.reply,Reply
+8,write_uid,many2one,res.users,Last Updated by
+9,write_date,datetime,,Last Updated on
+10,create_date,datetime,,Created on
+11,id,integer,,ID
+12,product_id,many2one,product.template,Product
+,,,,
+,,,,
+model,notification.subtype,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,name,char,,Name
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,write_date,datetime,,Last Updated on
+7,display_name,char,,Display Name
+8,id,integer,,ID
+,,,,
+,,,,
+model,web.dashboard.block,transient,False
+no,field,type,relation,string
+1,function_model,char,,Function Model
+2,sort,selection,,Sort
+3,domain,char,,Flexible Filter (Slow Performance)
+4,create_date,datetime,,Created on
+5,group_field_id_model_name,char,,Group By Model
+6,subdomain_values_string,text,,Sub Filter Values
+7,auto_refresh_seconds,integer,,Auto Refresh (Seconds)
+8,activate_record_rules,boolean,,Activate Record Rules
+9,subgroup_relation_field_id,many2one,ir.model.fields, 
+10,time_calculation_method,selection,,Calculation Method
+11,user_field_id,many2one,ir.model.fields,User Field
+12,write_uid,many2one,res.users,Last Updated by
+13,dashboard_id,many2one,web.dashboard,Dashboard
+14,group_field_ttype,selection,,Field Type
+15,subgroup_field_id_model_name,char,,Sub Group By Model
+16,show_group_others,boolean,,Show Others
+17,action_group_list_view,boolean,,Group List View
+18,block_type,selection,,Block Type
+19,operation,selection,,Operation
+20,block_size,selection,,Block Size
+21,id,integer,,ID
+22,create_uid,many2one,res.users,Created by
+23,display_name,char,,Display Name
+24,calc_domain,char,,Flexible Filter (Slow Performance)
+25,tile_color,char,,Tile Color
+26,__last_update,datetime,,Last Modified on
+27,name,char,,Name
+28,calc_subdomain_values_string,text,,Sub Filter Values
+29,show_group,boolean,,Show Group If Empty
+30,others_operation,selection,,Others Operation
+31,barang_masuk_id,many2one,_unknown,Barang Masuk
+32,function_function,char,,Function Name
+33,field_ids,many2many,ir.model.fields,Fields
+34,domain_values_string,text,,Filter Values
+35,group_field_id,many2one,ir.model.fields,Group By
+36,active,boolean,,Active
+37,custom_type_name,char,,Custom Type Name
+38,menu_id,many2one,ir.ui.menu,Open Menu
+39,model_id,many2one,ir.model,Model
+40,domain_date_field_id,many2one,ir.model.fields,Date Field
+41,block_iteration_domain,char,,Iteration Filter
+42,description,html,,Chart Description
+43,action_group_field_ids,one2many,action.group.field,Action Group Fields
+44,subgroup_limit,integer,,Limit
+45,group_limit_selection,selection,,Group limit selection
+46,field_id,many2one,ir.model.fields,Measured Field
+47,target_description,html,,Target Description
+48,group_date_format,selection,,Date Format
+49,subdomain_values_field_id,many2one,ir.model.fields,Sub Filter By
+50,link,char,,Open URL
+51,write_date,datetime,,Last Updated on
+52,subgroup_field_id,many2one,ir.model.fields,Sub Group By
+53,subgroup_limit_selection,selection,,Subgroup limit selection
+54,dashboard_iteration_domain_field_id,many2one,ir.model.fields,Domain Field
+55,seasonal_number,integer,,Seasonal Number
+56,subgroup_date_format,selection,,Sub Group Date Format
+57,tile_icon,char,,Tile Icon
+58,target_value,float,,Target
+59,group_limit,integer,,Limit
+60,show_metadata,boolean,,Show Metadata
+61,data_source,selection,,Data Source
+62,domain_line_ids,one2many,web.domain.line,Domains
+63,show_subgroup_others,boolean,,Show Others
+64,show_subgroup,boolean,,Show Sub Group If Empty
+65,kpi_target_ids,one2many,web.dashboard.kpi.target,KPI Target
+66,domain_date,selection,,Date Filter
+67,calc_domain_values_field_id,many2one,ir.model.fields,Filter By
+68,calc_option,selection,,Calculation
+69,sort_by,many2one,ir.model.fields,Sort By
+70,calc_domain_values_string,text,,Filter Values
+71,domain_values_field_id,many2one,ir.model.fields,Filter By
+72,limit,integer,,Limit
+73,calc_subdomain_values_field_id,many2one,ir.model.fields,Sub Filter By
+74,action_dashboard_id,many2one,web.dashboard,Open Dashboard
+75,subgroup_field_ttype,selection,,Field Type
+76,group_relation_field_id,many2one,ir.model.fields, 
+77,model,char,,Model
+78,sequence,integer,,Sequence
+79,block_iteration,boolean,,Iterate Block
+80,dashboard_iteration_model,char,,Iteration Model
+,,,,
+,,,,
+model,utm.source,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,name,char,,Source Name
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,write_date,datetime,,Last Updated on
+7,display_name,char,,Display Name
+8,id,integer,,ID
+,,,,
+,,,,
+model,res.religion,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,name,char,,Religion
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,write_date,datetime,,Last Updated on
+7,display_name,char,,Display Name
+8,id,integer,,ID
+,,,,
+,,,,
+model,crm.stage,transient,False
+failed to get fields list of crm.stage
+,,,,
+model,product.discount,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,product_id,many2one,product.product,Product Variant
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,discount,float,,Discount (%)
+7,product_template_id,many2one,product.template,Product Template
+8,write_date,datetime,,Last Updated on
+9,create_date,datetime,,Created on
+10,min_qty,float,,Minimal Quantity
+11,partner_id,many2one,res.partner,Partner
+12,id,integer,,ID
+,,,,
+,,,,
+model,res.race,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,name,char,,RAS
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,write_date,datetime,,Last Updated on
+7,display_name,char,,Display Name
+8,id,integer,,ID
+,,,,
+,,,,
+model,crm.activity.report,transient,False
+failed to get fields list of crm.activity.report
+,,,,
+model,base.partner.merge.line,transient,True
+failed to get fields list of base.partner.merge.line
+,,,,
+model,utm.medium,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,name,char,,Channel Name
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,write_date,datetime,,Last Updated on
+7,active,boolean,,Active
+8,display_name,char,,Display Name
+9,id,integer,,ID
+,,,,
+,,,,
+model,makloon.product.line.wizard,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,stage_id,many2one,project.task.type,Stage
+3,display_name,char,,Display Name
+4,product_id,many2one,product.template,Nama Produk
+5,stock_dke,float,,Stock DKE
+6,__last_update,datetime,,Last Modified on
+7,task_id,many2one,project.task,Task
+8,is_readonly,boolean,,Readonly
+9,write_uid,many2one,res.users,Last Updated by
+10,kemasan,selection,,Kemasan
+11,write_date,datetime,,Last Updated on
+12,stock_ciawi,float,,Stock Ciawi
+13,create_date,datetime,,Created on
+14,id,integer,,ID
+,,,,
+,,,,
+model,production.order.line,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,product_qty,float,,Request
+3,display_name,char,,Display Name
+4,product_id,many2one,product.product,Product
+5,picking_type_id,many2one,stock.picking.type,Warehouse
+6,order_id,many2one,production.order,Order
+7,product_uom_id,many2one,product.uom,UoM
+8,notes,text,,Notes
+9,__last_update,datetime,,Last Modified on
+10,write_uid,many2one,res.users,Last Updated by
+11,product_tmpl_id,many2one,product.template,Product Template
+12,state,selection,,State
+13,qty_done,float,,Done
+14,write_date,datetime,,Last Updated on
+15,qty_billed,float,,Billed
+16,bom_id,many2one,mrp.bom,BoM
+17,order_state,selection,,Status
+18,create_date,datetime,,Created on
+19,id,integer,,ID
+20,mrp_id,many2one,mrp.production,MO
+,,,,
+,,,,
+model,expert.option,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Name
+4,sequence,integer,,Sequence
+5,__last_update,datetime,,Last Modified on
+6,next_condition_final,boolean,,Next is Final
+7,next_condition_id,many2one,expert.condition,Next Condition
+8,write_uid,many2one,res.users,Last Updated by
+9,write_date,datetime,,Last Updated on
+10,id,integer,,ID
+11,create_date,datetime,,Created on
+12,condition_id,many2one,expert.condition,Condition
+13,desc,text,,Description
+,,,,
+,,,,
+model,makloon.document.line,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,is_rangkapdua,boolean,,Rangkap 2
+3,is_approve,boolean,,Status Approval
+4,task_id,many2one,project.task,Task
+5,__last_update,datetime,,Last Modified on
+6,file_name,char,,Filename
+7,upload_file,binary,,File Dokumen
+8,approve_by,many2one,res.users,Approved By
+9,makloon_doc_id,many2one,document.name,Nama Document
+10,stage_id,many2one,project.task.type,Stage
+11,type_doc,selection,,Type Dokumen
+12,write_date,datetime,,Last Updated on
+13,upload_time,datetime,,Tanggal Upload
+14,upload_by,many2one,res.users,Uploaded By
+15,create_date,datetime,,Created on
+16,stage_line,char,,Alur Proses
+17,write_uid,many2one,res.users,Last Updated by
+18,id,integer,,ID
+19,is_hide_approver,boolean,,Hiding
+20,display_name,char,,Display Name
+,,,,
+,,,,
+model,action.group.field,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,block_type,selection,,Block Type
+3,block_id,many2one,web.dashboard.block,Dashboard Block
+4,sequence,integer,,Sequence
+5,__last_update,datetime,,Last Modified on
+6,field_id,many2one,ir.model.fields,Field
+7,write_uid,many2one,res.users,Last Updated by
+8,write_date,datetime,,Last Updated on
+9,create_date,datetime,,Created on
+10,model_id,many2one,ir.model,Model
+11,id,integer,,ID
+12,display_name,char,,Display Name
+,,,,
+,,,,
+model,kpi.unit,transient,False
+failed to get fields list of kpi.unit
+,,,,
+model,scheduler.do,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,__last_update,datetime,,Last Modified on
+4,write_uid,many2one,res.users,Last Updated by
+5,write_date,datetime,,Last Updated on
+6,display_name,char,,Display Name
+7,id,integer,,ID
+,,,,
+,,,,
+model,dev.export.wizard,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,__last_update,datetime,,Last Modified on
+4,write_uid,many2one,res.users,Last Updated by
+5,write_date,datetime,,Last Updated on
+6,display_name,char,,Display Name
+7,id,integer,,ID
+,,,,
+,,,,
+model,bca.statement.wizard,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,bca_api_action,selection,,Action
+3,test_response,boolean,,Test Response
+4,display_name,char,,Display Name
+5,__last_update,datetime,,Last Modified on
+6,bca_api_end_date,date,,End Date
+7,bca_api_start_date,date,,Start Date
+8,write_date,datetime,,Last Updated on
+9,create_date,datetime,,Created on
+10,write_uid,many2one,res.users,Last Updated by
+11,id,integer,,ID
+,,,,
+,,,,
+model,crm.activity,transient,False
+failed to get fields list of crm.activity
+,,,,
+model,wizard.report.bstb,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,write_date,datetime,,Last Updated on
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,paper_size,selection,,Paper Size
+7,report_type,selection,,Type
+8,display_name,char,,Display Name
+9,id,integer,,ID
+,,,,
+,,,,
+model,stock.control.report,transient,False
+no,field,type,relation,string
+1,qty_max_dke,float,,Qty Max DKE
+2,display_name,char,,Display Name
+3,name,char,,Label
+4,qty_min_dke,float,,Qty Min DKE
+5,qty_low_dke,float,,Qty Low DKE
+6,__last_update,datetime,,Last Modified on
+7,id,integer,,ID
+8,stock_status_dke,selection,,Stock Status
+9,value_dke,float,,Valuation DKE
+10,qty_high_dke,float,,Qty High DKE
+11,qty_dke,float,,Qty DKE
+12,product_id,many2one,product.product,Product
+,,,,
+,,,,
+model,sale.wishlist.line,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,product_id,many2one,product.product,Product
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,product_tmpl_id,many2one,product.template,Product Template
+7,wishlist_id,many2one,sale.wishlist,Wishlist
+8,write_date,datetime,,Last Updated on
+9,create_date,datetime,,Created on
+10,id,integer,,ID
+,,,,
+,,,,
+model,wizard.report.invoice,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,write_date,datetime,,Last Updated on
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,paper_size,selection,,Paper Size
+7,report_type,selection,,Type
+8,display_name,char,,Display Name
+9,id,integer,,ID
+,,,,
+,,,,
+model,mrp.bom.labour.line,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,note,text,,Note
+3,display_name,char,,Display Name
+4,labour_cost_profile_id,many2one,labour.cost.profile,Labour Cost Profile
+5,__last_update,datetime,,Last Modified on
+6,write_uid,many2one,res.users,Last Updated by
+7,company_currency_id,many2one,res.currency,Company Currency
+8,labour_time,float,,Labour Time
+9,write_date,datetime,,Last Updated on
+10,bom_id,many2one,mrp.bom,Labour Lines
+11,create_date,datetime,,Created on
+12,id,integer,,ID
+13,labour_cost_subtotal,float,,Subtotal
+,,,,
+,,,,
+model,res.contact,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,name,char,,Name
+4,__last_update,datetime,,Last Modified on
+5,number,char,,Contact Number
+6,write_uid,many2one,res.users,Last Updated by
+7,write_date,datetime,,Last Updated on
+8,display_name,char,,Display Name
+9,id,integer,,ID
+,,,,
+,,,,
+model,utm.mixin,transient,False
+no,field,type,relation,string
+1,display_name,char,,Display Name
+2,medium_id,many2one,utm.medium,Medium
+3,__last_update,datetime,,Last Modified on
+4,campaign_id,many2one,utm.campaign,Campaign
+5,source_id,many2one,utm.source,Source
+6,id,integer,,ID
+,,,,
+,,,,
+model,delivery.carrier,transient,False
+no,field,type,relation,string
+1,code,char,,Internal Reference
+2,incoming_qty,float,,Incoming
+3,standard_price,float,,Cost
+4,write_uid,many2one,res.users,Last Updated by
+5,sales_count,integer,,# Sales
+6,description_mobile,text,,Description
+7,availability,selection,,Availability
+8,partner_ref,char,,Customer Ref
+9,display_name,char,,Display Name
+10,price_rule_ids,one2many,delivery.price.rule,Pricing Rules
+11,item_ids,one2many,product.pricelist.item,Pricelist Items
+12,route_from_categ_ids,many2many,stock.location.route,Category Routes
+13,company_id,many2one,res.company,Company
+14,discount_ids,one2many,product.discount,Discounts
+15,prod_environment,boolean,,Environment
+16,rating_count,integer,,Rating count
+17,track_service,selection,,Track Service
+18,purchase_line_warn_msg,text,,Message for Purchase Order Line
+19,pricelist_id,many2one,product.pricelist,Pricelist
+20,property_stock_account_input,many2one,account.account,Stock Input Account
+21,uom_po_id,many2one,product.uom,Purchase Unit of Measure
+22,reception_count,integer,,Receipt
+23,bom_ids,one2many,mrp.bom,Bill of Materials
+24,warehouse_id,many2one,stock.warehouse,Warehouse
+25,route_ids,many2many,stock.location.route,Routes
+26,reordering_max_qty,float,,Reordering max qty
+27,website_style_ids,many2many,product.style,Styles
+28,rental,boolean,,Can be Rent
+29,product_sale_ok,boolean,,Can be Sold
+30,pricelist_item_ids,many2many,product.pricelist.item,Pricelist item ids
+31,name,char,,Name
+32,website_description,text,,Description for Online Quotations
+33,image_medium,binary,,Medium-sized image
+34,deferred_revenue_category_id,many2one,account.asset.category,Deferred Revenue Type
+35,packaging_ids,one2many,product.packaging,Logistical Units
+36,image_url,char,,URL Image
+37,free_if_more_than,boolean,,Free if Order total is more than
+38,seller_ids,one2many,product.supplierinfo,Vendors
+39,product_image_ids,one2many,product.image,Images
+40,website_message_ids,one2many,mail.message,Website Comments
+41,accessory_product_ids,many2many,product.product,Accessory Products
+42,message_follower_ids,one2many,mail.followers,Followers
+43,orderpoint_ids,one2many,stock.warehouse.orderpoint,Minimum Stock Rules
+44,create_date,datetime,,Created on
+45,zip_to,char,,Zip To
+46,weight,float,,Weight
+47,sequence,integer,,Sequence
+48,message_needaction,boolean,,Action Needed
+49,attribute_line_ids,one2many,product.attribute.line,Product Attributes
+50,currency_id,many2one,res.currency,Currency
+51,website_public_price,float,,Website public price
+52,mo_count,integer,,# Manufacturing Orders
+53,id,integer,,ID
+54,stock_move_ids,one2many,stock.move,Stock move ids
+55,virtual_available,float,,Forecast Quantity
+56,description_picking,text,,Description on Picking
+57,sale_delay,float,,Customer Lead Time
+58,product_tmpl_id,many2one,product.template,Product Template
+59,message_unread_counter,integer,,Unread Messages Counter
+60,available,boolean,,Available
+61,rebrand_reference_product_id,many2one,product.template,Original Product
+62,barcode,char,,Barcode
+63,discount,float,,Default Discount to this Product
+64,fp_export,boolean,,OB Is Exported
+65,product_group_id,many2one,product.group,Group
+66,website_meta_keywords,char,,Website meta keywords
+67,active,boolean,,Active
+68,website_price_difference,boolean,,Website price difference
+69,rating_ids,one2many,rating.rating,Rating
+70,product_variant_count,integer,,# Product Variants
+71,rebrand_customer_id,many2one,res.partner,Rebrand Customer
+72,product_id,many2one,product.product,Delivery Product
+73,task_id,many2one,project.task,Task
+74,state_ids,many2many,res.country.state,States
+75,expert_ids,many2many,expert.condition,Expert System Conditions
+76,amount,float,,Amount
+77,jnt_type,selection,,J&T Type
+78,integration_level,selection,,Integration Level
+79,reordering_min_qty,float,,Reordering min qty
+80,message_unread,boolean,,Unread Messages
+81,message_needaction_counter,integer,,Number of Actions
+82,warranty,float,,Warranty
+83,property_stock_procurement,many2one,stock.location,Procurement Location
+84,fixed_price,float,,Fixed Price
+85,list_price,float,,Sale Price
+86,color,integer,,Color Index
+87,public_categ_ids,many2many,product.public.category,Website Product Category
+88,country_ids,many2many,res.country,Countries
+89,sale_line_warn_msg,text,,Message for Sales Order Line
+90,stock_quant_ids,one2many,stock.quant,Stock quant ids
+91,qty_available,float,,Quantity On Hand
+92,can_be_expensed,boolean,,Can be Expensed
+93,delivery_carrier_product,boolean,,Delivery Service
+94,create_uid,many2one,res.users,Created by
+95,asset_category_id,many2one,account.asset.category,Asset Type
+96,sale_ok,boolean,,Can be Sold
+97,message_is_follower,boolean,,Is Follower
+98,__last_update,datetime,,Last Modified on
+99,purchase_method,selection,,Control Purchase Bills
+100,purchase_ok,boolean,,Can be Purchased
+101,message_last_post,datetime,,Last Message Date
+102,website_price,float,,Website price
+103,property_valuation,selection,,Inventory Valuation
+104,hs_code,char,,HS Code
+105,property_cost_method,selection,,Costing Method
+106,type,selection,,Product Type
+107,rating_last_value,float,,Rating Last Value
+108,delivery_type,selection,,Provider
+109,website_size_y,integer,,Size Y
+110,property_stock_production,many2one,stock.location,Production Location
+111,supplier_taxes_id,many2many,account.tax,Vendor Taxes
+112,jne_type,selection,,JNE Type
+113,website_meta_description,text,,Website meta description
+114,description_sale,text,,Sale Description
+115,property_stock_inventory,many2one,stock.location,Inventory Location
+116,cost_method,char,,Cost method
+117,valuation,char,,Valuation
+118,bom_count,integer,,# Bill of Material
+119,alternative_product_ids,many2many,product.template,Alternative Products
+120,product_variant_ids,one2many,product.product,Products
+121,property_account_expense_id,many2one,account.account,Expense Account
+122,purchase_line_warn,selection,,Purchase Order Line
+123,image_small,binary,,Small-sized image
+124,property_stock_account_output,many2one,account.account,Stock Output Account
+125,zip_from,char,,Zip From
+126,description_purchase,text,,Purchase Description
+127,attribute_value_ids,many2many,product.attribute.value,Attributes
+128,margin,integer,,Margin
+129,sale_line_warn,selection,,Sales Order Line
+130,nbr_reordering_rules,integer,,Reordering Rules
+131,video_url,char,,Video URL
+132,message_channel_ids,many2many,mail.channel,Followers (Channels)
+133,message_partner_ids,many2many,res.partner,Followers (Partners)
+134,sell_mobile,boolean,,Sell to Mobile App
+135,price_extra,float,,Variant Price Extra
+136,uom_id,many2one,product.uom,Unit of Measure
+137,default_code,char,,Internal Reference
+138,location_id,many2one,stock.location,Location
+139,message_ids,one2many,mail.message,Messages
+140,delivery_count,integer,,Delivery
+141,brand_ids,many2many,product.brand,Product Brand
+142,image,binary,,Image
+143,availability_warning,text,,Availability Warning
+144,lst_price,float,,Sale Price
+145,review_ids,one2many,product.review,Reviews
+146,image_variant,binary,,Variant Image
+147,website_meta_title,char,,Website meta title
+148,qty_check,boolean,,Check Qty on E-commerce
+149,default_carrier,boolean,,Default
+150,website_url,char,,Website URL
+151,taxes_id,many2many,account.tax,Customer Taxes
+152,property_account_income_id,many2one,account.account,Income Account
+153,description,text,,Description
+154,banner_ids,many2many,sale.banner,Banner
+155,price,float,,Price
+156,expense_policy,selection,,Re-Invoice Expenses
+157,write_date,datetime,,Last Updated on
+158,categ_id,many2one,product.category,Internal Category
+159,materi_ids,many2many,res.materi,File Materi
+160,purchase_count,integer,,# Purchases
+161,volume,float,,Volume
+162,tracking,selection,,Tracking
+163,product_type,selection,,Product Type
+164,produce_delay,float,,Manufacturing Lead Time
+165,property_account_creditor_price_difference,many2one,account.account,Price Difference Account
+166,website_sequence,integer,,Website Sequence
+167,website_published,boolean,,Visible in Website
+168,tiki_type,selection,,Tiki Type
+169,outgoing_qty,float,,Outgoing
+170,invoice_policy,selection,,Invoicing Policy
+171,discussion_ids,one2many,product.discussion,Discussions
+172,website_size_x,integer,,Size X
+173,tag_ids,many2many,product.tag,Product Tag
+174,fp_date,datetime,,OB Exported Date
+175,product_variant_id,many2one,product.product,Product
+,,,,
+,,,,
+model,google.drive.client,transient,False
+no,field,type,relation,string
+1,display_name,char,,Display Name
+2,id,integer,,ID
+3,__last_update,datetime,,Last Modified on
+,,,,
+,,,,
+model,news.feed.reply,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,user_id,many2one,res.users,User
+3,name,text,,Description
+4,__last_update,datetime,,Last Modified on
+5,reply_ids,one2many,news.feed.reply,Replies
+6,write_uid,many2one,res.users,Last Updated by
+7,feed_id,many2one,news.feed,Feed
+8,reply_id,many2one,news.feed.reply,Reply of
+9,write_date,datetime,,Last Updated on
+10,create_date,datetime,,Created on
+11,id,integer,,ID
+12,display_name,char,,Display Name
+,,,,
+,,,,
+model,analysis.stock.quant,transient,False
+no,field,type,relation,string
+1,incoming_date,datetime,,Incoming Date
+2,location_name,char,,Location Name
+3,stock_qty,float,,Qty
+4,__last_update,datetime,,Last Modified on
+5,storage_duration_category,selection,,Stock Status
+6,categ_name,char,,Category Name
+7,company_id,many2one,res.company,Company
+8,id,integer,,ID
+9,stock_duration,float,,Stock Duration (Days)
+10,display_name,char,,Display Name
+11,stock_value,float,,Valuation
+12,product_name,char,,Product Name
+,,,,
+,,,,
+model,partner.user,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,__last_update,datetime,,Last Modified on
+4,user_data,one2many,user.datas,User data
+5,write_uid,many2one,res.users,Last Updated by
+6,write_date,datetime,,Last Updated on
+7,display_name,char,,Display Name
+8,id,integer,,ID
+,,,,
+,,,,
+model,sync.log,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,name,text,,Message
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,write_date,datetime,,Last Updated on
+7,ttype,selection,,Type
+8,log_time,datetime,,Log Time
+9,id,integer,,ID
+10,display_name,char,,Display Name
+,,,,
+,,,,
+model,stock.picking.tracking.details,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,date_time,datetime,,Date Time
+3,display_name,char,,Display Name
+4,name,char,,Description
+5,__last_update,datetime,,Last Modified on
+6,write_uid,many2one,res.users,Last Updated by
+7,write_date,datetime,,Last Updated on
+8,picking_id,many2one,stock.picking,Picking
+9,create_date,datetime,,Created on
+10,id,integer,,ID
+,,,,
+,,,,
+model,wizard.report.stock.picking,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,write_date,datetime,,Last Updated on
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,paper_size,selection,,Paper Size
+7,report_type,selection,,Type
+8,display_name,char,,Display Name
+9,id,integer,,ID
+,,,,
+,,,,
+model,product.group,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Name
+4,__last_update,datetime,,Last Modified on
+5,attribute_line_ids,one2many,product.attribute.line,Attribute
+6,write_uid,many2one,res.users,Last Updated by
+7,write_date,datetime,,Last Updated on
+8,create_date,datetime,,Created on
+9,id,integer,,ID
+10,product_tmpl_ids,one2many,product.template,Products
+,,,,
+,,,,
+model,user.datas,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,groups_id,many2many,res.groups,Groups
+3,create_date,datetime,,Created on
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,write_date,datetime,,Last Updated on
+7,rel_id,many2one,partner.user,Rel id
+8,login,char,,Login
+9,password,char,,Password
+10,partner_id,many2one,res.partner,Partner
+11,id,integer,,ID
+12,display_name,char,,Display Name
+,,,,
+,,,,
+model,crm.opportunity.report,transient,False
+failed to get fields list of crm.opportunity.report
+,,,,
+model,upload.efaktur,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,name,char,,Path
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,write_date,datetime,,Last Updated on
+7,display_name,char,,Display Name
+8,id,integer,,ID
+,,,,
+,,,,
+model,scheduler.stok,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,__last_update,datetime,,Last Modified on
+4,write_uid,many2one,res.users,Last Updated by
+5,write_date,datetime,,Last Updated on
+6,display_name,char,,Display Name
+7,id,integer,,ID
+,,,,
+,,,,
+model,fp.partner.export,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,__last_update,datetime,,Last Modified on
+4,write_uid,many2one,res.users,Last Updated by
+5,write_date,datetime,,Last Updated on
+6,display_name,char,,Display Name
+7,id,integer,,ID
+,,,,
+,,,,
+model,fp.product.export,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,__last_update,datetime,,Last Modified on
+4,write_uid,many2one,res.users,Last Updated by
+5,write_date,datetime,,Last Updated on
+6,display_name,char,,Display Name
+7,id,integer,,ID
+,,,,
+,,,,
+model,res.kecamatan,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,name,char,,Kecamatan
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,kabupaten_id,many2one,res.kabupaten,Kabupaten
+7,write_date,datetime,,Last Updated on
+8,state_id,many2one,res.country.state,Province
+9,id,integer,,ID
+10,kelurahan_line,one2many,res.kelurahan,Kelurahan
+11,display_name,char,,Display Name
+,,,,
+,,,,
+model,product.brand,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Name
+4,__last_update,datetime,,Last Modified on
+5,image,binary,,Image
+6,write_uid,many2one,res.users,Last Updated by
+7,product_template_ids,many2many,product.template,Product Template
+8,write_date,datetime,,Last Updated on
+9,create_date,datetime,,Created on
+10,id,integer,,ID
+,,,,
+,,,,
+model,ir.actions.report.xml.file,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,write_date,datetime,,Last Updated on
+4,__last_update,datetime,,Last Modified on
+5,default,boolean,,Default
+6,filename,char,,File Name
+7,file,binary,,File
+8,create_date,datetime,,Created on
+9,write_uid,many2one,res.users,Last Updated by
+10,id,integer,,ID
+11,report_id,many2one,ir.actions.report.xml,Report
+,,,,
+,,,,
+model,res.materi,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Name
+4,__last_update,datetime,,Last Modified on
+5,file_name,char,,File Name
+6,file_url,char,,File URL
+7,write_uid,many2one,res.users,Last Updated by
+8,is_premium,boolean,,For Premium Customer Only
+9,create_date,datetime,,Created on
+10,write_date,datetime,,Last Updated on
+11,file_binary,binary,,File Upload
+12,id,integer,,ID
+13,product_tmpl_ids,many2many,product.template,Products
+,,,,
+,,,,
+model,news.feed.like,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,__last_update,datetime,,Last Modified on
+4,user_id,many2one,res.users,User
+5,write_uid,many2one,res.users,Last Updated by
+6,feed_id,many2one,news.feed,Feed
+7,write_date,datetime,,Last Updated on
+8,display_name,char,,Display Name
+9,id,integer,,ID
+,,,,
+,,,,
+model,crm.lead,transient,False
+failed to get fields list of crm.lead
+,,,,
+model,product.discussion.reply,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,text,,Discussion
+4,__last_update,datetime,,Last Modified on
+5,image,binary,,Image
+6,sender_id,many2one,res.users,Sender
+7,write_uid,many2one,res.users,Last Updated by
+8,discussion_id,many2one,product.discussion,Discussion
+9,write_date,datetime,,Last Updated on
+10,create_date,datetime,,Created on
+11,id,integer,,ID
+,,,,
+,,,,
+model,sync.object,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,last_backward_sync_datetime,datetime,,Direct Backward Sync Time
+3,display_name,char,,Display Name
+4,name,char,,Folder name
+5,__last_update,datetime,,Last Modified on
+6,sync_model_id,many2one,sync.model,Model to sync
+7,last_sync_datetime,datetime,,Direct Sync Time
+8,write_uid,many2one,res.users,Last Updated by
+9,create_date,datetime,,Created on
+10,key,char,,ID in client
+11,write_date,datetime,,Last Updated on
+12,path,char,,Path
+13,res_id,integer,,RES ID
+14,id,integer,,ID
+,,,,
+,,,,
+model,makloon.po.cetaklabel,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,stage_id,many2one,project.task.type,Stage
+3,display_name,char,,Display Name
+4,task_id,many2one,project.task,Task
+5,__last_update,datetime,,Last Modified on
+6,stage_sequence,integer,,Stage Sequence
+7,po_id,many2one,purchase.order,Purchase Order
+8,write_uid,many2one,res.users,Last Updated by
+9,write_date,datetime,,Last Updated on
+10,create_date,datetime,,Created on
+11,id,integer,,ID
+,,,,
+,,,,
+model,credit.point.history,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Name
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,amount,float,,Amount
+7,write_date,datetime,,Last Updated on
+8,time,datetime,,Time
+9,create_date,datetime,,Created on
+10,partner_id,many2one,res.partner,Partner
+11,id,integer,,ID
+,,,,
+,,,,
+model,web.domain.line,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,block_id,many2one,web.dashboard.block,Block
+4,__last_update,datetime,,Last Modified on
+5,field_id,many2one,ir.model.fields,Field
+6,value,char,,Value
+7,write_uid,many2one,res.users,Last Updated by
+8,write_date,datetime,,Last Updated on
+9,operator,selection,,Operator
+10,create_date,datetime,,Created on
+11,id,integer,,ID
+,,,,
+,,,,
+model,wizard.report.stock.move.summary,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,product_id,many2one,product.product,Product
+4,end_date,date,,End Date
+5,__last_update,datetime,,Last Modified on
+6,write_uid,many2one,res.users,Last Updated by
+7,location_dest_id,many2one,stock.location,To
+8,start_date,date,,Start Date
+9,write_date,datetime,,Last Updated on
+10,create_date,datetime,,Created on
+11,location_id,many2one,stock.location,From
+12,id,integer,,ID
+,,,,
+,,,,
+model,sale.wishlist,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,__last_update,datetime,,Last Modified on
+4,write_uid,many2one,res.users,Last Updated by
+5,write_date,datetime,,Last Updated on
+6,line_ids,one2many,sale.wishlist.line,Line
+7,partner_id,many2one,res.partner,Customer
+8,id,integer,,ID
+9,display_name,char,,Display Name
+,,,,
+,,,,

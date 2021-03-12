@@ -1,0 +1,25 @@
+model,ir.sequence,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,code,char,,Sequence Code
+3,display_name,char,,Display Name
+4,name,char,,Name
+5,number_next,integer,,Next Number
+6,__last_update,datetime,,Last Modified on
+7,implementation,selection,,Implementation
+8,company_id,many2one,res.company,Company
+9,write_uid,many2one,res.users,Last Updated by
+10,padding,integer,,Sequence Size
+11,number_increment,integer,,Step
+12,prefix,char,,Prefix
+13,date_range_ids,one2many,ir.sequence.date_range,Subsequences
+14,use_date_range,boolean,,Use subsequences per date_range
+15,write_date,datetime,,Last Updated on
+16,number_next_actual,integer,,Next Number
+17,create_date,datetime,,Created on
+18,active,boolean,,Active
+19,id,integer,,ID
+20,suffix,char,,Suffix
+,,,,
+,,,,
+,,,,

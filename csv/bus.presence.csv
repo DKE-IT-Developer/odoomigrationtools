@@ -1,0 +1,12 @@
+model,bus.presence,transient,False
+no,field,type,relation,string
+1,status,selection,,IM Status
+2,user_id,many2one,res.users,Users
+3,__last_update,datetime,,Last Modified on
+4,last_presence,datetime,,Last Presence
+5,last_poll,datetime,,Last Poll
+6,id,integer,,ID
+7,display_name,char,,Display Name
+,,,,
+,,,,
+,,,,

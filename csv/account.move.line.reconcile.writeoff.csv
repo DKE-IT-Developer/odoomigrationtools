@@ -1,0 +1,17 @@
+model,account.move.line.reconcile.writeoff,transient,True
+no,field,type,relation,string
+1,comment,char,,Comment
+2,create_uid,many2one,res.users,Created by
+3,display_name,char,,Display Name
+4,__last_update,datetime,,Last Modified on
+5,writeoff_acc_id,many2one,account.account,Write-Off account
+6,journal_id,many2one,account.journal,Write-Off Journal
+7,analytic_id,many2one,account.analytic.account,Analytic Account
+8,write_date,datetime,,Last Updated on
+9,date_p,date,,Date
+10,create_date,datetime,,Created on
+11,write_uid,many2one,res.users,Last Updated by
+12,id,integer,,ID
+,,,,
+,,,,
+,,,,

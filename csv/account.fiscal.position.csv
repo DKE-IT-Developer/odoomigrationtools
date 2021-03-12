@@ -1,0 +1,27 @@
+model,account.fiscal.position,transient,False
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,zip_to,integer,,Zip Range To
+3,sequence,integer,,Sequence
+4,auto_apply,boolean,,Detect Automatically
+5,write_uid,many2one,res.users,Last Updated by
+6,vat_required,boolean,,VAT required
+7,id,integer,,ID
+8,create_uid,many2one,res.users,Created by
+9,display_name,char,,Display Name
+10,__last_update,datetime,,Last Modified on
+11,country_id,many2one,res.country,Country
+12,company_id,many2one,res.company,Company
+13,note,text,,Notes
+14,tax_ids,one2many,account.fiscal.position.tax,Tax Mapping
+15,country_group_id,many2one,res.country.group,Country Group
+16,states_count,integer,,States count
+17,account_ids,one2many,account.fiscal.position.account,Account Mapping
+18,write_date,datetime,,Last Updated on
+19,active,boolean,,Active
+20,name,char,,Fiscal Position
+21,state_ids,many2many,res.country.state,Federal States
+22,zip_from,integer,,Zip Range From
+,,,,
+,,,,
+,,,,

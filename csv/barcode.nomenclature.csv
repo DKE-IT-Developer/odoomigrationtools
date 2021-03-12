@@ -1,0 +1,15 @@
+model,barcode.nomenclature,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,name,char,,Nomenclature Name
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,rule_ids,one2many,barcode.rule,Rules
+7,write_date,datetime,,Last Updated on
+8,display_name,char,,Display Name
+9,upc_ean_conv,selection,,UPC/EAN Conversion
+10,id,integer,,ID
+,,,,
+,,,,
+,,,,

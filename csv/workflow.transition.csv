@@ -1,0 +1,21 @@
+model,workflow.transition,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,write_date,datetime,,Last Updated on
+4,__last_update,datetime,,Last Modified on
+5,signal,char,,Signal (Button Name)
+6,sequence,integer,,Sequence
+7,write_uid,many2one,res.users,Last Updated by
+8,act_from,many2one,workflow.activity,Source Activity
+9,wkf_id,many2one,workflow,Workflow
+10,condition,char,,Condition
+11,trigger_model,char,,Trigger Object
+12,trigger_expr_id,char,,Trigger Expression
+13,create_date,datetime,,Created on
+14,group_id,many2one,res.groups,Group Required
+15,id,integer,,ID
+16,act_to,many2one,workflow.activity,Destination Activity
+,,,,
+,,,,
+,,,,

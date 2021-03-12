@@ -1,0 +1,16 @@
+model,workflow,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,on_create,boolean,,On Create
+3,display_name,char,,Display Name
+4,name,char,,Name
+5,activities,one2many,workflow.activity,Activities
+6,__last_update,datetime,,Last Modified on
+7,osv,char,,Resource Object
+8,write_date,datetime,,Last Updated on
+9,create_date,datetime,,Created on
+10,write_uid,many2one,res.users,Last Updated by
+11,id,integer,,ID
+,,,,
+,,,,
+,,,,

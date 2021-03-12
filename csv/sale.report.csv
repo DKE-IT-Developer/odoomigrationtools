@@ -1,0 +1,33 @@
+model,sale.report,transient,False
+no,field,type,relation,string
+1,qty_to_invoice,float,,Qty To Invoice
+2,nbr,integer,,# of Lines
+3,product_uom_qty,float,,# of Qty
+4,price_subtotal,float,,Untaxed Total
+5,team_id,many2one,crm.team,Sales Team
+6,partner_id,many2one,res.partner,Partner
+7,id,integer,,ID
+8,analytic_account_id,many2one,account.analytic.account,Analytic Account
+9,display_name,char,,Display Name
+10,product_uom,many2one,product.uom,Unit of Measure
+11,__last_update,datetime,,Last Modified on
+12,country_id,many2one,res.country,Partner Country
+13,company_id,many2one,res.company,Company
+14,product_tmpl_id,many2one,product.template,Product Template
+15,state,selection,,Status
+16,pricelist_id,many2one,product.pricelist,Pricelist
+17,qty_invoiced,float,,Qty Invoiced
+18,weight,float,,Gross Weight
+19,warehouse_id,many2one,stock.warehouse,Warehouse
+20,volume,float,,Volume
+21,date,datetime,,Date Order
+22,qty_delivered,float,,Qty Delivered
+23,categ_id,many2one,product.category,Product Category
+24,name,char,,Order Reference
+25,price_total,float,,Total
+26,product_id,many2one,product.product,Product
+27,user_id,many2one,res.users,Salesperson
+28,commercial_partner_id,many2one,res.partner,Commercial Entity
+,,,,
+,,,,
+,,,,

@@ -1,0 +1,17 @@
+model,blog.tag,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Name
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,website_meta_description,text,,Website meta description
+7,website_meta_title,char,,Website meta title
+8,write_date,datetime,,Last Updated on
+9,post_ids,many2many,blog.post,Posts
+10,website_meta_keywords,char,,Website meta keywords
+11,create_date,datetime,,Created on
+12,id,integer,,ID
+,,,,
+,,,,
+,,,,

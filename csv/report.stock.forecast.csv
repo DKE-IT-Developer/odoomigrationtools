@@ -1,0 +1,13 @@
+model,report.stock.forecast,transient,False
+no,field,type,relation,string
+1,cumulative_quantity,float,,Cumulative Quantity
+2,display_name,char,,Display Name
+3,product_id,many2one,product.product,Product
+4,__last_update,datetime,,Last Modified on
+5,product_tmpl_id,many2one,product.template,Product Template
+6,date,date,,Date
+7,id,integer,,ID
+8,quantity,float,,Quantity
+,,,,
+,,,,
+,,,,

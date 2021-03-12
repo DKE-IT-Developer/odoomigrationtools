@@ -1,0 +1,23 @@
+model,account.invoice.tax,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,account_id,many2one,account.account,Tax Account
+4,name,char,,Tax Description
+5,sequence,integer,,Sequence
+6,invoice_id,many2one,account.invoice,Invoice
+7,__last_update,datetime,,Last Modified on
+8,manual,boolean,,Manual
+9,company_id,many2one,res.company,Company
+10,write_uid,many2one,res.users,Last Updated by
+11,currency_id,many2one,res.currency,Currency
+12,amount,monetary,,Amount
+13,base,monetary,,Base
+14,write_date,datetime,,Last Updated on
+15,account_analytic_id,many2one,account.analytic.account,Analytic account
+16,create_date,datetime,,Created on
+17,id,integer,,ID
+18,tax_id,many2one,account.tax,Tax
+,,,,
+,,,,
+,,,,

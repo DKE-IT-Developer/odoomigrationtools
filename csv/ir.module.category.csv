@@ -1,0 +1,21 @@
+model,ir.module.category,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,xml_id,char,,External ID
+3,display_name,char,,Display Name
+4,description,text,,Description
+5,sequence,integer,,Sequence
+6,module_ids,one2many,ir.module.module,Modules
+7,module_nr,integer,,Number of Apps
+8,__last_update,datetime,,Last Modified on
+9,child_ids,one2many,ir.module.category,Child Applications
+10,write_uid,many2one,res.users,Last Updated by
+11,parent_id,many2one,ir.module.category,Parent Application
+12,visible,boolean,,Visible
+13,write_date,datetime,,Last Updated on
+14,create_date,datetime,,Created on
+15,id,integer,,ID
+16,name,char,,Name
+,,,,
+,,,,
+,,,,

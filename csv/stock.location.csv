@@ -1,0 +1,33 @@
+model,stock.location,transient,False
+no,field,type,relation,string
+1,comment,text,,Additional Information
+2,putaway_strategy_id,many2one,product.putaway,Put Away Strategy
+3,create_date,datetime,,Created on
+4,write_date,datetime,,Last Updated on
+5,write_uid,many2one,res.users,Last Updated by
+6,valuation_in_account_id,many2one,account.account,Stock Valuation Account (Incoming)
+7,location_id,many2one,stock.location,Parent Location
+8,id,integer,,ID
+9,removal_strategy_id,many2one,product.removal,Removal Strategy
+10,scrap_location,boolean,,Is a Scrap Location?
+11,display_name,char,,Display Name
+12,__last_update,datetime,,Last Modified on
+13,partner_id,many2one,res.partner,Owner
+14,company_id,many2one,res.company,Company
+15,complete_name,char,,Full Location Name
+16,usage,selection,,Location Type
+17,create_uid,many2one,res.users,Created by
+18,barcode,char,,Barcode
+19,child_ids,one2many,stock.location,Contains
+20,posz,integer,,Height (Z)
+21,posx,integer,,Corridor (X)
+22,posy,integer,,Shelves (Y)
+23,active,boolean,,Active
+24,valuation_out_account_id,many2one,account.account,Stock Valuation Account (Outgoing)
+25,parent_right,integer,,Right Parent
+26,name,char,,Location Name
+27,parent_left,integer,,Left Parent
+28,return_location,boolean,,Is a Return Location?
+,,,,
+,,,,
+,,,,

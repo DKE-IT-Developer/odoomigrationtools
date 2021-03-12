@@ -1,0 +1,19 @@
+model,product.attribute.value,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,char,,Value
+4,__last_update,datetime,,Last Modified on
+5,sequence,integer,,Sequence
+6,price_extra,float,,Attribute Price Extra
+7,price_ids,one2many,product.attribute.price,Attribute Prices
+8,html_color,char,,HTML Color Index
+9,attribute_id,many2one,product.attribute,Attribute
+10,product_ids,many2many,product.product,Variants
+11,write_date,datetime,,Last Updated on
+12,create_date,datetime,,Created on
+13,write_uid,many2one,res.users,Last Updated by
+14,id,integer,,ID
+,,,,
+,,,,
+,,,,

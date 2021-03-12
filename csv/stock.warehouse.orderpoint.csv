@@ -1,0 +1,28 @@
+model,stock.warehouse.orderpoint,transient,False
+no,field,type,relation,string
+1,product_max_qty,float,,Maximum Quantity
+2,create_uid,many2one,res.users,Created by
+3,procurement_ids,one2many,procurement.order,Created Procurements
+4,qty_multiple,float,,Qty Multiple
+5,display_name,char,,Display Name
+6,name,char,,Name
+7,product_uom,many2one,product.uom,Product Unit of Measure
+8,__last_update,datetime,,Last Modified on
+9,company_id,many2one,res.company,Company
+10,location_id,many2one,stock.location,Location
+11,id,integer,,ID
+12,lead_days,integer,,Lead Time
+13,warehouse_id,many2one,stock.warehouse,Warehouse
+14,active,boolean,,Active
+15,write_date,datetime,,Last Updated on
+16,lead_type,selection,,Lead Type
+17,create_date,datetime,,Created on
+18,write_uid,many2one,res.users,Last Updated by
+19,product_min_qty,float,,Minimum Quantity
+20,group_id,many2one,procurement.group,Procurement Group
+21,product_id,many2one,product.product,Product
+,,,,
+22,product_low_qty,float,,Low Quantity
+23,product_high_qty,float,,High Quantity
+,,,,
+,,,,

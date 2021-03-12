@@ -1,0 +1,18 @@
+model,account.payment.term.line,transient,False
+no,field,type,relation,string
+1,payment_id,many2one,account.payment.term,Payment Terms
+2,create_uid,many2one,res.users,Created by
+3,display_name,char,,Display Name
+4,option,selection,,Options
+5,__last_update,datetime,,Last Modified on
+6,sequence,integer,,Sequence
+7,days,integer,,Number of Days
+8,value,selection,,Type
+9,write_uid,many2one,res.users,Last Updated by
+10,write_date,datetime,,Last Updated on
+11,create_date,datetime,,Created on
+12,id,integer,,ID
+13,value_amount,float,,Value
+,,,,
+,,,,
+,,,,

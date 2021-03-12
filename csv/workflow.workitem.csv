@@ -1,0 +1,13 @@
+model,workflow.workitem,transient,False
+no,field,type,relation,string
+1,act_id,many2one,workflow.activity,Activity
+2,display_name,char,,Display Name
+3,__last_update,datetime,,Last Modified on
+4,wkf_id,many2one,workflow,Workflow
+5,inst_id,many2one,workflow.instance,Instance
+6,subflow_id,many2one,workflow.instance,Subflow
+7,state,char,,Status
+8,id,integer,,ID
+,,,,
+,,,,
+,,,,

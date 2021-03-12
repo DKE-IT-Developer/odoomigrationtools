@@ -1,0 +1,14 @@
+model,stock.change.standard.price,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,__last_update,datetime,,Last Modified on
+4,new_price,float,,Price
+5,write_uid,many2one,res.users,Last Updated by
+6,write_date,datetime,,Last Updated on
+7,counterpart_account_id,many2one,account.account,Counter-Part Account
+8,display_name,char,,Display Name
+9,id,integer,,ID
+,,,,
+,,,,
+,,,,

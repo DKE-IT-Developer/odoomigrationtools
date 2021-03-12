@@ -1,0 +1,26 @@
+model,res.groups,transient,False
+no,field,type,relation,string
+1,comment,text,,Comment
+2,create_uid,many2one,res.users,Created by
+3,display_name,char,,Display Name
+4,menu_access,many2many,ir.ui.menu,Access Menu
+5,name,char,,Name
+6,__last_update,datetime,,Last Modified on
+7,color,integer,,Color Index
+8,share,boolean,,Share Group
+9,write_uid,many2one,res.users,Last Updated by
+10,is_portal,boolean,,Portal
+11,rule_groups,many2many,ir.rule,Rules
+12,implied_ids,many2many,res.groups,Inherits
+13,full_name,char,,Group Name
+14,write_date,datetime,,Last Updated on
+15,create_date,datetime,,Created on
+16,users,many2many,res.users,Users
+17,category_id,many2one,ir.module.category,Application
+18,model_access,one2many,ir.model.access,Access Controls
+19,id,integer,,ID
+20,trans_implied_ids,many2many,res.groups,Transitively inherits
+21,view_access,many2many,ir.ui.view,Views
+,,,,
+,,,,
+,,,,

@@ -1,0 +1,24 @@
+model,res.bank,transient,False
+no,field,type,relation,string
+1,email,char,,Email
+2,city,char,,City
+3,fax,char,,Fax
+4,display_name,char,,Display Name
+5,name,char,,Name
+6,zip,char,,Zip
+7,create_uid,many2one,res.users,Created by
+8,country,many2one,res.country,Country
+9,street2,char,,Street2
+10,__last_update,datetime,,Last Modified on
+11,bic,char,,Bank Identifier Code
+12,write_uid,many2one,res.users,Last Updated by
+13,phone,char,,Phone
+14,state,many2one,res.country.state,Fed. State
+15,street,char,,Street
+16,write_date,datetime,,Last Updated on
+17,active,boolean,,Active
+18,create_date,datetime,,Created on
+19,id,integer,,ID
+,,,,
+,,,,
+,,,,

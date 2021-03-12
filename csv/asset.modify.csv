@@ -1,0 +1,17 @@
+model,asset.modify,transient,True
+no,field,type,relation,string
+1,method_number,integer,,Number of Depreciations
+2,create_uid,many2one,res.users,Created by
+3,display_name,char,,Display Name
+4,name,text,,Reason
+5,__last_update,datetime,,Last Modified on
+6,method_end,date,,Ending date
+7,asset_method_time,char,,Asset Method Time
+8,write_uid,many2one,res.users,Last Updated by
+9,method_period,integer,,Period Length
+10,write_date,datetime,,Last Updated on
+11,create_date,datetime,,Created on
+12,id,integer,,ID
+,,,,
+,,,,
+,,,,

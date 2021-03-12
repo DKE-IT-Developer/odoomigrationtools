@@ -1,0 +1,21 @@
+model,website.menu,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,parent_right,integer,,Parent Rigth
+3,display_name,char,,Display Name
+4,name,char,,Menu
+5,__last_update,datetime,,Last Modified on
+6,url,char,,Url
+7,sequence,integer,,Sequence
+8,new_window,boolean,,New Window
+9,write_uid,many2one,res.users,Last Updated by
+10,parent_id,many2one,website.menu,Parent Menu
+11,parent_left,integer,,Parent Left
+12,website_id,many2one,website,Website
+13,write_date,datetime,,Last Updated on
+14,create_date,datetime,,Created on
+15,child_id,one2many,website.menu,Child Menus
+16,id,integer,,ID
+,,,,
+,,,,
+,,,,

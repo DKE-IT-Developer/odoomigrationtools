@@ -1,0 +1,23 @@
+model,ir.property,transient,False
+no,field,type,relation,string
+1,value_text,text,,Value text
+2,value_float,float,,Value float
+3,display_name,char,,Display Name
+4,name,char,,Name
+5,create_uid,many2one,res.users,Created by
+6,type,selection,,Type
+7,__last_update,datetime,,Last Modified on
+8,company_id,many2one,res.company,Company
+9,write_uid,many2one,res.users,Last Updated by
+10,fields_id,many2one,ir.model.fields,Field
+11,value_datetime,datetime,,Value datetime
+12,value_binary,binary,,Value binary
+13,write_date,datetime,,Last Updated on
+14,create_date,datetime,,Created on
+15,value_reference,char,,Value reference
+16,value_integer,integer,,Value integer
+17,res_id,char,,Resource
+18,id,integer,,ID
+,,,,
+,,,,
+,,,,

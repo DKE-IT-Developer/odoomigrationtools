@@ -1,0 +1,38 @@
+model,hr.expense.sheet,transient,False
+no,field,type,relation,string
+1,message_follower_ids,one2many,mail.followers,Followers
+2,address_id,many2one,res.partner,Employee Home Address
+3,create_date,datetime,,Created on
+4,responsible_id,many2one,res.users,Validation By
+5,message_needaction,boolean,,Action Needed
+6,message_channel_ids,many2many,mail.channel,Followers (Channels)
+7,message_partner_ids,many2many,res.partner,Followers (Partners)
+8,company_id,many2one,res.company,Company
+9,currency_id,many2one,res.currency,Currency
+10,id,integer,,ID
+11,create_uid,many2one,res.users,Created by
+12,employee_id,many2one,hr.employee,Employee
+13,display_name,char,,Display Name
+14,account_move_id,many2one,account.move,Journal Entry
+15,__last_update,datetime,,Last Modified on
+16,message_last_post,datetime,,Last Message Date
+17,journal_id,many2one,account.journal,Expense Journal
+18,message_ids,one2many,mail.message,Messages
+19,state,selection,,Status
+20,message_is_follower,boolean,,Is Follower
+21,message_unread_counter,integer,,Unread Messages Counter
+22,accounting_date,date,,Accounting Date
+23,department_id,many2one,hr.department,Department
+24,expense_line_ids,one2many,hr.expense,Expense Lines
+25,write_date,datetime,,Last Updated on
+26,payment_mode,selection,,Payment By
+27,write_uid,many2one,res.users,Last Updated by
+28,name,char,,Expense Report Summary
+29,bank_journal_id,many2one,account.journal,Bank Journal
+30,total_amount,float,,Total Amount
+31,attachment_number,integer,,Number of Attachments
+32,message_unread,boolean,,Unread Messages
+33,message_needaction_counter,integer,,Number of Actions
+,,,,
+,,,,
+,,,,

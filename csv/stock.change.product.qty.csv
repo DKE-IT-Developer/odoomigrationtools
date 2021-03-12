@@ -1,0 +1,18 @@
+model,stock.change.product.qty,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,product_id,many2one,product.product,Product
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,product_tmpl_id,many2one,product.template,Template
+7,write_date,datetime,,Last Updated on
+8,lot_id,many2one,stock.production.lot,Lot/Serial Number
+9,create_date,datetime,,Created on
+10,new_quantity,float,,New Quantity on Hand
+11,location_id,many2one,stock.location,Location
+12,id,integer,,ID
+13,product_variant_count,integer,,Variant Count
+,,,,
+,,,,
+,,,,

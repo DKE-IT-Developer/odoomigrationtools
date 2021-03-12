@@ -1,0 +1,23 @@
+model,rating.rating,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,partner_id,many2one,res.partner,Customer
+3,display_name,char,,Display Name
+4,feedback,text,,Feedback reason
+5,rating,float,,Rating
+6,access_token,char,,Security Token
+7,res_model,char,,Document Model
+8,consumed,boolean,,Filled Rating
+9,__last_update,datetime,,Last Modified on
+10,write_uid,many2one,res.users,Last Updated by
+11,res_name,char,,Resource Name
+12,message_id,many2one,mail.message,Linked message
+13,write_date,datetime,,Last Updated on
+14,id,integer,,ID
+15,create_date,datetime,,Created on
+16,rated_partner_id,many2one,res.partner,Rated Partner
+17,res_id,integer,,Document ID
+18,website_published,boolean,,Published
+,,,,
+,,,,
+,,,,

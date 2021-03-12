@@ -1,0 +1,20 @@
+model,web.planner,transient,False
+no,field,type,relation,string
+1,menu_id,many2one,ir.ui.menu,Menu
+2,create_uid,many2one,res.users,Created by
+3,display_name,char,,Display Name
+4,name,char,,Name
+5,__last_update,datetime,,Last Modified on
+6,planner_application,selection,,Planner Application
+7,view_id,many2one,ir.ui.view,Template
+8,write_uid,many2one,res.users,Last Updated by
+9,write_date,datetime,,Last Updated on
+10,progress,integer,,Progress Percentage
+11,active,boolean,,Active
+12,create_date,datetime,,Created on
+13,data,text,,Data
+14,id,integer,,ID
+15,tooltip_planner,html,,Planner Tooltips
+,,,,
+,,,,
+,,,,

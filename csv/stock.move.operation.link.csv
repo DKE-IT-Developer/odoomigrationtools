@@ -1,0 +1,16 @@
+model,stock.move.operation.link,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,__last_update,datetime,,Last Modified on
+4,reserved_quant_id,many2one,stock.quant,Reserved Quant
+5,qty,float,,Quantity
+6,write_date,datetime,,Last Updated on
+7,operation_id,many2one,stock.pack.operation,Operation
+8,write_uid,many2one,res.users,Last Updated by
+9,id,integer,,ID
+10,move_id,many2one,stock.move,Move
+11,display_name,char,,Display Name
+,,,,
+,,,,
+,,,,

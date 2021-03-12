@@ -1,0 +1,28 @@
+model,stock.inventory,transient,False
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,exhausted,boolean,,Include Exhausted Products
+3,write_uid,many2one,res.users,Last Updated by
+4,package_id,many2one,stock.quant.package,Inventoried Pack
+5,lot_id,many2one,stock.production.lot,Inventoried Lot/Serial Number
+6,total_qty,float,,Total Quantity
+7,location_id,many2one,stock.location,Inventoried Location
+8,id,integer,,ID
+9,create_uid,many2one,res.users,Created by
+10,display_name,char,,Display Name
+11,__last_update,datetime,,Last Modified on
+12,partner_id,many2one,res.partner,Inventoried Owner
+13,company_id,many2one,res.company,Company
+14,move_ids,one2many,stock.move,Created Moves
+15,state,selection,,Status
+16,accounting_date,date,,Force Accounting Date
+17,write_date,datetime,,Last Updated on
+18,date,datetime,,Inventory Date
+19,product_id,many2one,product.product,Inventoried Product
+20,name,char,,Inventory Reference
+21,filter,selection,,Inventory of
+22,line_ids,one2many,stock.inventory.line,Inventories
+23,category_id,many2one,product.category,Inventoried Category
+,,,,
+,,,,
+,,,,

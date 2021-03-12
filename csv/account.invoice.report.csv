@@ -1,0 +1,39 @@
+model,account.invoice.report,transient,False
+no,field,type,relation,string
+1,date_due,date,,Due Date
+2,weight,float,,Gross Weight
+3,nbr,integer,,# of Lines
+4,company_id,many2one,res.company,Company
+5,currency_id,many2one,res.currency,Currency
+6,team_id,many2one,crm.team,Sales Team
+7,product_qty,float,,Product Quantity
+8,user_currency_price_average,float,,Average Price
+9,id,integer,,ID
+10,uom_name,char,,Reference Unit of Measure
+11,user_id,many2one,res.users,Salesperson
+12,partner_bank_id,many2one,res.partner.bank,Bank Account
+13,__last_update,datetime,,Last Modified on
+14,partner_id,many2one,res.partner,Partner
+15,country_id,many2one,res.country,Country of the Partner Company
+16,journal_id,many2one,account.journal,Journal
+17,state,selection,,Invoice Status
+18,type,selection,,Type
+19,account_id,many2one,account.account,Account
+20,price_average,float,,Average Price
+21,account_line_id,many2one,account.account,Account Line
+22,residual,float,,Total Residual
+23,volume,float,,Volume
+24,payment_term_id,many2one,account.payment.term,Payment Terms
+25,currency_rate,float,,Currency Rate
+26,date,date,,Date
+27,display_name,char,,Display Name
+28,categ_id,many2one,product.category,Product Category
+29,fiscal_position_id,many2one,account.fiscal.position,Fiscal Position
+30,price_total,float,,Total Without Tax
+31,product_id,many2one,product.product,Product
+32,user_currency_price_total,float,,Total Without Tax
+33,user_currency_residual,float,,Total Residual
+34,commercial_partner_id,many2one,res.partner,Partner Company
+,,,,
+,,,,
+,,,,

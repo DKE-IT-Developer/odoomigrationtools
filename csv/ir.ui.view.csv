@@ -1,0 +1,36 @@
+model,ir.ui.view,transient,False
+no,field,type,relation,string
+1,arch_base,text,,View Architecture
+2,xml_id,char,,External ID
+3,create_date,datetime,,Create date
+4,write_date,datetime,,Last Modification Date
+5,groups_id,many2many,res.groups,Groups
+6,website_id,many2one,website,Website
+7,write_uid,many2one,res.users,Last Updated by
+8,customize_show,boolean,,Show As Optional Inherit
+9,id,integer,,ID
+10,field_parent,char,,Child Field
+11,create_uid,many2one,res.users,Created by
+12,display_name,char,,Display Name
+13,__last_update,datetime,,Last Modified on
+14,model_data_id,many2one,ir.model.data,Model Data
+15,priority,integer,,Sequence
+16,website_meta_title,char,,Website meta title
+17,type,selection,,View Type
+18,arch_db,text,,Arch Blob
+19,inherit_id,many2one,ir.ui.view,Inherited View
+20,website_meta_description,text,,Website meta description
+21,key,char,,Key
+22,active,boolean,,Active
+23,arch,text,,View Architecture
+24,arch_fs,char,,Arch Filename
+25,model_ids,one2many,ir.model.data,Model ids
+26,name,char,,View Name
+27,mode,selection,,View inheritance mode
+28,inherit_children_ids,one2many,ir.ui.view,Views which inherit from this one
+29,website_meta_keywords,char,,Website meta keywords
+30,model,char,,Model
+31,page,boolean,,Whether this view is a web page template (complete)
+,,,,
+,,,,
+,,,,

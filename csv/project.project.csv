@@ -1,0 +1,65 @@
+model,project.project,transient,False
+no,field,type,relation,string
+1,alias_model,selection,,Alias Model
+2,project_count,integer,,Project Count
+3,tasks,one2many,project.task,Task Activities
+4,create_date,datetime,,Created on
+5,message_follower_ids,one2many,mail.followers,Followers
+6,color,integer,,Color Index
+7,message_channel_ids,many2many,mail.channel,Followers (Channels)
+8,message_partner_ids,many2many,res.partner,Followers (Partners)
+9,alias_id,many2one,mail.alias,Alias
+10,date_start,date,,Start Date
+11,write_uid,many2one,res.users,Last Updated by
+12,currency_id,many2one,res.currency,Currency
+13,date,date,,Expiration Date
+14,code,char,,Reference
+15,is_favorite,boolean,,Show Project on dashboard
+16,task_ids,one2many,project.task,Tasks
+17,label_tasks,char,,Use Tasks as
+18,doc_count,integer,,Number of documents attached
+19,alias_name,char,,Alias Name
+20,privacy_visibility,selection,,Privacy
+21,analytic_account_id,many2one,account.analytic.account,Contract/Analytic
+22,create_uid,many2one,res.users,Created by
+23,message_unread,boolean,,Unread Messages
+24,user_id,many2one,res.users,Project Manager
+25,message_is_follower,boolean,,Is Follower
+26,__last_update,datetime,,Last Modified on
+27,alias_force_thread_id,integer,,Record Thread ID
+28,partner_id,many2one,res.partner,Customer
+29,project_ids,one2many,project.project,Projects
+30,message_last_post,datetime,,Last Message Date
+31,company_id,many2one,res.company,Company
+32,id,integer,,ID
+33,message_needaction,boolean,,Action Needed
+34,message_needaction_counter,integer,,Number of Actions
+35,favorite_user_ids,many2many,res.users,Members
+36,debit,monetary,,Debit
+37,message_unread_counter,integer,,Unread Messages Counter
+38,alias_domain,char,,Alias domain
+39,alias_parent_model_id,many2one,ir.model,Parent Model
+40,company_uom_id,many2one,product.uom,Company UOM
+41,alias_contact,selection,,Alias Contact Security
+42,sequence,integer,,Sequence
+43,alias_defaults,text,,Default Values
+44,alias_model_id,many2one,ir.model,Aliased Model
+45,task_count,integer,,Tasks
+46,write_date,datetime,,Last Updated on
+47,line_ids,one2many,account.analytic.line,Analytic Lines
+48,active,boolean,,Active
+49,alias_parent_thread_id,integer,,Parent Record Thread ID
+50,display_name,char,,Display Name
+51,type_ids,many2many,project.task.type,Tasks Stages
+52,name,char,,Analytic Account
+53,alias_user_id,many2one,res.users,Owner
+54,credit,monetary,,Credit
+55,tag_ids,many2many,account.analytic.tag,Tags
+56,message_ids,one2many,mail.message,Messages
+57,use_tasks,boolean,,Use Tasks
+58,balance,monetary,,Balance
+59,task_needaction_count,integer,,Tasks
+60,resource_calendar_id,many2one,resource.calendar,Working Time
+,,,,
+,,,,
+,,,,

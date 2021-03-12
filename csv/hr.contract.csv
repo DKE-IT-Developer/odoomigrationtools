@@ -1,0 +1,39 @@
+model,hr.contract,transient,False
+no,field,type,relation,string
+1,message_follower_ids,one2many,mail.followers,Followers
+2,working_hours,many2one,resource.calendar,Working Schedule
+3,trial_date_end,date,,Trial End Date
+4,message_needaction,boolean,,Action Needed
+5,message_channel_ids,many2many,mail.channel,Followers (Channels)
+6,date_end,date,,End Date
+7,write_uid,many2one,res.users,Last Updated by
+8,create_date,datetime,,Created on
+9,id,integer,,ID
+10,visa_expire,date,,Visa Expire Date
+11,create_uid,many2one,res.users,Created by
+12,employee_id,many2one,hr.employee,Employee
+13,display_name,char,,Display Name
+14,job_id,many2one,hr.job,Job Title
+15,message_is_follower,boolean,,Is Follower
+16,__last_update,datetime,,Last Modified on
+17,date_start,date,,Start Date
+18,message_last_post,datetime,,Last Message Date
+19,message_ids,one2many,mail.message,Messages
+20,visa_no,char,,Visa No
+21,state,selection,,Status
+22,message_unread_counter,integer,,Unread Messages Counter
+23,message_partner_ids,many2many,res.partner,Followers (Partners)
+24,department_id,many2one,hr.department,Department
+25,wage,float,,Wage
+26,advantages,text,,Advantages
+27,write_date,datetime,,Last Updated on
+28,type_id,many2one,hr.contract.type,Contract Type
+29,trial_date_start,date,,Trial Start Date
+30,name,char,,Contract Reference
+31,notes,text,,Notes
+32,permit_no,char,,Work Permit No
+33,message_unread,boolean,,Unread Messages
+34,message_needaction_counter,integer,,Number of Actions
+,,,,
+,,,,
+,,,,

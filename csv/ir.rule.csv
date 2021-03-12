@@ -1,0 +1,23 @@
+model,ir.rule,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,domain,binary,,Domain
+3,domain_force,text,,Domain
+4,name,char,,Name
+5,__last_update,datetime,,Last Modified on
+6,id,integer,,ID
+7,global,boolean,,Global
+8,write_uid,many2one,res.users,Last Updated by
+9,active,boolean,,Active
+10,perm_read,boolean,,Apply for Read
+11,groups,many2many,res.groups,Groups
+12,perm_unlink,boolean,,Apply for Delete
+13,perm_write,boolean,,Apply for Write
+14,create_date,datetime,,Created on
+15,model_id,many2one,ir.model,Object
+16,write_date,datetime,,Last Updated on
+17,perm_create,boolean,,Apply for Create
+18,display_name,char,,Display Name
+,,,,
+,,,,
+,,,,

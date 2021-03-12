@@ -1,0 +1,51 @@
+model,mail.message,transient,False
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,no_auto_thread,boolean,,No threading for answers
+3,mail_server_id,many2one,ir.mail_server,Outgoing mail server
+4,notification_ids,one2many,mail.notification,Notifications
+5,write_uid,many2one,res.users,Last Updated by
+6,needaction,boolean,,Need Action
+7,id,integer,,ID
+8,subject,char,,Subject
+9,create_uid,many2one,res.users,Created by
+10,display_name,char,,Display Name
+11,attachment_ids,many2many,ir.attachment,Attachments
+12,__last_update,datetime,,Last Modified on
+13,parent_id,many2one,mail.message,Parent Message
+14,subtype_id,many2one,mail.message.subtype,Subtype
+15,partner_ids,many2many,res.partner,Recipients
+16,res_id,integer,,Related Document ID
+17,message_id,char,,Message-Id
+18,body,html,,Contents
+19,model,char,,Related Document Model
+20,record_name,char,,Message Record Name
+21,description,char,,Description
+22,channel_ids,many2many,mail.channel,Channels
+23,child_ids,one2many,mail.message,Child Messages
+24,write_date,datetime,,Last Updated on
+25,date,datetime,,Date
+26,path,char,,Discussion Path
+27,author_id,many2one,res.partner,Author
+28,needaction_partner_ids,many2many,res.partner,Partners with Need Action
+29,starred_partner_ids,many2many,res.partner,Favorited By
+30,website_published,boolean,,Published
+31,author_avatar,binary,,Author's avatar
+32,reply_to,char,,Reply-To
+33,starred,boolean,,Starred
+34,message_type,selection,,Type
+35,email_from,char,,From
+,,,,
+36,reference,char,,Reference
+37,broadcast_image,binary,,Image
+38,broadcast,boolean,,Broadcast
+39,notification_type,selection,,Type
+40,partner_id,many2one,res.partner,Recipient
+41,dke_type,selection,,Message Type
+42,user_id,many2one,res.users,Recipient User
+43,name,char,,Identifier
+44,error_message,char,,Error Message
+45,notification_state,selection,,State
+46,notification_subtype_id,many2one,notification.subtype,Notification Subtype
+,,,,
+,,,,

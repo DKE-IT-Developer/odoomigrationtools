@@ -1,0 +1,55 @@
+model,website.config.settings,transient,True
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,social_linkedin,char,,LinkedIn Account
+3,cdn_filters,text,,CDN Filters
+4,module_website_sale_options,selection,,Optional Products
+5,sale_delivery_settings,selection,,Shipping Management
+6,social_twitter,char,,Twitter Account
+7,language_ids,many2many,res.lang,Languages
+8,favicon,binary,,Favicon
+9,google_analytics_key,char,,Google Analytics Key
+10,group_pricelist_item,boolean,,Show pricelists to customers
+11,social_facebook,char,,Facebook Account
+12,module_delivery,boolean,,Manage shipping internally
+13,id,integer,,ID
+14,google_maps_api_key,char,,Google Maps API Key
+15,cdn_url,char,,CDN Base URL
+16,create_uid,many2one,res.users,Created by
+17,display_name,char,,Display Name
+18,__last_update,datetime,,Last Modified on
+19,group_website_multiimage,selection,,Multi Images
+20,sale_pricelist_setting_split_1,selection,,Pricing Strategy
+21,sale_pricelist_setting_split_2,selection,,Sales Price
+22,default_lang_code,char,,Default language code
+23,social_googleplus,char,,Google+ Account
+24,module_delivery_temando,boolean,,Temando integration
+25,salesteam_id,many2one,crm.team,Sales Team
+26,module_portal,boolean,,Activate the customer portal
+27,default_lang_id,many2one,res.lang,Default Language
+28,compress_html,boolean,,Compress rendered HTML
+29,social_github,char,,GitHub Account
+30,module_website_sale_delivery,boolean,,Add Delivery Costs to Online Sales
+31,group_product_pricelist,boolean,,Show pricelists On Products
+32,website_slide_google_app_key,char,,Google Doc Key
+33,website_id,many2one,website,website
+34,module_delivery_usps,boolean,,USPS integration
+35,group_sale_pricelist,boolean,,Use pricelists to adapt your price per customers
+36,social_youtube,char,,Youtube Account
+37,write_date,datetime,,Last Updated on
+38,order_mail_template,many2one,mail.template,Order Confirmation Email
+39,module_delivery_fedex,boolean,,Fedex integration
+40,write_uid,many2one,res.users,Last Updated by
+41,module_delivery_ups,boolean,,UPS integration
+42,cdn_activated,boolean,,Use a Content Delivery Network (CDN)
+43,salesperson_id,many2one,res.users,Salesperson
+44,module_sale_ebay,boolean,,eBay connector
+45,module_website_version,selection,,A/B Testing
+46,module_website_form_editor,selection,,Form Builder
+47,website_name,char,,Website Name
+48,module_delivery_dhl,boolean,,DHL integration
+,,,,
+49,company_id,many2one,res.company,Company
+50,minimum_days,integer,,Blog Minimum Days
+,,,,
+,,,,

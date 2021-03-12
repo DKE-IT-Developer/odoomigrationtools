@@ -1,0 +1,41 @@
+model,mrp.bom,transient,False
+no,field,type,relation,string
+1,message_follower_ids,one2many,mail.followers,Followers
+2,code,char,,Reference
+3,create_date,datetime,,Created on
+4,sequence,integer,,Sequence
+5,message_needaction,boolean,,Action Needed
+6,message_channel_ids,many2many,mail.channel,Followers (Channels)
+7,message_partner_ids,many2many,res.partner,Followers (Partners)
+8,message_last_post,datetime,,Last Message Date
+9,write_uid,many2one,res.users,Last Updated by
+10,product_qty,float,,Quantity
+11,id,integer,,ID
+12,create_uid,many2one,res.users,Created by
+13,display_name,char,,Display Name
+14,message_is_follower,boolean,,Is Follower
+15,picking_type_id,many2one,stock.picking.type,Picking Type
+16,bom_line_ids,one2many,mrp.bom.line,BoM Lines
+17,company_id,many2one,res.company,Company
+18,message_ids,one2many,mail.message,Messages
+19,product_tmpl_id,many2one,product.template,Product
+20,routing_id,many2one,mrp.routing,Routing
+21,message_unread_counter,integer,,Unread Messages Counter
+22,type,selection,,BoM Type
+23,ready_to_produce,selection,,Manufacturing Readiness
+24,write_date,datetime,,Last Updated on
+25,active,boolean,,Active
+26,product_id,many2one,product.product,Product Variant
+27,product_uom_id,many2one,product.uom,Product Unit of Measure
+28,__last_update,datetime,,Last Modified on
+29,message_unread,boolean,,Unread Messages
+30,message_needaction_counter,integer,,Number of Actions
+,,,,
+31,total_cost,float,,Total Cost
+32,company_currency_id,many2one,res.currency,Company Currency
+33,total_labour_cost,float,,Total Labour Cost
+34,labour_line_ids,one2many,mrp.bom.labour.line,Labour Lines
+35,extra_cost,float,,Extra Cost
+36,total_components_cost,float,,Total Components Cost
+,,,,
+,,,,

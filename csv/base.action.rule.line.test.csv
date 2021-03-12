@@ -1,0 +1,15 @@
+model,base.action.rule.line.test,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,lead_id,many2one,base.action.rule.lead.test,Lead id
+4,display_name,char,,Display Name
+5,__last_update,datetime,,Last Modified on
+6,write_uid,many2one,res.users,Last Updated by
+7,write_date,datetime,,Last Updated on
+8,user_id,many2one,res.users,User id
+9,id,integer,,ID
+10,name,char,,Name
+,,,,
+,,,,
+,,,,

@@ -1,0 +1,25 @@
+model,mrp.bom.line,transient,False
+no,field,type,relation,string
+1,attribute_value_ids,many2many,product.attribute.value,Variants
+2,create_uid,many2one,res.users,Created by
+3,display_name,char,,Display Name
+4,product_id,many2one,product.product,Product
+5,__last_update,datetime,,Last Modified on
+6,product_uom_id,many2one,product.uom,Product Unit of Measure
+7,sequence,integer,,Sequence
+8,write_uid,many2one,res.users,Last Updated by
+9,bom_id,many2one,mrp.bom,Parent BoM
+10,operation_id,many2one,mrp.routing.workcenter,Consumed in Operation
+11,has_attachments,boolean,,Has Attachments
+12,write_date,datetime,,Last Updated on
+13,product_qty,float,,Product Quantity
+14,routing_id,many2one,mrp.routing,Routing
+15,create_date,datetime,,Created on
+16,child_line_ids,one2many,mrp.bom.line,BOM lines of the referred bom
+17,id,integer,,ID
+18,child_bom_id,many2one,mrp.bom,Sub BoM
+,,,,
+19,company_currency_id,many2one,res.currency,Company Currency
+20,standard_price,float,,Cost
+,,,,
+,,,,

@@ -1,0 +1,51 @@
+model,sale.config.settings,transient,True
+no,field,type,relation,string
+1,sale_note,text,,Default Terms and Conditions *
+2,create_date,datetime,,Created on
+3,sale_show_tax,selection,,Tax Display
+4,security_lead,float,,Sales Safety Days *
+5,deposit_product_id_setting,many2one,product.product,Deposit Product
+6,write_uid,many2one,res.users,Last Updated by
+7,auto_done_setting,selection,,Sale Order Modification
+8,group_display_incoterm,selection,,Incoterms
+9,group_pricelist_item,boolean,,Show pricelists to customers
+10,default_invoice_policy,selection,,Default Invoicing
+11,module_delivery,selection,,Shipping
+12,group_product_variant,selection,,Product Variants
+13,id,integer,,ID
+14,create_uid,many2one,res.users,Created by
+15,display_name,char,,Display Name
+16,__last_update,datetime,,Last Modified on
+17,group_warning_sale,selection,,Warning
+18,group_mrp_properties,selection,,Properties on SO Lines
+19,group_sale_pricelist,boolean,,Use pricelists to adapt your price per customers
+20,group_route_so_lines,selection,,Order Routing
+21,company_id,many2one,res.company,Company
+22,module_sale_order_dates,selection,,Date
+23,group_sale_layout,selection,,Sales Reports Layout
+24,group_product_pricelist,boolean,,Show pricelists On Products
+25,group_show_price_total,boolean,,Show total
+26,module_website_quote,selection,,Online Quotations
+27,group_discount_per_so_line,selection,,Discount
+28,module_sale_margin,selection,,Margins
+29,write_date,datetime,,Last Updated on
+30,sale_pricelist_setting,selection,,Sale pricelist setting
+31,module_website_sale_digital,boolean,,Sell digital products - provide downloadable content on your customer portal
+32,group_uom,selection,,Units of Measure
+33,default_picking_policy,selection,,Default Shipping Policy
+34,group_show_price_subtotal,boolean,,Show subtotal
+35,group_sale_delivery_address,selection,,Addresses
+36,module_sale_contract,boolean,,Manage subscriptions and recurring invoicing
+,,,,
+37,discount_account_id,many2one,account.account,Discount Account
+38,count_last_invoices_to_trust,integer,,Count last invoices to trust
+39,premium_partner_days_limit,integer,,Premium partner days limit
+40,premium_partner_value_limit,monetary,,Premium partner value limit
+41,currency_id,many2one,res.currency,Currency
+42,sale_deposit_account_id,many2one,account.account,Sale Deposit Account
+43,normal_partner_days_limit,integer,,Normal partner days limit
+44,product_deposit_id,many2one,product.product,Product Deposit
+45,purchase_discount_account_id,many2one,account.account,Purchase Discount Account
+46,good_partner_days_limit,integer,,Good partner days limit
+,,,,
+,,,,

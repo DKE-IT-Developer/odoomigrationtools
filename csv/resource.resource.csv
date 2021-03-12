@@ -1,0 +1,20 @@
+model,resource.resource,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,time_efficiency,float,,Efficiency Factor
+3,code,char,,Code
+4,user_id,many2one,res.users,User
+5,name,char,,Name
+6,__last_update,datetime,,Last Modified on
+7,company_id,many2one,res.company,Company
+8,write_uid,many2one,res.users,Last Updated by
+9,write_date,datetime,,Last Updated on
+10,calendar_id,many2one,resource.calendar,Working Time
+11,active,boolean,,Active
+12,create_date,datetime,,Created on
+13,id,integer,,ID
+14,resource_type,selection,,Resource Type
+15,display_name,char,,Display Name
+,,,,
+,,,,
+,,,,

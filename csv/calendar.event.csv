@@ -1,0 +1,67 @@
+model,calendar.event,transient,False
+no,field,type,relation,string
+1,message_follower_ids,one2many,mail.followers,Followers
+2,allday,boolean,,All Day
+3,create_date,datetime,,Created on
+4,display_start,char,,Date
+5,categ_ids,many2many,calendar.event.type,Tags
+6,message_needaction,boolean,,Action Needed
+7,message_channel_ids,many2many,mail.channel,Followers (Channels)
+8,message_partner_ids,many2many,res.partner,Followers (Partners)
+9,start_datetime,datetime,,Start DateTime
+10,color_partner_id,integer,,Color index of creator
+11,write_uid,many2one,res.users,Last Updated by
+12,attendee_status,selection,,Attendee Status
+13,month_by,selection,,Option
+14,is_attendee,boolean,,Attendee
+15,rrule,char,,Recurrent Rule
+16,duration,float,,Duration
+17,final_date,date,,Repeat Until
+18,message_ids,one2many,mail.message,Messages
+19,create_uid,many2one,res.users,Created by
+20,user_id,many2one,res.users,Responsible
+21,message_is_follower,boolean,,Is Follower
+22,privacy,selection,,Privacy
+23,tu,boolean,,Tue
+24,message_last_post,datetime,,Last Message Date
+25,week_list,selection,,Weekday
+26,id,integer,,ID
+27,start,datetime,,Start
+28,state,selection,,Status
+29,message_needaction_counter,integer,,Number of Actions
+30,location,char,,Location
+31,th,boolean,,Thu
+32,partner_ids,many2many,res.partner,Attendees
+33,start_date,date,,Start Date
+34,display_time,char,,Event Time
+35,recurrent_id_date,datetime,,Recurrent ID date
+36,description,text,,Description
+37,stop_date,date,,End Date
+38,stop,datetime,,Stop
+39,stop_datetime,datetime,,End Datetime
+40,interval,integer,,Repeat Every
+41,fr,boolean,,Fri
+42,alarm_ids,many2many,calendar.alarm,Reminders
+43,write_date,datetime,,Last Updated on
+44,active,boolean,,Active
+45,display_name,char,,Display Name
+46,byday,selection,,By day
+47,attendee_ids,one2many,calendar.attendee,Participant
+48,day,integer,,Date of month
+49,count,integer,,Repeat
+50,end_type,selection,,Recurrence Termination
+51,name,char,,Meeting Subject
+52,we,boolean,,Wed
+53,mo,boolean,,Mon
+54,__last_update,datetime,,Last Modified on
+55,su,boolean,,Sun
+56,recurrency,boolean,,Recurrent
+57,recurrent_id,integer,,Recurrent ID
+58,message_unread_counter,integer,,Unread Messages Counter
+59,sa,boolean,,Sat
+60,message_unread,boolean,,Unread Messages
+61,rrule_type,selection,,Recurrence
+62,show_as,selection,,Show Time as
+,,,,
+,,,,
+,,,,

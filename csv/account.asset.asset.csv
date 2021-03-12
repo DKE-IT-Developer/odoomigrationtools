@@ -1,0 +1,48 @@
+model,account.asset.asset,transient,False
+no,field,type,relation,string
+1,message_follower_ids,one2many,mail.followers,Followers
+2,code,char,,Reference
+3,create_date,datetime,,Created on
+4,method_end,date,,Ending Date
+5,message_needaction,boolean,,Action Needed
+6,message_channel_ids,many2many,mail.channel,Followers (Channels)
+7,message_partner_ids,many2many,res.partner,Followers (Partners)
+8,salvage_value,float,,Salvage Value
+9,write_uid,many2one,res.users,Last Updated by
+10,currency_id,many2one,res.currency,Currency
+11,date,date,,Date
+12,partner_id,many2one,res.partner,Partner
+13,id,integer,,ID
+14,create_uid,many2one,res.users,Created by
+15,display_name,char,,Display Name
+16,method_progress_factor,float,,Degressive Factor
+17,message_is_follower,boolean,,Is Follower
+18,__last_update,datetime,,Last Modified on
+19,message_last_post,datetime,,Last Message Date
+20,company_id,many2one,res.company,Company
+21,message_ids,one2many,mail.message,Messages
+22,note,text,,Note
+23,prorata,boolean,,Prorata Temporis
+24,state,selection,,Status
+25,method_period,integer,,Number of Months in a Period
+26,message_unread_counter,integer,,Unread Messages Counter
+27,type,selection,,Type
+28,method,selection,,Computation Method
+29,method_number,integer,,Number of Depreciations
+30,depreciation_line_ids,one2many,account.asset.depreciation.line,Depreciation Lines
+31,method_time,selection,,Time Method
+32,entry_count,integer,,# Asset Entries
+33,value_residual,float,,Residual Value
+34,write_date,datetime,,Last Updated on
+35,active,boolean,,Active
+36,message_unread,boolean,,Unread Messages
+37,name,char,,Asset Name
+38,invoice_id,many2one,account.invoice,Invoice
+39,value,float,,Gross Value
+40,category_id,many2one,account.asset.category,Category
+41,message_needaction_counter,integer,,Number of Actions
+,,,,
+42,sell_value,float,,Sell Value
+43,sell_account_move_id,many2one,account.move,Sell Account Move
+,,,,
+,,,,

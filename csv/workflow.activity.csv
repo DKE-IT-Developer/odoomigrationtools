@@ -1,0 +1,25 @@
+model,workflow.activity,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,kind,selection,,Kind
+3,display_name,char,,Display Name
+4,name,char,,Name
+5,join_mode,selection,,Join Mode
+6,out_transitions,one2many,workflow.transition,Outgoing Transitions
+7,__last_update,datetime,,Last Modified on
+8,flow_stop,boolean,,Flow Stop
+9,write_uid,many2one,res.users,Last Updated by
+10,subflow_id,many2one,workflow,Subflow
+11,split_mode,selection,,Split Mode
+12,write_date,datetime,,Last Updated on
+13,action,text,,Python Action
+14,create_date,datetime,,Created on
+15,signal_send,char,,Signal (subflow.*)
+16,flow_start,boolean,,Flow Start
+17,wkf_id,many2one,workflow,Workflow
+18,id,integer,,ID
+19,in_transitions,one2many,workflow.transition,Incoming Transitions
+20,action_id,many2one,ir.actions.server,Server Action
+,,,,
+,,,,
+,,,,

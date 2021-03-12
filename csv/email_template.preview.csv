@@ -1,0 +1,40 @@
+model,email_template.preview,transient,True
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,scheduled_date,char,,Scheduled Date
+3,auto_delete,boolean,,Auto Delete
+4,mail_server_id,many2one,ir.mail_server,Outgoing Mail Server
+5,write_uid,many2one,res.users,Last Updated by
+6,partner_to,char,,To (Partners)
+7,ref_ir_act_window,many2one,ir.actions.act_window,Sidebar action
+8,id,integer,,ID
+9,subject,char,,Subject
+10,create_uid,many2one,res.users,Created by
+11,display_name,char,,Display Name
+12,attachment_ids,many2many,ir.attachment,Attachments
+13,__last_update,datetime,,Last Modified on
+14,report_template,many2one,ir.actions.report.xml,Optional report to print and attach
+15,ref_ir_value,many2one,ir.values,Sidebar Button
+16,user_signature,boolean,,Add Signature
+17,null_value,char,,Default Value
+18,email_cc,char,,Cc
+19,partner_ids,many2many,res.partner,Recipients
+20,res_id,selection,,Sample Document
+21,model_id,many2one,ir.model,Applies to
+22,sub_model_object_field,many2one,ir.model.fields,Sub-field
+23,body_html,html,,Body
+24,reply_to,char,,Reply-To
+25,email_to,char,,To (Emails)
+26,sub_object,many2one,ir.model,Sub-model
+27,copyvalue,char,,Placeholder Expression
+28,lang,char,,Language
+29,name,char,,Name
+30,model_object_field,many2one,ir.model.fields,Field
+31,report_name,char,,Report Filename
+32,use_default_to,boolean,,Default recipients
+33,write_date,datetime,,Last Updated on
+34,model,char,,Related Document Model
+35,email_from,char,,From
+,,,,
+,,,,
+,,,,

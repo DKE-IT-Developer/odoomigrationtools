@@ -1,0 +1,24 @@
+model,stock.move.lots,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,product_id,many2one,product.product,Product
+4,done_wo,boolean,,Done for Work Order
+5,__last_update,datetime,,Last Modified on
+6,plus_visible,boolean,,Plus Visible
+7,done_move,boolean,,Move Done
+8,write_uid,many2one,res.users,Last Updated by
+9,lot_produced_qty,float,,Quantity Finished Product
+10,workorder_id,many2one,mrp.workorder,Work Order
+11,lot_produced_id,many2one,stock.production.lot,Finished Lot
+12,production_id,many2one,mrp.production,Production Order
+13,lot_id,many2one,stock.production.lot,Lot
+14,write_date,datetime,,Last Updated on
+15,create_date,datetime,,Created on
+16,quantity,float,,To Do
+17,id,integer,,ID
+18,move_id,many2one,stock.move,Move
+19,quantity_done,float,,Done
+,,,,
+,,,,
+,,,,

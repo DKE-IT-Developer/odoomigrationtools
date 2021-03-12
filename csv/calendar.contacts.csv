@@ -1,0 +1,15 @@
+model,calendar.contacts,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,__last_update,datetime,,Last Modified on
+4,write_uid,many2one,res.users,Last Updated by
+5,write_date,datetime,,Last Updated on
+6,active,boolean,,Active
+7,user_id,many2one,res.users,Me
+8,partner_id,many2one,res.partner,Employee
+9,id,integer,,ID
+10,display_name,char,,Display Name
+,,,,
+,,,,
+,,,,

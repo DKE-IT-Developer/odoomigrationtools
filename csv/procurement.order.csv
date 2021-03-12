@@ -1,0 +1,45 @@
+model,procurement.order,transient,False
+no,field,type,relation,string
+1,origin,char,,Source Document
+2,message_follower_ids,one2many,mail.followers,Followers
+3,create_date,datetime,,Created on
+4,move_dest_id,many2one,stock.move,Destination Move
+5,product_uom,many2one,product.uom,Product Unit of Measure
+6,message_needaction,boolean,,Action Needed
+7,message_channel_ids,many2many,mail.channel,Followers (Channels)
+8,message_partner_ids,many2many,res.partner,Followers (Partners)
+9,write_uid,many2one,res.users,Last Updated by
+10,product_qty,float,,Quantity
+11,location_id,many2one,stock.location,Procurement Location
+12,id,integer,,ID
+13,purchase_id,many2one,purchase.order,Purchase Order
+14,move_ids,one2many,stock.move,Moves
+15,partner_dest_id,many2one,res.partner,Customer Address
+16,message_is_follower,boolean,,Is Follower
+17,orderpoint_id,many2one,stock.warehouse.orderpoint,Minimum Stock Rule
+18,message_last_post,datetime,,Last Message Date
+19,company_id,many2one,res.company,Company
+20,message_ids,one2many,mail.message,Messages
+21,priority,selection,,Priority
+22,state,selection,,Status
+23,bom_id,many2one,mrp.bom,BoM
+24,message_unread_counter,integer,,Unread Messages Counter
+25,create_uid,many2one,res.users,Created by
+26,warehouse_id,many2one,stock.warehouse,Warehouse
+27,route_ids,many2many,stock.location.route,Preferred Routes
+28,write_date,datetime,,Last Updated on
+29,display_name,char,,Display Name
+30,purchase_line_id,many2one,purchase.order.line,Purchase Order Line
+31,name,text,,Description
+32,message_unread,boolean,,Unread Messages
+33,product_id,many2one,product.product,Product
+34,date_planned,datetime,,Scheduled Date
+35,__last_update,datetime,,Last Modified on
+36,message_needaction_counter,integer,,Number of Actions
+37,production_id,many2one,mrp.production,Manufacturing Order
+38,group_id,many2one,procurement.group,Procurement Group
+39,rule_id,many2one,procurement.rule,Rule
+40,sale_line_id,many2one,sale.order.line,Sale Order Line
+,,,,
+,,,,
+,,,,

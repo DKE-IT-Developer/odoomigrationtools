@@ -1,0 +1,27 @@
+model,mrp.routing.workcenter,transient,False
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,time_mode_batch,integer,,Based on
+3,sequence,integer,,Sequence
+4,write_uid,many2one,res.users,Last Updated by
+5,time_mode,selection,,Duration Computation
+6,time_cycle_manual,float,,Manual Duration
+7,id,integer,,ID
+8,create_uid,many2one,res.users,Created by
+9,display_name,char,,Display Name
+10,__last_update,datetime,,Last Modified on
+11,company_id,many2one,res.company,Company
+12,note,text,,Description
+13,routing_id,many2one,mrp.routing,Parent Routing
+14,workcenter_id,many2one,mrp.workcenter,Work Center
+15,batch_size,float,,Quantity to Process
+16,write_date,datetime,,Last Updated on
+17,time_cycle,float,,Duration
+18,workorder_ids,one2many,mrp.workorder,Work Orders
+19,name,char,,Operation
+20,worksheet,binary,,worksheet
+21,workorder_count,integer,,# Work Orders
+22,batch,selection,,Next Operation
+,,,,
+,,,,
+,,,,

@@ -1,0 +1,23 @@
+model,res.lang,transient,False
+no,field,type,relation,string
+1,date_format,char,,Date Format
+2,direction,selection,,Direction
+3,code,char,,Locale Code
+4,display_name,char,,Display Name
+5,name,char,,Name
+6,create_uid,many2one,res.users,Created by
+7,thousands_sep,char,,Thousands Separator
+8,__last_update,datetime,,Last Modified on
+9,iso_code,char,,ISO code
+10,translatable,boolean,,Translatable
+11,write_uid,many2one,res.users,Last Updated by
+12,time_format,char,,Time Format
+13,write_date,datetime,,Last Updated on
+14,decimal_point,char,,Decimal Separator
+15,active,boolean,,Active
+16,create_date,datetime,,Created on
+17,id,integer,,ID
+18,grouping,char,,Separator Format
+,,,,
+,,,,
+,,,,

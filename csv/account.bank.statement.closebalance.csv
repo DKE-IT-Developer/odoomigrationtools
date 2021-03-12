@@ -1,0 +1,12 @@
+model,account.bank.statement.closebalance,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,__last_update,datetime,,Last Modified on
+4,write_uid,many2one,res.users,Last Updated by
+5,write_date,datetime,,Last Updated on
+6,display_name,char,,Display Name
+7,id,integer,,ID
+,,,,
+,,,,
+,,,,

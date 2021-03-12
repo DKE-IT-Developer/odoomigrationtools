@@ -1,0 +1,14 @@
+model,workflow.instance,transient,False
+no,field,type,relation,string
+1,res_type,char,,Resource Object
+2,transition_ids,many2many,workflow.transition,Transition ids
+3,uid,integer,,User
+4,__last_update,datetime,,Last Modified on
+5,wkf_id,many2one,workflow,Workflow
+6,state,char,,Status
+7,display_name,char,,Display Name
+8,res_id,integer,,Resource ID
+9,id,integer,,ID
+,,,,
+,,,,
+,,,,

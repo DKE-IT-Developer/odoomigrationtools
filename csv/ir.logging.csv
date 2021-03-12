@@ -1,0 +1,20 @@
+model,ir.logging,transient,False
+no,field,type,relation,string
+1,create_uid,integer,,Created by
+2,create_date,datetime,,Created on
+3,name,char,,Name
+4,__last_update,datetime,,Last Modified on
+5,level,char,,Level
+6,line,char,,Line
+7,dbname,char,,Database Name
+8,write_uid,integer,,Last Updated by
+9,func,char,,Function
+10,write_date,datetime,,Last Updated on
+11,path,char,,Path
+12,message,text,,Message
+13,type,selection,,Type
+14,id,integer,,ID
+15,display_name,char,,Display Name
+,,,,
+,,,,
+,,,,

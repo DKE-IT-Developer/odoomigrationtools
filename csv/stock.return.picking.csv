@@ -1,0 +1,17 @@
+model,stock.return.picking,transient,True
+no,field,type,relation,string
+1,move_dest_exists,boolean,,Chained Move Exists
+2,original_location_id,many2one,stock.location,Original location id
+3,display_name,char,,Display Name
+4,product_return_moves,one2many,stock.return.picking.line,Moves
+5,create_uid,many2one,res.users,Created by
+6,parent_location_id,many2one,stock.location,Parent location id
+7,__last_update,datetime,,Last Modified on
+8,write_uid,many2one,res.users,Last Updated by
+9,write_date,datetime,,Last Updated on
+10,create_date,datetime,,Created on
+11,location_id,many2one,stock.location,Return Location
+12,id,integer,,ID
+,,,,
+,,,,
+,,,,

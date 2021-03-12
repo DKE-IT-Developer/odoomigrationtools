@@ -1,0 +1,19 @@
+model,ir.actions.todo,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,__last_update,datetime,,Last Modified on
+3,display_name,char,,Display Name
+4,name,char,,Name
+5,groups_id,many2many,res.groups,Groups
+6,sequence,integer,,Sequence
+7,write_uid,many2one,res.users,Last Updated by
+8,note,text,,Text
+9,state,selection,,Status
+10,write_date,datetime,,Last Updated on
+11,create_date,datetime,,Created on
+12,type,selection,,Type
+13,id,integer,,ID
+14,action_id,many2one,ir.actions.actions,Action
+,,,,
+,,,,
+,,,,

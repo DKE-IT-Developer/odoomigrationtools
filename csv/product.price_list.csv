@@ -1,0 +1,18 @@
+model,product.price_list,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,__last_update,datetime,,Last Modified on
+4,price_list,many2one,product.pricelist,PriceList
+5,write_uid,many2one,res.users,Last Updated by
+6,qty1,integer,,Quantity-1
+7,qty2,integer,,Quantity-2
+8,qty3,integer,,Quantity-3
+9,qty4,integer,,Quantity-4
+10,qty5,integer,,Quantity-5
+11,write_date,datetime,,Last Updated on
+12,create_date,datetime,,Created on
+13,id,integer,,ID
+,,,,
+,,,,
+,,,,

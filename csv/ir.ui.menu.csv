@@ -1,0 +1,25 @@
+model,ir.ui.menu,transient,False
+no,field,type,relation,string
+1,web_icon_data,binary,,Web Icon Image
+2,groups_id,many2many,res.groups,Groups
+3,parent_right,integer,,Parent right
+4,display_name,char,,Display Name
+5,name,char,,Menu
+6,web_icon,char,,Web Icon File
+7,__last_update,datetime,,Last Modified on
+8,id,integer,,ID
+9,sequence,integer,,Sequence
+10,write_uid,many2one,res.users,Last Updated by
+11,parent_id,many2one,ir.ui.menu,Parent Menu
+12,parent_left,integer,,Parent left
+13,complete_name,char,,Full Path
+14,write_date,datetime,,Last Updated on
+15,action,reference,,Action
+16,create_date,datetime,,Created on
+17,child_id,one2many,ir.ui.menu,Child IDs
+18,active,boolean,,Active
+19,create_uid,many2one,res.users,Created by
+20,load_xmlid,boolean,,Load xmlid
+,,,,
+,,,,
+,,,,

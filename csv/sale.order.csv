@@ -1,0 +1,87 @@
+model,sale.order,transient,False
+no,field,type,relation,string
+1,origin,char,,Source Document
+2,message_follower_ids,one2many,mail.followers,Followers
+3,create_date,datetime,,Creation Date
+4,order_line,one2many,sale.order.line,Order Lines
+5,message_needaction,boolean,,Action Needed
+6,message_channel_ids,many2many,mail.channel,Followers (Channels)
+7,message_partner_ids,many2many,res.partner,Followers (Partners)
+8,write_uid,many2one,res.users,Last Updated by
+9,currency_id,many2one,res.currency,Currency
+10,invoice_ids,many2many,account.invoice,Invoices
+11,team_id,many2one,crm.team,Sales Team
+12,client_order_ref,char,,Customer Reference
+13,payment_acquirer_id,many2one,payment.acquirer,Payment Acquirer
+14,date_order,datetime,,Order Date
+15,partner_id,many2one,res.partner,Customer
+16,message_ids,one2many,mail.message,Messages
+17,amount_tax,monetary,,Taxes
+18,delivery_count,integer,,Delivery Orders
+19,amount_untaxed,monetary,,Untaxed Amount
+20,invoice_status,selection,,Invoice Status
+21,message_is_follower,boolean,,Is Follower
+22,__last_update,datetime,,Last Modified on
+23,cart_quantity,integer,,Cart Quantity
+24,message_last_post,datetime,,Last Message Date
+25,company_id,many2one,res.company,Company
+26,id,integer,,ID
+27,note,text,,Terms and conditions
+28,picking_policy,selection,,Shipping Policy
+29,state,selection,,Status
+30,pricelist_id,many2one,product.pricelist,Pricelist
+31,message_unread_counter,integer,,Unread Messages Counter
+32,project_id,many2one,account.analytic.account,Analytic Account
+33,payment_tx_id,many2one,payment.transaction,Transaction
+34,incoterm,many2one,stock.incoterms,Incoterms
+35,only_services,boolean,,Only Services
+36,create_uid,many2one,res.users,Created by
+37,validity_date,date,,Expiration Date
+38,procurement_group_id,many2one,procurement.group,Procurement Group
+39,warehouse_id,many2one,stock.warehouse,Warehouse
+40,payment_term_id,many2one,account.payment.term,Payment Terms
+41,write_date,datetime,,Last Updated on
+42,partner_invoice_id,many2one,res.partner,Invoice Address
+43,display_name,char,,Display Name
+44,picking_ids,many2many,stock.picking,Picking associated to this sale
+45,fiscal_position_id,many2one,account.fiscal.position,Fiscal Position
+46,product_id,many2one,product.product,Product
+47,invoice_count,integer,,# of Invoices
+48,name,char,,Order Reference
+49,partner_shipping_id,many2one,res.partner,Delivery Address
+50,user_id,many2one,res.users,Salesperson
+51,confirmation_date,datetime,,Confirmation Date
+52,related_project_id,many2one,account.analytic.account,Analytic Account
+53,website_order_line,one2many,sale.order.line,Order Lines displayed on Website
+54,amount_total,monetary,,Total
+55,message_unread,boolean,,Unread Messages
+56,message_needaction_counter,integer,,Number of Actions
+,,,,
+57,virtual_account_midtrans,char,,Virtual account midtrans
+58,midtrans_snap_token,char,,Midtrans SNAP Token
+59,transaction_time,datetime,,Transaction time
+60,carrier_id,many2one,delivery.carrier,Delivery Method
+61,delivery_price,float,,Estimated Delivery Price
+62,street,char,,Street
+63,amount_product,monetary,,Product Sale
+64,transaction_status,char,,Transaction status
+65,invoice_shipping_on_delivery,boolean,,Invoice Shipping on Delivery
+66,city,char,,City
+67,zip,char,,Zip
+68,has_delivery,boolean,,Has delivery
+69,country_id,many2one,res.country,Country
+70,is_qty_available,boolean,,Availibility
+71,printer_data,text,,Printer Data
+72,amount_delivery,monetary,,Delivery
+73,midtrans_snap_redirect_url,char,,Midtrans SNAP Redirect URL
+74,street2,char,,Street2
+75,ongkir_city_id,many2one,res.city.ongkir,City
+76,tag_id,many2one,account.invoice.tag,Event Tag
+77,area_categ_id,many2one,area.category,Area
+78,amount_discount,monetary,,Discount
+79,bank_transfer_type,selection,,Bank Type
+80,payment_midtrans_id,char,,Payment midtrans id
+81,state_id,many2one,res.country.state,Province
+82,unique_number,float,,Unique Number
+,,,,
+,,,,

@@ -1,0 +1,18 @@
+model,mail.thread,transient,False
+no,field,type,relation,string
+1,message_follower_ids,one2many,mail.followers,Followers
+2,display_name,char,,Display Name
+3,message_is_follower,boolean,,Is Follower
+4,__last_update,datetime,,Last Modified on
+5,message_needaction,boolean,,Action Needed
+6,message_channel_ids,many2many,mail.channel,Followers (Channels)
+7,message_partner_ids,many2many,res.partner,Followers (Partners)
+8,message_last_post,datetime,,Last Message Date
+9,message_needaction_counter,integer,,Number of Actions
+10,id,integer,,ID
+11,message_unread_counter,integer,,Unread Messages Counter
+12,message_unread,boolean,,Unread Messages
+13,message_ids,one2many,mail.message,Messages
+,,,,
+,,,,
+,,,,

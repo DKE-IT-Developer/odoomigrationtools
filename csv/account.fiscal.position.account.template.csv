@@ -1,0 +1,15 @@
+model,account.fiscal.position.account.template,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,__last_update,datetime,,Last Modified on
+4,position_id,many2one,account.fiscal.position.template,Fiscal Mapping
+5,write_uid,many2one,res.users,Last Updated by
+6,account_dest_id,many2one,account.account.template,Account Destination
+7,write_date,datetime,,Last Updated on
+8,create_date,datetime,,Created on
+9,account_src_id,many2one,account.account.template,Account Source
+10,id,integer,,ID
+,,,,
+,,,,
+,,,,

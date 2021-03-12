@@ -1,0 +1,10 @@
+model,website.published.mixin,transient,False
+no,field,type,relation,string
+1,website_published,boolean,,Visible in Website
+2,display_name,char,,Display Name
+3,id,integer,,ID
+4,website_url,char,,Website URL
+5,__last_update,datetime,,Last Modified on
+,,,,
+,,,,
+,,,,

@@ -1,0 +1,48 @@
+model,blog.post,transient,False
+no,field,type,relation,string
+1,teaser_manual,text,,Teaser Content
+2,message_follower_ids,one2many,mail.followers,Followers
+3,create_date,datetime,,Created on
+4,message_needaction,boolean,,Action Needed
+5,message_channel_ids,many2many,mail.channel,Followers (Channels)
+6,message_partner_ids,many2many,res.partner,Followers (Partners)
+7,write_uid,many2one,res.users,Last Contributor
+8,post_date,datetime,,Published date
+9,subtitle,char,,Sub Title
+10,id,integer,,ID
+11,create_uid,many2one,res.users,Created by
+12,display_name,char,,Display Name
+13,message_is_follower,boolean,,Is Follower
+14,__last_update,datetime,,Last Modified on
+15,message_last_post,datetime,,Last Message Date
+16,message_ids,one2many,mail.message,Messages
+17,content,html,,Content
+18,website_meta_title,char,,Website meta title
+19,message_unread_counter,integer,,Unread Messages Counter
+20,website_published,boolean,,Visible in Website
+21,website_url,char,,Website URL
+22,ranking,float,,Ranking
+23,blog_id,many2one,blog.blog,Blog
+24,published_date,datetime,,Published Date
+25,visits,integer,,No of Views
+26,teaser,text,,Teaser
+27,write_date,datetime,,Last Modified on
+28,active,boolean,,Active
+29,message_unread,boolean,,Unread Messages
+30,name,char,,Title
+31,cover_properties,text,,Cover Properties
+32,website_meta_description,text,,Website meta description
+33,author_avatar,binary,,Avatar
+34,tag_ids,many2many,blog.tag,Tags
+35,website_meta_keywords,char,,Website meta keywords
+36,author_id,many2one,res.partner,Author
+37,website_message_ids,one2many,mail.message,Website Messages
+38,message_needaction_counter,integer,,Number of Actions
+,,,,
+39,is_premium,boolean,,Only for Premium Customer
+40,blog_avatar,binary,,Blog Avatar
+41,company_id,many2one,res.company,Company
+42,company_currency_id,many2one,res.currency,Currency
+43,minimum_transaction_value,monetary,,Min Transaction
+,,,,
+,,,,

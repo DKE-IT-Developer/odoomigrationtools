@@ -1,0 +1,27 @@
+model,project.task.type,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,__last_update,datetime,,Last Modified on
+3,display_name,char,,Display Name
+4,description,text,,Description
+5,sequence,integer,,Sequence
+6,project_ids,many2many,project.project,Projects
+7,legend_normal,char,,Kanban Ongoing Explanation
+8,legend_done,char,,Kanban Valid Explanation
+9,write_uid,many2one,res.users,Last Updated by
+10,fold,boolean,,Folded in Kanban
+11,legend_blocked,char,,Kanban Blocked Explanation
+12,legend_priority,char,,Priority Management Explanation
+13,write_date,datetime,,Last Updated on
+14,create_date,datetime,,Created on
+15,id,integer,,ID
+16,mail_template_id,many2one,mail.template,Email Template
+17,name,char,,Stage Name
+,,,,
+18,is_readonly,boolean,,Read Onlyyyy
+19,task_id,many2one,project.task,Project Task
+20,approver_ids,many2many,res.users,Approvers
+21,group_id,many2one,res.groups,Group
+22,is_hide_approver,boolean,,Hiding
+,,,,
+,,,,

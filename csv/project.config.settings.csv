@@ -1,0 +1,18 @@
+model,project.config.settings,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,display_name,char,,Display Name
+4,__last_update,datetime,,Last Modified on
+5,module_project_forecast,boolean,,"Forecasts, planning and Gantt charts"
+6,company_id,many2one,res.company,Company
+7,write_uid,many2one,res.users,Last Updated by
+8,write_date,datetime,,Last Updated on
+9,module_rating_project,selection,,Rating on task
+10,generate_project_alias,selection,,Project Alias
+11,module_pad,selection,,Pads
+12,id,integer,,ID
+13,project_time_mode_id,many2one,product.uom,Project Time Unit *
+,,,,
+,,,,
+,,,,

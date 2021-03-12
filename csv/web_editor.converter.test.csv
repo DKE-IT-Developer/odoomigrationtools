@@ -1,0 +1,24 @@
+model,web_editor.converter.test,transient,False
+no,field,type,relation,string
+1,binary,binary,,Binary
+2,selection,selection,,Selection
+3,display_name,char,,Display Name
+4,integer,integer,,Integer
+5,create_uid,many2one,res.users,Created by
+6,float,float,,Float
+7,text,text,,Text
+8,__last_update,datetime,,Last Modified on
+9,numeric,float,,Numeric
+10,datetime,datetime,,Datetime
+11,char,char,,Char
+12,html,html,,Html
+13,selection_str,selection,,"Lorsqu'un pancake prend l'avion à destination de Toronto et qu'il fait une escale technique à St Claude, on dit:"
+14,write_date,datetime,,Last Updated on
+15,many2one,many2one,web_editor.converter.test.sub,Many2one
+16,date,date,,Date
+17,create_date,datetime,,Created on
+18,write_uid,many2one,res.users,Last Updated by
+19,id,integer,,ID
+,,,,
+,,,,
+,,,,

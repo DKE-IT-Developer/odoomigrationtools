@@ -1,0 +1,16 @@
+model,stock.fixed.putaway.strat,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,putaway_id,many2one,product.putaway,Put Away Method
+4,__last_update,datetime,,Last Modified on
+5,sequence,integer,,Priority
+6,write_uid,many2one,res.users,Last Updated by
+7,fixed_location_id,many2one,stock.location,Location
+8,write_date,datetime,,Last Updated on
+9,create_date,datetime,,Created on
+10,category_id,many2one,product.category,Product Category
+11,id,integer,,ID
+,,,,
+,,,,
+,,,,

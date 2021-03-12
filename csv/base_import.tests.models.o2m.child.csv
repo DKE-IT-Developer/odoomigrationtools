@@ -1,0 +1,14 @@
+model,base_import.tests.models.o2m.child,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,create_date,datetime,,Created on
+3,__last_update,datetime,,Last Modified on
+4,value,integer,,Value
+5,write_uid,many2one,res.users,Last Updated by
+6,parent_id,many2one,base_import.tests.models.o2m,Parent id
+7,write_date,datetime,,Last Updated on
+8,display_name,char,,Display Name
+9,id,integer,,ID
+,,,,
+,,,,
+,,,,

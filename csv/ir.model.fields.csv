@@ -1,0 +1,43 @@
+model,ir.model.fields,transient,False
+no,field,type,relation,string
+1,domain,char,,Domain
+2,selection,char,,Selection Options
+3,create_date,datetime,,Created on
+4,help,text,,Field Help
+5,on_delete,selection,,On Delete
+6,related,char,,Related Field
+7,write_uid,many2one,res.users,Last Updated by
+8,depends,char,,Dependencies
+9,relation,char,,Object Relation
+10,id,integer,,ID
+11,size,integer,,Size
+12,create_uid,many2one,res.users,Created by
+13,display_name,char,,Display Name
+14,__last_update,datetime,,Last Modified on
+15,website_form_blacklisted,boolean,,Blacklisted in web forms
+16,readonly,boolean,,Readonly
+17,state,selection,,Type
+18,complete_name,char,,Complete name
+19,relation_field,char,,Relation field
+20,ttype,selection,,Field Type
+21,translate,boolean,,Translatable
+22,store,boolean,,Stored
+23,model_id,many2one,ir.model,Model
+24,index,boolean,,Indexed
+25,groups,many2many,res.groups,Groups
+26,selectable,boolean,,Selectable
+27,copy,boolean,,Copied
+28,name,char,,Field Name
+29,compute,text,,Compute
+30,serialization_field_id,many2one,ir.model.fields,Serialization Field
+31,required,boolean,,Required
+32,modules,char,,In Apps
+33,relation_table,char,,Relation table
+34,write_date,datetime,,Last Updated on
+35,model,char,,Object Name
+36,column1,char,,Column 1
+37,field_description,char,,Field Label
+38,column2,char,,Column 2
+,,,,
+,,,,
+,,,,

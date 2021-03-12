@@ -1,0 +1,16 @@
+model,account.cashbox.line,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,__last_update,datetime,,Last Modified on
+4,number,integer,,Number of Coins/Bills
+5,cashbox_id,many2one,account.bank.statement.cashbox,Cashbox
+6,write_uid,many2one,res.users,Last Updated by
+7,write_date,datetime,,Last Updated on
+8,coin_value,float,,Coin/Bill Value
+9,create_date,datetime,,Created on
+10,subtotal,float,,Subtotal
+11,id,integer,,ID
+,,,,
+,,,,
+,,,,

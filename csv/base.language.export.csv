@@ -1,0 +1,18 @@
+model,base.language.export,transient,True
+no,field,type,relation,string
+1,lang,selection,,Language
+2,create_uid,many2one,res.users,Created by
+3,display_name,char,,Display Name
+4,name,char,,File Name
+5,__last_update,datetime,,Last Modified on
+6,format,selection,,File Format
+7,modules,many2many,ir.module.module,Apps To Export
+8,write_uid,many2one,res.users,Last Updated by
+9,state,selection,,State
+10,write_date,datetime,,Last Updated on
+11,create_date,datetime,,Created on
+12,data,binary,,File
+13,id,integer,,ID
+,,,,
+,,,,
+,,,,

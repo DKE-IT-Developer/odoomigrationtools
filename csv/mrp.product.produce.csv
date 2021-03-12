@@ -1,0 +1,20 @@
+model,mrp.product.produce,transient,True
+no,field,type,relation,string
+1,lot_id,many2one,stock.production.lot,Lot
+2,create_uid,many2one,res.users,Created by
+3,display_name,char,,Display Name
+4,product_id,many2one,product.product,Product
+5,__last_update,datetime,,Last Modified on
+6,product_uom_id,many2one,product.uom,Unit of Measure
+7,product_tracking,selection,,Tracking
+8,write_uid,many2one,res.users,Last Updated by
+9,consume_line_ids,many2many,stock.move.lots,Product to Track
+10,production_id,many2one,mrp.production,Production
+11,product_qty,float,,Quantity
+12,write_date,datetime,,Last Updated on
+13,create_date,datetime,,Created on
+14,serial,boolean,,Requires Serial
+15,id,integer,,ID
+,,,,
+,,,,
+,,,,

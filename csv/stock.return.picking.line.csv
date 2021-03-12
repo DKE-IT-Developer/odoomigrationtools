@@ -1,0 +1,17 @@
+model,stock.return.picking.line,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,product_id,many2one,product.product,Product
+4,__last_update,datetime,,Last Modified on
+5,wizard_id,many2one,stock.return.picking,Wizard
+6,write_uid,many2one,res.users,Last Updated by
+7,to_refund_so,boolean,,To Refund
+8,write_date,datetime,,Last Updated on
+9,create_date,datetime,,Created on
+10,id,integer,,ID
+11,move_id,many2one,stock.move,Move
+12,quantity,float,,Quantity
+,,,,
+,,,,
+,,,,

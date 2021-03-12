@@ -1,0 +1,43 @@
+model,stock.warehouse,transient,False
+no,field,type,relation,string
+1,code,char,,Short Name
+2,create_date,datetime,,Created on
+3,lot_stock_id,many2one,stock.location,Location Stock
+4,manu_type_id,many2one,stock.picking.type,Manufacturing Picking Type
+5,wh_pack_stock_loc_id,many2one,stock.location,Packing Location
+6,company_id,many2one,res.company,Company
+7,pick_type_id,many2one,stock.picking.type,Pick Type
+8,crossdock_route_id,many2one,stock.location.route,Crossdock Route
+9,manufacture_pull_id,many2one,procurement.rule,Manufacture Rule
+10,partner_id,many2one,res.partner,Address
+11,id,integer,,ID
+12,create_uid,many2one,res.users,Created by
+13,mto_pull_id,many2one,procurement.rule,MTO rule
+14,display_name,char,,Display Name
+15,wh_input_stock_loc_id,many2one,stock.location,Input Location
+16,reception_route_id,many2one,stock.location.route,Receipt Route
+17,manufacture_to_resupply,boolean,,Manufacture in this Warehouse
+18,delivery_steps,selection,,Outgoing Shippings
+19,default_resupply_wh_id,many2one,stock.warehouse,Default Resupply Warehouse
+20,view_location_id,many2one,stock.location,View Location
+21,resupply_route_ids,one2many,stock.location.route,Resupply Routes
+22,wh_qc_stock_loc_id,many2one,stock.location,Quality Control Location
+23,reception_steps,selection,,Incoming Shipments
+24,buy_pull_id,many2one,procurement.rule,Buy rule
+25,pack_type_id,many2one,stock.picking.type,Pack Type
+26,resupply_wh_ids,many2many,stock.warehouse,Resupply Warehouses
+27,wh_output_stock_loc_id,many2one,stock.location,Output Location
+28,route_ids,many2many,stock.location.route,Routes
+29,write_date,datetime,,Last Updated on
+30,active,boolean,,Active
+31,delivery_route_id,many2one,stock.location.route,Delivery Route
+32,name,char,,Warehouse Name
+33,write_uid,many2one,res.users,Last Updated by
+34,in_type_id,many2one,stock.picking.type,In Type
+35,__last_update,datetime,,Last Modified on
+36,out_type_id,many2one,stock.picking.type,Out Type
+37,buy_to_resupply,boolean,,Purchase to resupply this warehouse
+38,int_type_id,many2one,stock.picking.type,Internal Type
+,,,,
+,,,,
+,,,,

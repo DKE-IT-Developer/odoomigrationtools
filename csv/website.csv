@@ -1,0 +1,39 @@
+model,website,transient,False
+no,field,type,relation,string
+1,domain,char,,Website Domain
+2,create_date,datetime,,Created on
+3,social_linkedin,char,,LinkedIn Account
+4,cdn_filters,text,,CDN Filters
+5,social_twitter,char,,Twitter Account
+6,language_ids,many2many,res.lang,Languages
+7,favicon,binary,,Website Favicon
+8,google_analytics_key,char,,Google Analytics Key
+9,social_facebook,char,,Facebook Account
+10,partner_id,many2one,res.partner,Public Partner
+11,id,integer,,ID
+12,cdn_url,char,,CDN Base URL
+13,pricelist_ids,one2many,product.pricelist,Price list available for this Ecommerce/Website
+14,user_id,many2one,res.users,Public User
+15,__last_update,datetime,,Last Modified on
+16,default_lang_code,char,,Default language code
+17,social_googleplus,char,,Google+ Account
+18,company_id,many2one,res.company,Company
+19,salesteam_id,many2one,crm.team,Sales Team
+20,social_github,char,,GitHub Account
+21,website_form_enable_metadata,boolean,,Write metadata
+22,default_lang_id,many2one,res.lang,Default Language
+23,pricelist_id,many2one,product.pricelist,Default Pricelist
+24,menu_id,many2one,website.menu,Main Menu
+25,create_uid,many2one,res.users,Created by
+26,social_youtube,char,,Youtube Account
+27,write_date,datetime,,Last Updated on
+28,display_name,char,,Display Name
+29,write_uid,many2one,res.users,Last Updated by
+30,currency_id,many2one,res.currency,Default Currency
+31,cdn_activated,boolean,,Activate CDN for assets
+32,name,char,,Website Name
+33,salesperson_id,many2one,res.users,Salesperson
+34,compress_html,boolean,,Compress HTML
+,,,,
+,,,,
+,,,,

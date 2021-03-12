@@ -1,0 +1,17 @@
+model,account.invoice.refund,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,filter_refund,selection,,Refund Method
+3,display_name,char,,Display Name
+4,description,char,,Reason
+5,__last_update,datetime,,Last Modified on
+6,write_uid,many2one,res.users,Last Updated by
+7,date_invoice,date,,Refund Date
+8,date,date,,Accounting Date
+9,write_date,datetime,,Last Updated on
+10,refund_only,boolean,,Technical field to hide filter_refund in case invoice is partially paid
+11,create_date,datetime,,Created on
+12,id,integer,,ID
+,,,,
+,,,,
+,,,,

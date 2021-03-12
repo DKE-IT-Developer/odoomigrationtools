@@ -1,0 +1,16 @@
+model,ir.server.object.lines,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,server_id,many2one,ir.actions.server,Related Server Action
+3,display_name,char,,Display Name
+4,__last_update,datetime,,Last Modified on
+5,value,text,,Value
+6,col1,many2one,ir.model.fields,Field
+7,write_date,datetime,,Last Updated on
+8,create_date,datetime,,Created on
+9,write_uid,many2one,res.users,Last Updated by
+10,type,selection,,Evaluation Type
+11,id,integer,,ID
+,,,,
+,,,,
+,,,,

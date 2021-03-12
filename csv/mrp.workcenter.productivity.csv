@@ -1,0 +1,21 @@
+model,mrp.workcenter.productivity,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,date_start,datetime,,Start Date
+3,user_id,many2one,res.users,User
+4,description,text,,Description
+5,loss_type,selection,,Effectiveness Category
+6,loss_id,many2one,mrp.workcenter.productivity.loss,Loss Reason
+7,date_end,datetime,,End Date
+8,__last_update,datetime,,Last Modified on
+9,write_uid,many2one,res.users,Last Updated by
+10,workorder_id,many2one,mrp.workorder,Work Order
+11,write_date,datetime,,Last Updated on
+12,workcenter_id,many2one,mrp.workcenter,Work Center
+13,duration,float,,Duration
+14,create_date,datetime,,Created on
+15,id,integer,,ID
+16,display_name,char,,Display Name
+,,,,
+,,,,
+,,,,

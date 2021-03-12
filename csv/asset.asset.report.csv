@@ -1,0 +1,24 @@
+model,asset.asset.report,transient,False
+no,field,type,relation,string
+1,asset_id,many2one,account.asset.asset,Asset
+2,asset_category_id,many2one,account.asset.category,Asset category
+3,name,char,,Year
+4,__last_update,datetime,,Last Modified on
+5,depreciation_nbr,integer,,# of Depreciation Lines
+6,gross_value,float,,Gross Amount
+7,depreciation_date,date,,Depreciation Date
+8,unposted_value,float,,Unposted Amount
+9,company_id,many2one,res.company,Company
+10,installment_nbr,integer,,# of Installment Lines
+11,move_check,boolean,,Posted
+12,state,selection,,Status
+13,depreciation_value,float,,Amount of Depreciation Lines
+14,date,date,,Date
+15,display_name,char,,Display Name
+16,posted_value,float,,Posted Amount
+17,partner_id,many2one,res.partner,Partner
+18,id,integer,,ID
+19,installment_value,float,,Amount of Installment Lines
+,,,,
+,,,,
+,,,,

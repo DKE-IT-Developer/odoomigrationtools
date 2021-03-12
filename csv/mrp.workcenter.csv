@@ -1,0 +1,42 @@
+model,mrp.workcenter,transient,False
+no,field,type,relation,string
+1,code,char,,Code
+2,time_ids,one2many,mrp.workcenter.productivity,Time Logs
+3,workorder_pending_count,integer,,Total Running Orders
+4,time_stop,float,,Time after prod.
+5,color,integer,,Color
+6,write_uid,many2one,res.users,Last Updated by
+7,create_date,datetime,,Created on
+8,id,integer,,ID
+9,blocked_time,float,,Blocked Time
+10,create_uid,many2one,res.users,Created by
+11,time_efficiency,float,,Efficiency Factor
+12,capacity,float,,Capacity
+13,__last_update,datetime,,Last Modified on
+14,resource_id,many2one,resource.resource,Resource
+15,company_id,many2one,res.company,Company
+16,note,text,,Description
+17,workcenter_load,float,,Work Center Load
+18,performance,integer,,Performance
+19,order_ids,one2many,mrp.workorder,Orders
+20,time_start,float,,Time before prod.
+21,productive_time,float,,Productive Time
+22,routing_line_ids,one2many,mrp.routing.workcenter,Routing Lines
+23,workorder_ready_count,integer,,# Read Work Orders
+24,sequence,integer,,Sequence
+25,workorder_progress_count,integer,,Total Running Orders
+26,workorder_late_count,integer,,Total Late Orders
+27,write_date,datetime,,Last Updated on
+28,active,boolean,,Active
+29,calendar_id,many2one,resource.calendar,Working Time
+30,oee,float,,Oee
+31,display_name,char,,Display Name
+32,oee_target,float,,OEE Target
+33,name,char,,Name
+34,user_id,many2one,res.users,User
+35,workorder_count,integer,,# Work Orders
+36,working_state,selection,,Status
+37,resource_type,selection,,Resource Type
+,,,,
+,,,,
+,,,,

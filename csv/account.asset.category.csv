@@ -1,0 +1,30 @@
+model,account.asset.category,transient,False
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,method_end,date,,Ending date
+3,account_asset_id,many2one,account.account,Asset Account
+4,account_depreciation_id,many2one,account.account,Depreciation Entries: Asset Account
+5,company_id,many2one,res.company,Company
+6,account_depreciation_expense_id,many2one,account.account,Depreciation Entries: Expense Account
+7,group_entries,boolean,,Group Journal Entries
+8,id,integer,,ID
+9,create_uid,many2one,res.users,Created by
+10,display_name,char,,Display Name
+11,method_progress_factor,float,,Degressive Factor
+12,__last_update,datetime,,Last Modified on
+13,journal_id,many2one,account.journal,Journal
+14,prorata,boolean,,Prorata Temporis
+15,method_period,integer,,Period Length
+16,account_analytic_id,many2one,account.analytic.account,Analytic Account
+17,type,selection,,Type
+18,method,selection,,Computation Method
+19,method_number,integer,,Number of Depreciations
+20,method_time,selection,,Time Method
+21,write_date,datetime,,Last Updated on
+22,active,boolean,,Active
+23,write_uid,many2one,res.users,Last Updated by
+24,name,char,,Asset Type
+25,open_asset,boolean,,Auto-confirm Assets
+,,,,
+,,,,
+,,,,

@@ -1,0 +1,17 @@
+model,account.common.report,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,__last_update,datetime,,Last Modified on
+4,date_from,date,,Start Date
+5,company_id,many2one,res.company,Company
+6,journal_ids,many2many,account.journal,Journals
+7,write_date,datetime,,Last Updated on
+8,date_to,date,,End Date
+9,create_date,datetime,,Created on
+10,write_uid,many2one,res.users,Last Updated by
+11,id,integer,,ID
+12,target_move,selection,,Target Moves
+,,,,
+,,,,
+,,,,

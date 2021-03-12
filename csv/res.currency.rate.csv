@@ -1,0 +1,16 @@
+model,res.currency.rate,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,name,datetime,,Date
+4,__last_update,datetime,,Last Modified on
+5,company_id,many2one,res.company,Company
+6,write_uid,many2one,res.users,Last Updated by
+7,currency_id,many2one,res.currency,Currency
+8,rate,float,,Rate
+9,write_date,datetime,,Last Updated on
+10,create_date,datetime,,Created on
+11,id,integer,,ID
+,,,,
+,,,,
+,,,,

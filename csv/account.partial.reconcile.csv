@@ -1,0 +1,20 @@
+model,account.partial.reconcile,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,company_currency_id,many2one,res.currency,Currency
+3,display_name,char,,Display Name
+4,credit_move_id,many2one,account.move.line,Credit move id
+5,__last_update,datetime,,Last Modified on
+6,full_reconcile_id,many2one,account.full.reconcile,Full Reconcile
+7,company_id,many2one,res.company,Currency
+8,write_uid,many2one,res.users,Last Updated by
+9,currency_id,many2one,res.currency,Currency
+10,amount,monetary,,Amount
+11,debit_move_id,many2one,account.move.line,Debit move id
+12,write_date,datetime,,Last Updated on
+13,amount_currency,monetary,,Amount in Currency
+14,create_date,datetime,,Created on
+15,id,integer,,ID
+,,,,
+,,,,
+,,,,

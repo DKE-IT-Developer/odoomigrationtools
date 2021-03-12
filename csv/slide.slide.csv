@@ -1,0 +1,52 @@
+model,slide.slide,transient,False
+no,field,type,relation,string
+1,message_follower_ids,one2many,mail.followers,Followers
+2,create_date,datetime,,Created on
+3,message_needaction,boolean,,Action Needed
+4,message_channel_ids,many2many,mail.channel,Followers (Channels)
+5,image,binary,,Image
+6,dislikes,integer,,Dislikes
+7,embed_views,integer,,# of Embedded Views
+8,download_security,selection,,Download Security
+9,likes,integer,,Likes
+10,id,integer,,ID
+11,create_uid,many2one,res.users,Created by
+12,total_views,integer,,Total # Views
+13,embed_code,text,,Embed Code
+14,display_name,char,,Display Name
+15,message_is_follower,boolean,,Is Follower
+16,__last_update,datetime,,Last Modified on
+17,message_last_post,datetime,,Last Message Date
+18,message_ids,one2many,mail.message,Messages
+19,website_meta_title,char,,Website meta title
+20,index_content,text,,Transcript
+21,image_thumb,binary,,Thumbnail
+22,message_unread_counter,integer,,Unread Messages Counter
+23,message_partner_ids,many2many,res.partner,Followers (Partners)
+24,mime_type,char,,Mime-type
+25,embedcount_ids,one2many,slide.embed,Embed Count
+26,description,text,,Description
+27,date_published,datetime,,Publish Date
+28,website_meta_description,text,,Website meta description
+29,image_medium,binary,,Medium
+30,write_date,datetime,,Last Updated on
+31,slide_views,integer,,# of Website Views
+32,active,boolean,,Active
+33,write_uid,many2one,res.users,Last Updated by
+34,document_id,char,,Document ID
+35,category_id,many2one,slide.category,Category
+36,slide_type,selection,,Type
+37,website_message_ids,one2many,mail.message,Website Messages
+38,name,char,,Title
+39,url,char,,Document URL
+40,website_published,boolean,,Visible in Website
+41,channel_id,many2one,slide.channel,Channel
+42,website_url,char,,Website URL
+43,tag_ids,many2many,slide.tag,Tags
+44,website_meta_keywords,char,,Website meta keywords
+45,message_unread,boolean,,Unread Messages
+46,message_needaction_counter,integer,,Number of Actions
+47,datas,binary,,Content
+,,,,
+,,,,
+,,,,

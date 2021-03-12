@@ -1,0 +1,25 @@
+model,account.reconcile.model.template,transient,False
+no,field,type,relation,string
+1,amount_type,selection,,Amount type
+2,second_account_id,many2one,account.account.template,Second Account
+3,has_second_line,boolean,,Add a second line
+4,display_name,char,,Display Name
+5,account_id,many2one,account.account.template,Account
+6,name,char,,Button Label
+7,second_tax_id,many2one,account.tax.template,Second Tax
+8,second_amount_type,selection,,Second Amount type
+9,__last_update,datetime,,Last Modified on
+10,sequence,integer,,Sequence
+11,label,char,,Journal Item Label
+12,amount,float,,Amount
+13,write_date,datetime,,Last Updated on
+14,second_label,char,,Second Journal Item Label
+15,id,integer,,ID
+16,create_date,datetime,,Created on
+17,second_amount,float,,Second Amount
+18,write_uid,many2one,res.users,Last Updated by
+19,create_uid,many2one,res.users,Created by
+20,tax_id,many2one,account.tax.template,Tax
+,,,,
+,,,,
+,,,,

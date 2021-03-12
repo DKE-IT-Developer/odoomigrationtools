@@ -1,0 +1,45 @@
+model,payment.transaction,transient,False
+no,field,type,relation,string
+1,state_message,text,,Message
+2,callback_eval,char,,S2S Callback
+3,create_date,datetime,,Creation Date
+4,reference,char,,Reference
+5,write_uid,many2one,res.users,Last Updated by
+6,currency_id,many2one,res.currency,Currency
+7,acquirer_id,many2one,payment.acquirer,Acquirer
+8,fees,float,,Fees
+9,partner_id,many2one,res.partner,Partner
+10,id,integer,,ID
+11,so_state,selection,,Sale Order State
+12,create_uid,many2one,res.users,Created by
+13,display_name,char,,Display Name
+14,__last_update,datetime,,Last Modified on
+15,partner_name,char,,Partner Name
+16,partner_phone,char,,Phone
+17,state,selection,,Status
+18,type,selection,,Type
+19,partner_country_id,many2one,res.country,Country
+20,acquirer_reference,char,,Acquirer Reference
+21,partner_address,char,,Address
+22,partner_email,char,,Email
+23,partner_lang,selection,,Language
+24,sale_order_id,many2one,sale.order,Sale Order
+25,write_date,datetime,,Last Updated on
+26,payment_token_id,many2one,payment.token,Payment Token
+27,partner_zip,char,,Zip
+28,html_3ds,char,,3D Secure HTML
+29,date_validate,datetime,,Validation Date
+30,partner_city,char,,City
+31,amount,float,,Amount
+,,,,
+32,name_sender,char,,On Behalf of
+33,bank_sender,many2one,res.bank,Your Bank
+34,partner_account_name,char,,Partner Account Name
+35,upload_image,binary,,Image
+36,account_number_sender,char,,Account Number
+37,bank_sender_other,char,,Bank Name
+38,note,text,,Note
+39,partner_bank,char,,Partner Bank
+40,partner_account_number,char,,Partner Account Number
+,,,,
+,,,,

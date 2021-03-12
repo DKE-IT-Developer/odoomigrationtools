@@ -1,0 +1,29 @@
+model,stock.scrap,transient,False
+no,field,type,relation,string
+1,origin,char,,Source Document
+2,create_date,datetime,,Created on
+3,write_uid,many2one,res.users,Last Updated by
+4,package_id,many2one,stock.quant.package,Package
+5,scrap_qty,float,,Quantity
+6,lot_id,many2one,stock.production.lot,Lot
+7,location_id,many2one,stock.location,Location
+8,id,integer,,ID
+9,create_uid,many2one,res.users,Created by
+10,display_name,char,,Display Name
+11,__last_update,datetime,,Last Modified on
+12,scrap_location_id,many2one,stock.location,Scrap Location
+13,state,selection,,Status
+14,owner_id,many2one,res.partner,Owner
+15,date_expected,datetime,,Expected Date
+16,write_date,datetime,,Last Updated on
+17,move_id,many2one,stock.move,Scrap Move
+18,name,char,,Reference
+19,tracking,selection,,Tracking
+20,product_id,many2one,product.product,Product
+21,product_uom_id,many2one,product.uom,Unit of Measure
+22,workorder_id,many2one,mrp.workorder,Work Order
+23,production_id,many2one,mrp.production,Manufacturing Order
+24,picking_id,many2one,stock.picking,Picking
+,,,,
+,,,,
+,,,,

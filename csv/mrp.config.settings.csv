@@ -1,0 +1,21 @@
+model,mrp.config.settings,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,module_quality_mrp,selection,,Quality
+3,module_mrp_maintenance,selection,,Maintenance
+4,__last_update,datetime,,Last Modified on
+5,module_mrp_byproduct,selection,,By-Products
+6,company_id,many2one,res.company,Company
+7,write_uid,many2one,res.users,Last Updated by
+8,module_mrp_plm,selection,,PLM
+9,create_date,datetime,,Created on
+10,group_mrp_routings,selection,,Routings & Planning
+11,manufacturing_lead,float,,Manufacturing Lead Time *
+12,write_date,datetime,,Last Updated on
+13,display_name,char,,Display Name
+14,group_product_variant,selection,,Product Variants
+15,id,integer,,ID
+16,module_mrp_mps,selection,,Master Production Schedule
+,,,,
+,,,,
+,,,,

@@ -1,0 +1,40 @@
+model,stock.config.settings,transient,True
+no,field,type,relation,string
+1,module_stock_landed_costs,selection,,Landed Costs
+2,group_stock_inventory_valuation,selection,,Inventory Valuation
+3,module_stock_calendar,selection,,Minimum Stock Rules
+4,module_stock_barcode,boolean,,Barcode scanner support
+5,module_stock_picking_wave,selection,,Picking Waves
+6,module_delivery_temando,boolean,,Temando integration
+7,group_stock_tracking_lot,selection,,Packages
+8,create_date,datetime,,Created on
+9,group_product_variant,selection,,Product Variants
+10,id,integer,,ID
+11,create_uid,many2one,res.users,Created by
+12,group_warning_stock,selection,,Warning
+13,__last_update,datetime,,Last Modified on
+14,company_id,many2one,res.company,Company
+15,group_stock_production_lot,selection,,Lots and Serial Numbers
+16,group_stock_multi_warehouses,boolean,,Manage several warehouses
+17,group_stock_tracking_owner,selection,,Product Owners
+18,propagation_minimum_delta,integer,,Minimum days to trigger a propagation of date change in pushed/pull flows.
+19,module_delivery_usps,boolean,,USPS integration
+20,module_stock_dropshipping,selection,,Dropshipping
+21,module_quality,boolean,,Quality
+22,module_procurement_jit,selection,,Procurements
+23,group_stock_packaging,selection,,Packaging Methods
+24,write_date,datetime,,Last Updated on
+25,module_delivery_fedex,boolean,,Fedex integration
+26,write_uid,many2one,res.users,Last Updated by
+27,decimal_precision,integer,,Decimal precision on weight
+28,display_name,char,,Display Name
+29,group_uom,selection,,Units of Measure
+30,warehouse_and_location_usage_level,selection,,Warehouses and Locations usage level
+31,module_delivery_ups,boolean,,UPS integration
+32,module_product_expiry,selection,,Expiration Dates
+33,group_stock_multi_locations,boolean,,Manage several stock locations
+34,group_stock_adv_location,selection,,Routes
+35,module_delivery_dhl,boolean,,DHL integration
+,,,,
+,,,,
+,,,,

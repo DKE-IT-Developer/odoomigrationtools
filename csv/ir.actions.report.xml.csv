@@ -1,0 +1,43 @@
+model,ir.actions.report.xml,transient,False
+no,field,type,relation,string
+1,groups_id,many2many,res.groups,Groups
+2,xml_id,char,,External ID
+3,create_date,datetime,,Created on
+4,help,html,,Action Description
+5,report_rml_content,binary,,RML Content
+6,parser,char,,Parser Class
+7,write_uid,many2one,res.users,Last Updated by
+8,header,boolean,,Add RML Header
+9,report_type,selection,,Report type
+10,id,integer,,ID
+11,create_uid,many2one,res.users,Created by
+12,ir_values_id,many2one,ir.values,More Menu entry
+13,display_name,char,,Display Name
+14,__last_update,datetime,,Last Modified on
+15,report_sxw_content,binary,,SXW Content
+16,paperformat_id,many2one,report.paperformat,Paper format
+17,attachment,char,,Save as Attachment Prefix
+18,usage,char,,Action Usage
+19,report_sxw_content_data,binary,,SXW Content
+20,type,char,,Action Type
+21,report_xml,char,,XML Path
+22,report_rml_content_data,binary,,RML Content
+23,auto,boolean,,Custom Python Parser
+24,write_date,datetime,,Last Updated on
+25,report_sxw,char,,SXW Path
+26,report_file,char,,Report File
+27,multi,boolean,,On Multiple Doc.
+28,report_xsl,char,,XSL Path
+29,name,char,,Name
+30,report_rml,char,,Main Report File Path/controller
+31,print_report_name,char,,Printed Report Name
+32,report_name,char,,Template Name
+33,attachment_use,boolean,,Reload from Attachment
+34,model,char,,Model
+,,,,
+35,jasper_file_ids,one2many,ir.actions.report.xml.file,Files
+36,jasper_output,selection,,Jasper Output
+37,jasper_model_id,many2one,ir.model,Model
+38,jasper_report,boolean,,Is Jasper Report?
+,,,,
+,,,,

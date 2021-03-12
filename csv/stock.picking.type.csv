@@ -1,0 +1,39 @@
+model,stock.picking.type,transient,False
+no,field,type,relation,string
+1,code,selection,,Type of Operation
+2,create_date,datetime,,Created on
+3,count_mo_late,integer,,Count mo late
+4,sequence,integer,,Sequence
+5,color,integer,,Color
+6,count_picking_draft,integer,,Count picking draft
+7,write_uid,many2one,res.users,Last Updated by
+8,count_mo_waiting,integer,,Count mo waiting
+9,count_mo_todo,integer,,Count mo todo
+10,last_done_picking,char,,Last 10 Done Pickings
+11,use_create_lots,boolean,,Create New Lots/Serial Numbers
+12,id,integer,,ID
+13,create_uid,many2one,res.users,Created by
+14,default_location_dest_id,many2one,stock.location,Default Destination Location
+15,show_entire_packs,boolean,,Allow moving packs
+16,display_name,char,,Display Name
+17,__last_update,datetime,,Last Modified on
+18,barcode_nomenclature_id,many2one,barcode.nomenclature,Barcode Nomenclature
+19,use_existing_lots,boolean,,Use Existing Lots/Serial Numbers
+20,count_picking_waiting,integer,,Count picking waiting
+21,count_picking,integer,,Count picking
+22,warehouse_id,many2one,stock.warehouse,Warehouse
+23,sequence_id,many2one,ir.sequence,Reference Sequence
+24,write_date,datetime,,Last Updated on
+25,active,boolean,,Active
+26,count_picking_backorders,integer,,Count picking backorders
+27,name,char,,Picking Type Name
+28,count_picking_ready,integer,,Count picking ready
+29,return_picking_type_id,many2one,stock.picking.type,Picking Type for Returns
+30,count_picking_late,integer,,Count picking late
+31,default_location_src_id,many2one,stock.location,Default Source Location
+32,rate_picking_backorders,integer,,Rate picking backorders
+33,rate_picking_late,integer,,Rate picking late
+,,,,
+34,order_sequence_id,many2one,ir.sequence,Sequence for Production Order
+,,,,
+,,,,

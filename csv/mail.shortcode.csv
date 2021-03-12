@@ -1,0 +1,16 @@
+model,mail.shortcode,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,description,char,,Description
+4,__last_update,datetime,,Last Modified on
+5,write_uid,many2one,res.users,Last Updated by
+6,source,char,,Shortcut
+7,shortcode_type,selection,,Shortcode type
+8,substitution,text,,Substitution
+9,write_date,datetime,,Last Updated on
+10,create_date,datetime,,Created on
+11,id,integer,,ID
+,,,,
+,,,,
+,,,,

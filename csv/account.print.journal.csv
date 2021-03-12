@@ -1,0 +1,19 @@
+model,account.print.journal,transient,True
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,display_name,char,,Display Name
+3,sort_selection,selection,,Entries Sorted by
+4,__last_update,datetime,,Last Modified on
+5,date_from,date,,Start Date
+6,company_id,many2one,res.company,Company
+7,amount_currency,boolean,,With Currency
+8,journal_ids,many2many,account.journal,Journals
+9,write_date,datetime,,Last Updated on
+10,date_to,date,,End Date
+11,create_date,datetime,,Created on
+12,write_uid,many2one,res.users,Last Updated by
+13,id,integer,,ID
+14,target_move,selection,,Target Moves
+,,,,
+,,,,
+,,,,

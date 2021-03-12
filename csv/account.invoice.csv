@@ -1,0 +1,104 @@
+model,account.invoice,transient,False
+no,field,type,relation,string
+1,comment,text,,Additional Information
+2,message_follower_ids,one2many,mail.followers,Followers
+3,date_due,date,,Due Date
+4,create_date,datetime,,Created on
+5,reference,char,,Vendor Reference
+6,message_needaction,boolean,,Action Needed
+7,message_channel_ids,many2many,mail.channel,Followers (Channels)
+8,message_partner_ids,many2many,res.partner,Followers (Partners)
+9,number,char,,Number
+10,company_id,many2one,res.company,Company
+11,company_currency_id,many2one,res.currency,Company Currency
+12,amount_total_company_signed,monetary,,Total in Company Currency
+13,team_id,many2one,crm.team,Sales Team
+14,payments_widget,text,,Payments widget
+15,partner_id,many2one,res.partner,Partner
+16,message_ids,one2many,mail.message,Messages
+17,payment_move_line_ids,many2many,account.move.line,Payment Move Lines
+18,purchase_id,many2one,purchase.order,Add Purchase Order
+19,create_uid,many2one,res.users,Created by
+20,amount_untaxed,monetary,,Untaxed Amount
+21,partner_bank_id,many2one,res.partner.bank,Bank Account
+22,message_is_follower,boolean,,Is Follower
+23,residual_company_signed,monetary,,Amount Due in Company Currency
+24,amount_total_signed,monetary,,Total in Invoice Currency
+25,message_last_post,datetime,,Last Message Date
+26,journal_id,many2one,account.journal,Journal
+27,id,integer,,ID
+28,amount_tax,monetary,,Tax
+29,state,selection,,Status
+30,fiscal_position_id,many2one,account.fiscal.position,Fiscal Position
+31,message_unread_counter,integer,,Unread Messages Counter
+32,incoterms_id,many2one,stock.incoterms,Incoterms
+33,sent,boolean,,Sent
+34,account_id,many2one,account.account,Account
+35,payment_ids,many2many,account.payment,Payments
+36,reconciled,boolean,,Paid/Reconciled
+37,origin,char,,Source Document
+38,residual,monetary,,Amount Due
+39,move_name,char,,Journal Entry Name
+40,reference_type,selection,,Payment Reference
+41,date_invoice,date,,Invoice Date
+42,payment_term_id,many2one,account.payment.term,Payment Terms
+43,outstanding_credits_debits_widget,text,,Outstanding credits debits widget
+44,write_date,datetime,,Last Updated on
+45,residual_signed,monetary,,Amount Due in Invoice Currency
+46,date,date,,Accounting Date
+47,display_name,char,,Display Name
+48,write_uid,many2one,res.users,Last Updated by
+49,move_id,many2one,account.move,Journal Entry
+50,amount_total,monetary,,Total
+51,amount_untaxed_signed,monetary,,Untaxed Amount in Company Currency
+52,currency_id,many2one,res.currency,Currency
+53,refund_invoice_id,many2one,account.invoice,Invoice for which this invoice is the refund
+54,name,char,,Reference/Description
+55,partner_shipping_id,many2one,res.partner,Delivery Address
+56,user_id,many2one,res.users,Salesperson
+57,type,selection,,Type
+58,__last_update,datetime,,Last Modified on
+59,has_outstanding,boolean,,Has outstanding
+60,tax_line_ids,one2many,account.invoice.tax,Tax Lines
+61,invoice_line_ids,one2many,account.invoice.line,Invoice Lines
+62,message_unread,boolean,,Unread Messages
+63,message_needaction_counter,integer,,Number of Actions
+64,commercial_partner_id,many2one,res.partner,Commercial Entity
+,,,,
+65,virtual_account_midtrans,char,,Virtual account midtrans
+66,nomor_faktur_partner,char,,Nomor Faktur
+67,amount_product,monetary,,Product Sale
+68,journal_bank_id,many2one,account.journal,Payment Method
+69,npwp_efaktur,char,,NPWP for eFaktur
+70,written,char,,Written
+71,printer_data,text,,Printer Data
+72,vat_supplier,char,,Faktur Pajak No
+73,faktur_no,char,,Faktur No
+74,transaction_time,datetime,,Transaction time
+75,ongkir_city_id,many2one,res.city.ongkir,City
+76,area_categ_id,many2one,area.category,Area
+77,amount_discount,monetary,,Discount
+78,amount_deposit,monetary,,Deposit
+79,is_taxed,boolean,,Is Taxed
+80,payment_midtrans_id,char,,Payment midtrans id
+81,attn,char,,Attention
+82,non_faktur_pajak,boolean,,Non-FP
+83,revised,boolean,,Revisi
+84,date_paid_off,date,,Paid Off Date
+85,transaction_status,char,,Transaction status
+86,npwp_no,char,,NPWP
+87,nomor_faktur_id,many2one,nomor.faktur.pajak,Nomor Faktur Pajak
+88,production_order_id,many2one,production.order,Production Order
+89,npwp_name,char,,NPWP Name
+90,code_transaction,selection,,Kode Faktur
+91,npwp,char,,NPWP
+92,amount_delivery,monetary,,Delivery
+93,tag_id,many2one,account.invoice.tag,Event Tag
+94,amount_total_deposit,monetary,,Total Deposit
+95,fp_export,boolean,,FP Is Exported
+96,state_id,many2one,res.country.state,Province
+97,bank_transfer_type,selection,,Bank Type
+98,fp_date,datetime,,FP Exported Date
+99,signature,char,,Signature
+,,,,
+,,,,

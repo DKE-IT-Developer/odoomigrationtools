@@ -1,0 +1,35 @@
+model,ir.actions.act_window,transient,False
+no,field,type,relation,string
+1,groups_id,many2many,res.groups,Groups
+2,domain,char,,Domain Value
+3,xml_id,char,,External ID
+4,create_date,datetime,,Created on
+5,help,html,,Action Description
+6,res_model,char,,Destination Model
+7,search_view_id,many2one,ir.ui.view,Search View Ref.
+8,write_uid,many2one,res.users,Last Updated by
+9,id,integer,,ID
+10,create_uid,many2one,res.users,Created by
+11,display_name,char,,Display Name
+12,__last_update,datetime,,Last Modified on
+13,view_type,selection,,View Type
+14,src_model,char,,Source Model
+15,usage,char,,Action Usage
+16,type,char,,Action Type
+17,views,binary,,Views
+18,view_id,many2one,ir.ui.view,View Ref.
+19,view_mode,char,,View mode
+20,write_date,datetime,,Last Updated on
+21,view_ids,one2many,ir.actions.act_window.view,Views
+22,target,selection,,Target Window
+23,multi,boolean,,Restrict to lists
+24,name,char,,Action Name
+25,auto_search,boolean,,Auto search
+26,res_id,integer,,Record ID
+27,search_view,text,,Search view
+28,filter,boolean,,Filter
+29,limit,integer,,Limit
+30,context,char,,Context Value
+,,,,
+,,,,
+,,,,

@@ -1,0 +1,13 @@
+model,mail.followers,transient,False
+no,field,type,relation,string
+1,subtype_ids,many2many,mail.message.subtype,Subtype
+2,display_name,char,,Display Name
+3,__last_update,datetime,,Last Modified on
+4,res_model,char,,Related Document Model
+5,channel_id,many2one,mail.channel,Listener
+6,res_id,integer,,Related Document ID
+7,partner_id,many2one,res.partner,Related Partner
+8,id,integer,,ID
+,,,,
+,,,,
+,,,,

@@ -1,0 +1,37 @@
+model,account.analytic.account,transient,False
+no,field,type,relation,string
+1,message_follower_ids,one2many,mail.followers,Followers
+2,project_count,integer,,Project Count
+3,code,char,,Reference
+4,create_date,datetime,,Created on
+5,message_needaction,boolean,,Action Needed
+6,message_channel_ids,many2many,mail.channel,Followers (Channels)
+7,message_partner_ids,many2many,res.partner,Followers (Partners)
+8,write_uid,many2one,res.users,Last Updated by
+9,currency_id,many2one,res.currency,Currency
+10,partner_id,many2one,res.partner,Customer
+11,id,integer,,ID
+12,create_uid,many2one,res.users,Created by
+13,display_name,char,,Display Name
+14,message_is_follower,boolean,,Is Follower
+15,__last_update,datetime,,Last Modified on
+16,project_ids,one2many,project.project,Projects
+17,message_last_post,datetime,,Last Message Date
+18,company_id,many2one,res.company,Company
+19,message_ids,one2many,mail.message,Messages
+20,debit,monetary,,Debit
+21,message_unread_counter,integer,,Unread Messages Counter
+22,company_uom_id,many2one,product.uom,Company UOM
+23,write_date,datetime,,Last Updated on
+24,line_ids,one2many,account.analytic.line,Analytic Lines
+25,active,boolean,,Active
+26,message_unread,boolean,,Unread Messages
+27,name,char,,Analytic Account
+28,credit,monetary,,Credit
+29,tag_ids,many2many,account.analytic.tag,Tags
+30,use_tasks,boolean,,Use Tasks
+31,balance,monetary,,Balance
+32,message_needaction_counter,integer,,Number of Actions
+,,,,
+,,,,
+,,,,

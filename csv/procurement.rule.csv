@@ -1,0 +1,30 @@
+model,procurement.rule,transient,False
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,sequence,integer,,Sequence
+3,partner_address_id,many2one,res.partner,Partner Address
+4,write_uid,many2one,res.users,Last Updated by
+5,active,boolean,,Active
+6,location_id,many2one,stock.location,Procurement Location
+7,id,integer,,ID
+8,create_uid,many2one,res.users,Created by
+9,display_name,char,,Display Name
+10,location_src_id,many2one,stock.location,Source Location
+11,__last_update,datetime,,Last Modified on
+12,company_id,many2one,res.company,Company
+13,delay,integer,,Number of Days
+14,warehouse_id,many2one,stock.warehouse,Served Warehouse
+15,propagate,boolean,,Propagate cancel and split
+16,write_date,datetime,,Last Updated on
+17,procure_method,selection,,Move Supply Method
+18,route_sequence,integer,,Route Sequence
+19,name,char,,Name
+20,picking_type_id,many2one,stock.picking.type,Picking Type
+21,route_id,many2one,stock.location.route,Route
+22,action,selection,,Action
+23,group_id,many2one,procurement.group,Fixed Procurement Group
+24,propagate_warehouse_id,many2one,stock.warehouse,Warehouse to Propagate
+25,group_propagation_option,selection,,Propagation of Procurement Group
+,,,,
+,,,,
+,,,,

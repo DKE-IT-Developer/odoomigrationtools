@@ -1,0 +1,27 @@
+model,stock.location.route,transient,False
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,pull_ids,one2many,procurement.rule,Procurement Rules
+3,categ_ids,many2many,product.category,Product Categories
+4,sequence,integer,,Sequence
+5,write_uid,many2one,res.users,Last Updated by
+6,sale_selectable,boolean,,Selectable on Sales Order Line
+7,id,integer,,ID
+8,supplier_wh_id,many2one,stock.warehouse,Supplying Warehouse
+9,create_uid,many2one,res.users,Created by
+10,display_name,char,,Display Name
+11,__last_update,datetime,,Last Modified on
+12,company_id,many2one,res.company,Company
+13,push_ids,one2many,stock.location.path,Push Rules
+14,product_selectable,boolean,,Applicable on Product
+15,supplied_wh_id,many2one,stock.warehouse,Supplied Warehouse
+16,write_date,datetime,,Last Updated on
+17,active,boolean,,Active
+18,name,char,,Route Name
+19,warehouse_selectable,boolean,,Applicable on Warehouse
+20,product_categ_selectable,boolean,,Applicable on Product Category
+21,product_ids,many2many,product.template,Products
+22,warehouse_ids,many2many,stock.warehouse,Warehouses
+,,,,
+,,,,
+,,,,

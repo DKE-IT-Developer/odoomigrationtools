@@ -1,0 +1,43 @@
+model,account.invoice.line,transient,False
+no,field,type,relation,string
+1,origin,char,,Source Document
+2,sale_line_ids,many2many,sale.order.line,Sale Order Lines
+3,create_date,datetime,,Created on
+4,analytic_tag_ids,many2many,account.analytic.tag,Analytic Tags
+5,price_unit,float,,Unit Price
+6,price_subtotal,monetary,,Amount
+7,write_uid,many2one,res.users,Last Updated by
+8,currency_id,many2one,res.currency,Currency
+9,uom_id,many2one,product.uom,Unit of Measure
+10,partner_id,many2one,res.partner,Partner
+11,id,integer,,ID
+12,purchase_id,many2one,purchase.order,Purchase Order
+13,create_uid,many2one,res.users,Created by
+14,asset_category_id,many2one,account.asset.category,Asset Category
+15,__last_update,datetime,,Last Modified on
+16,sequence,integer,,Sequence
+17,company_id,many2one,res.company,Company
+18,account_analytic_id,many2one,account.analytic.account,Analytic Account
+19,purchase_line_id,many2one,purchase.order.line,Purchase Order Line
+20,account_id,many2one,account.account,Account
+21,asset_end_date,date,,Asset End Date
+22,discount,float,,Discount (%)
+23,write_date,datetime,,Last Updated on
+24,price_subtotal_signed,monetary,,Amount Signed
+25,display_name,char,,Display Name
+26,layout_category_id,many2one,sale.layout_category,Section
+27,product_id,many2one,product.product,Product
+28,company_currency_id,many2one,res.currency,Company Currency
+29,asset_start_date,date,,Asset Start Date
+30,name,text,,Description
+31,invoice_id,many2one,account.invoice,Invoice Reference
+32,asset_mrr,float,,Monthly Recurring Revenue
+33,layout_category_sequence,integer,,Layout Sequence
+34,invoice_line_tax_ids,many2many,account.tax,Taxes
+35,quantity,float,,Quantity
+,,,,
+36,production_order_line_id,many2one,production.order.line,Production Order Line
+37,price_tax,monetary,,Taxes
+38,account_partner_id,many2one,res.partner,Partner
+,,,,
+,,,,

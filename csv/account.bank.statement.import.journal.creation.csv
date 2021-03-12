@@ -1,0 +1,45 @@
+model,account.bank.statement.import.journal.creation,transient,True
+no,field,type,relation,string
+1,code,char,,Short Code
+2,create_date,datetime,,Created on
+3,sequence,integer,,Sequence
+4,company_id,many2one,res.company,Company
+5,currency_id,many2one,res.currency,Currency
+6,at_least_one_inbound,boolean,,At least one inbound
+7,account_control_ids,many2many,account.account,Accounts Allowed
+8,bank_statements_source,selection,,Bank Feeds
+9,id,integer,,ID
+10,create_uid,many2one,res.users,Created by
+11,display_name,char,,Display Name
+12,__last_update,datetime,,Last Modified on
+13,group_invoice_lines,boolean,,Group Invoice Lines
+14,journal_id,many2one,account.journal,Journal id
+15,bank_account_id,many2one,res.partner.bank,Bank Account
+16,outbound_payment_method_ids,many2many,account.payment.method,Payment Methods
+17,profit_account_id,many2one,account.account,Profit Account
+18,display_on_footer,boolean,,Show in Invoices Footer
+19,bank_acc_number,char,,Account Number
+20,kanban_dashboard,text,,Kanban dashboard
+21,default_debit_account_id,many2one,account.account,Default Debit Account
+22,show_on_dashboard,boolean,,Show journal on dashboard
+23,default_credit_account_id,many2one,account.account,Default Credit Account
+24,kanban_dashboard_graph,text,,Kanban dashboard graph
+25,inbound_payment_method_ids,many2many,account.payment.method,Debit Methods
+26,type_control_ids,many2many,account.account.type,Account Types Allowed
+27,sequence_id,many2one,ir.sequence,Entry Sequence
+28,write_date,datetime,,Last Updated on
+29,refund_sequence_id,many2one,ir.sequence,Refund Entry Sequence
+30,write_uid,many2one,res.users,Last Updated by
+31,loss_account_id,many2one,account.account,Loss Account
+32,update_posted,boolean,,Allow Cancelling Entries
+33,name,char,,Journal Name
+34,type,selection,,Type
+35,bank_id,many2one,res.bank,Bank
+36,at_least_one_outbound,boolean,,At least one outbound
+37,refund_sequence,boolean,,Dedicated Refund Sequence
+38,belongs_to_company,boolean,,Belong to the user's current company
+,,,,
+39,active_midtrans,boolean,,Available for Midtrans
+40,midtrans_type,selection,,Bank Type Midtrans
+,,,,
+,,,,

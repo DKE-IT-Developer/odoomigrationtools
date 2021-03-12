@@ -1,0 +1,21 @@
+model,ir.mail_server,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,__last_update,datetime,,Last Modified on
+3,smtp_encryption,selection,,Connection Security
+4,display_name,char,,Display Name
+5,name,char,,Description
+6,sequence,integer,,Priority
+7,smtp_port,integer,,SMTP Port
+8,smtp_host,char,,SMTP Server
+9,write_uid,many2one,res.users,Last Updated by
+10,smtp_pass,char,,Password
+11,smtp_debug,boolean,,Debugging
+12,write_date,datetime,,Last Updated on
+13,active,boolean,,Active
+14,create_date,datetime,,Created on
+15,smtp_user,char,,Username
+16,id,integer,,ID
+,,,,
+,,,,
+,,,,

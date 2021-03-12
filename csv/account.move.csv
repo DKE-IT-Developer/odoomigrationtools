@@ -1,0 +1,27 @@
+model,account.move,transient,False
+no,field,type,relation,string
+1,create_date,datetime,,Created on
+2,company_id,many2one,res.company,Company
+3,currency_id,many2one,res.currency,Currency
+4,matched_percentage,float,,Percentage Matched
+5,narration,text,,Internal Note
+6,partner_id,many2one,res.partner,Partner
+7,id,integer,,ID
+8,create_uid,many2one,res.users,Created by
+9,display_name,char,,Display Name
+10,__last_update,datetime,,Last Modified on
+11,journal_id,many2one,account.journal,Journal
+12,state,selection,,Status
+13,ref,char,,Reference
+14,statement_line_id,many2one,account.bank.statement.line,Bank statement line reconciled with this entry
+15,asset_depreciation_ids,one2many,account.asset.depreciation.line,Assets Depreciation Lines
+16,write_date,datetime,,Last Updated on
+17,date,date,,Date
+18,write_uid,many2one,res.users,Last Updated by
+19,dummy_account_id,many2one,account.account,Account
+20,name,char,,Number
+21,amount,monetary,,Amount
+22,line_ids,one2many,account.move.line,Journal Items
+,,,,
+,,,,
+,,,,

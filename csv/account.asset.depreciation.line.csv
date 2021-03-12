@@ -1,0 +1,23 @@
+model,account.asset.depreciation.line,transient,False
+no,field,type,relation,string
+1,asset_id,many2one,account.asset.asset,Asset
+2,create_uid,many2one,res.users,Created by
+3,display_name,char,,Display Name
+4,name,char,,Depreciation Name
+5,parent_state,selection,,State of Asset
+6,__last_update,datetime,,Last Modified on
+7,move_check,boolean,,Linked
+8,depreciation_date,date,,Depreciation Date
+9,sequence,integer,,Sequence
+10,write_uid,many2one,res.users,Last Updated by
+11,amount,float,,Current Depreciation
+12,write_date,datetime,,Last Updated on
+13,move_posted_check,boolean,,Posted
+14,create_date,datetime,,Created on
+15,remaining_value,float,,Next Period Depreciation
+16,id,integer,,ID
+17,move_id,many2one,account.move,Depreciation Entry
+18,depreciated_value,float,,Cumulative Depreciation
+,,,,
+,,,,
+,,,,

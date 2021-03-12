@@ -1,0 +1,17 @@
+model,account.full.reconcile,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,exchange_move_id,many2one,account.move,Exchange move id
+3,display_name,char,,Display Name
+4,name,char,,Number
+5,__last_update,datetime,,Last Modified on
+6,reconciled_line_ids,one2many,account.move.line,Matched Journal Items
+7,exchange_partial_rec_id,many2one,account.partial.reconcile,Exchange partial rec id
+8,write_date,datetime,,Last Updated on
+9,partial_reconcile_ids,one2many,account.partial.reconcile,Reconciliation Parts
+10,create_date,datetime,,Created on
+11,write_uid,many2one,res.users,Last Updated by
+12,id,integer,,ID
+,,,,
+,,,,
+,,,,

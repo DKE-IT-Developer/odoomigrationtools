@@ -1,0 +1,59 @@
+model,mrp.workorder,transient,False
+no,field,type,relation,string
+1,message_follower_ids,one2many,mail.followers,Followers
+2,product_tracking,selection,,Tracking
+3,time_ids,one2many,mrp.workcenter.productivity,Time ids
+4,message_last_post,datetime,,Last Message Date
+5,message_needaction,boolean,,Action Needed
+6,message_channel_ids,many2many,mail.channel,Followers (Channels)
+7,message_partner_ids,many2many,res.partner,Followers (Partners)
+8,production_state,selection,,State
+9,write_uid,many2one,res.users,Last Updated by
+10,is_produced,boolean,,Is produced
+11,scrap_ids,one2many,stock.scrap,Scrap ids
+12,next_work_order_id,many2one,mrp.workorder,Next Work Order
+13,duration,float,,Real Duration
+14,create_date,datetime,,Created on
+15,duration_expected,float,,Expected Duration
+16,production_messages,html,,Workorder Message
+17,message_ids,one2many,mail.message,Messages
+18,active_move_lot_ids,one2many,stock.move.lots,Active move lot ids
+19,create_uid,many2one,res.users,Created by
+20,capacity,float,,Capacity
+21,message_is_follower,boolean,,Is Follower
+22,production_date,datetime,,Production Date
+23,duration_unit,float,,Duration Per Unit
+24,date_start,datetime,,Effective Start Date
+25,qty_production,float,,Original Production Quantity
+26,id,integer,,ID
+27,color,integer,,Color
+28,state,selection,,Status
+29,is_user_working,boolean,,Is Current User Working
+30,workcenter_id,many2one,mrp.workcenter,Work Center
+31,message_unread_counter,integer,,Unread Messages Counter
+32,date_finished,datetime,,Effective End Date
+33,qty_produced,float,,Quantity
+34,qty_producing,float,,Currently Produced Quantity
+35,write_date,datetime,,Last Updated on
+36,display_name,char,,Display Name
+37,scrap_count,integer,,Scrap Move
+38,name,char,,Work Order
+39,date_planned_start,datetime,,Scheduled Date Start
+40,product_id,many2one,product.product,Product
+41,duration_percent,integer,,Duration Deviation (%)
+42,move_raw_ids,one2many,stock.move,Moves
+43,product_uom_id,many2one,product.uom,Unit of Measure
+44,__last_update,datetime,,Last Modified on
+45,move_lot_ids,one2many,stock.move.lots,Moves to Track
+46,production_availability,selection,,Availability
+47,date_planned_finished,datetime,,Scheduled Date Finished
+48,production_id,many2one,mrp.production,Manufacturing Order
+49,worksheet,binary,,Worksheet
+50,operation_id,many2one,mrp.routing.workcenter,Operation
+51,message_unread,boolean,,Unread Messages
+52,final_lot_id,many2one,stock.production.lot,Current Lot
+53,message_needaction_counter,integer,,Number of Actions
+54,working_state,selection,,Status
+,,,,
+,,,,
+,,,,

@@ -1,0 +1,39 @@
+model,ir.attachment,transient,False
+no,field,type,relation,string
+1,create_date,datetime,,Date Created
+2,write_date,datetime,,Last Updated on
+3,res_model,char,,Resource Model
+4,write_uid,many2one,res.users,Last Updated by
+5,res_name,char,,Resource Name
+6,db_datas,binary,,Database Data
+7,file_size,integer,,File Size
+8,id,integer,,ID
+9,create_uid,many2one,res.users,Owner
+10,display_name,char,,Display Name
+11,__last_update,datetime,,Last Modified on
+12,company_id,many2one,res.company,Company
+13,priority,selection,,Priority
+14,index_content,text,,Indexed Content
+15,datas,binary,,File Content
+16,type,selection,,Type
+17,public,boolean,,Is public document
+18,store_fname,char,,Stored Filename
+19,description,text,,Description
+20,res_field,char,,Resource Field
+21,mimetype,char,,Mime Type
+22,name,char,,Attachment Name
+23,url,char,,Url
+24,res_id,integer,,Resource ID
+25,website_url,char,,Attachment URL
+26,checksum,char,,Checksum/SHA1
+27,local_url,char,,Attachment URL
+28,datas_fname,char,,File Name
+,,,,
+29,cloud_key,char,,GoogleDrive ID
+30,for_delete,boolean,,Marked for delete
+31,sync_model_id,many2one,sync.model,Synced Model
+32,cloud_path,char,,Cloud path
+33,last_sync_datetime,datetime,,Time of last update
+34,active,boolean,,Active
+,,,,
+,,,,

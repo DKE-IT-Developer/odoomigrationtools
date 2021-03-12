@@ -1,0 +1,13 @@
+model,mail.notification,transient,False
+no,field,type,relation,string
+1,mail_message_id,many2one,mail.message,Message
+2,display_name,char,,Display Name
+3,is_email,boolean,,Sent by Email
+4,__last_update,datetime,,Last Modified on
+5,is_read,boolean,,Is Read
+6,email_status,selection,,Email Status
+7,res_partner_id,many2one,res.partner,Needaction Recipient
+8,id,integer,,ID
+,,,,
+,,,,
+,,,,

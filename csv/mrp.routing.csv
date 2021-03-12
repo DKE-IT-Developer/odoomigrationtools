@@ -1,0 +1,19 @@
+model,mrp.routing,transient,False
+no,field,type,relation,string
+1,create_uid,many2one,res.users,Created by
+2,code,char,,Reference
+3,display_name,char,,Display Name
+4,name,char,,Routing Name
+5,__last_update,datetime,,Last Modified on
+6,company_id,many2one,res.company,Company
+7,write_uid,many2one,res.users,Last Updated by
+8,note,text,,Description
+9,write_date,datetime,,Last Updated on
+10,active,boolean,,Active
+11,create_date,datetime,,Created on
+12,location_id,many2one,stock.location,Production Location
+13,id,integer,,ID
+14,operation_ids,one2many,mrp.routing.workcenter,Operations
+,,,,
+,,,,
+,,,,
