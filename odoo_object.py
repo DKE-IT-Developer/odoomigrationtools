@@ -12,7 +12,6 @@ class OdooObject:
 		print('Logging In.....')
 		self.uid = self.common.authenticate(self.db, self.username, self.password, {})
 		self.models = xmlrpclib.ServerProxy('{}/xmlrpc/2/object'.format(self.url))
-		# import pdb;pdb.set_trace()
 	
 	def check_access_rights(self, model_name='res.partner'):
 		print('Checking access right of %s:' %model_name),

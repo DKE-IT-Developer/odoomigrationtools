@@ -5,8 +5,9 @@ import sys
 from odoo_object import OdooObject
 
 os.environ["PYTHONIOENCODING"] = "utf-8"
-if not os.path.exists('csv'):
-    os.mkdir('csv')
+csv_dir = 'csv'
+if not os.path.exists(csv_dir):
+    os.mkdir(csv_dir)
 
 url1 = sys.argv[1]
 db1 = sys.argv[2]
@@ -40,7 +41,7 @@ models_difference = model2_names_set.difference(model1_names_set)
 
 # Todo
 # save difference model to custom.models.csv
-with open(current_path+'\\csv\\'+'custom.models.csv', mode='w') as custom_model_file:
+with open(current_path+'\\%s\\'%csv_dir+'custom.models.csv', mode='w') as custom_model_file:
     model_writer = csv.writer(custom_model_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
     for model_name in models_difference:
         print('Writing %s structure' %model_name)
@@ -71,7 +72,7 @@ with open(current_path+'\\csv\\'+'custom.models.csv', mode='w') as custom_model_
 
 models_intersection = model2_names_set.intersection(model1_names_set)
 for model_name in models_intersection:
-    with open(current_path+'\\csv\\'+model_name+'.csv', mode='w') as model_file:
+    with open(current_path+'\\%s\\'%csv_dir+model_name+'.csv', mode='w') as model_file:
         model_writer = csv.writer(model_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
         print('Writing %s structure' %model_name)
         print('====================================================================')
