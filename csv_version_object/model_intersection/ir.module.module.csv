@@ -1,0 +1,44 @@
+model,ir.module.module,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,menus_by_module,text,text,,Menus,Menus,both
+2,maintainer,char,char,,Maintainer,Maintainer,both
+3,contributors,text,text,,Contributors,Contributors,both
+4,sequence,integer,integer,,Sequence,Sequence,both
+5,demo,boolean,boolean,,Demo Data,Demo Data,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+7,views_by_module,text,text,,Views,Views,both
+8,create_date,datetime,datetime,,Created on,Created on,both
+9,id,integer,integer,,ID,ID,both
+10,create_uid,many2one,many2one,res.users,Created by,Created by,both
+11,display_name,char,char,,Display Name,Display Name,both
+12,description_html,html,html,,Description HTML,Description HTML,both
+13,author,char,char,,Author,Author,both
+14,published_version,char,char,,Published Version,Published Version,both
+15,installed_version,char,char,,Latest Version,Latest Version,both
+16,icon_image,binary,binary,,Icon,Icon,both
+17,application,boolean,boolean,,Application,Application,both
+18,state,selection,selection,,Status,Status,both
+19,website,char,char,,Website,Website,both
+20,description,text,text,,Description,Description,both
+21,auto_install,boolean,boolean,,Automatic Installation,Automatic Installation,both
+22,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+23,icon,char,char,,Icon URL,Icon URL,both
+24,reports_by_module,text,text,,Reports,Reports,both
+25,name,char,char,,Technical Name,Technical Name,both
+26,license,selection,selection,,License,License,both
+27,url,char,char,,URL,URL,both
+28,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+29,latest_version,char,char,,Installed Version,Installed Version,both
+30,summary,char,char,,Summary,Summary,both
+31,dependencies_id,one2many,one2many,ir.module.module.dependency,Dependencies,Dependencies,both
+32,shortdesc,char,char,,Module Name,Module Name,both
+33,image_ids,one2many,one2many,ir.attachment,Screenshots,Screenshots,both
+34,category_id,many2one,many2one,ir.module.category,Category,Category,both
+,,,,
+,,,,
+35,to_buy,,boolean,,,Odoo Enterprise Module,version 2
+36,is_installed_on_current_website,,boolean,,,Is Installed On Current Website,version 2
+37,has_iap,,boolean,,,Has Iap,version 2
+38,exclusion_ids,,one2many,ir.module.module.exclusion,,Exclusions,version 2
+,,,,
+,,,,

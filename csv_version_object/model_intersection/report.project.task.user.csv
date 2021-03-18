@@ -1,0 +1,29 @@
+model,report.project.task.user,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,stage_id,many2one,many2one,project.task.type,Stage,Stage,both
+2,user_id,many2one,many2one,res.users,Assigned To,Assigned To,both
+3,name,char,char,,Task Title,Task Title,both
+4,date_deadline,date,date,,Deadline,Deadline,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+6,nbr,integer,integer,,# of Tasks,# of Tasks,both
+7,date_end,datetime,datetime,,Ending Date,Ending Date,both
+8,delay_endings_days,float,float,,# Days to Deadline,# Days to Deadline,both
+9,company_id,many2one,many2one,res.company,Company,Company,both
+10,priority,selection,selection,,Priority,Priority,both
+11,date_last_stage_update,datetime,datetime,,Last Stage Update,Last Stage Update,both
+12,state,selection,selection,,Kanban State,Kanban State,both
+13,display_name,char,char,,Display Name,Display Name,both
+14,project_id,many2one,many2one,project.project,Project,Project,both
+15,partner_id,many2one,many2one,res.partner,Contact,Customer,both
+16,id,integer,integer,,ID,ID,both
+,,,,
+17,opening_days,float,,,# Days to Assign,,version 1
+18,date_start,datetime,,,Assignation Date,,version 1
+19,closing_days,float,,,# Days to Close,,version 1
+20,no_of_days,integer,,,# Working Days,,version 1
+,,,,
+21,working_days_open,,float,,,# Working Days to Assign,version 2
+22,date_assign,,datetime,,,Assignment Date,version 2
+23,working_days_close,,float,,,# Working Days to Close,version 2
+,,,,
+,,,,

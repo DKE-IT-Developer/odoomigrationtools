@@ -1,0 +1,35 @@
+model,stock.inventory.line,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,create_date,datetime,datetime,,Created on,Created on,both
+3,product_id,many2one,many2one,product.product,Product,Product,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+5,location_id,many2one,many2one,stock.location,Location,Location,both
+6,prod_lot_id,many2one,many2one,stock.production.lot,Lot/Serial Number,Lot/Serial Number,both
+7,company_id,many2one,many2one,res.company,Company,Company,both
+8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+9,inventory_id,many2one,many2one,stock.inventory,Inventory,Inventory,both
+10,package_id,many2one,many2one,stock.quant.package,Pack,Pack,both
+11,state,selection,selection,,Status,Status,both
+12,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+13,product_qty,float,float,,Checked Quantity,Counted Quantity,both
+14,theoretical_qty,float,float,,Theoretical Quantity,Theoretical Quantity,both
+15,product_uom_id,many2one,many2one,uom.uom,Product Unit of Measure,Product Unit of Measure,both
+16,partner_id,many2one,many2one,res.partner,Owner,Owner,both
+17,id,integer,integer,,ID,ID,both
+18,display_name,char,char,,Display Name,Display Name,both
+,,,,
+19,location_name,char,,,Location Name,,version 1
+20,prodlot_name,char,,,Serial Number Name,,version 1
+21,inventory_location_id,many2one,,stock.location,Location,,version 1
+22,product_code,char,,,Product Code,,version 1
+23,product_name,char,,,Product Name,,version 1
+,,,,
+24,categ_id,,many2one,product.category,,Product Category,version 2
+25,product_tracking,,selection,,,Tracking,version 2
+26,is_editable,,boolean,,,Is Editable,version 2
+27,inventory_date,,datetime,,,Inventory Date,version 2
+28,difference_qty,,float,,,Difference,version 2
+29,outdated,,boolean,,,Quantity outdated,version 2
+,,,,
+,,,,

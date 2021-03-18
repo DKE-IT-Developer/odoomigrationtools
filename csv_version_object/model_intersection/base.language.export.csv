@@ -1,0 +1,19 @@
+model,base.language.export,transient,True
+no,field,type1,type2,relation,string1,string2,source
+1,lang,selection,selection,,Language,Language,both
+2,create_uid,many2one,many2one,res.users,Created by,Created by,both
+3,display_name,char,char,,Display Name,Display Name,both
+4,name,char,char,,File Name,File Name,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+6,format,selection,selection,,File Format,File Format,both
+7,modules,many2many,many2many,ir.module.module,Apps To Export,Apps To Export,both
+8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+9,state,selection,selection,,State,State,both
+10,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+11,create_date,datetime,datetime,,Created on,Created on,both
+12,data,binary,binary,,File,File,both
+13,id,integer,integer,,ID,ID,both
+,,,,
+,,,,
+,,,,
+,,,,

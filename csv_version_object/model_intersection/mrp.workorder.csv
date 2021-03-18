@@ -1,0 +1,77 @@
+model,mrp.workorder,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,product_tracking,selection,selection,,Tracking,Tracking,both
+2,time_ids,one2many,one2many,mrp.workcenter.productivity,Time ids,Time,both
+3,production_state,selection,selection,,State,Production State,both
+4,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+5,is_produced,boolean,boolean,,Is produced,Has Been Produced,both
+6,scrap_ids,one2many,one2many,stock.scrap,Scrap ids,Scrap,both
+7,next_work_order_id,many2one,many2one,mrp.workorder,Next Work Order,Next Work Order,both
+8,duration,float,float,,Real Duration,Real Duration,both
+9,create_date,datetime,datetime,,Created on,Created on,both
+10,duration_expected,float,float,,Expected Duration,Expected Duration,both
+11,id,integer,integer,,ID,ID,both
+12,create_uid,many2one,many2one,res.users,Created by,Created by,both
+13,display_name,char,char,,Display Name,Display Name,both
+14,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+15,date_start,datetime,datetime,,Effective Start Date,Start Date,both
+16,qty_production,float,float,,Original Production Quantity,Original Production Quantity,both
+17,duration_unit,float,float,,Duration Per Unit,Duration Per Unit,both
+18,state,selection,selection,,Status,Status,both
+19,is_user_working,boolean,boolean,,Is Current User Working,Is the Current User Working,both
+20,workcenter_id,many2one,many2one,mrp.workcenter,Work Center,Work Center,both
+21,date_finished,datetime,datetime,,Effective End Date,End Date,both
+22,qty_produced,float,float,,Quantity,Quantity,both
+23,qty_producing,float,float,,Currently Produced Quantity,Currently Produced Quantity,both
+24,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+25,scrap_count,integer,integer,,Scrap Move,Scrap Move,both
+26,name,char,char,,Work Order,Work Order,both
+27,date_planned_start,datetime,datetime,,Scheduled Date Start,Scheduled Start Date,both
+28,product_id,many2one,many2one,product.product,Product,Product,both
+29,duration_percent,integer,integer,,Duration Deviation (%),Duration Deviation (%),both
+30,move_raw_ids,one2many,one2many,stock.move,Moves,Raw Moves,both
+31,product_uom_id,many2one,many2one,uom.uom,Unit of Measure,Unit of Measure,both
+32,production_date,datetime,datetime,,Production Date,Production Date,both
+33,production_availability,selection,selection,,Availability,Stock Availability,both
+34,date_planned_finished,datetime,datetime,,Scheduled Date Finished,Scheduled End Date,both
+35,production_id,many2one,many2one,mrp.production,Manufacturing Order,Manufacturing Order,both
+36,worksheet,binary,binary,,Worksheet,Worksheet,both
+37,operation_id,many2one,many2one,mrp.routing.workcenter,Operation,Operation,both
+38,working_state,selection,selection,,Status,Workcenter Status,both
+,,,,
+39,message_follower_ids,one2many,,mail.followers,Followers,,version 1
+40,message_needaction,boolean,,,Action Needed,,version 1
+41,message_channel_ids,many2many,,mail.channel,Followers (Channels),,version 1
+42,message_partner_ids,many2many,,res.partner,Followers (Partners),,version 1
+43,production_messages,html,,,Workorder Message,,version 1
+44,message_ids,one2many,,mail.message,Messages,,version 1
+45,active_move_lot_ids,one2many,,stock.move.lots,Active move lot ids,,version 1
+46,capacity,float,,,Capacity,,version 1
+47,message_is_follower,boolean,,,Is Follower,,version 1
+48,message_last_post,datetime,,,Last Message Date,,version 1
+49,color,integer,,,Color,,version 1
+50,message_unread_counter,integer,,,Unread Messages Counter,,version 1
+51,move_lot_ids,one2many,,stock.move.lots,Moves to Track,,version 1
+52,message_unread,boolean,,,Unread Messages,,version 1
+53,final_lot_id,many2one,,stock.production.lot,Current Lot,,version 1
+54,message_needaction_counter,integer,,,Number of Actions,,version 1
+,,,,
+55,company_id,,many2one,res.company,,Company,version 2
+56,use_create_components_lots,,boolean,,,Create New Lots/Serial Numbers for Components,version 2
+57,operation_note,,text,,,Description,version 2
+58,consumption,,selection,,,Consumption,version 2
+59,worksheet_google_slide,,char,,,Worksheet URL,version 2
+60,finished_lot_id,,many2one,stock.production.lot,,Lot/Serial Number,version 2
+61,working_user_ids,,one2many,res.users,,Working user on this work order.,version 2
+62,progress,,float,,,Progress Done (%),version 2
+63,production_bom_id,,many2one,mrp.bom,,Bill of Material,version 2
+64,move_finished_ids,,one2many,stock.move,,Finished Moves,version 2
+65,leave_id,,many2one,resource.calendar.leaves,,Leave,version 2
+66,show_json_popover,,boolean,,,Show Popover?,version 2
+67,json_popover,,char,,,Popover Data JSON,version 2
+68,worksheet_type,,selection,,,Worksheet Type,version 2
+69,move_line_ids,,one2many,stock.move.line,,Moves to Track,version 2
+70,last_working_user_id,,one2many,res.users,,Last user that worked on this work order.,version 2
+71,qty_remaining,,float,,,Quantity To Be Produced,version 2
+,,,,
+,,,,

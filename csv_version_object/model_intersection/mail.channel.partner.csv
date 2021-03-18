@@ -1,0 +1,22 @@
+model,mail.channel.partner,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,seen_message_id,many2one,many2one,mail.message,Last Seen,Last Seen,both
+2,create_uid,many2one,many2one,res.users,Created by,Created by,both
+3,display_name,char,char,,Display Name,Display Name,both
+4,is_minimized,boolean,boolean,,Conversation is minimized,Conversation is minimized,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+6,is_pinned,boolean,boolean,,Is pinned on the interface,Is pinned on the interface,both
+7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+8,channel_id,many2one,many2one,mail.channel,Channel,Channel,both
+9,fold_state,selection,selection,,Conversation Fold State,Conversation Fold State,both
+10,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+11,create_date,datetime,datetime,,Created on,Created on,both
+12,partner_id,many2one,many2one,res.partner,Recipient,Recipient,both
+13,id,integer,integer,,ID,ID,both
+,,,,
+,,,,
+14,partner_email,,char,,,Email,version 2
+15,fetched_message_id,,many2one,mail.message,,Last Fetched,version 2
+16,custom_channel_name,,char,,,Custom channel name,version 2
+,,,,
+,,,,

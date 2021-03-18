@@ -1,0 +1,65 @@
+model,website,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,domain,char,char,,Website Domain,Website Domain,both
+2,create_date,datetime,datetime,,Created on,Created on,both
+3,social_linkedin,char,char,,LinkedIn Account,LinkedIn Account,both
+4,cdn_filters,text,text,,CDN Filters,CDN Filters,both
+5,social_twitter,char,char,,Twitter Account,Twitter Account,both
+6,language_ids,many2many,many2many,res.lang,Languages,Languages,both
+7,favicon,binary,binary,,Website Favicon,Website Favicon,both
+8,google_analytics_key,char,char,,Google Analytics Key,Google Analytics Key,both
+9,social_facebook,char,char,,Facebook Account,Facebook Account,both
+10,partner_id,many2one,many2one,res.partner,Public Partner,Public Partner,both
+11,id,integer,integer,,ID,ID,both
+12,cdn_url,char,char,,CDN Base URL,CDN Base URL,both
+13,pricelist_ids,one2many,one2many,product.pricelist,Price list available for this Ecommerce/Website,Price list available for this Ecommerce/Website,both
+14,user_id,many2one,many2one,res.users,Public User,Public User,both
+15,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+16,company_id,many2one,many2one,res.company,Company,Company,both
+17,salesteam_id,many2one,many2one,crm.team,Sales Team,Sales Team,both
+18,social_github,char,char,,GitHub Account,GitHub Account,both
+19,default_lang_id,many2one,many2one,res.lang,Default Language,Default Language,both
+20,pricelist_id,many2one,many2one,product.pricelist,Default Pricelist,Default Pricelist,both
+21,menu_id,many2one,many2one,website.menu,Main Menu,Main Menu,both
+22,create_uid,many2one,many2one,res.users,Created by,Created by,both
+23,social_youtube,char,char,,Youtube Account,Youtube Account,both
+24,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+25,display_name,char,char,,Display Name,Display Name,both
+26,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+27,currency_id,many2one,many2one,res.currency,Default Currency,Default Currency,both
+28,cdn_activated,boolean,boolean,,Activate CDN for assets,Content Delivery Network (CDN),both
+29,name,char,char,,Website Name,Website Name,both
+30,salesperson_id,many2one,many2one,res.users,Salesperson,Salesperson,both
+,,,,
+31,compress_html,boolean,,,Compress HTML,,version 1
+32,default_lang_code,char,,,Default language code,,version 1
+33,social_googleplus,char,,,Google+ Account,,version 1
+34,website_form_enable_metadata,boolean,,,Write metadata,,version 1
+,,,,
+35,social_instagram,,char,,,Instagram Account,version 2
+36,google_management_client_id,,char,,,Google Client ID,version 2
+37,cart_recovery_mail_template_id,,many2one,mail.template,,Cart Recovery Email,version 2
+38,robots_txt,,text,,,Robots.txt,version 2
+39,country_group_ids,,many2many,res.country.group,,Country Groups,version 2
+40,logo,,binary,,,Website Logo,version 2
+41,google_search_console,,char,,,Google Search Console,version 2
+42,custom_code_head,,text,,,Custom <head> code,version 2
+43,google_management_client_secret,,char,,,Google Client Secret,version 2
+44,auth_signup_uninvited,,selection,,,Customer Account,version 2
+45,google_maps_api_key,,char,,,Google Maps API Key,version 2
+46,shop_extra_field_ids,,one2many,website.sale.extra.field,,E-Commerce Extra Fields,version 2
+47,warehouse_id,,many2one,stock.warehouse,,Warehouse,version 2
+48,custom_code_footer,,text,,,Custom end of <body> code,version 2
+49,theme_id,,many2one,ir.module.module,,Theme,version 2
+50,homepage_id,,many2one,website.page,,Homepage,version 2
+51,has_social_default_image,,boolean,,,Has Social Default Image,version 2
+52,cart_abandoned_delay,,float,,,Abandoned Delay,version 2
+53,social_default_image,,binary,,,Default Social Share Image,version 2
+54,auto_redirect_lang,,boolean,,,Autoredirect Language,version 2
+55,shop_ppg,,integer,,,Number of products in the grid on the shop,version 2
+56,specific_user_account,,boolean,,,Specific User Account,version 2
+57,all_pricelist_ids,,one2many,product.pricelist,,All pricelists,version 2
+58,shop_ppr,,integer,,,Number of grid columns on the shop,version 2
+59,cookies_bar,,boolean,,,Cookies Bar,version 2
+,,,,
+,,,,

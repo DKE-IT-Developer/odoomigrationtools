@@ -1,0 +1,20 @@
+model,stock.return.picking,transient,True
+no,field,type1,type2,relation,string1,string2,source
+1,move_dest_exists,boolean,boolean,,Chained Move Exists,Chained Move Exists,both
+2,original_location_id,many2one,many2one,stock.location,Original location id,Original Location,both
+3,display_name,char,char,,Display Name,Display Name,both
+4,product_return_moves,one2many,one2many,stock.return.picking.line,Moves,Moves,both
+5,create_uid,many2one,many2one,res.users,Created by,Created by,both
+6,parent_location_id,many2one,many2one,stock.location,Parent location id,Parent Location,both
+7,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+9,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+10,create_date,datetime,datetime,,Created on,Created on,both
+11,location_id,many2one,many2one,stock.location,Return Location,Return Location,both
+12,id,integer,integer,,ID,ID,both
+,,,,
+,,,,
+13,company_id,,many2one,res.company,,Company,version 2
+14,picking_id,,many2one,stock.picking,,Picking,version 2
+,,,,
+,,,,

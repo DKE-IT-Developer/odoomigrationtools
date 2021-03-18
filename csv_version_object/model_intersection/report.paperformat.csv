@@ -1,0 +1,29 @@
+model,report.paperformat,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,page_width,integer,integer,,Page width (mm),Page width (mm),both
+3,display_name,char,char,,Display Name,Display Name,both
+4,name,char,char,,Name,Name,both
+5,header_line,boolean,boolean,,Display a header line,Display a header line,both
+6,default,boolean,boolean,,Default paper format ?,Default paper format ?,both
+7,format,selection,selection,,Paper size,Paper size,both
+8,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+9,header_spacing,integer,integer,,Header spacing,Header spacing,both
+10,dpi,integer,integer,,Output DPI,Output DPI,both
+11,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+12,margin_right,float,float,,Right Margin (mm),Right Margin (mm),both
+13,margin_top,float,float,,Top Margin (mm),Top Margin (mm),both
+14,margin_left,float,float,,Left Margin (mm),Left Margin (mm),both
+15,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+16,margin_bottom,float,float,,Bottom Margin (mm),Bottom Margin (mm),both
+17,create_date,datetime,datetime,,Created on,Created on,both
+18,report_ids,one2many,one2many,ir.actions.report,Associated reports,Associated reports,both
+19,id,integer,integer,,ID,ID,both
+20,page_height,integer,integer,,Page height (mm),Page height (mm),both
+21,orientation,selection,selection,,Orientation,Orientation,both
+,,,,
+,,,,
+22,print_page_width,,float,,,Print page width (mm),version 2
+23,print_page_height,,float,,,Print page height (mm),version 2
+,,,,
+,,,,

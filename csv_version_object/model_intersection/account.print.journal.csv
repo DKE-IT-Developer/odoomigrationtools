@@ -1,0 +1,20 @@
+model,account.print.journal,transient,True
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,display_name,char,char,,Display Name,Display Name,both
+3,sort_selection,selection,selection,,Entries Sorted by,Entries Sorted by,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+5,date_from,date,date,,Start Date,Start Date,both
+6,company_id,many2one,many2one,res.company,Company,Company,both
+7,amount_currency,boolean,boolean,,With Currency,With Currency,both
+8,journal_ids,many2many,many2many,account.journal,Journals,Journals,both
+9,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+10,date_to,date,date,,End Date,End Date,both
+11,create_date,datetime,datetime,,Created on,Created on,both
+12,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+13,id,integer,integer,,ID,ID,both
+14,target_move,selection,selection,,Target Moves,Target Moves,both
+,,,,
+,,,,
+,,,,
+,,,,

@@ -1,0 +1,11 @@
+model,web_tour.tour,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,user_id,many2one,many2one,res.users,Consumed by,Consumed by,both
+2,display_name,char,char,,Display Name,Display Name,both
+3,id,integer,integer,,ID,ID,both
+4,name,char,char,,Tour name,Tour name,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+,,,,
+,,,,
+,,,,
+,,,,

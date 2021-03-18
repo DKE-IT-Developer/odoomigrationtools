@@ -1,0 +1,40 @@
+model,hr.job,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,message_follower_ids,one2many,one2many,mail.followers,Followers,Followers,both
+2,create_date,datetime,datetime,,Created on,Created on,both
+3,employee_ids,one2many,one2many,hr.employee,Employees,Employees,both
+4,message_needaction,boolean,boolean,,Action Needed,Action Needed,both
+5,message_channel_ids,many2many,many2many,mail.channel,Followers (Channels),Followers (Channels),both
+6,message_partner_ids,many2many,many2many,res.partner,Followers (Partners),Followers (Partners),both
+7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+8,message_ids,one2many,one2many,mail.message,Messages,Messages,both
+9,create_uid,many2one,many2one,res.users,Created by,Created by,both
+10,requirements,text,text,,Requirements,Requirements,both
+11,message_is_follower,boolean,boolean,,Is Follower,Is Follower,both
+12,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+13,company_id,many2one,many2one,res.company,Company,Company,both
+14,id,integer,integer,,ID,ID,both
+15,state,selection,selection,,Status,Status,both
+16,expected_employees,integer,integer,,Total Forecasted Employees,Total Forecasted Employees,both
+17,message_unread_counter,integer,integer,,Unread Messages Counter,Unread Messages Counter,both
+18,department_id,many2one,many2one,hr.department,Department,Department,both
+19,description,text,text,,Job Description,Job Description,both
+20,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+21,display_name,char,char,,Display Name,Display Name,both
+22,no_of_hired_employee,integer,integer,,Hired Employees,Hired Employees,both
+23,name,char,char,,Job Title,Job Position,both
+24,no_of_recruitment,integer,integer,,Expected New Employees,Expected New Employees,both
+25,message_unread,boolean,boolean,,Unread Messages,Unread Messages,both
+26,no_of_employee,integer,integer,,Current Number of Employees,Current Number of Employees,both
+27,message_needaction_counter,integer,integer,,Number of Actions,Number of Actions,both
+,,,,
+28,message_last_post,datetime,,,Last Message Date,,version 1
+,,,,
+29,message_has_sms_error,,boolean,,,SMS Delivery error,version 2
+30,message_has_error_counter,,integer,,,Number of errors,version 2
+31,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,version 2
+32,message_has_error,,boolean,,,Message Delivery error,version 2
+33,message_attachment_count,,integer,,,Attachment Count,version 2
+34,website_message_ids,,one2many,mail.message,,Website Messages,version 2
+,,,,
+,,,,

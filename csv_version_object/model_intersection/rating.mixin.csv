@@ -1,0 +1,15 @@
+model,rating.mixin,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,display_name,char,char,,Display Name,Display Name,both
+2,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+3,rating_count,integer,integer,,Rating count,Rating count,both
+4,rating_last_value,float,float,,Rating Last Value,Rating Last Value,both
+5,rating_ids,one2many,one2many,rating.rating,Rating,Rating,both
+6,id,integer,integer,,ID,ID,both
+,,,,
+,,,,
+7,rating_last_feedback,,text,,,Rating Last Feedback,version 2
+8,rating_avg,,float,,,Rating Average,version 2
+9,rating_last_image,,binary,,,Rating Last Image,version 2
+,,,,
+,,,,

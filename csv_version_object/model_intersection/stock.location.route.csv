@@ -1,0 +1,30 @@
+model,stock.location.route,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,supplier_wh_id,many2one,many2one,stock.warehouse,Supplying Warehouse,Supplying Warehouse,both
+2,create_uid,many2one,many2one,res.users,Created by,Created by,both
+3,create_date,datetime,datetime,,Created on,Created on,both
+4,name,char,char,,Route Name,Route,both
+5,categ_ids,many2many,many2many,product.category,Product Categories,Product Categories,both
+6,sequence,integer,integer,,Sequence,Sequence,both
+7,warehouse_selectable,boolean,boolean,,Applicable on Warehouse,Applicable on Warehouse,both
+8,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+9,company_id,many2one,many2one,res.company,Company,Company,both
+10,supplied_wh_id,many2one,many2one,stock.warehouse,Supplied Warehouse,Supplied Warehouse,both
+11,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+12,product_selectable,boolean,boolean,,Applicable on Product,Applicable on Product,both
+13,product_categ_selectable,boolean,boolean,,Applicable on Product Category,Applicable on Product Category,both
+14,product_ids,many2many,many2many,product.template,Products,Products,both
+15,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+16,warehouse_ids,many2many,many2many,stock.warehouse,Warehouses,Warehouses,both
+17,active,boolean,boolean,,Active,Active,both
+18,display_name,char,char,,Display Name,Display Name,both
+19,sale_selectable,boolean,boolean,,Selectable on Sales Order Line,Selectable on Sales Order Line,both
+20,id,integer,integer,,ID,ID,both
+,,,,
+21,pull_ids,one2many,,procurement.rule,Procurement Rules,,version 1
+22,push_ids,one2many,,stock.location.path,Push Rules,,version 1
+,,,,
+23,rule_ids,,one2many,stock.rule,,Rules,version 2
+24,warehouse_domain_ids,,one2many,stock.warehouse,,Warehouse Domain,version 2
+,,,,
+,,,,

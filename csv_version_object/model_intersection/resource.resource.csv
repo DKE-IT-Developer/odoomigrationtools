@@ -1,0 +1,22 @@
+model,resource.resource,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,time_efficiency,float,float,,Efficiency Factor,Efficiency Factor,both
+3,user_id,many2one,many2one,res.users,User,User,both
+4,name,char,char,,Name,Name,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+6,company_id,many2one,many2one,res.company,Company,Company,both
+7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+8,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+9,calendar_id,many2one,many2one,resource.calendar,Working Time,Working Time,both
+10,active,boolean,boolean,,Active,Active,both
+11,create_date,datetime,datetime,,Created on,Created on,both
+12,id,integer,integer,,ID,ID,both
+13,resource_type,selection,selection,,Resource Type,Resource Type,both
+14,display_name,char,char,,Display Name,Display Name,both
+,,,,
+15,code,char,,,Code,,version 1
+,,,,
+16,tz,,selection,,,Timezone,version 2
+,,,,
+,,,,

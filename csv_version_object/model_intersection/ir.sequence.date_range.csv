@@ -1,0 +1,18 @@
+model,ir.sequence.date_range,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,display_name,char,char,,Display Name,Display Name,both
+3,number_next,integer,integer,,Next Number,Next Number,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+5,date_from,date,date,,From,From,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+7,sequence_id,many2one,many2one,ir.sequence,Main Sequence,Main Sequence,both
+8,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+9,date_to,date,date,,To,To,both
+10,number_next_actual,integer,integer,,Next Number,Actual Next Number,both
+11,create_date,datetime,datetime,,Created on,Created on,both
+12,id,integer,integer,,ID,ID,both
+,,,,
+,,,,
+,,,,
+,,,,

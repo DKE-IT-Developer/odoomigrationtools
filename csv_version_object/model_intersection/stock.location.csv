@@ -1,0 +1,37 @@
+model,stock.location,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,comment,text,text,,Additional Information,Additional Information,both
+2,create_date,datetime,datetime,,Created on,Created on,both
+3,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+4,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+5,valuation_in_account_id,many2one,many2one,account.account,Stock Valuation Account (Incoming),Stock Valuation Account (Incoming),both
+6,location_id,many2one,many2one,stock.location,Parent Location,Parent Location,both
+7,id,integer,integer,,ID,ID,both
+8,removal_strategy_id,many2one,many2one,product.removal,Removal Strategy,Removal Strategy,both
+9,scrap_location,boolean,boolean,,Is a Scrap Location?,Is a Scrap Location?,both
+10,display_name,char,char,,Display Name,Display Name,both
+11,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+12,company_id,many2one,many2one,res.company,Company,Company,both
+13,complete_name,char,char,,Full Location Name,Full Location Name,both
+14,usage,selection,selection,,Location Type,Location Type,both
+15,create_uid,many2one,many2one,res.users,Created by,Created by,both
+16,barcode,char,char,,Barcode,Barcode,both
+17,child_ids,one2many,one2many,stock.location,Contains,Contains,both
+18,posz,integer,integer,,Height (Z),Height (Z),both
+19,posx,integer,integer,,Corridor (X),Corridor (X),both
+20,posy,integer,integer,,Shelves (Y),Shelves (Y),both
+21,active,boolean,boolean,,Active,Active,both
+22,valuation_out_account_id,many2one,many2one,account.account,Stock Valuation Account (Outgoing),Stock Valuation Account (Outgoing),both
+23,name,char,char,,Location Name,Location Name,both
+24,return_location,boolean,boolean,,Is a Return Location?,Is a Return Location?,both
+,,,,
+25,putaway_strategy_id,many2one,,product.putaway,Put Away Strategy,,version 1
+26,parent_right,integer,,,Right Parent,,version 1
+27,parent_left,integer,,,Left Parent,,version 1
+28,partner_id,many2one,,res.partner,Owner,,version 1
+,,,,
+29,parent_path,,char,,,Parent Path,version 2
+30,quant_ids,,one2many,stock.quant,,Quant,version 2
+31,putaway_rule_ids,,one2many,stock.putaway.rule,,Putaway Rules,version 2
+,,,,
+,,,,

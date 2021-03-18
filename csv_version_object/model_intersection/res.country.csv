@@ -1,0 +1,27 @@
+model,res.country,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,code,char,char,,Country Code,Country Code,both
+3,display_name,char,char,,Display Name,Display Name,both
+4,name,char,char,,Country Name,Country Name,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+6,state_ids,one2many,one2many,res.country.state,States,States,both
+7,phone_code,integer,integer,,Country Calling Code,Country Calling Code,both
+8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+9,currency_id,many2one,many2one,res.currency,Currency,Currency,both
+10,address_format,text,text,,Address format,Layout in Reports,both
+11,country_group_ids,many2many,many2many,res.country.group,Country Groups,Country Groups,both
+12,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+13,create_date,datetime,datetime,,Created on,Created on,both
+14,id,integer,integer,,ID,ID,both
+,,,,
+15,image,binary,,,Image,,version 1
+,,,,
+16,state_required,,boolean,,,State Required,version 2
+17,address_view_id,,many2one,ir.ui.view,,Input View,version 2
+18,vat_label,,char,,,Vat Label,version 2
+19,name_position,,selection,,,Customer Name Position,version 2
+20,image_url,,char,,,Flag,version 2
+21,zip_required,,boolean,,,Zip Required,version 2
+,,,,
+,,,,

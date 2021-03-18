@@ -1,0 +1,21 @@
+model,calendar.attendee,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,display_name,char,char,,Display Name,Display Name,both
+3,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+4,access_token,char,char,,Invitation Token,Invitation Token,both
+5,id,integer,integer,,ID,ID,both
+6,email,char,char,,Email,Email,both
+7,event_id,many2one,many2one,calendar.event,Meeting linked,Meeting linked,both
+8,state,selection,selection,,Status,Status,both
+9,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+10,common_name,char,char,,Common name,Common name,both
+11,create_date,datetime,datetime,,Created on,Created on,both
+12,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+13,partner_id,many2one,many2one,res.partner,Contact,Contact,both
+14,availability,selection,selection,,Free/Busy,Free/Busy,both
+,,,,
+,,,,
+15,recurrence_id,,many2one,calendar.recurrence,,Recurrence Rule,version 2
+,,,,
+,,,,

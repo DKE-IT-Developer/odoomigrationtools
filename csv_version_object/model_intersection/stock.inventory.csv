@@ -1,0 +1,58 @@
+model,stock.inventory,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,create_date,datetime,datetime,,Created on,Created on,both
+3,name,char,char,,Inventory Reference,Inventory Reference,both
+4,accounting_date,date,date,,Force Accounting Date,Accounting Date,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+6,exhausted,boolean,boolean,,Include Exhausted Products,Include Exhausted Products,both
+7,company_id,many2one,many2one,res.company,Company,Company,both
+8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+9,move_ids,one2many,one2many,stock.move,Created Moves,Created Moves,both
+10,state,selection,selection,,Status,Status,both
+11,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+12,line_ids,one2many,one2many,stock.inventory.line,Inventories,Inventories,both
+13,date,datetime,datetime,,Inventory Date,Inventory Date,both
+14,display_name,char,char,,Display Name,Display Name,both
+15,id,integer,integer,,ID,ID,both
+,,,,
+16,package_id,many2one,,stock.quant.package,Inventoried Pack,,version 1
+17,lot_id,many2one,,stock.production.lot,Inventoried Lot/Serial Number,,version 1
+18,total_qty,float,,,Total Quantity,,version 1
+19,location_id,many2one,,stock.location,Inventoried Location,,version 1
+20,product_id,many2one,,product.product,Inventoried Product,,version 1
+21,partner_id,many2one,,res.partner,Inventoried Owner,,version 1
+22,filter,selection,,,Inventory of,,version 1
+23,category_id,many2one,,product.category,Inventoried Category,,version 1
+,,,,
+24,message_follower_ids,,one2many,mail.followers,,Followers,version 2
+25,message_needaction,,boolean,,,Action Needed,version 2
+26,message_channel_ids,,many2many,mail.channel,,Followers (Channels),version 2
+27,has_account_moves,,boolean,,,Has Account Moves,version 2
+28,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,version 2
+29,message_has_error,,boolean,,,Message Delivery error,version 2
+30,activity_date_deadline,,date,,,Next Activity Deadline,version 2
+31,message_is_follower,,boolean,,,Is Follower,version 2
+32,activity_exception_decoration,,selection,,,Activity Exception Decoration,version 2
+33,message_has_sms_error,,boolean,,,SMS Delivery error,version 2
+34,activity_type_icon,,char,,,Activity Type Icon,version 2
+35,message_ids,,one2many,mail.message,,Messages,version 2
+36,activity_user_id,,many2one,res.users,,Responsible User,version 2
+37,message_attachment_count,,integer,,,Attachment Count,version 2
+38,message_unread_counter,,integer,,,Unread Messages Counter,version 2
+39,prefill_counted_quantity,,selection,,,Counted Quantities,version 2
+40,start_empty,,boolean,,,Empty Inventory,version 2
+41,message_has_error_counter,,integer,,,Number of errors,version 2
+42,activity_type_id,,many2one,mail.activity.type,,Next Activity Type,version 2
+43,website_message_ids,,one2many,mail.message,,Website Messages,version 2
+44,activity_ids,,one2many,mail.activity,,Activities,version 2
+45,activity_summary,,char,,,Next Activity Summary,version 2
+46,activity_exception_icon,,char,,,Icon,version 2
+47,product_ids,,many2many,product.product,,Products,version 2
+48,activity_state,,selection,,,Activity State,version 2
+49,location_ids,,many2many,stock.location,,Locations,version 2
+50,message_unread,,boolean,,,Unread Messages,version 2
+51,message_needaction_counter,,integer,,,Number of Actions,version 2
+52,message_partner_ids,,many2many,res.partner,,Followers (Partners),version 2
+,,,,
+,,,,

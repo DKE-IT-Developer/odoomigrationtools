@@ -1,0 +1,9 @@
+model,ir.autovacuum,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,display_name,char,char,,Display Name,Display Name,both
+2,id,integer,integer,,ID,ID,both
+3,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+,,,,
+,,,,
+,,,,
+,,,,

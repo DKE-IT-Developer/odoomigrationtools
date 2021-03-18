@@ -1,0 +1,50 @@
+model,payment.transaction,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,state_message,text,text,,Message,Message,both
+2,create_date,datetime,datetime,,Creation Date,Created on,both
+3,reference,char,char,,Reference,Reference,both
+4,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+5,currency_id,many2one,many2one,res.currency,Currency,Currency,both
+6,acquirer_id,many2one,many2one,payment.acquirer,Acquirer,Acquirer,both
+7,fees,float,monetary,,Fees,Fees,both
+8,partner_id,many2one,many2one,res.partner,Partner,Customer,both
+9,id,integer,integer,,ID,ID,both
+10,create_uid,many2one,many2one,res.users,Created by,Created by,both
+11,display_name,char,char,,Display Name,Display Name,both
+12,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+13,partner_name,char,char,,Partner Name,Partner Name,both
+14,partner_phone,char,char,,Phone,Phone,both
+15,state,selection,selection,,Status,Status,both
+16,type,selection,selection,,Type,Type,both
+17,partner_country_id,many2one,many2one,res.country,Country,Country,both
+18,acquirer_reference,char,char,,Acquirer Reference,Acquirer Reference,both
+19,partner_address,char,char,,Address,Address,both
+20,partner_email,char,char,,Email,Email,both
+21,partner_lang,selection,selection,,Language,Language,both
+22,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+23,payment_token_id,many2one,many2one,payment.token,Payment Token,Payment Token,both
+24,partner_zip,char,char,,Zip,Zip,both
+25,html_3ds,char,char,,3D Secure HTML,3D Secure HTML,both
+26,partner_city,char,char,,City,City,both
+27,amount,float,monetary,,Amount,Amount,both
+,,,,
+28,so_state,selection,,,Sale Order State,,version 1
+29,callback_eval,char,,,S2S Callback,,version 1
+30,date_validate,datetime,,,Validation Date,,version 1
+31,sale_order_id,many2one,,sale.order,Sale Order,,version 1
+,,,,
+32,is_processed,,boolean,,,Has the payment been post processed,version 2
+33,date,,datetime,,,Validation Date,version 2
+34,sale_order_ids_nbr,,integer,,,# of Sales Orders,version 2
+35,callback_method,,char,,,Callback Method,version 2
+36,sale_order_ids,,many2many,sale.order,,Sales Orders,version 2
+37,payment_id,,many2one,account.payment,,Payment,version 2
+38,invoice_ids_nbr,,integer,,,# of Invoices,version 2
+39,callback_model_id,,many2one,ir.model,,Callback Document Model,version 2
+40,invoice_ids,,many2many,account.move,,Invoices,version 2
+41,callback_hash,,char,,,Callback Hash,version 2
+42,provider,,selection,,,Provider,version 2
+43,callback_res_id,,integer,,,Callback Document ID,version 2
+44,return_url,,char,,,Return URL after payment,version 2
+,,,,
+,,,,

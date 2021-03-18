@@ -1,0 +1,47 @@
+model,account.chart.template,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,bank_account_code_prefix,char,char,,Prefix of the bank accounts,Prefix of the bank accounts,both
+2,cash_account_code_prefix,char,char,,Prefix of the main cash accounts,Prefix of the main cash accounts,both
+3,create_date,datetime,datetime,,Created on,Created on,both
+4,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+5,currency_id,many2one,many2one,res.currency,Currency,Currency,both
+6,visible,boolean,boolean,,Can be Visible?,Can be Visible?,both
+7,property_account_receivable_id,many2one,many2one,account.account.template,Receivable Account,Receivable Account,both
+8,property_stock_valuation_account_id,many2one,many2one,account.account.template,Account Template for Stock Valuation,Account Template for Stock Valuation,both
+9,id,integer,integer,,ID,ID,both
+10,create_uid,many2one,many2one,res.users,Created by,Created by,both
+11,complete_tax_set,boolean,boolean,,Complete Set of Taxes,Complete Set of Taxes,both
+12,display_name,char,char,,Display Name,Display Name,both
+13,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+14,expense_currency_exchange_account_id,many2one,many2one,account.account.template,Loss Exchange Rate Account,Loss Exchange Rate Account,both
+15,property_stock_account_output_categ_id,many2one,many2one,account.account.template,Output Account for Stock Valuation,Output Account for Stock Valuation,both
+16,tax_template_ids,one2many,one2many,account.tax.template,Tax Template List,Tax Template List,both
+17,parent_id,many2one,many2one,account.chart.template,Parent Chart Template,Parent Chart Template,both
+18,property_account_income_categ_id,many2one,many2one,account.account.template,Category of Income Account,Category of Income Account,both
+19,property_stock_account_input_categ_id,many2one,many2one,account.account.template,Input Account for Stock Valuation,Input Account for Stock Valuation,both
+20,property_account_income_id,many2one,many2one,account.account.template,Income Account on Product Template,Income Account on Product Template,both
+21,property_account_expense_categ_id,many2one,many2one,account.account.template,Category of Expense Account,Category of Expense Account,both
+22,account_ids,one2many,one2many,account.account.template,Associated Account Templates,Associated Account Templates,both
+23,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+24,use_anglo_saxon,boolean,boolean,,Use Anglo-Saxon accounting,Use Anglo-Saxon accounting,both
+25,code_digits,integer,integer,,# of Digits,# of Digits,both
+26,name,char,char,,Name,Name,both
+27,property_account_expense_id,many2one,many2one,account.account.template,Expense Account on Product Template,Expense Account on Product Template,both
+28,property_account_payable_id,many2one,many2one,account.account.template,Payable Account,Payable Account,both
+29,income_currency_exchange_account_id,many2one,many2one,account.account.template,Gain Exchange Rate Account,Gain Exchange Rate Account,both
+,,,,
+30,transfer_account_id,many2one,,account.account.template,Transfer Account,,version 1
+31,company_id,many2one,,res.company,Company,,version 1
+,,,,
+32,default_cash_difference_income_account_id,,many2one,account.account.template,,Cash Difference Income Account,version 2
+33,spoken_languages,,char,,,Spoken Languages,version 2
+34,default_cash_difference_expense_account_id,,many2one,account.account.template,,Cash Difference Expense Account,version 2
+35,property_tax_payable_account_id,,many2one,account.account.template,,Tax current account (payable),version 2
+36,transfer_account_code_prefix,,char,,,Prefix of the main transfer accounts,version 2
+37,property_advance_tax_payment_account_id,,many2one,account.account.template,,Advance tax payment account,version 2
+38,property_cash_basis_base_account_id,,many2one,account.account.template,,Base Tax Received Account,version 2
+39,property_tax_receivable_account_id,,many2one,account.account.template,,Tax current account (receivable),version 2
+40,default_pos_receivable_account_id,,many2one,account.account.template,,PoS receivable account,version 2
+41,account_journal_suspense_account_id,,many2one,account.account.template,,Journal Suspense Account,version 2
+,,,,
+,,,,

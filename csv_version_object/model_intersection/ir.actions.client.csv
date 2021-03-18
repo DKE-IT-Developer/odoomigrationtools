@@ -1,0 +1,27 @@
+model,ir.actions.client,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,xml_id,char,char,,External ID,External ID,both
+3,display_name,char,char,,Display Name,Display Name,both
+4,help,html,html,,Action Description,Action Description,both
+5,name,char,char,,Action Name,Action Name,both
+6,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+7,res_model,char,char,,Destination Model,Destination Model,both
+8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+9,params_store,binary,binary,,Params storage,Params storage,both
+10,tag,char,char,,Client action tag,Client action tag,both
+11,params,binary,binary,,Supplementary arguments,Supplementary arguments,both
+12,context,char,char,,Context Value,Context Value,both
+13,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+14,create_date,datetime,datetime,,Created on,Created on,both
+15,type,char,char,,Action Type,Action Type,both
+16,id,integer,integer,,ID,ID,both
+17,target,selection,selection,,Target Window,Target Window,both
+,,,,
+18,usage,char,,,Action Usage,,version 1
+,,,,
+19,binding_type,,selection,,,Binding Type,version 2
+20,binding_model_id,,many2one,ir.model,,Binding Model,version 2
+21,binding_view_types,,char,,,Binding View Types,version 2
+,,,,
+,,,,

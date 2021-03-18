@@ -1,0 +1,32 @@
+model,fetchmail.server,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_date,datetime,datetime,,Created on,Created on,both
+2,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+3,active,boolean,boolean,,Active,Active,both
+4,port,integer,integer,,Port,Port,both
+5,create_uid,many2one,many2one,res.users,Created by,Created by,both
+6,configuration,text,text,,Configuration,Configuration,both
+7,display_name,char,char,,Display Name,Display Name,both
+8,script,char,char,,Script,Script,both
+9,object_id,many2one,many2one,ir.model,Create a New Record,Create a New Record,both
+10,id,integer,integer,,ID,ID,both
+11,priority,integer,integer,,Server Priority,Server Priority,both
+12,attach,boolean,boolean,,Keep Attachments,Keep Attachments,both
+13,state,selection,selection,,Status,Status,both
+14,user,char,char,,Username,Username,both
+15,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+16,date,datetime,datetime,,Last Fetch Date,Last Fetch Date,both
+17,password,char,char,,Password,Password,both
+18,name,char,char,,Name,Name,both
+19,is_ssl,boolean,boolean,,SSL/TLS,SSL/TLS,both
+20,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+21,server,char,char,,Server Name,Server Name,both
+22,message_ids,one2many,one2many,mail.mail,Messages,Messages,both
+23,original,boolean,boolean,,Keep Original,Keep Original,both
+,,,,
+24,type,selection,,,Server Type,,version 1
+25,action_id,many2one,,ir.actions.server,Server Action,,version 1
+,,,,
+26,server_type,,selection,,,Server Type,version 2
+,,,,
+,,,,

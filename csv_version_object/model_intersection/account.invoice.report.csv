@@ -1,0 +1,51 @@
+model,account.invoice.report,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,display_name,char,char,,Display Name,Display Name,both
+2,account_id,many2one,many2one,account.account,Account,Revenue/Expense Account,both
+3,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+4,country_id,many2one,many2one,res.country,Country of the Partner Company,Country,both
+5,journal_id,many2one,many2one,account.journal,Journal,Journal,both
+6,company_id,many2one,many2one,res.company,Company,Company,both
+7,team_id,many2one,many2one,crm.team,Sales Team,Sales Team,both
+8,state,selection,selection,,Invoice Status,Invoice Status,both
+9,commercial_partner_id,many2one,many2one,res.partner,Partner Company,Partner Company,both
+10,price_average,float,float,,Average Price,Average Price,both
+11,partner_id,many2one,many2one,res.partner,Partner,Partner,both
+12,id,integer,integer,,ID,ID,both
+13,fiscal_position_id,many2one,many2one,account.fiscal.position,Fiscal Position,Fiscal Position,both
+14,product_id,many2one,many2one,product.product,Product,Product,both
+,,,,
+15,date_due,date,,,Due Date,,version 1
+16,weight,float,,,Gross Weight,,version 1
+17,nbr,integer,,,# of Lines,,version 1
+18,currency_id,many2one,,res.currency,Currency,,version 1
+19,product_qty,float,,,Product Quantity,,version 1
+20,user_currency_price_average,float,,,Average Price,,version 1
+21,uom_name,char,,,Reference Unit of Measure,,version 1
+22,user_id,many2one,,res.users,Salesperson,,version 1
+23,partner_bank_id,many2one,,res.partner.bank,Bank Account,,version 1
+24,type,selection,,,Type,,version 1
+25,account_line_id,many2one,,account.account,Account Line,,version 1
+26,residual,float,,,Total Residual,,version 1
+27,volume,float,,,Volume,,version 1
+28,payment_term_id,many2one,,account.payment.term,Payment Terms,,version 1
+29,currency_rate,float,,,Currency Rate,,version 1
+30,date,date,,,Date,,version 1
+31,categ_id,many2one,,product.category,Product Category,,version 1
+32,price_total,float,,,Total Without Tax,,version 1
+33,user_currency_price_total,float,,,Total Without Tax,,version 1
+34,user_currency_residual,float,,,Total Residual,,version 1
+,,,,
+35,price_subtotal,,float,,,Untaxed Total,version 2
+36,invoice_date,,date,,,Invoice Date,version 2
+37,company_currency_id,,many2one,res.currency,,Company Currency,version 2
+38,invoice_user_id,,many2one,res.users,,Salesperson,version 2
+39,move_id,,many2one,account.move,,Move,version 2
+40,payment_state,,selection,,,Payment Status,version 2
+41,product_uom_id,,many2one,uom.uom,,Unit of Measure,version 2
+42,move_type,,selection,,,Move Type,version 2
+43,invoice_date_due,,date,,,Due Date,version 2
+44,product_categ_id,,many2one,product.category,,Product Category,version 2
+45,quantity,,float,,,Product Quantity,version 2
+,,,,
+,,,,

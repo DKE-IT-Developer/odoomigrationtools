@@ -1,0 +1,26 @@
+model,res.partner.bank,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,display_name,char,char,,Display Name,Display Name,both
+3,bank_bic,char,char,,Bank Identifier Code,Bank Identifier Code,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+5,sequence,integer,integer,,Sequence,Sequence,both
+6,company_id,many2one,many2one,res.company,Company,Company,both
+7,bank_name,char,char,,Name,Name,both
+8,bank_id,many2one,many2one,res.bank,Bank,Bank,both
+9,currency_id,many2one,many2one,res.currency,Currency,Currency,both
+10,journal_id,one2many,one2many,account.journal,Account Journal,Account Journal,both
+11,acc_type,char,selection,,Acc type,Type,both
+12,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+13,sanitized_acc_number,char,char,,Sanitized Account Number,Sanitized Account Number,both
+14,create_date,datetime,datetime,,Created on,Created on,both
+15,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+16,partner_id,many2one,many2one,res.partner,Account Holder,Account Holder,both
+17,id,integer,integer,,ID,ID,both
+18,acc_number,char,char,,Account Number,Account Number,both
+,,,,
+,,,,
+19,active,,boolean,,,Active,version 2
+20,acc_holder_name,,char,,,Account Holder Name,version 2
+,,,,
+,,,,

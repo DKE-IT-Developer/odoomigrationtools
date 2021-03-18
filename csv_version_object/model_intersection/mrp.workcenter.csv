@@ -1,0 +1,48 @@
+model,mrp.workcenter,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,code,char,char,,Code,Code,both
+2,time_ids,one2many,one2many,mrp.workcenter.productivity,Time Logs,Time Logs,both
+3,workorder_pending_count,integer,integer,,Total Running Orders,Total Pending Orders,both
+4,time_stop,float,float,,Time after prod.,Time after prod.,both
+5,color,integer,integer,,Color,Color,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+7,create_date,datetime,datetime,,Created on,Created on,both
+8,id,integer,integer,,ID,ID,both
+9,blocked_time,float,float,,Blocked Time,Blocked Time,both
+10,create_uid,many2one,many2one,res.users,Created by,Created by,both
+11,time_efficiency,float,float,,Efficiency Factor,Time Efficiency,both
+12,capacity,float,float,,Capacity,Capacity,both
+13,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+14,resource_id,many2one,many2one,resource.resource,Resource,Resource,both
+15,company_id,many2one,many2one,res.company,Company,Company,both
+16,note,text,text,,Description,Description,both
+17,workcenter_load,float,float,,Work Center Load,Work Center Load,both
+18,performance,integer,integer,,Performance,Performance,both
+19,order_ids,one2many,one2many,mrp.workorder,Orders,Orders,both
+20,productive_time,float,float,,Productive Time,Productive Time,both
+21,routing_line_ids,one2many,one2many,mrp.routing.workcenter,Routing Lines,Routing Lines,both
+22,workorder_ready_count,integer,integer,,# Read Work Orders,# Read Work Orders,both
+23,sequence,integer,integer,,Sequence,Sequence,both
+24,workorder_progress_count,integer,integer,,Total Running Orders,Total Running Orders,both
+25,workorder_late_count,integer,integer,,Total Late Orders,Total Late Orders,both
+26,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+27,active,boolean,boolean,,Active,Active,both
+28,time_start,float,float,,Time before prod.,Time before prod.,both
+29,oee,float,float,,Oee,Oee,both
+30,display_name,char,char,,Display Name,Display Name,both
+31,oee_target,float,float,,OEE Target,OEE Target,both
+32,name,char,char,,Name,Work Center,both
+33,workorder_count,integer,integer,,# Work Orders,# Work Orders,both
+34,working_state,selection,selection,,Status,Workcenter Status,both
+,,,,
+35,user_id,many2one,,res.users,User,,version 1
+36,calendar_id,many2one,,resource.calendar,Working Time,,version 1
+37,resource_type,selection,,,Resource Type,,version 1
+,,,,
+38,tz,,selection,,,Timezone,version 2
+39,costs_hour,,float,,,Cost per hour,version 2
+40,alternative_workcenter_ids,,many2many,mrp.workcenter,,Alternative Workcenters,version 2
+41,costs_hour_account_id,,many2one,account.analytic.account,,Analytic Account,version 2
+42,resource_calendar_id,,many2one,resource.calendar,,Working Hours,version 2
+,,,,
+,,,,

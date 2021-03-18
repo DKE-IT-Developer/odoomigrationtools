@@ -1,0 +1,26 @@
+model,account.partial.reconcile,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,display_name,char,char,,Display Name,Display Name,both
+3,credit_move_id,many2one,many2one,account.move.line,Credit move id,Credit Move,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+5,full_reconcile_id,many2one,many2one,account.full.reconcile,Full Reconcile,Full Reconcile,both
+6,company_id,many2one,many2one,res.company,Currency,Company,both
+7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+8,company_currency_id,many2one,many2one,res.currency,Currency,Company Currency,both
+9,amount,monetary,monetary,,Amount,Amount,both
+10,debit_move_id,many2one,many2one,account.move.line,Debit move id,Debit Move,both
+11,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+12,create_date,datetime,datetime,,Created on,Created on,both
+13,id,integer,integer,,ID,ID,both
+,,,,
+14,currency_id,many2one,,res.currency,Currency,,version 1
+15,amount_currency,monetary,,,Amount in Currency,,version 1
+,,,,
+16,credit_amount_currency,,monetary,,,Credit Amount Currency,version 2
+17,credit_currency_id,,many2one,res.currency,,Currency of the credit journal item.,version 2
+18,debit_currency_id,,many2one,res.currency,,Currency of the debit journal item.,version 2
+19,max_date,,date,,,Max Date of Matched Lines,version 2
+20,debit_amount_currency,,monetary,,,Debit Amount Currency,version 2
+,,,,
+,,,,

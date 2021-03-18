@@ -1,0 +1,22 @@
+model,ir.model.data,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,noupdate,boolean,boolean,,Non Updatable,Non Updatable,both
+3,display_name,char,char,,Display Name,Display Name,both
+4,name,char,char,,External Identifier,External Identifier,both
+5,reference,char,char,,Reference,Reference,both
+6,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+7,module,char,char,,Module,Module,both
+8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+9,complete_name,char,char,,Complete ID,Complete ID,both
+10,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+11,create_date,datetime,datetime,,Created on,Created on,both
+12,model,char,char,,Model Name,Model Name,both
+13,res_id,integer,many2one_reference,,Record ID,Record ID,both
+14,id,integer,integer,,ID,ID,both
+,,,,
+15,date_update,datetime,,,Update Date,,version 1
+16,date_init,datetime,,,Init Date,,version 1
+,,,,
+,,,,
+,,,,

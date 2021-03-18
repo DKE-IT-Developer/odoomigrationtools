@@ -1,0 +1,177 @@
+model,res.company,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,fiscalyear_lock_date,date,date,,Lock Date,Lock Date,both
+2,bank_account_code_prefix,char,char,,Prefix of the bank accounts,Prefix of the bank accounts,both
+3,cash_account_code_prefix,char,char,,Prefix of the cash accounts,Prefix of the cash accounts,both
+4,create_date,datetime,datetime,,Created on,Created on,both
+5,sequence,integer,integer,,Sequence,Sequence,both
+6,security_lead,float,float,,Sales Safety Days,Sales Safety Days,both
+7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+8,currency_id,many2one,many2one,res.currency,Currency,Currency,both
+9,anglo_saxon_accounting,boolean,boolean,,Use anglo-saxon accounting,Use anglo-saxon accounting,both
+10,logo_web,binary,binary,,Logo web,Logo Web,both
+11,po_lead,float,float,,Purchase Lead Time,Purchase Lead Time,both
+12,fiscalyear_last_day,integer,integer,,Fiscalyear last day,Fiscalyear Last Day,both
+13,logo,binary,binary,,Image,Company Logo,both
+14,font,many2one,selection,,Font,Font,both
+15,partner_id,many2one,many2one,res.partner,Partner,Partner,both
+16,expects_chart_of_accounts,boolean,boolean,,Expects a Chart of Accounts,Expects a Chart of Accounts,both
+17,po_double_validation_amount,monetary,monetary,,Double validation amount,Double validation amount,both
+18,city,char,char,,City,City,both
+19,property_stock_valuation_account_id,many2one,many2one,account.account,Account Template for Stock Valuation,Account Template for Stock Valuation,both
+20,display_name,char,char,,Display Name,Display Name,both
+21,zip,char,char,,Zip,Zip,both
+22,parent_id,many2one,many2one,res.company,Parent Company,Parent Company,both
+23,transfer_account_id,many2one,many2one,account.account,Inter-Banks Transfer Account,Inter-Banks Transfer Account,both
+24,bank_journal_ids,one2many,one2many,account.journal,Bank Journals,Bank Journals,both
+25,country_id,many2one,many2one,res.country,Country,Country,both
+26,expense_currency_exchange_account_id,many2one,many2one,account.account,Loss Exchange Rate Account,Loss Exchange Rate Account,both
+27,id,integer,integer,,ID,ID,both
+28,property_stock_account_output_categ_id,many2one,many2one,account.account,Output Account for Stock Valuation,Output Account for Stock Valuation,both
+29,paperformat_id,many2one,many2one,report.paperformat,Paper format,Paper format,both
+30,po_lock,selection,selection,,Purchase Order Modification,Purchase Order Modification,both
+31,property_stock_account_input_categ_id,many2one,many2one,account.account,Input Account for Stock Valuation,Input Account for Stock Valuation,both
+32,period_lock_date,date,date,,Lock Date for Non-Advisers,Lock Date for Non-Advisers,both
+33,website,char,char,,Website,Website Link,both
+34,bank_ids,one2many,one2many,res.partner.bank,Bank Accounts,Bank Accounts,both
+35,manufacturing_lead,float,float,,Manufacturing Lead Time,Manufacturing Lead Time,both
+36,street2,char,char,,Street2,Street2,both
+37,child_ids,one2many,one2many,res.company,Child Companies,Child Companies,both
+38,phone,char,char,,Phone,Phone,both
+39,user_ids,many2many,many2many,res.users,Accepted Users,Accepted Users,both
+40,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+41,company_registry,char,char,,Company registry,Company Registry,both
+42,create_uid,many2one,many2one,res.users,Created by,Created by,both
+43,name,char,char,,Company Name,Company Name,both
+44,po_double_validation,selection,selection,,Levels of Approvals,Levels of Approvals,both
+45,chart_template_id,many2one,many2one,account.chart.template,Chart template id,Chart Template,both
+46,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+47,currency_exchange_journal_id,many2one,many2one,account.journal,Exchange Gain or Loss Journal,Exchange Gain or Loss Journal,both
+48,street,char,char,,Street,Street,both
+49,vat,char,char,,Tax ID,Tax ID,both
+50,state_id,many2one,many2one,res.country.state,Fed. State,Fed. State,both
+51,fiscalyear_last_month,selection,selection,,Fiscalyear last month,Fiscalyear Last Month,both
+52,tax_calculation_rounding_method,selection,selection,,Tax Calculation Rounding Method,Tax Calculation Rounding Method,both
+53,internal_transit_location_id,many2one,many2one,stock.location,Internal Transit Location,Internal Transit Location,both
+54,email,char,char,,Email,Email,both
+55,income_currency_exchange_account_id,many2one,many2one,account.account,Gain Exchange Rate Account,Gain Exchange Rate Account,both
+,,,,
+56,sale_note,text,,,Default Terms and Conditions,,version 1
+57,fax,char,,,Fax,,version 1
+58,rml_footer,text,,,Custom Report Footer,,version 1
+59,rml_header,text,,,Rml header,,version 1
+60,propagation_minimum_delta,integer,,,Minimum Delta for Propagation of a Date Change on moves linked together,,version 1
+61,rml_paper_format,selection,,,Paper Format,,version 1
+62,custom_footer,boolean,,,Custom footer,,version 1
+63,accounts_code_digits,integer,,,Number of digits in an account code,,version 1
+64,rml_header2,text,,,RML Internal Header,,version 1
+65,rml_header3,text,,,RML Internal Header for Landscape Reports,,version 1
+66,rml_header1,char,,,Company Tagline,,version 1
+67,account_no,char,,,Account No.,,version 1
+68,overdue_msg,text,,,Overdue Payments Message,,version 1
+69,rml_footer_readonly,text,,,Report Footer,,version 1
+70,project_time_mode_id,many2one,,product.uom,Project Time Unit,,version 1
+,,,,
+71,invoicing_switch_threshold,,date,,,Invoicing Switch Threshold,version 2
+72,days_to_purchase,,float,,,Days to Purchase,version 2
+73,stock_move_email_validation,,boolean,,,Email Confirmation picking,version 2
+74,account_revaluation_expense_provision_account_id,,many2one,account.account,,Expense Provision Account,version 2
+75,revenue_accrual_account_id,,many2one,account.account,,Revenue Accrual Account,version 2
+76,country_code,,char,,,Country Code,version 2
+77,quotation_validity_days,,integer,,,Default Quotation Validity (Days),version 2
+78,account_invoice_onboarding_state,,selection,,,State of the account invoice onboarding panel,version 2
+79,qr_code,,boolean,,,Display QR-code on invoices,version 2
+80,extract_show_ocr_option_selection,,selection,,,Send mode on invoices attachments,version 2
+81,primary_color,,char,,,Primary Color,version 2
+82,invoice_is_print,,boolean,,,Print by default,version 2
+83,external_report_layout_id,,many2one,ir.ui.view,,Document Template,version 2
+84,invoice_is_email,,boolean,,,Email by default,version 2
+85,account_tax_original_periodicity_reminder_day,,integer,,,Start from original,version 2
+86,account_tax_periodicity,,selection,,,Delay units,version 2
+87,snailmail_cover,,boolean,,,Add a Cover Page,version 2
+88,tax_cash_basis_journal_id,,many2one,account.journal,,Cash Basis Journal,version 2
+89,account_tax_next_activity_type,,many2one,mail.activity.type,,Account Tax Next Activity Type,version 2
+90,account_setup_fy_data_state,,selection,,,State of the onboarding fiscal year step,version 2
+91,invoice_is_snailmail,,boolean,,,Send by Post,version 2
+92,hr_presence_control_email_amount,,integer,,,# emails to send,version 2
+93,tax_exigibility,,boolean,,,Use Cash Basis,version 2
+94,social_instagram,,char,,,Instagram Account,version 2
+95,account_setup_coa_state,,selection,,,State of the onboarding charts of account step,version 2
+96,social_linkedin,,char,,,LinkedIn Account,version 2
+97,stock_sms_confirmation_template_id,,many2one,sms.template,,SMS Template,version 2
+98,account_onboarding_sale_tax_state,,selection,,,State of the onboarding sale tax step,version 2
+99,account_sale_tax_id,,many2one,account.tax,,Default Sale Tax,version 2
+100,account_tax_periodicity_journal_id,,many2one,account.journal,,Journal,version 2
+101,secondary_color,,char,,,Secondary Color,version 2
+102,account_tax_periodicity_reminder_day,,integer,,,Start from,version 2
+103,sale_onboarding_order_confirmation_state,,selection,,,State of the onboarding confirmation order step,version 2
+104,totals_below_sections,,boolean,,,Add totals below sections,version 2
+105,currency_interval_unit,,selection,,,Interval Unit,version 2
+106,sale_onboarding_sample_quotation_state,,selection,,,State of the onboarding sample quotation step,version 2
+107,default_cash_difference_expense_account_id,,many2one,account.account,,Cash Difference Expense Account,version 2
+108,catchall_formatted,,char,,,Catchall,version 2
+109,transfer_account_code_prefix,,char,,,Prefix of the transfer accounts,version 2
+110,account_cash_basis_base_account_id,,many2one,account.account,,Base Tax Received Account,version 2
+111,resource_calendar_id,,many2one,resource.calendar,,Default Working Hours,version 2
+112,tax_lock_date,,date,,,Tax Lock Date,version 2
+113,website_sale_dashboard_onboarding_state,,selection,,,State of the website sale onboarding panel,version 2
+114,portal_confirmation_pay,,boolean,,,Online Payment,version 2
+115,account_setup_bill_state,,selection,,,State of the onboarding bill step,version 2
+116,invoice_terms,,text,,,Default Terms and Conditions,version 2
+117,gain_account_id,,many2one,account.account,,Gain Account,version 2
+118,payment_acquirer_onboarding_state,,selection,,,State of the onboarding payment acquirer step,version 2
+119,base_onboarding_company_state,,selection,,,State of the onboarding company step,version 2
+120,loss_account_id,,many2one,account.account,,Loss Account,version 2
+121,social_facebook,,char,,,Facebook Account,version 2
+122,partner_gid,,integer,,,Company database ID,version 2
+123,account_revaluation_income_provision_account_id,,many2one,account.account,,Income Provision Account,version 2
+124,account_onboarding_create_invoice_state,,selection,,,State of the onboarding create invoice step,version 2
+125,email_formatted,,char,,,Formatted Email,version 2
+126,report_footer,,text,,,Report Footer,version 2
+127,has_received_warning_stock_sms,,boolean,,,Has Received Warning Stock Sms,version 2
+128,nomenclature_id,,many2one,barcode.nomenclature,,Nomenclature,version 2
+129,incoterm_id,,many2one,account.incoterms,,Default incoterm,version 2
+130,website_sale_onboarding_payment_acquirer_state,,selection,,,State of the website sale onboarding payment acquirer step,version 2
+131,resource_calendar_ids,,one2many,resource.calendar,,Working Hours,version 2
+132,account_onboarding_invoice_layout_state,,selection,,,State of the onboarding invoice layout step,version 2
+133,yodlee_user_login,,char,,,Yodlee login,version 2
+134,account_revaluation_journal_id,,many2one,account.journal,,Account Revaluation Journal,version 2
+135,vat_check_vies,,boolean,,,Verify VAT Numbers,version 2
+136,snailmail_color,,boolean,,,Color,version 2
+137,stock_mail_confirmation_template_id,,many2one,mail.template,,Email Template confirmation picking,version 2
+138,account_purchase_tax_id,,many2one,account.tax,,Default Purchase Tax,version 2
+139,snailmail_duplex,,boolean,,,Both sides,version 2
+140,stock_move_sms_validation,,boolean,,,SMS Confirmation,version 2
+141,sale_onboarding_payment_method,,selection,,,Sale onboarding selected payment method,version 2
+142,account_journal_suspense_account_id,,many2one,account.account,,Journal Suspense Account,version 2
+143,account_default_pos_receivable_account_id,,many2one,account.account,,Default PoS Receivable Account,version 2
+144,website_theme_onboarding_done,,boolean,,,Onboarding website theme step done,version 2
+145,account_opening_date,,date,,,Opening Entry,version 2
+146,yodlee_user_access_token,,char,,,Yodlee access token,version 2
+147,account_tax_fiscal_country_id,,many2one,res.country,,Fiscal Country,version 2
+148,favicon,,binary,,,Company Favicon,version 2
+149,account_dashboard_onboarding_state,,selection,,,State of the account dashboard onboarding panel,version 2
+150,social_twitter,,char,,,Twitter Account,version 2
+151,report_header,,text,,,Company Tagline,version 2
+152,automatic_entry_default_journal_id,,many2one,account.journal,,Automatic Entry Default Journal,version 2
+153,account_opening_journal_id,,many2one,account.journal,,Opening Journal,version 2
+154,account_opening_move_id,,many2one,account.move,,Opening Journal Entry,version 2
+155,social_github,,char,,,GitHub Account,version 2
+156,social_youtube,,char,,,Youtube Account,version 2
+157,catchall_email,,char,,,Catchall Email,version 2
+158,default_cash_difference_income_account_id,,many2one,account.account,,Cash Difference Income Account,version 2
+159,expense_accrual_account_id,,many2one,account.account,,Expense Accrual Account,version 2
+160,expense_extract_show_ocr_option_selection,,selection,,,Send mode on expense attachments,version 2
+161,account_setup_bank_data_state,,selection,,,State of the onboarding bank data step,version 2
+162,extract_single_line_per_tax,,boolean,,,OCR Single Invoice Line Per Tax,version 2
+163,portal_confirmation_sign,,boolean,,,Online Signature,version 2
+164,sale_order_template_id,,many2one,sale.order.template,,Default Sale Template,version 2
+165,payment_onboarding_payment_method,,selection,,,Selected onboarding payment method,version 2
+166,currency_provider,,selection,,,Service Provider,version 2
+167,yodlee_access_token,,char,,,access_token,version 2
+168,currency_next_execution_date,,date,,,Next Execution Date,version 2
+169,sale_quotation_onboarding_state,,selection,,,State of the sale onboarding panel,version 2
+170,yodlee_user_password,,char,,,Yodlee password,version 2
+171,hr_presence_control_ip_list,,char,,,Valid IP addresses,version 2
+,,,,
+,,,,

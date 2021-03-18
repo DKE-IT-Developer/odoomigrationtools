@@ -1,0 +1,24 @@
+model,tax.adjustments.wizard,transient,True
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,display_name,char,char,,Display Name,Display Name,both
+3,reason,char,char,,Justification,Justification,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+5,adjustment_type,selection,selection,,Adjustment Type,Adjustment Type,both
+6,credit_account_id,many2one,many2one,account.account,Credit account,Credit account,both
+7,journal_id,many2one,many2one,account.journal,Journal,Journal,both
+8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+9,company_currency_id,many2one,many2one,res.currency,Company currency id,Company Currency,both
+10,amount,monetary,monetary,,Amount,Amount,both
+11,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+12,date,date,date,,Date,Date,both
+13,create_date,datetime,datetime,,Created on,Created on,both
+14,debit_account_id,many2one,many2one,account.account,Debit account,Debit account,both
+15,id,integer,integer,,ID,ID,both
+,,,,
+16,tax_id,many2one,,account.tax,Adjustment Tax,,version 1
+,,,,
+17,tax_report_line_id,,many2one,account.tax.report.line,,Report Line,version 2
+18,report_id,,many2one,account.tax.report,,Report,version 2
+,,,,
+,,,,

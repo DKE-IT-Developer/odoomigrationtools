@@ -1,0 +1,38 @@
+model,account.tax,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,amount_type,selection,selection,,Tax Computation,Tax Computation,both
+2,create_uid,many2one,many2one,res.users,Created by,Created by,both
+3,create_date,datetime,datetime,,Created on,Created on,both
+4,description,char,char,,Label on Invoices,Label on Invoices,both
+5,sequence,integer,integer,,Sequence,Sequence,both
+6,children_tax_ids,many2many,many2many,account.tax,Children Taxes,Children Taxes,both
+7,tax_group_id,many2one,many2one,account.tax.group,Tax Group,Tax Group,both
+8,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+9,company_id,many2one,many2one,res.company,Company,Company,both
+10,type_tax_use,selection,selection,,Tax Scope,Tax Type,both
+11,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+12,analytic,boolean,boolean,,Include in Analytic Cost,Include in Analytic Cost,both
+13,amount,float,float,,Amount,Amount,both
+14,include_base_amount,boolean,boolean,,Affect Base of Subsequent Taxes,Affect Base of Subsequent Taxes,both
+15,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+16,active,boolean,boolean,,Active,Active,both
+17,display_name,char,char,,Display Name,Display Name,both
+18,price_include,boolean,boolean,,Included in Price,Included in Price,both
+19,id,integer,integer,,ID,ID,both
+20,name,char,char,,Tax Name,Tax Name,both
+,,,,
+21,account_id,many2one,,account.account,Tax Account,,version 1
+22,tax_adjustment,boolean,,,Tax adjustment,,version 1
+23,tag_ids,many2many,,account.account.tag,Tags,,version 1
+24,refund_account_id,many2one,,account.account,Tax Account on Refunds,,version 1
+,,,,
+25,hide_tax_exigibility,,boolean,,,Hide Use Cash Basis Option,version 2
+26,tax_fiscal_country_id,,many2one,res.country,,Fiscal Country,version 2
+27,country_code,,char,,,Country Code,version 2
+28,tax_scope,,selection,,,Tax Scope,version 2
+29,refund_repartition_line_ids,,one2many,account.tax.repartition.line,,Distribution for Refund Invoices,version 2
+30,tax_exigibility,,selection,,,Tax Due,version 2
+31,invoice_repartition_line_ids,,one2many,account.tax.repartition.line,,Distribution for Invoices,version 2
+32,cash_basis_transition_account_id,,many2one,account.account,,Cash Basis Transition Account,version 2
+,,,,
+,,,,

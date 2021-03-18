@@ -1,0 +1,18 @@
+model,account.cashbox.line,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,display_name,char,char,,Display Name,Display Name,both
+3,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+4,number,integer,integer,,Number of Coins/Bills,#Coins/Bills,both
+5,cashbox_id,many2one,many2one,account.bank.statement.cashbox,Cashbox,Cashbox,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+7,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+8,coin_value,float,float,,Coin/Bill Value,Coin/Bill Value,both
+9,create_date,datetime,datetime,,Created on,Created on,both
+10,subtotal,float,float,,Subtotal,Subtotal,both
+11,id,integer,integer,,ID,ID,both
+,,,,
+,,,,
+12,currency_id,,many2one,res.currency,,Currency,version 2
+,,,,
+,,,,

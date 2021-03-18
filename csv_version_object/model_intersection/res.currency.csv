@@ -1,0 +1,25 @@
+model,res.currency,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,rate_ids,one2many,one2many,res.currency.rate,Rates,Rates,both
+2,display_name,char,char,,Display Name,Display Name,both
+3,name,char,char,,Currency,Currency,both
+4,decimal_places,integer,integer,,Decimal places,Decimal Places,both
+5,create_uid,many2one,many2one,res.users,Created by,Created by,both
+6,rounding,float,float,,Rounding Factor,Rounding Factor,both
+7,symbol,char,char,,Symbol,Symbol,both
+8,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+9,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+10,active,boolean,boolean,,Active,Active,both
+11,rate,float,float,,Current Rate,Current Rate,both
+12,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+13,date,date,date,,Date,Date,both
+14,position,selection,selection,,Symbol Position,Symbol Position,both
+15,create_date,datetime,datetime,,Created on,Created on,both
+16,id,integer,integer,,ID,ID,both
+,,,,
+,,,,
+17,display_rounding_warning,,boolean,,,Display Rounding Warning,version 2
+18,currency_unit_label,,char,,,Currency Unit,version 2
+19,currency_subunit_label,,char,,,Currency Subunit,version 2
+,,,,
+,,,,

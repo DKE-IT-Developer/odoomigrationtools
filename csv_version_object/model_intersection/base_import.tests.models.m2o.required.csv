@@ -1,0 +1,14 @@
+model,base_import.tests.models.m2o.required,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,create_date,datetime,datetime,,Created on,Created on,both
+3,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+4,value,many2one,many2one,base_import.tests.models.m2o.required.related,Value,Value,both
+5,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+6,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+7,display_name,char,char,,Display Name,Display Name,both
+8,id,integer,integer,,ID,ID,both
+,,,,
+,,,,
+,,,,
+,,,,

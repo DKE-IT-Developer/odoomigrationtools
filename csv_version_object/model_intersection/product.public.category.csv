@@ -1,0 +1,36 @@
+model,product.public.category,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,display_name,char,char,,Display Name,Display Name,both
+3,name,char,char,,Name,Name,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+5,sequence,integer,integer,,Sequence,Sequence,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+7,parent_id,many2one,many2one,product.public.category,Parent Category,Parent Category,both
+8,website_meta_description,text,text,,Website meta description,Website meta description,both
+9,website_meta_title,char,char,,Website meta title,Website meta title,both
+10,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+11,website_meta_keywords,char,char,,Website meta keywords,Website meta keywords,both
+12,child_id,one2many,one2many,product.public.category,Children Categories,Children Categories,both
+13,id,integer,integer,,ID,ID,both
+14,create_date,datetime,datetime,,Created on,Created on,both
+,,,,
+15,image_medium,binary,,,Medium-sized image,,version 1
+16,image,binary,,,Image,,version 1
+17,image_small,binary,,,Small-sized image,,version 1
+,,,,
+18,image_1024,,binary,,,Image 1024,version 2
+19,website_id,,many2one,website,,Website,version 2
+20,website_meta_og_img,,char,,,Website opengraph image,version 2
+21,website_description,,html,,,Category Description,version 2
+22,product_tmpl_ids,,many2many,product.template,,Product Tmpl,version 2
+23,parents_and_self,,many2many,product.public.category,,Parents And Self,version 2
+24,image_128,,binary,,,Image 128,version 2
+25,is_seo_optimized,,boolean,,,SEO optimized,version 2
+26,parent_path,,char,,,Parent Path,version 2
+27,image_512,,binary,,,Image 512,version 2
+28,image_256,,binary,,,Image 256,version 2
+29,seo_name,,char,,,Seo name,version 2
+30,image_1920,,binary,,,Image,version 2
+,,,,
+,,,,

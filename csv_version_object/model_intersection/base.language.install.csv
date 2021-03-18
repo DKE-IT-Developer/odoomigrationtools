@@ -1,0 +1,17 @@
+model,base.language.install,transient,True
+no,field,type1,type2,relation,string1,string2,source
+1,lang,selection,selection,,Language,Language,both
+2,create_uid,many2one,many2one,res.users,Created by,Created by,both
+3,display_name,char,char,,Display Name,Display Name,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+5,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+6,state,selection,selection,,Status,Status,both
+7,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+8,create_date,datetime,datetime,,Created on,Created on,both
+9,website_ids,many2many,many2many,website,Websites to translate,Websites to translate,both
+10,id,integer,integer,,ID,ID,both
+11,overwrite,boolean,boolean,,Overwrite Existing Terms,Overwrite Existing Terms,both
+,,,,
+,,,,
+,,,,
+,,,,

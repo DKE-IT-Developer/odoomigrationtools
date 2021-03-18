@@ -1,0 +1,22 @@
+model,res.partner.category,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,display_name,char,char,,Display Name,Display Name,both
+3,name,char,char,,Tag Name,Tag Name,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+5,color,integer,integer,,Color Index,Color Index,both
+6,child_ids,one2many,one2many,res.partner.category,Child Tags,Child Tags,both
+7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+8,parent_id,many2one,many2one,res.partner.category,Parent Category,Parent Category,both
+9,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+10,active,boolean,boolean,,Active,Active,both
+11,create_date,datetime,datetime,,Created on,Created on,both
+12,partner_ids,many2many,many2many,res.partner,Partners,Partners,both
+13,id,integer,integer,,ID,ID,both
+,,,,
+14,parent_right,integer,,,Right parent,,version 1
+15,parent_left,integer,,,Left parent,,version 1
+,,,,
+16,parent_path,,char,,,Parent Path,version 2
+,,,,
+,,,,

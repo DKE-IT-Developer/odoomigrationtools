@@ -1,0 +1,13 @@
+model,website.published.mixin,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,website_published,boolean,boolean,,Visible in Website,Visible on current website,both
+2,display_name,char,char,,Display Name,Display Name,both
+3,id,integer,integer,,ID,ID,both
+4,website_url,char,char,,Website URL,Website URL,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+,,,,
+,,,,
+6,can_publish,,boolean,,,Can Publish,version 2
+7,is_published,,boolean,,,Is Published,version 2
+,,,,
+,,,,

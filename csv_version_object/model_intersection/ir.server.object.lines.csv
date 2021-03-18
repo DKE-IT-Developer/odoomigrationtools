@@ -1,0 +1,19 @@
+model,ir.server.object.lines,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,server_id,many2one,many2one,ir.actions.server,Related Server Action,Related Server Action,both
+3,display_name,char,char,,Display Name,Display Name,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+5,value,text,text,,Value,Value,both
+6,col1,many2one,many2one,ir.model.fields,Field,Field,both
+7,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+8,create_date,datetime,datetime,,Created on,Created on,both
+9,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+10,id,integer,integer,,ID,ID,both
+,,,,
+11,type,selection,,,Evaluation Type,,version 1
+,,,,
+12,evaluation_type,,selection,,,Evaluation Type,version 2
+13,resource_ref,,reference,,,Record,version 2
+,,,,
+,,,,

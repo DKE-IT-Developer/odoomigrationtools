@@ -1,0 +1,30 @@
+model,website.menu,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,website_id,many2one,many2one,website,Website,Website,both
+3,display_name,char,char,,Display Name,Display Name,both
+4,name,char,char,,Menu,Menu,both
+5,sequence,integer,integer,,Sequence,Sequence,both
+6,url,char,char,,Url,Url,both
+7,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+9,parent_id,many2one,many2one,website.menu,Parent Menu,Parent Menu,both
+10,new_window,boolean,boolean,,New Window,New Window,both
+11,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+12,create_date,datetime,datetime,,Created on,Created on,both
+13,child_id,one2many,one2many,website.menu,Child Menus,Child Menus,both
+14,id,integer,integer,,ID,ID,both
+,,,,
+15,parent_right,integer,,,Parent Rigth,,version 1
+16,parent_left,integer,,,Parent Left,,version 1
+,,,,
+17,mega_menu_classes,,char,,,Mega Menu Classes,version 2
+18,is_visible,,boolean,,,Is Visible,version 2
+19,is_mega_menu,,boolean,,,Is Mega Menu,version 2
+20,theme_template_id,,many2one,theme.website.menu,,Theme Template,version 2
+21,mega_menu_content,,html,,,Mega Menu Content,version 2
+22,group_ids,,many2many,res.groups,,Visible Groups,version 2
+23,parent_path,,char,,,Parent Path,version 2
+24,page_id,,many2one,website.page,,Related Page,version 2
+,,,,
+,,,,

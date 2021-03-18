@@ -1,0 +1,28 @@
+model,res.lang,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,date_format,char,char,,Date Format,Date Format,both
+2,direction,selection,selection,,Direction,Direction,both
+3,code,char,char,,Locale Code,Locale Code,both
+4,display_name,char,char,,Display Name,Display Name,both
+5,name,char,char,,Name,Name,both
+6,create_uid,many2one,many2one,res.users,Created by,Created by,both
+7,thousands_sep,char,char,,Thousands Separator,Thousands Separator,both
+8,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+9,iso_code,char,char,,ISO code,ISO code,both
+10,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+11,time_format,char,char,,Time Format,Time Format,both
+12,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+13,decimal_point,char,char,,Decimal Separator,Decimal Separator,both
+14,active,boolean,boolean,,Active,Active,both
+15,create_date,datetime,datetime,,Created on,Created on,both
+16,id,integer,integer,,ID,ID,both
+17,grouping,char,char,,Separator Format,Separator Format,both
+,,,,
+18,translatable,boolean,,,Translatable,,version 1
+,,,,
+19,flag_image_url,,char,,,Flag Image Url,version 2
+20,flag_image,,binary,,,Image,version 2
+21,week_start,,selection,,,First Day of Week,version 2
+22,url_code,,char,,,URL Code,version 2
+,,,,
+,,,,

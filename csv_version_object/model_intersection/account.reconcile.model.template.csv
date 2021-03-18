@@ -1,0 +1,53 @@
+model,account.reconcile.model.template,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,create_date,datetime,datetime,,Created on,Created on,both
+3,name,char,char,,Button Label,Button Label,both
+4,sequence,integer,integer,,Sequence,Sequence,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+7,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+8,display_name,char,char,,Display Name,Display Name,both
+9,id,integer,integer,,ID,ID,both
+,,,,
+10,second_account_id,many2one,,account.account.template,Second Account,,version 1
+11,account_id,many2one,,account.account.template,Account,,version 1
+12,second_amount_type,selection,,,Second Amount type,,version 1
+13,tax_id,many2one,,account.tax.template,Tax,,version 1
+14,amount_type,selection,,,Amount type,,version 1
+15,second_tax_id,many2one,,account.tax.template,Second Tax,,version 1
+16,has_second_line,boolean,,,Add a second line,,version 1
+17,label,char,,,Journal Item Label,,version 1
+18,amount,float,,,Amount,,version 1
+19,second_label,char,,,Second Journal Item Label,,version 1
+20,second_amount,float,,,Second Amount,,version 1
+,,,,
+21,match_text_location_note,,boolean,,,Match Text Location Note,version 2
+22,decimal_separator,,char,,,Decimal Separator,version 2
+23,match_transaction_type_param,,char,,,Transaction Type Parameter,version 2
+24,match_same_currency,,boolean,,,Same Currency Matching,version 2
+25,match_text_location_reference,,boolean,,,Match Text Location Reference,version 2
+26,match_note_param,,char,,,Note Parameter,version 2
+27,matching_order,,selection,,,Matching Order,version 2
+28,auto_reconcile,,boolean,,,Auto-validate,version 2
+29,match_amount_max,,float,,,Amount Max Parameter,version 2
+30,match_total_amount_param,,float,,,Amount Matching %,version 2
+31,match_journal_ids,,many2many,account.journal,,Journals,version 2
+32,match_nature,,selection,,,Amount Nature,version 2
+33,match_amount,,selection,,,Amount,version 2
+34,match_partner,,boolean,,,Partner Is Set,version 2
+35,match_transaction_type,,selection,,,Transaction Type,version 2
+36,match_label_param,,char,,,Label Parameter,version 2
+37,match_partner_category_ids,,many2many,res.partner.category,,Restrict Partner Categories to,version 2
+38,match_note,,selection,,,Note,version 2
+39,match_amount_min,,float,,,Amount Min Parameter,version 2
+40,rule_type,,selection,,,Type,version 2
+41,chart_template_id,,many2one,account.chart.template,,Chart Template,version 2
+42,match_total_amount,,boolean,,,Amount Matching,version 2
+43,match_text_location_label,,boolean,,,Match Text Location Label,version 2
+44,match_partner_ids,,many2many,res.partner,,Restrict Partners to,version 2
+45,line_ids,,one2many,account.reconcile.model.line.template,,Line,version 2
+46,match_label,,selection,,,Label,version 2
+47,to_check,,boolean,,,To Check,version 2
+,,,,
+,,,,

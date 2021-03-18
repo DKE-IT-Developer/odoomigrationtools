@@ -1,0 +1,18 @@
+model,base.language.import,transient,True
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,code,char,char,,ISO Code,ISO Code,both
+3,display_name,char,char,,Display Name,Display Name,both
+4,name,char,char,,Language Name,Language Name,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+6,filename,char,char,,File Name,File Name,both
+7,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+8,create_date,datetime,datetime,,Created on,Created on,both
+9,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+10,data,binary,binary,,File,File,both
+11,id,integer,integer,,ID,ID,both
+12,overwrite,boolean,boolean,,Overwrite Existing Terms,Overwrite Existing Terms,both
+,,,,
+,,,,
+,,,,
+,,,,

@@ -1,0 +1,18 @@
+model,account.full.reconcile,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,exchange_move_id,many2one,many2one,account.move,Exchange move id,Exchange Move,both
+3,display_name,char,char,,Display Name,Display Name,both
+4,name,char,char,,Number,Number,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+6,reconciled_line_ids,one2many,one2many,account.move.line,Matched Journal Items,Matched Journal Items,both
+7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+8,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+9,partial_reconcile_ids,one2many,one2many,account.partial.reconcile,Reconciliation Parts,Reconciliation Parts,both
+10,create_date,datetime,datetime,,Created on,Created on,both
+11,id,integer,integer,,ID,ID,both
+,,,,
+12,exchange_partial_rec_id,many2one,,account.partial.reconcile,Exchange partial rec id,,version 1
+,,,,
+,,,,
+,,,,

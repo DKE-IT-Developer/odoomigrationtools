@@ -1,0 +1,31 @@
+model,mail.tracking.value,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_date,datetime,datetime,,Created on,Created on,both
+2,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+3,old_value_monetary,float,float,,Old Value Monetary,Old Value Monetary,both
+4,new_value_text,text,text,,New Value Text,New Value Text,both
+5,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+6,id,integer,integer,,ID,ID,both
+7,create_uid,many2one,many2one,res.users,Created by,Created by,both
+8,display_name,char,char,,Display Name,Display Name,both
+9,old_value_datetime,datetime,datetime,,Old Value DateTime,Old Value DateTime,both
+10,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+11,field,char,many2one,ir.model.fields,Changed Field,Field,both
+12,new_value_datetime,datetime,datetime,,New Value Datetime,New Value Datetime,both
+13,new_value_integer,integer,integer,,New Value Integer,New Value Integer,both
+14,field_type,char,char,,Field Type,Field Type,both
+15,new_value_monetary,float,float,,New Value Monetary,New Value Monetary,both
+16,old_value_text,text,text,,Old Value Text,Old Value Text,both
+17,field_desc,char,char,,Field Description,Field Description,both
+18,mail_message_id,many2one,many2one,mail.message,Message ID,Message ID,both
+19,new_value_char,char,char,,New Value Char,New Value Char,both
+20,old_value_char,char,char,,Old Value Char,Old Value Char,both
+21,new_value_float,float,float,,New Value Float,New Value Float,both
+22,old_value_float,float,float,,Old Value Float,Old Value Float,both
+23,old_value_integer,integer,integer,,Old Value Integer,Old Value Integer,both
+,,,,
+,,,,
+24,tracking_sequence,,integer,,,Tracking field sequence,version 2
+25,field_groups,,char,,,Field Groups,version 2
+,,,,
+,,,,

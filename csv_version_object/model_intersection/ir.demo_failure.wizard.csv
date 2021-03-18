@@ -1,0 +1,3 @@
+model,ir.demo_failure.wizard,transient,True
+failed to get fields list of ir.demo_failure.wizard
+,,,,

@@ -1,0 +1,26 @@
+model,product.image,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,display_name,char,char,,Display Name,Display Name,both
+3,name,char,char,,Name,Name,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+5,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+6,product_tmpl_id,many2one,many2one,product.template,Related Product,Product Template,both
+7,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+8,create_date,datetime,datetime,,Created on,Created on,both
+9,id,integer,integer,,ID,ID,both
+,,,,
+10,image,binary,,,Image,,version 1
+,,,,
+11,video_url,,char,,,Video URL,version 2
+12,sequence,,integer,,,Sequence,version 2
+13,image_1024,,binary,,,Image 1024,version 2
+14,can_image_1024_be_zoomed,,boolean,,,Can Image 1024 be zoomed,version 2
+15,embed_code,,char,,,Embed Code,version 2
+16,image_128,,binary,,,Image 128,version 2
+17,image_512,,binary,,,Image 512,version 2
+18,image_256,,binary,,,Image 256,version 2
+19,image_1920,,binary,,,Image,version 2
+20,product_variant_id,,many2one,product.product,,Product Variant,version 2
+,,,,
+,,,,

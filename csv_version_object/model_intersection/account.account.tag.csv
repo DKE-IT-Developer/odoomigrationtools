@@ -1,0 +1,20 @@
+model,account.account.tag,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,display_name,char,char,,Display Name,Display Name,both
+3,name,char,char,,Name,Tag Name,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+5,color,integer,integer,,Color Index,Color Index,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+7,applicability,selection,selection,,Applicability,Applicability,both
+8,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+9,create_date,datetime,datetime,,Created on,Created on,both
+10,id,integer,integer,,ID,ID,both
+,,,,
+,,,,
+11,tax_report_line_ids,,many2many,account.tax.report.line,,Tax Report Lines,version 2
+12,tax_negate,,boolean,,,Negate Tax Balance,version 2
+13,country_id,,many2one,res.country,,Country,version 2
+14,active,,boolean,,,Active,version 2
+,,,,
+,,,,

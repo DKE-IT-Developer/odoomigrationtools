@@ -1,0 +1,41 @@
+model,account.account,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,internal_type,selection,selection,,Internal Type,Internal Type,both
+3,display_name,char,char,,Display Name,Display Name,both
+4,name,char,char,,Name,Account Name,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+6,deprecated,boolean,boolean,,Deprecated,Deprecated,both
+7,tag_ids,many2many,many2many,account.account.tag,Tags,Tags,both
+8,company_id,many2one,many2one,res.company,Company,Company,both
+9,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+10,currency_id,many2one,many2one,res.currency,Account Currency,Account Currency,both
+11,note,text,text,,Internal Notes,Internal Notes,both
+12,code,char,char,,Code,Code,both
+13,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+14,user_type_id,many2one,many2one,account.account.type,Type,Type,both
+15,create_date,datetime,datetime,,Created on,Created on,both
+16,id,integer,integer,,ID,ID,both
+17,reconcile,boolean,boolean,,Allow Reconciliation,Allow Reconciliation,both
+18,tax_ids,many2many,many2many,account.tax,Default Taxes,Default Taxes,both
+,,,,
+19,last_time_entries_checked,datetime,,,Latest Invoices & Payments Matching Date,,version 1
+,,,,
+20,opening_credit,,monetary,,,Opening Credit,version 2
+21,is_off_balance,,boolean,,,Is Off Balance,version 2
+22,allowed_journal_ids,,many2many,account.journal,,Allowed Journals,version 2
+23,create_asset,,selection,,,Create Asset,version 2
+24,can_create_asset,,boolean,,,Can Create Asset,version 2
+25,used,,boolean,,,Used,version 2
+26,root_id,,many2one,account.root,,Root,version 2
+27,form_view_ref,,char,,,Form View Ref,version 2
+28,internal_group,,selection,,,Internal Group,version 2
+29,exclude_provision_currency_ids,,many2many,res.currency,,Exclude Provision Currency,version 2
+30,asset_type,,selection,,,Asset Type,version 2
+31,opening_balance,,monetary,,,Opening Balance,version 2
+32,opening_debit,,monetary,,,Opening Debit,version 2
+33,multiple_assets_per_line,,boolean,,,Multiple Assets per Line,version 2
+34,group_id,,many2one,account.group,,Group,version 2
+35,asset_model,,many2one,account.asset,,Asset Model,version 2
+,,,,
+,,,,

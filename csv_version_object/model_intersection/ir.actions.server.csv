@@ -1,0 +1,72 @@
+model,ir.actions.server,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,code,text,text,,Python Code,Python Code,both
+2,create_date,datetime,datetime,,Created on,Created on,both
+3,help,html,html,,Action Description,Action Description,both
+4,sequence,integer,integer,,Sequence,Sequence,both
+5,crud_model_id,many2one,many2one,ir.model,Create/Write Target Model,Target Model,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+7,xml_id,char,char,,External ID,External ID,both
+8,crud_model_name,char,char,,Create/Write Target Model Name,Target Model Name,both
+9,id,integer,integer,,ID,ID,both
+10,create_uid,many2one,many2one,res.users,Created by,Created by,both
+11,display_name,char,char,,Display Name,Display Name,both
+12,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+13,state,selection,selection,,Action To Do,Action To Do,both
+14,usage,char,selection,,Action Usage,Usage,both
+15,type,char,char,,Action Type,Action Type,both
+16,website_published,boolean,boolean,,Available on the Website,Available on the Website,both
+17,website_url,char,char,,Website Url,Website Url,both
+18,model_id,many2one,many2one,ir.model,Base Model,Model,both
+19,child_ids,many2many,many2many,ir.actions.server,Child Actions,Child Actions,both
+20,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+21,fields_lines,one2many,one2many,ir.server.object.lines,Value Mapping,Value Mapping,both
+22,name,char,char,,Action Name,Action Name,both
+23,model_name,char,char,,Model,Model Name,both
+24,link_field_id,many2one,many2one,ir.model.fields,Link using field,Link Field,both
+25,website_path,char,char,,Website Path,Website Path,both
+26,template_id,many2one,many2one,mail.template,Email Template,Email Template,both
+,,,,
+27,use_relational_model,selection,,,Relational Target Model,,version 1
+28,wkf_field_id,many2one,,ir.model.fields,Relation Field,,version 1
+29,ref_object,reference,,,Reference record,,version 1
+30,partner_to,char,,,To (Partners),,version 1
+31,id_object,reference,,,Record,,version 1
+32,subject,char,,,Subject,,version 1
+33,use_create,selection,,,Creation Policy,,version 1
+34,wkf_model_id,many2one,,ir.model,Target Model,,version 1
+35,id_value,char,,,Record ID,,version 1
+36,action_id,many2one,,ir.actions.actions,Client Action,,version 1
+37,sub_model_object_field,many2one,,ir.model.fields,Sub-field,,version 1
+38,body_html,html,,,Body,,version 1
+39,link_new_record,boolean,,,Attach the new record,,version 1
+40,wkf_transition_id,many2one,,workflow.transition,Signal to Trigger,,version 1
+41,email_to,char,,,To (Emails),,version 1
+42,sub_object,many2one,,ir.model,Sub-model,,version 1
+43,use_write,selection,,,Update Policy,,version 1
+44,condition,char,,,Condition,,version 1
+45,copyvalue,char,,,Placeholder Expression,,version 1
+46,write_expression,char,,,Expression,,version 1
+47,wkf_model_name,char,,,Target Model Name,,version 1
+48,menu_ir_values_id,many2one,,ir.values,More Menu entry,,version 1
+49,model_object_field,many2one,,ir.model.fields,Field,,version 1
+50,email_from,char,,,From,,version 1
+,,,,
+51,groups_id,,many2many,res.groups,,Groups,version 2
+52,activity_note,,html,,,Note,version 2
+53,sms_template_id,,many2one,sms.template,,SMS Template,version 2
+54,binding_type,,selection,,,Binding Type,version 2
+55,activity_user_id,,many2one,res.users,,Responsible,version 2
+56,partner_ids,,many2many,res.partner,,Add Followers,version 2
+57,channel_ids,,many2many,mail.channel,,Add Channels,version 2
+58,binding_view_types,,char,,,Binding View Types,version 2
+59,activity_user_type,,selection,,,Activity User Type,version 2
+60,binding_model_id,,many2one,ir.model,,Binding Model,version 2
+61,activity_user_field_name,,char,,,User field name,version 2
+62,activity_type_id,,many2one,mail.activity.type,,Activity,version 2
+63,activity_summary,,char,,,Summary,version 2
+64,sms_mass_keep_log,,boolean,,,Log as Note,version 2
+65,activity_date_deadline_range,,integer,,,Due Date In,version 2
+66,activity_date_deadline_range_type,,selection,,,Due type,version 2
+,,,,
+,,,,

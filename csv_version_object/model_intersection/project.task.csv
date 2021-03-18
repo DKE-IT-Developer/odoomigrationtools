@@ -1,0 +1,136 @@
+model,project.task,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,message_follower_ids,one2many,one2many,mail.followers,Followers,Followers,both
+2,create_date,datetime,datetime,,Create date,Created On,both
+3,sequence,integer,integer,,Sequence,Sequence,both
+4,color,integer,integer,,Color Index,Color Index,both
+5,message_channel_ids,many2many,many2many,mail.channel,Followers (Channels),Followers (Channels),both
+6,date_end,datetime,datetime,,Ending Date,Ending Date,both
+7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+8,legend_blocked,char,char,,Kanban Blocked Explanation,Kanban Blocked Explanation,both
+9,planned_hours,float,float,,Initially Planned Hours,Initially Planned Hours,both
+10,partner_id,many2one,many2one,res.partner,Customer,Customer,both
+11,id,integer,integer,,ID,ID,both
+12,create_uid,many2one,many2one,res.users,Created by,Created by,both
+13,displayed_image_id,many2one,many2one,ir.attachment,Displayed Image,Cover Image,both
+14,user_id,many2one,many2one,res.users,Assigned to,Assigned to,both
+15,attachment_ids,one2many,one2many,ir.attachment,Attachments,Main Attachments,both
+16,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+17,tag_ids,many2many,many2many,project.tags,Tags,Tags,both
+18,company_id,many2one,many2one,res.company,Company,Company,both
+19,message_ids,one2many,one2many,mail.message,Messages,Messages,both
+20,priority,selection,selection,,Priority,Priority,both
+21,message_needaction,boolean,boolean,,Action Needed,Action Needed,both
+22,message_is_follower,boolean,boolean,,Is Follower,Is Follower,both
+23,manager_id,many2one,many2one,res.users,Project Manager,Project Manager,both
+24,message_unread_counter,integer,integer,,Unread Messages Counter,Unread Messages Counter,both
+25,project_id,many2one,many2one,project.project,Project,Project,both
+26,date_last_stage_update,datetime,datetime,,Last Stage Update,Last Stage Update,both
+27,date_assign,datetime,datetime,,Assigning Date,Assigning Date,both
+28,description,html,html,,Description,Description,both
+29,message_partner_ids,many2many,many2many,res.partner,Followers (Partners),Followers (Partners),both
+30,kanban_state,selection,selection,,Kanban State,Kanban State,both
+31,legend_done,char,char,,Kanban Valid Explanation,Kanban Valid Explanation,both
+32,write_date,datetime,datetime,,Write date,Last Updated On,both
+33,active,boolean,boolean,,Active,Active,both
+34,display_name,char,char,,Display Name,Display Name,both
+35,legend_normal,char,char,,Kanban Ongoing Explanation,Kanban Ongoing Explanation,both
+36,stage_id,many2one,many2one,project.task.type,Stage,Stage,both
+37,name,char,char,,Task Title,Title,both
+38,date_deadline,date,date,,Deadline,Deadline,both
+39,message_unread,boolean,boolean,,Unread Messages,Unread Messages,both
+40,message_needaction_counter,integer,integer,,Number of Actions,Number of Actions,both
+41,user_email,char,char,,User Email,User Email,both
+,,,,
+42,notes,text,,,Notes,,version 1
+43,date_start,datetime,,,Starting Date,,version 1
+44,message_last_post,datetime,,,Last Message Date,,version 1
+45,remaining_hours,float,,,Remaining Hours,,version 1
+,,,,
+46,allow_recurring_tasks,,boolean,,,Recurring Tasks,version 2
+47,recurrence_id,,many2one,project.task.recurrence,,Recurrence,version 2
+48,partner_street,,char,,,Street,version 2
+49,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,version 2
+50,ribbon_message,,char,,,Ribbon message,version 2
+51,working_days_close,,float,,,Working days to close,version 2
+52,partner_zip,,char,,,Zip,version 2
+53,repeat_on_year,,selection,,,Repeat On Year,version 2
+54,is_closed,,boolean,,,Closing Stage,version 2
+55,activity_date_deadline,,date,,,Next Activity Deadline,version 2
+56,planned_date_begin,,datetime,,,Start date,version 2
+57,wed,,boolean,,,Wed,version 2
+58,message_has_sms_error,,boolean,,,SMS Delivery error,version 2
+59,activity_exception_icon,,char,,,Icon,version 2
+60,fri,,boolean,,,Fri,version 2
+61,repeat_day,,selection,,,Repeat Day,version 2
+62,kanban_state_label,,char,,,Kanban State Label,version 2
+63,parent_id,,many2one,project.task,,Parent Task,version 2
+64,rating_count,,integer,,,Rating count,version 2
+65,email_cc,,char,,,Email cc,version 2
+66,activity_user_id,,many2one,res.users,,Responsible User,version 2
+67,rating_last_feedback,,text,,,Rating Last Feedback,version 2
+68,subtask_project_id,,many2one,project.project,,Sub-task Project,version 2
+69,planned_date_end,,datetime,,,End date,version 2
+70,child_ids,,one2many,project.task,,Sub-tasks,version 2
+71,sale_order_id,,many2one,sale.order,,Sales Order,version 2
+72,mon,,boolean,,,Mon,version 2
+73,invoice_count,,integer,,,Number of invoices,version 2
+74,recurrence_message,,char,,,Next Recurrencies,version 2
+75,repeat_show_day,,boolean,,,Repeat Show Day,version 2
+76,activity_type_id,,many2one,mail.activity.type,,Next Activity Type,version 2
+77,activity_ids,,one2many,mail.activity,,Activities,version 2
+78,allow_subtasks,,boolean,,,Allow Sub-tasks,version 2
+79,recurring_task,,boolean,,,Recurrent,version 2
+80,recurring_count,,integer,,,Tasks in Recurrence,version 2
+81,partner_city,,char,,,City,version 2
+82,project_privacy_visibility,,selection,,,Project Visibility,version 2
+83,access_token,,char,,,Security Token,version 2
+84,activity_state,,selection,,,Activity State,version 2
+85,rating_ids,,one2many,rating.rating,,Rating,version 2
+86,website_message_ids,,one2many,mail.message,,Website Messages,version 2
+87,repeat_show_week,,boolean,,,Repeat Show Week,version 2
+88,commercial_partner_id,,many2one,res.partner,,Commercial Entity,version 2
+89,sale_line_id,,many2one,sale.order.line,,Sales Order Item,version 2
+90,repeat_weekday,,selection,,,Day Of The Week,version 2
+91,partner_is_company,,boolean,,,Is a Company,version 2
+92,project_sale_order_id,,many2one,sale.order,,Project's sale order,version 2
+93,message_has_error,,boolean,,,Message Delivery error,version 2
+94,repeat_on_month,,selection,,,Repeat On Month,version 2
+95,access_warning,,text,,,Access warning,version 2
+96,repeat_number,,integer,,,Repetitions,version 2
+97,sat,,boolean,,,Sat,version 2
+98,repeat_unit,,selection,,,Repeat Unit,version 2
+99,repeat_interval,,integer,,,Repeat Every,version 2
+100,activity_exception_decoration,,selection,,,Activity Exception Decoration,version 2
+101,sun,,boolean,,,Sun,version 2
+102,activity_type_icon,,char,,,Activity Type Icon,version 2
+103,working_hours_close,,float,,,Working hours to close,version 2
+104,rating_last_image,,binary,,,Rating Last Image,version 2
+105,working_hours_open,,float,,,Working hours to assign,version 2
+106,message_attachment_count,,integer,,,Attachment Count,version 2
+107,repeat_show_dow,,boolean,,,Repeat Show Dow,version 2
+108,working_days_open,,float,,,Working days to assign,version 2
+109,partner_email,,char,,,Email,version 2
+110,subtask_count,,integer,,,Sub-task count,version 2
+111,rating_avg,,float,,,Rating Average,version 2
+112,message_has_error_counter,,integer,,,Number of errors,version 2
+113,allowed_user_ids,,many2many,res.users,,Visible to,version 2
+114,subtask_planned_hours,,float,,,Sub-tasks Planned Hours,version 2
+115,repeat_month,,selection,,,Repeat Month,version 2
+116,recurrence_update,,selection,,,Recurrence Update,version 2
+117,task_to_invoice,,boolean,,,To invoice,version 2
+118,tue,,boolean,,,Tue,version 2
+119,repeat_type,,selection,,,Until,version 2
+120,repeat_until,,date,,,End Date,version 2
+121,project_color,,integer,,,Project color,version 2
+122,activity_summary,,char,,,Next Activity Summary,version 2
+123,repeat_week,,selection,,,Repeat Week,version 2
+124,thu,,boolean,,,Thu,version 2
+125,repeat_show_month,,boolean,,,Repeat Show Month,version 2
+126,email_from,,char,,,Email From,version 2
+127,partner_phone,,char,,,Phone,version 2
+128,rating_last_value,,float,,,Rating Last Value,version 2
+129,access_url,,char,,,Portal Access URL,version 2
+130,partner_mobile,,char,,,Mobile,version 2
+,,,,
+,,,,

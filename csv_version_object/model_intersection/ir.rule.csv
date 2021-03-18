@@ -1,0 +1,24 @@
+model,ir.rule,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,domain_force,text,text,,Domain,Domain,both
+3,name,char,char,,Name,Name,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+5,id,integer,integer,,ID,ID,both
+6,global,boolean,boolean,,Global,Global,both
+7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+8,active,boolean,boolean,,Active,Active,both
+9,perm_read,boolean,boolean,,Apply for Read,Apply for Read,both
+10,groups,many2many,many2many,res.groups,Groups,Groups,both
+11,perm_unlink,boolean,boolean,,Apply for Delete,Apply for Delete,both
+12,perm_write,boolean,boolean,,Apply for Write,Apply for Write,both
+13,create_date,datetime,datetime,,Created on,Created on,both
+14,model_id,many2one,many2one,ir.model,Object,Model,both
+15,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+16,perm_create,boolean,boolean,,Apply for Create,Apply for Create,both
+17,display_name,char,char,,Display Name,Display Name,both
+,,,,
+18,domain,binary,,,Domain,,version 1
+,,,,
+,,,,
+,,,,

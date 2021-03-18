@@ -1,0 +1,22 @@
+model,mail.message.subtype,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,display_name,char,char,,Display Name,Display Name,both
+3,description,text,text,,Description,Description,both
+4,sequence,integer,integer,,Sequence,Sequence,both
+5,default,boolean,boolean,,Default,Default,both
+6,res_model,char,char,,Model,Model,both
+7,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+9,parent_id,many2one,many2one,mail.message.subtype,Parent,Parent,both
+10,internal,boolean,boolean,,Internal Only,Internal Only,both
+11,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+12,relation_field,char,char,,Relation field,Relation field,both
+13,create_date,datetime,datetime,,Created on,Created on,both
+14,hidden,boolean,boolean,,Hidden,Hidden,both
+15,id,integer,integer,,ID,ID,both
+16,name,char,char,,Message Type,Message Type,both
+,,,,
+,,,,
+,,,,
+,,,,

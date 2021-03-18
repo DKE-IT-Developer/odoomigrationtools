@@ -1,0 +1,19 @@
+model,ir.translation,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,lang,selection,selection,,Language,Language,both
+2,src,text,text,,Internal Source,Internal Source,both
+3,display_name,char,char,,Display Name,Display Name,both
+4,name,char,char,,Translated field,Translated field,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+6,res_id,integer,integer,,Record ID,Record ID,both
+7,module,char,char,,Module,Module,both
+8,state,selection,selection,,Status,Status,both
+9,comments,text,text,,Translation comments,Translation comments,both
+10,value,text,text,,Translation Value,Translation Value,both
+11,type,selection,selection,,Type,Type,both
+12,id,integer,integer,,ID,ID,both
+,,,,
+13,source,text,,,Source term,,version 1
+,,,,
+,,,,
+,,,,

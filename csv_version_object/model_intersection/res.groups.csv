@@ -1,0 +1,27 @@
+model,res.groups,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,comment,text,text,,Comment,Comment,both
+2,create_uid,many2one,many2one,res.users,Created by,Created by,both
+3,display_name,char,char,,Display Name,Display Name,both
+4,menu_access,many2many,many2many,ir.ui.menu,Access Menu,Access Menu,both
+5,name,char,char,,Name,Name,both
+6,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+7,color,integer,integer,,Color Index,Color Index,both
+8,share,boolean,boolean,,Share Group,Share Group,both
+9,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+10,rule_groups,many2many,many2many,ir.rule,Rules,Rules,both
+11,implied_ids,many2many,many2many,res.groups,Inherits,Inherits,both
+12,full_name,char,char,,Group Name,Group Name,both
+13,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+14,create_date,datetime,datetime,,Created on,Created on,both
+15,users,many2many,many2many,res.users,Users,Users,both
+16,category_id,many2one,many2one,ir.module.category,Application,Application,both
+17,model_access,one2many,one2many,ir.model.access,Access Controls,Access Controls,both
+18,id,integer,integer,,ID,ID,both
+19,trans_implied_ids,many2many,many2many,res.groups,Transitively inherits,Transitively inherits,both
+20,view_access,many2many,many2many,ir.ui.view,Views,Views,both
+,,,,
+21,is_portal,boolean,,,Portal,,version 1
+,,,,
+,,,,
+,,,,

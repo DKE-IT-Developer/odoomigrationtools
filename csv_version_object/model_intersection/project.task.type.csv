@@ -1,0 +1,28 @@
+model,project.task.type,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+3,display_name,char,char,,Display Name,Display Name,both
+4,description,text,text,,Description,Description,both
+5,sequence,integer,integer,,Sequence,Sequence,both
+6,project_ids,many2many,many2many,project.project,Projects,Projects,both
+7,legend_done,char,char,,Kanban Valid Explanation,Green Kanban Label,both
+8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+9,fold,boolean,boolean,,Folded in Kanban,Folded in Kanban,both
+10,legend_blocked,char,char,,Kanban Blocked Explanation,Red Kanban Label,both
+11,legend_normal,char,char,,Kanban Ongoing Explanation,Grey Kanban Label,both
+12,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+13,create_date,datetime,datetime,,Created on,Created on,both
+14,id,integer,integer,,ID,ID,both
+15,mail_template_id,many2one,many2one,mail.template,Email Template,Email Template,both
+16,name,char,char,,Stage Name,Stage Name,both
+,,,,
+17,legend_priority,char,,,Priority Management Explanation,,version 1
+,,,,
+18,rating_template_id,,many2one,mail.template,,Rating Email Template,version 2
+19,auto_validation_kanban_state,,boolean,,,Automatic kanban status,version 2
+20,active,,boolean,,,Active,version 2
+21,disabled_rating_warning,,text,,,Disabled Rating Warning,version 2
+22,is_closed,,boolean,,,Closing Stage,version 2
+,,,,
+,,,,

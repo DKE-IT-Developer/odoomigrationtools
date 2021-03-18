@@ -1,0 +1,31 @@
+model,mrp.routing.workcenter,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,workorder_ids,one2many,one2many,mrp.workorder,Work Orders,Work Orders,both
+3,create_date,datetime,datetime,,Created on,Created on,both
+4,time_mode_batch,integer,integer,,Based on,Based on,both
+5,sequence,integer,integer,,Sequence,Sequence,both
+6,worksheet,binary,binary,,worksheet,PDF,both
+7,workorder_count,integer,integer,,# Work Orders,# Work Orders,both
+8,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+9,company_id,many2one,many2one,res.company,Company,Company,both
+10,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+11,note,text,text,,Description,Description,both
+12,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+13,workcenter_id,many2one,many2one,mrp.workcenter,Work Center,Work Center,both
+14,display_name,char,char,,Display Name,Display Name,both
+15,time_mode,selection,selection,,Duration Computation,Duration Computation,both
+16,time_cycle_manual,float,float,,Manual Duration,Manual Duration,both
+17,id,integer,integer,,ID,ID,both
+18,time_cycle,float,float,,Duration,Duration,both
+19,name,char,char,,Operation,Operation,both
+,,,,
+20,routing_id,many2one,,mrp.routing,Parent Routing,,version 1
+21,batch,selection,,,Next Operation,,version 1
+22,batch_size,float,,,Quantity to Process,,version 1
+,,,,
+23,bom_id,,many2one,mrp.bom,,Bill of Material,version 2
+24,worksheet_type,,selection,,,Work Sheet,version 2
+25,worksheet_google_slide,,char,,,Google Slide,version 2
+,,,,
+,,,,

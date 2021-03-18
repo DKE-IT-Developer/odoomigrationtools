@@ -1,0 +1,32 @@
+model,mrp.bom.line,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,display_name,char,char,,Display Name,Display Name,both
+3,product_id,many2one,many2one,product.product,Product,Component,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+5,product_uom_id,many2one,many2one,uom.uom,Product Unit of Measure,Product Unit of Measure,both
+6,sequence,integer,integer,,Sequence,Sequence,both
+7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+8,operation_id,many2one,many2one,mrp.routing.workcenter,Consumed in Operation,Consumed in Operation,both
+9,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+10,product_qty,float,float,,Product Quantity,Quantity,both
+11,bom_id,many2one,many2one,mrp.bom,Parent BoM,Parent BoM,both
+12,create_date,datetime,datetime,,Created on,Created on,both
+13,child_line_ids,one2many,one2many,mrp.bom.line,BOM lines of the referred bom,BOM lines of the referred bom,both
+14,id,integer,integer,,ID,ID,both
+15,child_bom_id,many2one,many2one,mrp.bom,Sub BoM,Sub BoM,both
+,,,,
+16,has_attachments,boolean,,,Has Attachments,,version 1
+17,routing_id,many2one,,mrp.routing,Routing,,version 1
+18,attribute_value_ids,many2many,,product.attribute.value,Variants,,version 1
+,,,,
+19,parent_product_tmpl_id,,many2one,product.template,,Parent Product Template,version 2
+20,possible_bom_product_template_attribute_value_ids,,many2many,product.template.attribute.value,,Possible Bom Product Template Attribute Value,version 2
+21,attachments_count,,integer,,,Attachments Count,version 2
+22,company_id,,many2one,res.company,,Company,version 2
+23,product_uom_category_id,,many2one,uom.category,,Category,version 2
+24,product_tmpl_id,,many2one,product.template,,Product Template,version 2
+25,bom_product_template_attribute_value_ids,,many2many,product.template.attribute.value,,Apply on Variants,version 2
+26,allowed_operation_ids,,many2many,mrp.routing.workcenter,,Allowed Operation,version 2
+,,,,
+,,,,

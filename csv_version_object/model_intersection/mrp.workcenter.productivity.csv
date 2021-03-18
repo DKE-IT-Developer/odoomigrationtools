@@ -1,0 +1,25 @@
+model,mrp.workcenter.productivity,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,date_start,datetime,datetime,,Start Date,Start Date,both
+3,user_id,many2one,many2one,res.users,User,User,both
+4,description,text,text,,Description,Description,both
+5,loss_type,selection,selection,,Effectiveness Category,Effectiveness,both
+6,loss_id,many2one,many2one,mrp.workcenter.productivity.loss,Loss Reason,Loss Reason,both
+7,date_end,datetime,datetime,,End Date,End Date,both
+8,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+9,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+10,workorder_id,many2one,many2one,mrp.workorder,Work Order,Work Order,both
+11,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+12,workcenter_id,many2one,many2one,mrp.workcenter,Work Center,Work Center,both
+13,duration,float,float,,Duration,Duration,both
+14,create_date,datetime,datetime,,Created on,Created on,both
+15,id,integer,integer,,ID,ID,both
+16,display_name,char,char,,Display Name,Display Name,both
+,,,,
+,,,,
+17,production_id,,many2one,mrp.production,,Manufacturing Order,version 2
+18,cost_already_recorded,,boolean,,,Cost Recorded,version 2
+19,company_id,,many2one,res.company,,Company,version 2
+,,,,
+,,,,

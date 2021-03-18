@@ -1,0 +1,24 @@
+model,product.attribute.value,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,html_color,char,char,,HTML Color Index,Color,both
+2,display_name,char,char,,Display Name,Display Name,both
+3,name,char,char,,Value,Value,both
+4,create_uid,many2one,many2one,res.users,Created by,Created by,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+6,sequence,integer,integer,,Sequence,Sequence,both
+7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+8,attribute_id,many2one,many2one,product.attribute,Attribute,Attribute,both
+9,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+10,create_date,datetime,datetime,,Created on,Created on,both
+11,id,integer,integer,,ID,ID,both
+,,,,
+12,price_ids,one2many,,product.attribute.price,Attribute Prices,,version 1
+13,product_ids,many2many,,product.product,Variants,,version 1
+14,price_extra,float,,,Attribute Price Extra,,version 1
+,,,,
+15,is_custom,,boolean,,,Is custom value,version 2
+16,is_used_on_products,,boolean,,,Used on Products,version 2
+17,display_type,,selection,,,Display Type,version 2
+18,pav_attribute_line_ids,,many2many,product.template.attribute.line,,Lines,version 2
+,,,,
+,,,,

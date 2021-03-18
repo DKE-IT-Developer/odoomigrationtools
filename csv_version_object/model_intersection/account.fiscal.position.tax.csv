@@ -1,0 +1,17 @@
+model,account.fiscal.position.tax,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,display_name,char,char,,Display Name,Display Name,both
+3,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+4,position_id,many2one,many2one,account.fiscal.position,Fiscal Position,Fiscal Position,both
+5,tax_src_id,many2one,many2one,account.tax,Tax on Product,Tax on Product,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+7,tax_dest_id,many2one,many2one,account.tax,Tax to Apply,Tax to Apply,both
+8,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+9,create_date,datetime,datetime,,Created on,Created on,both
+10,id,integer,integer,,ID,ID,both
+,,,,
+,,,,
+11,company_id,,many2one,res.company,,Company,version 2
+,,,,
+,,,,

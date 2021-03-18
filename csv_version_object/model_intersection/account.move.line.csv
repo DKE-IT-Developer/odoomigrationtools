@@ -1,0 +1,91 @@
+model,account.move.line,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_date,datetime,datetime,,Created on,Created on,both
+2,statement_id,many2one,many2one,account.bank.statement,Statement,Statement,both
+3,analytic_tag_ids,many2many,many2many,account.analytic.tag,Analytic tags,Analytic Tags,both
+4,company_id,many2one,many2one,res.company,Company,Company,both
+5,currency_id,many2one,many2one,res.currency,Currency,Currency,both
+6,date_maturity,date,date,,Due date,Due Date,both
+7,matched_debit_ids,one2many,one2many,account.partial.reconcile,Matched debit ids,Matched Debits,both
+8,partner_id,many2one,many2one,res.partner,Partner,Partner,both
+9,id,integer,integer,,ID,ID,both
+10,account_id,many2one,many2one,account.account,Account,Account,both
+11,analytic_account_id,many2one,many2one,account.analytic.account,Analytic Account,Analytic Account,both
+12,create_uid,many2one,many2one,res.users,Created by,Created by,both
+13,display_name,char,char,,Display Name,Display Name,both
+14,full_reconcile_id,many2one,many2one,account.full.reconcile,Matching Number,Matching,both
+15,journal_id,many2one,many2one,account.journal,Journal,Journal,both
+16,amount_residual_currency,monetary,monetary,,Residual Amount in Currency,Residual Amount in Currency,both
+17,debit,monetary,monetary,,Debit,Debit,both
+18,blocked,boolean,boolean,,No Follow-up,No Follow-up,both
+19,ref,char,char,,Reference,Reference,both
+20,tax_ids,many2many,many2many,account.tax,Taxes,Taxes,both
+21,matched_credit_ids,one2many,one2many,account.partial.reconcile,Matched credit ids,Matched Credits,both
+22,reconciled,boolean,boolean,,Reconciled,Reconciled,both
+23,credit,monetary,monetary,,Credit,Credit,both
+24,analytic_line_ids,one2many,one2many,account.analytic.line,Analytic lines,Analytic lines,both
+25,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+26,date,date,date,,Date,Date,both
+27,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+28,move_id,many2one,many2one,account.move,Journal Entry,Journal Entry,both
+29,name,char,char,,Label,Label,both
+30,payment_id,many2one,many2one,account.payment,Originator Payment,Originator Payment,both
+31,company_currency_id,many2one,many2one,res.currency,Company Currency,Company Currency,both
+32,product_id,many2one,many2one,product.product,Product,Product,both
+33,product_uom_id,many2one,many2one,uom.uom,Unit of Measure,Unit of Measure,both
+34,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+35,tax_line_id,many2one,many2one,account.tax,Originator tax,Originator Tax,both
+36,amount_residual,monetary,monetary,,Residual Amount,Residual Amount,both
+37,tax_exigible,boolean,boolean,,Appears in VAT report,Appears in VAT report,both
+38,amount_currency,monetary,monetary,,Amount currency,Amount in Currency,both
+39,balance,monetary,monetary,,Balance,Balance,both
+40,quantity,float,float,,Quantity,Quantity,both
+,,,,
+41,debit_cash_basis,monetary,,,Debit cash basis,,version 1
+42,invoice_id,many2one,,account.invoice,Invoice id,,version 1
+43,counterpart,char,,,Counterpart,,version 1
+44,credit_cash_basis,monetary,,,Credit cash basis,,version 1
+45,balance_cash_basis,monetary,,,Balance cash basis,,version 1
+46,narration,text,,,Narration,,version 1
+47,user_type_id,many2one,,account.account.type,Type,,version 1
+,,,,
+48,sale_line_ids,,many2many,sale.order.line,,Sales Order Lines,version 2
+49,price_unit,,float,,,Unit Price,version 2
+50,predict_from_name,,boolean,,,Predict From Name,version 2
+51,exclude_from_invoice_tab,,boolean,,,Exclude From Invoice Tab,version 2
+52,tax_tag_ids,,many2many,account.account.tag,,Tags,version 2
+53,reconcile_model_id,,many2one,account.reconcile.model,,Reconciliation Model,version 2
+54,expected_pay_date,,date,,,Expected Payment Date,version 2
+55,purchase_order_id,,many2one,purchase.order,,Purchase Order,version 2
+56,followup_date,,date,,,Latest Follow-up,version 2
+57,cumulated_balance,,monetary,,,Cumulated Balance,version 2
+58,tax_base_amount,,monetary,,,Base Amount,version 2
+59,next_action_date,,date,,,Next Action Date,version 2
+60,is_rounding_line,,boolean,,,Is Rounding Line,version 2
+61,account_root_id,,many2one,account.root,,Account Root,version 2
+62,asset_ids,,many2many,account.asset,,Asset Linked,version 2
+63,sequence,,integer,,,Sequence,version 2
+64,account_internal_type,,selection,,,Internal Type,version 2
+65,price_subtotal,,monetary,,,Subtotal,version 2
+66,expense_id,,many2one,hr.expense,,Expense,version 2
+67,account_internal_group,,selection,,,Internal Group,version 2
+68,product_uom_category_id,,many2one,uom.category,,Category,version 2
+69,statement_line_id,,many2one,account.bank.statement.line,,Originator Statement Line,version 2
+70,matching_number,,char,,,Matching #,version 2
+71,purchase_line_id,,many2one,purchase.order.line,,Purchase Order Line,version 2
+72,tax_audit,,char,,,Tax Audit String,version 2
+73,recompute_tax_line,,boolean,,,Recompute Tax Line,version 2
+74,parent_state,,selection,,,Status,version 2
+75,move_name,,char,,,Number,version 2
+76,discount,,float,,,Discount (%),version 2
+77,tax_fiscal_country_id,,many2one,res.country,,Fiscal Country,version 2
+78,display_type,,selection,,,Display Type,version 2
+79,internal_note,,text,,,Internal Note,version 2
+80,tax_repartition_line_id,,many2one,account.tax.repartition.line,,Originator Tax Distribution Line,version 2
+81,price_total,,monetary,,,Total,version 2
+82,move_attachment_ids,,one2many,ir.attachment,,Move Attachment,version 2
+83,followup_line_id,,many2one,account_followup.followup.line,,Follow-up Level,version 2
+84,tax_group_id,,many2one,account.tax.group,,Originator tax group,version 2
+85,is_anglo_saxon_line,,boolean,,,Is Anglo Saxon Line,version 2
+,,,,
+,,,,

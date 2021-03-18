@@ -1,0 +1,16 @@
+model,base_import.tests.models.preview,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,othervalue,integer,integer,,Other Variable,Other Variable,both
+3,display_name,char,char,,Display Name,Display Name,both
+4,name,char,char,,Name,Name,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+7,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+8,create_date,datetime,datetime,,Created on,Created on,both
+9,somevalue,integer,integer,,Some Value,Some Value,both
+10,id,integer,integer,,ID,ID,both
+,,,,
+,,,,
+,,,,
+,,,,

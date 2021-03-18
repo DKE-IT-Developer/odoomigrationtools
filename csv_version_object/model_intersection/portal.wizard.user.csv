@@ -1,0 +1,18 @@
+model,portal.wizard.user,transient,True
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,user_id,many2one,many2one,res.users,Login User,Login User,both
+3,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+4,wizard_id,many2one,many2one,portal.wizard,Wizard,Wizard,both
+5,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+6,email,char,char,,Email,Email,both
+7,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+8,create_date,datetime,datetime,,Created on,Created on,both
+9,in_portal,boolean,boolean,,In Portal,In Portal,both
+10,partner_id,many2one,many2one,res.partner,Contact,Contact,both
+11,id,integer,integer,,ID,ID,both
+12,display_name,char,char,,Display Name,Display Name,both
+,,,,
+,,,,
+,,,,
+,,,,

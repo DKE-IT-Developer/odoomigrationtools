@@ -1,0 +1,22 @@
+model,payment.token,transient,False
+no,field,type1,type2,relation,string1,string2,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,both
+2,display_name,char,char,,Display Name,Display Name,both
+3,name,char,char,,Name,Name,both
+4,short_name,char,char,,Short name,Short name,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
+7,acquirer_ref,char,char,,Acquirer Ref.,Acquirer Ref.,both
+8,acquirer_id,many2one,many2one,payment.acquirer,Acquirer Account,Acquirer Account,both
+9,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
+10,active,boolean,boolean,,Active,Active,both
+11,create_date,datetime,datetime,,Created on,Created on,both
+12,partner_id,many2one,many2one,res.partner,Partner,Partner,both
+13,id,integer,integer,,ID,ID,both
+14,payment_ids,one2many,one2many,payment.transaction,Payment Transactions,Payment Transactions,both
+,,,,
+,,,,
+15,verified,,boolean,,,Verified,version 2
+16,company_id,,many2one,res.company,,Company,version 2
+,,,,
+,,,,
