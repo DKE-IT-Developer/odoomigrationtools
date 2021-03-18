@@ -1,4 +1,4 @@
-from odoo_object import OdooObject
+from odoo_object_xmlrpc import OdooObject
 import sys
 
 url1 = sys.argv[1]

@@ -2,7 +2,7 @@
 import csv
 import os
 import sys
-from odoo_object import OdooObject
+from odoo_object_xmlrpc import OdooObject
 
 os.environ["PYTHONIOENCODING"] = "utf-8"
 if not os.path.exists('csv'):
