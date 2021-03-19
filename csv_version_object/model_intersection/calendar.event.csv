@@ -1,86 +1,86 @@
 model,calendar.event,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,message_follower_ids,one2many,one2many,mail.followers,Followers,Followers,both
-2,allday,boolean,boolean,,All Day,All Day,both
-3,create_date,datetime,datetime,,Created on,Created on,both
-4,categ_ids,many2many,many2many,calendar.event.type,Tags,Tags,both
-5,message_needaction,boolean,boolean,,Action Needed,Action Needed,both
-6,message_channel_ids,many2many,many2many,mail.channel,Followers (Channels),Followers (Channels),both
-7,message_partner_ids,many2many,many2many,res.partner,Followers (Partners),Followers (Partners),both
-8,fr,boolean,boolean,,Fri,Fri,both
-9,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-10,attendee_status,selection,selection,,Attendee Status,Attendee Status,both
-11,month_by,selection,selection,,Option,Option,both
-12,rrule,char,char,,Recurrent Rule,Recurrent Rule,both
-13,duration,float,float,,Duration,Duration,both
-14,id,integer,integer,,ID,ID,both
-15,create_uid,many2one,many2one,res.users,Created by,Created by,both
-16,user_id,many2one,many2one,res.users,Responsible,Responsible,both
-17,message_is_follower,boolean,boolean,,Is Follower,Is Follower,both
-18,privacy,selection,selection,,Privacy,Privacy,both
-19,tu,boolean,boolean,,Tue,Tue,both
-20,recurrency,boolean,boolean,,Recurrent,Recurrent,both
-21,message_ids,one2many,one2many,mail.message,Messages,Messages,both
-22,start,datetime,datetime,,Start,Start,both
-23,location,char,char,,Location,Location,both
-24,th,boolean,boolean,,Thu,Thu,both
-25,partner_ids,many2many,many2many,res.partner,Attendees,Attendees,both
-26,start_date,date,date,,Start Date,Start Date,both
-27,display_time,char,char,,Event Time,Event Time,both
-28,description,text,text,,Description,Description,both
-29,stop_date,date,date,,End Date,End Date,both
-30,stop,datetime,datetime,,Stop,Stop,both
-31,byday,selection,selection,,By day,Byday,both
-32,interval,integer,integer,,Repeat Every,Repeat Every,both
-33,alarm_ids,many2many,many2many,calendar.alarm,Reminders,Reminders,both
-34,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-35,active,boolean,boolean,,Active,Active,both
-36,display_name,char,char,,Display Name,Display Name,both
-37,attendee_ids,one2many,one2many,calendar.attendee,Participant,Participant,both
-38,day,integer,integer,,Date of month,Date of month,both
-39,count,integer,integer,,Repeat,Repeat,both
-40,end_type,selection,selection,,Recurrence Termination,Recurrence Termination,both
-41,name,char,char,,Meeting Subject,Meeting Subject,both
-42,we,boolean,boolean,,Wed,Wed,both
-43,mo,boolean,boolean,,Mon,Mon,both
-44,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-45,su,boolean,boolean,,Sun,Sun,both
-46,message_needaction_counter,integer,integer,,Number of Actions,Number of Actions,both
-47,message_unread_counter,integer,integer,,Unread Messages Counter,Unread Messages Counter,both
-48,sa,boolean,boolean,,Sat,Sat,both
-49,message_unread,boolean,boolean,,Unread Messages,Unread Messages,both
-50,rrule_type,selection,selection,,Recurrence,Recurrence,both
-51,show_as,selection,selection,,Show Time as,Show Time as,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,message_follower_ids,one2many,one2many,mail.followers,Followers,Followers,False,both
+2,allday,boolean,boolean,,All Day,All Day,False,both
+3,create_date,datetime,datetime,,Created on,Created on,False,both
+4,categ_ids,many2many,many2many,calendar.event.type,Tags,Tags,False,both
+5,message_needaction,boolean,boolean,,Action Needed,Action Needed,False,both
+6,message_channel_ids,many2many,many2many,mail.channel,Followers (Channels),Followers (Channels),False,both
+7,message_partner_ids,many2many,many2many,res.partner,Followers (Partners),Followers (Partners),False,both
+8,fr,boolean,boolean,,Fri,Fri,False,both
+9,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+10,attendee_status,selection,selection,,Attendee Status,Attendee Status,False,both
+11,month_by,selection,selection,,Option,Option,False,both
+12,rrule,char,char,,Recurrent Rule,Recurrent Rule,False,both
+13,duration,float,float,,Duration,Duration,False,both
+14,id,integer,integer,,ID,ID,False,both
+15,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+16,user_id,many2one,many2one,res.users,Responsible,Responsible,False,both
+17,message_is_follower,boolean,boolean,,Is Follower,Is Follower,False,both
+18,privacy,selection,selection,,Privacy,Privacy,True,both
+19,tu,boolean,boolean,,Tue,Tue,False,both
+20,recurrency,boolean,boolean,,Recurrent,Recurrent,False,both
+21,message_ids,one2many,one2many,mail.message,Messages,Messages,False,both
+22,start,datetime,datetime,,Start,Start,True,both
+23,location,char,char,,Location,Location,False,both
+24,th,boolean,boolean,,Thu,Thu,False,both
+25,partner_ids,many2many,many2many,res.partner,Attendees,Attendees,False,both
+26,start_date,date,date,,Start Date,Start Date,False,both
+27,display_time,char,char,,Event Time,Event Time,False,both
+28,description,text,text,,Description,Description,False,both
+29,stop_date,date,date,,End Date,End Date,False,both
+30,stop,datetime,datetime,,Stop,Stop,True,both
+31,byday,selection,selection,,By day,Byday,False,both
+32,interval,integer,integer,,Repeat Every,Repeat Every,False,both
+33,alarm_ids,many2many,many2many,calendar.alarm,Reminders,Reminders,False,both
+34,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+35,active,boolean,boolean,,Active,Active,False,both
+36,display_name,char,char,,Display Name,Display Name,False,both
+37,attendee_ids,one2many,one2many,calendar.attendee,Participant,Participant,False,both
+38,day,integer,integer,,Date of month,Date of month,False,both
+39,count,integer,integer,,Repeat,Repeat,False,both
+40,end_type,selection,selection,,Recurrence Termination,Recurrence Termination,False,both
+41,name,char,char,,Meeting Subject,Meeting Subject,True,both
+42,we,boolean,boolean,,Wed,Wed,False,both
+43,mo,boolean,boolean,,Mon,Mon,False,both
+44,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+45,su,boolean,boolean,,Sun,Sun,False,both
+46,message_needaction_counter,integer,integer,,Number of Actions,Number of Actions,False,both
+47,message_unread_counter,integer,integer,,Unread Messages Counter,Unread Messages Counter,False,both
+48,sa,boolean,boolean,,Sat,Sat,False,both
+49,message_unread,boolean,boolean,,Unread Messages,Unread Messages,False,both
+50,rrule_type,selection,selection,,Recurrence,Recurrence,False,both
+51,show_as,selection,selection,,Show Time as,Show Time as,True,both
 ,,,,
-52,start_datetime,datetime,,,Start DateTime,,version 1
-53,recurrent_id_date,datetime,,,Recurrent ID date,,version 1
-54,is_attendee,boolean,,,Attendee,,version 1
-55,stop_datetime,datetime,,,End Datetime,,version 1
-56,color_partner_id,integer,,,Color index of creator,,version 1
-57,recurrent_id,integer,,,Recurrent ID,,version 1
-58,display_start,char,,,Date,,version 1
-59,final_date,date,,,Repeat Until,,version 1
-60,message_last_post,datetime,,,Last Message Date,,version 1
-61,week_list,selection,,,Weekday,,version 1
-62,state,selection,,,Status,,version 1
+52,start_datetime,datetime,,,Start DateTime,,False,version 1
+53,recurrent_id_date,datetime,,,Recurrent ID date,,False,version 1
+54,is_attendee,boolean,,,Attendee,,False,version 1
+55,stop_datetime,datetime,,,End Datetime,,False,version 1
+56,color_partner_id,integer,,,Color index of creator,,False,version 1
+57,recurrent_id,integer,,,Recurrent ID,,False,version 1
+58,display_start,char,,,Date,,False,version 1
+59,final_date,date,,,Repeat Until,,False,version 1
+60,message_last_post,datetime,,,Last Message Date,,False,version 1
+61,week_list,selection,,,Weekday,,False,version 1
+62,state,selection,,,Status,,False,version 1
 ,,,,
-63,recurrence_id,,many2one,calendar.recurrence,,Recurrence Rule,version 2
-64,res_model,,char,,,Document Model Name,version 2
-65,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,version 2
-66,message_has_error,,boolean,,,Message Delivery error,version 2
-67,partner_id,,many2one,res.partner,,Responsible Contact,version 2
-68,message_has_sms_error,,boolean,,,SMS Delivery error,version 2
-69,message_attachment_count,,integer,,,Attachment Count,version 2
-70,res_id,,integer,,,Document ID,version 2
-71,until,,date,,,Until,version 2
-72,follow_recurrence,,boolean,,,Follow Recurrence,version 2
-73,is_highlighted,,boolean,,,Is the Event Highlighted,version 2
-74,message_has_error_counter,,integer,,,Number of errors,version 2
-75,recurrence_update,,selection,,,Recurrence Update,version 2
-76,event_tz,,selection,,,Timezone,version 2
-77,activity_ids,,one2many,mail.activity,,Activities,version 2
-78,res_model_id,,many2one,ir.model,,Document Model,version 2
-79,weekday,,selection,,,Weekday,version 2
-80,website_message_ids,,one2many,mail.message,,Website Messages,version 2
+63,recurrence_id,,many2one,calendar.recurrence,,Recurrence Rule,False,version 2
+64,res_model,,char,,,Document Model Name,False,version 2
+65,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,False,version 2
+66,message_has_error,,boolean,,,Message Delivery error,False,version 2
+67,partner_id,,many2one,res.partner,,Responsible Contact,False,version 2
+68,message_has_sms_error,,boolean,,,SMS Delivery error,False,version 2
+69,message_attachment_count,,integer,,,Attachment Count,False,version 2
+70,res_id,,integer,,,Document ID,False,version 2
+71,until,,date,,,Until,False,version 2
+72,follow_recurrence,,boolean,,,Follow Recurrence,False,version 2
+73,is_highlighted,,boolean,,,Is the Event Highlighted,False,version 2
+74,message_has_error_counter,,integer,,,Number of errors,False,version 2
+75,recurrence_update,,selection,,,Recurrence Update,False,version 2
+76,event_tz,,selection,,,Timezone,False,version 2
+77,activity_ids,,one2many,mail.activity,,Activities,False,version 2
+78,res_model_id,,many2one,ir.model,,Document Model,False,version 2
+79,weekday,,selection,,,Weekday,False,version 2
+80,website_message_ids,,one2many,mail.message,,Website Messages,False,version 2
 ,,,,
 ,,,,

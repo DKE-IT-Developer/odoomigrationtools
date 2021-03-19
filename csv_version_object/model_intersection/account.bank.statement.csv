@@ -1,56 +1,56 @@
 model,account.bank.statement,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,message_follower_ids,one2many,one2many,mail.followers,Followers,Followers,both
-2,create_date,datetime,datetime,,Created on,Created on,both
-3,reference,char,char,,External Reference,External Reference,both
-4,message_needaction,boolean,boolean,,Action Needed,Action Needed,both
-5,message_channel_ids,many2many,many2many,mail.channel,Followers (Channels),Followers (Channels),both
-6,message_partner_ids,many2many,many2many,res.partner,Followers (Partners),Followers (Partners),both
-7,balance_start,monetary,monetary,,Starting Balance,Starting Balance,both
-8,company_id,many2one,many2one,res.company,Company,Company,both
-9,currency_id,many2one,many2one,res.currency,Currency,Currency,both
-10,id,integer,integer,,ID,ID,both
-11,create_uid,many2one,many2one,res.users,Created by,Created by,both
-12,difference,monetary,monetary,,Difference,Difference,both
-13,user_id,many2one,many2one,res.users,Responsible,Responsible,both
-14,date_done,datetime,datetime,,Closed On,Closed On,both
-15,message_is_follower,boolean,boolean,,Is Follower,Is Follower,both
-16,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-17,journal_id,many2one,many2one,account.journal,Journal,Journal,both
-18,message_ids,one2many,one2many,mail.message,Messages,Messages,both
-19,state,selection,selection,,Status,Status,both
-20,all_lines_reconciled,boolean,boolean,,All lines reconciled,All Lines Reconciled,both
-21,message_unread_counter,integer,integer,,Unread Messages Counter,Unread Messages Counter,both
-22,cashbox_start_id,many2one,many2one,account.bank.statement.cashbox,Starting Cashbox,Starting Cashbox,both
-23,cashbox_end_id,many2one,many2one,account.bank.statement.cashbox,Ending Cashbox,Ending Cashbox,both
-24,journal_type,selection,selection,,Type,Type,both
-25,is_difference_zero,boolean,boolean,,Is zero,Is zero,both
-26,move_line_ids,one2many,one2many,account.move.line,Entry lines,Entry lines,both
-27,total_entry_encoding,monetary,monetary,,Transactions Subtotal,Transactions Subtotal,both
-28,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-29,date,date,date,,Date,Date,both
-30,display_name,char,char,,Display Name,Display Name,both
-31,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-32,name,char,char,,Reference,Reference,both
-33,balance_end,monetary,monetary,,Computed Balance,Computed Balance,both
-34,message_needaction_counter,integer,integer,,Number of Actions,Number of Actions,both
-35,line_ids,one2many,one2many,account.bank.statement.line,Statement lines,Statement lines,both
-36,message_unread,boolean,boolean,,Unread Messages,Unread Messages,both
-37,balance_end_real,monetary,monetary,,Ending Balance,Ending Balance,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,message_follower_ids,one2many,one2many,mail.followers,Followers,Followers,False,both
+2,create_date,datetime,datetime,,Created on,Created on,False,both
+3,reference,char,char,,External Reference,External Reference,False,both
+4,message_needaction,boolean,boolean,,Action Needed,Action Needed,False,both
+5,message_channel_ids,many2many,many2many,mail.channel,Followers (Channels),Followers (Channels),False,both
+6,message_partner_ids,many2many,many2many,res.partner,Followers (Partners),Followers (Partners),False,both
+7,balance_start,monetary,monetary,,Starting Balance,Starting Balance,False,both
+8,company_id,many2one,many2one,res.company,Company,Company,False,both
+9,currency_id,many2one,many2one,res.currency,Currency,Currency,False,both
+10,id,integer,integer,,ID,ID,False,both
+11,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+12,difference,monetary,monetary,,Difference,Difference,False,both
+13,user_id,many2one,many2one,res.users,Responsible,Responsible,False,both
+14,date_done,datetime,datetime,,Closed On,Closed On,False,both
+15,message_is_follower,boolean,boolean,,Is Follower,Is Follower,False,both
+16,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+17,journal_id,many2one,many2one,account.journal,Journal,Journal,True,both
+18,message_ids,one2many,one2many,mail.message,Messages,Messages,False,both
+19,state,selection,selection,,Status,Status,True,both
+20,all_lines_reconciled,boolean,boolean,,All lines reconciled,All Lines Reconciled,False,both
+21,message_unread_counter,integer,integer,,Unread Messages Counter,Unread Messages Counter,False,both
+22,cashbox_start_id,many2one,many2one,account.bank.statement.cashbox,Starting Cashbox,Starting Cashbox,False,both
+23,cashbox_end_id,many2one,many2one,account.bank.statement.cashbox,Ending Cashbox,Ending Cashbox,False,both
+24,journal_type,selection,selection,,Type,Type,False,both
+25,is_difference_zero,boolean,boolean,,Is zero,Is zero,False,both
+26,move_line_ids,one2many,one2many,account.move.line,Entry lines,Entry lines,False,both
+27,total_entry_encoding,monetary,monetary,,Transactions Subtotal,Transactions Subtotal,False,both
+28,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+29,date,date,date,,Date,Date,True,both
+30,display_name,char,char,,Display Name,Display Name,False,both
+31,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+32,name,char,char,,Reference,Reference,False,both
+33,balance_end,monetary,monetary,,Computed Balance,Computed Balance,False,both
+34,message_needaction_counter,integer,integer,,Number of Actions,Number of Actions,False,both
+35,line_ids,one2many,one2many,account.bank.statement.line,Statement lines,Statement lines,False,both
+36,message_unread,boolean,boolean,,Unread Messages,Unread Messages,False,both
+37,balance_end_real,monetary,monetary,,Ending Balance,Ending Balance,False,both
 ,,,,
-38,message_last_post,datetime,,,Last Message Date,,version 1
+38,message_last_post,datetime,,,Last Message Date,,False,version 1
 ,,,,
-39,message_has_error_counter,,integer,,,Number of errors,version 2
-40,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,version 2
-41,message_has_error,,boolean,,,Message Delivery error,version 2
-42,country_code,,char,,,Country Code,version 2
-43,sequence_prefix,,char,,,Sequence Prefix,version 2
-44,previous_statement_id,,many2one,account.bank.statement,,Previous Statement,version 2
-45,message_has_sms_error,,boolean,,,SMS Delivery error,version 2
-46,is_valid_balance_start,,boolean,,,Is Valid Balance Start,version 2
-47,move_line_count,,integer,,,Move Line Count,version 2
-48,message_attachment_count,,integer,,,Attachment Count,version 2
-49,website_message_ids,,one2many,mail.message,,Website Messages,version 2
-50,sequence_number,,integer,,,Sequence Number,version 2
+39,message_has_error_counter,,integer,,,Number of errors,False,version 2
+40,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,False,version 2
+41,message_has_error,,boolean,,,Message Delivery error,False,version 2
+42,country_code,,char,,,Country Code,False,version 2
+43,sequence_prefix,,char,,,Sequence Prefix,False,version 2
+44,previous_statement_id,,many2one,account.bank.statement,,Previous Statement,False,version 2
+45,message_has_sms_error,,boolean,,,SMS Delivery error,False,version 2
+46,is_valid_balance_start,,boolean,,,Is Valid Balance Start,False,version 2
+47,move_line_count,,integer,,,Move Line Count,False,version 2
+48,message_attachment_count,,integer,,,Attachment Count,False,version 2
+49,website_message_ids,,one2many,mail.message,,Website Messages,False,version 2
+50,sequence_number,,integer,,,Sequence Number,False,version 2
 ,,,,
 ,,,,

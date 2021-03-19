@@ -1,54 +1,54 @@
 model,mrp.unbuild,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,message_follower_ids,one2many,one2many,mail.followers,Followers,Followers,both
-2,create_date,datetime,datetime,,Created on,Created on,both
-3,has_tracking,selection,selection,,Tracking,Tracking,both
-4,message_channel_ids,many2many,many2many,mail.channel,Followers (Channels),Followers (Channels),both
-5,message_partner_ids,many2many,many2many,res.partner,Followers (Partners),Followers (Partners),both
-6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-7,product_qty,float,float,,Quantity,Quantity,both
-8,lot_id,many2one,many2one,stock.production.lot,Lot,Lot/Serial Number,both
-9,location_id,many2one,many2one,stock.location,Location,Source Location,both
-10,id,integer,integer,,ID,ID,both
-11,create_uid,many2one,many2one,res.users,Created by,Created by,both
-12,display_name,char,char,,Display Name,Display Name,both
-13,message_is_follower,boolean,boolean,,Is Follower,Is Follower,both
-14,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-15,produce_line_ids,one2many,one2many,stock.move,Produce line ids,Processed Disassembly Lines,both
-16,message_ids,one2many,one2many,mail.message,Messages,Messages,both
-17,message_needaction,boolean,boolean,,Action Needed,Action Needed,both
-18,state,selection,selection,,Status,Status,both
-19,consume_line_ids,one2many,one2many,stock.move,Consume line ids,Consumed Disassembly Lines,both
-20,mo_id,many2one,many2one,mrp.production,Manufacturing Order,Manufacturing Order,both
-21,bom_id,many2one,many2one,mrp.bom,Bill of Material,Bill of Material,both
-22,message_unread_counter,integer,integer,,Unread Messages Counter,Unread Messages Counter,both
-23,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-24,name,char,char,,Reference,Reference,both
-25,product_id,many2one,many2one,product.product,Product,Product,both
-26,product_uom_id,many2one,many2one,uom.uom,Unit of Measure,Unit of Measure,both
-27,location_dest_id,many2one,many2one,stock.location,Destination Location,Destination Location,both
-28,message_unread,boolean,boolean,,Unread Messages,Unread Messages,both
-29,message_needaction_counter,integer,integer,,Number of Actions,Number of Actions,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,message_follower_ids,one2many,one2many,mail.followers,Followers,Followers,False,both
+2,create_date,datetime,datetime,,Created on,Created on,False,both
+3,has_tracking,selection,selection,,Tracking,Tracking,False,both
+4,message_channel_ids,many2many,many2many,mail.channel,Followers (Channels),Followers (Channels),False,both
+5,message_partner_ids,many2many,many2many,res.partner,Followers (Partners),Followers (Partners),False,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+7,product_qty,float,float,,Quantity,Quantity,True,both
+8,lot_id,many2one,many2one,stock.production.lot,Lot,Lot/Serial Number,False,both
+9,location_id,many2one,many2one,stock.location,Location,Source Location,True,both
+10,id,integer,integer,,ID,ID,False,both
+11,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+12,display_name,char,char,,Display Name,Display Name,False,both
+13,message_is_follower,boolean,boolean,,Is Follower,Is Follower,False,both
+14,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+15,produce_line_ids,one2many,one2many,stock.move,Produce line ids,Processed Disassembly Lines,False,both
+16,message_ids,one2many,one2many,mail.message,Messages,Messages,False,both
+17,message_needaction,boolean,boolean,,Action Needed,Action Needed,False,both
+18,state,selection,selection,,Status,Status,False,both
+19,consume_line_ids,one2many,one2many,stock.move,Consume line ids,Consumed Disassembly Lines,False,both
+20,mo_id,many2one,many2one,mrp.production,Manufacturing Order,Manufacturing Order,False,both
+21,bom_id,many2one,many2one,mrp.bom,Bill of Material,Bill of Material,False,both
+22,message_unread_counter,integer,integer,,Unread Messages Counter,Unread Messages Counter,False,both
+23,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+24,name,char,char,,Reference,Reference,False,both
+25,product_id,many2one,many2one,product.product,Product,Product,True,both
+26,product_uom_id,many2one,many2one,uom.uom,Unit of Measure,Unit of Measure,True,both
+27,location_dest_id,many2one,many2one,stock.location,Destination Location,Destination Location,True,both
+28,message_unread,boolean,boolean,,Unread Messages,Unread Messages,False,both
+29,message_needaction_counter,integer,integer,,Number of Actions,Number of Actions,False,both
 ,,,,
-30,message_last_post,datetime,,,Last Message Date,,version 1
+30,message_last_post,datetime,,,Last Message Date,,False,version 1
 ,,,,
-31,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,version 2
-32,message_has_error,,boolean,,,Message Delivery error,version 2
-33,activity_date_deadline,,date,,,Next Activity Deadline,version 2
-34,activity_exception_decoration,,selection,,,Activity Exception Decoration,version 2
-35,message_has_sms_error,,boolean,,,SMS Delivery error,version 2
-36,activity_type_icon,,char,,,Activity Type Icon,version 2
-37,company_id,,many2one,res.company,,Company,version 2
-38,activity_user_id,,many2one,res.users,,Responsible User,version 2
-39,message_attachment_count,,integer,,,Attachment Count,version 2
-40,mo_bom_id,,many2one,mrp.bom,,Bill of Material used on the Production Order,version 2
-41,message_has_error_counter,,integer,,,Number of errors,version 2
-42,activity_type_id,,many2one,mail.activity.type,,Next Activity Type,version 2
-43,activity_ids,,one2many,mail.activity,,Activities,version 2
-44,activity_summary,,char,,,Next Activity Summary,version 2
-45,activity_exception_icon,,char,,,Icon,version 2
-46,allowed_mo_ids,,one2many,mrp.production,,Allowed Mo,version 2
-47,activity_state,,selection,,,Activity State,version 2
-48,website_message_ids,,one2many,mail.message,,Website Messages,version 2
+31,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,False,version 2
+32,message_has_error,,boolean,,,Message Delivery error,False,version 2
+33,activity_date_deadline,,date,,,Next Activity Deadline,False,version 2
+34,activity_exception_decoration,,selection,,,Activity Exception Decoration,False,version 2
+35,message_has_sms_error,,boolean,,,SMS Delivery error,False,version 2
+36,activity_type_icon,,char,,,Activity Type Icon,False,version 2
+37,company_id,,many2one,res.company,,Company,True,version 2
+38,activity_user_id,,many2one,res.users,,Responsible User,False,version 2
+39,message_attachment_count,,integer,,,Attachment Count,False,version 2
+40,mo_bom_id,,many2one,mrp.bom,,Bill of Material used on the Production Order,False,version 2
+41,message_has_error_counter,,integer,,,Number of errors,False,version 2
+42,activity_type_id,,many2one,mail.activity.type,,Next Activity Type,False,version 2
+43,activity_ids,,one2many,mail.activity,,Activities,False,version 2
+44,activity_summary,,char,,,Next Activity Summary,False,version 2
+45,activity_exception_icon,,char,,,Icon,False,version 2
+46,allowed_mo_ids,,one2many,mrp.production,,Allowed Mo,False,version 2
+47,activity_state,,selection,,,Activity State,False,version 2
+48,website_message_ids,,one2many,mail.message,,Website Messages,False,version 2
 ,,,,
 ,,,,

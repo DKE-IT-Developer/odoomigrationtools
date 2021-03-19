@@ -1,291 +1,291 @@
 model,res.config.settings,transient,True
-no,field,type1,type2,relation,string1,string2,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,both
-2,create_date,datetime,datetime,,Created on,Created on,both
-3,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-4,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-5,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-6,display_name,char,char,,Display Name,Display Name,both
-7,id,integer,integer,,ID,ID,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+2,create_date,datetime,datetime,,Created on,Created on,False,both
+3,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+4,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+5,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+6,display_name,char,char,,Display Name,Display Name,False,both
+7,id,integer,integer,,ID,ID,False,both
 ,,,,
 ,,,,
-8,google_management_client_id,,char,,,Google Client ID,version 2
-9,module_quality_control,,boolean,,,Quality,version 2
-10,sale_delivery_settings,,selection,,,Shipping Management,version 2
-11,is_installed_sale,,boolean,,,Is the Sale Module Installed,version 2
-12,group_warning_purchase,,boolean,,,Purchase Warnings,version 2
-13,website_name,,char,,,Website Name,version 2
-14,website_language_count,,integer,,,Number of languages,version 2
-15,enable_ocn,,boolean,,,Push Notifications,version 2
-16,google_search_console,,char,,,Google Search Console,version 2
-17,website_company_id,,many2one,res.company,,Website Company,version 2
-18,group_warning_stock,,boolean,,,Warnings for Stock,version 2
-19,hr_employee_self_edit,,boolean,,,Employee Editing,version 2
-20,digest_id,,many2one,digest.digest,,Digest Email,version 2
-21,qr_code,,boolean,,,Display SEPA QR-code,version 2
-22,company_id,,many2one,res.company,,Company,version 2
-23,default_invoice_policy,,selection,,,Invoicing Policy,version 2
-24,group_cash_rounding,,boolean,,,Cash Rounding,version 2
-25,auth_signup_template_user_id,,many2one,res.users,,Template user for new users created through signup,version 2
-26,module_web_unsplash,,boolean,,,Unsplash Image Library,version 2
-27,lock_confirmed_po,,boolean,,,Lock Confirmed Orders,version 2
-28,invoice_is_print,,boolean,,,Print,version 2
-29,active_user_count,,integer,,,Number of Active Users,version 2
-30,module_account_payment,,boolean,,,Invoice Online Payment,version 2
-31,account_tax_periodicity,,selection,,,Periodicity,version 2
-32,snailmail_cover,,boolean,,,Add a Cover Page,version 2
-33,has_social_network,,boolean,,,Configure Social Network,version 2
-34,tax_cash_basis_journal_id,,many2one,account.journal,,Tax Cash Basis Journal,version 2
-35,group_auto_done_setting,,boolean,,,Lock Confirmed Sales,version 2
-36,module_account_3way_match,,boolean,,,"3-way matching: purchases, receptions and bills",version 2
-37,chart_template_id,,many2one,account.chart.template,,Template,version 2
-38,snailmail_duplex,,boolean,,,Print Both sides,version 2
-39,module_mrp_plm,,boolean,,,Product Lifecycle Management (PLM),version 2
-40,specific_user_account,,boolean,,,Specific User Account,version 2
-41,use_manufacturing_lead,,boolean,,,Default Manufacturing Lead Time,version 2
-42,hr_presence_control_email_amount,,integer,,,# emails to send,version 2
-43,social_instagram,,char,,,Instagram Account,version 2
-44,automatic_invoice,,boolean,,,Automatic Invoice,version 2
-45,country_code,,char,,,Country Code,version 2
-46,website_id,,many2one,website,,website,version 2
-47,group_mrp_byproducts,,boolean,,,By-Products,version 2
-48,social_linkedin,,char,,,LinkedIn Account,version 2
-49,module_stock_picking_batch,,boolean,,,Batch Pickings,version 2
-50,stock_sms_confirmation_template_id,,many2one,sms.template,,SMS Template,version 2
-51,website_default_lang_code,,char,,,Default language code,version 2
-52,module_project_forecast,,boolean,,,Planning,version 2
-53,group_product_variant,,boolean,,,Variants,version 2
-54,group_show_sale_receipts,,boolean,,,Sale Receipt,version 2
-55,website_cookies_bar,,boolean,,,Cookies Bar,version 2
-56,has_chart_of_accounts,,boolean,,,Company has a chart of accounts,version 2
-57,product_weight_in_lbs,,selection,,,Weight unit of measure,version 2
-58,account_tax_periodicity_journal_id,,many2one,account.journal,,Journal,version 2
-59,group_analytic_tags,,boolean,,,Analytic Tags,version 2
-60,has_default_share_image,,boolean,,,Use a image by default for sharing,version 2
-61,module_base_import,,boolean,,,Allow users to import data from CSV/XLS/XLSX/ODS files,version 2
-62,salesteam_id,,many2one,crm.team,,Sales Team,version 2
-63,totals_below_sections,,boolean,,,Add totals below sections,version 2
-64,po_lock,,selection,,,Purchase Order Modification *,version 2
-65,currency_exchange_journal_id,,many2one,account.journal,,Currency Exchange Journal,version 2
-66,company_informations,,text,,,Company Informations,version 2
-67,currency_interval_unit,,selection,,,Interval Unit,version 2
-68,module_base_gengo,,boolean,,,Translate Your Website with Gengo,version 2
-69,module_account,,boolean,,,Invoicing,version 2
-70,use_po_lead,,boolean,,,Security Lead Time for Purchase,version 2
-71,module_delivery_fedex,,boolean,,,FedEx Connector,version 2
-72,account_cash_basis_base_account_id,,many2one,account.account,,Base Tax Received Account,version 2
-73,recaptcha_private_key,,char,,,Secret Key,version 2
-74,stock_move_sms_validation,,boolean,,,SMS Validation with stock move,version 2
-75,confirmation_template_id,,many2one,mail.template,,Confirmation Email,version 2
-76,module_account_budget,,boolean,,,Budget Management,version 2
-77,module_website_sale_delivery,,boolean,,,eCommerce Shipping Costs,version 2
-78,group_mrp_routings,,boolean,,,MRP Work Orders,version 2
-79,recaptcha_min_score,,float,,,Minimum score,version 2
-80,group_locked_by_default,,boolean,,,Lock Quantities To Consume,version 2
-81,fiscalyear_lock_date,,date,,,Lock Date for All Users,version 2
-82,quotation_validity_days,,integer,,,Default Quotation Validity (Days),version 2
-83,module_currency_rate_live,,boolean,,,Automatic Currency Rates,version 2
-84,language_ids,,many2many,res.lang,,Languages,version 2
-85,module_sale_amazon,,boolean,,,Amazon Sync,version 2
-86,website_country_group_ids,,many2many,res.country.group,,Country Groups,version 2
-87,fiscalyear_last_day,,integer,,,Fiscalyear Last Day,version 2
-88,map_box_token,,char,,,Token Map Box,version 2
-89,module_mrp_subcontracting,,boolean,,,Subcontracting,version 2
-90,module_account_bank_statement_import_camt,,boolean,,,Import in CAMT.053 format,version 2
-91,website_warehouse_id,,many2one,stock.warehouse,,Warehouse,version 2
-92,transfer_account_id,,many2one,account.account,,Transfer Account,version 2
-93,group_lot_on_invoice,,boolean,,,Display Lots & Serial Numbers on Invoices,version 2
-94,module_sale_product_matrix,,boolean,,,Sales Grid Entry,version 2
-95,module_stock_sms,,boolean,,,SMS Confirmation,version 2
-96,google_management_client_secret,,char,,,Google Client Secret,version 2
-97,paperformat_id,,many2one,report.paperformat,,Paper format,version 2
-98,hr_presence_control_email,,boolean,,,Based on number of emails sent,version 2
-99,module_account_check_printing,,boolean,,,Allow check printing and deposits,version 2
-100,group_lot_on_delivery_slip,,boolean,,,Display Lots & Serial Numbers on Delivery Slips,version 2
-101,module_stock_dropshipping,,boolean,,,Dropshipping,version 2
-102,social_youtube,,char,,,Youtube Account,version 2
-103,group_discount_per_so_line,,boolean,,,Discounts,version 2
-104,module_sale_margin,,boolean,,,Margins,version 2
-105,vat_check_vies,,boolean,,,Verify VAT Numbers,version 2
-106,show_effect,,boolean,,,Show Effect,version 2
-107,stock_mail_confirmation_template_id,,many2one,mail.template,,Email Template confirmation picking,version 2
-108,hr_presence_control_ip,,boolean,,,Based on IP Address,version 2
-109,group_proforma_sales,,boolean,,,Pro-Forma Invoice,version 2
-110,use_mailgateway,,boolean,,,Let your employees record expenses by email,version 2
-111,module_hr_expense_extract,,boolean,,,Send bills to OCR to generate expenses,version 2
-112,module_product_margin,,boolean,,,Allow Product Margin,version 2
-113,social_default_image,,binary,,,Default Social Share Image,version 2
-114,purchase_tax_id,,many2one,account.tax,,Default Purchase Tax,version 2
-115,user_default_rights,,boolean,,,Default Access Rights,version 2
-116,group_stock_adv_location,,boolean,,,Multi-Step Routes,version 2
-117,l10n_id_tax_address,,char,,,Tax Address,version 2
-118,deposit_default_product_id,,many2one,product.product,,Deposit Product,version 2
-119,invoice_terms,,text,,,Terms & Conditions,version 2
-120,module_stock_barcode,,boolean,,,Barcode Scanner,version 2
-121,website_logo,,binary,,,Website Logo,version 2
-122,module_delivery,,boolean,,,Delivery Methods,version 2
-123,product_pricelist_setting,,selection,,,Pricelists Method,version 2
-124,show_line_subtotals_tax_selection,,selection,,,Line Subtotals Tax Display,version 2
-125,external_email_server_default,,boolean,,,External Email Servers,version 2
-126,has_google_search_console,,boolean,,,Console Google Search,version 2
-127,social_twitter,,char,,,Twitter Account,version 2
-128,has_google_analytics_dashboard,,boolean,,,Google Analytics Dashboard,version 2
-129,company_count,,integer,,,Number of Companies,version 2
-130,module_purchase_product_matrix,,boolean,,,Purchase Grid Entry,version 2
-131,group_show_purchase_receipts,,boolean,,,Purchase Receipt,version 2
-132,module_product_email_template,,boolean,,,Specific Email,version 2
-133,group_project_rating,,boolean,,,Customer Ratings,version 2
-134,module_hr_skills,,boolean,,,Skills Management,version 2
-135,group_warning_account,,boolean,,,Warnings in Invoices,version 2
-136,auth_signup_uninvited,,selection,,,Customer Account,version 2
-137,company_name,,char,,,Company Name,version 2
-138,company_so_template_id,,many2one,sale.order.template,,Default Template,version 2
-139,module_account_predictive_bills,,boolean,,,Account Predictive Bills,version 2
-140,module_google_drive,,boolean,,,Attach Google documents to any record,version 2
-141,account_tax_fiscal_country_id,,many2one,res.country,,Fiscal Country,version 2
-142,expense_extract_show_ocr_option_selection,,selection,,,Expense processing option,version 2
-143,group_stock_packaging,,boolean,,,Product Packagings,version 2
-144,module_account_yodlee,,boolean,,,Bank Interface - Sync your bank feeds automatically,version 2
-145,default_purchase_method,,selection,,,Bill Control,version 2
-146,language_count,,integer,,,Number of Languages,version 2
-147,recaptcha_public_key,,char,,,Site Key,version 2
-148,expense_alias_prefix,,char,,,Default Alias Name for Expenses,version 2
-149,digest_emails,,boolean,,,Digest Emails,version 2
-150,module_hr_presence,,boolean,,,Advanced Presence Control,version 2
-151,currency_next_execution_date,,date,,,Next Execution Date,version 2
-152,module_auth_oauth,,boolean,,,Use external authentication providers (OAuth),version 2
-153,fiscalyear_last_month,,selection,,,Fiscalyear Last Month,version 2
-154,tax_calculation_rounding_method,,selection,,,Tax calculation rounding method,version 2
-155,hr_presence_control_ip_list,,char,,,Valid IP addresses,version 2
-156,invoicing_switch_threshold,,date,,,Invoicing Switch Threshold,version 2
-157,cdn_filters,,text,,,CDN Filters,version 2
-158,days_to_purchase,,float,,,Days to Purchase,version 2
-159,stock_move_email_validation,,boolean,,,Email Confirmation picking,version 2
-160,hr_presence_control_login,,boolean,,,Based on user status in system,version 2
-161,group_sale_order_template,,boolean,,,Quotation Templates,version 2
-162,po_order_approval,,boolean,,,Purchase Order Approval,version 2
-163,website_domain,,char,,,Website Domain,version 2
-164,use_anglo_saxon,,boolean,,,Anglo-Saxon Accounting,version 2
-165,manufacturing_lead,,float,,,Manufacturing Lead Time,version 2
-166,alias_domain,,char,,,Alias Domain,version 2
-167,inventory_availability,,selection,,,Inventory Availability,version 2
-168,module_delivery_usps,,boolean,,,USPS Connector,version 2
-169,module_hr_timesheet,,boolean,,,Task Logs,version 2
-170,invoice_is_email,,boolean,,,Send Email,version 2
-171,group_project_recurring_tasks,,boolean,,,Recurring Tasks,version 2
-172,module_sale_product_configurator,,boolean,,,Product Configurator,version 2
-173,use_quotation_validity_days,,boolean,,,Default Quotation Validity,version 2
-174,currency_provider,,selection,,,Service Provider,version 2
-175,has_google_analytics,,boolean,,,Google Analytics,version 2
-176,fail_counter,,integer,,,Fail Mail,version 2
-177,module_website_sale_stock,,boolean,,,Inventory,version 2
-178,module_l10n_eu_service,,boolean,,,EU Digital Goods VAT,version 2
-179,module_website_sale_wishlist,,boolean,,,Wishlists,version 2
-180,module_delivery_bpost,,boolean,,,bpost Connector,version 2
-181,external_report_layout_id,,many2one,ir.ui.view,,Document Template,version 2
-182,module_delivery_ups,,boolean,,,UPS Connector,version 2
-183,cdn_activated,,boolean,,,Content Delivery Network (CDN),version 2
-184,po_double_validation,,selection,,,Levels of Approvals *,version 2
-185,tax_exigibility,,boolean,,,Cash Basis,version 2
-186,group_fiscal_year,,boolean,,,Fiscal Years,version 2
-187,group_display_incoterm,,boolean,,,Incoterms,version 2
-188,group_stock_multi_locations,,boolean,,,Storage Locations,version 2
-189,module_account_sepa,,boolean,,,SEPA Credit Transfer (SCT),version 2
-190,group_analytic_accounting,,boolean,,,Analytic Accounting,version 2
-191,invoice_is_snailmail,,boolean,,,Send by Post,version 2
-192,module_account_invoice_extract,,boolean,,,Bill Digitalization,version 2
-193,module_delivery_dhl,,boolean,,,DHL USA Connector,version 2
-194,module_delivery_easypost,,boolean,,,Easypost Connector,version 2
-195,security_lead,,float,,,Security Lead Time,version 2
-196,social_facebook,,char,,,Facebook Account,version 2
-197,module_hr_payroll_expense,,boolean,,,Reimburse Expenses in Payslip,version 2
-198,disable_redirect_firebase_dynamic_link,,boolean,,,Disable link redirection to mobile app,version 2
-199,module_snailmail_account,,boolean,,,Snailmail,version 2
-200,google_analytics_key,,char,,,Google Analytics Key,version 2
-201,module_account_plaid,,boolean,,,Plaid Connector,version 2
-202,cdn_url,,char,,,CDN Base URL,version 2
-203,module_partner_autocomplete,,boolean,,,Partner Autocomplete,version 2
-204,module_base_geolocalize,,boolean,,,GeoLocalize,version 2
-205,module_hr_attendance,,boolean,,,Based on attendances,version 2
-206,account_tax_periodicity_reminder_day,,integer,,,Reminder,version 2
-207,use_security_lead,,boolean,,,Security Lead Time for Sales,version 2
-208,group_multi_currency,,boolean,,,Multi-Currencies,version 2
-209,group_stock_tracking_owner,,boolean,,,Consignment,version 2
-210,group_product_pricelist,,boolean,,,Pricelists,version 2
-211,module_pad,,boolean,,,Collaborative Pads,version 2
-212,group_sale_pricelist,,boolean,,,Advanced Pricelists,version 2
-213,product_volume_volume_in_cubic_feet,,selection,,,Volume unit of measure,version 2
-214,module_procurement_jit,,selection,,,Reservation,version 2
-215,group_multi_website,,boolean,,,Multi-website,version 2
-216,website_default_lang_id,,many2one,res.lang,,Default language,version 2
-217,auth_signup_reset_password,,boolean,,,Enable password reset from Login page,version 2
-218,resource_calendar_id,,many2one,resource.calendar,,Company Working Hours,version 2
-219,cart_recovery_mail_template,,many2one,mail.template,,Cart Recovery Email,version 2
-220,tax_lock_date,,date,,,Tax Lock Date,version 2
-221,po_double_validation_amount,,monetary,,,Minimum Amount,version 2
-222,group_stock_sign_delivery,,boolean,,,Signature,version 2
-223,group_sale_delivery_address,,boolean,,,Customer Addresses,version 2
-224,group_delivery_invoice_address,,boolean,,,Shipping Address,version 2
-225,module_google_spreadsheet,,boolean,,,Google Spreadsheet,version 2
-226,module_account_bank_statement_import_qif,,boolean,,,Import .qif files,version 2
-227,module_auth_ldap,,boolean,,,LDAP Authentication,version 2
-228,available_threshold,,float,,,Availability Threshold,version 2
-229,portal_confirmation_pay,,boolean,,,Online Payment,version 2
-230,module_stock_landed_costs,,boolean,,,Landed Costs,version 2
-231,module_account_inter_company_rules,,boolean,,,Manage Inter Company,version 2
-232,module_account_accountant,,boolean,,,Accounting,version 2
-233,google_maps_api_key,,char,,,Google Maps API Key,version 2
-234,module_account_bank_statement_import_csv,,boolean,,,Import in .csv format,version 2
-235,module_google_recaptcha,,boolean,,,"reCAPTCHA: Easy on Humans, Hard on Bots",version 2
-236,module_website_sale_digital,,boolean,,,Digital Content,version 2
-237,module_account_batch_payment,,boolean,,,Use batch payments,version 2
-238,report_footer,,text,,,Custom Report Footer,version 2
-239,module_account_taxcloud,,boolean,,,Account TaxCloud,version 2
-240,incoterm_id,,many2one,account.incoterms,,Default incoterm,version 2
-241,module_account_bank_statement_import_ofx,,boolean,,,Import in .ofx format,version 2
-242,module_voip,,boolean,,,Asterisk (VoIP),version 2
-243,default_picking_policy,,selection,,,Picking Policy,version 2
-244,cart_abandoned_delay,,float,,,Abandoned Delay,version 2
-245,snailmail_color,,boolean,,,Print In Color,version 2
-246,group_uom,,boolean,,,Units of Measure,version 2
-247,currency_id,,many2one,res.currency,,Currency,version 2
-248,salesperson_id,,many2one,res.users,,Salesperson,version 2
-249,module_product_expiry,,boolean,,,Expiration Dates,version 2
-250,sale_tax_id,,many2one,account.tax,,Default Sale Tax,version 2
-251,module_account_reports,,boolean,,,Dynamic Reports,version 2
-252,group_send_reminder,,boolean,,,Receipt Reminder,version 2
-253,has_google_maps,,boolean,,,Google Maps,version 2
-254,partner_autocomplete_insufficient_credit,,boolean,,,Insufficient credit,version 2
-255,template_id,,many2one,mail.template,,Email Template,version 2
-256,module_sale_quotation_builder,,boolean,,,Quotation Builder,version 2
-257,module_website_sale_comparison,,boolean,,,Product Comparison Tool,version 2
-258,favicon,,binary,,,Favicon,version 2
-259,company_currency_id,,many2one,res.currency,,Company Currency,version 2
-260,po_lead,,float,,,Purchase Lead Time,version 2
-261,module_google_calendar,,boolean,,,Allow the users to synchronize their calendar  with Google Calendar,version 2
-262,group_stock_tracking_lot,,boolean,,,Packages,version 2
-263,module_sale_coupon,,boolean,,,Coupons & Promotions,version 2
-264,module_purchase_requisition,,boolean,,,Purchase Agreements,version 2
-265,module_account_intrastat,,boolean,,,Intrastat,version 2
-266,l10n_id_tax_name,,char,,,Tax Name,version 2
-267,group_show_line_subtotals_tax_included,,boolean,,,Show line subtotals with taxes (B2C),version 2
-268,expense_currency_exchange_account_id,,many2one,account.account,,Loss Account,version 2
-269,extract_show_ocr_option_selection,,selection,,,Processing Option,version 2
-270,module_microsoft_calendar,,boolean,,,Allow the users to synchronize their calendar with Outlook Calendar,version 2
-271,social_github,,char,,,GitHub Account,version 2
-272,group_stock_production_lot,,boolean,,,Lots & Serial Numbers,version 2
-273,module_mrp_mps,,boolean,,,Master Production Schedule,version 2
-274,period_lock_date,,date,,,Lock Date for Non-Advisers,version 2
-275,use_invoice_terms,,boolean,,,Default Terms & Conditions,version 2
-276,module_account_sepa_direct_debit,,boolean,,,Use SEPA Direct Debit,version 2
-277,group_show_line_subtotals_tax_excluded,,boolean,,,Show line subtotals without taxes (B2B),version 2
-278,extract_single_line_per_tax,,boolean,,,OCR Single Invoice Line Per Tax,version 2
-279,portal_confirmation_sign,,boolean,,,Online Signature,version 2
-280,group_subtask_project,,boolean,,,Sub-tasks,version 2
-281,module_mrp_workorder,,boolean,,,Work Orders,version 2
-282,has_accounting_entries,,boolean,,,Has Accounting Entries,version 2
-283,group_warning_sale,,boolean,,,Sale Order Warnings,version 2
-284,unsplash_access_key,,char,,,Access Key,version 2
-285,income_currency_exchange_account_id,,many2one,account.account,,Gain Account,version 2
+8,google_management_client_id,,char,,,Google Client ID,False,version 2
+9,module_quality_control,,boolean,,,Quality,False,version 2
+10,sale_delivery_settings,,selection,,,Shipping Management,False,version 2
+11,is_installed_sale,,boolean,,,Is the Sale Module Installed,False,version 2
+12,group_warning_purchase,,boolean,,,Purchase Warnings,False,version 2
+13,website_name,,char,,,Website Name,False,version 2
+14,website_language_count,,integer,,,Number of languages,False,version 2
+15,enable_ocn,,boolean,,,Push Notifications,False,version 2
+16,google_search_console,,char,,,Google Search Console,False,version 2
+17,website_company_id,,many2one,res.company,,Website Company,False,version 2
+18,group_warning_stock,,boolean,,,Warnings for Stock,False,version 2
+19,hr_employee_self_edit,,boolean,,,Employee Editing,False,version 2
+20,digest_id,,many2one,digest.digest,,Digest Email,False,version 2
+21,qr_code,,boolean,,,Display SEPA QR-code,False,version 2
+22,company_id,,many2one,res.company,,Company,True,version 2
+23,default_invoice_policy,,selection,,,Invoicing Policy,False,version 2
+24,group_cash_rounding,,boolean,,,Cash Rounding,False,version 2
+25,auth_signup_template_user_id,,many2one,res.users,,Template user for new users created through signup,False,version 2
+26,module_web_unsplash,,boolean,,,Unsplash Image Library,False,version 2
+27,lock_confirmed_po,,boolean,,,Lock Confirmed Orders,False,version 2
+28,invoice_is_print,,boolean,,,Print,False,version 2
+29,active_user_count,,integer,,,Number of Active Users,False,version 2
+30,module_account_payment,,boolean,,,Invoice Online Payment,False,version 2
+31,account_tax_periodicity,,selection,,,Periodicity,True,version 2
+32,snailmail_cover,,boolean,,,Add a Cover Page,False,version 2
+33,has_social_network,,boolean,,,Configure Social Network,False,version 2
+34,tax_cash_basis_journal_id,,many2one,account.journal,,Tax Cash Basis Journal,False,version 2
+35,group_auto_done_setting,,boolean,,,Lock Confirmed Sales,False,version 2
+36,module_account_3way_match,,boolean,,,"3-way matching: purchases, receptions and bills",False,version 2
+37,chart_template_id,,many2one,account.chart.template,,Template,False,version 2
+38,snailmail_duplex,,boolean,,,Print Both sides,False,version 2
+39,module_mrp_plm,,boolean,,,Product Lifecycle Management (PLM),False,version 2
+40,specific_user_account,,boolean,,,Specific User Account,False,version 2
+41,use_manufacturing_lead,,boolean,,,Default Manufacturing Lead Time,False,version 2
+42,hr_presence_control_email_amount,,integer,,,# emails to send,False,version 2
+43,social_instagram,,char,,,Instagram Account,False,version 2
+44,automatic_invoice,,boolean,,,Automatic Invoice,False,version 2
+45,country_code,,char,,,Country Code,False,version 2
+46,website_id,,many2one,website,,website,False,version 2
+47,group_mrp_byproducts,,boolean,,,By-Products,False,version 2
+48,social_linkedin,,char,,,LinkedIn Account,False,version 2
+49,module_stock_picking_batch,,boolean,,,Batch Pickings,False,version 2
+50,stock_sms_confirmation_template_id,,many2one,sms.template,,SMS Template,False,version 2
+51,website_default_lang_code,,char,,,Default language code,False,version 2
+52,module_project_forecast,,boolean,,,Planning,False,version 2
+53,group_product_variant,,boolean,,,Variants,False,version 2
+54,group_show_sale_receipts,,boolean,,,Sale Receipt,False,version 2
+55,website_cookies_bar,,boolean,,,Cookies Bar,False,version 2
+56,has_chart_of_accounts,,boolean,,,Company has a chart of accounts,False,version 2
+57,product_weight_in_lbs,,selection,,,Weight unit of measure,False,version 2
+58,account_tax_periodicity_journal_id,,many2one,account.journal,,Journal,False,version 2
+59,group_analytic_tags,,boolean,,,Analytic Tags,False,version 2
+60,has_default_share_image,,boolean,,,Use a image by default for sharing,False,version 2
+61,module_base_import,,boolean,,,Allow users to import data from CSV/XLS/XLSX/ODS files,False,version 2
+62,salesteam_id,,many2one,crm.team,,Sales Team,False,version 2
+63,totals_below_sections,,boolean,,,Add totals below sections,False,version 2
+64,po_lock,,selection,,,Purchase Order Modification *,False,version 2
+65,currency_exchange_journal_id,,many2one,account.journal,,Currency Exchange Journal,False,version 2
+66,company_informations,,text,,,Company Informations,False,version 2
+67,currency_interval_unit,,selection,,,Interval Unit,False,version 2
+68,module_base_gengo,,boolean,,,Translate Your Website with Gengo,False,version 2
+69,module_account,,boolean,,,Invoicing,False,version 2
+70,use_po_lead,,boolean,,,Security Lead Time for Purchase,False,version 2
+71,module_delivery_fedex,,boolean,,,FedEx Connector,False,version 2
+72,account_cash_basis_base_account_id,,many2one,account.account,,Base Tax Received Account,False,version 2
+73,recaptcha_private_key,,char,,,Secret Key,False,version 2
+74,stock_move_sms_validation,,boolean,,,SMS Validation with stock move,False,version 2
+75,confirmation_template_id,,many2one,mail.template,,Confirmation Email,False,version 2
+76,module_account_budget,,boolean,,,Budget Management,False,version 2
+77,module_website_sale_delivery,,boolean,,,eCommerce Shipping Costs,False,version 2
+78,group_mrp_routings,,boolean,,,MRP Work Orders,False,version 2
+79,recaptcha_min_score,,float,,,Minimum score,False,version 2
+80,group_locked_by_default,,boolean,,,Lock Quantities To Consume,False,version 2
+81,fiscalyear_lock_date,,date,,,Lock Date for All Users,False,version 2
+82,quotation_validity_days,,integer,,,Default Quotation Validity (Days),False,version 2
+83,module_currency_rate_live,,boolean,,,Automatic Currency Rates,False,version 2
+84,language_ids,,many2many,res.lang,,Languages,False,version 2
+85,module_sale_amazon,,boolean,,,Amazon Sync,False,version 2
+86,website_country_group_ids,,many2many,res.country.group,,Country Groups,False,version 2
+87,fiscalyear_last_day,,integer,,,Fiscalyear Last Day,True,version 2
+88,map_box_token,,char,,,Token Map Box,False,version 2
+89,module_mrp_subcontracting,,boolean,,,Subcontracting,False,version 2
+90,module_account_bank_statement_import_camt,,boolean,,,Import in CAMT.053 format,False,version 2
+91,website_warehouse_id,,many2one,stock.warehouse,,Warehouse,False,version 2
+92,transfer_account_id,,many2one,account.account,,Transfer Account,False,version 2
+93,group_lot_on_invoice,,boolean,,,Display Lots & Serial Numbers on Invoices,False,version 2
+94,module_sale_product_matrix,,boolean,,,Sales Grid Entry,False,version 2
+95,module_stock_sms,,boolean,,,SMS Confirmation,False,version 2
+96,google_management_client_secret,,char,,,Google Client Secret,False,version 2
+97,paperformat_id,,many2one,report.paperformat,,Paper format,False,version 2
+98,hr_presence_control_email,,boolean,,,Based on number of emails sent,False,version 2
+99,module_account_check_printing,,boolean,,,Allow check printing and deposits,False,version 2
+100,group_lot_on_delivery_slip,,boolean,,,Display Lots & Serial Numbers on Delivery Slips,False,version 2
+101,module_stock_dropshipping,,boolean,,,Dropshipping,False,version 2
+102,social_youtube,,char,,,Youtube Account,False,version 2
+103,group_discount_per_so_line,,boolean,,,Discounts,False,version 2
+104,module_sale_margin,,boolean,,,Margins,False,version 2
+105,vat_check_vies,,boolean,,,Verify VAT Numbers,False,version 2
+106,show_effect,,boolean,,,Show Effect,False,version 2
+107,stock_mail_confirmation_template_id,,many2one,mail.template,,Email Template confirmation picking,False,version 2
+108,hr_presence_control_ip,,boolean,,,Based on IP Address,False,version 2
+109,group_proforma_sales,,boolean,,,Pro-Forma Invoice,False,version 2
+110,use_mailgateway,,boolean,,,Let your employees record expenses by email,False,version 2
+111,module_hr_expense_extract,,boolean,,,Send bills to OCR to generate expenses,False,version 2
+112,module_product_margin,,boolean,,,Allow Product Margin,False,version 2
+113,social_default_image,,binary,,,Default Social Share Image,False,version 2
+114,purchase_tax_id,,many2one,account.tax,,Default Purchase Tax,False,version 2
+115,user_default_rights,,boolean,,,Default Access Rights,False,version 2
+116,group_stock_adv_location,,boolean,,,Multi-Step Routes,False,version 2
+117,l10n_id_tax_address,,char,,,Tax Address,False,version 2
+118,deposit_default_product_id,,many2one,product.product,,Deposit Product,False,version 2
+119,invoice_terms,,text,,,Terms & Conditions,False,version 2
+120,module_stock_barcode,,boolean,,,Barcode Scanner,False,version 2
+121,website_logo,,binary,,,Website Logo,False,version 2
+122,module_delivery,,boolean,,,Delivery Methods,False,version 2
+123,product_pricelist_setting,,selection,,,Pricelists Method,False,version 2
+124,show_line_subtotals_tax_selection,,selection,,,Line Subtotals Tax Display,True,version 2
+125,external_email_server_default,,boolean,,,External Email Servers,False,version 2
+126,has_google_search_console,,boolean,,,Console Google Search,False,version 2
+127,social_twitter,,char,,,Twitter Account,False,version 2
+128,has_google_analytics_dashboard,,boolean,,,Google Analytics Dashboard,False,version 2
+129,company_count,,integer,,,Number of Companies,False,version 2
+130,module_purchase_product_matrix,,boolean,,,Purchase Grid Entry,False,version 2
+131,group_show_purchase_receipts,,boolean,,,Purchase Receipt,False,version 2
+132,module_product_email_template,,boolean,,,Specific Email,False,version 2
+133,group_project_rating,,boolean,,,Customer Ratings,False,version 2
+134,module_hr_skills,,boolean,,,Skills Management,False,version 2
+135,group_warning_account,,boolean,,,Warnings in Invoices,False,version 2
+136,auth_signup_uninvited,,selection,,,Customer Account,False,version 2
+137,company_name,,char,,,Company Name,False,version 2
+138,company_so_template_id,,many2one,sale.order.template,,Default Template,False,version 2
+139,module_account_predictive_bills,,boolean,,,Account Predictive Bills,False,version 2
+140,module_google_drive,,boolean,,,Attach Google documents to any record,False,version 2
+141,account_tax_fiscal_country_id,,many2one,res.country,,Fiscal Country,False,version 2
+142,expense_extract_show_ocr_option_selection,,selection,,,Expense processing option,False,version 2
+143,group_stock_packaging,,boolean,,,Product Packagings,False,version 2
+144,module_account_yodlee,,boolean,,,Bank Interface - Sync your bank feeds automatically,False,version 2
+145,default_purchase_method,,selection,,,Bill Control,False,version 2
+146,language_count,,integer,,,Number of Languages,False,version 2
+147,recaptcha_public_key,,char,,,Site Key,False,version 2
+148,expense_alias_prefix,,char,,,Default Alias Name for Expenses,False,version 2
+149,digest_emails,,boolean,,,Digest Emails,False,version 2
+150,module_hr_presence,,boolean,,,Advanced Presence Control,False,version 2
+151,currency_next_execution_date,,date,,,Next Execution Date,False,version 2
+152,module_auth_oauth,,boolean,,,Use external authentication providers (OAuth),False,version 2
+153,fiscalyear_last_month,,selection,,,Fiscalyear Last Month,True,version 2
+154,tax_calculation_rounding_method,,selection,,,Tax calculation rounding method,False,version 2
+155,hr_presence_control_ip_list,,char,,,Valid IP addresses,False,version 2
+156,invoicing_switch_threshold,,date,,,Invoicing Switch Threshold,False,version 2
+157,cdn_filters,,text,,,CDN Filters,False,version 2
+158,days_to_purchase,,float,,,Days to Purchase,False,version 2
+159,stock_move_email_validation,,boolean,,,Email Confirmation picking,False,version 2
+160,hr_presence_control_login,,boolean,,,Based on user status in system,False,version 2
+161,group_sale_order_template,,boolean,,,Quotation Templates,False,version 2
+162,po_order_approval,,boolean,,,Purchase Order Approval,False,version 2
+163,website_domain,,char,,,Website Domain,False,version 2
+164,use_anglo_saxon,,boolean,,,Anglo-Saxon Accounting,False,version 2
+165,manufacturing_lead,,float,,,Manufacturing Lead Time,False,version 2
+166,alias_domain,,char,,,Alias Domain,False,version 2
+167,inventory_availability,,selection,,,Inventory Availability,False,version 2
+168,module_delivery_usps,,boolean,,,USPS Connector,False,version 2
+169,module_hr_timesheet,,boolean,,,Task Logs,False,version 2
+170,invoice_is_email,,boolean,,,Send Email,False,version 2
+171,group_project_recurring_tasks,,boolean,,,Recurring Tasks,False,version 2
+172,module_sale_product_configurator,,boolean,,,Product Configurator,False,version 2
+173,use_quotation_validity_days,,boolean,,,Default Quotation Validity,False,version 2
+174,currency_provider,,selection,,,Service Provider,False,version 2
+175,has_google_analytics,,boolean,,,Google Analytics,False,version 2
+176,fail_counter,,integer,,,Fail Mail,False,version 2
+177,module_website_sale_stock,,boolean,,,Inventory,False,version 2
+178,module_l10n_eu_service,,boolean,,,EU Digital Goods VAT,False,version 2
+179,module_website_sale_wishlist,,boolean,,,Wishlists,False,version 2
+180,module_delivery_bpost,,boolean,,,bpost Connector,False,version 2
+181,external_report_layout_id,,many2one,ir.ui.view,,Document Template,False,version 2
+182,module_delivery_ups,,boolean,,,UPS Connector,False,version 2
+183,cdn_activated,,boolean,,,Content Delivery Network (CDN),False,version 2
+184,po_double_validation,,selection,,,Levels of Approvals *,False,version 2
+185,tax_exigibility,,boolean,,,Cash Basis,False,version 2
+186,group_fiscal_year,,boolean,,,Fiscal Years,False,version 2
+187,group_display_incoterm,,boolean,,,Incoterms,False,version 2
+188,group_stock_multi_locations,,boolean,,,Storage Locations,False,version 2
+189,module_account_sepa,,boolean,,,SEPA Credit Transfer (SCT),False,version 2
+190,group_analytic_accounting,,boolean,,,Analytic Accounting,False,version 2
+191,invoice_is_snailmail,,boolean,,,Send by Post,False,version 2
+192,module_account_invoice_extract,,boolean,,,Bill Digitalization,False,version 2
+193,module_delivery_dhl,,boolean,,,DHL USA Connector,False,version 2
+194,module_delivery_easypost,,boolean,,,Easypost Connector,False,version 2
+195,security_lead,,float,,,Security Lead Time,False,version 2
+196,social_facebook,,char,,,Facebook Account,False,version 2
+197,module_hr_payroll_expense,,boolean,,,Reimburse Expenses in Payslip,False,version 2
+198,disable_redirect_firebase_dynamic_link,,boolean,,,Disable link redirection to mobile app,False,version 2
+199,module_snailmail_account,,boolean,,,Snailmail,False,version 2
+200,google_analytics_key,,char,,,Google Analytics Key,False,version 2
+201,module_account_plaid,,boolean,,,Plaid Connector,False,version 2
+202,cdn_url,,char,,,CDN Base URL,False,version 2
+203,module_partner_autocomplete,,boolean,,,Partner Autocomplete,False,version 2
+204,module_base_geolocalize,,boolean,,,GeoLocalize,False,version 2
+205,module_hr_attendance,,boolean,,,Based on attendances,False,version 2
+206,account_tax_periodicity_reminder_day,,integer,,,Reminder,True,version 2
+207,use_security_lead,,boolean,,,Security Lead Time for Sales,False,version 2
+208,group_multi_currency,,boolean,,,Multi-Currencies,False,version 2
+209,group_stock_tracking_owner,,boolean,,,Consignment,False,version 2
+210,group_product_pricelist,,boolean,,,Pricelists,False,version 2
+211,module_pad,,boolean,,,Collaborative Pads,False,version 2
+212,group_sale_pricelist,,boolean,,,Advanced Pricelists,False,version 2
+213,product_volume_volume_in_cubic_feet,,selection,,,Volume unit of measure,False,version 2
+214,module_procurement_jit,,selection,,,Reservation,False,version 2
+215,group_multi_website,,boolean,,,Multi-website,False,version 2
+216,website_default_lang_id,,many2one,res.lang,,Default language,False,version 2
+217,auth_signup_reset_password,,boolean,,,Enable password reset from Login page,False,version 2
+218,resource_calendar_id,,many2one,resource.calendar,,Company Working Hours,False,version 2
+219,cart_recovery_mail_template,,many2one,mail.template,,Cart Recovery Email,False,version 2
+220,tax_lock_date,,date,,,Tax Lock Date,False,version 2
+221,po_double_validation_amount,,monetary,,,Minimum Amount,False,version 2
+222,group_stock_sign_delivery,,boolean,,,Signature,False,version 2
+223,group_sale_delivery_address,,boolean,,,Customer Addresses,False,version 2
+224,group_delivery_invoice_address,,boolean,,,Shipping Address,False,version 2
+225,module_google_spreadsheet,,boolean,,,Google Spreadsheet,False,version 2
+226,module_account_bank_statement_import_qif,,boolean,,,Import .qif files,False,version 2
+227,module_auth_ldap,,boolean,,,LDAP Authentication,False,version 2
+228,available_threshold,,float,,,Availability Threshold,False,version 2
+229,portal_confirmation_pay,,boolean,,,Online Payment,False,version 2
+230,module_stock_landed_costs,,boolean,,,Landed Costs,False,version 2
+231,module_account_inter_company_rules,,boolean,,,Manage Inter Company,False,version 2
+232,module_account_accountant,,boolean,,,Accounting,False,version 2
+233,google_maps_api_key,,char,,,Google Maps API Key,False,version 2
+234,module_account_bank_statement_import_csv,,boolean,,,Import in .csv format,False,version 2
+235,module_google_recaptcha,,boolean,,,"reCAPTCHA: Easy on Humans, Hard on Bots",False,version 2
+236,module_website_sale_digital,,boolean,,,Digital Content,False,version 2
+237,module_account_batch_payment,,boolean,,,Use batch payments,False,version 2
+238,report_footer,,text,,,Custom Report Footer,False,version 2
+239,module_account_taxcloud,,boolean,,,Account TaxCloud,False,version 2
+240,incoterm_id,,many2one,account.incoterms,,Default incoterm,False,version 2
+241,module_account_bank_statement_import_ofx,,boolean,,,Import in .ofx format,False,version 2
+242,module_voip,,boolean,,,Asterisk (VoIP),False,version 2
+243,default_picking_policy,,selection,,,Picking Policy,True,version 2
+244,cart_abandoned_delay,,float,,,Abandoned Delay,False,version 2
+245,snailmail_color,,boolean,,,Print In Color,False,version 2
+246,group_uom,,boolean,,,Units of Measure,False,version 2
+247,currency_id,,many2one,res.currency,,Currency,True,version 2
+248,salesperson_id,,many2one,res.users,,Salesperson,False,version 2
+249,module_product_expiry,,boolean,,,Expiration Dates,False,version 2
+250,sale_tax_id,,many2one,account.tax,,Default Sale Tax,False,version 2
+251,module_account_reports,,boolean,,,Dynamic Reports,False,version 2
+252,group_send_reminder,,boolean,,,Receipt Reminder,False,version 2
+253,has_google_maps,,boolean,,,Google Maps,False,version 2
+254,partner_autocomplete_insufficient_credit,,boolean,,,Insufficient credit,False,version 2
+255,template_id,,many2one,mail.template,,Email Template,False,version 2
+256,module_sale_quotation_builder,,boolean,,,Quotation Builder,False,version 2
+257,module_website_sale_comparison,,boolean,,,Product Comparison Tool,False,version 2
+258,favicon,,binary,,,Favicon,False,version 2
+259,company_currency_id,,many2one,res.currency,,Company Currency,False,version 2
+260,po_lead,,float,,,Purchase Lead Time,False,version 2
+261,module_google_calendar,,boolean,,,Allow the users to synchronize their calendar  with Google Calendar,False,version 2
+262,group_stock_tracking_lot,,boolean,,,Packages,False,version 2
+263,module_sale_coupon,,boolean,,,Coupons & Promotions,False,version 2
+264,module_purchase_requisition,,boolean,,,Purchase Agreements,False,version 2
+265,module_account_intrastat,,boolean,,,Intrastat,False,version 2
+266,l10n_id_tax_name,,char,,,Tax Name,False,version 2
+267,group_show_line_subtotals_tax_included,,boolean,,,Show line subtotals with taxes (B2C),False,version 2
+268,expense_currency_exchange_account_id,,many2one,account.account,,Loss Account,False,version 2
+269,extract_show_ocr_option_selection,,selection,,,Processing Option,False,version 2
+270,module_microsoft_calendar,,boolean,,,Allow the users to synchronize their calendar with Outlook Calendar,False,version 2
+271,social_github,,char,,,GitHub Account,False,version 2
+272,group_stock_production_lot,,boolean,,,Lots & Serial Numbers,False,version 2
+273,module_mrp_mps,,boolean,,,Master Production Schedule,False,version 2
+274,period_lock_date,,date,,,Lock Date for Non-Advisers,False,version 2
+275,use_invoice_terms,,boolean,,,Default Terms & Conditions,False,version 2
+276,module_account_sepa_direct_debit,,boolean,,,Use SEPA Direct Debit,False,version 2
+277,group_show_line_subtotals_tax_excluded,,boolean,,,Show line subtotals without taxes (B2B),False,version 2
+278,extract_single_line_per_tax,,boolean,,,OCR Single Invoice Line Per Tax,False,version 2
+279,portal_confirmation_sign,,boolean,,,Online Signature,False,version 2
+280,group_subtask_project,,boolean,,,Sub-tasks,False,version 2
+281,module_mrp_workorder,,boolean,,,Work Orders,False,version 2
+282,has_accounting_entries,,boolean,,,Has Accounting Entries,False,version 2
+283,group_warning_sale,,boolean,,,Sale Order Warnings,False,version 2
+284,unsplash_access_key,,char,,,Access Key,False,version 2
+285,income_currency_exchange_account_id,,many2one,account.account,,Gain Account,False,version 2
 ,,,,
 ,,,,

@@ -1,25 +1,25 @@
 model,res.bank,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,email,char,char,,Email,Email,both
-2,city,char,char,,City,City,both
-3,display_name,char,char,,Display Name,Display Name,both
-4,name,char,char,,Name,Name,both
-5,zip,char,char,,Zip,Zip,both
-6,create_uid,many2one,many2one,res.users,Created by,Created by,both
-7,country,many2one,many2one,res.country,Country,Country,both
-8,street2,char,char,,Street2,Street2,both
-9,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-10,bic,char,char,,Bank Identifier Code,Bank Identifier Code,both
-11,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-12,phone,char,char,,Phone,Phone,both
-13,state,many2one,many2one,res.country.state,Fed. State,Fed. State,both
-14,street,char,char,,Street,Street,both
-15,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-16,active,boolean,boolean,,Active,Active,both
-17,create_date,datetime,datetime,,Created on,Created on,both
-18,id,integer,integer,,ID,ID,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,email,char,char,,Email,Email,False,both
+2,city,char,char,,City,City,False,both
+3,display_name,char,char,,Display Name,Display Name,False,both
+4,name,char,char,,Name,Name,True,both
+5,zip,char,char,,Zip,Zip,False,both
+6,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+7,country,many2one,many2one,res.country,Country,Country,False,both
+8,street2,char,char,,Street2,Street2,False,both
+9,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+10,bic,char,char,,Bank Identifier Code,Bank Identifier Code,False,both
+11,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+12,phone,char,char,,Phone,Phone,False,both
+13,state,many2one,many2one,res.country.state,Fed. State,Fed. State,False,both
+14,street,char,char,,Street,Street,False,both
+15,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+16,active,boolean,boolean,,Active,Active,False,both
+17,create_date,datetime,datetime,,Created on,Created on,False,both
+18,id,integer,integer,,ID,ID,False,both
 ,,,,
-19,fax,char,,,Fax,,version 1
+19,fax,char,,,Fax,,False,version 1
 ,,,,
 ,,,,
 ,,,,

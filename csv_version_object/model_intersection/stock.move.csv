@@ -1,118 +1,118 @@
 model,stock.move,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,origin,char,char,,Source Document,Source Document,both
-2,create_date,datetime,datetime,,Creation Date,Creation Date,both
-3,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-4,product_uom,many2one,many2one,uom.uom,Unit of Measure,Unit of Measure,both
-5,move_orig_ids,one2many,many2many,stock.move,Original Move,Original Move,both
-6,has_tracking,selection,selection,,Product with Tracking,Product with Tracking,both
-7,price_unit,float,float,,Unit Price,Unit Price,both
-8,product_uom_qty,float,float,,Quantity,Demand,both
-9,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-10,date,datetime,datetime,,Date,Date Scheduled,both
-11,workorder_id,many2one,many2one,mrp.workorder,Work Order To Consume,Work Order To Consume,both
-12,product_qty,float,float,,Real Quantity,Real Quantity,both
-13,unit_factor,float,float,,Unit Factor,Unit Factor,both
-14,location_id,many2one,many2one,stock.location,Source Location,Source Location,both
-15,availability,float,float,,Forecasted Quantity,Forecasted Quantity,both
-16,note,text,text,,Notes,Notes,both
-17,display_name,char,char,,Display Name,Display Name,both
-18,consume_unbuild_id,many2one,many2one,mrp.unbuild,Consume Unbuild Order,Consumed Disassembly Order,both
-19,picking_type_id,many2one,many2one,stock.picking.type,Picking Type,Operation Type,both
-20,partner_id,many2one,many2one,res.partner,Destination Address ,Destination Address ,both
-21,sequence,integer,integer,,Sequence,Sequence,both
-22,is_done,boolean,boolean,,Done,Done,both
-23,company_id,many2one,many2one,res.company,Company,Company,both
-24,id,integer,integer,,ID,ID,both
-25,priority,selection,selection,,Priority,Priority,both
-26,state,selection,selection,,Status,Status,both
-27,origin_returned_move_id,many2one,many2one,stock.move,Origin return move,Origin return move,both
-28,bom_line_id,many2one,many2one,mrp.bom.line,BoM Line,BoM Line,both
-29,product_tmpl_id,many2one,many2one,product.template,Product Template,Product Template,both
-30,returned_move_ids,one2many,one2many,stock.move,All returned moves,All returned moves,both
-31,backorder_id,many2one,many2one,stock.picking,Back Order of,Back Order of,both
-32,create_uid,many2one,many2one,res.users,Created by,Created by,both
-33,raw_material_production_id,many2one,many2one,mrp.production,Production Order for raw materials,Production Order for components,both
-34,warehouse_id,many2one,many2one,stock.warehouse,Warehouse,Warehouse,both
-35,inventory_id,many2one,many2one,stock.inventory,Inventory,Inventory,both
-36,route_ids,many2many,many2many,stock.location.route,Destination route,Destination route,both
-37,restrict_partner_id,many2one,many2one,res.partner,Owner ,Owner ,both
-38,procure_method,selection,selection,,Supply Method,Supply Method,both
-39,scrapped,boolean,boolean,,Scrapped,Scrapped,both
-40,purchase_line_id,many2one,many2one,purchase.order.line,Purchase Order Line,Purchase Order Line,both
-41,quantity_done,float,float,,Quantity,Quantity Done,both
-42,name,char,char,,Description,Description,both
-43,lot_ids,many2many,many2many,stock.production.lot,Lots/Serial Numbers,Serial Numbers,both
-44,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-45,picking_partner_id,many2one,many2one,res.partner,Transfer Destination Address,Transfer Destination Address,both
-46,picking_id,many2one,many2one,stock.picking,Transfer Reference,Transfer,both
-47,reserved_availability,float,float,,Quantity Reserved,Quantity Reserved,both
-48,location_dest_id,many2one,many2one,stock.location,Destination Location,Destination Location,both
-49,production_id,many2one,many2one,mrp.production,Production Order for finished products,Production Order for finished products,both
-50,operation_id,many2one,many2one,mrp.routing.workcenter,Operation To Consume,Operation To Consume,both
-51,group_id,many2one,many2one,procurement.group,Procurement Group,Procurement Group,both
-52,product_id,many2one,many2one,product.product,Product,Product,both
-53,rule_id,many2one,many2one,stock.rule,Procurement Rule,Stock Rule,both
-54,unbuild_id,many2one,many2one,mrp.unbuild,Unbuild Order,Disassembly Order,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,origin,char,char,,Source Document,Source Document,False,both
+2,create_date,datetime,datetime,,Creation Date,Creation Date,False,both
+3,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+4,product_uom,many2one,many2one,uom.uom,Unit of Measure,Unit of Measure,True,both
+5,move_orig_ids,one2many,many2many,stock.move,Original Move,Original Move,False,both
+6,has_tracking,selection,selection,,Product with Tracking,Product with Tracking,False,both
+7,price_unit,float,float,,Unit Price,Unit Price,False,both
+8,product_uom_qty,float,float,,Quantity,Demand,True,both
+9,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+10,date,datetime,datetime,,Date,Date Scheduled,True,both
+11,workorder_id,many2one,many2one,mrp.workorder,Work Order To Consume,Work Order To Consume,False,both
+12,product_qty,float,float,,Real Quantity,Real Quantity,False,both
+13,unit_factor,float,float,,Unit Factor,Unit Factor,False,both
+14,location_id,many2one,many2one,stock.location,Source Location,Source Location,True,both
+15,availability,float,float,,Forecasted Quantity,Forecasted Quantity,False,both
+16,note,text,text,,Notes,Notes,False,both
+17,display_name,char,char,,Display Name,Display Name,False,both
+18,consume_unbuild_id,many2one,many2one,mrp.unbuild,Consume Unbuild Order,Consumed Disassembly Order,False,both
+19,picking_type_id,many2one,many2one,stock.picking.type,Picking Type,Operation Type,False,both
+20,partner_id,many2one,many2one,res.partner,Destination Address ,Destination Address ,False,both
+21,sequence,integer,integer,,Sequence,Sequence,False,both
+22,is_done,boolean,boolean,,Done,Done,False,both
+23,company_id,many2one,many2one,res.company,Company,Company,True,both
+24,id,integer,integer,,ID,ID,False,both
+25,priority,selection,selection,,Priority,Priority,False,both
+26,state,selection,selection,,Status,Status,False,both
+27,origin_returned_move_id,many2one,many2one,stock.move,Origin return move,Origin return move,False,both
+28,bom_line_id,many2one,many2one,mrp.bom.line,BoM Line,BoM Line,False,both
+29,product_tmpl_id,many2one,many2one,product.template,Product Template,Product Template,False,both
+30,returned_move_ids,one2many,one2many,stock.move,All returned moves,All returned moves,False,both
+31,backorder_id,many2one,many2one,stock.picking,Back Order of,Back Order of,False,both
+32,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+33,raw_material_production_id,many2one,many2one,mrp.production,Production Order for raw materials,Production Order for components,False,both
+34,warehouse_id,many2one,many2one,stock.warehouse,Warehouse,Warehouse,False,both
+35,inventory_id,many2one,many2one,stock.inventory,Inventory,Inventory,False,both
+36,route_ids,many2many,many2many,stock.location.route,Destination route,Destination route,False,both
+37,restrict_partner_id,many2one,many2one,res.partner,Owner ,Owner ,False,both
+38,procure_method,selection,selection,,Supply Method,Supply Method,True,both
+39,scrapped,boolean,boolean,,Scrapped,Scrapped,False,both
+40,purchase_line_id,many2one,many2one,purchase.order.line,Purchase Order Line,Purchase Order Line,False,both
+41,quantity_done,float,float,,Quantity,Quantity Done,False,both
+42,name,char,char,,Description,Description,True,both
+43,lot_ids,many2many,many2many,stock.production.lot,Lots/Serial Numbers,Serial Numbers,False,both
+44,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+45,picking_partner_id,many2one,many2one,res.partner,Transfer Destination Address,Transfer Destination Address,False,both
+46,picking_id,many2one,many2one,stock.picking,Transfer Reference,Transfer,False,both
+47,reserved_availability,float,float,,Quantity Reserved,Quantity Reserved,False,both
+48,location_dest_id,many2one,many2one,stock.location,Destination Location,Destination Location,True,both
+49,production_id,many2one,many2one,mrp.production,Production Order for finished products,Production Order for finished products,False,both
+50,operation_id,many2one,many2one,mrp.routing.workcenter,Operation To Consume,Operation To Consume,False,both
+51,group_id,many2one,many2one,procurement.group,Procurement Group,Procurement Group,False,both
+52,product_id,many2one,many2one,product.product,Product,Product,True,both
+53,rule_id,many2one,many2one,stock.rule,Procurement Rule,Stock Rule,False,both
+54,unbuild_id,many2one,many2one,mrp.unbuild,Unbuild Order,Disassembly Order,False,both
 ,,,,
-55,active_move_lot_ids,one2many,,stock.move.lots,Lots,,version 1
-56,remaining_qty,float,,,Remaining Quantity,,version 1
-57,linked_move_operation_ids,one2many,,stock.move.operation.link,Linked Operations,,version 1
-58,to_refund_so,boolean,,,To Refund in SO,,version 1
-59,ordered_qty,float,,,Ordered Quantity,,version 1
-60,product_packaging,many2one,,product.packaging,Preferred Packaging,,version 1
-61,quantity_available,float,,,Quantity Available,,version 1
-62,date_expected,datetime,,,Expected Date,,version 1
-63,procurement_id,many2one,,procurement.order,Procurement,,version 1
-64,partially_available,boolean,,,Partially Available,,version 1
-65,propagate,boolean,,,Propagate cancel and split,,version 1
-66,move_dest_id,many2one,,stock.move,Destination Move,,version 1
-67,restrict_lot_id,many2one,,stock.production.lot,Lot/Serial Number,,version 1
-68,split_from,many2one,,stock.move,Move Split From,,version 1
-69,reserved_quant_ids,one2many,,stock.quant,Reserved quants,,version 1
-70,move_lot_ids,one2many,,stock.move.lots,Lots,,version 1
-71,quantity_done_store,float,,,Quantity done store,,version 1
-72,string_availability_info,text,,,Availability,,version 1
-73,quant_ids,many2many,,stock.quant,Moved Quants,,version 1
-74,push_rule_id,many2one,,stock.location.path,Push Rule,,version 1
+55,active_move_lot_ids,one2many,,stock.move.lots,Lots,,False,version 1
+56,remaining_qty,float,,,Remaining Quantity,,False,version 1
+57,linked_move_operation_ids,one2many,,stock.move.operation.link,Linked Operations,,False,version 1
+58,to_refund_so,boolean,,,To Refund in SO,,False,version 1
+59,ordered_qty,float,,,Ordered Quantity,,False,version 1
+60,product_packaging,many2one,,product.packaging,Preferred Packaging,,False,version 1
+61,quantity_available,float,,,Quantity Available,,False,version 1
+62,date_expected,datetime,,,Expected Date,,True,version 1
+63,procurement_id,many2one,,procurement.order,Procurement,,False,version 1
+64,partially_available,boolean,,,Partially Available,,False,version 1
+65,propagate,boolean,,,Propagate cancel and split,,False,version 1
+66,move_dest_id,many2one,,stock.move,Destination Move,,False,version 1
+67,restrict_lot_id,many2one,,stock.production.lot,Lot/Serial Number,,False,version 1
+68,split_from,many2one,,stock.move,Move Split From,,False,version 1
+69,reserved_quant_ids,one2many,,stock.quant,Reserved quants,,False,version 1
+70,move_lot_ids,one2many,,stock.move.lots,Lots,,False,version 1
+71,quantity_done_store,float,,,Quantity done store,,False,version 1
+72,string_availability_info,text,,,Availability,,False,version 1
+73,quant_ids,many2many,,stock.quant,Moved Quants,,False,version 1
+74,push_rule_id,many2one,,stock.location.path,Push Rule,,False,version 1
 ,,,,
-75,byproduct_id,,many2one,mrp.bom.byproduct,,By-products,version 2
-76,scrap_ids,,one2many,stock.scrap,,Scrap,version 2
-77,is_quantity_done_editable,,boolean,,,Is quantity done editable,version 2
-78,move_line_nosuggest_ids,,one2many,stock.move.line,,Move Line Nosuggest,version 2
-79,additional,,boolean,,,Whether the move was added after the picking's confirmation,version 2
-80,orderpoint_id,,many2one,stock.warehouse.orderpoint,,Original Reordering Rule,version 2
-81,allowed_operation_ids,,many2many,mrp.routing.workcenter,,Allowed Operation,version 2
-82,forecast_expected_date,,datetime,,,Forecasted Expected date,version 2
-83,move_line_ids,,one2many,stock.move.line,,Move Line,version 2
-84,account_move_ids,,one2many,account.move,,Account Move,version 2
-85,product_type,,selection,,,Product Type,version 2
-86,show_operations,,boolean,,,Show Detailed Operations,version 2
-87,stock_valuation_layer_ids,,one2many,stock.valuation.layer,,Stock Valuation Layer,version 2
-88,date_deadline,,datetime,,,Deadline,version 2
-89,created_purchase_line_id,,many2one,purchase.order.line,,Created Purchase Order Line,version 2
-90,product_uom_category_id,,many2one,uom.category,,Category,version 2
-91,move_dest_ids,,many2many,stock.move,,Destination Moves,version 2
-92,should_consume_qty,,float,,,Quantity To Consume,version 2
-93,reference,,char,,,Reference,version 2
-94,next_serial,,char,,,First SN,version 2
-95,picking_code,,selection,,,Type of Operation,version 2
-96,to_refund,,boolean,,,Update quantities on SO/PO,version 2
-97,sale_line_id,,many2one,sale.order.line,,Sale Line,version 2
-98,description_picking,,text,,,Description of Picking,version 2
-99,picking_type_entire_packs,,boolean,,,Move Entire Packages,version 2
-100,forecast_availability,,float,,,Forecast Availability,version 2
-101,has_move_lines,,boolean,,,Has Move Lines,version 2
-102,package_level_id,,many2one,stock.package_level,,Package Level,version 2
-103,propagate_cancel,,boolean,,,Propagate cancel and split,version 2
-104,is_initial_demand_editable,,boolean,,,Is initial demand editable,version 2
-105,display_assign_serial,,boolean,,,Display Assign Serial,version 2
-106,show_reserved_availability,,boolean,,,From Supplier,version 2
-107,is_locked,,boolean,,,Is Locked,version 2
-108,next_serial_count,,integer,,,Number of SN,version 2
-109,delay_alert_date,,datetime,,,Delay Alert Date,version 2
-110,show_details_visible,,boolean,,,Details Visible,version 2
-111,created_production_id,,many2one,mrp.production,,Created Production Order,version 2
-112,order_finished_lot_ids,,many2many,stock.production.lot,,Finished Lot/Serial Number,version 2
+75,byproduct_id,,many2one,mrp.bom.byproduct,,By-products,False,version 2
+76,scrap_ids,,one2many,stock.scrap,,Scrap,False,version 2
+77,is_quantity_done_editable,,boolean,,,Is quantity done editable,False,version 2
+78,move_line_nosuggest_ids,,one2many,stock.move.line,,Move Line Nosuggest,False,version 2
+79,additional,,boolean,,,Whether the move was added after the picking's confirmation,False,version 2
+80,orderpoint_id,,many2one,stock.warehouse.orderpoint,,Original Reordering Rule,False,version 2
+81,allowed_operation_ids,,many2many,mrp.routing.workcenter,,Allowed Operation,False,version 2
+82,forecast_expected_date,,datetime,,,Forecasted Expected date,False,version 2
+83,move_line_ids,,one2many,stock.move.line,,Move Line,False,version 2
+84,account_move_ids,,one2many,account.move,,Account Move,False,version 2
+85,product_type,,selection,,,Product Type,False,version 2
+86,show_operations,,boolean,,,Show Detailed Operations,False,version 2
+87,stock_valuation_layer_ids,,one2many,stock.valuation.layer,,Stock Valuation Layer,False,version 2
+88,date_deadline,,datetime,,,Deadline,False,version 2
+89,created_purchase_line_id,,many2one,purchase.order.line,,Created Purchase Order Line,False,version 2
+90,product_uom_category_id,,many2one,uom.category,,Category,False,version 2
+91,move_dest_ids,,many2many,stock.move,,Destination Moves,False,version 2
+92,should_consume_qty,,float,,,Quantity To Consume,False,version 2
+93,reference,,char,,,Reference,False,version 2
+94,next_serial,,char,,,First SN,False,version 2
+95,picking_code,,selection,,,Type of Operation,False,version 2
+96,to_refund,,boolean,,,Update quantities on SO/PO,False,version 2
+97,sale_line_id,,many2one,sale.order.line,,Sale Line,False,version 2
+98,description_picking,,text,,,Description of Picking,False,version 2
+99,picking_type_entire_packs,,boolean,,,Move Entire Packages,False,version 2
+100,forecast_availability,,float,,,Forecast Availability,False,version 2
+101,has_move_lines,,boolean,,,Has Move Lines,False,version 2
+102,package_level_id,,many2one,stock.package_level,,Package Level,False,version 2
+103,propagate_cancel,,boolean,,,Propagate cancel and split,False,version 2
+104,is_initial_demand_editable,,boolean,,,Is initial demand editable,False,version 2
+105,display_assign_serial,,boolean,,,Display Assign Serial,False,version 2
+106,show_reserved_availability,,boolean,,,From Supplier,False,version 2
+107,is_locked,,boolean,,,Is Locked,False,version 2
+108,next_serial_count,,integer,,,Number of SN,False,version 2
+109,delay_alert_date,,datetime,,,Delay Alert Date,False,version 2
+110,show_details_visible,,boolean,,,Details Visible,False,version 2
+111,created_production_id,,many2one,mrp.production,,Created Production Order,False,version 2
+112,order_finished_lot_ids,,many2many,stock.production.lot,,Finished Lot/Serial Number,False,version 2
 ,,,,
 ,,,,

@@ -1,22 +1,22 @@
 model,blog.tag,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,both
-2,display_name,char,char,,Display Name,Display Name,both
-3,name,char,char,,Name,Name,both
-4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-5,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-6,website_meta_description,text,text,,Website meta description,Website meta description,both
-7,website_meta_title,char,char,,Website meta title,Website meta title,both
-8,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-9,post_ids,many2many,many2many,blog.post,Posts,Posts,both
-10,website_meta_keywords,char,char,,Website meta keywords,Website meta keywords,both
-11,create_date,datetime,datetime,,Created on,Created on,both
-12,id,integer,integer,,ID,ID,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+2,display_name,char,char,,Display Name,Display Name,False,both
+3,name,char,char,,Name,Name,True,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+5,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+6,website_meta_description,text,text,,Website meta description,Website meta description,False,both
+7,website_meta_title,char,char,,Website meta title,Website meta title,False,both
+8,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+9,post_ids,many2many,many2many,blog.post,Posts,Posts,False,both
+10,website_meta_keywords,char,char,,Website meta keywords,Website meta keywords,False,both
+11,create_date,datetime,datetime,,Created on,Created on,False,both
+12,id,integer,integer,,ID,ID,False,both
 ,,,,
 ,,,,
-13,website_meta_og_img,,char,,,Website opengraph image,version 2
-14,seo_name,,char,,,Seo name,version 2
-15,is_seo_optimized,,boolean,,,SEO optimized,version 2
-16,category_id,,many2one,blog.tag.category,,Category,version 2
+13,website_meta_og_img,,char,,,Website opengraph image,False,version 2
+14,seo_name,,char,,,Seo name,False,version 2
+15,is_seo_optimized,,boolean,,,SEO optimized,False,version 2
+16,category_id,,many2one,blog.tag.category,,Category,False,version 2
 ,,,,
 ,,,,

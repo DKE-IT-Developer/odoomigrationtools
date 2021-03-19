@@ -1,20 +1,20 @@
 model,stock.return.picking.line,transient,True
-no,field,type1,type2,relation,string1,string2,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,both
-2,display_name,char,char,,Display Name,Display Name,both
-3,product_id,many2one,many2one,product.product,Product,Product,both
-4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-5,wizard_id,many2one,many2one,stock.return.picking,Wizard,Wizard,both
-6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-7,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-8,create_date,datetime,datetime,,Created on,Created on,both
-9,id,integer,integer,,ID,ID,both
-10,move_id,many2one,many2one,stock.move,Move,Move,both
-11,quantity,float,float,,Quantity,Quantity,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+2,display_name,char,char,,Display Name,Display Name,False,both
+3,product_id,many2one,many2one,product.product,Product,Product,True,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+5,wizard_id,many2one,many2one,stock.return.picking,Wizard,Wizard,False,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+7,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+8,create_date,datetime,datetime,,Created on,Created on,False,both
+9,id,integer,integer,,ID,ID,False,both
+10,move_id,many2one,many2one,stock.move,Move,Move,False,both
+11,quantity,float,float,,Quantity,Quantity,True,both
 ,,,,
-12,to_refund_so,boolean,,,To Refund,,version 1
+12,to_refund_so,boolean,,,To Refund,,False,version 1
 ,,,,
-13,to_refund,,boolean,,,Update quantities on SO/PO,version 2
-14,uom_id,,many2one,uom.uom,,Unit of Measure,version 2
+13,to_refund,,boolean,,,Update quantities on SO/PO,False,version 2
+14,uom_id,,many2one,uom.uom,,Unit of Measure,False,version 2
 ,,,,
 ,,,,

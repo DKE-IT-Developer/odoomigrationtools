@@ -1,25 +1,25 @@
 model,stock.quant.package,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,both
-2,display_name,char,char,,Display Name,Display Name,both
-3,name,char,char,,Package Reference,Package Reference,both
-4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-5,company_id,many2one,many2one,res.company,Company,Company,both
-6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-7,quant_ids,one2many,one2many,stock.quant,Bulk Content,Bulk Content,both
-8,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-9,packaging_id,many2one,many2one,product.packaging,Package Type,Package Type,both
-10,create_date,datetime,datetime,,Created on,Created on,both
-11,location_id,many2one,many2one,stock.location,Location,Location,both
-12,id,integer,integer,,ID,ID,both
-13,owner_id,many2one,many2one,res.partner,Owner,Owner,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+2,display_name,char,char,,Display Name,Display Name,False,both
+3,name,char,char,,Package Reference,Package Reference,False,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+5,company_id,many2one,many2one,res.company,Company,Company,False,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+7,quant_ids,one2many,one2many,stock.quant,Bulk Content,Bulk Content,False,both
+8,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+9,packaging_id,many2one,many2one,product.packaging,Package Type,Package Type,False,both
+10,create_date,datetime,datetime,,Created on,Created on,False,both
+11,location_id,many2one,many2one,stock.location,Location,Location,False,both
+12,id,integer,integer,,ID,ID,False,both
+13,owner_id,many2one,many2one,res.partner,Owner,Owner,False,both
 ,,,,
-14,ancestor_ids,one2many,,stock.quant.package,Ancestors,,version 1
-15,children_ids,one2many,,stock.quant.package,Contained Packages,,version 1
-16,parent_right,integer,,,Right Parent,,version 1
-17,children_quant_ids,one2many,,stock.quant,All Bulk Content,,version 1
-18,parent_id,many2one,,stock.quant.package,Parent Package,,version 1
-19,parent_left,integer,,,Left Parent,,version 1
+14,ancestor_ids,one2many,,stock.quant.package,Ancestors,,False,version 1
+15,children_ids,one2many,,stock.quant.package,Contained Packages,,False,version 1
+16,parent_right,integer,,,Right Parent,,False,version 1
+17,children_quant_ids,one2many,,stock.quant,All Bulk Content,,False,version 1
+18,parent_id,many2one,,stock.quant.package,Parent Package,,False,version 1
+19,parent_left,integer,,,Left Parent,,False,version 1
 ,,,,
 ,,,,
 ,,,,

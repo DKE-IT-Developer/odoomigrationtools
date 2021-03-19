@@ -1,20 +1,20 @@
 model,ir.actions.todo,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,both
-2,display_name,char,char,,Display Name,Display Name,both
-3,name,char,char,,Name,Name,both
-4,sequence,integer,integer,,Sequence,Sequence,both
-5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-7,state,selection,selection,,Status,Status,both
-8,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-9,create_date,datetime,datetime,,Created on,Created on,both
-10,id,integer,integer,,ID,ID,both
-11,action_id,many2one,many2one,ir.actions.actions,Action,Action,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+2,display_name,char,char,,Display Name,Display Name,False,both
+3,name,char,char,,Name,Name,False,both
+4,sequence,integer,integer,,Sequence,Sequence,False,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+7,state,selection,selection,,Status,Status,True,both
+8,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+9,create_date,datetime,datetime,,Created on,Created on,False,both
+10,id,integer,integer,,ID,ID,False,both
+11,action_id,many2one,many2one,ir.actions.actions,Action,Action,True,both
 ,,,,
-12,note,text,,,Text,,version 1
-13,groups_id,many2many,,res.groups,Groups,,version 1
-14,type,selection,,,Type,,version 1
+12,note,text,,,Text,,False,version 1
+13,groups_id,many2many,,res.groups,Groups,,False,version 1
+14,type,selection,,,Type,,True,version 1
 ,,,,
 ,,,,
 ,,,,

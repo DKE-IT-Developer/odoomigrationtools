@@ -1,22 +1,22 @@
 model,account.account.template,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,both
-2,code,char,char,,Code,Code,both
-3,display_name,char,char,,Display Name,Display Name,both
-4,name,char,char,,Name,Name,both
-5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-6,chart_template_id,many2one,many2one,account.chart.template,Chart Template,Chart Template,both
-7,tag_ids,many2many,many2many,account.account.tag,Account tag,Account tag,both
-8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-9,currency_id,many2one,many2one,res.currency,Account Currency,Account Currency,both
-10,note,text,text,,Note,Note,both
-11,nocreate,boolean,boolean,,Optional Create,Optional Create,both
-12,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-13,user_type_id,many2one,many2one,account.account.type,Type,Type,both
-14,create_date,datetime,datetime,,Created on,Created on,both
-15,id,integer,integer,,ID,ID,both
-16,reconcile,boolean,boolean,,Allow Invoices & payments Matching,Allow Invoices & payments Matching,both
-17,tax_ids,many2many,many2many,account.tax.template,Default Taxes,Default Taxes,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+2,code,char,char,,Code,Code,True,both
+3,display_name,char,char,,Display Name,Display Name,False,both
+4,name,char,char,,Name,Name,True,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+6,chart_template_id,many2one,many2one,account.chart.template,Chart Template,Chart Template,False,both
+7,tag_ids,many2many,many2many,account.account.tag,Account tag,Account tag,False,both
+8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+9,currency_id,many2one,many2one,res.currency,Account Currency,Account Currency,False,both
+10,note,text,text,,Note,Note,False,both
+11,nocreate,boolean,boolean,,Optional Create,Optional Create,False,both
+12,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+13,user_type_id,many2one,many2one,account.account.type,Type,Type,True,both
+14,create_date,datetime,datetime,,Created on,Created on,False,both
+15,id,integer,integer,,ID,ID,False,both
+16,reconcile,boolean,boolean,,Allow Invoices & payments Matching,Allow Invoices & payments Matching,False,both
+17,tax_ids,many2many,many2many,account.tax.template,Default Taxes,Default Taxes,False,both
 ,,,,
 ,,,,
 ,,,,

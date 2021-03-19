@@ -1,50 +1,50 @@
 model,ir.model.fields,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,domain,char,char,,Domain,Domain,both
-2,selection,char,char,,Selection Options,Selection Options (Deprecated),both
-3,create_date,datetime,datetime,,Created on,Created on,both
-4,help,text,text,,Field Help,Field Help,both
-5,on_delete,selection,selection,,On Delete,On Delete,both
-6,related,char,char,,Related Field,Related Field,both
-7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-8,depends,char,char,,Dependencies,Dependencies,both
-9,relation,char,char,,Object Relation,Related Model,both
-10,id,integer,integer,,ID,ID,both
-11,size,integer,integer,,Size,Size,both
-12,create_uid,many2one,many2one,res.users,Created by,Created by,both
-13,display_name,char,char,,Display Name,Display Name,both
-14,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-15,website_form_blacklisted,boolean,boolean,,Blacklisted in web forms,Blacklisted in web forms,both
-16,readonly,boolean,boolean,,Readonly,Readonly,both
-17,state,selection,selection,,Type,Type,both
-18,complete_name,char,char,,Complete name,Complete Name,both
-19,relation_field,char,char,,Relation field,Relation Field,both
-20,ttype,selection,selection,,Field Type,Field Type,both
-21,translate,boolean,boolean,,Translatable,Translatable,both
-22,store,boolean,boolean,,Stored,Stored,both
-23,model_id,many2one,many2one,ir.model,Model,Model,both
-24,index,boolean,boolean,,Indexed,Indexed,both
-25,groups,many2many,many2many,res.groups,Groups,Groups,both
-26,selectable,boolean,boolean,,Selectable,Selectable,both
-27,compute,text,text,,Compute,Compute,both
-28,name,char,char,,Field Name,Field Name,both
-29,required,boolean,boolean,,Required,Required,both
-30,modules,char,char,,In Apps,In Apps,both
-31,relation_table,char,char,,Relation table,Relation Table,both
-32,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-33,model,char,char,,Object Name,Model Name,both
-34,column1,char,char,,Column 1,Column 1,both
-35,field_description,char,char,,Field Label,Field Label,both
-36,column2,char,char,,Column 2,Column 2,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,domain,char,char,,Domain,Domain,False,both
+2,selection,char,char,,Selection Options,Selection Options (Deprecated),False,both
+3,create_date,datetime,datetime,,Created on,Created on,False,both
+4,help,text,text,,Field Help,Field Help,False,both
+5,on_delete,selection,selection,,On Delete,On Delete,False,both
+6,related,char,char,,Related Field,Related Field,False,both
+7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+8,depends,char,char,,Dependencies,Dependencies,False,both
+9,relation,char,char,,Object Relation,Related Model,False,both
+10,id,integer,integer,,ID,ID,False,both
+11,size,integer,integer,,Size,Size,False,both
+12,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+13,display_name,char,char,,Display Name,Display Name,False,both
+14,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+15,website_form_blacklisted,boolean,boolean,,Blacklisted in web forms,Blacklisted in web forms,False,both
+16,readonly,boolean,boolean,,Readonly,Readonly,False,both
+17,state,selection,selection,,Type,Type,True,both
+18,complete_name,char,char,,Complete name,Complete Name,False,both
+19,relation_field,char,char,,Relation field,Relation Field,False,both
+20,ttype,selection,selection,,Field Type,Field Type,True,both
+21,translate,boolean,boolean,,Translatable,Translatable,False,both
+22,store,boolean,boolean,,Stored,Stored,False,both
+23,model_id,many2one,many2one,ir.model,Model,Model,True,both
+24,index,boolean,boolean,,Indexed,Indexed,False,both
+25,groups,many2many,many2many,res.groups,Groups,Groups,False,both
+26,selectable,boolean,boolean,,Selectable,Selectable,False,both
+27,compute,text,text,,Compute,Compute,False,both
+28,name,char,char,,Field Name,Field Name,True,both
+29,required,boolean,boolean,,Required,Required,False,both
+30,modules,char,char,,In Apps,In Apps,False,both
+31,relation_table,char,char,,Relation table,Relation Table,False,both
+32,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+33,model,char,char,,Object Name,Model Name,True,both
+34,column1,char,char,,Column 1,Column 1,False,both
+35,field_description,char,char,,Field Label,Field Label,True,both
+36,column2,char,char,,Column 2,Column 2,False,both
 ,,,,
-37,serialization_field_id,many2one,,ir.model.fields,Serialization Field,,version 1
-38,copy,boolean,,,Copied,,version 1
+37,serialization_field_id,many2one,,ir.model.fields,Serialization Field,,False,version 1
+38,copy,boolean,,,Copied,,False,version 1
 ,,,,
-39,group_expand,,boolean,,,Expand Groups,version 2
-40,tracking,,integer,,,Enable Ordered Tracking,version 2
-41,related_field_id,,many2one,ir.model.fields,,Related field,version 2
-42,relation_field_id,,many2one,ir.model.fields,,Relation field,version 2
-43,selection_ids,,one2many,ir.model.fields.selection,,Selection Options,version 2
-44,copied,,boolean,,,Copied,version 2
+39,group_expand,,boolean,,,Expand Groups,False,version 2
+40,tracking,,integer,,,Enable Ordered Tracking,False,version 2
+41,related_field_id,,many2one,ir.model.fields,,Related field,False,version 2
+42,relation_field_id,,many2one,ir.model.fields,,Relation field,False,version 2
+43,selection_ids,,one2many,ir.model.fields.selection,,Selection Options,False,version 2
+44,copied,,boolean,,,Copied,False,version 2
 ,,,,
 ,,,,

@@ -1,43 +1,43 @@
 model,ir.attachment,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,create_date,datetime,datetime,,Date Created,Created on,both
-2,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-3,res_model,char,char,,Resource Model,Resource Model,both
-4,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-5,res_name,char,char,,Resource Name,Resource Name,both
-6,file_size,integer,integer,,File Size,File Size,both
-7,id,integer,integer,,ID,ID,both
-8,create_uid,many2one,many2one,res.users,Owner,Created by,both
-9,display_name,char,char,,Display Name,Display Name,both
-10,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-11,company_id,many2one,many2one,res.company,Company,Company,both
-12,res_id,integer,many2one_reference,,Resource ID,Resource ID,both
-13,index_content,text,text,,Indexed Content,Indexed Content,both
-14,type,selection,selection,,Type,Type,both
-15,public,boolean,boolean,,Is public document,Is public document,both
-16,store_fname,char,char,,Stored Filename,Stored Filename,both
-17,description,text,text,,Description,Description,both
-18,res_field,char,char,,Resource Field,Resource Field,both
-19,mimetype,char,char,,Mime Type,Mime Type,both
-20,name,char,char,,Attachment Name,Name,both
-21,url,char,char,,Url,Url,both
-22,db_datas,binary,binary,,Database Data,Database Data,both
-23,website_url,char,char,,Attachment URL,Website URL,both
-24,checksum,char,char,,Checksum/SHA1,Checksum/SHA1,both
-25,local_url,char,char,,Attachment URL,Attachment URL,both
-26,datas,binary,binary,,File Content,File Content (base64),both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_date,datetime,datetime,,Date Created,Created on,False,both
+2,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+3,res_model,char,char,,Resource Model,Resource Model,False,both
+4,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+5,res_name,char,char,,Resource Name,Resource Name,False,both
+6,file_size,integer,integer,,File Size,File Size,False,both
+7,id,integer,integer,,ID,ID,False,both
+8,create_uid,many2one,many2one,res.users,Owner,Created by,False,both
+9,display_name,char,char,,Display Name,Display Name,False,both
+10,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+11,company_id,many2one,many2one,res.company,Company,Company,False,both
+12,res_id,integer,many2one_reference,,Resource ID,Resource ID,False,both
+13,index_content,text,text,,Indexed Content,Indexed Content,False,both
+14,type,selection,selection,,Type,Type,True,both
+15,public,boolean,boolean,,Is public document,Is public document,False,both
+16,store_fname,char,char,,Stored Filename,Stored Filename,False,both
+17,description,text,text,,Description,Description,False,both
+18,res_field,char,char,,Resource Field,Resource Field,False,both
+19,mimetype,char,char,,Mime Type,Mime Type,False,both
+20,name,char,char,,Attachment Name,Name,True,both
+21,url,char,char,,Url,Url,False,both
+22,db_datas,binary,binary,,Database Data,Database Data,False,both
+23,website_url,char,char,,Attachment URL,Website URL,False,both
+24,checksum,char,char,,Checksum/SHA1,Checksum/SHA1,False,both
+25,local_url,char,char,,Attachment URL,Attachment URL,False,both
+26,datas,binary,binary,,File Content,File Content (base64),False,both
 ,,,,
-27,priority,selection,,,Priority,,version 1
-28,datas_fname,char,,,File Name,,version 1
+27,priority,selection,,,Priority,,False,version 1
+28,datas_fname,char,,,File Name,,False,version 1
 ,,,,
-29,website_id,,many2one,website,,Website,version 2
-30,raw,,binary,,,File Content (raw),version 2
-31,original_id,,many2one,ir.attachment,,"Original (unoptimized, unresized) attachment",version 2
-32,key,,char,,,Key,version 2
-33,theme_template_id,,many2one,theme.ir.attachment,,Theme Template,version 2
-34,access_token,,char,,,Access Token,version 2
-35,image_width,,integer,,,Image Width,version 2
-36,image_height,,integer,,,Image Height,version 2
-37,image_src,,char,,,Image Src,version 2
+29,website_id,,many2one,website,,Website,False,version 2
+30,raw,,binary,,,File Content (raw),False,version 2
+31,original_id,,many2one,ir.attachment,,"Original (unoptimized, unresized) attachment",False,version 2
+32,key,,char,,,Key,False,version 2
+33,theme_template_id,,many2one,theme.ir.attachment,,Theme Template,False,version 2
+34,access_token,,char,,,Access Token,False,version 2
+35,image_width,,integer,,,Image Width,False,version 2
+36,image_height,,integer,,,Image Height,False,version 2
+37,image_src,,char,,,Image Src,False,version 2
 ,,,,
 ,,,,

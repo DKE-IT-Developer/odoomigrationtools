@@ -1,50 +1,50 @@
 model,purchase.order.line,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,create_date,datetime,datetime,,Created on,Created on,both
-2,product_uom,many2one,many2one,uom.uom,Product Unit of Measure,Unit of Measure,both
-3,analytic_tag_ids,many2many,many2many,account.analytic.tag,Analytic Tags,Analytic Tags,both
-4,price_unit,float,float,,Unit Price,Unit Price,both
-5,price_subtotal,monetary,monetary,,Subtotal,Subtotal,both
-6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-7,currency_id,many2one,many2one,res.currency,Currency,Currency,both
-8,product_qty,float,float,,Quantity,Quantity,both
-9,date_order,datetime,datetime,,Order Date,Order Date,both
-10,partner_id,many2one,many2one,res.partner,Partner,Partner,both
-11,id,integer,integer,,ID,ID,both
-12,qty_received,float,float,,Received Qty,Received Qty,both
-13,create_uid,many2one,many2one,res.users,Created by,Created by,both
-14,price_tax,monetary,float,,Tax,Tax,both
-15,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-16,sequence,integer,integer,,Sequence,Sequence,both
-17,company_id,many2one,many2one,res.company,Company,Company,both
-18,move_ids,one2many,one2many,stock.move,Reservation,Reservation,both
-19,state,selection,selection,,Status,Status,both
-20,account_analytic_id,many2one,many2one,account.analytic.account,Analytic Account,Analytic Account,both
-21,order_id,many2one,many2one,purchase.order,Order Reference,Order Reference,both
-22,qty_invoiced,float,float,,Billed Qty,Billed Qty,both
-23,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-24,display_name,char,char,,Display Name,Display Name,both
-25,name,text,text,,Description,Description,both
-26,price_total,monetary,monetary,,Total,Total,both
-27,product_id,many2one,many2one,product.product,Product,Product,both
-28,date_planned,datetime,datetime,,Scheduled Date,Delivery Date,both
-29,invoice_lines,one2many,one2many,account.move.line,Bill Lines,Bill Lines,both
-30,taxes_id,many2many,many2many,account.tax,Taxes,Taxes,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_date,datetime,datetime,,Created on,Created on,False,both
+2,product_uom,many2one,many2one,uom.uom,Product Unit of Measure,Unit of Measure,False,both
+3,analytic_tag_ids,many2many,many2many,account.analytic.tag,Analytic Tags,Analytic Tags,False,both
+4,price_unit,float,float,,Unit Price,Unit Price,True,both
+5,price_subtotal,monetary,monetary,,Subtotal,Subtotal,False,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+7,currency_id,many2one,many2one,res.currency,Currency,Currency,False,both
+8,product_qty,float,float,,Quantity,Quantity,True,both
+9,date_order,datetime,datetime,,Order Date,Order Date,False,both
+10,partner_id,many2one,many2one,res.partner,Partner,Partner,False,both
+11,id,integer,integer,,ID,ID,False,both
+12,qty_received,float,float,,Received Qty,Received Qty,False,both
+13,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+14,price_tax,monetary,float,,Tax,Tax,False,both
+15,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+16,sequence,integer,integer,,Sequence,Sequence,False,both
+17,company_id,many2one,many2one,res.company,Company,Company,False,both
+18,move_ids,one2many,one2many,stock.move,Reservation,Reservation,False,both
+19,state,selection,selection,,Status,Status,False,both
+20,account_analytic_id,many2one,many2one,account.analytic.account,Analytic Account,Analytic Account,False,both
+21,order_id,many2one,many2one,purchase.order,Order Reference,Order Reference,True,both
+22,qty_invoiced,float,float,,Billed Qty,Billed Qty,False,both
+23,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+24,display_name,char,char,,Display Name,Display Name,False,both
+25,name,text,text,,Description,Description,True,both
+26,price_total,monetary,monetary,,Total,Total,False,both
+27,product_id,many2one,many2one,product.product,Product,Product,False,both
+28,date_planned,datetime,datetime,,Scheduled Date,Delivery Date,False,both
+29,invoice_lines,one2many,one2many,account.move.line,Bill Lines,Bill Lines,False,both
+30,taxes_id,many2many,many2many,account.tax,Taxes,Taxes,False,both
 ,,,,
-31,procurement_ids,one2many,,procurement.order,Associated Procurements,,version 1
+31,procurement_ids,one2many,,procurement.order,Associated Procurements,,False,version 1
 ,,,,
-32,qty_to_invoice,,float,,,To Invoice Quantity,version 2
-33,product_uom_qty,,float,,,Total Quantity,version 2
-34,sale_order_id,,many2one,sale.order,,Sale Order,version 2
-35,display_type,,selection,,,Display Type,version 2
-36,propagate_cancel,,boolean,,,Propagate cancellation,version 2
-37,product_uom_category_id,,many2one,uom.category,,Category,version 2
-38,product_type,,selection,,,Product Type,version 2
-39,sale_line_id,,many2one,sale.order.line,,Origin Sale Item,version 2
-40,orderpoint_id,,many2one,stock.warehouse.orderpoint,,Orderpoint,version 2
-41,product_description_variants,,char,,,Custom Description,version 2
-42,move_dest_ids,,one2many,stock.move,,Downstream Moves,version 2
-43,qty_received_manual,,float,,,Manual Received Qty,version 2
-44,qty_received_method,,selection,,,Received Qty Method,version 2
+32,qty_to_invoice,,float,,,To Invoice Quantity,False,version 2
+33,product_uom_qty,,float,,,Total Quantity,False,version 2
+34,sale_order_id,,many2one,sale.order,,Sale Order,False,version 2
+35,display_type,,selection,,,Display Type,False,version 2
+36,propagate_cancel,,boolean,,,Propagate cancellation,False,version 2
+37,product_uom_category_id,,many2one,uom.category,,Category,False,version 2
+38,product_type,,selection,,,Product Type,False,version 2
+39,sale_line_id,,many2one,sale.order.line,,Origin Sale Item,False,version 2
+40,orderpoint_id,,many2one,stock.warehouse.orderpoint,,Orderpoint,False,version 2
+41,product_description_variants,,char,,,Custom Description,False,version 2
+42,move_dest_ids,,one2many,stock.move,,Downstream Moves,False,version 2
+43,qty_received_manual,,float,,,Manual Received Qty,False,version 2
+44,qty_received_method,,selection,,,Received Qty Method,False,version 2
 ,,,,
 ,,,,

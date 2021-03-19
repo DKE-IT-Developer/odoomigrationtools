@@ -1,45 +1,45 @@
 model,stock.picking.type,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,code,selection,selection,,Type of Operation,Type of Operation,both
-2,create_date,datetime,datetime,,Created on,Created on,both
-3,count_mo_late,integer,integer,,Count mo late,Number of Manufacturing Orders Late,both
-4,sequence,integer,integer,,Sequence,Sequence,both
-5,color,integer,integer,,Color,Color,both
-6,count_picking_draft,integer,integer,,Count picking draft,Count Picking Draft,both
-7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-8,count_mo_waiting,integer,integer,,Count mo waiting,Number of Manufacturing Orders Waiting,both
-9,count_mo_todo,integer,integer,,Count mo todo,Number of Manufacturing Orders to Process,both
-10,use_create_lots,boolean,boolean,,Create New Lots/Serial Numbers,Create New Lots/Serial Numbers,both
-11,id,integer,integer,,ID,ID,both
-12,create_uid,many2one,many2one,res.users,Created by,Created by,both
-13,default_location_dest_id,many2one,many2one,stock.location,Default Destination Location,Default Destination Location,both
-14,show_entire_packs,boolean,boolean,,Allow moving packs,Move Entire Packages,both
-15,display_name,char,char,,Display Name,Display Name,both
-16,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-17,use_existing_lots,boolean,boolean,,Use Existing Lots/Serial Numbers,Use Existing Lots/Serial Numbers,both
-18,count_picking_waiting,integer,integer,,Count picking waiting,Count Picking Waiting,both
-19,count_picking,integer,integer,,Count picking,Count Picking,both
-20,warehouse_id,many2one,many2one,stock.warehouse,Warehouse,Warehouse,both
-21,sequence_id,many2one,many2one,ir.sequence,Reference Sequence,Reference Sequence,both
-22,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-23,active,boolean,boolean,,Active,Active,both
-24,count_picking_backorders,integer,integer,,Count picking backorders,Count Picking Backorders,both
-25,name,char,char,,Picking Type Name,Operation Type,both
-26,count_picking_ready,integer,integer,,Count picking ready,Count Picking Ready,both
-27,return_picking_type_id,many2one,many2one,stock.picking.type,Picking Type for Returns,Operation Type for Returns,both
-28,count_picking_late,integer,integer,,Count picking late,Count Picking Late,both
-29,default_location_src_id,many2one,many2one,stock.location,Default Source Location,Default Source Location,both
-30,rate_picking_backorders,integer,integer,,Rate picking backorders,Rate Picking Backorders,both
-31,rate_picking_late,integer,integer,,Rate picking late,Rate Picking Late,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,code,selection,selection,,Type of Operation,Type of Operation,True,both
+2,create_date,datetime,datetime,,Created on,Created on,False,both
+3,count_mo_late,integer,integer,,Count mo late,Number of Manufacturing Orders Late,False,both
+4,sequence,integer,integer,,Sequence,Sequence,False,both
+5,color,integer,integer,,Color,Color,False,both
+6,count_picking_draft,integer,integer,,Count picking draft,Count Picking Draft,False,both
+7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+8,count_mo_waiting,integer,integer,,Count mo waiting,Number of Manufacturing Orders Waiting,False,both
+9,count_mo_todo,integer,integer,,Count mo todo,Number of Manufacturing Orders to Process,False,both
+10,use_create_lots,boolean,boolean,,Create New Lots/Serial Numbers,Create New Lots/Serial Numbers,False,both
+11,id,integer,integer,,ID,ID,False,both
+12,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+13,default_location_dest_id,many2one,many2one,stock.location,Default Destination Location,Default Destination Location,False,both
+14,show_entire_packs,boolean,boolean,,Allow moving packs,Move Entire Packages,False,both
+15,display_name,char,char,,Display Name,Display Name,False,both
+16,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+17,use_existing_lots,boolean,boolean,,Use Existing Lots/Serial Numbers,Use Existing Lots/Serial Numbers,False,both
+18,count_picking_waiting,integer,integer,,Count picking waiting,Count Picking Waiting,False,both
+19,count_picking,integer,integer,,Count picking,Count Picking,False,both
+20,warehouse_id,many2one,many2one,stock.warehouse,Warehouse,Warehouse,False,both
+21,sequence_id,many2one,many2one,ir.sequence,Reference Sequence,Reference Sequence,False,both
+22,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+23,active,boolean,boolean,,Active,Active,False,both
+24,count_picking_backorders,integer,integer,,Count picking backorders,Count Picking Backorders,False,both
+25,name,char,char,,Picking Type Name,Operation Type,True,both
+26,count_picking_ready,integer,integer,,Count picking ready,Count Picking Ready,False,both
+27,return_picking_type_id,many2one,many2one,stock.picking.type,Picking Type for Returns,Operation Type for Returns,False,both
+28,count_picking_late,integer,integer,,Count picking late,Count Picking Late,False,both
+29,default_location_src_id,many2one,many2one,stock.location,Default Source Location,Default Source Location,False,both
+30,rate_picking_backorders,integer,integer,,Rate picking backorders,Rate Picking Backorders,False,both
+31,rate_picking_late,integer,integer,,Rate picking late,Rate Picking Late,False,both
 ,,,,
-32,last_done_picking,char,,,Last 10 Done Pickings,,version 1
-33,barcode_nomenclature_id,many2one,,barcode.nomenclature,Barcode Nomenclature,,version 1
+32,last_done_picking,char,,,Last 10 Done Pickings,,False,version 1
+33,barcode_nomenclature_id,many2one,,barcode.nomenclature,Barcode Nomenclature,,False,version 1
 ,,,,
-34,use_create_components_lots,,boolean,,,Create New Lots/Serial Numbers for Components,version 2
-35,barcode,,char,,,Barcode,version 2
-36,company_id,,many2one,res.company,,Company,version 2
-37,sequence_code,,char,,,Code,version 2
-38,show_reserved,,boolean,,,Pre-fill Detailed Operations,version 2
-39,show_operations,,boolean,,,Show Detailed Operations,version 2
+34,use_create_components_lots,,boolean,,,Create New Lots/Serial Numbers for Components,False,version 2
+35,barcode,,char,,,Barcode,False,version 2
+36,company_id,,many2one,res.company,,Company,True,version 2
+37,sequence_code,,char,,,Code,True,version 2
+38,show_reserved,,boolean,,,Pre-fill Detailed Operations,False,version 2
+39,show_operations,,boolean,,,Show Detailed Operations,False,version 2
 ,,,,
 ,,,,

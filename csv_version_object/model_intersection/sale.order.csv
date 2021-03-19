@@ -1,122 +1,122 @@
 model,sale.order,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,origin,char,char,,Source Document,Source Document,both
-2,message_follower_ids,one2many,one2many,mail.followers,Followers,Followers,both
-3,create_date,datetime,datetime,,Creation Date,Creation Date,both
-4,order_line,one2many,one2many,sale.order.line,Order Lines,Order Lines,both
-5,message_needaction,boolean,boolean,,Action Needed,Action Needed,both
-6,message_channel_ids,many2many,many2many,mail.channel,Followers (Channels),Followers (Channels),both
-7,message_partner_ids,many2many,many2many,res.partner,Followers (Partners),Followers (Partners),both
-8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-9,currency_id,many2one,many2one,res.currency,Currency,Currency,both
-10,invoice_ids,many2many,many2many,account.move,Invoices,Invoices,both
-11,team_id,many2one,many2one,crm.team,Sales Team,Sales Team,both
-12,client_order_ref,char,char,,Customer Reference,Customer Reference,both
-13,date_order,datetime,datetime,,Order Date,Order Date,both
-14,partner_id,many2one,many2one,res.partner,Customer,Customer,both
-15,message_ids,one2many,one2many,mail.message,Messages,Messages,both
-16,amount_tax,monetary,monetary,,Taxes,Taxes,both
-17,delivery_count,integer,integer,,Delivery Orders,Delivery Orders,both
-18,amount_untaxed,monetary,monetary,,Untaxed Amount,Untaxed Amount,both
-19,invoice_status,selection,selection,,Invoice Status,Invoice Status,both
-20,message_is_follower,boolean,boolean,,Is Follower,Is Follower,both
-21,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-22,cart_quantity,integer,integer,,Cart Quantity,Cart Quantity,both
-23,company_id,many2one,many2one,res.company,Company,Company,both
-24,id,integer,integer,,ID,ID,both
-25,note,text,text,,Terms and conditions,Terms and conditions,both
-26,picking_policy,selection,selection,,Shipping Policy,Shipping Policy,both
-27,state,selection,selection,,Status,Status,both
-28,pricelist_id,many2one,many2one,product.pricelist,Pricelist,Pricelist,both
-29,message_unread_counter,integer,integer,,Unread Messages Counter,Unread Messages Counter,both
-30,project_id,many2one,many2one,project.project,Analytic Account,Project,both
-31,incoterm,many2one,many2one,account.incoterms,Incoterms,Incoterm,both
-32,create_uid,many2one,many2one,res.users,Created by,Created by,both
-33,validity_date,date,date,,Expiration Date,Expiration,both
-34,procurement_group_id,many2one,many2one,procurement.group,Procurement Group,Procurement Group,both
-35,warehouse_id,many2one,many2one,stock.warehouse,Warehouse,Warehouse,both
-36,payment_term_id,many2one,many2one,account.payment.term,Payment Terms,Payment Terms,both
-37,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-38,partner_invoice_id,many2one,many2one,res.partner,Invoice Address,Invoice Address,both
-39,display_name,char,char,,Display Name,Display Name,both
-40,picking_ids,many2many,one2many,stock.picking,Picking associated to this sale,Transfers,both
-41,fiscal_position_id,many2one,many2one,account.fiscal.position,Fiscal Position,Fiscal Position,both
-42,amount_total,monetary,monetary,,Total,Total,both
-43,invoice_count,integer,integer,,# of Invoices,Invoice Count,both
-44,name,char,char,,Order Reference,Order Reference,both
-45,partner_shipping_id,many2one,many2one,res.partner,Delivery Address,Delivery Address,both
-46,user_id,many2one,many2one,res.users,Salesperson,Salesperson,both
-47,website_order_line,one2many,one2many,sale.order.line,Order Lines displayed on Website,Order Lines displayed on Website,both
-48,only_services,boolean,boolean,,Only Services,Only Services,both
-49,message_unread,boolean,boolean,,Unread Messages,Unread Messages,both
-50,message_needaction_counter,integer,integer,,Number of Actions,Number of Actions,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,origin,char,char,,Source Document,Source Document,False,both
+2,message_follower_ids,one2many,one2many,mail.followers,Followers,Followers,False,both
+3,create_date,datetime,datetime,,Creation Date,Creation Date,False,both
+4,order_line,one2many,one2many,sale.order.line,Order Lines,Order Lines,False,both
+5,message_needaction,boolean,boolean,,Action Needed,Action Needed,False,both
+6,message_channel_ids,many2many,many2many,mail.channel,Followers (Channels),Followers (Channels),False,both
+7,message_partner_ids,many2many,many2many,res.partner,Followers (Partners),Followers (Partners),False,both
+8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+9,currency_id,many2one,many2one,res.currency,Currency,Currency,False,both
+10,invoice_ids,many2many,many2many,account.move,Invoices,Invoices,False,both
+11,team_id,many2one,many2one,crm.team,Sales Team,Sales Team,False,both
+12,client_order_ref,char,char,,Customer Reference,Customer Reference,False,both
+13,date_order,datetime,datetime,,Order Date,Order Date,True,both
+14,partner_id,many2one,many2one,res.partner,Customer,Customer,True,both
+15,message_ids,one2many,one2many,mail.message,Messages,Messages,False,both
+16,amount_tax,monetary,monetary,,Taxes,Taxes,False,both
+17,delivery_count,integer,integer,,Delivery Orders,Delivery Orders,False,both
+18,amount_untaxed,monetary,monetary,,Untaxed Amount,Untaxed Amount,False,both
+19,invoice_status,selection,selection,,Invoice Status,Invoice Status,False,both
+20,message_is_follower,boolean,boolean,,Is Follower,Is Follower,False,both
+21,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+22,cart_quantity,integer,integer,,Cart Quantity,Cart Quantity,False,both
+23,company_id,many2one,many2one,res.company,Company,Company,True,both
+24,id,integer,integer,,ID,ID,False,both
+25,note,text,text,,Terms and conditions,Terms and conditions,False,both
+26,picking_policy,selection,selection,,Shipping Policy,Shipping Policy,True,both
+27,state,selection,selection,,Status,Status,False,both
+28,pricelist_id,many2one,many2one,product.pricelist,Pricelist,Pricelist,True,both
+29,message_unread_counter,integer,integer,,Unread Messages Counter,Unread Messages Counter,False,both
+30,project_id,many2one,many2one,project.project,Analytic Account,Project,False,both
+31,incoterm,many2one,many2one,account.incoterms,Incoterms,Incoterm,False,both
+32,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+33,validity_date,date,date,,Expiration Date,Expiration,False,both
+34,procurement_group_id,many2one,many2one,procurement.group,Procurement Group,Procurement Group,False,both
+35,warehouse_id,many2one,many2one,stock.warehouse,Warehouse,Warehouse,True,both
+36,payment_term_id,many2one,many2one,account.payment.term,Payment Terms,Payment Terms,False,both
+37,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+38,partner_invoice_id,many2one,many2one,res.partner,Invoice Address,Invoice Address,True,both
+39,display_name,char,char,,Display Name,Display Name,False,both
+40,picking_ids,many2many,one2many,stock.picking,Picking associated to this sale,Transfers,False,both
+41,fiscal_position_id,many2one,many2one,account.fiscal.position,Fiscal Position,Fiscal Position,False,both
+42,amount_total,monetary,monetary,,Total,Total,False,both
+43,invoice_count,integer,integer,,# of Invoices,Invoice Count,False,both
+44,name,char,char,,Order Reference,Order Reference,True,both
+45,partner_shipping_id,many2one,many2one,res.partner,Delivery Address,Delivery Address,True,both
+46,user_id,many2one,many2one,res.users,Salesperson,Salesperson,False,both
+47,website_order_line,one2many,one2many,sale.order.line,Order Lines displayed on Website,Order Lines displayed on Website,False,both
+48,only_services,boolean,boolean,,Only Services,Only Services,False,both
+49,message_unread,boolean,boolean,,Unread Messages,Unread Messages,False,both
+50,message_needaction_counter,integer,integer,,Number of Actions,Number of Actions,False,both
 ,,,,
-51,product_id,many2one,,product.product,Product,,version 1
-52,confirmation_date,datetime,,,Confirmation Date,,version 1
-53,payment_tx_id,many2one,,payment.transaction,Transaction,,version 1
-54,message_last_post,datetime,,,Last Message Date,,version 1
-55,related_project_id,many2one,,account.analytic.account,Analytic Account,,version 1
-56,payment_acquirer_id,many2one,,payment.acquirer,Payment Acquirer,,version 1
+51,product_id,many2one,,product.product,Product,,False,version 1
+52,confirmation_date,datetime,,,Confirmation Date,,False,version 1
+53,payment_tx_id,many2one,,payment.transaction,Transaction,,False,version 1
+54,message_last_post,datetime,,,Last Message Date,,False,version 1
+55,related_project_id,many2one,,account.analytic.account,Analytic Account,,False,version 1
+56,payment_acquirer_id,many2one,,payment.acquirer,Payment Acquirer,,False,version 1
 ,,,,
-57,expense_ids,,one2many,hr.expense,,Expenses,version 2
-58,purchase_order_count,,integer,,,Number of Purchase Order Generated,version 2
-59,activity_date_deadline,,date,,,Next Activity Deadline,version 2
-60,expected_date,,datetime,,,Expected Date,version 2
-61,message_has_sms_error,,boolean,,,SMS Delivery error,version 2
-62,signed_on,,datetime,,,Signed On,version 2
-63,type_name,,char,,,Type Name,version 2
-64,tag_ids,,many2many,crm.tag,,Tags,version 2
-65,require_payment,,boolean,,,Online Payment,version 2
-66,show_update_pricelist,,boolean,,,Has Pricelist Changed,version 2
-67,is_abandoned_cart,,boolean,,,Abandoned Cart,version 2
-68,activity_user_id,,many2one,res.users,,Responsible User,version 2
-69,effective_date,,date,,,Effective Date,version 2
-70,grid_update,,boolean,,,Grid Update,version 2
-71,sale_order_template_id,,many2one,sale.order.template,,Quotation Template,version 2
-72,cart_recovery_email_sent,,boolean,,,Cart recovery email already sent,version 2
-73,tasks_ids,,many2many,project.task,,Tasks associated to this sale,version 2
-74,grid,,char,,,Matrix local storage,version 2
-75,expense_count,,integer,,,# of Expenses,version 2
-76,require_signature,,boolean,,,Online Signature,version 2
-77,json_popover,,char,,,JSON data for the popover widget,version 2
-78,activity_type_id,,many2one,mail.activity.type,,Next Activity Type,version 2
-79,amount_by_group,,binary,,,Tax amount by group,version 2
-80,activity_ids,,one2many,mail.activity,,Activities,version 2
-81,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,version 2
-82,access_token,,char,,,Security Token,version 2
-83,activity_exception_icon,,char,,,Icon,version 2
-84,sale_order_option_ids,,one2many,sale.order.option,,Optional Products Lines,version 2
-85,amount_undiscounted,,float,,,Amount Before Discount,version 2
-86,medium_id,,many2one,utm.medium,,Medium,version 2
-87,activity_state,,selection,,,Activity State,version 2
-88,website_message_ids,,one2many,mail.message,,Website Messages,version 2
-89,is_expired,,boolean,,,Is expired,version 2
-90,reference,,char,,,Payment Ref.,version 2
-91,website_id,,many2one,website,,Website,version 2
-92,campaign_id,,many2one,utm.campaign,,Campaign,version 2
-93,tasks_count,,integer,,,Tasks,version 2
-94,message_has_error,,boolean,,,Message Delivery error,version 2
-95,access_warning,,text,,,Access warning,version 2
-96,analytic_account_id,,many2one,account.analytic.account,,Analytic Account,version 2
-97,activity_exception_decoration,,selection,,,Activity Exception Decoration,version 2
-98,authorized_transaction_ids,,many2many,payment.transaction,,Authorized Transactions,version 2
-99,project_ids,,many2many,project.project,,Projects,version 2
-100,activity_type_icon,,char,,,Activity Type Icon,version 2
-101,visible_project,,boolean,,,Display project,version 2
-102,message_attachment_count,,integer,,,Attachment Count,version 2
-103,report_grids,,boolean,,,Print Variant Grids,version 2
-104,warning_stock,,char,,,Warning,version 2
-105,message_has_error_counter,,integer,,,Number of errors,version 2
-106,currency_rate,,float,,,Currency Rate,version 2
-107,access_url,,char,,,Portal Access URL,version 2
-108,commitment_date,,datetime,,,Delivery Date,version 2
-109,show_json_popover,,boolean,,,Has late picking,version 2
-110,activity_summary,,char,,,Next Activity Summary,version 2
-111,mrp_production_count,,integer,,,Count of MO generated,version 2
-112,transaction_ids,,many2many,payment.transaction,,Transactions,version 2
-113,grid_product_tmpl_id,,many2one,product.template,,Grid Product Tmpl,version 2
-114,signed_by,,char,,,Signed By,version 2
-115,signature,,binary,,,Signature,version 2
-116,source_id,,many2one,utm.source,,Source,version 2
+57,expense_ids,,one2many,hr.expense,,Expenses,False,version 2
+58,purchase_order_count,,integer,,,Number of Purchase Order Generated,False,version 2
+59,activity_date_deadline,,date,,,Next Activity Deadline,False,version 2
+60,expected_date,,datetime,,,Expected Date,False,version 2
+61,message_has_sms_error,,boolean,,,SMS Delivery error,False,version 2
+62,signed_on,,datetime,,,Signed On,False,version 2
+63,type_name,,char,,,Type Name,False,version 2
+64,tag_ids,,many2many,crm.tag,,Tags,False,version 2
+65,require_payment,,boolean,,,Online Payment,False,version 2
+66,show_update_pricelist,,boolean,,,Has Pricelist Changed,False,version 2
+67,is_abandoned_cart,,boolean,,,Abandoned Cart,False,version 2
+68,activity_user_id,,many2one,res.users,,Responsible User,False,version 2
+69,effective_date,,date,,,Effective Date,False,version 2
+70,grid_update,,boolean,,,Grid Update,False,version 2
+71,sale_order_template_id,,many2one,sale.order.template,,Quotation Template,False,version 2
+72,cart_recovery_email_sent,,boolean,,,Cart recovery email already sent,False,version 2
+73,tasks_ids,,many2many,project.task,,Tasks associated to this sale,False,version 2
+74,grid,,char,,,Matrix local storage,False,version 2
+75,expense_count,,integer,,,# of Expenses,False,version 2
+76,require_signature,,boolean,,,Online Signature,False,version 2
+77,json_popover,,char,,,JSON data for the popover widget,False,version 2
+78,activity_type_id,,many2one,mail.activity.type,,Next Activity Type,False,version 2
+79,amount_by_group,,binary,,,Tax amount by group,False,version 2
+80,activity_ids,,one2many,mail.activity,,Activities,False,version 2
+81,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,False,version 2
+82,access_token,,char,,,Security Token,False,version 2
+83,activity_exception_icon,,char,,,Icon,False,version 2
+84,sale_order_option_ids,,one2many,sale.order.option,,Optional Products Lines,False,version 2
+85,amount_undiscounted,,float,,,Amount Before Discount,False,version 2
+86,medium_id,,many2one,utm.medium,,Medium,False,version 2
+87,activity_state,,selection,,,Activity State,False,version 2
+88,website_message_ids,,one2many,mail.message,,Website Messages,False,version 2
+89,is_expired,,boolean,,,Is expired,False,version 2
+90,reference,,char,,,Payment Ref.,False,version 2
+91,website_id,,many2one,website,,Website,False,version 2
+92,campaign_id,,many2one,utm.campaign,,Campaign,False,version 2
+93,tasks_count,,integer,,,Tasks,False,version 2
+94,message_has_error,,boolean,,,Message Delivery error,False,version 2
+95,access_warning,,text,,,Access warning,False,version 2
+96,analytic_account_id,,many2one,account.analytic.account,,Analytic Account,False,version 2
+97,activity_exception_decoration,,selection,,,Activity Exception Decoration,False,version 2
+98,authorized_transaction_ids,,many2many,payment.transaction,,Authorized Transactions,False,version 2
+99,project_ids,,many2many,project.project,,Projects,False,version 2
+100,activity_type_icon,,char,,,Activity Type Icon,False,version 2
+101,visible_project,,boolean,,,Display project,False,version 2
+102,message_attachment_count,,integer,,,Attachment Count,False,version 2
+103,report_grids,,boolean,,,Print Variant Grids,False,version 2
+104,warning_stock,,char,,,Warning,False,version 2
+105,message_has_error_counter,,integer,,,Number of errors,False,version 2
+106,currency_rate,,float,,,Currency Rate,False,version 2
+107,access_url,,char,,,Portal Access URL,False,version 2
+108,commitment_date,,datetime,,,Delivery Date,False,version 2
+109,show_json_popover,,boolean,,,Has late picking,False,version 2
+110,activity_summary,,char,,,Next Activity Summary,False,version 2
+111,mrp_production_count,,integer,,,Count of MO generated,False,version 2
+112,transaction_ids,,many2many,payment.transaction,,Transactions,False,version 2
+113,grid_product_tmpl_id,,many2one,product.template,,Grid Product Tmpl,False,version 2
+114,signed_by,,char,,,Signed By,False,version 2
+115,signature,,binary,,,Signature,False,version 2
+116,source_id,,many2one,utm.source,,Source,False,version 2
 ,,,,
 ,,,,

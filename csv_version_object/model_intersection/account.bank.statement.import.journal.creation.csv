@@ -1,102 +1,102 @@
 model,account.bank.statement.import.journal.creation,transient,True
-no,field,type1,type2,relation,string1,string2,source
-1,code,char,char,,Short Code,Short Code,both
-2,create_date,datetime,datetime,,Created on,Created on,both
-3,sequence,integer,integer,,Sequence,Sequence,both
-4,company_id,many2one,many2one,res.company,Company,Company,both
-5,currency_id,many2one,many2one,res.currency,Currency,Currency,both
-6,at_least_one_inbound,boolean,boolean,,At least one inbound,At Least One Inbound,both
-7,account_control_ids,many2many,many2many,account.account,Accounts Allowed,Allowed accounts,both
-8,bank_statements_source,selection,selection,,Bank Feeds,Bank Feeds,both
-9,id,integer,integer,,ID,ID,both
-10,create_uid,many2one,many2one,res.users,Created by,Created by,both
-11,display_name,char,char,,Display Name,Display Name,both
-12,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-13,journal_id,many2one,many2one,account.journal,Journal id,Journal,both
-14,bank_account_id,many2one,many2one,res.partner.bank,Bank Account,Bank Account,both
-15,outbound_payment_method_ids,many2many,many2many,account.payment.method,Payment Methods,Outbound Payment Methods,both
-16,kanban_dashboard_graph,text,text,,Kanban dashboard graph,Kanban Dashboard Graph,both
-17,bank_acc_number,char,char,,Account Number,Account Number,both
-18,kanban_dashboard,text,text,,Kanban dashboard,Kanban Dashboard,both
-19,show_on_dashboard,boolean,boolean,,Show journal on dashboard,Show journal on dashboard,both
-20,profit_account_id,many2one,many2one,account.account,Profit Account,Profit Account,both
-21,inbound_payment_method_ids,many2many,many2many,account.payment.method,Debit Methods,Inbound Payment Methods,both
-22,type_control_ids,many2many,many2many,account.account.type,Account Types Allowed,Allowed account types,both
-23,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-24,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-25,loss_account_id,many2one,many2one,account.account,Loss Account,Loss Account,both
-26,name,char,char,,Journal Name,Journal Name,both
-27,type,selection,selection,,Type,Type,both
-28,bank_id,many2one,many2one,res.bank,Bank,Bank,both
-29,at_least_one_outbound,boolean,boolean,,At least one outbound,At Least One Outbound,both
-30,refund_sequence,boolean,boolean,,Dedicated Refund Sequence,Dedicated Credit Note Sequence,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,code,char,char,,Short Code,Short Code,True,both
+2,create_date,datetime,datetime,,Created on,Created on,False,both
+3,sequence,integer,integer,,Sequence,Sequence,False,both
+4,company_id,many2one,many2one,res.company,Company,Company,True,both
+5,currency_id,many2one,many2one,res.currency,Currency,Currency,False,both
+6,at_least_one_inbound,boolean,boolean,,At least one inbound,At Least One Inbound,False,both
+7,account_control_ids,many2many,many2many,account.account,Accounts Allowed,Allowed accounts,False,both
+8,bank_statements_source,selection,selection,,Bank Feeds,Bank Feeds,False,both
+9,id,integer,integer,,ID,ID,False,both
+10,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+11,display_name,char,char,,Display Name,Display Name,False,both
+12,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+13,journal_id,many2one,many2one,account.journal,Journal id,Journal,True,both
+14,bank_account_id,many2one,many2one,res.partner.bank,Bank Account,Bank Account,False,both
+15,outbound_payment_method_ids,many2many,many2many,account.payment.method,Payment Methods,Outbound Payment Methods,False,both
+16,kanban_dashboard_graph,text,text,,Kanban dashboard graph,Kanban Dashboard Graph,False,both
+17,bank_acc_number,char,char,,Account Number,Account Number,False,both
+18,kanban_dashboard,text,text,,Kanban dashboard,Kanban Dashboard,False,both
+19,show_on_dashboard,boolean,boolean,,Show journal on dashboard,Show journal on dashboard,False,both
+20,profit_account_id,many2one,many2one,account.account,Profit Account,Profit Account,False,both
+21,inbound_payment_method_ids,many2many,many2many,account.payment.method,Debit Methods,Inbound Payment Methods,False,both
+22,type_control_ids,many2many,many2many,account.account.type,Account Types Allowed,Allowed account types,False,both
+23,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+24,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+25,loss_account_id,many2one,many2one,account.account,Loss Account,Loss Account,False,both
+26,name,char,char,,Journal Name,Journal Name,True,both
+27,type,selection,selection,,Type,Type,True,both
+28,bank_id,many2one,many2one,res.bank,Bank,Bank,False,both
+29,at_least_one_outbound,boolean,boolean,,At least one outbound,At Least One Outbound,False,both
+30,refund_sequence,boolean,boolean,,Dedicated Refund Sequence,Dedicated Credit Note Sequence,False,both
 ,,,,
-31,default_debit_account_id,many2one,,account.account,Default Debit Account,,version 1
-32,default_credit_account_id,many2one,,account.account,Default Credit Account,,version 1
-33,sequence_id,many2one,,ir.sequence,Entry Sequence,,version 1
-34,refund_sequence_id,many2one,,ir.sequence,Refund Entry Sequence,,version 1
-35,update_posted,boolean,,,Allow Cancelling Entries,,version 1
-36,group_invoice_lines,boolean,,,Group Invoice Lines,,version 1
-37,belongs_to_company,boolean,,,Belong to the user's current company,,version 1
-38,display_on_footer,boolean,,,Show in Invoices Footer,,version 1
+31,default_debit_account_id,many2one,,account.account,Default Debit Account,,False,version 1
+32,default_credit_account_id,many2one,,account.account,Default Credit Account,,False,version 1
+33,sequence_id,many2one,,ir.sequence,Entry Sequence,,True,version 1
+34,refund_sequence_id,many2one,,ir.sequence,Refund Entry Sequence,,False,version 1
+35,update_posted,boolean,,,Allow Cancelling Entries,,False,version 1
+36,group_invoice_lines,boolean,,,Group Invoice Lines,,False,version 1
+37,belongs_to_company,boolean,,,Belong to the user's current company,,False,version 1
+38,display_on_footer,boolean,,,Show in Invoices Footer,,False,version 1
 ,,,,
-39,sale_activity_note,,text,,,Activity Summary,version 2
-40,compatible_edi_ids,,many2many,account.edi.format,,Compatible Edi,version 2
-41,color,,integer,,,Color Index,version 2
-42,alias_id,,many2one,mail.alias,,Email Alias,version 2
-43,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,version 2
-44,country_code,,char,,,Country Code,version 2
-45,secure_sequence_id,,many2one,ir.sequence,,Secure Sequence,version 2
-46,message_has_error,,boolean,,,Message Delivery error,version 2
-47,activity_date_deadline,,date,,,Next Activity Deadline,version 2
-48,message_is_follower,,boolean,,,Is Follower,version 2
-49,message_has_sms_error,,boolean,,,SMS Delivery error,version 2
-50,journal_group_ids,,many2many,account.journal.group,,Journal Groups,version 2
-51,activity_user_id,,many2one,res.users,,Responsible User,version 2
-52,account_online_link_id,,many2one,account.online.link,,Account Online Link,version 2
-53,alias_domain,,char,,,Alias domain,version 2
-54,next_synchronization,,datetime,,,Next synchronization,version 2
-55,json_activity_data,,text,,,Json Activity Data,version 2
-56,account_online_provider_id,,many2one,account.online.provider,,Account Online Provider,version 2
-57,restrict_mode_hash_table,,boolean,,,Lock Posted Entries with Hash,version 2
-58,message_attachment_count,,integer,,,Attachment Count,version 2
-59,account_online_link_state,,selection,,,State,version 2
-60,activity_type_id,,many2one,mail.activity.type,,Next Activity Type,version 2
-61,activity_ids,,one2many,mail.activity,,Activities,version 2
-62,edi_format_ids,,many2many,account.edi.format,,Electronic invoicing,version 2
-63,activity_exception_icon,,char,,,Icon,version 2
-64,payment_credit_account_id,,many2one,account.account,,Outstanding Payments Account,version 2
-65,activity_state,,selection,,,Activity State,version 2
-66,website_message_ids,,one2many,mail.message,,Website Messages,version 2
-67,sale_activity_user_id,,many2one,res.users,,Activity User,version 2
-68,message_follower_ids,,one2many,mail.followers,,Followers,version 2
-69,message_needaction,,boolean,,,Action Needed,version 2
-70,message_channel_ids,,many2many,mail.channel,,Followers (Channels),version 2
-71,message_partner_ids,,many2many,res.partner,,Followers (Partners),version 2
-72,suspense_account_id,,many2one,account.account,,Suspense Account,version 2
-73,bank_statement_creation,,selection,,,Creation of Bank Statements,version 2
-74,alias_name,,char,,,Alias Name,version 2
-75,account_online_account_id,,many2one,account.online.account,,Account Online Account,version 2
-76,activity_exception_decoration,,selection,,,Activity Exception Decoration,version 2
-77,activity_type_icon,,char,,,Activity Type Icon,version 2
-78,message_ids,,one2many,mail.message,,Messages,version 2
-79,invoice_reference_model,,selection,,,Communication Standard,version 2
-80,sequence_override_regex,,text,,,Sequence Override Regex,version 2
-81,message_unread_counter,,integer,,,Unread Messages Counter,version 2
-82,synchronization_status,,char,,,Synchronization status,version 2
-83,company_partner_id,,many2one,res.partner,,Account Holder,version 2
-84,message_has_error_counter,,integer,,,Number of errors,version 2
-85,sale_activity_type_id,,many2one,mail.activity.type,,Schedule Activity,version 2
-86,next_link_synchronization,,datetime,,,Online Link Next synchronization,version 2
-87,active,,boolean,,,Active,version 2
-88,default_account_type,,many2one,account.account.type,,Default Account Type,version 2
-89,activity_summary,,char,,,Next Activity Summary,version 2
-90,default_account_id,,many2one,account.account,,Default Account,version 2
-91,payment_debit_account_id,,many2one,account.account,,Outstanding Receipts Account,version 2
-92,invoice_reference_type,,selection,,,Communication Type,version 2
-93,bank_statement_creation_groupby,,selection,,,Bank Statements Group By,version 2
-94,account_online_journal_id,,many2one,account.online.journal,,Account Online Journal,version 2
-95,message_unread,,boolean,,,Unread Messages,version 2
-96,message_needaction_counter,,integer,,,Number of Actions,version 2
+39,sale_activity_note,,text,,,Activity Summary,False,version 2
+40,compatible_edi_ids,,many2many,account.edi.format,,Compatible Edi,False,version 2
+41,color,,integer,,,Color Index,False,version 2
+42,alias_id,,many2one,mail.alias,,Email Alias,False,version 2
+43,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,False,version 2
+44,country_code,,char,,,Country Code,False,version 2
+45,secure_sequence_id,,many2one,ir.sequence,,Secure Sequence,False,version 2
+46,message_has_error,,boolean,,,Message Delivery error,False,version 2
+47,activity_date_deadline,,date,,,Next Activity Deadline,False,version 2
+48,message_is_follower,,boolean,,,Is Follower,False,version 2
+49,message_has_sms_error,,boolean,,,SMS Delivery error,False,version 2
+50,journal_group_ids,,many2many,account.journal.group,,Journal Groups,False,version 2
+51,activity_user_id,,many2one,res.users,,Responsible User,False,version 2
+52,account_online_link_id,,many2one,account.online.link,,Account Online Link,False,version 2
+53,alias_domain,,char,,,Alias domain,False,version 2
+54,next_synchronization,,datetime,,,Next synchronization,False,version 2
+55,json_activity_data,,text,,,Json Activity Data,False,version 2
+56,account_online_provider_id,,many2one,account.online.provider,,Account Online Provider,False,version 2
+57,restrict_mode_hash_table,,boolean,,,Lock Posted Entries with Hash,False,version 2
+58,message_attachment_count,,integer,,,Attachment Count,False,version 2
+59,account_online_link_state,,selection,,,State,False,version 2
+60,activity_type_id,,many2one,mail.activity.type,,Next Activity Type,False,version 2
+61,activity_ids,,one2many,mail.activity,,Activities,False,version 2
+62,edi_format_ids,,many2many,account.edi.format,,Electronic invoicing,False,version 2
+63,activity_exception_icon,,char,,,Icon,False,version 2
+64,payment_credit_account_id,,many2one,account.account,,Outstanding Payments Account,False,version 2
+65,activity_state,,selection,,,Activity State,False,version 2
+66,website_message_ids,,one2many,mail.message,,Website Messages,False,version 2
+67,sale_activity_user_id,,many2one,res.users,,Activity User,False,version 2
+68,message_follower_ids,,one2many,mail.followers,,Followers,False,version 2
+69,message_needaction,,boolean,,,Action Needed,False,version 2
+70,message_channel_ids,,many2many,mail.channel,,Followers (Channels),False,version 2
+71,message_partner_ids,,many2many,res.partner,,Followers (Partners),False,version 2
+72,suspense_account_id,,many2one,account.account,,Suspense Account,False,version 2
+73,bank_statement_creation,,selection,,,Creation of Bank Statements,False,version 2
+74,alias_name,,char,,,Alias Name,False,version 2
+75,account_online_account_id,,many2one,account.online.account,,Account Online Account,False,version 2
+76,activity_exception_decoration,,selection,,,Activity Exception Decoration,False,version 2
+77,activity_type_icon,,char,,,Activity Type Icon,False,version 2
+78,message_ids,,one2many,mail.message,,Messages,False,version 2
+79,invoice_reference_model,,selection,,,Communication Standard,True,version 2
+80,sequence_override_regex,,text,,,Sequence Override Regex,False,version 2
+81,message_unread_counter,,integer,,,Unread Messages Counter,False,version 2
+82,synchronization_status,,char,,,Synchronization status,False,version 2
+83,company_partner_id,,many2one,res.partner,,Account Holder,False,version 2
+84,message_has_error_counter,,integer,,,Number of errors,False,version 2
+85,sale_activity_type_id,,many2one,mail.activity.type,,Schedule Activity,False,version 2
+86,next_link_synchronization,,datetime,,,Online Link Next synchronization,False,version 2
+87,active,,boolean,,,Active,False,version 2
+88,default_account_type,,many2one,account.account.type,,Default Account Type,False,version 2
+89,activity_summary,,char,,,Next Activity Summary,False,version 2
+90,default_account_id,,many2one,account.account,,Default Account,False,version 2
+91,payment_debit_account_id,,many2one,account.account,,Outstanding Receipts Account,False,version 2
+92,invoice_reference_type,,selection,,,Communication Type,True,version 2
+93,bank_statement_creation_groupby,,selection,,,Bank Statements Group By,False,version 2
+94,account_online_journal_id,,many2one,account.online.journal,,Account Online Journal,False,version 2
+95,message_unread,,boolean,,,Unread Messages,False,version 2
+96,message_needaction_counter,,integer,,,Number of Actions,False,version 2
 ,,,,
 ,,,,

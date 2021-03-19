@@ -1,20 +1,20 @@
 model,procurement.group,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,both
-2,display_name,char,char,,Display Name,Display Name,both
-3,name,char,char,,Reference,Reference,both
-4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-5,move_type,selection,selection,,Delivery Type,Delivery Type,both
-6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-7,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-8,create_date,datetime,datetime,,Created on,Created on,both
-9,partner_id,many2one,many2one,res.partner,Partner,Partner,both
-10,id,integer,integer,,ID,ID,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+2,display_name,char,char,,Display Name,Display Name,False,both
+3,name,char,char,,Reference,Reference,True,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+5,move_type,selection,selection,,Delivery Type,Delivery Type,True,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+7,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+8,create_date,datetime,datetime,,Created on,Created on,False,both
+9,partner_id,many2one,many2one,res.partner,Partner,Partner,False,both
+10,id,integer,integer,,ID,ID,False,both
 ,,,,
-11,procurement_ids,one2many,,procurement.order,Procurements,,version 1
+11,procurement_ids,one2many,,procurement.order,Procurements,,False,version 1
 ,,,,
-12,mrp_production_ids,,one2many,mrp.production,,Mrp Production,version 2
-13,sale_id,,many2one,sale.order,,Sale Order,version 2
-14,stock_move_ids,,one2many,stock.move,,Related Stock Moves,version 2
+12,mrp_production_ids,,one2many,mrp.production,,Mrp Production,False,version 2
+13,sale_id,,many2one,sale.order,,Sale Order,False,version 2
+14,stock_move_ids,,one2many,stock.move,,Related Stock Moves,False,version 2
 ,,,,
 ,,,,

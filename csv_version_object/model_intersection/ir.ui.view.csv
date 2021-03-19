@@ -1,49 +1,49 @@
 model,ir.ui.view,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,arch_base,text,text,,View Architecture,Base View Architecture,both
-2,xml_id,char,char,,External ID,External ID,both
-3,create_date,datetime,datetime,,Create date,Created on,both
-4,write_date,datetime,datetime,,Last Modification Date,Last Updated on,both
-5,groups_id,many2many,many2many,res.groups,Groups,Groups,both
-6,website_id,many2one,many2one,website,Website,Website,both
-7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-8,customize_show,boolean,boolean,,Show As Optional Inherit,Show As Optional Inherit,both
-9,id,integer,integer,,ID,ID,both
-10,field_parent,char,char,,Child Field,Child Field,both
-11,create_uid,many2one,many2one,res.users,Created by,Created by,both
-12,display_name,char,char,,Display Name,Display Name,both
-13,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-14,model_data_id,many2one,many2one,ir.model.data,Model Data,Model Data,both
-15,priority,integer,integer,,Sequence,Sequence,both
-16,website_meta_title,char,char,,Website meta title,Website meta title,both
-17,type,selection,selection,,View Type,View Type,both
-18,arch_db,text,text,,Arch Blob,Arch Blob,both
-19,inherit_id,many2one,many2one,ir.ui.view,Inherited View,Inherited View,both
-20,website_meta_description,text,text,,Website meta description,Website meta description,both
-21,key,char,char,,Key,Key,both
-22,active,boolean,boolean,,Active,Active,both
-23,arch,text,text,,View Architecture,View Architecture,both
-24,arch_fs,char,char,,Arch Filename,Arch Filename,both
-25,name,char,char,,View Name,View Name,both
-26,mode,selection,selection,,View inheritance mode,View inheritance mode,both
-27,inherit_children_ids,one2many,one2many,ir.ui.view,Views which inherit from this one,Views which inherit from this one,both
-28,website_meta_keywords,char,char,,Website meta keywords,Website meta keywords,both
-29,model,char,char,,Model,Model,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,arch_base,text,text,,View Architecture,Base View Architecture,False,both
+2,xml_id,char,char,,External ID,External ID,False,both
+3,create_date,datetime,datetime,,Create date,Created on,False,both
+4,write_date,datetime,datetime,,Last Modification Date,Last Updated on,False,both
+5,groups_id,many2many,many2many,res.groups,Groups,Groups,False,both
+6,website_id,many2one,many2one,website,Website,Website,False,both
+7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+8,customize_show,boolean,boolean,,Show As Optional Inherit,Show As Optional Inherit,False,both
+9,id,integer,integer,,ID,ID,False,both
+10,field_parent,char,char,,Child Field,Child Field,False,both
+11,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+12,display_name,char,char,,Display Name,Display Name,False,both
+13,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+14,model_data_id,many2one,many2one,ir.model.data,Model Data,Model Data,False,both
+15,priority,integer,integer,,Sequence,Sequence,True,both
+16,website_meta_title,char,char,,Website meta title,Website meta title,False,both
+17,type,selection,selection,,View Type,View Type,False,both
+18,arch_db,text,text,,Arch Blob,Arch Blob,False,both
+19,inherit_id,many2one,many2one,ir.ui.view,Inherited View,Inherited View,False,both
+20,website_meta_description,text,text,,Website meta description,Website meta description,False,both
+21,key,char,char,,Key,Key,False,both
+22,active,boolean,boolean,,Active,Active,False,both
+23,arch,text,text,,View Architecture,View Architecture,False,both
+24,arch_fs,char,char,,Arch Filename,Arch Filename,False,both
+25,name,char,char,,View Name,View Name,True,both
+26,mode,selection,selection,,View inheritance mode,View inheritance mode,True,both
+27,inherit_children_ids,one2many,one2many,ir.ui.view,Views which inherit from this one,Views which inherit from this one,False,both
+28,website_meta_keywords,char,char,,Website meta keywords,Website meta keywords,False,both
+29,model,char,char,,Model,Model,False,both
 ,,,,
-30,model_ids,one2many,,ir.model.data,Model ids,,version 1
-31,page,boolean,,,Whether this view is a web page template (complete),,version 1
+30,model_ids,one2many,,ir.model.data,Model ids,,False,version 1
+31,page,boolean,,,Whether this view is a web page template (complete),,False,version 1
 ,,,,
-32,track,,boolean,,,Track,version 2
-33,page_ids,,one2many,website.page,,Page,version 2
-34,visibility,,selection,,,Visibility,version 2
-35,website_meta_og_img,,char,,,Website opengraph image,version 2
-36,seo_name,,char,,,Seo name,version 2
-37,theme_template_id,,many2one,theme.ir.ui.view,,Theme Template,version 2
-38,arch_prev,,text,,,Previous View Architecture,version 2
-39,arch_updated,,boolean,,,Modified Architecture,version 2
-40,first_page_id,,many2one,website.page,,Website Page,version 2
-41,visibility_password,,char,,,Visibility Password,version 2
-42,is_seo_optimized,,boolean,,,SEO optimized,version 2
-43,visibility_password_display,,char,,,Visibility Password Display,version 2
+32,track,,boolean,,,Track,False,version 2
+33,page_ids,,one2many,website.page,,Page,False,version 2
+34,visibility,,selection,,,Visibility,False,version 2
+35,website_meta_og_img,,char,,,Website opengraph image,False,version 2
+36,seo_name,,char,,,Seo name,False,version 2
+37,theme_template_id,,many2one,theme.ir.ui.view,,Theme Template,False,version 2
+38,arch_prev,,text,,,Previous View Architecture,False,version 2
+39,arch_updated,,boolean,,,Modified Architecture,False,version 2
+40,first_page_id,,many2one,website.page,,Website Page,False,version 2
+41,visibility_password,,char,,,Visibility Password,False,version 2
+42,is_seo_optimized,,boolean,,,SEO optimized,False,version 2
+43,visibility_password_display,,char,,,Visibility Password Display,False,version 2
 ,,,,
 ,,,,

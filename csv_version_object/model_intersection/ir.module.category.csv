@@ -1,23 +1,23 @@
 model,ir.module.category,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,both
-2,xml_id,char,char,,External ID,External ID,both
-3,display_name,char,char,,Display Name,Display Name,both
-4,description,text,text,,Description,Description,both
-5,sequence,integer,integer,,Sequence,Sequence,both
-6,module_ids,one2many,one2many,ir.module.module,Modules,Modules,both
-7,module_nr,integer,integer,,Number of Apps,Number of Apps,both
-8,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-9,child_ids,one2many,one2many,ir.module.category,Child Applications,Child Applications,both
-10,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-11,parent_id,many2one,many2one,ir.module.category,Parent Application,Parent Application,both
-12,visible,boolean,boolean,,Visible,Visible,both
-13,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-14,create_date,datetime,datetime,,Created on,Created on,both
-15,id,integer,integer,,ID,ID,both
-16,name,char,char,,Name,Name,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+2,xml_id,char,char,,External ID,External ID,False,both
+3,display_name,char,char,,Display Name,Display Name,False,both
+4,description,text,text,,Description,Description,False,both
+5,sequence,integer,integer,,Sequence,Sequence,False,both
+6,module_ids,one2many,one2many,ir.module.module,Modules,Modules,False,both
+7,module_nr,integer,integer,,Number of Apps,Number of Apps,False,both
+8,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+9,child_ids,one2many,one2many,ir.module.category,Child Applications,Child Applications,False,both
+10,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+11,parent_id,many2one,many2one,ir.module.category,Parent Application,Parent Application,False,both
+12,visible,boolean,boolean,,Visible,Visible,False,both
+13,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+14,create_date,datetime,datetime,,Created on,Created on,False,both
+15,id,integer,integer,,ID,ID,False,both
+16,name,char,char,,Name,Name,True,both
 ,,,,
 ,,,,
-17,exclusive,,boolean,,,Exclusive,version 2
+17,exclusive,,boolean,,,Exclusive,False,version 2
 ,,,,
 ,,,,

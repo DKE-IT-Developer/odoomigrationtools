@@ -1,23 +1,23 @@
 model,ir.property,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,value_text,text,text,,Value text,Value Text,both
-2,value_float,float,float,,Value float,Value Float,both
-3,display_name,char,char,,Display Name,Display Name,both
-4,name,char,char,,Name,Name,both
-5,create_uid,many2one,many2one,res.users,Created by,Created by,both
-6,type,selection,selection,,Type,Type,both
-7,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-8,company_id,many2one,many2one,res.company,Company,Company,both
-9,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-10,fields_id,many2one,many2one,ir.model.fields,Field,Field,both
-11,value_datetime,datetime,datetime,,Value datetime,Value Datetime,both
-12,value_binary,binary,binary,,Value binary,Value Binary,both
-13,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-14,create_date,datetime,datetime,,Created on,Created on,both
-15,value_reference,char,char,,Value reference,Value Reference,both
-16,value_integer,integer,integer,,Value integer,Value Integer,both
-17,res_id,char,char,,Resource,Resource,both
-18,id,integer,integer,,ID,ID,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,value_text,text,text,,Value text,Value Text,False,both
+2,value_float,float,float,,Value float,Value Float,False,both
+3,display_name,char,char,,Display Name,Display Name,False,both
+4,name,char,char,,Name,Name,False,both
+5,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+6,type,selection,selection,,Type,Type,True,both
+7,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+8,company_id,many2one,many2one,res.company,Company,Company,False,both
+9,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+10,fields_id,many2one,many2one,ir.model.fields,Field,Field,True,both
+11,value_datetime,datetime,datetime,,Value datetime,Value Datetime,False,both
+12,value_binary,binary,binary,,Value binary,Value Binary,False,both
+13,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+14,create_date,datetime,datetime,,Created on,Created on,False,both
+15,value_reference,char,char,,Value reference,Value Reference,False,both
+16,value_integer,integer,integer,,Value integer,Value Integer,False,both
+17,res_id,char,char,,Resource,Resource,False,both
+18,id,integer,integer,,ID,ID,False,both
 ,,,,
 ,,,,
 ,,,,

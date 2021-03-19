@@ -1,16 +1,16 @@
 model,account.bank.statement.import,transient,True
-no,field,type1,type2,relation,string1,string2,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,both
-2,create_date,datetime,datetime,,Created on,Created on,both
-3,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-4,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-5,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-6,display_name,char,char,,Display Name,Display Name,both
-7,id,integer,integer,,ID,ID,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+2,create_date,datetime,datetime,,Created on,Created on,False,both
+3,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+4,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+5,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+6,display_name,char,char,,Display Name,Display Name,False,both
+7,id,integer,integer,,ID,ID,False,both
 ,,,,
-8,data_file,binary,,,Bank Statement File,,version 1
-9,filename,char,,,Filename,,version 1
+8,data_file,binary,,,Bank Statement File,,True,version 1
+9,filename,char,,,Filename,,False,version 1
 ,,,,
-10,attachment_ids,,many2many,ir.attachment,,Files,version 2
+10,attachment_ids,,many2many,ir.attachment,,Files,True,version 2
 ,,,,
 ,,,,

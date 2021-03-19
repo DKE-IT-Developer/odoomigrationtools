@@ -1,18 +1,18 @@
 model,mrp.workcenter.productivity.loss,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,both
-2,display_name,char,char,,Display Name,Display Name,both
-3,name,char,char,,Reason,Blocking Reason,both
-4,loss_type,selection,selection,,Effectiveness Category,Effectiveness Category,both
-5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-6,sequence,integer,integer,,Sequence,Sequence,both
-7,manual,boolean,boolean,,Is a Blocking Reason,Is a Blocking Reason,both
-8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-9,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-10,create_date,datetime,datetime,,Created on,Created on,both
-11,id,integer,integer,,ID,ID,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+2,display_name,char,char,,Display Name,Display Name,False,both
+3,name,char,char,,Reason,Blocking Reason,True,both
+4,loss_type,selection,selection,,Effectiveness Category,Effectiveness Category,False,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+6,sequence,integer,integer,,Sequence,Sequence,False,both
+7,manual,boolean,boolean,,Is a Blocking Reason,Is a Blocking Reason,False,both
+8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+9,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+10,create_date,datetime,datetime,,Created on,Created on,False,both
+11,id,integer,integer,,ID,ID,False,both
 ,,,,
 ,,,,
-12,loss_id,,many2one,mrp.workcenter.productivity.loss.type,,Category,version 2
+12,loss_id,,many2one,mrp.workcenter.productivity.loss.type,,Category,False,version 2
 ,,,,
 ,,,,

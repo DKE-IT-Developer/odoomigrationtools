@@ -1,52 +1,52 @@
 model,mail.compose.message,transient,True
-no,field,type1,type2,relation,string1,string2,source
-1,auto_delete_message,boolean,boolean,,Delete Message Copy,Delete Message Copy,both
-2,create_date,datetime,datetime,,Created on,Created on,both
-3,no_auto_thread,boolean,boolean,,No threading for answers,No threading for answers,both
-4,auto_delete,boolean,boolean,,Delete Emails,Delete Emails,both
-5,mail_server_id,many2one,many2one,ir.mail_server,Outgoing mail server,Outgoing mail server,both
-6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-7,notify,boolean,boolean,,Notify followers,Notify followers,both
-8,active_domain,text,text,,Active domain,Active domain,both
-9,id,integer,integer,,ID,ID,both
-10,subject,char,char,,Subject,Subject,both
-11,composition_mode,selection,selection,,Composition mode,Composition mode,both
-12,create_uid,many2one,many2one,res.users,Created by,Created by,both
-13,display_name,char,char,,Display Name,Display Name,both
-14,attachment_ids,many2many,many2many,ir.attachment,Attachments,Attachments,both
-15,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-16,is_log,boolean,boolean,,Log an Internal Note,Log an Internal Note,both
-17,parent_id,many2one,many2one,mail.message,Parent Message,Parent Message,both
-18,subtype_id,many2one,many2one,mail.message.subtype,Subtype,Subtype,both
-19,partner_ids,many2many,many2many,res.partner,Additional Contacts,Additional Contacts,both
-20,res_id,integer,integer,,Related Document ID,Related Document ID,both
-21,body,html,html,,Contents,Contents,both
-22,record_name,char,char,,Message Record Name,Message Record Name,both
-23,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-24,model,char,char,,Related Document Model,Related Document Model,both
-25,use_active_domain,boolean,boolean,,Use active domain,Use active domain,both
-26,email_from,char,char,,From,From,both
-27,reply_to,char,char,,Reply-To,Reply-To,both
-28,author_id,many2one,many2one,res.partner,Author,Author,both
-29,message_type,selection,selection,,Type,Type,both
-30,template_id,many2one,many2one,mail.template,Use template,Use template,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,auto_delete_message,boolean,boolean,,Delete Message Copy,Delete Message Copy,False,both
+2,create_date,datetime,datetime,,Created on,Created on,False,both
+3,no_auto_thread,boolean,boolean,,No threading for answers,No threading for answers,False,both
+4,auto_delete,boolean,boolean,,Delete Emails,Delete Emails,False,both
+5,mail_server_id,many2one,many2one,ir.mail_server,Outgoing mail server,Outgoing mail server,False,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+7,notify,boolean,boolean,,Notify followers,Notify followers,False,both
+8,active_domain,text,text,,Active domain,Active domain,False,both
+9,id,integer,integer,,ID,ID,False,both
+10,subject,char,char,,Subject,Subject,False,both
+11,composition_mode,selection,selection,,Composition mode,Composition mode,False,both
+12,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+13,display_name,char,char,,Display Name,Display Name,False,both
+14,attachment_ids,many2many,many2many,ir.attachment,Attachments,Attachments,False,both
+15,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+16,is_log,boolean,boolean,,Log an Internal Note,Log an Internal Note,False,both
+17,parent_id,many2one,many2one,mail.message,Parent Message,Parent Message,False,both
+18,subtype_id,many2one,many2one,mail.message.subtype,Subtype,Subtype,False,both
+19,partner_ids,many2many,many2many,res.partner,Additional Contacts,Additional Contacts,False,both
+20,res_id,integer,integer,,Related Document ID,Related Document ID,False,both
+21,body,html,html,,Contents,Contents,False,both
+22,record_name,char,char,,Message Record Name,Message Record Name,False,both
+23,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+24,model,char,char,,Related Document Model,Related Document Model,False,both
+25,use_active_domain,boolean,boolean,,Use active domain,Use active domain,False,both
+26,email_from,char,char,,From,From,False,both
+27,reply_to,char,char,,Reply-To,Reply-To,False,both
+28,author_id,many2one,many2one,res.partner,Author,Author,False,both
+29,message_type,selection,selection,,Type,Type,True,both
+30,template_id,many2one,many2one,mail.template,Use template,Use template,False,both
 ,,,,
-31,description,char,,,Description,,version 1
-32,channel_ids,many2many,,mail.channel,Channels,,version 1
-33,child_ids,one2many,,mail.message,Child Messages,,version 1
-34,notification_ids,one2many,,mail.notification,Notifications,,version 1
-35,date,datetime,,,Date,,version 1
-36,needaction,boolean,,,Need Action,,version 1
-37,path,char,,,Discussion Path,,version 1
-38,needaction_partner_ids,many2many,,res.partner,Partners with Need Action,,version 1
-39,starred_partner_ids,many2many,,res.partner,Favorited By,,version 1
-40,website_published,boolean,,,Published,,version 1
-41,author_avatar,binary,,,Author's avatar,,version 1
-42,starred,boolean,,,Starred,,version 1
-43,message_id,char,,,Message-Id,,version 1
+31,description,char,,,Description,,False,version 1
+32,channel_ids,many2many,,mail.channel,Channels,,False,version 1
+33,child_ids,one2many,,mail.message,Child Messages,,False,version 1
+34,notification_ids,one2many,,mail.notification,Notifications,,False,version 1
+35,date,datetime,,,Date,,False,version 1
+36,needaction,boolean,,,Need Action,,False,version 1
+37,path,char,,,Discussion Path,,False,version 1
+38,needaction_partner_ids,many2many,,res.partner,Partners with Need Action,,False,version 1
+39,starred_partner_ids,many2many,,res.partner,Favorited By,,False,version 1
+40,website_published,boolean,,,Published,,False,version 1
+41,author_avatar,binary,,,Author's avatar,,False,version 1
+42,starred,boolean,,,Starred,,False,version 1
+43,message_id,char,,,Message-Id,,False,version 1
 ,,,,
-44,layout,,char,,,Layout,version 2
-45,mail_activity_type_id,,many2one,mail.activity.type,,Mail Activity Type,version 2
-46,add_sign,,boolean,,,Add Sign,version 2
+44,layout,,char,,,Layout,False,version 2
+45,mail_activity_type_id,,many2one,mail.activity.type,,Mail Activity Type,False,version 2
+46,add_sign,,boolean,,,Add Sign,False,version 2
 ,,,,
 ,,,,

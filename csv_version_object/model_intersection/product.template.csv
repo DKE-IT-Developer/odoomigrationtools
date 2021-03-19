@@ -1,187 +1,187 @@
 model,product.template,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,reordering_max_qty,float,float,,Reordering max qty,Reordering Max Qty,both
-2,incoming_qty,float,float,,Incoming,Incoming,both
-3,standard_price,float,float,,Cost,Cost,both
-4,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-5,display_name,char,char,,Display Name,Display Name,both
-6,route_from_categ_ids,many2many,many2many,stock.location.route,Category Routes,Category Routes,both
-7,company_id,many2one,many2one,res.company,Company,Company,both
-8,rating_count,integer,integer,,Rating count,Rating count,both
-9,public_categ_ids,many2many,many2many,product.public.category,Website Product Category,Website Product Category,both
-10,pricelist_id,many2one,many2one,product.pricelist,Pricelist,Pricelist,both
-11,bom_ids,one2many,one2many,mrp.bom,Bill of Materials,Bill of Materials,both
-12,warehouse_id,many2one,many2one,stock.warehouse,Warehouse,Warehouse,both
-13,route_ids,many2many,many2many,stock.location.route,Routes,Routes,both
-14,website_description,html,html,,Description for the website,Description for the website,both
-15,website_sequence,integer,integer,,Website Sequence,Website Sequence,both
-16,name,char,char,,Name,Name,both
-17,packaging_ids,one2many,one2many,product.packaging,Logistical Units,Product Packages,both
-18,property_account_expense_id,many2one,many2one,account.account,Expense Account,Expense Account,both
-19,seller_ids,one2many,one2many,product.supplierinfo,Vendors,Vendors,both
-20,website_message_ids,one2many,one2many,mail.message,Website Comments,Website Messages,both
-21,accessory_product_ids,many2many,many2many,product.product,Accessory Products,Accessory Products,both
-22,message_follower_ids,one2many,one2many,mail.followers,Followers,Followers,both
-23,create_date,datetime,datetime,,Created on,Created on,both
-24,weight,float,float,,Weight,Weight,both
-25,sequence,integer,integer,,Sequence,Sequence,both
-26,message_needaction,boolean,boolean,,Action Needed,Action Needed,both
-27,bom_count,integer,integer,,# Bill of Material,# Bill of Material,both
-28,attribute_line_ids,one2many,one2many,product.template.attribute.line,Product Attributes,Product Attributes,both
-29,currency_id,many2one,many2one,res.currency,Currency,Currency,both
-30,description_purchase,text,text,,Purchase Description,Purchase Description,both
-31,virtual_available,float,float,,Forecasted Quantity,Forecasted Quantity,both
-32,description_picking,text,text,,Description on Picking,Description on Picking,both
-33,message_unread_counter,integer,integer,,Unread Messages Counter,Unread Messages Counter,both
-34,barcode,char,char,,Barcode,Barcode,both
-35,active,boolean,boolean,,Active,Active,both
-36,product_variant_count,integer,integer,,# Product Variants,# Product Variants,both
-37,lst_price,float,float,,Public Price,Public Price,both
-38,reordering_min_qty,float,float,,Reordering min qty,Reordering Min Qty,both
-39,message_unread,boolean,boolean,,Unread Messages,Unread Messages,both
-40,message_needaction_counter,integer,integer,,Number of Actions,Number of Actions,both
-41,list_price,float,float,,Sale Price,Sales Price,both
-42,color,integer,integer,,Color Index,Color Index,both
-43,purchase_line_warn_msg,text,text,,Message for Purchase Order Line,Message for Purchase Order Line,both
-44,sale_line_warn_msg,text,text,,Message for Sales Order Line,Message for Sales Order Line,both
-45,qty_available,float,float,,Quantity On Hand,Quantity On Hand,both
-46,can_be_expensed,boolean,boolean,,Can be Expensed,Can be Expensed,both
-47,create_uid,many2one,many2one,res.users,Created by,Created by,both
-48,sale_ok,boolean,boolean,,Can be Sold,Can be Sold,both
-49,message_is_follower,boolean,boolean,,Is Follower,Is Follower,both
-50,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-51,purchase_method,selection,selection,,Control Purchase Bills,Control Policy,both
-52,purchase_ok,boolean,boolean,,Can be Purchased,Can be Purchased,both
-53,rating_last_value,float,float,,Rating Last Value,Rating Last Value,both
-54,description_sale,text,text,,Sale Description,Sales Description,both
-55,property_stock_production,many2one,many2one,stock.location,Production Location,Production Location,both
-56,supplier_taxes_id,many2many,many2many,account.tax,Vendor Taxes,Vendor Taxes,both
-57,volume,float,float,,Volume,Volume,both
-58,website_meta_description,text,text,,Website meta description,Website meta description,both
-59,property_stock_inventory,many2one,many2one,stock.location,Inventory Location,Inventory Location,both
-60,cost_method,char,selection,,Cost method,Costing Method,both
-61,valuation,char,selection,,Valuation,Inventory Valuation,both
-62,sale_delay,float,float,,Customer Lead Time,Customer Lead Time,both
-63,alternative_product_ids,many2many,many2many,product.template,Alternative Products,Alternative Products,both
-64,product_variant_ids,one2many,one2many,product.product,Products,Products,both
-65,type,selection,selection,,Product Type,Product Type,both
-66,purchase_line_warn,selection,selection,,Purchase Order Line,Purchase Order Line Warning,both
-67,sales_count,integer,float,,# Sales,Sold,both
-68,website_meta_keywords,char,char,,Website meta keywords,Website meta keywords,both
-69,rating_ids,one2many,one2many,rating.rating,Rating,Rating,both
-70,sale_line_warn,selection,selection,,Sales Order Line,Sales Order Line,both
-71,nbr_reordering_rules,integer,integer,,Reordering Rules,Reordering Rules,both
-72,message_channel_ids,many2many,many2many,mail.channel,Followers (Channels),Followers (Channels),both
-73,message_partner_ids,many2many,many2many,res.partner,Followers (Partners),Followers (Partners),both
-74,uom_id,many2one,many2one,uom.uom,Unit of Measure,Unit of Measure,both
-75,default_code,char,char,,Internal Reference,Internal Reference,both
-76,location_id,many2one,many2one,stock.location,Location,Location,both
-77,message_ids,one2many,one2many,mail.message,Messages,Messages,both
-78,id,integer,integer,,ID,ID,both
-79,website_meta_title,char,char,,Website meta title,Website meta title,both
-80,uom_po_id,many2one,many2one,uom.uom,Purchase Unit of Measure,Purchase Unit of Measure,both
-81,website_published,boolean,boolean,,Visible in Website,Visible on current website,both
-82,website_url,char,char,,Website URL,Website URL,both
-83,property_account_income_id,many2one,many2one,account.account,Income Account,Income Account,both
-84,description,text,text,,Description,Description,both
-85,price,float,float,,Price,Price,both
-86,expense_policy,selection,selection,,Re-Invoice Expenses,Re-Invoice Expenses,both
-87,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-88,categ_id,many2one,many2one,product.category,Internal Category,Product Category,both
-89,tracking,selection,selection,,Tracking,Tracking,both
-90,produce_delay,float,float,,Manufacturing Lead Time,Manufacturing Lead Time,both
-91,property_account_creditor_price_difference,many2one,many2one,account.account,Price Difference Account,Price Difference Account,both
-92,outgoing_qty,float,float,,Outgoing,Outgoing,both
-93,invoice_policy,selection,selection,,Invoicing Policy,Invoicing Policy,both
-94,taxes_id,many2many,many2many,account.tax,Customer Taxes,Customer Taxes,both
-95,website_size_x,integer,integer,,Size X,Size X,both
-96,website_size_y,integer,integer,,Size Y,Size Y,both
-97,product_variant_id,many2one,many2one,product.product,Product,Product,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,reordering_max_qty,float,float,,Reordering max qty,Reordering Max Qty,False,both
+2,incoming_qty,float,float,,Incoming,Incoming,False,both
+3,standard_price,float,float,,Cost,Cost,False,both
+4,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+5,display_name,char,char,,Display Name,Display Name,False,both
+6,route_from_categ_ids,many2many,many2many,stock.location.route,Category Routes,Category Routes,False,both
+7,company_id,many2one,many2one,res.company,Company,Company,False,both
+8,rating_count,integer,integer,,Rating count,Rating count,False,both
+9,public_categ_ids,many2many,many2many,product.public.category,Website Product Category,Website Product Category,False,both
+10,pricelist_id,many2one,many2one,product.pricelist,Pricelist,Pricelist,False,both
+11,bom_ids,one2many,one2many,mrp.bom,Bill of Materials,Bill of Materials,False,both
+12,warehouse_id,many2one,many2one,stock.warehouse,Warehouse,Warehouse,False,both
+13,route_ids,many2many,many2many,stock.location.route,Routes,Routes,False,both
+14,website_description,html,html,,Description for the website,Description for the website,False,both
+15,website_sequence,integer,integer,,Website Sequence,Website Sequence,False,both
+16,name,char,char,,Name,Name,True,both
+17,packaging_ids,one2many,one2many,product.packaging,Logistical Units,Product Packages,False,both
+18,property_account_expense_id,many2one,many2one,account.account,Expense Account,Expense Account,False,both
+19,seller_ids,one2many,one2many,product.supplierinfo,Vendors,Vendors,False,both
+20,website_message_ids,one2many,one2many,mail.message,Website Comments,Website Messages,False,both
+21,accessory_product_ids,many2many,many2many,product.product,Accessory Products,Accessory Products,False,both
+22,message_follower_ids,one2many,one2many,mail.followers,Followers,Followers,False,both
+23,create_date,datetime,datetime,,Created on,Created on,False,both
+24,weight,float,float,,Weight,Weight,False,both
+25,sequence,integer,integer,,Sequence,Sequence,False,both
+26,message_needaction,boolean,boolean,,Action Needed,Action Needed,False,both
+27,bom_count,integer,integer,,# Bill of Material,# Bill of Material,False,both
+28,attribute_line_ids,one2many,one2many,product.template.attribute.line,Product Attributes,Product Attributes,False,both
+29,currency_id,many2one,many2one,res.currency,Currency,Currency,False,both
+30,description_purchase,text,text,,Purchase Description,Purchase Description,False,both
+31,virtual_available,float,float,,Forecasted Quantity,Forecasted Quantity,False,both
+32,description_picking,text,text,,Description on Picking,Description on Picking,False,both
+33,message_unread_counter,integer,integer,,Unread Messages Counter,Unread Messages Counter,False,both
+34,barcode,char,char,,Barcode,Barcode,False,both
+35,active,boolean,boolean,,Active,Active,False,both
+36,product_variant_count,integer,integer,,# Product Variants,# Product Variants,False,both
+37,lst_price,float,float,,Public Price,Public Price,False,both
+38,reordering_min_qty,float,float,,Reordering min qty,Reordering Min Qty,False,both
+39,message_unread,boolean,boolean,,Unread Messages,Unread Messages,False,both
+40,message_needaction_counter,integer,integer,,Number of Actions,Number of Actions,False,both
+41,list_price,float,float,,Sale Price,Sales Price,False,both
+42,color,integer,integer,,Color Index,Color Index,False,both
+43,purchase_line_warn_msg,text,text,,Message for Purchase Order Line,Message for Purchase Order Line,False,both
+44,sale_line_warn_msg,text,text,,Message for Sales Order Line,Message for Sales Order Line,False,both
+45,qty_available,float,float,,Quantity On Hand,Quantity On Hand,False,both
+46,can_be_expensed,boolean,boolean,,Can be Expensed,Can be Expensed,False,both
+47,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+48,sale_ok,boolean,boolean,,Can be Sold,Can be Sold,False,both
+49,message_is_follower,boolean,boolean,,Is Follower,Is Follower,False,both
+50,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+51,purchase_method,selection,selection,,Control Purchase Bills,Control Policy,False,both
+52,purchase_ok,boolean,boolean,,Can be Purchased,Can be Purchased,False,both
+53,rating_last_value,float,float,,Rating Last Value,Rating Last Value,False,both
+54,description_sale,text,text,,Sale Description,Sales Description,False,both
+55,property_stock_production,many2one,many2one,stock.location,Production Location,Production Location,False,both
+56,supplier_taxes_id,many2many,many2many,account.tax,Vendor Taxes,Vendor Taxes,False,both
+57,volume,float,float,,Volume,Volume,False,both
+58,website_meta_description,text,text,,Website meta description,Website meta description,False,both
+59,property_stock_inventory,many2one,many2one,stock.location,Inventory Location,Inventory Location,False,both
+60,cost_method,char,selection,,Cost method,Costing Method,False,both
+61,valuation,char,selection,,Valuation,Inventory Valuation,False,both
+62,sale_delay,float,float,,Customer Lead Time,Customer Lead Time,False,both
+63,alternative_product_ids,many2many,many2many,product.template,Alternative Products,Alternative Products,False,both
+64,product_variant_ids,one2many,one2many,product.product,Products,Products,True,both
+65,type,selection,selection,,Product Type,Product Type,True,both
+66,purchase_line_warn,selection,selection,,Purchase Order Line,Purchase Order Line Warning,True,both
+67,sales_count,integer,float,,# Sales,Sold,False,both
+68,website_meta_keywords,char,char,,Website meta keywords,Website meta keywords,False,both
+69,rating_ids,one2many,one2many,rating.rating,Rating,Rating,False,both
+70,sale_line_warn,selection,selection,,Sales Order Line,Sales Order Line,True,both
+71,nbr_reordering_rules,integer,integer,,Reordering Rules,Reordering Rules,False,both
+72,message_channel_ids,many2many,many2many,mail.channel,Followers (Channels),Followers (Channels),False,both
+73,message_partner_ids,many2many,many2many,res.partner,Followers (Partners),Followers (Partners),False,both
+74,uom_id,many2one,many2one,uom.uom,Unit of Measure,Unit of Measure,True,both
+75,default_code,char,char,,Internal Reference,Internal Reference,False,both
+76,location_id,many2one,many2one,stock.location,Location,Location,False,both
+77,message_ids,one2many,one2many,mail.message,Messages,Messages,False,both
+78,id,integer,integer,,ID,ID,False,both
+79,website_meta_title,char,char,,Website meta title,Website meta title,False,both
+80,uom_po_id,many2one,many2one,uom.uom,Purchase Unit of Measure,Purchase Unit of Measure,True,both
+81,website_published,boolean,boolean,,Visible in Website,Visible on current website,False,both
+82,website_url,char,char,,Website URL,Website URL,False,both
+83,property_account_income_id,many2one,many2one,account.account,Income Account,Income Account,False,both
+84,description,text,text,,Description,Description,False,both
+85,price,float,float,,Price,Price,False,both
+86,expense_policy,selection,selection,,Re-Invoice Expenses,Re-Invoice Expenses,False,both
+87,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+88,categ_id,many2one,many2one,product.category,Internal Category,Product Category,True,both
+89,tracking,selection,selection,,Tracking,Tracking,True,both
+90,produce_delay,float,float,,Manufacturing Lead Time,Manufacturing Lead Time,False,both
+91,property_account_creditor_price_difference,many2one,many2one,account.account,Price Difference Account,Price Difference Account,False,both
+92,outgoing_qty,float,float,,Outgoing,Outgoing,False,both
+93,invoice_policy,selection,selection,,Invoicing Policy,Invoicing Policy,False,both
+94,taxes_id,many2many,many2many,account.tax,Customer Taxes,Customer Taxes,False,both
+95,website_size_x,integer,integer,,Size X,Size X,False,both
+96,website_size_y,integer,integer,,Size Y,Size Y,False,both
+97,product_variant_id,many2one,many2one,product.product,Product,Product,False,both
 ,,,,
-98,warranty,float,,,Warranty,,version 1
-99,property_stock_procurement,many2one,,stock.location,Procurement Location,,version 1
-100,website_price,float,,,Website price,,version 1
-101,availability_warning,text,,,Availability Warning,,version 1
-102,image,binary,,,Image,,version 1
-103,website_public_price,float,,,Website public price,,version 1
-104,mo_count,integer,,,# Manufacturing Orders,,version 1
-105,availability,selection,,,Availability,,version 1
-106,asset_category_id,many2one,,account.asset.category,Asset Type,,version 1
-107,item_ids,one2many,,product.pricelist.item,Pricelist Items,,version 1
-108,message_last_post,datetime,,,Last Message Date,,version 1
-109,property_valuation,selection,,,Inventory Valuation,,version 1
-110,track_service,selection,,,Track Service,,version 1
-111,property_cost_method,selection,,,Costing Method,,version 1
-112,property_stock_account_input,many2one,,account.account,Stock Input Account,,version 1
-113,website_price_difference,boolean,,,Website price difference,,version 1
-114,website_style_ids,many2many,,product.style,Styles,,version 1
-115,rental,boolean,,,Can be Rent,,version 1
-116,purchase_count,integer,,,# Purchases,,version 1
-117,image_medium,binary,,,Medium-sized image,,version 1
-118,deferred_revenue_category_id,many2one,,account.asset.category,Deferred Revenue Type,,version 1
-119,property_stock_account_output,many2one,,account.account,Stock Output Account,,version 1
-120,image_small,binary,,,Small-sized image,,version 1
-121,product_image_ids,one2many,,product.image,Images,,version 1
+98,warranty,float,,,Warranty,,False,version 1
+99,property_stock_procurement,many2one,,stock.location,Procurement Location,,False,version 1
+100,website_price,float,,,Website price,,False,version 1
+101,availability_warning,text,,,Availability Warning,,False,version 1
+102,image,binary,,,Image,,False,version 1
+103,website_public_price,float,,,Website public price,,False,version 1
+104,mo_count,integer,,,# Manufacturing Orders,,False,version 1
+105,availability,selection,,,Availability,,False,version 1
+106,asset_category_id,many2one,,account.asset.category,Asset Type,,False,version 1
+107,item_ids,one2many,,product.pricelist.item,Pricelist Items,,False,version 1
+108,message_last_post,datetime,,,Last Message Date,,False,version 1
+109,property_valuation,selection,,,Inventory Valuation,,False,version 1
+110,track_service,selection,,,Track Service,,False,version 1
+111,property_cost_method,selection,,,Costing Method,,False,version 1
+112,property_stock_account_input,many2one,,account.account,Stock Input Account,,False,version 1
+113,website_price_difference,boolean,,,Website price difference,,False,version 1
+114,website_style_ids,many2many,,product.style,Styles,,False,version 1
+115,rental,boolean,,,Can be Rent,,False,version 1
+116,purchase_count,integer,,,# Purchases,,False,version 1
+117,image_medium,binary,,,Medium-sized image,,False,version 1
+118,deferred_revenue_category_id,many2one,,account.asset.category,Deferred Revenue Type,,False,version 1
+119,property_stock_account_output,many2one,,account.account,Stock Output Account,,False,version 1
+120,image_small,binary,,,Small-sized image,,False,version 1
+121,product_image_ids,one2many,,product.image,Images,,False,version 1
 ,,,,
-122,description_pickingout,,text,,,Description on Delivery Orders,version 2
-123,has_available_route_ids,,boolean,,,Routes can be selected on this product,version 2
-124,activity_date_deadline,,date,,,Next Activity Deadline,version 2
-125,pricelist_item_count,,integer,,,Number of price rules,version 2
-126,message_has_sms_error,,boolean,,,SMS Delivery error,version 2
-127,website_ribbon_id,,many2one,product.ribbon,,Ribbon,version 2
-128,project_id,,many2one,project.project,,Project,version 2
-129,rating_last_feedback,,text,,,Rating Last Feedback,version 2
-130,service_type,,selection,,,Track Service,version 2
-131,project_template_id,,many2one,project.project,,Project Template,version 2
-132,inventory_availability,,selection,,,Inventory Availability,version 2
-133,activity_type_id,,many2one,mail.activity.type,,Next Activity Type,version 2
-134,image_128,,binary,,,Image 128,version 2
-135,optional_product_ids,,many2many,product.template,,Optional Products,version 2
-136,description_pickingin,,text,,,Description on Receptions,version 2
-137,used_in_bom_count,,integer,,,# of BoM Where is Used,version 2
-138,website_id,,many2one,website,,Website,version 2
-139,website_meta_og_img,,char,,,Website opengraph image,version 2
-140,volume_uom_name,,char,,,Volume unit of measure label,version 2
-141,can_image_1024_be_zoomed,,boolean,,,Can Image 1024 be zoomed,version 2
-142,activity_exception_decoration,,selection,,,Activity Exception Decoration,version 2
-143,activity_type_icon,,char,,,Activity Type Icon,version 2
-144,rating_last_image,,binary,,,Rating Last Image,version 2
-145,variant_seller_ids,,one2many,product.supplierinfo,,Variant Seller,version 2
-146,is_product_variant,,boolean,,,Is a product variant,version 2
-147,message_has_error_counter,,integer,,,Number of errors,version 2
-148,image_1920,,binary,,,Image,version 2
-149,seo_name,,char,,,Seo name,version 2
-150,valid_product_template_attribute_line_ids,,many2many,product.template.attribute.line,,Valid Product Attribute Lines,version 2
-151,has_configurable_attributes,,boolean,,,Is a configurable product,version 2
-152,image_256,,binary,,,Image 256,version 2
-153,available_threshold,,float,,,Availability Threshold,version 2
-154,custom_message,,text,,,Custom Message,version 2
-155,service_tracking,,selection,,,Service Tracking,version 2
-156,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,version 2
-157,weight_uom_name,,char,,,Weight unit of measure label,version 2
-158,activity_user_id,,many2one,res.users,,Responsible User,version 2
-159,can_publish,,boolean,,,Can Publish,version 2
-160,visible_qty_configurator,,boolean,,,Quantity visible in configurator,version 2
-161,cost_currency_id,,many2one,res.currency,,Cost Currency,version 2
-162,activity_ids,,one2many,mail.activity,,Activities,version 2
-163,activity_exception_icon,,char,,,Icon,version 2
-164,visible_expense_policy,,boolean,,,Re-Invoice Policy visible,version 2
-165,is_published,,boolean,,,Is Published,version 2
-166,message_has_error,,boolean,,,Message Delivery error,version 2
-167,uom_name,,char,,,Unit of Measure Name,version 2
-168,activity_state,,selection,,,Activity State,version 2
-169,bom_line_ids,,one2many,mrp.bom.line,,BoM Components,version 2
-170,is_seo_optimized,,boolean,,,SEO optimized,version 2
-171,image_512,,binary,,,Image 512,version 2
-172,message_attachment_count,,integer,,,Attachment Count,version 2
-173,image_1024,,binary,,,Image 1024,version 2
-174,rating_avg,,float,,,Rating Average,version 2
-175,product_template_image_ids,,one2many,product.image,,Extra Product Media,version 2
-176,responsible_id,,many2one,res.users,,Responsible,version 2
-177,service_to_purchase,,boolean,,,Purchase Automatically,version 2
-178,purchased_product_qty,,float,,,Purchased,version 2
-179,activity_summary,,char,,,Next Activity Summary,version 2
-180,product_add_mode,,selection,,,Add product mode,version 2
-181,mrp_product_qty,,float,,,Manufactured,version 2
+122,description_pickingout,,text,,,Description on Delivery Orders,False,version 2
+123,has_available_route_ids,,boolean,,,Routes can be selected on this product,False,version 2
+124,activity_date_deadline,,date,,,Next Activity Deadline,False,version 2
+125,pricelist_item_count,,integer,,,Number of price rules,False,version 2
+126,message_has_sms_error,,boolean,,,SMS Delivery error,False,version 2
+127,website_ribbon_id,,many2one,product.ribbon,,Ribbon,False,version 2
+128,project_id,,many2one,project.project,,Project,False,version 2
+129,rating_last_feedback,,text,,,Rating Last Feedback,False,version 2
+130,service_type,,selection,,,Track Service,False,version 2
+131,project_template_id,,many2one,project.project,,Project Template,False,version 2
+132,inventory_availability,,selection,,,Inventory Availability,False,version 2
+133,activity_type_id,,many2one,mail.activity.type,,Next Activity Type,False,version 2
+134,image_128,,binary,,,Image 128,False,version 2
+135,optional_product_ids,,many2many,product.template,,Optional Products,False,version 2
+136,description_pickingin,,text,,,Description on Receptions,False,version 2
+137,used_in_bom_count,,integer,,,# of BoM Where is Used,False,version 2
+138,website_id,,many2one,website,,Website,False,version 2
+139,website_meta_og_img,,char,,,Website opengraph image,False,version 2
+140,volume_uom_name,,char,,,Volume unit of measure label,False,version 2
+141,can_image_1024_be_zoomed,,boolean,,,Can Image 1024 be zoomed,False,version 2
+142,activity_exception_decoration,,selection,,,Activity Exception Decoration,False,version 2
+143,activity_type_icon,,char,,,Activity Type Icon,False,version 2
+144,rating_last_image,,binary,,,Rating Last Image,False,version 2
+145,variant_seller_ids,,one2many,product.supplierinfo,,Variant Seller,False,version 2
+146,is_product_variant,,boolean,,,Is a product variant,False,version 2
+147,message_has_error_counter,,integer,,,Number of errors,False,version 2
+148,image_1920,,binary,,,Image,False,version 2
+149,seo_name,,char,,,Seo name,False,version 2
+150,valid_product_template_attribute_line_ids,,many2many,product.template.attribute.line,,Valid Product Attribute Lines,False,version 2
+151,has_configurable_attributes,,boolean,,,Is a configurable product,False,version 2
+152,image_256,,binary,,,Image 256,False,version 2
+153,available_threshold,,float,,,Availability Threshold,False,version 2
+154,custom_message,,text,,,Custom Message,False,version 2
+155,service_tracking,,selection,,,Service Tracking,False,version 2
+156,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,False,version 2
+157,weight_uom_name,,char,,,Weight unit of measure label,False,version 2
+158,activity_user_id,,many2one,res.users,,Responsible User,False,version 2
+159,can_publish,,boolean,,,Can Publish,False,version 2
+160,visible_qty_configurator,,boolean,,,Quantity visible in configurator,False,version 2
+161,cost_currency_id,,many2one,res.currency,,Cost Currency,False,version 2
+162,activity_ids,,one2many,mail.activity,,Activities,False,version 2
+163,activity_exception_icon,,char,,,Icon,False,version 2
+164,visible_expense_policy,,boolean,,,Re-Invoice Policy visible,False,version 2
+165,is_published,,boolean,,,Is Published,False,version 2
+166,message_has_error,,boolean,,,Message Delivery error,False,version 2
+167,uom_name,,char,,,Unit of Measure Name,False,version 2
+168,activity_state,,selection,,,Activity State,False,version 2
+169,bom_line_ids,,one2many,mrp.bom.line,,BoM Components,False,version 2
+170,is_seo_optimized,,boolean,,,SEO optimized,False,version 2
+171,image_512,,binary,,,Image 512,False,version 2
+172,message_attachment_count,,integer,,,Attachment Count,False,version 2
+173,image_1024,,binary,,,Image 1024,False,version 2
+174,rating_avg,,float,,,Rating Average,False,version 2
+175,product_template_image_ids,,one2many,product.image,,Extra Product Media,False,version 2
+176,responsible_id,,many2one,res.users,,Responsible,False,version 2
+177,service_to_purchase,,boolean,,,Purchase Automatically,False,version 2
+178,purchased_product_qty,,float,,,Purchased,False,version 2
+179,activity_summary,,char,,,Next Activity Summary,False,version 2
+180,product_add_mode,,selection,,,Add product mode,False,version 2
+181,mrp_product_qty,,float,,,Manufactured,False,version 2
 ,,,,
 ,,,,

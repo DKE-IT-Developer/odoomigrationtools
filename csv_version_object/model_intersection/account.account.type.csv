@@ -1,18 +1,18 @@
 model,account.account.type,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,both
-2,display_name,char,char,,Display Name,Display Name,both
-3,name,char,char,,Account Type,Account Type,both
-4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-5,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-6,note,text,text,,Description,Description,both
-7,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-8,create_date,datetime,datetime,,Created on,Created on,both
-9,include_initial_balance,boolean,boolean,,Bring Accounts Balance Forward,Bring Accounts Balance Forward,both
-10,type,selection,selection,,Type,Type,both
-11,id,integer,integer,,ID,ID,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+2,display_name,char,char,,Display Name,Display Name,False,both
+3,name,char,char,,Account Type,Account Type,True,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+5,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+6,note,text,text,,Description,Description,False,both
+7,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+8,create_date,datetime,datetime,,Created on,Created on,False,both
+9,include_initial_balance,boolean,boolean,,Bring Accounts Balance Forward,Bring Accounts Balance Forward,False,both
+10,type,selection,selection,,Type,Type,True,both
+11,id,integer,integer,,ID,ID,False,both
 ,,,,
 ,,,,
-12,internal_group,,selection,,,Internal Group,version 2
+12,internal_group,,selection,,,Internal Group,True,version 2
 ,,,,
 ,,,,

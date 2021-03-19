@@ -1,19 +1,19 @@
 model,ir.translation,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,lang,selection,selection,,Language,Language,both
-2,src,text,text,,Internal Source,Internal Source,both
-3,display_name,char,char,,Display Name,Display Name,both
-4,name,char,char,,Translated field,Translated field,both
-5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-6,res_id,integer,integer,,Record ID,Record ID,both
-7,module,char,char,,Module,Module,both
-8,state,selection,selection,,Status,Status,both
-9,comments,text,text,,Translation comments,Translation comments,both
-10,value,text,text,,Translation Value,Translation Value,both
-11,type,selection,selection,,Type,Type,both
-12,id,integer,integer,,ID,ID,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,lang,selection,selection,,Language,Language,False,both
+2,src,text,text,,Internal Source,Internal Source,False,both
+3,display_name,char,char,,Display Name,Display Name,False,both
+4,name,char,char,,Translated field,Translated field,True,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+6,res_id,integer,integer,,Record ID,Record ID,False,both
+7,module,char,char,,Module,Module,False,both
+8,state,selection,selection,,Status,Status,False,both
+9,comments,text,text,,Translation comments,Translation comments,False,both
+10,value,text,text,,Translation Value,Translation Value,False,both
+11,type,selection,selection,,Type,Type,False,both
+12,id,integer,integer,,ID,ID,False,both
 ,,,,
-13,source,text,,,Source term,,version 1
+13,source,text,,,Source term,,False,version 1
 ,,,,
 ,,,,
 ,,,,

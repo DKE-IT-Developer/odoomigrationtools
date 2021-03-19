@@ -1,20 +1,20 @@
 model,account.payment.term.line,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,payment_id,many2one,many2one,account.payment.term,Payment Terms,Payment Terms,both
-2,create_uid,many2one,many2one,res.users,Created by,Created by,both
-3,display_name,char,char,,Display Name,Display Name,both
-4,option,selection,selection,,Options,Options,both
-5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-6,sequence,integer,integer,,Sequence,Sequence,both
-7,days,integer,integer,,Number of Days,Number of Days,both
-8,value,selection,selection,,Type,Type,both
-9,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-10,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-11,create_date,datetime,datetime,,Created on,Created on,both
-12,id,integer,integer,,ID,ID,both
-13,value_amount,float,float,,Value,Value,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,payment_id,many2one,many2one,account.payment.term,Payment Terms,Payment Terms,True,both
+2,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+3,display_name,char,char,,Display Name,Display Name,False,both
+4,option,selection,selection,,Options,Options,True,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+6,sequence,integer,integer,,Sequence,Sequence,False,both
+7,days,integer,integer,,Number of Days,Number of Days,True,both
+8,value,selection,selection,,Type,Type,True,both
+9,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+10,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+11,create_date,datetime,datetime,,Created on,Created on,False,both
+12,id,integer,integer,,ID,ID,False,both
+13,value_amount,float,float,,Value,Value,False,both
 ,,,,
 ,,,,
-14,day_of_the_month,,integer,,,Day of the month,version 2
+14,day_of_the_month,,integer,,,Day of the month,False,version 2
 ,,,,
 ,,,,

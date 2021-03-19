@@ -1,24 +1,24 @@
 model,mail.alias.mixin,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,both
-2,display_name,char,char,,Display Name,Display Name,both
-3,alias_defaults,text,text,,Default Values,Default Values,both
-4,alias_contact,selection,selection,,Alias Contact Security,Alias Contact Security,both
-5,alias_parent_model_id,many2one,many2one,ir.model,Parent Model,Parent Model,both
-6,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-7,alias_id,many2one,many2one,mail.alias,Alias,Alias,both
-8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-9,alias_force_thread_id,integer,integer,,Record Thread ID,Record Thread ID,both
-10,alias_model_id,many2one,many2one,ir.model,Aliased Model,Aliased Model,both
-11,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-12,alias_parent_thread_id,integer,integer,,Parent Record Thread ID,Parent Record Thread ID,both
-13,create_date,datetime,datetime,,Created on,Created on,both
-14,alias_domain,char,char,,Alias domain,Alias domain,both
-15,alias_name,char,char,,Alias Name,Alias Name,both
-16,id,integer,integer,,ID,ID,both
-17,alias_user_id,many2one,many2one,res.users,Owner,Owner,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+2,display_name,char,char,,Display Name,Display Name,False,both
+3,alias_defaults,text,text,,Default Values,Default Values,True,both
+4,alias_contact,selection,selection,,Alias Contact Security,Alias Contact Security,True,both
+5,alias_parent_model_id,many2one,many2one,ir.model,Parent Model,Parent Model,False,both
+6,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+7,alias_id,many2one,many2one,mail.alias,Alias,Alias,True,both
+8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+9,alias_force_thread_id,integer,integer,,Record Thread ID,Record Thread ID,False,both
+10,alias_model_id,many2one,many2one,ir.model,Aliased Model,Aliased Model,True,both
+11,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+12,alias_parent_thread_id,integer,integer,,Parent Record Thread ID,Parent Record Thread ID,False,both
+13,create_date,datetime,datetime,,Created on,Created on,False,both
+14,alias_domain,char,char,,Alias domain,Alias domain,False,both
+15,alias_name,char,char,,Alias Name,Alias Name,False,both
+16,id,integer,integer,,ID,ID,False,both
+17,alias_user_id,many2one,many2one,res.users,Owner,Owner,False,both
 ,,,,
 ,,,,
-18,alias_bounced_content,,html,,,Custom Bounced Message,version 2
+18,alias_bounced_content,,html,,,Custom Bounced Message,False,version 2
 ,,,,
 ,,,,

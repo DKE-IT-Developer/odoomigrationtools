@@ -1,45 +1,45 @@
 model,stock.warehouse.orderpoint,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,product_max_qty,float,float,,Maximum Quantity,Max Quantity,both
-2,create_uid,many2one,many2one,res.users,Created by,Created by,both
-3,product_min_qty,float,float,,Minimum Quantity,Min Quantity,both
-4,qty_multiple,float,float,,Qty Multiple,Multiple Quantity,both
-5,display_name,char,char,,Display Name,Display Name,both
-6,name,char,char,,Name,Name,both
-7,product_uom,many2one,many2one,uom.uom,Product Unit of Measure,Unit of Measure,both
-8,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-9,id,integer,integer,,ID,ID,both
-10,company_id,many2one,many2one,res.company,Company,Company,both
-11,warehouse_id,many2one,many2one,stock.warehouse,Warehouse,Warehouse,both
-12,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-13,active,boolean,boolean,,Active,Active,both
-14,create_date,datetime,datetime,,Created on,Created on,both
-15,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-16,location_id,many2one,many2one,stock.location,Location,Location,both
-17,group_id,many2one,many2one,procurement.group,Procurement Group,Procurement Group,both
-18,product_id,many2one,many2one,product.product,Product,Product,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,product_max_qty,float,float,,Maximum Quantity,Max Quantity,True,both
+2,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+3,product_min_qty,float,float,,Minimum Quantity,Min Quantity,True,both
+4,qty_multiple,float,float,,Qty Multiple,Multiple Quantity,True,both
+5,display_name,char,char,,Display Name,Display Name,False,both
+6,name,char,char,,Name,Name,True,both
+7,product_uom,many2one,many2one,uom.uom,Product Unit of Measure,Unit of Measure,False,both
+8,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+9,id,integer,integer,,ID,ID,False,both
+10,company_id,many2one,many2one,res.company,Company,Company,True,both
+11,warehouse_id,many2one,many2one,stock.warehouse,Warehouse,Warehouse,True,both
+12,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+13,active,boolean,boolean,,Active,Active,False,both
+14,create_date,datetime,datetime,,Created on,Created on,False,both
+15,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+16,location_id,many2one,many2one,stock.location,Location,Location,True,both
+17,group_id,many2one,many2one,procurement.group,Procurement Group,Procurement Group,False,both
+18,product_id,many2one,many2one,product.product,Product,Product,True,both
 ,,,,
-19,procurement_ids,one2many,,procurement.order,Created Procurements,,version 1
-20,lead_type,selection,,,Lead Type,,version 1
-21,lead_days,integer,,,Lead Time,,version 1
+19,procurement_ids,one2many,,procurement.order,Created Procurements,,False,version 1
+20,lead_type,selection,,,Lead Type,,True,version 1
+21,lead_days,integer,,,Lead Time,,False,version 1
 ,,,,
-22,show_bom,,boolean,,,Show BoM column,version 2
-23,allowed_route_ids,,many2many,stock.location.route,,Allowed Route,version 2
-24,rule_ids,,many2many,stock.rule,,Rules used,version 2
-25,qty_on_hand,,float,,,On Hand,version 2
-26,snoozed_until,,date,,,Snoozed,version 2
-27,qty_forecast,,float,,,Forecast,version 2
-28,qty_to_order,,float,,,To Order,version 2
-29,product_tmpl_id,,many2one,product.template,,Product Template,version 2
-30,product_category_id,,many2one,product.category,,Product Category,version 2
-31,bom_id,,many2one,mrp.bom,,Bill of Materials,version 2
-32,show_supplier,,boolean,,,Show supplier column,version 2
-33,lead_days_date,,date,,,Lead Days Date,version 2
-34,supplier_id,,many2one,product.supplierinfo,,Vendor,version 2
-35,trigger,,selection,,,Trigger,version 2
-36,json_lead_days_popover,,char,,,Json Lead Days Popover,version 2
-37,product_uom_name,,char,,,Product unit of measure label,version 2
-38,route_id,,many2one,stock.location.route,,Preferred Route,version 2
-39,allowed_location_ids,,one2many,stock.location,,Allowed Location,version 2
+22,show_bom,,boolean,,,Show BoM column,False,version 2
+23,allowed_route_ids,,many2many,stock.location.route,,Allowed Route,False,version 2
+24,rule_ids,,many2many,stock.rule,,Rules used,False,version 2
+25,qty_on_hand,,float,,,On Hand,False,version 2
+26,snoozed_until,,date,,,Snoozed,False,version 2
+27,qty_forecast,,float,,,Forecast,False,version 2
+28,qty_to_order,,float,,,To Order,False,version 2
+29,product_tmpl_id,,many2one,product.template,,Product Template,False,version 2
+30,product_category_id,,many2one,product.category,,Product Category,False,version 2
+31,bom_id,,many2one,mrp.bom,,Bill of Materials,False,version 2
+32,show_supplier,,boolean,,,Show supplier column,False,version 2
+33,lead_days_date,,date,,,Lead Days Date,False,version 2
+34,supplier_id,,many2one,product.supplierinfo,,Vendor,False,version 2
+35,trigger,,selection,,,Trigger,True,version 2
+36,json_lead_days_popover,,char,,,Json Lead Days Popover,False,version 2
+37,product_uom_name,,char,,,Product unit of measure label,False,version 2
+38,route_id,,many2one,stock.location.route,,Preferred Route,False,version 2
+39,allowed_location_ids,,one2many,stock.location,,Allowed Location,False,version 2
 ,,,,
 ,,,,

@@ -1,24 +1,24 @@
 model,resource.calendar,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,both
-2,display_name,char,char,,Display Name,Display Name,both
-3,name,char,char,,Name,Name,both
-4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-5,leave_ids,one2many,one2many,resource.calendar.leaves,Leaves,Time Off,both
-6,company_id,many2one,many2one,res.company,Company,Company,both
-7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-8,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-9,create_date,datetime,datetime,,Created on,Created on,both
-10,attendance_ids,one2many,one2many,resource.calendar.attendance,Working Time,Working Time,both
-11,id,integer,integer,,ID,ID,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+2,display_name,char,char,,Display Name,Display Name,False,both
+3,name,char,char,,Name,Name,True,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+5,leave_ids,one2many,one2many,resource.calendar.leaves,Leaves,Time Off,False,both
+6,company_id,many2one,many2one,res.company,Company,Company,False,both
+7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+8,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+9,create_date,datetime,datetime,,Created on,Created on,False,both
+10,attendance_ids,one2many,one2many,resource.calendar.attendance,Working Time,Working Time,False,both
+11,id,integer,integer,,ID,ID,False,both
 ,,,,
-12,manager,many2one,,res.users,Workgroup Manager,,version 1
+12,manager,many2one,,res.users,Workgroup Manager,,False,version 1
 ,,,,
-13,global_leave_ids,,one2many,resource.calendar.leaves,,Global Time Off,version 2
-14,active,,boolean,,,Active,version 2
-15,tz,,selection,,,Timezone,version 2
-16,two_weeks_explanation,,char,,,Explanation,version 2
-17,two_weeks_calendar,,boolean,,,Calendar in 2 weeks mode,version 2
-18,hours_per_day,,float,,,Average Hour per Day,version 2
+13,global_leave_ids,,one2many,resource.calendar.leaves,,Global Time Off,False,version 2
+14,active,,boolean,,,Active,False,version 2
+15,tz,,selection,,,Timezone,True,version 2
+16,two_weeks_explanation,,char,,,Explanation,False,version 2
+17,two_weeks_calendar,,boolean,,,Calendar in 2 weeks mode,False,version 2
+18,hours_per_day,,float,,,Average Hour per Day,False,version 2
 ,,,,
 ,,,,

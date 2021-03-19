@@ -1,9 +1,9 @@
 model,barcodes.barcode_events_mixin,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,_barcode_scanned,char,char,,Barcode Scanned,Barcode Scanned,both
-2,display_name,char,char,,Display Name,Display Name,both
-3,id,integer,integer,,ID,ID,both
-4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,_barcode_scanned,char,char,,Barcode Scanned,Barcode Scanned,False,both
+2,display_name,char,char,,Display Name,Display Name,False,both
+3,id,integer,integer,,ID,ID,False,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
 ,,,,
 ,,,,
 ,,,,

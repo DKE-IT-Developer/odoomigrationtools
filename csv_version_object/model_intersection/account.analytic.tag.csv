@@ -1,19 +1,19 @@
 model,account.analytic.tag,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,both
-2,create_date,datetime,datetime,,Created on,Created on,both
-3,name,char,char,,Analytic Tag,Analytic Tag,both
-4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-5,color,integer,integer,,Color Index,Color Index,both
-6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-7,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-8,display_name,char,char,,Display Name,Display Name,both
-9,id,integer,integer,,ID,ID,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+2,create_date,datetime,datetime,,Created on,Created on,False,both
+3,name,char,char,,Analytic Tag,Analytic Tag,True,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+5,color,integer,integer,,Color Index,Color Index,False,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+7,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+8,display_name,char,char,,Display Name,Display Name,False,both
+9,id,integer,integer,,ID,ID,False,both
 ,,,,
 ,,,,
-10,analytic_distribution_ids,,one2many,account.analytic.distribution,,Analytic Accounts,version 2
-11,company_id,,many2one,res.company,,Company,version 2
-12,active,,boolean,,,Active,version 2
-13,active_analytic_distribution,,boolean,,,Analytic Distribution,version 2
+10,analytic_distribution_ids,,one2many,account.analytic.distribution,,Analytic Accounts,False,version 2
+11,company_id,,many2one,res.company,,Company,False,version 2
+12,active,,boolean,,,Active,False,version 2
+13,active_analytic_distribution,,boolean,,,Analytic Distribution,False,version 2
 ,,,,
 ,,,,

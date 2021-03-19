@@ -1,35 +1,35 @@
 model,account.analytic.line,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,code,char,char,,Code,Code,both
-2,create_date,datetime,datetime,,Created on,Created on,both
-3,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-4,currency_id,many2one,many2one,res.currency,Account Currency,Currency,both
-5,partner_id,many2one,many2one,res.partner,Partner,Partner,both
-6,id,integer,integer,,ID,ID,both
-7,create_uid,many2one,many2one,res.users,Created by,Created by,both
-8,user_id,many2one,many2one,res.users,User,User,both
-9,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-10,tag_ids,many2many,many2many,account.analytic.tag,Tags,Tags,both
-11,company_id,many2one,many2one,res.company,Company,Company,both
-12,ref,char,char,,Ref.,Ref.,both
-13,account_id,many2one,many2one,account.analytic.account,Analytic Account,Analytic Account,both
-14,general_account_id,many2one,many2one,account.account,Financial Account,Financial Account,both
-15,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-16,date,date,date,,Date,Date,both
-17,display_name,char,char,,Display Name,Display Name,both
-18,move_id,many2one,many2one,account.move.line,Move Line,Journal Item,both
-19,product_id,many2one,many2one,product.product,Product,Product,both
-20,name,char,char,,Description,Description,both
-21,product_uom_id,many2one,many2one,uom.uom,Unit of Measure,Unit of Measure,both
-22,so_line,many2one,many2one,sale.order.line,Sale Order Line,Sales Order Item,both
-23,amount,monetary,monetary,,Amount,Amount,both
-24,unit_amount,float,float,,Quantity,Quantity,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,code,char,char,,Code,Code,False,both
+2,create_date,datetime,datetime,,Created on,Created on,False,both
+3,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+4,currency_id,many2one,many2one,res.currency,Account Currency,Currency,False,both
+5,partner_id,many2one,many2one,res.partner,Partner,Partner,False,both
+6,id,integer,integer,,ID,ID,False,both
+7,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+8,user_id,many2one,many2one,res.users,User,User,False,both
+9,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+10,tag_ids,many2many,many2many,account.analytic.tag,Tags,Tags,False,both
+11,company_id,many2one,many2one,res.company,Company,Company,True,both
+12,ref,char,char,,Ref.,Ref.,False,both
+13,account_id,many2one,many2one,account.analytic.account,Analytic Account,Analytic Account,True,both
+14,general_account_id,many2one,many2one,account.account,Financial Account,Financial Account,False,both
+15,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+16,date,date,date,,Date,Date,True,both
+17,display_name,char,char,,Display Name,Display Name,False,both
+18,move_id,many2one,many2one,account.move.line,Move Line,Journal Item,False,both
+19,product_id,many2one,many2one,product.product,Product,Product,False,both
+20,name,char,char,,Description,Description,True,both
+21,product_uom_id,many2one,many2one,uom.uom,Unit of Measure,Unit of Measure,False,both
+22,so_line,many2one,many2one,sale.order.line,Sale Order Line,Sales Order Item,False,both
+23,amount,monetary,monetary,,Amount,Amount,True,both
+24,unit_amount,float,float,,Quantity,Quantity,False,both
 ,,,,
-25,company_currency_id,many2one,,res.currency,Currency,,version 1
-26,analytic_amount_currency,monetary,,,Amount Currency,,version 1
-27,amount_currency,monetary,,,Amount currency,,version 1
+25,company_currency_id,many2one,,res.currency,Currency,,False,version 1
+26,analytic_amount_currency,monetary,,,Amount Currency,,False,version 1
+27,amount_currency,monetary,,,Amount currency,,False,version 1
 ,,,,
-28,group_id,,many2one,account.analytic.group,,Group,version 2
-29,product_uom_category_id,,many2one,uom.category,,Category,version 2
+28,group_id,,many2one,account.analytic.group,,Group,False,version 2
+29,product_uom_category_id,,many2one,uom.category,,Category,False,version 2
 ,,,,
 ,,,,

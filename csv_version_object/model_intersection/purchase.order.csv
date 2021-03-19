@@ -1,82 +1,82 @@
 model,purchase.order,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,origin,char,char,,Source Document,Source Document,both
-2,message_follower_ids,one2many,one2many,mail.followers,Followers,Followers,both
-3,create_date,datetime,datetime,,Created on,Created on,both
-4,order_line,one2many,one2many,purchase.order.line,Order Lines,Order Lines,both
-5,message_needaction,boolean,boolean,,Action Needed,Action Needed,both
-6,message_channel_ids,many2many,many2many,mail.channel,Followers (Channels),Followers (Channels),both
-7,message_partner_ids,many2many,many2many,res.partner,Followers (Partners),Followers (Partners),both
-8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-9,currency_id,many2one,many2one,res.currency,Currency,Currency,both
-10,invoice_ids,many2many,many2many,account.move,Bills,Bills,both
-11,date_order,datetime,datetime,,Order Date,Order Deadline,both
-12,partner_id,many2one,many2one,res.partner,Vendor,Vendor,both
-13,message_ids,one2many,one2many,mail.message,Messages,Messages,both
-14,dest_address_id,many2one,many2one,res.partner,Drop Ship Address,Drop Ship Address,both
-15,create_uid,many2one,many2one,res.users,Responsible,Created by,both
-16,amount_untaxed,monetary,monetary,,Untaxed Amount,Untaxed Amount,both
-17,invoice_status,selection,selection,,Billing Status,Billing Status,both
-18,is_shipped,boolean,boolean,,Is shipped,Is Shipped,both
-19,picking_type_id,many2one,many2one,stock.picking.type,Deliver To,Deliver To,both
-20,company_id,many2one,many2one,res.company,Company,Company,both
-21,id,integer,integer,,ID,ID,both
-22,amount_tax,monetary,monetary,,Taxes,Taxes,both
-23,state,selection,selection,,Status,Status,both
-24,message_is_follower,boolean,boolean,,Is Follower,Is Follower,both
-25,fiscal_position_id,many2one,many2one,account.fiscal.position,Fiscal Position,Fiscal Position,both
-26,message_unread_counter,integer,integer,,Unread Messages Counter,Unread Messages Counter,both
-27,incoterm_id,many2one,many2one,account.incoterms,Incoterm,Incoterm,both
-28,payment_term_id,many2one,many2one,account.payment.term,Payment Terms,Payment Terms,both
-29,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-30,display_name,char,char,,Display Name,Display Name,both
-31,partner_ref,char,char,,Vendor Reference,Vendor Reference,both
-32,picking_ids,many2many,many2many,stock.picking,Receptions,Receptions,both
-33,date_approve,date,datetime,,Approval Date,Confirmation Date,both
-34,amount_total,monetary,monetary,,Total,Total,both
-35,picking_count,integer,integer,,Receptions,Picking count,both
-36,group_id,many2one,many2one,procurement.group,Procurement Group,Procurement Group,both
-37,invoice_count,integer,integer,,# of Bills,Bill Count,both
-38,name,char,char,,Order Reference,Order Reference,both
-39,date_planned,datetime,datetime,,Scheduled Date,Receipt Date,both
-40,notes,text,text,,Terms and Conditions,Terms and Conditions,both
-41,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-42,product_id,many2one,many2one,product.product,Product,Product,both
-43,default_location_dest_id_usage,selection,selection,,Destination Location Type,Destination Location Type,both
-44,message_unread,boolean,boolean,,Unread Messages,Unread Messages,both
-45,message_needaction_counter,integer,integer,,Number of Actions,Number of Actions,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,origin,char,char,,Source Document,Source Document,False,both
+2,message_follower_ids,one2many,one2many,mail.followers,Followers,Followers,False,both
+3,create_date,datetime,datetime,,Created on,Created on,False,both
+4,order_line,one2many,one2many,purchase.order.line,Order Lines,Order Lines,False,both
+5,message_needaction,boolean,boolean,,Action Needed,Action Needed,False,both
+6,message_channel_ids,many2many,many2many,mail.channel,Followers (Channels),Followers (Channels),False,both
+7,message_partner_ids,many2many,many2many,res.partner,Followers (Partners),Followers (Partners),False,both
+8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+9,currency_id,many2one,many2one,res.currency,Currency,Currency,True,both
+10,invoice_ids,many2many,many2many,account.move,Bills,Bills,False,both
+11,date_order,datetime,datetime,,Order Date,Order Deadline,True,both
+12,partner_id,many2one,many2one,res.partner,Vendor,Vendor,True,both
+13,message_ids,one2many,one2many,mail.message,Messages,Messages,False,both
+14,dest_address_id,many2one,many2one,res.partner,Drop Ship Address,Drop Ship Address,False,both
+15,create_uid,many2one,many2one,res.users,Responsible,Created by,False,both
+16,amount_untaxed,monetary,monetary,,Untaxed Amount,Untaxed Amount,False,both
+17,invoice_status,selection,selection,,Billing Status,Billing Status,False,both
+18,is_shipped,boolean,boolean,,Is shipped,Is Shipped,False,both
+19,picking_type_id,many2one,many2one,stock.picking.type,Deliver To,Deliver To,True,both
+20,company_id,many2one,many2one,res.company,Company,Company,True,both
+21,id,integer,integer,,ID,ID,False,both
+22,amount_tax,monetary,monetary,,Taxes,Taxes,False,both
+23,state,selection,selection,,Status,Status,False,both
+24,message_is_follower,boolean,boolean,,Is Follower,Is Follower,False,both
+25,fiscal_position_id,many2one,many2one,account.fiscal.position,Fiscal Position,Fiscal Position,False,both
+26,message_unread_counter,integer,integer,,Unread Messages Counter,Unread Messages Counter,False,both
+27,incoterm_id,many2one,many2one,account.incoterms,Incoterm,Incoterm,False,both
+28,payment_term_id,many2one,many2one,account.payment.term,Payment Terms,Payment Terms,False,both
+29,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+30,display_name,char,char,,Display Name,Display Name,False,both
+31,partner_ref,char,char,,Vendor Reference,Vendor Reference,False,both
+32,picking_ids,many2many,many2many,stock.picking,Receptions,Receptions,False,both
+33,date_approve,date,datetime,,Approval Date,Confirmation Date,False,both
+34,amount_total,monetary,monetary,,Total,Total,False,both
+35,picking_count,integer,integer,,Receptions,Picking count,False,both
+36,group_id,many2one,many2one,procurement.group,Procurement Group,Procurement Group,False,both
+37,invoice_count,integer,integer,,# of Bills,Bill Count,False,both
+38,name,char,char,,Order Reference,Order Reference,True,both
+39,date_planned,datetime,datetime,,Scheduled Date,Receipt Date,False,both
+40,notes,text,text,,Terms and Conditions,Terms and Conditions,False,both
+41,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+42,product_id,many2one,many2one,product.product,Product,Product,False,both
+43,default_location_dest_id_usage,selection,selection,,Destination Location Type,Destination Location Type,False,both
+44,message_unread,boolean,boolean,,Unread Messages,Unread Messages,False,both
+45,message_needaction_counter,integer,integer,,Number of Actions,Number of Actions,False,both
 ,,,,
-46,message_last_post,datetime,,,Last Message Date,,version 1
+46,message_last_post,datetime,,,Last Message Date,,False,version 1
 ,,,,
-47,date_calendar_start,,datetime,,,Date Calendar Start,version 2
-48,sale_order_count,,integer,,,Number of Source Sale,version 2
-49,activity_type_icon,,char,,,Activity Type Icon,version 2
-50,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,version 2
-51,activity_date_deadline,,date,,,Next Activity Deadline,version 2
-52,receipt_reminder_email,,boolean,,,Receipt Reminder Email,version 2
-53,message_has_sms_error,,boolean,,,SMS Delivery error,version 2
-54,priority,,selection,,,Priority,version 2
-55,mail_reminder_confirmed,,boolean,,,Reminder Confirmed,version 2
-56,activity_user_id,,many2one,res.users,,Responsible User,version 2
-57,effective_date,,datetime,,,Effective Date,version 2
-58,activity_ids,,one2many,mail.activity,,Activities,version 2
-59,activity_type_id,,many2one,mail.activity.type,,Next Activity Type,version 2
-60,access_token,,char,,,Security Token,version 2
-61,activity_exception_icon,,char,,,Icon,version 2
-62,on_time_rate,,float,,,On-Time Delivery Rate,version 2
-63,activity_state,,selection,,,Activity State,version 2
-64,message_has_error,,boolean,,,Message Delivery error,version 2
-65,access_warning,,text,,,Access warning,version 2
-66,activity_exception_decoration,,selection,,,Activity Exception Decoration,version 2
-67,reminder_date_before_receipt,,integer,,,Days Before Receipt,version 2
-68,mail_reception_confirmed,,boolean,,,Reception Confirmed,version 2
-69,message_attachment_count,,integer,,,Attachment Count,version 2
-70,message_has_error_counter,,integer,,,Number of errors,version 2
-71,currency_rate,,float,,,Currency Rate,version 2
-72,user_id,,many2one,res.users,,Purchase Representative,version 2
-73,website_message_ids,,one2many,mail.message,,Website Messages,version 2
-74,activity_summary,,char,,,Next Activity Summary,version 2
-75,mrp_production_count,,integer,,,Count of MO Source,version 2
-76,access_url,,char,,,Portal Access URL,version 2
+47,date_calendar_start,,datetime,,,Date Calendar Start,False,version 2
+48,sale_order_count,,integer,,,Number of Source Sale,False,version 2
+49,activity_type_icon,,char,,,Activity Type Icon,False,version 2
+50,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,False,version 2
+51,activity_date_deadline,,date,,,Next Activity Deadline,False,version 2
+52,receipt_reminder_email,,boolean,,,Receipt Reminder Email,False,version 2
+53,message_has_sms_error,,boolean,,,SMS Delivery error,False,version 2
+54,priority,,selection,,,Priority,False,version 2
+55,mail_reminder_confirmed,,boolean,,,Reminder Confirmed,False,version 2
+56,activity_user_id,,many2one,res.users,,Responsible User,False,version 2
+57,effective_date,,datetime,,,Effective Date,False,version 2
+58,activity_ids,,one2many,mail.activity,,Activities,False,version 2
+59,activity_type_id,,many2one,mail.activity.type,,Next Activity Type,False,version 2
+60,access_token,,char,,,Security Token,False,version 2
+61,activity_exception_icon,,char,,,Icon,False,version 2
+62,on_time_rate,,float,,,On-Time Delivery Rate,False,version 2
+63,activity_state,,selection,,,Activity State,False,version 2
+64,message_has_error,,boolean,,,Message Delivery error,False,version 2
+65,access_warning,,text,,,Access warning,False,version 2
+66,activity_exception_decoration,,selection,,,Activity Exception Decoration,False,version 2
+67,reminder_date_before_receipt,,integer,,,Days Before Receipt,False,version 2
+68,mail_reception_confirmed,,boolean,,,Reception Confirmed,False,version 2
+69,message_attachment_count,,integer,,,Attachment Count,False,version 2
+70,message_has_error_counter,,integer,,,Number of errors,False,version 2
+71,currency_rate,,float,,,Currency Rate,False,version 2
+72,user_id,,many2one,res.users,,Purchase Representative,False,version 2
+73,website_message_ids,,one2many,mail.message,,Website Messages,False,version 2
+74,activity_summary,,char,,,Next Activity Summary,False,version 2
+75,mrp_production_count,,integer,,,Count of MO Source,False,version 2
+76,access_url,,char,,,Portal Access URL,False,version 2
 ,,,,
 ,,,,

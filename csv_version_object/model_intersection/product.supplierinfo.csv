@@ -1,28 +1,28 @@
 model,product.supplierinfo,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,both
-2,display_name,char,char,,Display Name,Display Name,both
-3,name,many2one,many2one,res.partner,Vendor,Vendor,both
-4,product_uom,many2one,many2one,uom.uom,Vendor Unit of Measure,Unit of Measure,both
-5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-6,date_end,date,date,,End Date,End Date,both
-7,date_start,date,date,,Start Date,Start Date,both
-8,sequence,integer,integer,,Sequence,Sequence,both
-9,company_id,many2one,many2one,res.company,Company,Company,both
-10,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-11,delay,integer,integer,,Delivery Lead Time,Delivery Lead Time,both
-12,currency_id,many2one,many2one,res.currency,Currency,Currency,both
-13,price,float,float,,Price,Price,both
-14,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-15,id,integer,integer,,ID,ID,both
-16,create_date,datetime,datetime,,Created on,Created on,both
-17,min_qty,float,float,,Minimal Quantity,Quantity,both
-18,product_code,char,char,,Vendor Product Code,Vendor Product Code,both
-19,product_tmpl_id,many2one,many2one,product.template,Product Template,Product Template,both
-20,product_name,char,char,,Vendor Product Name,Vendor Product Name,both
-21,product_id,many2one,many2one,product.product,Product Variant,Product Variant,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+2,display_name,char,char,,Display Name,Display Name,False,both
+3,name,many2one,many2one,res.partner,Vendor,Vendor,True,both
+4,product_uom,many2one,many2one,uom.uom,Vendor Unit of Measure,Unit of Measure,False,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+6,date_end,date,date,,End Date,End Date,False,both
+7,date_start,date,date,,Start Date,Start Date,False,both
+8,sequence,integer,integer,,Sequence,Sequence,False,both
+9,company_id,many2one,many2one,res.company,Company,Company,False,both
+10,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+11,delay,integer,integer,,Delivery Lead Time,Delivery Lead Time,True,both
+12,currency_id,many2one,many2one,res.currency,Currency,Currency,True,both
+13,price,float,float,,Price,Price,True,both
+14,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+15,id,integer,integer,,ID,ID,False,both
+16,create_date,datetime,datetime,,Created on,Created on,False,both
+17,min_qty,float,float,,Minimal Quantity,Quantity,True,both
+18,product_code,char,char,,Vendor Product Code,Vendor Product Code,False,both
+19,product_tmpl_id,many2one,many2one,product.template,Product Template,Product Template,False,both
+20,product_name,char,char,,Vendor Product Name,Vendor Product Name,False,both
+21,product_id,many2one,many2one,product.product,Product Variant,Product Variant,False,both
 ,,,,
 ,,,,
-22,product_variant_count,,integer,,,Variant Count,version 2
+22,product_variant_count,,integer,,,Variant Count,False,version 2
 ,,,,
 ,,,,

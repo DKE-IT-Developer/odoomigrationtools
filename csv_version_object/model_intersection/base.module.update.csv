@@ -1,15 +1,15 @@
 model,base.module.update,transient,True
-no,field,type1,type2,relation,string1,string2,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,both
-2,updated,integer,integer,,Number of modules updated,Number of modules updated,both
-3,added,integer,integer,,Number of modules added,Number of modules added,both
-4,display_name,char,char,,Display Name,Display Name,both
-5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-7,state,selection,selection,,Status,Status,both
-8,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-9,create_date,datetime,datetime,,Created on,Created on,both
-10,id,integer,integer,,ID,ID,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+2,updated,integer,integer,,Number of modules updated,Number of modules updated,False,both
+3,added,integer,integer,,Number of modules added,Number of modules added,False,both
+4,display_name,char,char,,Display Name,Display Name,False,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+7,state,selection,selection,,Status,Status,False,both
+8,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+9,create_date,datetime,datetime,,Created on,Created on,False,both
+10,id,integer,integer,,ID,ID,False,both
 ,,,,
 ,,,,
 ,,,,

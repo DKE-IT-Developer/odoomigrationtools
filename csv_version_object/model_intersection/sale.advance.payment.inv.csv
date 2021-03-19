@@ -1,23 +1,23 @@
 model,sale.advance.payment.inv,transient,True
-no,field,type1,type2,relation,string1,string2,source
-1,count,integer,integer,,# of Orders,Order Count,both
-2,create_uid,many2one,many2one,res.users,Created by,Created by,both
-3,display_name,char,char,,Display Name,Display Name,both
-4,product_id,many2one,many2one,product.product,Down Payment Product,Down Payment Product,both
-5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-6,deposit_taxes_id,many2many,many2many,account.tax,Customer Taxes,Customer Taxes,both
-7,advance_payment_method,selection,selection,,What do you want to invoice?,Create Invoice,both
-8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-9,amount,float,float,,Down Payment Amount,Down Payment Amount,both
-10,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-11,deposit_account_id,many2one,many2one,account.account,Income Account,Income Account,both
-12,create_date,datetime,datetime,,Created on,Created on,both
-13,id,integer,integer,,ID,ID,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,count,integer,integer,,# of Orders,Order Count,False,both
+2,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+3,display_name,char,char,,Display Name,Display Name,False,both
+4,product_id,many2one,many2one,product.product,Down Payment Product,Down Payment Product,False,both
+5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+6,deposit_taxes_id,many2many,many2many,account.tax,Customer Taxes,Customer Taxes,False,both
+7,advance_payment_method,selection,selection,,What do you want to invoice?,Create Invoice,True,both
+8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+9,amount,float,float,,Down Payment Amount,Down Payment Amount,False,both
+10,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+11,deposit_account_id,many2one,many2one,account.account,Income Account,Income Account,False,both
+12,create_date,datetime,datetime,,Created on,Created on,False,both
+13,id,integer,integer,,ID,ID,False,both
 ,,,,
 ,,,,
-14,fixed_amount,,monetary,,,Down Payment Amount (Fixed),version 2
-15,currency_id,,many2one,res.currency,,Currency,version 2
-16,deduct_down_payments,,boolean,,,Deduct down payments,version 2
-17,has_down_payments,,boolean,,,Has down payments,version 2
+14,fixed_amount,,monetary,,,Down Payment Amount (Fixed),False,version 2
+15,currency_id,,many2one,res.currency,,Currency,False,version 2
+16,deduct_down_payments,,boolean,,,Deduct down payments,False,version 2
+17,has_down_payments,,boolean,,,Has down payments,False,version 2
 ,,,,
 ,,,,

@@ -1,60 +1,60 @@
 model,payment.acquirer,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,create_date,datetime,datetime,,Created on,Created on,both
-2,done_msg,html,html,,Done Message,Done Message,both
-3,fees_implemented,boolean,boolean,,Fees Computation Supported,Fees Computation Supported,both
-4,fees_active,boolean,boolean,,Add Extra Fees,Add Extra Fees,both
-5,token_implemented,boolean,boolean,,Saving Card Data supported,Saving Card Data supported,both
-6,company_id,many2one,many2one,res.company,Company,Company,both
-7,cancel_msg,html,html,,Cancel Message,Cancel Message,both
-8,registration_view_template_id,many2one,many2one,ir.ui.view,S2S Form Template,S2S Form Template,both
-9,module_id,many2one,many2one,ir.module.module,Corresponding Module,Corresponding Module,both
-10,fees_dom_fixed,float,float,,Fixed domestic fees,Fixed domestic fees,both
-11,fees_int_fixed,float,float,,Fixed international fees,Fixed international fees,both
-12,id,integer,integer,,ID,ID,both
-13,create_uid,many2one,many2one,res.users,Created by,Created by,both
-14,display_name,char,char,,Display Name,Display Name,both
-15,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-16,save_token,selection,selection,,Store Card Data,Save Cards,both
-17,journal_id,many2one,many2one,account.journal,Payment Journal,Payment Journal,both
-18,module_state,selection,selection,,Installation State,Installation State,both
-19,provider,selection,selection,,Provider,Provider,both
-20,description,html,html,,Description,Description,both
-21,pending_msg,html,html,,Pending Message,Pending Message,both
-22,fees_int_var,float,float,,Variable international fees (in percents),Variable international fees (in percents),both
-23,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-24,pre_msg,html,html,,Help Message,Help Message,both
-25,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-26,fees_dom_var,float,float,,Variable domestic fees (in percents),Variable domestic fees (in percents),both
-27,name,char,char,,Name,Name,both
-28,view_template_id,many2one,many2one,ir.ui.view,Form Button Template,Form Button Template,both
-29,sequence,integer,integer,,Sequence,Sequence,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_date,datetime,datetime,,Created on,Created on,False,both
+2,done_msg,html,html,,Done Message,Done Message,False,both
+3,fees_implemented,boolean,boolean,,Fees Computation Supported,Fees Computation Supported,False,both
+4,fees_active,boolean,boolean,,Add Extra Fees,Add Extra Fees,False,both
+5,token_implemented,boolean,boolean,,Saving Card Data supported,Saving Card Data supported,False,both
+6,company_id,many2one,many2one,res.company,Company,Company,True,both
+7,cancel_msg,html,html,,Cancel Message,Cancel Message,False,both
+8,registration_view_template_id,many2one,many2one,ir.ui.view,S2S Form Template,S2S Form Template,False,both
+9,module_id,many2one,many2one,ir.module.module,Corresponding Module,Corresponding Module,False,both
+10,fees_dom_fixed,float,float,,Fixed domestic fees,Fixed domestic fees,False,both
+11,fees_int_fixed,float,float,,Fixed international fees,Fixed international fees,False,both
+12,id,integer,integer,,ID,ID,False,both
+13,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+14,display_name,char,char,,Display Name,Display Name,False,both
+15,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+16,save_token,selection,selection,,Store Card Data,Save Cards,False,both
+17,journal_id,many2one,many2one,account.journal,Payment Journal,Payment Journal,False,both
+18,module_state,selection,selection,,Installation State,Installation State,False,both
+19,provider,selection,selection,,Provider,Provider,True,both
+20,description,html,html,,Description,Description,False,both
+21,pending_msg,html,html,,Pending Message,Pending Message,False,both
+22,fees_int_var,float,float,,Variable international fees (in percents),Variable international fees (in percents),False,both
+23,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+24,pre_msg,html,html,,Help Message,Help Message,False,both
+25,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+26,fees_dom_var,float,float,,Variable domestic fees (in percents),Variable domestic fees (in percents),False,both
+27,name,char,char,,Name,Name,True,both
+28,view_template_id,many2one,many2one,ir.ui.view,Form Button Template,Form Button Template,False,both
+29,sequence,integer,integer,,Sequence,Sequence,False,both
 ,,,,
-30,auto_confirm,selection,,,Order Confirmation,,version 1
-31,image,binary,,,Image,,version 1
-32,post_msg,html,,,Thanks Message,,version 1
-33,error_msg,html,,,Error Message,,version 1
-34,image_medium,binary,,,Medium-sized image,,version 1
-35,image_small,binary,,,Small-sized image,,version 1
-36,environment,selection,,,Environment,,version 1
-37,website_published,boolean,,,Visible in Portal / Website,,version 1
-38,website_url,char,,,Website URL,,version 1
+30,auto_confirm,selection,,,Order Confirmation,,True,version 1
+31,image,binary,,,Image,,False,version 1
+32,post_msg,html,,,Thanks Message,,False,version 1
+33,error_msg,html,,,Error Message,,False,version 1
+34,image_medium,binary,,,Medium-sized image,,False,version 1
+35,image_small,binary,,,Small-sized image,,False,version 1
+36,environment,selection,,,Environment,,True,version 1
+37,website_published,boolean,,,Visible in Portal / Website,,False,version 1
+38,website_url,char,,,Website URL,,False,version 1
 ,,,,
-39,so_reference_type,,selection,,,Communication,version 2
-40,capture_manually,,boolean,,,Capture Amount Manually,version 2
-41,color,,integer,,,Color,version 2
-42,country_ids,,many2many,res.country,,Countries,version 2
-43,website_id,,many2one,website,,Website,version 2
-44,module_to_buy,,boolean,,,Odoo Enterprise Module,version 2
-45,qr_code,,boolean,,,Enable QR Codes,version 2
-46,authorize_implemented,,boolean,,,Authorize Mechanism Supported,version 2
-47,state,,selection,,,State,version 2
-48,check_validity,,boolean,,,Verify Card Validity,version 2
-49,auth_msg,,html,,,Authorize Message,version 2
-50,inbound_payment_method_ids,,many2many,account.payment.method,,Inbound Payment Methods,version 2
-51,payment_icon_ids,,many2many,payment.icon,,Supported Payment Icons,version 2
-52,image_128,,binary,,,Image,version 2
-53,display_as,,char,,,Displayed as,version 2
-54,payment_flow,,selection,,,Payment Flow,version 2
+39,so_reference_type,,selection,,,Communication,False,version 2
+40,capture_manually,,boolean,,,Capture Amount Manually,False,version 2
+41,color,,integer,,,Color,False,version 2
+42,country_ids,,many2many,res.country,,Countries,False,version 2
+43,website_id,,many2one,website,,Website,False,version 2
+44,module_to_buy,,boolean,,,Odoo Enterprise Module,False,version 2
+45,qr_code,,boolean,,,Enable QR Codes,False,version 2
+46,authorize_implemented,,boolean,,,Authorize Mechanism Supported,False,version 2
+47,state,,selection,,,State,True,version 2
+48,check_validity,,boolean,,,Verify Card Validity,False,version 2
+49,auth_msg,,html,,,Authorize Message,False,version 2
+50,inbound_payment_method_ids,,many2many,account.payment.method,,Inbound Payment Methods,False,version 2
+51,payment_icon_ids,,many2many,payment.icon,,Supported Payment Icons,False,version 2
+52,image_128,,binary,,,Image,False,version 2
+53,display_as,,char,,,Displayed as,False,version 2
+54,payment_flow,,selection,,,Payment Flow,True,version 2
 ,,,,
 ,,,,

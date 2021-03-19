@@ -1,15 +1,15 @@
 model,hr.employee.category,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,both
-2,display_name,char,char,,Display Name,Display Name,both
-3,name,char,char,,Employee Tag,Tag Name,both
-4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-5,color,integer,integer,,Color Index,Color Index,both
-6,employee_ids,many2many,many2many,hr.employee,Employees,Employees,both
-7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-8,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-9,create_date,datetime,datetime,,Created on,Created on,both
-10,id,integer,integer,,ID,ID,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+2,display_name,char,char,,Display Name,Display Name,False,both
+3,name,char,char,,Employee Tag,Tag Name,True,both
+4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+5,color,integer,integer,,Color Index,Color Index,False,both
+6,employee_ids,many2many,many2many,hr.employee,Employees,Employees,False,both
+7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+8,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+9,create_date,datetime,datetime,,Created on,Created on,False,both
+10,id,integer,integer,,ID,ID,False,both
 ,,,,
 ,,,,
 ,,,,

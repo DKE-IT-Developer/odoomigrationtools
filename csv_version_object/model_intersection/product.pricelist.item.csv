@@ -1,37 +1,37 @@
 model,product.pricelist.item,transient,False
-no,field,type1,type2,relation,string1,string2,source
-1,fixed_price,float,float,,Fixed Price,Fixed Price,both
-2,create_date,datetime,datetime,,Created on,Created on,both
-3,price_discount,float,float,,Price Discount,Price Discount,both
-4,price_max_margin,float,float,,Max. Price Margin,Max. Price Margin,both
-5,date_end,date,datetime,,End Date,End Date,both
-6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,both
-7,currency_id,many2one,many2one,res.currency,Currency,Currency,both
-8,applied_on,selection,selection,,Apply On,Apply On,both
-9,min_quantity,integer,float,,Min. Quantity,Min. Quantity,both
-10,id,integer,integer,,ID,ID,both
-11,create_uid,many2one,many2one,res.users,Created by,Created by,both
-12,percent_price,float,float,,Percentage Price,Percentage Price,both
-13,__last_update,datetime,datetime,,Last Modified on,Last Modified on,both
-14,date_start,date,datetime,,Start Date,Start Date,both
-15,company_id,many2one,many2one,res.company,Company,Company,both
-16,product_tmpl_id,many2one,many2one,product.template,Product Template,Product,both
-17,pricelist_id,many2one,many2one,product.pricelist,Pricelist,Pricelist,both
-18,price_min_margin,float,float,,Min. Price Margin,Min. Price Margin,both
-19,price,char,char,,Price,Price,both
-20,compute_price,selection,selection,,Compute price,Compute Price,both
-21,base,selection,selection,,Based on,Based on,both
-22,write_date,datetime,datetime,,Last Updated on,Last Updated on,both
-23,display_name,char,char,,Display Name,Display Name,both
-24,categ_id,many2one,many2one,product.category,Product Category,Product Category,both
-25,price_surcharge,float,float,,Price Surcharge,Price Surcharge,both
-26,price_round,float,float,,Price Rounding,Price Rounding,both
-27,name,char,char,,Name,Name,both
-28,base_pricelist_id,many2one,many2one,product.pricelist,Other Pricelist,Other Pricelist,both
-29,product_id,many2one,many2one,product.product,Product,Product Variant,both
+no,field,type1,type2,relation,string1,string2,required,source
+1,fixed_price,float,float,,Fixed Price,Fixed Price,False,both
+2,create_date,datetime,datetime,,Created on,Created on,False,both
+3,price_discount,float,float,,Price Discount,Price Discount,False,both
+4,price_max_margin,float,float,,Max. Price Margin,Max. Price Margin,False,both
+5,date_end,date,datetime,,End Date,End Date,False,both
+6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
+7,currency_id,many2one,many2one,res.currency,Currency,Currency,False,both
+8,applied_on,selection,selection,,Apply On,Apply On,True,both
+9,min_quantity,integer,float,,Min. Quantity,Min. Quantity,False,both
+10,id,integer,integer,,ID,ID,False,both
+11,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
+12,percent_price,float,float,,Percentage Price,Percentage Price,False,both
+13,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+14,date_start,date,datetime,,Start Date,Start Date,False,both
+15,company_id,many2one,many2one,res.company,Company,Company,False,both
+16,product_tmpl_id,many2one,many2one,product.template,Product Template,Product,False,both
+17,pricelist_id,many2one,many2one,product.pricelist,Pricelist,Pricelist,True,both
+18,price_min_margin,float,float,,Min. Price Margin,Min. Price Margin,False,both
+19,price,char,char,,Price,Price,False,both
+20,compute_price,selection,selection,,Compute price,Compute Price,True,both
+21,base,selection,selection,,Based on,Based on,True,both
+22,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
+23,display_name,char,char,,Display Name,Display Name,False,both
+24,categ_id,many2one,many2one,product.category,Product Category,Product Category,False,both
+25,price_surcharge,float,float,,Price Surcharge,Price Surcharge,False,both
+26,price_round,float,float,,Price Rounding,Price Rounding,False,both
+27,name,char,char,,Name,Name,False,both
+28,base_pricelist_id,many2one,many2one,product.pricelist,Other Pricelist,Other Pricelist,False,both
+29,product_id,many2one,many2one,product.product,Product,Product Variant,False,both
 ,,,,
-30,sequence,integer,,,Sequence,,version 1
+30,sequence,integer,,,Sequence,,True,version 1
 ,,,,
-31,active,,boolean,,,Active,version 2
+31,active,,boolean,,,Active,False,version 2
 ,,,,
 ,,,,
