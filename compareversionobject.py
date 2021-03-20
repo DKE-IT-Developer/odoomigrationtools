@@ -48,13 +48,13 @@ odoo2 = odoorpc.ODOO(host2, port=port2)
 odoo2.login(db2, username2, password2)
 print('====================================================================')
 
-object1_models = odoo2.env['ir.model'].search_read([], ['model', 'transient'])
+object1_models = odoo1.env['ir.model'].search_read([], ['model', 'transient'])
 object2_models = odoo2.env['ir.model'].search_read([], ['model', 'transient'])
 
-model1_names = [model['model'] for model in object1_models]
+model1_names = {model['model']:model['transient'] for model in object1_models}
 model2_names = {model['model']:model['transient'] for model in object2_models}
 
-model1_names_set = set(model1_names)
+model1_names_set = set(model1_names.keys())
 model2_names_set = set(model2_names.keys())
 
 models_intersection = model2_names_set.intersection(model1_names_set)
@@ -82,21 +82,20 @@ for model_name in models_intersection:
         fields_intersection = set(fields2.keys()).intersection(fields1.keys())
         fields1_difference = set(fields1.keys()).difference(fields2.keys())
         fields2_difference = set(fields2.keys()).difference(fields1.keys())
-        model_writer.writerow(['no', 'field', 'type1', 'type2', 'relation', 'string1', 'string2', 'required', 'source'])
+        model_writer.writerow(['no', 'field', 'type1', 'relation1', 'string1', 'type2', 'relation2', 'string2', 'required', 'source'])
         for field in fields_intersection:
             field1_attr = fields1_dict[field]
             field2_attr = fields2_dict[field]
-            model_writer.writerow([no, field, field1_attr['type'], field2_attr['type'], field2_attr.get('relation', ''), field1_attr['string'].encode('utf-8'), field2_attr['string'].encode('utf-8'), field2_attr.get('required', False), 'both'])
-            no+=1
+            model_writer.writerow([no, field, field1_attr['type'], field1_attr.get('relation', ''), field1_attr['string'].encode('utf-8'), field2_attr['type'], field2_attr.get('relation', ''), field2_attr['string'].encode('utf-8'), field2_attr.get('required', False), 'both'])
         model_writer.writerow(['', '', '', '', ''])
         for field in fields1_difference:
             field_attr = fields1[field]
-            model_writer.writerow([no, field, field_attr['type'], '', field_attr.get('relation', ''), field_attr['string'].encode('utf-8'), '', field_attr.get('required', False), 'version 1'])
+            model_writer.writerow([no, field, field_attr['type'], field_attr.get('relation', ''), field_attr['string'].encode('utf-8'), '', '', '', field_attr.get('required', False), 'version 1'])
             no+=1
         model_writer.writerow(['', '', '', '', ''])
         for field in fields2_difference:
             field_attr = fields2[field]
-            model_writer.writerow([no, field, '', field_attr['type'], field_attr.get('relation', ''), '', field_attr['string'].encode('utf-8'), field_attr.get('required', False), 'version 2'])
+            model_writer.writerow([no, field, '', '', '', field_attr['type'], field_attr.get('relation', ''), field_attr['string'].encode('utf-8'), field_attr.get('required', False), 'version 2'])
             no+=1
         model_writer.writerow(['', '', '', '', ''])
         model_writer.writerow(['', '', '', '', ''])
@@ -116,9 +115,9 @@ for model_name in models1_difference:
             model_writer.writerow(['', '', '', '', ''])
             print(failed_msg)
             continue
-        model_writer.writerow(['no', 'field', 'type1', 'type2', 'relation', 'string1', 'string2', 'source'])
-        for field, field1_attr in fields1.iteritems():
-            model_writer.writerow([no, field, field1_attr['type'], field1_attr['type'], field1_attr.get('relation', ''), field1_attr['string'].encode('utf-8'), field1_attr['string'].encode('utf-8'), field1_attr['required'], 'version 1'])
+        model_writer.writerow(['no', 'field', 'type1', 'relation1', 'string1', 'type2', 'relation2', 'string2', 'required', 'source'])
+        for field, field_attr in fields1.iteritems():
+            model_writer.writerow([no, field, field_attr['type'], field_attr.get('relation', ''), field_attr['string'].encode('utf-8'), '', '', '', field_attr.get('required', False), 'version 1'])
             no+=1
         model_writer.writerow(['', '', '', '', ''])
         model_writer.writerow(['', '', '', '', ''])
@@ -138,9 +137,9 @@ for model_name in models2_difference:
             model_writer.writerow(['', '', '', '', ''])
             print(failed_msg)
             continue
-        model_writer.writerow(['no', 'field', 'type1', 'type2', 'relation', 'string1', 'string2', 'source'])
-        for field, field2_attr in fields2.iteritems():
-            model_writer.writerow([no, field, field2_attr['type'], field2_attr['type'], field2_attr.get('relation', ''), field2_attr['string'].encode('utf-8'), field2_attr['string'].encode('utf-8'), field2_attr['required'], 'version 2'])
+        model_writer.writerow(['no', 'field', 'type1', 'relation1', 'string1', 'type2', 'relation2', 'string2', 'required', 'source'])
+        for field, field_attr in fields2.iteritems():
+            model_writer.writerow([no, field, '', '', '', field_attr['type'], field_attr.get('relation', ''), field_attr['string'].encode('utf-8'), field_attr.get('required', False), 'version 2'])
             no+=1
         model_writer.writerow(['', '', '', '', ''])
         model_writer.writerow(['', '', '', '', ''])
