@@ -1,0 +1,8 @@
+model,snailmail.confirm,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,__last_update,,,,datetime,,Last Modified on,False,version 2
+2,display_name,,,,char,,Display Name,False,version 2
+3,model_name,,,,char,,Model Name,False,version 2
+4,id,,,,integer,,ID,False,version 2
+,,,,
+,,,,

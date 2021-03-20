@@ -1,26 +1,26 @@
 model,account.partial.reconcile,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-2,display_name,char,char,,Display Name,Display Name,False,both
-3,credit_move_id,many2one,many2one,account.move.line,Credit move id,Credit Move,True,both
-4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-5,full_reconcile_id,many2one,many2one,account.full.reconcile,Full Reconcile,Full Reconcile,False,both
-6,company_id,many2one,many2one,res.company,Currency,Company,False,both
-7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-8,company_currency_id,many2one,many2one,res.currency,Currency,Company Currency,False,both
-9,amount,monetary,monetary,,Amount,Amount,False,both
-10,debit_move_id,many2one,many2one,account.move.line,Debit move id,Debit Move,True,both
-11,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-12,create_date,datetime,datetime,,Created on,Created on,False,both
-13,id,integer,integer,,ID,ID,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,credit_move_id,many2one,account.move.line,Credit move id,many2one,account.move.line,Credit Move,True,both
+1,full_reconcile_id,many2one,account.full.reconcile,Full Reconcile,many2one,account.full.reconcile,Full Reconcile,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,company_id,many2one,res.company,Currency,many2one,res.company,Company,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,company_currency_id,many2one,res.currency,Currency,many2one,res.currency,Company Currency,False,both
+1,amount,monetary,,Amount,monetary,,Amount,False,both
+1,debit_move_id,many2one,account.move.line,Debit move id,many2one,account.move.line,Debit Move,True,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,id,integer,,ID,integer,,ID,False,both
 ,,,,
-14,currency_id,many2one,,res.currency,Currency,,False,version 1
-15,amount_currency,monetary,,,Amount in Currency,,False,version 1
+1,currency_id,many2one,res.currency,Currency,,,,False,version 1
+2,amount_currency,monetary,,Amount in Currency,,,,False,version 1
 ,,,,
-16,credit_amount_currency,,monetary,,,Credit Amount Currency,False,version 2
-17,credit_currency_id,,many2one,res.currency,,Currency of the credit journal item.,False,version 2
-18,debit_currency_id,,many2one,res.currency,,Currency of the debit journal item.,False,version 2
-19,max_date,,date,,,Max Date of Matched Lines,False,version 2
-20,debit_amount_currency,,monetary,,,Debit Amount Currency,False,version 2
+3,credit_amount_currency,,,,monetary,,Credit Amount Currency,False,version 2
+4,credit_currency_id,,,,many2one,res.currency,Currency of the credit journal item.,False,version 2
+5,debit_currency_id,,,,many2one,res.currency,Currency of the debit journal item.,False,version 2
+6,max_date,,,,date,,Max Date of Matched Lines,False,version 2
+7,debit_amount_currency,,,,monetary,,Debit Amount Currency,False,version 2
 ,,,,
 ,,,,

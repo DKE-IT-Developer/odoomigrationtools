@@ -1,191 +1,191 @@
 model,account.payment,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,create_date,datetime,datetime,,Created on,Created on,False,both
-2,company_id,many2one,many2one,res.company,Company,Company,False,both
-3,currency_id,many2one,many2one,res.currency,Currency,Currency,False,both
-4,partner_id,many2one,many2one,res.partner,Partner,Customer/Vendor,False,both
-5,id,integer,integer,,ID,ID,False,both
-6,payment_method_id,many2one,many2one,account.payment.method,Payment Method Type,Payment Method,False,both
-7,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-8,display_name,char,char,,Display Name,Display Name,False,both
-9,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-10,journal_id,many2one,many2one,account.journal,Payment Journal,Journal,True,both
-11,state,selection,selection,,Status,Status,True,both
-12,partner_type,selection,selection,,Partner type,Partner Type,True,both
-13,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-14,payment_transaction_id,many2one,many2one,payment.transaction,Payment Transaction,Payment Transaction,False,both
-15,payment_token_id,many2one,many2one,payment.token,Saved payment token,Saved payment token,False,both
-16,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-17,name,char,char,,Name,Number,False,both
-18,hide_payment_method,boolean,boolean,,Hide payment method,Hide Payment Method,False,both
-19,payment_method_code,char,char,,Code,Code,False,both
-20,amount,monetary,monetary,,Payment Amount,Amount,False,both
-21,payment_type,selection,selection,,Payment Type,Payment Type,True,both
-22,payment_reference,char,char,,Payment reference,Payment Reference,False,both
-23,destination_account_id,many2one,many2one,account.account,Destination account id,Destination Account,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
+1,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,False,both
+1,partner_id,many2one,res.partner,Partner,many2one,res.partner,Customer/Vendor,False,both
+1,id,integer,,ID,integer,,ID,False,both
+1,payment_method_id,many2one,account.payment.method,Payment Method Type,many2one,account.payment.method,Payment Method,False,both
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,journal_id,many2one,account.journal,Payment Journal,many2one,account.journal,Journal,True,both
+1,state,selection,,Status,selection,,Status,True,both
+1,partner_type,selection,,Partner type,selection,,Partner Type,True,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,payment_transaction_id,many2one,payment.transaction,Payment Transaction,many2one,payment.transaction,Payment Transaction,False,both
+1,payment_token_id,many2one,payment.token,Saved payment token,many2one,payment.token,Saved payment token,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,name,char,,Name,char,,Number,False,both
+1,hide_payment_method,boolean,,Hide payment method,boolean,,Hide Payment Method,False,both
+1,payment_method_code,char,,Code,char,,Code,False,both
+1,amount,monetary,,Payment Amount,monetary,,Amount,False,both
+1,payment_type,selection,,Payment Type,selection,,Payment Type,True,both
+1,payment_reference,char,,Payment reference,char,,Payment Reference,False,both
+1,destination_account_id,many2one,account.account,Destination account id,many2one,account.account,Destination Account,False,both
 ,,,,
-24,communication,char,,,Memo,,False,version 1
-25,invoice_ids,many2many,,account.invoice,Invoices,,False,version 1
-26,payment_difference,monetary,,,Payment difference,,False,version 1
-27,payment_difference_handling,selection,,,Payment Difference,,False,version 1
-28,writeoff_account_id,many2one,,account.account,Difference Account,,False,version 1
-29,payment_date,date,,,Payment Date,,True,version 1
-30,move_name,char,,,Journal Entry Name,,False,version 1
-31,has_invoices,boolean,,,Has invoices,,False,version 1
-32,move_line_ids,one2many,,account.move.line,Move line ids,,False,version 1
-33,destination_journal_id,many2one,,account.journal,Transfer To,,False,version 1
+1,communication,char,,Memo,,,,False,version 1
+2,invoice_ids,many2many,account.invoice,Invoices,,,,False,version 1
+3,payment_difference,monetary,,Payment difference,,,,False,version 1
+4,payment_difference_handling,selection,,Payment Difference,,,,False,version 1
+5,writeoff_account_id,many2one,account.account,Difference Account,,,,False,version 1
+6,payment_date,date,,Payment Date,,,,True,version 1
+7,move_name,char,,Journal Entry Name,,,,False,version 1
+8,has_invoices,boolean,,Has invoices,,,,False,version 1
+9,move_line_ids,one2many,account.move.line,Move line ids,,,,False,version 1
+10,destination_journal_id,many2one,account.journal,Transfer To,,,,False,version 1
 ,,,,
-34,restrict_mode_hash_table,,boolean,,,Lock Posted Entries with Hash,False,version 2
-35,show_partner_bank_account,,boolean,,,Show Partner Bank Account,False,version 2
-36,country_code,,char,,,Country Code,False,version 2
-37,require_partner_bank_account,,boolean,,,Require Partner Bank Account,False,version 2
-38,reversed_entry_id,,many2one,account.move,,Reversal of,False,version 2
-39,activity_date_deadline,,date,,,Next Activity Deadline,False,version 2
-40,sequence_prefix,,char,,,Sequence Prefix,False,version 2
-41,message_has_sms_error,,boolean,,,SMS Delivery error,False,version 2
-42,asset_id_display_name,,char,,,Asset Id Display Name,False,version 2
-43,qr_code,,char,,,QR Code,False,version 2
-44,invoice_has_outstanding,,boolean,,,Invoice Has Outstanding,False,version 2
-45,edi_document_ids,,one2many,account.edi.document,,Edi Document,False,version 2
-46,invoice_vendor_bill_id,,many2one,account.move,,Vendor Bill,False,version 2
-47,tax_cash_basis_rec_id,,many2one,account.partial.reconcile,,Tax Cash Basis Entry of,False,version 2
-48,invoice_origin,,char,,,Origin,False,version 2
-49,invoice_partner_display_name,,char,,,Invoice Partner Display Name,False,version 2
-50,message_attachment_count,,integer,,,Attachment Count,False,version 2
-51,suitable_journal_ids,,many2many,account.journal,,Suitable Journal,False,version 2
-52,related_partner_ids,,many2many,res.partner,,Related Partner,False,version 2
-53,invoice_user_id,,many2one,res.users,,Salesperson,False,version 2
-54,show_reset_to_draft_button,,boolean,,,Show Reset To Draft Button,False,version 2
-55,amount_total,,monetary,,,Total,False,version 2
-56,amount_untaxed_signed,,monetary,,,Untaxed Amount Signed,False,version 2
-57,activity_type_id,,many2one,mail.activity.type,,Next Activity Type,False,version 2
-58,medium_id,,many2one,utm.medium,,Medium,False,version 2
-59,purchase_vendor_bill_id,,many2one,purchase.bill.union,,Auto-complete,False,version 2
-60,transfer_model_id,,many2one,account.transfer.model,,Originating Model,False,version 2
-61,invoice_cash_rounding_id,,many2one,account.cash.rounding,,Cash Rounding Method,False,version 2
-62,qr_code_method,,selection,,,Payment QR-code,False,version 2
-63,duplicated_vendor_ref,,char,,,Duplicated vendor reference,False,version 2
-64,stock_move_id,,many2one,stock.move,,Stock Move,False,version 2
-65,commercial_partner_id,,many2one,res.partner,,Commercial Entity,False,version 2
-66,message_follower_ids,,one2many,mail.followers,,Followers,False,version 2
-67,number_asset_ids,,integer,,,Number Asset,False,version 2
-68,message_needaction,,boolean,,,Action Needed,False,version 2
-69,website_id,,many2one,website,,Website,False,version 2
-70,campaign_id,,many2one,utm.campaign,,Campaign,False,version 2
-71,edi_show_cancel_button,,boolean,,,Edi Show Cancel Button,False,version 2
-72,partner_shipping_id,,many2one,res.partner,,Delivery Address,False,version 2
-73,l10n_id_csv_created,,boolean,,,CSV Created,False,version 2
-74,tax_report_control_error,,boolean,,,Tax Report Control Error,False,version 2
-75,statement_line_id,,many2one,account.bank.statement.line,,Statement Line,False,version 2
-76,asset_id,,many2one,account.asset,,Asset,False,version 2
-77,asset_value_change,,boolean,,,Asset Value Change,False,version 2
-78,amount_untaxed,,monetary,,,Untaxed Amount,False,version 2
-79,attachment_ids,,one2many,ir.attachment,,Attachments,False,version 2
-80,activity_exception_decoration,,selection,,,Activity Exception Decoration,False,version 2
-81,bank_partner_id,,many2one,res.partner,,Bank Partner,False,version 2
-82,edi_state,,selection,,,Electronic invoicing,False,version 2
-83,activity_type_icon,,char,,,Activity Type Icon,False,version 2
-84,posted_before,,boolean,,,Posted Before,False,version 2
-85,extract_remote_id,,integer,,,Id of the request to IAP-OCR,False,version 2
-86,message_unread_counter,,integer,,,Unread Messages Counter,False,version 2
-87,ref,,char,,,Reference,False,version 2
-88,is_move_sent,,boolean,,,Is Move Sent,False,version 2
-89,message_has_error_counter,,integer,,,Number of errors,False,version 2
-90,asset_asset_type,,selection,,,Asset Type,False,version 2
-91,tax_cash_basis_move_id,,many2one,account.move,,Origin Tax Cash Basis Entry,False,version 2
-92,payment_id,,many2one,account.payment,,Payment,False,version 2
-93,website_message_ids,,one2many,mail.message,,Website Messages,False,version 2
-94,extract_can_show_resend_button,,boolean,,,Can show the ocr resend button,False,version 2
-95,transaction_ids,,many2many,payment.transaction,,Transactions,False,version 2
-96,amount_residual,,monetary,,,Amount Due,False,version 2
-97,line_ids,,one2many,account.move.line,,Journal Items,False,version 2
-98,message_unread,,boolean,,,Unread Messages,False,version 2
-99,message_needaction_counter,,integer,,,Number of Actions,False,version 2
-100,reconciled_invoices_count,,integer,,,# Reconciled Invoices,False,version 2
-101,move_type,,selection,,,Type,True,version 2
-102,invoice_payment_term_id,,many2one,account.payment.term,,Payment Terms,False,version 2
-103,partner_bank_id,,many2one,res.partner.bank,,Recipient Bank Account,False,version 2
-104,asset_depreciated_value,,monetary,,,Cumulative Depreciation,False,version 2
-105,amount_residual_signed,,monetary,,,Amount Due Signed,False,version 2
-106,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,False,version 2
-107,team_id,,many2one,crm.team,,Sales Team,False,version 2
-108,narration,,text,,,Terms and Conditions,False,version 2
-109,secure_sequence_number,,integer,,,Inalteralbility No Gap Sequence #,False,version 2
-110,asset_ids_display_name,,char,,,Asset Ids Display Name,False,version 2
-111,invoice_filter_type_domain,,char,,,Invoice Filter Type Domain,False,version 2
-112,user_id,,many2one,res.users,,User,False,version 2
-113,extract_error_message,,text,,,Error message,False,version 2
-114,message_is_follower,,boolean,,,Is Follower,False,version 2
-115,amount_total_signed,,monetary,,,Total Signed,False,version 2
-116,type_name,,char,,,Type Name,False,version 2
-117,auto_post,,boolean,,,Post Automatically,False,version 2
-118,amount_tax,,monetary,,,Tax,False,version 2
-119,asset_remaining_value,,monetary,,,Depreciable Value,False,version 2
-120,authorized_transaction_ids,,many2many,payment.transaction,,Authorized Transactions,False,version 2
-121,amount_tax_signed,,monetary,,,Tax Signed,False,version 2
-122,reconciled_invoice_ids,,many2many,account.move,,Reconciled Invoices,False,version 2
-123,inalterable_hash,,char,,,Inalterability Hash,False,version 2
-124,highest_name,,char,,,Highest Name,False,version 2
-125,amount_by_group,,binary,,,Tax amount by group,False,version 2
-126,tax_closing_end_date,,date,,,Tax Closing End Date,False,version 2
-127,activity_user_id,,many2one,res.users,,Responsible User,False,version 2
-128,invoice_has_matching_suspense_amount,,boolean,,,Invoice Has Matching Suspense Amount,False,version 2
-129,extract_state,,selection,,,Extract state,True,version 2
-130,reconciled_bills_count,,integer,,,# Reconciled Bills,False,version 2
-131,invoice_date,,date,,,Invoice/Bill Date,False,version 2
-132,display_qr_code,,boolean,,,Display QR-code,False,version 2
-133,reconciled_bill_ids,,many2many,account.move,,Reconciled Bills,False,version 2
-134,fiscal_position_id,,many2one,account.fiscal.position,,Fiscal Position,False,version 2
-135,draft_asset_ids,,boolean,,,Draft Asset,False,version 2
-136,payment_state,,selection,,,Payment Status,False,version 2
-137,extract_status_code,,integer,,,Status code,False,version 2
-138,activity_ids,,one2many,mail.activity,,Activities,False,version 2
-139,stock_valuation_layer_ids,,one2many,stock.valuation.layer,,Stock Valuation Layer,False,version 2
-140,is_matched,,boolean,,,Is Matched With a Bank Statement,False,version 2
-141,access_token,,char,,,Security Token,False,version 2
-142,activity_exception_icon,,char,,,Icon,False,version 2
-143,l10n_id_replace_invoice_id,,many2one,account.move,,Replace Invoice,False,version 2
-144,invoice_outstanding_credits_debits_widget,,text,,,Invoice Outstanding Credits Debits Widget,False,version 2
-145,activity_state,,selection,,,Activity State,False,version 2
-146,sequence_number,,integer,,,Sequence Number,False,version 2
-147,available_payment_method_ids,,many2many,account.payment.method,,Available Payment Method,False,version 2
-148,asset_ids,,one2many,account.asset,,Assets,False,version 2
-149,message_channel_ids,,many2many,mail.channel,,Followers (Channels),False,version 2
-150,message_partner_ids,,many2many,res.partner,,Followers (Partners),False,version 2
-151,extract_can_show_send_button,,boolean,,,Can show the ocr send button,False,version 2
-152,is_reconciled,,boolean,,,Is Reconciled,False,version 2
-153,company_currency_id,,many2one,res.currency,,Company Currency,False,version 2
-154,message_has_error,,boolean,,,Message Delivery error,False,version 2
-155,access_warning,,text,,,Access warning,False,version 2
-156,string_to_hash,,char,,,String To Hash,False,version 2
-157,message_ids,,one2many,mail.message,,Messages,False,version 2
-158,purchase_id,,many2one,purchase.order,,Purchase Order,False,version 2
-159,reversal_move_id,,one2many,account.move,,Reversal Move,False,version 2
-160,reconciled_statement_ids,,many2many,account.move,,Reconciled Statements,False,version 2
-161,invoice_payments_widget,,text,,,Invoice Payments Widget,False,version 2
-162,payment_state_before_switch,,char,,,Payment State Before Switch,False,version 2
-163,l10n_id_need_kode_transaksi,,boolean,,,L10N Id Need Kode Transaksi,False,version 2
-164,reconciled_statements_count,,integer,,,# Reconciled Statements,False,version 2
-165,invoice_source_email,,char,,,Source Email,False,version 2
-166,tax_lock_date_message,,char,,,Tax Lock Date Message,False,version 2
-167,extract_word_ids,,one2many,account.invoice_extract.words,,Extract Word,False,version 2
-168,invoice_incoterm_id,,many2one,account.incoterms,,Incoterm,False,version 2
-169,date,,date,,,Date,True,version 2
-170,asset_manually_modified,,boolean,,,Asset Manually Modified,False,version 2
-171,move_id,,many2one,account.move,,Journal Entry,True,version 2
-172,show_name_warning,,boolean,,,Show Name Warning,False,version 2
-173,l10n_id_kode_transaksi,,selection,,,Kode Transaksi,False,version 2
-174,activity_summary,,char,,,Next Activity Summary,False,version 2
-175,edi_web_services_to_process,,text,,,Edi Web Services To Process,False,version 2
-176,l10n_id_attachment_id,,many2one,ir.attachment,,L10N Id Attachment,False,version 2
-177,is_internal_transfer,,boolean,,,Is Internal Transfer,False,version 2
-178,invoice_date_due,,date,,,Due Date,False,version 2
-179,has_reconciled_entries,,boolean,,,Has Reconciled Entries,False,version 2
-180,l10n_id_tax_number,,char,,,Tax Number,False,version 2
-181,invoice_line_ids,,one2many,account.move.line,,Invoice lines,False,version 2
-182,source_id,,many2one,utm.source,,Source,False,version 2
-183,access_url,,char,,,Portal Access URL,False,version 2
-184,edi_error_count,,integer,,,Edi Error Count,False,version 2
-185,to_check,,boolean,,,To Check,False,version 2
+11,restrict_mode_hash_table,,,,boolean,,Lock Posted Entries with Hash,False,version 2
+12,show_partner_bank_account,,,,boolean,,Show Partner Bank Account,False,version 2
+13,country_code,,,,char,,Country Code,False,version 2
+14,require_partner_bank_account,,,,boolean,,Require Partner Bank Account,False,version 2
+15,reversed_entry_id,,,,many2one,account.move,Reversal of,False,version 2
+16,activity_date_deadline,,,,date,,Next Activity Deadline,False,version 2
+17,sequence_prefix,,,,char,,Sequence Prefix,False,version 2
+18,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
+19,asset_id_display_name,,,,char,,Asset Id Display Name,False,version 2
+20,qr_code,,,,char,,QR Code,False,version 2
+21,invoice_has_outstanding,,,,boolean,,Invoice Has Outstanding,False,version 2
+22,edi_document_ids,,,,one2many,account.edi.document,Edi Document,False,version 2
+23,invoice_vendor_bill_id,,,,many2one,account.move,Vendor Bill,False,version 2
+24,tax_cash_basis_rec_id,,,,many2one,account.partial.reconcile,Tax Cash Basis Entry of,False,version 2
+25,invoice_origin,,,,char,,Origin,False,version 2
+26,invoice_partner_display_name,,,,char,,Invoice Partner Display Name,False,version 2
+27,message_attachment_count,,,,integer,,Attachment Count,False,version 2
+28,suitable_journal_ids,,,,many2many,account.journal,Suitable Journal,False,version 2
+29,related_partner_ids,,,,many2many,res.partner,Related Partner,False,version 2
+30,invoice_user_id,,,,many2one,res.users,Salesperson,False,version 2
+31,show_reset_to_draft_button,,,,boolean,,Show Reset To Draft Button,False,version 2
+32,amount_total,,,,monetary,,Total,False,version 2
+33,amount_untaxed_signed,,,,monetary,,Untaxed Amount Signed,False,version 2
+34,activity_type_id,,,,many2one,mail.activity.type,Next Activity Type,False,version 2
+35,medium_id,,,,many2one,utm.medium,Medium,False,version 2
+36,purchase_vendor_bill_id,,,,many2one,purchase.bill.union,Auto-complete,False,version 2
+37,transfer_model_id,,,,many2one,account.transfer.model,Originating Model,False,version 2
+38,invoice_cash_rounding_id,,,,many2one,account.cash.rounding,Cash Rounding Method,False,version 2
+39,qr_code_method,,,,selection,,Payment QR-code,False,version 2
+40,duplicated_vendor_ref,,,,char,,Duplicated vendor reference,False,version 2
+41,stock_move_id,,,,many2one,stock.move,Stock Move,False,version 2
+42,commercial_partner_id,,,,many2one,res.partner,Commercial Entity,False,version 2
+43,message_follower_ids,,,,one2many,mail.followers,Followers,False,version 2
+44,number_asset_ids,,,,integer,,Number Asset,False,version 2
+45,message_needaction,,,,boolean,,Action Needed,False,version 2
+46,website_id,,,,many2one,website,Website,False,version 2
+47,campaign_id,,,,many2one,utm.campaign,Campaign,False,version 2
+48,edi_show_cancel_button,,,,boolean,,Edi Show Cancel Button,False,version 2
+49,partner_shipping_id,,,,many2one,res.partner,Delivery Address,False,version 2
+50,l10n_id_csv_created,,,,boolean,,CSV Created,False,version 2
+51,tax_report_control_error,,,,boolean,,Tax Report Control Error,False,version 2
+52,statement_line_id,,,,many2one,account.bank.statement.line,Statement Line,False,version 2
+53,asset_id,,,,many2one,account.asset,Asset,False,version 2
+54,asset_value_change,,,,boolean,,Asset Value Change,False,version 2
+55,amount_untaxed,,,,monetary,,Untaxed Amount,False,version 2
+56,attachment_ids,,,,one2many,ir.attachment,Attachments,False,version 2
+57,activity_exception_decoration,,,,selection,,Activity Exception Decoration,False,version 2
+58,bank_partner_id,,,,many2one,res.partner,Bank Partner,False,version 2
+59,edi_state,,,,selection,,Electronic invoicing,False,version 2
+60,activity_type_icon,,,,char,,Activity Type Icon,False,version 2
+61,posted_before,,,,boolean,,Posted Before,False,version 2
+62,extract_remote_id,,,,integer,,Id of the request to IAP-OCR,False,version 2
+63,message_unread_counter,,,,integer,,Unread Messages Counter,False,version 2
+64,ref,,,,char,,Reference,False,version 2
+65,is_move_sent,,,,boolean,,Is Move Sent,False,version 2
+66,message_has_error_counter,,,,integer,,Number of errors,False,version 2
+67,asset_asset_type,,,,selection,,Asset Type,False,version 2
+68,tax_cash_basis_move_id,,,,many2one,account.move,Origin Tax Cash Basis Entry,False,version 2
+69,payment_id,,,,many2one,account.payment,Payment,False,version 2
+70,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
+71,extract_can_show_resend_button,,,,boolean,,Can show the ocr resend button,False,version 2
+72,transaction_ids,,,,many2many,payment.transaction,Transactions,False,version 2
+73,amount_residual,,,,monetary,,Amount Due,False,version 2
+74,line_ids,,,,one2many,account.move.line,Journal Items,False,version 2
+75,message_unread,,,,boolean,,Unread Messages,False,version 2
+76,message_needaction_counter,,,,integer,,Number of Actions,False,version 2
+77,reconciled_invoices_count,,,,integer,,# Reconciled Invoices,False,version 2
+78,move_type,,,,selection,,Type,True,version 2
+79,invoice_payment_term_id,,,,many2one,account.payment.term,Payment Terms,False,version 2
+80,partner_bank_id,,,,many2one,res.partner.bank,Recipient Bank Account,False,version 2
+81,asset_depreciated_value,,,,monetary,,Cumulative Depreciation,False,version 2
+82,amount_residual_signed,,,,monetary,,Amount Due Signed,False,version 2
+83,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
+84,team_id,,,,many2one,crm.team,Sales Team,False,version 2
+85,narration,,,,text,,Terms and Conditions,False,version 2
+86,secure_sequence_number,,,,integer,,Inalteralbility No Gap Sequence #,False,version 2
+87,asset_ids_display_name,,,,char,,Asset Ids Display Name,False,version 2
+88,invoice_filter_type_domain,,,,char,,Invoice Filter Type Domain,False,version 2
+89,user_id,,,,many2one,res.users,User,False,version 2
+90,extract_error_message,,,,text,,Error message,False,version 2
+91,message_is_follower,,,,boolean,,Is Follower,False,version 2
+92,amount_total_signed,,,,monetary,,Total Signed,False,version 2
+93,type_name,,,,char,,Type Name,False,version 2
+94,auto_post,,,,boolean,,Post Automatically,False,version 2
+95,amount_tax,,,,monetary,,Tax,False,version 2
+96,asset_remaining_value,,,,monetary,,Depreciable Value,False,version 2
+97,authorized_transaction_ids,,,,many2many,payment.transaction,Authorized Transactions,False,version 2
+98,amount_tax_signed,,,,monetary,,Tax Signed,False,version 2
+99,reconciled_invoice_ids,,,,many2many,account.move,Reconciled Invoices,False,version 2
+100,inalterable_hash,,,,char,,Inalterability Hash,False,version 2
+101,highest_name,,,,char,,Highest Name,False,version 2
+102,amount_by_group,,,,binary,,Tax amount by group,False,version 2
+103,tax_closing_end_date,,,,date,,Tax Closing End Date,False,version 2
+104,activity_user_id,,,,many2one,res.users,Responsible User,False,version 2
+105,invoice_has_matching_suspense_amount,,,,boolean,,Invoice Has Matching Suspense Amount,False,version 2
+106,extract_state,,,,selection,,Extract state,True,version 2
+107,reconciled_bills_count,,,,integer,,# Reconciled Bills,False,version 2
+108,invoice_date,,,,date,,Invoice/Bill Date,False,version 2
+109,display_qr_code,,,,boolean,,Display QR-code,False,version 2
+110,reconciled_bill_ids,,,,many2many,account.move,Reconciled Bills,False,version 2
+111,fiscal_position_id,,,,many2one,account.fiscal.position,Fiscal Position,False,version 2
+112,draft_asset_ids,,,,boolean,,Draft Asset,False,version 2
+113,payment_state,,,,selection,,Payment Status,False,version 2
+114,extract_status_code,,,,integer,,Status code,False,version 2
+115,activity_ids,,,,one2many,mail.activity,Activities,False,version 2
+116,stock_valuation_layer_ids,,,,one2many,stock.valuation.layer,Stock Valuation Layer,False,version 2
+117,is_matched,,,,boolean,,Is Matched With a Bank Statement,False,version 2
+118,access_token,,,,char,,Security Token,False,version 2
+119,activity_exception_icon,,,,char,,Icon,False,version 2
+120,l10n_id_replace_invoice_id,,,,many2one,account.move,Replace Invoice,False,version 2
+121,invoice_outstanding_credits_debits_widget,,,,text,,Invoice Outstanding Credits Debits Widget,False,version 2
+122,activity_state,,,,selection,,Activity State,False,version 2
+123,sequence_number,,,,integer,,Sequence Number,False,version 2
+124,available_payment_method_ids,,,,many2many,account.payment.method,Available Payment Method,False,version 2
+125,asset_ids,,,,one2many,account.asset,Assets,False,version 2
+126,message_channel_ids,,,,many2many,mail.channel,Followers (Channels),False,version 2
+127,message_partner_ids,,,,many2many,res.partner,Followers (Partners),False,version 2
+128,extract_can_show_send_button,,,,boolean,,Can show the ocr send button,False,version 2
+129,is_reconciled,,,,boolean,,Is Reconciled,False,version 2
+130,company_currency_id,,,,many2one,res.currency,Company Currency,False,version 2
+131,message_has_error,,,,boolean,,Message Delivery error,False,version 2
+132,access_warning,,,,text,,Access warning,False,version 2
+133,string_to_hash,,,,char,,String To Hash,False,version 2
+134,message_ids,,,,one2many,mail.message,Messages,False,version 2
+135,purchase_id,,,,many2one,purchase.order,Purchase Order,False,version 2
+136,reversal_move_id,,,,one2many,account.move,Reversal Move,False,version 2
+137,reconciled_statement_ids,,,,many2many,account.move,Reconciled Statements,False,version 2
+138,invoice_payments_widget,,,,text,,Invoice Payments Widget,False,version 2
+139,payment_state_before_switch,,,,char,,Payment State Before Switch,False,version 2
+140,l10n_id_need_kode_transaksi,,,,boolean,,L10N Id Need Kode Transaksi,False,version 2
+141,reconciled_statements_count,,,,integer,,# Reconciled Statements,False,version 2
+142,invoice_source_email,,,,char,,Source Email,False,version 2
+143,tax_lock_date_message,,,,char,,Tax Lock Date Message,False,version 2
+144,extract_word_ids,,,,one2many,account.invoice_extract.words,Extract Word,False,version 2
+145,invoice_incoterm_id,,,,many2one,account.incoterms,Incoterm,False,version 2
+146,date,,,,date,,Date,True,version 2
+147,asset_manually_modified,,,,boolean,,Asset Manually Modified,False,version 2
+148,move_id,,,,many2one,account.move,Journal Entry,True,version 2
+149,show_name_warning,,,,boolean,,Show Name Warning,False,version 2
+150,l10n_id_kode_transaksi,,,,selection,,Kode Transaksi,False,version 2
+151,activity_summary,,,,char,,Next Activity Summary,False,version 2
+152,edi_web_services_to_process,,,,text,,Edi Web Services To Process,False,version 2
+153,l10n_id_attachment_id,,,,many2one,ir.attachment,L10N Id Attachment,False,version 2
+154,is_internal_transfer,,,,boolean,,Is Internal Transfer,False,version 2
+155,invoice_date_due,,,,date,,Due Date,False,version 2
+156,has_reconciled_entries,,,,boolean,,Has Reconciled Entries,False,version 2
+157,l10n_id_tax_number,,,,char,,Tax Number,False,version 2
+158,invoice_line_ids,,,,one2many,account.move.line,Invoice lines,False,version 2
+159,source_id,,,,many2one,utm.source,Source,False,version 2
+160,access_url,,,,char,,Portal Access URL,False,version 2
+161,edi_error_count,,,,integer,,Edi Error Count,False,version 2
+162,to_check,,,,boolean,,To Check,False,version 2
 ,,,,
 ,,,,

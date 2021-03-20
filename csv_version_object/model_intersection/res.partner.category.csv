@@ -1,22 +1,22 @@
 model,res.partner.category,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-2,display_name,char,char,,Display Name,Display Name,False,both
-3,name,char,char,,Tag Name,Tag Name,True,both
-4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-5,color,integer,integer,,Color Index,Color Index,False,both
-6,child_ids,one2many,one2many,res.partner.category,Child Tags,Child Tags,False,both
-7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-8,parent_id,many2one,many2one,res.partner.category,Parent Category,Parent Category,False,both
-9,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-10,active,boolean,boolean,,Active,Active,False,both
-11,create_date,datetime,datetime,,Created on,Created on,False,both
-12,partner_ids,many2many,many2many,res.partner,Partners,Partners,False,both
-13,id,integer,integer,,ID,ID,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,name,char,,Tag Name,char,,Tag Name,True,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,color,integer,,Color Index,integer,,Color Index,False,both
+1,child_ids,one2many,res.partner.category,Child Tags,one2many,res.partner.category,Child Tags,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,parent_id,many2one,res.partner.category,Parent Category,many2one,res.partner.category,Parent Category,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,active,boolean,,Active,boolean,,Active,False,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,partner_ids,many2many,res.partner,Partners,many2many,res.partner,Partners,False,both
+1,id,integer,,ID,integer,,ID,False,both
 ,,,,
-14,parent_right,integer,,,Right parent,,False,version 1
-15,parent_left,integer,,,Left parent,,False,version 1
+1,parent_right,integer,,Right parent,,,,False,version 1
+2,parent_left,integer,,Left parent,,,,False,version 1
 ,,,,
-16,parent_path,,char,,,Parent Path,False,version 2
+3,parent_path,,,,char,,Parent Path,False,version 2
 ,,,,
 ,,,,

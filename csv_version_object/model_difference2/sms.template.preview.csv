@@ -1,0 +1,17 @@
+model,sms.template.preview,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,lang,,,,selection,,Template Preview Language,False,version 2
+2,model_id,,,,many2one,ir.model,Applies to,False,version 2
+3,display_name,,,,char,,Display Name,False,version 2
+4,create_uid,,,,many2one,res.users,Created by,False,version 2
+5,__last_update,,,,datetime,,Last Modified on,False,version 2
+6,body,,,,char,,Body,False,version 2
+7,no_record,,,,boolean,,No Record,False,version 2
+8,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+9,resource_ref,,,,reference,,Record reference,False,version 2
+10,write_date,,,,datetime,,Last Updated on,False,version 2
+11,create_date,,,,datetime,,Created on,False,version 2
+12,id,,,,integer,,ID,False,version 2
+13,sms_template_id,,,,many2one,sms.template,Sms Template,True,version 2
+,,,,
+,,,,

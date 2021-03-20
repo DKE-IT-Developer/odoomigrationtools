@@ -1,0 +1,31 @@
+model,account.multicurrency.revaluation,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,analytic_tag_ids,,,,many2many,account.analytic.tag,Analytic Tag,False,version 2
+2,report_adjustment,,,,monetary,,Adjustment,False,version 2
+3,journal_id,,,,many2one,account.journal,Journal,False,version 2
+4,currency_id,,,,many2one,res.currency,Currency,False,version 2
+5,account_name,,,,char,,Account Name,False,version 2
+6,analytic_account_id,,,,many2one,account.analytic.account,Analytic Account,False,version 2
+7,display_name,,,,char,,Display Name,False,version 2
+8,__last_update,,,,datetime,,Last Modified on,False,version 2
+9,company_id,,,,many2one,res.company,Company,False,version 2
+10,id,,,,integer,,ID,False,version 2
+11,debit,,,,monetary,,Debit,False,version 2
+12,report_amount_currency_current,,,,monetary,,Balance at current rate,False,version 2
+13,report_currency_id,,,,many2one,res.currency,Report Currency,False,version 2
+14,account_id,,,,many2one,account.account,Account,False,version 2
+15,move_name,,,,char,,Move Name,False,version 2
+16,report_balance,,,,monetary,,Balance at operation rate,False,version 2
+17,report_amount_currency,,,,monetary,,Balance in foreign currency,False,version 2
+18,display_type,,,,char,,Display Type,False,version 2
+19,date,,,,date,,Date,False,version 2
+20,move_id,,,,many2one,account.move,Move,False,version 2
+21,report_include,,,,boolean,,Report Include,False,version 2
+22,balance,,,,monetary,,Balance,False,version 2
+23,name,,,,char,,Name,False,version 2
+24,credit,,,,monetary,,Credit,False,version 2
+25,move_ref,,,,char,,Move Ref,False,version 2
+26,account_code,,,,char,,Account Code,False,version 2
+27,currency_code,,,,char,,Currency Code,False,version 2
+,,,,
+,,,,

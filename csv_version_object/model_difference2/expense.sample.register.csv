@@ -1,0 +1,23 @@
+model,expense.sample.register,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,,,,many2one,res.users,Created by,False,version 2
+2,partial_mode,,,,selection,,Payment Difference,False,version 2
+3,display_name,,,,char,,Display Name,False,version 2
+4,__last_update,,,,datetime,,Last Modified on,False,version 2
+5,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+6,memo,,,,char,,Memo,False,version 2
+7,payment_method_ids,,,,many2many,account.payment.method,Outbound Payment Methods,False,version 2
+8,journal_id,,,,many2one,account.journal,Journal,False,version 2
+9,company_id,,,,many2one,res.company,Company,False,version 2
+10,currency_id,,,,many2one,res.currency,Currency,False,version 2
+11,amount,,,,float,,Amount,False,version 2
+12,write_date,,,,datetime,,Last Updated on,False,version 2
+13,date,,,,date,,Payment Date,True,version 2
+14,create_date,,,,datetime,,Created on,False,version 2
+15,hide_partial,,,,boolean,,Hide Partial,False,version 2
+16,sheet_id,,,,many2one,hr.expense.sheet,Expense,False,version 2
+17,id,,,,integer,,ID,False,version 2
+18,hide_payment,,,,boolean,,Hide Payment,False,version 2
+19,payment_method_id,,,,many2one,account.payment.method,Payment Method,False,version 2
+,,,,
+,,,,

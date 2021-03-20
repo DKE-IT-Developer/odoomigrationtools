@@ -1,0 +1,14 @@
+model,ir.demo_failure,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,,,,many2one,res.users,Created by,False,version 2
+2,display_name,,,,char,,Display Name,False,version 2
+3,__last_update,,,,datetime,,Last Modified on,False,version 2
+4,wizard_id,,,,many2one,ir.demo_failure.wizard,Wizard,False,version 2
+5,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+6,create_date,,,,datetime,,Created on,False,version 2
+7,write_date,,,,datetime,,Last Updated on,False,version 2
+8,error,,,,char,,Error,False,version 2
+9,module_id,,,,many2one,ir.module.module,Module,True,version 2
+10,id,,,,integer,,ID,False,version 2
+,,,,
+,,,,

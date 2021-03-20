@@ -1,0 +1,23 @@
+model,account.financial.report,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,,,,False,version 1
+2,children_ids,one2many,account.financial.report,Account Report,,,,False,version 1
+3,display_name,char,,Display Name,,,,False,version 1
+4,name,char,,Report Name,,,,True,version 1
+5,level,integer,,Level,,,,False,version 1
+6,__last_update,datetime,,Last Modified on,,,,False,version 1
+7,sequence,integer,,Sequence,,,,False,version 1
+8,style_overwrite,selection,,Financial Report Style,,,,False,version 1
+9,sign,selection,,Sign on Reports,,,,True,version 1
+10,parent_id,many2one,account.financial.report,Parent,,,,False,version 1
+11,account_type_ids,many2many,account.account.type,Account Types,,,,False,version 1
+12,account_ids,many2many,account.account,Accounts,,,,False,version 1
+13,write_date,datetime,,Last Updated on,,,,False,version 1
+14,account_report_id,many2one,account.financial.report,Report Value,,,,False,version 1
+15,display_detail,selection,,Display details,,,,False,version 1
+16,create_date,datetime,,Created on,,,,False,version 1
+17,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
+18,type,selection,,Type,,,,False,version 1
+19,id,integer,,ID,,,,False,version 1
+,,,,
+,,,,

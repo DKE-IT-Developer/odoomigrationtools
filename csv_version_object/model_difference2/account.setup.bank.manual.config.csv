@@ -1,0 +1,28 @@
+model,account.setup.bank.manual.config,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_date,,,,datetime,,Created on,False,version 2
+2,sequence,,,,integer,,Sequence,False,version 2
+3,company_id,,,,many2one,res.company,Company,False,version 2
+4,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+5,currency_id,,,,many2one,res.currency,Currency,False,version 2
+6,sanitized_acc_number,,,,char,,Sanitized Account Number,False,version 2
+7,partner_id,,,,many2one,res.partner,Account Holder,True,version 2
+8,id,,,,integer,,ID,False,version 2
+9,create_uid,,,,many2one,res.users,Created by,False,version 2
+10,display_name,,,,char,,Display Name,False,version 2
+11,__last_update,,,,datetime,,Last Modified on,False,version 2
+12,linked_journal_id,,,,many2one,account.journal,Journal,False,version 2
+13,acc_holder_name,,,,char,,Account Holder Name,False,version 2
+14,bank_name,,,,char,,Name,False,version 2
+15,res_partner_bank_id,,,,many2one,res.partner.bank,Res Partner Bank,True,version 2
+16,write_date,,,,datetime,,Last Updated on,False,version 2
+17,active,,,,boolean,,Active,False,version 2
+18,acc_number,,,,char,,Account Number,True,version 2
+19,bank_bic,,,,char,,Bic,False,version 2
+20,num_journals_without_account,,,,integer,,Num Journals Without Account,False,version 2
+21,bank_id,,,,many2one,res.bank,Bank,False,version 2
+22,acc_type,,,,selection,,Type,False,version 2
+23,journal_id,,,,one2many,account.journal,Account Journal,False,version 2
+24,new_journal_name,,,,char,,New Journal Name,True,version 2
+,,,,
+,,,,

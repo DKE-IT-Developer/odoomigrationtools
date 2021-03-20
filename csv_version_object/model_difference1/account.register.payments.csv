@@ -1,0 +1,23 @@
+model,account.register.payments,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,,,,False,version 1
+2,create_date,datetime,,Created on,,,,False,version 1
+3,hide_payment_method,boolean,,Hide payment method,,,,False,version 1
+4,payment_date,date,,Payment Date,,,,True,version 1
+5,payment_type,selection,,Payment Type,,,,True,version 1
+6,communication,char,,Memo,,,,False,version 1
+7,__last_update,datetime,,Last Modified on,,,,False,version 1
+8,company_id,many2one,res.company,Company,,,,False,version 1
+9,journal_id,many2one,account.journal,Payment Journal,,,,True,version 1
+10,currency_id,many2one,res.currency,Currency,,,,True,version 1
+11,partner_type,selection,,Partner type,,,,False,version 1
+12,amount,monetary,,Payment Amount,,,,True,version 1
+13,payment_method_code,char,,Code,,,,False,version 1
+14,write_date,datetime,,Last Updated on,,,,False,version 1
+15,display_name,char,,Display Name,,,,False,version 1
+16,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
+17,partner_id,many2one,res.partner,Partner,,,,False,version 1
+18,id,integer,,ID,,,,False,version 1
+19,payment_method_id,many2one,account.payment.method,Payment Method Type,,,,True,version 1
+,,,,
+,,,,

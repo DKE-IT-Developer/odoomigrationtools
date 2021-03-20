@@ -1,25 +1,25 @@
 model,res.currency,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,rate_ids,one2many,one2many,res.currency.rate,Rates,Rates,False,both
-2,display_name,char,char,,Display Name,Display Name,False,both
-3,name,char,char,,Currency,Currency,True,both
-4,decimal_places,integer,integer,,Decimal places,Decimal Places,False,both
-5,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-6,rounding,float,float,,Rounding Factor,Rounding Factor,False,both
-7,symbol,char,char,,Symbol,Symbol,True,both
-8,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-9,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-10,active,boolean,boolean,,Active,Active,False,both
-11,rate,float,float,,Current Rate,Current Rate,False,both
-12,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-13,date,date,date,,Date,Date,False,both
-14,position,selection,selection,,Symbol Position,Symbol Position,False,both
-15,create_date,datetime,datetime,,Created on,Created on,False,both
-16,id,integer,integer,,ID,ID,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,name,char,,Currency,char,,Currency,True,both
+1,decimal_places,integer,,Decimal places,integer,,Decimal Places,False,both
+1,rate_ids,one2many,res.currency.rate,Rates,one2many,res.currency.rate,Rates,False,both
+1,rounding,float,,Rounding Factor,float,,Rounding Factor,False,both
+1,symbol,char,,Symbol,char,,Symbol,True,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,active,boolean,,Active,boolean,,Active,False,both
+1,rate,float,,Current Rate,float,,Current Rate,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,date,date,,Date,date,,Date,False,both
+1,position,selection,,Symbol Position,selection,,Symbol Position,False,both
+1,id,integer,,ID,integer,,ID,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
 ,,,,
 ,,,,
-17,display_rounding_warning,,boolean,,,Display Rounding Warning,False,version 2
-18,currency_unit_label,,char,,,Currency Unit,False,version 2
-19,currency_subunit_label,,char,,,Currency Subunit,False,version 2
+1,display_rounding_warning,,,,boolean,,Display Rounding Warning,False,version 2
+2,currency_unit_label,,,,char,,Currency Unit,False,version 2
+3,currency_subunit_label,,,,char,,Currency Subunit,False,version 2
 ,,,,
 ,,,,

@@ -1,0 +1,15 @@
+model,account.reconcile.model.partner.mapping,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,model_id,,,,many2one,account.reconcile.model,Model,True,version 2
+2,display_name,,,,char,,Display Name,False,version 2
+3,create_uid,,,,many2one,res.users,Created by,False,version 2
+4,__last_update,,,,datetime,,Last Modified on,False,version 2
+5,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+6,payment_ref_regex,,,,char,,Find Text in Label,False,version 2
+7,write_date,,,,datetime,,Last Updated on,False,version 2
+8,create_date,,,,datetime,,Created on,False,version 2
+9,partner_id,,,,many2one,res.partner,Partner,True,version 2
+10,id,,,,integer,,ID,False,version 2
+11,narration_regex,,,,char,,Find Text in Notes,False,version 2
+,,,,
+,,,,

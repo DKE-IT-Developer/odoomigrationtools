@@ -1,0 +1,42 @@
+model,account.payment.register,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,available_payment_method_ids,,,,many2many,account.payment.method,Available Payment Method,False,version 2
+2,source_currency_id,,,,many2one,res.currency,Source Currency,False,version 2
+3,create_date,,,,datetime,,Created on,False,version 2
+4,writeoff_label,,,,char,,Journal Item Label,False,version 2
+5,partner_bank_id,,,,many2one,res.partner.bank,Recipient Bank Account,False,version 2
+6,communication,,,,char,,Memo,False,version 2
+7,can_edit_wizard,,,,boolean,,Can Edit Wizard,False,version 2
+8,company_id,,,,many2one,res.company,Company,False,version 2
+9,company_currency_id,,,,many2one,res.currency,Company Currency,False,version 2
+10,group_payment,,,,boolean,,Group Payments,False,version 2
+11,payment_difference,,,,monetary,,Payment Difference,False,version 2
+12,require_partner_bank_account,,,,boolean,,Require Partner Bank Account,False,version 2
+13,country_code,,,,char,,Country Code,False,version 2
+14,partner_id,,,,many2one,res.partner,Customer/Vendor,False,version 2
+15,id,,,,integer,,ID,False,version 2
+16,payment_method_id,,,,many2one,account.payment.method,Payment Method,False,version 2
+17,payment_date,,,,date,,Payment Date,True,version 2
+18,display_name,,,,char,,Display Name,False,version 2
+19,__last_update,,,,datetime,,Last Modified on,False,version 2
+20,source_amount,,,,monetary,,Amount to Pay (company currency),False,version 2
+21,journal_id,,,,many2one,account.journal,Journal,False,version 2
+22,writeoff_account_id,,,,many2one,account.account,Difference Account,False,version 2
+23,suitable_payment_token_partner_ids,,,,many2many,res.partner,Suitable Payment Token Partner,False,version 2
+24,source_amount_currency,,,,monetary,,Amount to Pay (foreign currency),False,version 2
+25,create_uid,,,,many2one,res.users,Created by,False,version 2
+26,partner_type,,,,selection,,Partner Type,False,version 2
+27,show_partner_bank_account,,,,boolean,,Show Partner Bank Account,False,version 2
+28,payment_token_id,,,,many2one,payment.token,Saved payment token,False,version 2
+29,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+30,currency_id,,,,many2one,res.currency,Currency,False,version 2
+31,hide_payment_method,,,,boolean,,Hide Payment Method,False,version 2
+32,payment_method_code,,,,char,,Code,False,version 2
+33,payment_difference_handling,,,,selection,,Payment Difference Handling,False,version 2
+34,amount,,,,monetary,,Amount,False,version 2
+35,payment_type,,,,selection,,Payment Type,False,version 2
+36,can_group_payments,,,,boolean,,Can Group Payments,False,version 2
+37,write_date,,,,datetime,,Last Updated on,False,version 2
+38,line_ids,,,,many2many,account.move.line,Journal items,False,version 2
+,,,,
+,,,,

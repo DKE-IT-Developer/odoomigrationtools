@@ -1,51 +1,51 @@
 model,account.invoice.report,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,display_name,char,char,,Display Name,Display Name,False,both
-2,account_id,many2one,many2one,account.account,Account,Revenue/Expense Account,False,both
-3,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-4,country_id,many2one,many2one,res.country,Country of the Partner Company,Country,False,both
-5,journal_id,many2one,many2one,account.journal,Journal,Journal,False,both
-6,company_id,many2one,many2one,res.company,Company,Company,False,both
-7,team_id,many2one,many2one,crm.team,Sales Team,Sales Team,False,both
-8,state,selection,selection,,Invoice Status,Invoice Status,False,both
-9,commercial_partner_id,many2one,many2one,res.partner,Partner Company,Partner Company,False,both
-10,price_average,float,float,,Average Price,Average Price,False,both
-11,partner_id,many2one,many2one,res.partner,Partner,Partner,False,both
-12,id,integer,integer,,ID,ID,False,both
-13,fiscal_position_id,many2one,many2one,account.fiscal.position,Fiscal Position,Fiscal Position,False,both
-14,product_id,many2one,many2one,product.product,Product,Product,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,account_id,many2one,account.account,Account,many2one,account.account,Revenue/Expense Account,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,country_id,many2one,res.country,Country of the Partner Company,many2one,res.country,Country,False,both
+1,journal_id,many2one,account.journal,Journal,many2one,account.journal,Journal,False,both
+1,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
+1,team_id,many2one,crm.team,Sales Team,many2one,crm.team,Sales Team,False,both
+1,state,selection,,Invoice Status,selection,,Invoice Status,False,both
+1,commercial_partner_id,many2one,res.partner,Partner Company,many2one,res.partner,Partner Company,False,both
+1,price_average,float,,Average Price,float,,Average Price,False,both
+1,partner_id,many2one,res.partner,Partner,many2one,res.partner,Partner,False,both
+1,id,integer,,ID,integer,,ID,False,both
+1,fiscal_position_id,many2one,account.fiscal.position,Fiscal Position,many2one,account.fiscal.position,Fiscal Position,False,both
+1,product_id,many2one,product.product,Product,many2one,product.product,Product,False,both
 ,,,,
-15,date_due,date,,,Due Date,,False,version 1
-16,weight,float,,,Gross Weight,,False,version 1
-17,nbr,integer,,,# of Lines,,False,version 1
-18,currency_id,many2one,,res.currency,Currency,,False,version 1
-19,product_qty,float,,,Product Quantity,,False,version 1
-20,user_currency_price_average,float,,,Average Price,,False,version 1
-21,uom_name,char,,,Reference Unit of Measure,,False,version 1
-22,user_id,many2one,,res.users,Salesperson,,False,version 1
-23,partner_bank_id,many2one,,res.partner.bank,Bank Account,,False,version 1
-24,type,selection,,,Type,,False,version 1
-25,account_line_id,many2one,,account.account,Account Line,,False,version 1
-26,residual,float,,,Total Residual,,False,version 1
-27,volume,float,,,Volume,,False,version 1
-28,payment_term_id,many2one,,account.payment.term,Payment Terms,,False,version 1
-29,currency_rate,float,,,Currency Rate,,False,version 1
-30,date,date,,,Date,,False,version 1
-31,categ_id,many2one,,product.category,Product Category,,False,version 1
-32,price_total,float,,,Total Without Tax,,False,version 1
-33,user_currency_price_total,float,,,Total Without Tax,,False,version 1
-34,user_currency_residual,float,,,Total Residual,,False,version 1
+1,date_due,date,,Due Date,,,,False,version 1
+2,partner_bank_id,many2one,res.partner.bank,Bank Account,,,,False,version 1
+3,nbr,integer,,# of Lines,,,,False,version 1
+4,currency_id,many2one,res.currency,Currency,,,,False,version 1
+5,product_qty,float,,Product Quantity,,,,False,version 1
+6,uom_name,char,,Reference Unit of Measure,,,,False,version 1
+7,user_id,many2one,res.users,Salesperson,,,,False,version 1
+8,weight,float,,Gross Weight,,,,False,version 1
+9,user_currency_price_average,float,,Average Price,,,,False,version 1
+10,type,selection,,Type,,,,False,version 1
+11,account_line_id,many2one,account.account,Account Line,,,,False,version 1
+12,residual,float,,Total Residual,,,,False,version 1
+13,volume,float,,Volume,,,,False,version 1
+14,payment_term_id,many2one,account.payment.term,Payment Terms,,,,False,version 1
+15,currency_rate,float,,Currency Rate,,,,False,version 1
+16,date,date,,Date,,,,False,version 1
+17,categ_id,many2one,product.category,Product Category,,,,False,version 1
+18,price_total,float,,Total Without Tax,,,,False,version 1
+19,user_currency_price_total,float,,Total Without Tax,,,,False,version 1
+20,user_currency_residual,float,,Total Residual,,,,False,version 1
 ,,,,
-35,price_subtotal,,float,,,Untaxed Total,False,version 2
-36,invoice_date,,date,,,Invoice Date,False,version 2
-37,company_currency_id,,many2one,res.currency,,Company Currency,False,version 2
-38,invoice_user_id,,many2one,res.users,,Salesperson,False,version 2
-39,move_id,,many2one,account.move,,Move,False,version 2
-40,payment_state,,selection,,,Payment Status,False,version 2
-41,product_uom_id,,many2one,uom.uom,,Unit of Measure,False,version 2
-42,move_type,,selection,,,Move Type,False,version 2
-43,invoice_date_due,,date,,,Due Date,False,version 2
-44,product_categ_id,,many2one,product.category,,Product Category,False,version 2
-45,quantity,,float,,,Product Quantity,False,version 2
+21,price_subtotal,,,,float,,Untaxed Total,False,version 2
+22,invoice_date,,,,date,,Invoice Date,False,version 2
+23,company_currency_id,,,,many2one,res.currency,Company Currency,False,version 2
+24,invoice_user_id,,,,many2one,res.users,Salesperson,False,version 2
+25,move_id,,,,many2one,account.move,Move,False,version 2
+26,payment_state,,,,selection,,Payment Status,False,version 2
+27,product_uom_id,,,,many2one,uom.uom,Unit of Measure,False,version 2
+28,move_type,,,,selection,,Move Type,False,version 2
+29,invoice_date_due,,,,date,,Due Date,False,version 2
+30,product_categ_id,,,,many2one,product.category,Product Category,False,version 2
+31,quantity,,,,float,,Product Quantity,False,version 2
 ,,,,
 ,,,,

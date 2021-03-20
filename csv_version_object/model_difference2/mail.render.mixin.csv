@@ -1,0 +1,13 @@
+model,mail.render.mixin,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,lang,,,,char,,Language,False,version 2
+2,display_name,,,,char,,Display Name,False,version 2
+3,__last_update,,,,datetime,,Last Modified on,False,version 2
+4,sub_model_object_field,,,,many2one,ir.model.fields,Sub-field,False,version 2
+5,model_object_field,,,,many2one,ir.model.fields,Field,False,version 2
+6,sub_object,,,,many2one,ir.model,Sub-model,False,version 2
+7,null_value,,,,char,,Default Value,False,version 2
+8,id,,,,integer,,ID,False,version 2
+9,copyvalue,,,,char,,Placeholder Expression,False,version 2
+,,,,
+,,,,

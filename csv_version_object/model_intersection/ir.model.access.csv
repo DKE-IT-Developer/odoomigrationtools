@@ -1,20 +1,20 @@
 model,ir.model.access,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-2,perm_read,boolean,boolean,,Read Access,Read Access,False,both
-3,name,char,char,,Name,Name,True,both
-4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-5,id,integer,integer,,ID,ID,False,both
-6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-7,active,boolean,boolean,,Active,Active,False,both
-8,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-9,perm_unlink,boolean,boolean,,Delete Access,Delete Access,False,both
-10,perm_write,boolean,boolean,,Write Access,Write Access,False,both
-11,create_date,datetime,datetime,,Created on,Created on,False,both
-12,model_id,many2one,many2one,ir.model,Object,Model,True,both
-13,group_id,many2one,many2one,res.groups,Group,Group,False,both
-14,perm_create,boolean,boolean,,Create Access,Create Access,False,both
-15,display_name,char,char,,Display Name,Display Name,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,perm_read,boolean,,Read Access,boolean,,Read Access,False,both
+1,name,char,,Name,char,,Name,True,both
+1,perm_create,boolean,,Create Access,boolean,,Create Access,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,active,boolean,,Active,boolean,,Active,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,perm_unlink,boolean,,Delete Access,boolean,,Delete Access,False,both
+1,perm_write,boolean,,Write Access,boolean,,Write Access,False,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,model_id,many2one,ir.model,Object,many2one,ir.model,Model,True,both
+1,group_id,many2one,res.groups,Group,many2one,res.groups,Group,False,both
+1,id,integer,,ID,integer,,ID,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
 ,,,,
 ,,,,
 ,,,,

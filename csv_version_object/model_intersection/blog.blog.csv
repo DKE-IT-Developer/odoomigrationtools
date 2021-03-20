@@ -1,43 +1,43 @@
 model,blog.blog,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,message_follower_ids,one2many,one2many,mail.followers,Followers,Followers,False,both
-2,subtitle,char,char,,Blog Subtitle,Blog Subtitle,False,both
-3,message_needaction,boolean,boolean,,Action Needed,Action Needed,False,both
-4,message_channel_ids,many2many,many2many,mail.channel,Followers (Channels),Followers (Channels),False,both
-5,message_partner_ids,many2many,many2many,res.partner,Followers (Partners),Followers (Partners),False,both
-6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-7,create_date,datetime,datetime,,Created on,Created on,False,both
-8,message_ids,one2many,one2many,mail.message,Messages,Messages,False,both
-9,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-10,display_name,char,char,,Display Name,Display Name,False,both
-11,message_is_follower,boolean,boolean,,Is Follower,Is Follower,False,both
-12,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-13,id,integer,integer,,ID,ID,False,both
-14,website_meta_title,char,char,,Website meta title,Website meta title,False,both
-15,message_unread_counter,integer,integer,,Unread Messages Counter,Unread Messages Counter,False,both
-16,website_meta_description,text,text,,Website meta description,Website meta description,False,both
-17,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-18,active,boolean,boolean,,Active,Active,False,both
-19,name,char,char,,Blog Name,Blog Name,True,both
-20,website_meta_keywords,char,char,,Website meta keywords,Website meta keywords,False,both
-21,message_unread,boolean,boolean,,Unread Messages,Unread Messages,False,both
-22,message_needaction_counter,integer,integer,,Number of Actions,Number of Actions,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,message_follower_ids,one2many,mail.followers,Followers,one2many,mail.followers,Followers,False,both
+1,subtitle,char,,Blog Subtitle,char,,Blog Subtitle,False,both
+1,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
+1,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
+1,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,id,integer,,ID,integer,,ID,False,both
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
+1,website_meta_title,char,,Website meta title,char,,Website meta title,False,both
+1,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
+1,website_meta_description,text,,Website meta description,text,,Website meta description,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,active,boolean,,Active,boolean,,Active,False,both
+1,name,char,,Blog Name,char,,Blog Name,True,both
+1,website_meta_keywords,char,,Website meta keywords,char,,Website meta keywords,False,both
+1,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
+1,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
 ,,,,
-23,message_last_post,datetime,,,Last Message Date,,False,version 1
+1,message_last_post,datetime,,Last Message Date,,,,False,version 1
 ,,,,
-24,website_id,,many2one,website,,Website,False,version 2
-25,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,False,version 2
-26,message_has_error,,boolean,,,Message Delivery error,False,version 2
-27,blog_post_ids,,one2many,blog.post,,Blog Posts,False,version 2
-28,is_seo_optimized,,boolean,,,SEO optimized,False,version 2
-29,message_has_sms_error,,boolean,,,SMS Delivery error,False,version 2
-30,content,,html,,,Content,False,version 2
-31,message_attachment_count,,integer,,,Attachment Count,False,version 2
-32,blog_post_count,,integer,,,Posts,False,version 2
-33,message_has_error_counter,,integer,,,Number of errors,False,version 2
-34,seo_name,,char,,,Seo name,False,version 2
-35,website_meta_og_img,,char,,,Website opengraph image,False,version 2
-36,cover_properties,,text,,,Cover Properties,False,version 2
-37,website_message_ids,,one2many,mail.message,,Website Messages,False,version 2
+2,website_id,,,,many2one,website,Website,False,version 2
+3,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
+4,message_has_error,,,,boolean,,Message Delivery error,False,version 2
+5,blog_post_ids,,,,one2many,blog.post,Blog Posts,False,version 2
+6,is_seo_optimized,,,,boolean,,SEO optimized,False,version 2
+7,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
+8,content,,,,html,,Content,False,version 2
+9,message_attachment_count,,,,integer,,Attachment Count,False,version 2
+10,blog_post_count,,,,integer,,Posts,False,version 2
+11,message_has_error_counter,,,,integer,,Number of errors,False,version 2
+12,seo_name,,,,char,,Seo name,False,version 2
+13,website_meta_og_img,,,,char,,Website opengraph image,False,version 2
+14,cover_properties,,,,text,,Cover Properties,False,version 2
+15,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
 ,,,,
 ,,,,

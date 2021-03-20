@@ -1,0 +1,22 @@
+model,account.invoice_extract.words,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,,,,many2one,res.users,Created by,False,version 2
+2,user_selected,,,,boolean,,User Selected,False,version 2
+3,word_text,,,,char,,Word Text,False,version 2
+4,display_name,,,,char,,Display Name,False,version 2
+5,__last_update,,,,datetime,,Last Modified on,False,version 2
+6,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+7,invoice_id,,,,many2one,account.move,Invoice,False,version 2
+8,word_box_height,,,,float,,Word Box Height,False,version 2
+9,field,,,,char,,Field,False,version 2
+10,word_page,,,,integer,,Word Page,False,version 2
+11,word_box_width,,,,float,,Word Box Width,False,version 2
+12,write_date,,,,datetime,,Last Updated on,False,version 2
+13,create_date,,,,datetime,,Created on,False,version 2
+14,selected_status,,,,integer,,Invoice extract selected status.,False,version 2
+15,word_box_angle,,,,float,,Word Box Angle,False,version 2
+16,id,,,,integer,,ID,False,version 2
+17,word_box_midX,,,,float,,Word Box Midx,False,version 2
+18,word_box_midY,,,,float,,Word Box Midy,False,version 2
+,,,,
+,,,,

@@ -1,0 +1,17 @@
+model,sale.product.configurator,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,,,,many2one,res.users,Created by,False,version 2
+2,display_name,,,,char,,Display Name,False,version 2
+3,product_custom_attribute_value_ids,,,,many2many,product.attribute.custom.value,Custom Values,False,version 2
+4,product_template_attribute_value_ids,,,,many2many,product.template.attribute.value,Attribute Values,False,version 2
+5,__last_update,,,,datetime,,Last Modified on,False,version 2
+6,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+7,create_date,,,,datetime,,Created on,False,version 2
+8,product_template_id,,,,many2one,product.template,Product,True,version 2
+9,write_date,,,,datetime,,Last Updated on,False,version 2
+10,pricelist_id,,,,many2one,product.pricelist,Pricelist,False,version 2
+11,quantity,,,,integer,,Quantity,False,version 2
+12,id,,,,integer,,ID,False,version 2
+13,product_no_variant_attribute_value_ids,,,,many2many,product.template.attribute.value,Extra Values,False,version 2
+,,,,
+,,,,

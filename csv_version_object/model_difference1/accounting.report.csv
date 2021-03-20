@@ -1,0 +1,23 @@
+model,accounting.report,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,,,,False,version 1
+2,date_to,date,,End Date,,,,False,version 1
+3,display_name,char,,Display Name,,,,False,version 1
+4,__last_update,datetime,,Last Modified on,,,,False,version 1
+5,filter_cmp,selection,,Filter by,,,,True,version 1
+6,date_from,date,,Start Date,,,,False,version 1
+7,enable_filter,boolean,,Enable Comparison,,,,False,version 1
+8,company_id,many2one,res.company,Company,,,,False,version 1
+9,date_to_cmp,date,,End Date,,,,False,version 1
+10,journal_ids,many2many,account.journal,Journals,,,,True,version 1
+11,label_filter,char,,Column Label,,,,False,version 1
+12,write_date,datetime,,Last Updated on,,,,False,version 1
+13,date_from_cmp,date,,Start Date,,,,False,version 1
+14,id,integer,,ID,,,,False,version 1
+15,create_date,datetime,,Created on,,,,False,version 1
+16,account_report_id,many2one,account.financial.report,Account Reports,,,,True,version 1
+17,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
+18,debit_credit,boolean,,Display Debit/Credit Columns,,,,False,version 1
+19,target_move,selection,,Target Moves,,,,True,version 1
+,,,,
+,,,,

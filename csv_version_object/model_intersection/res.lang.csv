@@ -1,28 +1,28 @@
 model,res.lang,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,date_format,char,char,,Date Format,Date Format,True,both
-2,direction,selection,selection,,Direction,Direction,True,both
-3,code,char,char,,Locale Code,Locale Code,True,both
-4,display_name,char,char,,Display Name,Display Name,False,both
-5,name,char,char,,Name,Name,True,both
-6,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-7,thousands_sep,char,char,,Thousands Separator,Thousands Separator,False,both
-8,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-9,iso_code,char,char,,ISO code,ISO code,False,both
-10,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-11,time_format,char,char,,Time Format,Time Format,True,both
-12,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-13,decimal_point,char,char,,Decimal Separator,Decimal Separator,True,both
-14,active,boolean,boolean,,Active,Active,False,both
-15,create_date,datetime,datetime,,Created on,Created on,False,both
-16,id,integer,integer,,ID,ID,False,both
-17,grouping,char,char,,Separator Format,Separator Format,True,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,direction,selection,,Direction,selection,,Direction,True,both
+1,code,char,,Locale Code,char,,Locale Code,True,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,name,char,,Name,char,,Name,True,both
+1,date_format,char,,Date Format,char,,Date Format,True,both
+1,thousands_sep,char,,Thousands Separator,char,,Thousands Separator,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,time_format,char,,Time Format,char,,Time Format,True,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,decimal_point,char,,Decimal Separator,char,,Decimal Separator,True,both
+1,active,boolean,,Active,boolean,,Active,False,both
+1,iso_code,char,,ISO code,char,,ISO code,False,both
+1,grouping,char,,Separator Format,char,,Separator Format,True,both
+1,id,integer,,ID,integer,,ID,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
 ,,,,
-18,translatable,boolean,,,Translatable,,False,version 1
+1,translatable,boolean,,Translatable,,,,False,version 1
 ,,,,
-19,flag_image_url,,char,,,Flag Image Url,False,version 2
-20,flag_image,,binary,,,Image,False,version 2
-21,week_start,,selection,,,First Day of Week,True,version 2
-22,url_code,,char,,,URL Code,True,version 2
+2,flag_image_url,,,,char,,Flag Image Url,False,version 2
+3,flag_image,,,,binary,,Image,False,version 2
+4,week_start,,,,selection,,First Day of Week,True,version 2
+5,url_code,,,,char,,URL Code,True,version 2
 ,,,,
 ,,,,

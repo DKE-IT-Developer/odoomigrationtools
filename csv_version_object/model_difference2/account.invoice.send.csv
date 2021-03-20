@@ -1,0 +1,49 @@
+model,account.invoice.send,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,body,,,,html,,Contents,False,version 2
+2,auto_delete_message,,,,boolean,,Delete Message Copy,False,version 2
+3,create_date,,,,datetime,,Created on,False,version 2
+4,invalid_invoice_ids,,,,many2many,account.move,Invalid Addresses,False,version 2
+5,auto_delete,,,,boolean,,Delete Emails,False,version 2
+6,mail_server_id,,,,many2one,ir.mail_server,Outgoing mail server,False,version 2
+7,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+8,invoice_ids,,,,many2many,account.move,Invoices,False,version 2
+9,notify,,,,boolean,,Notify followers,False,version 2
+10,email_from,,,,char,,From,False,version 2
+11,partner_id,,,,many2one,res.partner,Partner,False,version 2
+12,id,,,,integer,,ID,False,version 2
+13,subject,,,,char,,Subject,False,version 2
+14,composition_mode,,,,selection,,Composition mode,False,version 2
+15,create_uid,,,,many2one,res.users,Created by,False,version 2
+16,display_name,,,,char,,Display Name,False,version 2
+17,is_email,,,,boolean,,Email,False,version 2
+18,attachment_ids,,,,many2many,ir.attachment,Attachments,False,version 2
+19,__last_update,,,,datetime,,Last Modified on,False,version 2
+20,active_domain,,,,text,,Active domain,False,version 2
+21,is_log,,,,boolean,,Log an Internal Note,False,version 2
+22,composer_id,,,,many2one,mail.compose.message,Composer,True,version 2
+23,invoice_without_email,,,,text,,invoice(s) that will not be sent,False,version 2
+24,parent_id,,,,many2one,mail.message,Parent Message,False,version 2
+25,subtype_id,,,,many2one,mail.message.subtype,Subtype,False,version 2
+26,partner_ids,,,,many2many,res.partner,Additional Contacts,False,version 2
+27,mail_activity_type_id,,,,many2one,mail.activity.type,Mail Activity Type,False,version 2
+28,res_id,,,,integer,,Related Document ID,False,version 2
+29,is_print,,,,boolean,,Print,False,version 2
+30,record_name,,,,char,,Message Record Name,False,version 2
+31,printed,,,,boolean,,Is Printed,False,version 2
+32,write_date,,,,datetime,,Last Updated on,False,version 2
+33,layout,,,,char,,Layout,False,version 2
+34,add_sign,,,,boolean,,Add Sign,False,version 2
+35,model,,,,char,,Related Document Model,False,version 2
+36,use_active_domain,,,,boolean,,Use active domain,False,version 2
+37,edi_format_ids,,,,many2many,account.edi.format,Electronic invoicing,False,version 2
+38,no_auto_thread,,,,boolean,,No threading for answers,False,version 2
+39,snailmail_is_letter,,,,boolean,,Send by Post,False,version 2
+40,snailmail_cost,,,,float,,Stamp(s),False,version 2
+41,reply_to,,,,char,,Reply-To,False,version 2
+42,invalid_addresses,,,,integer,,Invalid Addresses Count,False,version 2
+43,author_id,,,,many2one,res.partner,Author,False,version 2
+44,message_type,,,,selection,,Type,True,version 2
+45,template_id,,,,many2one,mail.template,Use template,False,version 2
+,,,,
+,,,,

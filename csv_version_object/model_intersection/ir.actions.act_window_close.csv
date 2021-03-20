@@ -1,21 +1,21 @@
 model,ir.actions.act_window_close,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-2,xml_id,char,char,,External ID,External ID,False,both
-3,display_name,char,char,,Display Name,Display Name,False,both
-4,help,html,html,,Action Description,Action Description,False,both
-5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-7,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-8,create_date,datetime,datetime,,Created on,Created on,False,both
-9,type,char,char,,Action Type,Action Type,True,both
-10,id,integer,integer,,ID,ID,False,both
-11,name,char,char,,Name,Name,True,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,xml_id,char,,External ID,char,,External ID,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,help,html,,Action Description,html,,Action Description,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,type,char,,Action Type,char,,Action Type,True,both
+1,id,integer,,ID,integer,,ID,False,both
+1,name,char,,Name,char,,Name,True,both
 ,,,,
-12,usage,char,,,Action Usage,,False,version 1
+1,usage,char,,Action Usage,,,,False,version 1
 ,,,,
-13,binding_type,,selection,,,Binding Type,True,version 2
-14,binding_model_id,,many2one,ir.model,,Binding Model,False,version 2
-15,binding_view_types,,char,,,Binding View Types,False,version 2
+2,binding_type,,,,selection,,Binding Type,True,version 2
+3,binding_model_id,,,,many2one,ir.model,Binding Model,False,version 2
+4,binding_view_types,,,,char,,Binding View Types,False,version 2
 ,,,,
 ,,,,

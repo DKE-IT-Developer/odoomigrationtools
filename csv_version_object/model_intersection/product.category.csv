@@ -1,35 +1,35 @@
 model,product.category,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,create_date,datetime,datetime,,Created on,Created on,False,both
-2,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-3,product_count,integer,integer,,# Products,# Products,False,both
-4,total_route_ids,many2many,many2many,stock.location.route,Total routes,Total routes,False,both
-5,child_id,one2many,one2many,product.category,Child Categories,Child Categories,False,both
-6,property_stock_valuation_account_id,many2one,many2one,account.account,Stock Valuation Account,Stock Valuation Account,False,both
-7,id,integer,integer,,ID,ID,False,both
-8,removal_strategy_id,many2one,many2one,product.removal,Force Removal Strategy,Force Removal Strategy,False,both
-9,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-10,property_account_creditor_price_difference_categ,many2one,many2one,account.account,Price Difference Account,Price Difference Account,False,both
-11,display_name,char,char,,Display Name,Display Name,False,both
-12,parent_id,many2one,many2one,product.category,Parent Category,Parent Category,False,both
-13,property_valuation,selection,selection,,Inventory Valuation,Inventory Valuation,True,both
-14,property_stock_account_output_categ_id,many2one,many2one,account.account,Stock Output Account,Stock Output Account,False,both
-15,property_account_income_categ_id,many2one,many2one,account.account,Income Account,Income Account,False,both
-16,property_cost_method,selection,selection,,Costing Method,Costing Method,True,both
-17,property_stock_account_input_categ_id,many2one,many2one,account.account,Stock Input Account,Stock Input Account,False,both
-18,property_stock_journal,many2one,many2one,account.journal,Stock Journal,Stock Journal,False,both
-19,property_account_expense_categ_id,many2one,many2one,account.account,Expense Account,Expense Account,False,both
-20,route_ids,many2many,many2many,stock.location.route,Routes,Routes,False,both
-21,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-22,name,char,char,,Name,Name,True,both
-23,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,total_route_ids,many2many,stock.location.route,Total routes,many2many,stock.location.route,Total routes,False,both
+1,product_count,integer,,# Products,integer,,# Products,False,both
+1,child_id,one2many,product.category,Child Categories,one2many,product.category,Child Categories,False,both
+1,property_stock_valuation_account_id,many2one,account.account,Stock Valuation Account,many2one,account.account,Stock Valuation Account,False,both
+1,id,integer,,ID,integer,,ID,False,both
+1,removal_strategy_id,many2one,product.removal,Force Removal Strategy,many2one,product.removal,Force Removal Strategy,False,both
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,property_account_creditor_price_difference_categ,many2one,account.account,Price Difference Account,many2one,account.account,Price Difference Account,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,property_stock_account_output_categ_id,many2one,account.account,Stock Output Account,many2one,account.account,Stock Output Account,False,both
+1,property_valuation,selection,,Inventory Valuation,selection,,Inventory Valuation,True,both
+1,parent_id,many2one,product.category,Parent Category,many2one,product.category,Parent Category,False,both
+1,property_account_income_categ_id,many2one,account.account,Income Account,many2one,account.account,Income Account,False,both
+1,property_cost_method,selection,,Costing Method,selection,,Costing Method,True,both
+1,property_stock_account_input_categ_id,many2one,account.account,Stock Input Account,many2one,account.account,Stock Input Account,False,both
+1,property_stock_journal,many2one,account.journal,Stock Journal,many2one,account.journal,Stock Journal,False,both
+1,property_account_expense_categ_id,many2one,account.account,Expense Account,many2one,account.account,Expense Account,False,both
+1,route_ids,many2many,stock.location.route,Routes,many2many,stock.location.route,Routes,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,name,char,,Name,char,,Name,True,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
 ,,,,
-24,parent_right,integer,,,Right Parent,,False,version 1
-25,parent_left,integer,,,Left Parent,,False,version 1
-26,type,selection,,,Category Type,,False,version 1
+1,parent_right,integer,,Right Parent,,,,False,version 1
+2,parent_left,integer,,Left Parent,,,,False,version 1
+3,type,selection,,Category Type,,,,False,version 1
 ,,,,
-27,parent_path,,char,,,Parent Path,False,version 2
-28,complete_name,,char,,,Complete Name,False,version 2
-29,putaway_rule_ids,,one2many,stock.putaway.rule,,Putaway Rules,False,version 2
+4,parent_path,,,,char,,Parent Path,False,version 2
+5,complete_name,,,,char,,Complete Name,False,version 2
+6,putaway_rule_ids,,,,one2many,stock.putaway.rule,Putaway Rules,False,version 2
 ,,,,
 ,,,,

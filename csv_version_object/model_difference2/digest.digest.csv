@@ -1,0 +1,34 @@
+model,digest.digest,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,kpi_website_sale_total_value,,,,monetary,,Kpi Website Sale Total Value,False,version 2
+2,create_date,,,,datetime,,Created on,False,version 2
+3,periodicity,,,,selection,,Periodicity,True,version 2
+4,kpi_project_task_opened_value,,,,integer,,Kpi Project Task Opened Value,False,version 2
+5,is_subscribed,,,,boolean,,Is user subscribed,False,version 2
+6,kpi_res_users_connected,,,,boolean,,Connected Users,False,version 2
+7,kpi_website_sale_total,,,,boolean,,eCommerce Sales,False,version 2
+8,currency_id,,,,many2one,res.currency,Currency,False,version 2
+9,kpi_mail_message_total,,,,boolean,,Messages,False,version 2
+10,kpi_all_sale_total,,,,boolean,,All Sales,False,version 2
+11,id,,,,integer,,ID,False,version 2
+12,create_uid,,,,many2one,res.users,Created by,False,version 2
+13,display_name,,,,char,,Display Name,False,version 2
+14,kpi_res_users_connected_value,,,,integer,,Kpi Res Users Connected Value,False,version 2
+15,kpi_project_task_opened,,,,boolean,,Open Tasks,False,version 2
+16,company_id,,,,many2one,res.company,Company,False,version 2
+17,state,,,,selection,,Status,False,version 2
+18,kpi_mail_message_total_value,,,,integer,,Kpi Mail Message Total Value,False,version 2
+19,kpi_all_sale_total_value,,,,monetary,,Kpi All Sale Total Value,False,version 2
+20,kpi_account_total_revenue,,,,boolean,,Revenue,False,version 2
+21,kpi_account_bank_cash,,,,boolean,,Bank & Cash Moves,False,version 2
+22,user_ids,,,,many2many,res.users,Recipients,False,version 2
+23,write_date,,,,datetime,,Last Updated on,False,version 2
+24,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+25,kpi_account_total_revenue_value,,,,monetary,,Kpi Account Total Revenue Value,False,version 2
+26,available_fields,,,,char,,Available Fields,False,version 2
+27,name,,,,char,,Name,True,version 2
+28,kpi_account_bank_cash_value,,,,monetary,,Kpi Account Bank Cash Value,False,version 2
+29,__last_update,,,,datetime,,Last Modified on,False,version 2
+30,next_run_date,,,,date,,Next Send Date,False,version 2
+,,,,
+,,,,

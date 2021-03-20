@@ -1,34 +1,34 @@
 model,ir.model,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,info,text,text,,Information,Information,False,both
-2,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-3,inherited_model_ids,many2many,many2many,ir.model,Inherited models,Inherited models,False,both
-4,access_ids,one2many,one2many,ir.model.access,Access,Access,False,both
-5,display_name,char,char,,Display Name,Display Name,False,both
-6,name,char,char,,Model Description,Model Description,True,both
-7,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-8,field_id,one2many,one2many,ir.model.fields,Fields,Fields,True,both
-9,website_form_access,boolean,boolean,,Allowed to use in forms,Allowed to use in forms,False,both
-10,modules,char,char,,In Apps,In Apps,False,both
-11,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-12,state,selection,selection,,Type,Type,False,both
-13,transient,boolean,boolean,,Transient Model,Transient Model,False,both
-14,website_form_default_field_id,many2one,many2one,ir.model.fields,Field for custom form data,Field for custom form data,False,both
-15,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-16,id,integer,integer,,ID,ID,False,both
-17,create_date,datetime,datetime,,Created on,Created on,False,both
-18,model,char,char,,Model,Model,True,both
-19,view_ids,one2many,one2many,ir.ui.view,Views,Views,False,both
-20,website_form_label,char,char,,Label for form action,Label for form action,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,info,text,,Information,text,,Information,False,both
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,access_ids,one2many,ir.model.access,Access,one2many,ir.model.access,Access,False,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,name,char,,Model Description,char,,Model Description,True,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,modules,char,,In Apps,char,,In Apps,False,both
+1,website_form_access,boolean,,Allowed to use in forms,boolean,,Allowed to use in forms,False,both
+1,field_id,one2many,ir.model.fields,Fields,one2many,ir.model.fields,Fields,True,both
+1,website_form_label,char,,Label for form action,char,,Label for form action,False,both
+1,view_ids,one2many,ir.ui.view,Views,one2many,ir.ui.view,Views,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,state,selection,,Type,selection,,Type,False,both
+1,transient,boolean,,Transient Model,boolean,,Transient Model,False,both
+1,website_form_default_field_id,many2one,ir.model.fields,Field for custom form data,many2one,ir.model.fields,Field for custom form data,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,model,char,,Model,char,,Model,True,both
+1,inherited_model_ids,many2many,ir.model,Inherited models,many2many,ir.model,Inherited models,False,both
+1,id,integer,,ID,integer,,ID,False,both
 ,,,,
 ,,,,
-21,rule_ids,,one2many,ir.rule,,Record Rules,False,version 2
-22,is_mail_thread,,boolean,,,Mail Thread,False,version 2
-23,is_mail_activity,,boolean,,,Mail Activity,False,version 2
-24,count,,integer,,,Count (Incl. Archived),False,version 2
-25,is_mail_thread_sms,,boolean,,,Mail Thread SMS,False,version 2
-26,is_mail_blacklist,,boolean,,,Mail Blacklist,False,version 2
-27,website_form_key,,char,,,Website Form Key,False,version 2
-28,order,,char,,,Order,True,version 2
+1,rule_ids,,,,one2many,ir.rule,Record Rules,False,version 2
+2,is_mail_thread,,,,boolean,,Mail Thread,False,version 2
+3,is_mail_activity,,,,boolean,,Mail Activity,False,version 2
+4,count,,,,integer,,Count (Incl. Archived),False,version 2
+5,is_mail_thread_sms,,,,boolean,,Mail Thread SMS,False,version 2
+6,is_mail_blacklist,,,,boolean,,Mail Blacklist,False,version 2
+7,website_form_key,,,,char,,Website Form Key,False,version 2
+8,order,,,,char,,Order,True,version 2
 ,,,,
 ,,,,

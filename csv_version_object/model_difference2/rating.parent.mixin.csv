@@ -1,0 +1,9 @@
+model,rating.parent.mixin,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,rating_ids,,,,one2many,rating.rating,Ratings,False,version 2
+2,__last_update,,,,datetime,,Last Modified on,False,version 2
+3,display_name,,,,char,,Display Name,False,version 2
+4,id,,,,integer,,ID,False,version 2
+5,rating_percentage_satisfaction,,,,integer,,Rating Satisfaction,False,version 2
+,,,,
+,,,,

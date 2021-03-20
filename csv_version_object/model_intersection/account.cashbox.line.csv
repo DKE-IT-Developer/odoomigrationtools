@@ -1,18 +1,18 @@
 model,account.cashbox.line,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-2,display_name,char,char,,Display Name,Display Name,False,both
-3,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-4,number,integer,integer,,Number of Coins/Bills,#Coins/Bills,False,both
-5,cashbox_id,many2one,many2one,account.bank.statement.cashbox,Cashbox,Cashbox,False,both
-6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-7,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-8,coin_value,float,float,,Coin/Bill Value,Coin/Bill Value,True,both
-9,create_date,datetime,datetime,,Created on,Created on,False,both
-10,subtotal,float,float,,Subtotal,Subtotal,False,both
-11,id,integer,integer,,ID,ID,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,number,integer,,Number of Coins/Bills,integer,,#Coins/Bills,False,both
+1,cashbox_id,many2one,account.bank.statement.cashbox,Cashbox,many2one,account.bank.statement.cashbox,Cashbox,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,coin_value,float,,Coin/Bill Value,float,,Coin/Bill Value,True,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,subtotal,float,,Subtotal,float,,Subtotal,False,both
+1,id,integer,,ID,integer,,ID,False,both
 ,,,,
 ,,,,
-12,currency_id,,many2one,res.currency,,Currency,False,version 2
+1,currency_id,,,,many2one,res.currency,Currency,False,version 2
 ,,,,
 ,,,,

@@ -1,0 +1,25 @@
+model,base.partner.merge.automatic.wizard,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,exclude_journal_item,,,,boolean,,Journal Items associated to the contact,False,version 2
+2,create_uid,,,,many2one,res.users,Created by,False,version 2
+3,number_group,,,,integer,,Group of Contacts,False,version 2
+4,display_name,,,,char,,Display Name,False,version 2
+5,write_date,,,,datetime,,Last Updated on,False,version 2
+6,group_by_vat,,,,boolean,,VAT,False,version 2
+7,group_by_email,,,,boolean,,Email,False,version 2
+8,__last_update,,,,datetime,,Last Modified on,False,version 2
+9,exclude_contact,,,,boolean,,A user associated to the contact,False,version 2
+10,group_by_is_company,,,,boolean,,Is Company,False,version 2
+11,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+12,state,,,,selection,,State,True,version 2
+13,current_line_id,,,,many2one,base.partner.merge.line,Current Line,False,version 2
+14,maximum_group,,,,integer,,Maximum of Group of Contacts,False,version 2
+15,group_by_name,,,,boolean,,Name,False,version 2
+16,line_ids,,,,one2many,base.partner.merge.line,Lines,False,version 2
+17,partner_ids,,,,many2many,res.partner,Contacts,False,version 2
+18,group_by_parent_id,,,,boolean,,Parent Company,False,version 2
+19,id,,,,integer,,ID,False,version 2
+20,create_date,,,,datetime,,Created on,False,version 2
+21,dst_partner_id,,,,many2one,res.partner,Destination Contact,False,version 2
+,,,,
+,,,,

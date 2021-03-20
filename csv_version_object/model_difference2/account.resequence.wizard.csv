@@ -1,0 +1,19 @@
+model,account.resequence.wizard,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,,,,many2one,res.users,Created by,False,version 2
+2,first_name,,,,char,,First New Sequence,True,version 2
+3,sequence_number_reset,,,,char,,Sequence Number Reset,False,version 2
+4,end_date,,,,date,,End Date,False,version 2
+5,first_date,,,,date,,First Date,False,version 2
+6,ordering,,,,selection,,Ordering,True,version 2
+7,new_values,,,,text,,New Values,False,version 2
+8,__last_update,,,,datetime,,Last Modified on,False,version 2
+9,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+10,move_ids,,,,many2many,account.move,Move,False,version 2
+11,create_date,,,,datetime,,Created on,False,version 2
+12,write_date,,,,datetime,,Last Updated on,False,version 2
+13,display_name,,,,char,,Display Name,False,version 2
+14,id,,,,integer,,ID,False,version 2
+15,preview_moves,,,,text,,Preview Moves,False,version 2
+,,,,
+,,,,

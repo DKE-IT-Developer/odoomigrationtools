@@ -1,25 +1,25 @@
 model,ir.sequence,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-2,code,char,char,,Sequence Code,Sequence Code,False,both
-3,display_name,char,char,,Display Name,Display Name,False,both
-4,name,char,char,,Name,Name,True,both
-5,number_next,integer,integer,,Next Number,Next Number,True,both
-6,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-7,implementation,selection,selection,,Implementation,Implementation,True,both
-8,company_id,many2one,many2one,res.company,Company,Company,False,both
-9,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-10,padding,integer,integer,,Sequence Size,Sequence Size,True,both
-11,number_increment,integer,integer,,Step,Step,True,both
-12,prefix,char,char,,Prefix,Prefix,False,both
-13,date_range_ids,one2many,one2many,ir.sequence.date_range,Subsequences,Subsequences,False,both
-14,use_date_range,boolean,boolean,,Use subsequences per date_range,Use subsequences per date_range,False,both
-15,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-16,number_next_actual,integer,integer,,Next Number,Actual Next Number,False,both
-17,create_date,datetime,datetime,,Created on,Created on,False,both
-18,active,boolean,boolean,,Active,Active,False,both
-19,id,integer,integer,,ID,ID,False,both
-20,suffix,char,char,,Suffix,Suffix,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,code,char,,Sequence Code,char,,Sequence Code,False,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,suffix,char,,Suffix,char,,Suffix,False,both
+1,number_next,integer,,Next Number,integer,,Next Number,True,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,implementation,selection,,Implementation,selection,,Implementation,True,both
+1,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,padding,integer,,Sequence Size,integer,,Sequence Size,True,both
+1,number_increment,integer,,Step,integer,,Step,True,both
+1,prefix,char,,Prefix,char,,Prefix,False,both
+1,date_range_ids,one2many,ir.sequence.date_range,Subsequences,one2many,ir.sequence.date_range,Subsequences,False,both
+1,use_date_range,boolean,,Use subsequences per date_range,boolean,,Use subsequences per date_range,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,number_next_actual,integer,,Next Number,integer,,Actual Next Number,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,active,boolean,,Active,boolean,,Active,False,both
+1,id,integer,,ID,integer,,ID,False,both
+1,name,char,,Name,char,,Name,True,both
 ,,,,
 ,,,,
 ,,,,

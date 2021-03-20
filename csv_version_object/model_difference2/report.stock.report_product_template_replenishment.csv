@@ -1,0 +1,7 @@
+model,report.stock.report_product_template_replenishment,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,display_name,,,,char,,Display Name,False,version 2
+2,id,,,,integer,,ID,False,version 2
+3,__last_update,,,,datetime,,Last Modified on,False,version 2
+,,,,
+,,,,

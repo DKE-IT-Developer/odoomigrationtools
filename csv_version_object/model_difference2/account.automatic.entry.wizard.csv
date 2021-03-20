@@ -1,0 +1,26 @@
+model,account.automatic.entry.wizard,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_date,,,,datetime,,Created on,False,version 2
+2,expense_accrual_account,,,,many2one,account.account,Expense Accrual Account,False,version 2
+3,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+4,company_currency_id,,,,many2one,res.currency,Currency,False,version 2
+5,revenue_accrual_account,,,,many2one,account.account,Revenue Accrual Account,False,version 2
+6,move_data,,,,text,,Move Data,False,version 2
+7,id,,,,integer,,ID,False,version 2
+8,create_uid,,,,many2one,res.users,Created by,False,version 2
+9,display_name,,,,char,,Display Name,False,version 2
+10,__last_update,,,,datetime,,Last Modified on,False,version 2
+11,company_id,,,,many2one,res.company,Company,True,version 2
+12,percentage,,,,float,,Percentage,False,version 2
+13,account_type,,,,selection,,Account Type,False,version 2
+14,preview_move_data,,,,text,,Preview Move Data,False,version 2
+15,display_currency_helper,,,,boolean,,Currency Conversion Helper,False,version 2
+16,move_line_ids,,,,many2many,account.move.line,Move Line,False,version 2
+17,write_date,,,,datetime,,Last Updated on,False,version 2
+18,date,,,,date,,Date,True,version 2
+19,total_amount,,,,monetary,,Total Amount,False,version 2
+20,journal_id,,,,many2one,account.journal,Journal,True,version 2
+21,action,,,,selection,,Action,True,version 2
+22,destination_account_id,,,,many2one,account.account,To,False,version 2
+,,,,
+,,,,

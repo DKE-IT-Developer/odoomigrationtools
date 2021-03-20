@@ -1,28 +1,28 @@
 model,project.task.type,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-2,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-3,display_name,char,char,,Display Name,Display Name,False,both
-4,description,text,text,,Description,Description,False,both
-5,sequence,integer,integer,,Sequence,Sequence,False,both
-6,project_ids,many2many,many2many,project.project,Projects,Projects,False,both
-7,legend_done,char,char,,Kanban Valid Explanation,Green Kanban Label,True,both
-8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-9,fold,boolean,boolean,,Folded in Kanban,Folded in Kanban,False,both
-10,legend_blocked,char,char,,Kanban Blocked Explanation,Red Kanban Label,True,both
-11,legend_normal,char,char,,Kanban Ongoing Explanation,Grey Kanban Label,True,both
-12,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-13,create_date,datetime,datetime,,Created on,Created on,False,both
-14,id,integer,integer,,ID,ID,False,both
-15,mail_template_id,many2one,many2one,mail.template,Email Template,Email Template,False,both
-16,name,char,char,,Stage Name,Stage Name,True,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,description,text,,Description,text,,Description,False,both
+1,sequence,integer,,Sequence,integer,,Sequence,False,both
+1,project_ids,many2many,project.project,Projects,many2many,project.project,Projects,False,both
+1,legend_done,char,,Kanban Valid Explanation,char,,Green Kanban Label,True,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,fold,boolean,,Folded in Kanban,boolean,,Folded in Kanban,False,both
+1,legend_blocked,char,,Kanban Blocked Explanation,char,,Red Kanban Label,True,both
+1,legend_normal,char,,Kanban Ongoing Explanation,char,,Grey Kanban Label,True,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,id,integer,,ID,integer,,ID,False,both
+1,mail_template_id,many2one,mail.template,Email Template,many2one,mail.template,Email Template,False,both
+1,name,char,,Stage Name,char,,Stage Name,True,both
 ,,,,
-17,legend_priority,char,,,Priority Management Explanation,,False,version 1
+1,legend_priority,char,,Priority Management Explanation,,,,False,version 1
 ,,,,
-18,rating_template_id,,many2one,mail.template,,Rating Email Template,False,version 2
-19,auto_validation_kanban_state,,boolean,,,Automatic kanban status,False,version 2
-20,active,,boolean,,,Active,False,version 2
-21,disabled_rating_warning,,text,,,Disabled Rating Warning,False,version 2
-22,is_closed,,boolean,,,Closing Stage,False,version 2
+2,rating_template_id,,,,many2one,mail.template,Rating Email Template,False,version 2
+3,auto_validation_kanban_state,,,,boolean,,Automatic kanban status,False,version 2
+4,active,,,,boolean,,Active,False,version 2
+5,disabled_rating_warning,,,,text,,Disabled Rating Warning,False,version 2
+6,is_closed,,,,boolean,,Closing Stage,False,version 2
 ,,,,
 ,,,,

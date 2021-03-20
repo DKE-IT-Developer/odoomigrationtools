@@ -1,0 +1,29 @@
+model,ir.actions.report,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,groups_id,,,,many2many,res.groups,Groups,False,version 2
+2,xml_id,,,,char,,External ID,False,version 2
+3,create_date,,,,datetime,,Created on,False,version 2
+4,help,,,,html,,Action Description,False,version 2
+5,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+6,report_type,,,,selection,,Report Type,True,version 2
+7,id,,,,integer,,ID,False,version 2
+8,create_uid,,,,many2one,res.users,Created by,False,version 2
+9,display_name,,,,char,,Display Name,False,version 2
+10,__last_update,,,,datetime,,Last Modified on,False,version 2
+11,binding_type,,,,selection,,Binding Type,True,version 2
+12,paperformat_id,,,,many2one,report.paperformat,Paper Format,False,version 2
+13,attachment,,,,char,,Save as Attachment Prefix,False,version 2
+14,type,,,,char,,Action Type,True,version 2
+15,model_id,,,,many2one,ir.model,Model,False,version 2
+16,binding_view_types,,,,char,,Binding View Types,False,version 2
+17,write_date,,,,datetime,,Last Updated on,False,version 2
+18,binding_model_id,,,,many2one,ir.model,Binding Model,False,version 2
+19,report_file,,,,char,,Report File,False,version 2
+20,multi,,,,boolean,,On Multiple Doc.,False,version 2
+21,name,,,,char,,Name,True,version 2
+22,print_report_name,,,,char,,Printed Report Name,False,version 2
+23,report_name,,,,char,,Template Name,True,version 2
+24,attachment_use,,,,boolean,,Reload from Attachment,False,version 2
+25,model,,,,char,,Model Name,True,version 2
+,,,,
+,,,,

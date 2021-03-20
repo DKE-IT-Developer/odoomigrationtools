@@ -1,29 +1,29 @@
 model,asset.modify,transient,True
-no,field,type1,type2,relation,string1,string2,required,source
-1,method_number,integer,integer,,Number of Depreciations,Number of Depreciations,True,both
-2,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-3,display_name,char,char,,Display Name,Display Name,False,both
-4,name,text,text,,Reason,Reason,False,both
-5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-7,method_period,integer,selection,,Period Length,Number of Months in a Period,False,both
-8,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-9,create_date,datetime,datetime,,Created on,Created on,False,both
-10,id,integer,integer,,ID,ID,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,method_number,integer,,Number of Depreciations,integer,,Number of Depreciations,True,both
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,name,text,,Reason,text,,Reason,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,method_period,integer,,Period Length,selection,,Number of Months in a Period,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,id,integer,,ID,integer,,ID,False,both
 ,,,,
-11,method_end,date,,,Ending date,,False,version 1
-12,asset_method_time,char,,,Asset Method Time,,False,version 1
+1,method_end,date,,Ending date,,,,False,version 1
+2,asset_method_time,char,,Asset Method Time,,,,False,version 1
 ,,,,
-13,account_asset_id,,many2one,account.account,,Asset Gross Increase Account,False,version 2
-14,account_depreciation_id,,many2one,account.account,,Account Depreciation,False,version 2
-15,salvage_value,,monetary,,,Not Depreciable Amount,False,version 2
-16,currency_id,,many2one,res.currency,,Currency,False,version 2
-17,account_depreciation_expense_id,,many2one,account.account,,Account Depreciation Expense,False,version 2
-18,value_residual,,monetary,,,Depreciable Amount,False,version 2
-19,need_date,,boolean,,,Need Date,False,version 2
-20,date,,date,,,Date,False,version 2
-21,account_asset_counterpart_id,,many2one,account.account,,Account Asset Counterpart,False,version 2
-22,gain_value,,boolean,,,Gain Value,False,version 2
-23,asset_id,,many2one,account.asset,,Asset,True,version 2
+3,account_asset_id,,,,many2one,account.account,Asset Gross Increase Account,False,version 2
+4,account_depreciation_id,,,,many2one,account.account,Account Depreciation,False,version 2
+5,salvage_value,,,,monetary,,Not Depreciable Amount,False,version 2
+6,currency_id,,,,many2one,res.currency,Currency,False,version 2
+7,account_depreciation_expense_id,,,,many2one,account.account,Account Depreciation Expense,False,version 2
+8,value_residual,,,,monetary,,Depreciable Amount,False,version 2
+9,need_date,,,,boolean,,Need Date,False,version 2
+10,date,,,,date,,Date,False,version 2
+11,account_asset_counterpart_id,,,,many2one,account.account,Account Asset Counterpart,False,version 2
+12,gain_value,,,,boolean,,Gain Value,False,version 2
+13,asset_id,,,,many2one,account.asset,Asset,True,version 2
 ,,,,
 ,,,,

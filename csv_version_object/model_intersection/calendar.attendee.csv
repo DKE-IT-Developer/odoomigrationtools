@@ -1,21 +1,21 @@
 model,calendar.attendee,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-2,display_name,char,char,,Display Name,Display Name,False,both
-3,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-4,access_token,char,char,,Invitation Token,Invitation Token,False,both
-5,id,integer,integer,,ID,ID,False,both
-6,email,char,char,,Email,Email,False,both
-7,event_id,many2one,many2one,calendar.event,Meeting linked,Meeting linked,True,both
-8,state,selection,selection,,Status,Status,False,both
-9,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-10,common_name,char,char,,Common name,Common name,False,both
-11,create_date,datetime,datetime,,Created on,Created on,False,both
-12,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-13,partner_id,many2one,many2one,res.partner,Contact,Contact,True,both
-14,availability,selection,selection,,Free/Busy,Free/Busy,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,access_token,char,,Invitation Token,char,,Invitation Token,False,both
+1,availability,selection,,Free/Busy,selection,,Free/Busy,False,both
+1,id,integer,,ID,integer,,ID,False,both
+1,event_id,many2one,calendar.event,Meeting linked,many2one,calendar.event,Meeting linked,True,both
+1,state,selection,,Status,selection,,Status,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,common_name,char,,Common name,char,,Common name,False,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,partner_id,many2one,res.partner,Contact,many2one,res.partner,Contact,True,both
+1,email,char,,Email,char,,Email,False,both
 ,,,,
 ,,,,
-15,recurrence_id,,many2one,calendar.recurrence,,Recurrence Rule,False,version 2
+1,recurrence_id,,,,many2one,calendar.recurrence,Recurrence Rule,False,version 2
 ,,,,
 ,,,,

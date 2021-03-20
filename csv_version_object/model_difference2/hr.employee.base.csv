@@ -1,0 +1,30 @@
+model,hr.employee.base,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,address_id,,,,many2one,res.partner,Work Address,False,version 2
+2,coach_id,,,,many2one,hr.employee,Coach,False,version 2
+3,resource_id,,,,many2one,resource.resource,Resource,False,version 2
+4,color,,,,integer,,Color Index,False,version 2
+5,child_all_count,,,,integer,,Indirect Subordinates Count,False,version 2
+6,last_activity,,,,date,,Last Activity,False,version 2
+7,display_name,,,,char,,Display Name,False,version 2
+8,id,,,,integer,,ID,False,version 2
+9,user_id,,,,many2one,res.users,User,False,version 2
+10,job_id,,,,many2one,hr.job,Job Position,False,version 2
+11,__last_update,,,,datetime,,Last Modified on,False,version 2
+12,work_phone,,,,char,,Work Phone,False,version 2
+13,company_id,,,,many2one,res.company,Company,False,version 2
+14,parent_id,,,,many2one,hr.employee,Manager,False,version 2
+15,hr_presence_state,,,,selection,,Hr Presence State,False,version 2
+16,last_activity_time,,,,char,,Last Activity Time,False,version 2
+17,department_id,,,,many2one,hr.department,Department,False,version 2
+18,mobile_phone,,,,char,,Work Mobile,False,version 2
+19,active,,,,boolean,,Active,False,version 2
+20,tz,,,,selection,,Timezone,False,version 2
+21,work_email,,,,char,,Work Email,False,version 2
+22,hr_icon_display,,,,selection,,Hr Icon Display,False,version 2
+23,resource_calendar_id,,,,many2one,resource.calendar,Resource Calendar,False,version 2
+24,work_location,,,,char,,Work Location,False,version 2
+25,name,,,,char,,Name,False,version 2
+26,job_title,,,,char,,Job Title,False,version 2
+,,,,
+,,,,

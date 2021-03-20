@@ -1,0 +1,25 @@
+model,stock.valuation.layer.revaluation,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,current_value_svl,,,,float,,Current Value,False,version 2
+2,display_name,,,,char,,Display Name,False,version 2
+3,product_id,,,,many2one,product.product,Related product,True,version 2
+4,create_uid,,,,many2one,res.users,Created by,False,version 2
+5,product_uom_name,,,,char,,Unit of Measure,False,version 2
+6,id,,,,integer,,ID,False,version 2
+7,__last_update,,,,datetime,,Last Modified on,False,version 2
+8,company_id,,,,many2one,res.company,Company,True,version 2
+9,account_id,,,,many2one,account.account,Counterpart Account,False,version 2
+10,current_quantity_svl,,,,float,,Current Quantity,False,version 2
+11,currency_id,,,,many2one,res.currency,Currency,True,version 2
+12,property_valuation,,,,selection,,Inventory Valuation,False,version 2
+13,reason,,,,char,,Reason,False,version 2
+14,write_date,,,,datetime,,Last Updated on,False,version 2
+15,date,,,,date,,Accounting Date,False,version 2
+16,new_value,,,,monetary,,New value,False,version 2
+17,create_date,,,,datetime,,Created on,False,version 2
+18,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+19,account_journal_id,,,,many2one,account.journal,Journal,True,version 2
+20,new_value_by_qty,,,,monetary,,New value by quantity,False,version 2
+21,added_value,,,,monetary,,Added value,True,version 2
+,,,,
+,,,,

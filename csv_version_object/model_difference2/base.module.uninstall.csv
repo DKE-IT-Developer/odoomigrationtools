@@ -1,0 +1,15 @@
+model,base.module.uninstall,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,model_ids,,,,many2many,ir.model,Impacted data models,False,version 2
+2,__last_update,,,,datetime,,Last Modified on,False,version 2
+3,display_name,,,,char,,Display Name,False,version 2
+4,create_uid,,,,many2one,res.users,Created by,False,version 2
+5,module_ids,,,,many2many,ir.module.module,Impacted modules,False,version 2
+6,show_all,,,,boolean,,Show All,False,version 2
+7,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+8,create_date,,,,datetime,,Created on,False,version 2
+9,write_date,,,,datetime,,Last Updated on,False,version 2
+10,module_id,,,,many2one,ir.module.module,Module,True,version 2
+11,id,,,,integer,,ID,False,version 2
+,,,,
+,,,,

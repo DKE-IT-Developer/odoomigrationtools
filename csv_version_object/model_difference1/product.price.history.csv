@@ -1,0 +1,15 @@
+model,product.price.history,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,,,,False,version 1
+2,display_name,char,,Display Name,,,,False,version 1
+3,product_id,many2one,product.product,Product,,,,True,version 1
+4,__last_update,datetime,,Last Modified on,,,,False,version 1
+5,company_id,many2one,res.company,Company,,,,True,version 1
+6,datetime,datetime,,Date,,,,False,version 1
+7,cost,float,,Cost,,,,False,version 1
+8,write_date,datetime,,Last Updated on,,,,False,version 1
+9,create_date,datetime,,Created on,,,,False,version 1
+10,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
+11,id,integer,,ID,,,,False,version 1
+,,,,
+,,,,

@@ -1,18 +1,18 @@
 model,mail.wizard.invite,transient,True
-no,field,type1,type2,relation,string1,string2,required,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-2,display_name,char,char,,Display Name,Display Name,False,both
-3,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-4,channel_ids,many2many,many2many,mail.channel,Channels,Channels,False,both
-5,send_mail,boolean,boolean,,Send Email,Send Email,False,both
-6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-7,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-8,res_model,char,char,,Related Document Model,Related Document Model,True,both
-9,create_date,datetime,datetime,,Created on,Created on,False,both
-10,message,html,html,,Message,Message,False,both
-11,partner_ids,many2many,many2many,res.partner,Recipients,Recipients,False,both
-12,res_id,integer,integer,,Related Document ID,Related Document ID,False,both
-13,id,integer,integer,,ID,ID,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,channel_ids,many2many,mail.channel,Channels,many2many,mail.channel,Channels,False,both
+1,send_mail,boolean,,Send Email,boolean,,Send Email,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,res_model,char,,Related Document Model,char,,Related Document Model,True,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,message,html,,Message,html,,Message,False,both
+1,partner_ids,many2many,res.partner,Recipients,many2many,res.partner,Recipients,False,both
+1,res_id,integer,,Related Document ID,integer,,Related Document ID,False,both
+1,id,integer,,ID,integer,,ID,False,both
 ,,,,
 ,,,,
 ,,,,

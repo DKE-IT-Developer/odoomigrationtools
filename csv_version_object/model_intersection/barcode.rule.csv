@@ -1,19 +1,19 @@
 model,barcode.rule,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-2,display_name,char,char,,Display Name,Display Name,False,both
-3,name,char,char,,Rule Name,Rule Name,True,both
-4,sequence,integer,integer,,Sequence,Sequence,False,both
-5,pattern,char,char,,Barcode Pattern,Barcode Pattern,True,both
-6,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-8,encoding,selection,selection,,Encoding,Encoding,True,both
-9,alias,char,char,,Alias,Alias,True,both
-10,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-11,barcode_nomenclature_id,many2one,many2one,barcode.nomenclature,Barcode Nomenclature,Barcode Nomenclature,False,both
-12,create_date,datetime,datetime,,Created on,Created on,False,both
-13,type,selection,selection,,Type,Type,True,both
-14,id,integer,integer,,ID,ID,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,name,char,,Rule Name,char,,Rule Name,True,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,pattern,char,,Barcode Pattern,char,,Barcode Pattern,True,both
+1,sequence,integer,,Sequence,integer,,Sequence,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,encoding,selection,,Encoding,selection,,Encoding,True,both
+1,alias,char,,Alias,char,,Alias,True,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,barcode_nomenclature_id,many2one,barcode.nomenclature,Barcode Nomenclature,many2one,barcode.nomenclature,Barcode Nomenclature,False,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,type,selection,,Type,selection,,Type,True,both
+1,id,integer,,ID,integer,,ID,False,both
 ,,,,
 ,,,,
 ,,,,

@@ -1,0 +1,15 @@
+model,project.task.type.delete.wizard,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,,,,many2one,res.users,Created by,False,version 2
+2,stage_ids,,,,many2many,project.task.type,Stages To Delete,False,version 2
+3,__last_update,,,,datetime,,Last Modified on,False,version 2
+4,project_ids,,,,many2many,project.project,Projects,False,version 2
+5,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+6,tasks_count,,,,integer,,Number of tasks,False,version 2
+7,create_date,,,,datetime,,Created on,False,version 2
+8,write_date,,,,datetime,,Last Updated on,False,version 2
+9,display_name,,,,char,,Display Name,False,version 2
+10,stages_active,,,,boolean,,Stages Active,False,version 2
+11,id,,,,integer,,ID,False,version 2
+,,,,
+,,,,

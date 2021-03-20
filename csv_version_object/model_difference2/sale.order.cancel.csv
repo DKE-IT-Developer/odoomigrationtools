@@ -1,0 +1,14 @@
+model,sale.order.cancel,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,,,,many2one,res.users,Created by,False,version 2
+2,display_invoice_alert,,,,boolean,,Invoice Alert,False,version 2
+3,__last_update,,,,datetime,,Last Modified on,False,version 2
+4,order_id,,,,many2one,sale.order,Sale Order,True,version 2
+5,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+6,create_date,,,,datetime,,Created on,False,version 2
+7,write_date,,,,datetime,,Last Updated on,False,version 2
+8,display_delivery_alert,,,,boolean,,Delivery Alert,False,version 2
+9,display_name,,,,char,,Display Name,False,version 2
+10,id,,,,integer,,ID,False,version 2
+,,,,
+,,,,

@@ -1,0 +1,26 @@
+model,mail.template.preview,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_date,,,,datetime,,Created on,False,version 2
+2,scheduled_date,,,,char,,Scheduled Date,False,version 2
+3,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+4,id,,,,integer,,ID,False,version 2
+5,subject,,,,char,,Subject,False,version 2
+6,create_uid,,,,many2one,res.users,Created by,False,version 2
+7,display_name,,,,char,,Display Name,False,version 2
+8,attachment_ids,,,,many2many,ir.attachment,Attachment,False,version 2
+9,__last_update,,,,datetime,,Last Modified on,False,version 2
+10,no_record,,,,boolean,,No Record,False,version 2
+11,email_cc,,,,char,,Cc,False,version 2
+12,partner_ids,,,,many2many,res.partner,Recipients,False,version 2
+13,mail_template_id,,,,many2one,mail.template,Related Mail Template,True,version 2
+14,model_id,,,,many2one,ir.model,Targeted model,False,version 2
+15,body_html,,,,html,,Body,False,version 2
+16,resource_ref,,,,reference,,Record,False,version 2
+17,email_to,,,,char,,To,False,version 2
+18,write_date,,,,datetime,,Last Updated on,False,version 2
+19,error_msg,,,,char,,Error Message,False,version 2
+20,lang,,,,selection,,Template Preview Language,False,version 2
+21,reply_to,,,,char,,Reply-To,False,version 2
+22,email_from,,,,char,,From,False,version 2
+,,,,
+,,,,

@@ -1,0 +1,22 @@
+model,sms.template,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,body,,,,char,,Body,True,version 2
+2,model_id,,,,many2one,ir.model,Applies to,True,version 2
+3,display_name,,,,char,,Display Name,False,version 2
+4,name,,,,char,,Name,False,version 2
+5,create_uid,,,,many2one,res.users,Created by,False,version 2
+6,sub_model_object_field,,,,many2one,ir.model.fields,Sub-field,False,version 2
+7,__last_update,,,,datetime,,Last Modified on,False,version 2
+8,model_object_field,,,,many2one,ir.model.fields,Field,False,version 2
+9,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+10,sidebar_action_id,,,,many2one,ir.actions.act_window,Sidebar action,False,version 2
+11,sub_object,,,,many2one,ir.model,Sub-model,False,version 2
+12,null_value,,,,char,,Default Value,False,version 2
+13,write_date,,,,datetime,,Last Updated on,False,version 2
+14,create_date,,,,datetime,,Created on,False,version 2
+15,model,,,,char,,Related Document Model,False,version 2
+16,copyvalue,,,,char,,Placeholder Expression,False,version 2
+17,id,,,,integer,,ID,False,version 2
+18,lang,,,,char,,Language,False,version 2
+,,,,
+,,,,

@@ -1,24 +1,24 @@
 model,product.attribute.value,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,html_color,char,char,,HTML Color Index,Color,False,both
-2,display_name,char,char,,Display Name,Display Name,False,both
-3,name,char,char,,Value,Value,True,both
-4,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-6,sequence,integer,integer,,Sequence,Sequence,False,both
-7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-8,attribute_id,many2one,many2one,product.attribute,Attribute,Attribute,True,both
-9,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-10,create_date,datetime,datetime,,Created on,Created on,False,both
-11,id,integer,integer,,ID,ID,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,html_color,char,,HTML Color Index,char,,Color,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,name,char,,Value,char,,Value,True,both
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,sequence,integer,,Sequence,integer,,Sequence,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,attribute_id,many2one,product.attribute,Attribute,many2one,product.attribute,Attribute,True,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,id,integer,,ID,integer,,ID,False,both
 ,,,,
-12,price_ids,one2many,,product.attribute.price,Attribute Prices,,False,version 1
-13,product_ids,many2many,,product.product,Variants,,False,version 1
-14,price_extra,float,,,Attribute Price Extra,,False,version 1
+1,price_ids,one2many,product.attribute.price,Attribute Prices,,,,False,version 1
+2,product_ids,many2many,product.product,Variants,,,,False,version 1
+3,price_extra,float,,Attribute Price Extra,,,,False,version 1
 ,,,,
-15,is_custom,,boolean,,,Is custom value,False,version 2
-16,is_used_on_products,,boolean,,,Used on Products,False,version 2
-17,display_type,,selection,,,Display Type,False,version 2
-18,pav_attribute_line_ids,,many2many,product.template.attribute.line,,Lines,False,version 2
+4,is_custom,,,,boolean,,Is custom value,False,version 2
+5,is_used_on_products,,,,boolean,,Used on Products,False,version 2
+6,display_type,,,,selection,,Display Type,False,version 2
+7,pav_attribute_line_ids,,,,many2many,product.template.attribute.line,Lines,False,version 2
 ,,,,
 ,,,,

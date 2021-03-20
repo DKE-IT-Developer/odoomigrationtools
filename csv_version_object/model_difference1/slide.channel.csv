@@ -1,0 +1,49 @@
+model,slide.channel,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,promote_strategy,selection,,Featuring Policy,,,,True,version 1
+2,message_follower_ids,one2many,mail.followers,Followers,,,,False,version 1
+3,custom_slide_id,many2one,slide.slide,Slide to Promote,,,,False,version 1
+4,access_error_msg,html,,Error Message,,,,False,version 1
+5,create_date,datetime,,Created on,,,,False,version 1
+6,nbr_presentations,integer,,Number of Presentations,,,,False,version 1
+7,message_needaction,boolean,,Action Needed,,,,False,version 1
+8,message_channel_ids,many2many,mail.channel,Followers (Channels),,,,False,version 1
+9,message_partner_ids,many2many,res.partner,Followers (Partners),,,,False,version 1
+10,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
+11,share_template_id,many2one,mail.template,Shared Template,,,,False,version 1
+12,can_see,boolean,,Can See,,,,False,version 1
+13,total,integer,,Total,,,,False,version 1
+14,message_ids,one2many,mail.message,Messages,,,,False,version 1
+15,create_uid,many2one,res.users,Created by,,,,False,version 1
+16,can_upload,boolean,,Can Upload,,,,False,version 1
+17,message_is_follower,boolean,,Is Follower,,,,False,version 1
+18,nbr_videos,integer,,Number of Videos,,,,False,version 1
+19,slide_ids,one2many,slide.slide,Slides,,,,False,version 1
+20,sequence,integer,,Sequence,,,,False,version 1
+21,message_last_post,datetime,,Last Message Date,,,,False,version 1
+22,id,integer,,ID,,,,False,version 1
+23,publish_template_id,many2one,mail.template,Published Template,,,,False,version 1
+24,website_meta_title,char,,Website meta title,,,,False,version 1
+25,category_ids,one2many,slide.category,Categories,,,,False,version 1
+26,nbr_documents,integer,,Number of Documents,,,,False,version 1
+27,message_unread_counter,integer,,Unread Messages Counter,,,,False,version 1
+28,website_published,boolean,,Visible in Website,,,,False,version 1
+29,website_url,char,,Website URL,,,,False,version 1
+30,__last_update,datetime,,Last Modified on,,,,False,version 1
+31,description,html,,Description,,,,False,version 1
+32,visibility,selection,,Visibility,,,,True,version 1
+33,website_meta_description,text,,Website meta description,,,,False,version 1
+34,write_date,datetime,,Last Updated on,,,,False,version 1
+35,active,boolean,,Active,,,,False,version 1
+36,display_name,char,,Display Name,,,,False,version 1
+37,group_ids,many2many,res.groups,Channel Groups,,,,False,version 1
+38,name,char,,Name,,,,True,version 1
+39,upload_group_ids,many2many,res.groups,Upload Groups,,,,False,version 1
+40,promoted_slide_id,many2one,slide.slide,Featured Slide,,,,False,version 1
+41,can_see_full,boolean,,Full Access,,,,False,version 1
+42,nbr_infographics,integer,,Number of Infographics,,,,False,version 1
+43,website_meta_keywords,char,,Website meta keywords,,,,False,version 1
+44,message_unread,boolean,,Unread Messages,,,,False,version 1
+45,message_needaction_counter,integer,,Number of Actions,,,,False,version 1
+,,,,
+,,,,

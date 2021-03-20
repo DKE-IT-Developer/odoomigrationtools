@@ -1,15 +1,15 @@
 model,website.seo.metadata,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,display_name,char,char,,Display Name,Display Name,False,both
-2,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-3,website_meta_description,text,text,,Website meta description,Website meta description,False,both
-4,website_meta_title,char,char,,Website meta title,Website meta title,False,both
-5,website_meta_keywords,char,char,,Website meta keywords,Website meta keywords,False,both
-6,id,integer,integer,,ID,ID,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,website_meta_description,text,,Website meta description,text,,Website meta description,False,both
+1,website_meta_title,char,,Website meta title,char,,Website meta title,False,both
+1,website_meta_keywords,char,,Website meta keywords,char,,Website meta keywords,False,both
+1,id,integer,,ID,integer,,ID,False,both
 ,,,,
 ,,,,
-7,is_seo_optimized,,boolean,,,SEO optimized,False,version 2
-8,website_meta_og_img,,char,,,Website opengraph image,False,version 2
-9,seo_name,,char,,,Seo name,False,version 2
+1,is_seo_optimized,,,,boolean,,SEO optimized,False,version 2
+2,website_meta_og_img,,,,char,,Website opengraph image,False,version 2
+3,seo_name,,,,char,,Seo name,False,version 2
 ,,,,
 ,,,,

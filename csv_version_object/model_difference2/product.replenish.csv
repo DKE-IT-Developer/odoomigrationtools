@@ -1,0 +1,21 @@
+model,product.replenish,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,,,,many2one,res.users,Created by,False,version 2
+2,display_name,,,,char,,Display Name,False,version 2
+3,product_id,,,,many2one,product.product,Product,True,version 2
+4,route_ids,,,,many2many,stock.location.route,Preferred Routes,False,version 2
+5,date_planned,,,,datetime,,Scheduled Date,True,version 2
+6,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+7,product_uom_id,,,,many2one,uom.uom,Unity of measure,True,version 2
+8,__last_update,,,,datetime,,Last Modified on,False,version 2
+9,company_id,,,,many2one,res.company,Company,False,version 2
+10,product_uom_category_id,,,,many2one,uom.category,Category,True,version 2
+11,product_tmpl_id,,,,many2one,product.template,Product Template,True,version 2
+12,product_has_variants,,,,boolean,,Has variants,True,version 2
+13,write_date,,,,datetime,,Last Updated on,False,version 2
+14,create_date,,,,datetime,,Created on,False,version 2
+15,warehouse_id,,,,many2one,stock.warehouse,Warehouse,True,version 2
+16,id,,,,integer,,ID,False,version 2
+17,quantity,,,,float,,Quantity,True,version 2
+,,,,
+,,,,

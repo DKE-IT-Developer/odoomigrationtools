@@ -1,0 +1,18 @@
+model,sale.order.template.option,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,sale_order_template_id,,,,many2one,sale.order.template,Quotation Template Reference,True,version 2
+2,display_name,,,,char,,Display Name,False,version 2
+3,product_id,,,,many2one,product.product,Product,True,version 2
+4,create_uid,,,,many2one,res.users,Created by,False,version 2
+5,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+6,__last_update,,,,datetime,,Last Modified on,False,version 2
+7,company_id,,,,many2one,res.company,Company,False,version 2
+8,product_uom_category_id,,,,many2one,uom.category,Category,False,version 2
+9,uom_id,,,,many2one,uom.uom,Unit of Measure ,True,version 2
+10,write_date,,,,datetime,,Last Updated on,False,version 2
+11,create_date,,,,datetime,,Created on,False,version 2
+12,quantity,,,,float,,Quantity,True,version 2
+13,id,,,,integer,,ID,False,version 2
+14,name,,,,text,,Description,True,version 2
+,,,,
+,,,,

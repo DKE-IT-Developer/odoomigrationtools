@@ -1,0 +1,27 @@
+model,stock.valuation.layer,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_date,,,,datetime,,Created on,False,version 2
+2,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+3,currency_id,,,,many2one,res.currency,Currency,True,version 2
+4,uom_id,,,,many2one,uom.uom,Unit of Measure,True,version 2
+5,stock_valuation_layer_id,,,,many2one,stock.valuation.layer,Linked To,False,version 2
+6,id,,,,integer,,ID,False,version 2
+7,remaining_qty,,,,float,,Remaining Qty,False,version 2
+8,create_uid,,,,many2one,res.users,Created by,False,version 2
+9,display_name,,,,char,,Display Name,False,version 2
+10,account_move_id,,,,many2one,account.move,Journal Entry,False,version 2
+11,__last_update,,,,datetime,,Last Modified on,False,version 2
+12,company_id,,,,many2one,res.company,Company,True,version 2
+13,product_tmpl_id,,,,many2one,product.template,Product Template,False,version 2
+14,description,,,,char,,Description,False,version 2
+15,write_date,,,,datetime,,Last Updated on,False,version 2
+16,categ_id,,,,many2one,product.category,Product Category,False,version 2
+17,product_id,,,,many2one,product.product,Product,True,version 2
+18,stock_valuation_layer_ids,,,,one2many,stock.valuation.layer,Stock Valuation Layer,False,version 2
+19,value,,,,monetary,,Total Value,False,version 2
+20,unit_cost,,,,monetary,,Unit Value,False,version 2
+21,stock_move_id,,,,many2one,stock.move,Stock Move,False,version 2
+22,remaining_value,,,,monetary,,Remaining Value,False,version 2
+23,quantity,,,,float,,Quantity,False,version 2
+,,,,
+,,,,

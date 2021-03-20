@@ -1,39 +1,39 @@
 model,ir.actions.act_window,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,groups_id,many2many,many2many,res.groups,Groups,Groups,False,both
-2,domain,char,char,,Domain Value,Domain Value,False,both
-3,xml_id,char,char,,External ID,External ID,False,both
-4,create_date,datetime,datetime,,Created on,Created on,False,both
-5,help,html,html,,Action Description,Action Description,False,both
-6,res_model,char,char,,Destination Model,Destination Model,True,both
-7,search_view_id,many2one,many2one,ir.ui.view,Search View Ref.,Search View Ref.,False,both
-8,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-9,id,integer,integer,,ID,ID,False,both
-10,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-11,display_name,char,char,,Display Name,Display Name,False,both
-12,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-13,usage,char,char,,Action Usage,Action Usage,False,both
-14,res_id,integer,integer,,Record ID,Record ID,False,both
-15,views,binary,binary,,Views,Views,False,both
-16,view_id,many2one,many2one,ir.ui.view,View Ref.,View Ref.,False,both
-17,view_mode,char,char,,View mode,View Mode,True,both
-18,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-19,view_ids,one2many,one2many,ir.actions.act_window.view,Views,No of Views,False,both
-20,name,char,char,,Action Name,Action Name,True,both
-21,target,selection,selection,,Target Window,Target Window,False,both
-22,search_view,text,text,,Search view,Search View,False,both
-23,type,char,char,,Action Type,Action Type,True,both
-24,filter,boolean,boolean,,Filter,Filter,False,both
-25,limit,integer,integer,,Limit,Limit,False,both
-26,context,char,char,,Context Value,Context Value,True,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,groups_id,many2many,res.groups,Groups,many2many,res.groups,Groups,False,both
+1,domain,char,,Domain Value,char,,Domain Value,False,both
+1,xml_id,char,,External ID,char,,External ID,False,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,help,html,,Action Description,html,,Action Description,False,both
+1,res_model,char,,Destination Model,char,,Destination Model,True,both
+1,search_view_id,many2one,ir.ui.view,Search View Ref.,many2one,ir.ui.view,Search View Ref.,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,id,integer,,ID,integer,,ID,False,both
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,usage,char,,Action Usage,char,,Action Usage,False,both
+1,type,char,,Action Type,char,,Action Type,True,both
+1,views,binary,,Views,binary,,Views,False,both
+1,view_id,many2one,ir.ui.view,View Ref.,many2one,ir.ui.view,View Ref.,False,both
+1,view_mode,char,,View mode,char,,View Mode,True,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,view_ids,one2many,ir.actions.act_window.view,Views,one2many,ir.actions.act_window.view,No of Views,False,both
+1,target,selection,,Target Window,selection,,Target Window,False,both
+1,name,char,,Action Name,char,,Action Name,True,both
+1,search_view,text,,Search view,text,,Search View,False,both
+1,res_id,integer,,Record ID,integer,,Record ID,False,both
+1,filter,boolean,,Filter,boolean,,Filter,False,both
+1,limit,integer,,Limit,integer,,Limit,False,both
+1,context,char,,Context Value,char,,Context Value,True,both
 ,,,,
-27,multi,boolean,,,Restrict to lists,,False,version 1
-28,view_type,selection,,,View Type,,True,version 1
-29,auto_search,boolean,,,Auto search,,False,version 1
-30,src_model,char,,,Source Model,,False,version 1
+1,multi,boolean,,Restrict to lists,,,,False,version 1
+2,view_type,selection,,View Type,,,,True,version 1
+3,auto_search,boolean,,Auto search,,,,False,version 1
+4,src_model,char,,Source Model,,,,False,version 1
 ,,,,
-31,binding_type,,selection,,,Binding Type,True,version 2
-32,binding_model_id,,many2one,ir.model,,Binding Model,False,version 2
-33,binding_view_types,,char,,,Binding View Types,False,version 2
+5,binding_type,,,,selection,,Binding Type,True,version 2
+6,binding_model_id,,,,many2one,ir.model,Binding Model,False,version 2
+7,binding_view_types,,,,char,,Binding View Types,False,version 2
 ,,,,
 ,,,,

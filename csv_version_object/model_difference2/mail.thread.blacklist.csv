@@ -1,0 +1,25 @@
+model,mail.thread.blacklist,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,is_blacklisted,,,,boolean,,Blacklist,False,version 2
+2,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
+3,display_name,,,,char,,Display Name,False,version 2
+4,message_is_follower,,,,boolean,,Is Follower,False,version 2
+5,message_follower_ids,,,,one2many,mail.followers,Followers,False,version 2
+6,message_needaction,,,,boolean,,Action Needed,False,version 2
+7,message_channel_ids,,,,many2many,mail.channel,Followers (Channels),False,version 2
+8,message_partner_ids,,,,many2many,res.partner,Followers (Partners),False,version 2
+9,__last_update,,,,datetime,,Last Modified on,False,version 2
+10,message_has_error_counter,,,,integer,,Number of errors,False,version 2
+11,message_needaction_counter,,,,integer,,Number of Actions,False,version 2
+12,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
+13,message_has_error,,,,boolean,,Message Delivery error,False,version 2
+14,id,,,,integer,,ID,False,version 2
+15,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
+16,message_attachment_count,,,,integer,,Attachment Count,False,version 2
+17,email_normalized,,,,char,,Normalized Email,False,version 2
+18,message_unread_counter,,,,integer,,Unread Messages Counter,False,version 2
+19,message_unread,,,,boolean,,Unread Messages,False,version 2
+20,message_ids,,,,one2many,mail.message,Messages,False,version 2
+21,message_bounce,,,,integer,,Bounce,False,version 2
+,,,,
+,,,,

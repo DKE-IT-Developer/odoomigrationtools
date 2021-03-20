@@ -1,44 +1,44 @@
 model,ir.module.module,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,menus_by_module,text,text,,Menus,Menus,False,both
-2,maintainer,char,char,,Maintainer,Maintainer,False,both
-3,contributors,text,text,,Contributors,Contributors,False,both
-4,sequence,integer,integer,,Sequence,Sequence,False,both
-5,demo,boolean,boolean,,Demo Data,Demo Data,False,both
-6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-7,views_by_module,text,text,,Views,Views,False,both
-8,create_date,datetime,datetime,,Created on,Created on,False,both
-9,id,integer,integer,,ID,ID,False,both
-10,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-11,display_name,char,char,,Display Name,Display Name,False,both
-12,description_html,html,html,,Description HTML,Description HTML,False,both
-13,author,char,char,,Author,Author,False,both
-14,published_version,char,char,,Published Version,Published Version,False,both
-15,installed_version,char,char,,Latest Version,Latest Version,False,both
-16,icon_image,binary,binary,,Icon,Icon,False,both
-17,application,boolean,boolean,,Application,Application,False,both
-18,state,selection,selection,,Status,Status,False,both
-19,website,char,char,,Website,Website,False,both
-20,description,text,text,,Description,Description,False,both
-21,auto_install,boolean,boolean,,Automatic Installation,Automatic Installation,False,both
-22,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-23,icon,char,char,,Icon URL,Icon URL,False,both
-24,reports_by_module,text,text,,Reports,Reports,False,both
-25,name,char,char,,Technical Name,Technical Name,True,both
-26,license,selection,selection,,License,License,False,both
-27,url,char,char,,URL,URL,False,both
-28,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-29,latest_version,char,char,,Installed Version,Installed Version,False,both
-30,summary,char,char,,Summary,Summary,False,both
-31,dependencies_id,one2many,one2many,ir.module.module.dependency,Dependencies,Dependencies,False,both
-32,shortdesc,char,char,,Module Name,Module Name,False,both
-33,image_ids,one2many,one2many,ir.attachment,Screenshots,Screenshots,False,both
-34,category_id,many2one,many2one,ir.module.category,Category,Category,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,menus_by_module,text,,Menus,text,,Menus,False,both
+1,maintainer,char,,Maintainer,char,,Maintainer,False,both
+1,contributors,text,,Contributors,text,,Contributors,False,both
+1,sequence,integer,,Sequence,integer,,Sequence,False,both
+1,demo,boolean,,Demo Data,boolean,,Demo Data,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,views_by_module,text,,Views,text,,Views,False,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,id,integer,,ID,integer,,ID,False,both
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,description_html,html,,Description HTML,html,,Description HTML,False,both
+1,author,char,,Author,char,,Author,False,both
+1,published_version,char,,Published Version,char,,Published Version,False,both
+1,installed_version,char,,Latest Version,char,,Latest Version,False,both
+1,icon_image,binary,,Icon,binary,,Icon,False,both
+1,application,boolean,,Application,boolean,,Application,False,both
+1,state,selection,,Status,selection,,Status,False,both
+1,website,char,,Website,char,,Website,False,both
+1,description,text,,Description,text,,Description,False,both
+1,auto_install,boolean,,Automatic Installation,boolean,,Automatic Installation,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,icon,char,,Icon URL,char,,Icon URL,False,both
+1,reports_by_module,text,,Reports,text,,Reports,False,both
+1,name,char,,Technical Name,char,,Technical Name,True,both
+1,license,selection,,License,selection,,License,False,both
+1,url,char,,URL,char,,URL,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,latest_version,char,,Installed Version,char,,Installed Version,False,both
+1,summary,char,,Summary,char,,Summary,False,both
+1,dependencies_id,one2many,ir.module.module.dependency,Dependencies,one2many,ir.module.module.dependency,Dependencies,False,both
+1,shortdesc,char,,Module Name,char,,Module Name,False,both
+1,image_ids,one2many,ir.attachment,Screenshots,one2many,ir.attachment,Screenshots,False,both
+1,category_id,many2one,ir.module.category,Category,many2one,ir.module.category,Category,False,both
 ,,,,
 ,,,,
-35,to_buy,,boolean,,,Odoo Enterprise Module,False,version 2
-36,is_installed_on_current_website,,boolean,,,Is Installed On Current Website,False,version 2
-37,has_iap,,boolean,,,Has Iap,False,version 2
-38,exclusion_ids,,one2many,ir.module.module.exclusion,,Exclusions,False,version 2
+1,to_buy,,,,boolean,,Odoo Enterprise Module,False,version 2
+2,is_installed_on_current_website,,,,boolean,,Is Installed On Current Website,False,version 2
+3,has_iap,,,,boolean,,Has Iap,False,version 2
+4,exclusion_ids,,,,one2many,ir.module.module.exclusion,Exclusions,False,version 2
 ,,,,
 ,,,,

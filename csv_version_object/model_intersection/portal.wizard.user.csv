@@ -1,17 +1,17 @@
 model,portal.wizard.user,transient,True
-no,field,type1,type2,relation,string1,string2,required,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-2,user_id,many2one,many2one,res.users,Login User,Login User,False,both
-3,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-4,wizard_id,many2one,many2one,portal.wizard,Wizard,Wizard,True,both
-5,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-6,email,char,char,,Email,Email,False,both
-7,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-8,create_date,datetime,datetime,,Created on,Created on,False,both
-9,in_portal,boolean,boolean,,In Portal,In Portal,False,both
-10,partner_id,many2one,many2one,res.partner,Contact,Contact,True,both
-11,id,integer,integer,,ID,ID,False,both
-12,display_name,char,char,,Display Name,Display Name,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,user_id,many2one,res.users,Login User,many2one,res.users,Login User,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,wizard_id,many2one,portal.wizard,Wizard,many2one,portal.wizard,Wizard,True,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,email,char,,Email,char,,Email,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,in_portal,boolean,,In Portal,boolean,,In Portal,False,both
+1,partner_id,many2one,res.partner,Contact,many2one,res.partner,Contact,True,both
+1,id,integer,,ID,integer,,ID,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
 ,,,,
 ,,,,
 ,,,,

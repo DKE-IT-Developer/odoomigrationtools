@@ -1,0 +1,15 @@
+model,res.font,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,,,,False,version 1
+2,display_name,char,,Display Name,,,,False,version 1
+3,name,char,,Font Name,,,,True,version 1
+4,family,char,,Font family,,,,True,version 1
+5,__last_update,datetime,,Last Modified on,,,,False,version 1
+6,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
+7,create_date,datetime,,Created on,,,,False,version 1
+8,mode,char,,Mode,,,,True,version 1
+9,write_date,datetime,,Last Updated on,,,,False,version 1
+10,path,char,,Path,,,,True,version 1
+11,id,integer,,ID,,,,False,version 1
+,,,,
+,,,,

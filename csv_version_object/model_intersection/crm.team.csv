@@ -1,53 +1,53 @@
 model,crm.team,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,message_follower_ids,one2many,one2many,mail.followers,Followers,Followers,False,both
-2,member_ids,one2many,one2many,res.users,Team Members,Channel Members,False,both
-3,create_date,datetime,datetime,,Created on,Created on,False,both
-4,color,integer,integer,,Color Index,Color Index,False,both
-5,message_channel_ids,many2many,many2many,mail.channel,Followers (Channels),Followers (Channels),False,both
-6,message_partner_ids,many2many,many2many,res.partner,Followers (Partners),Followers (Partners),False,both
-7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-8,currency_id,many2one,many2one,res.currency,Currency,Currency,False,both
-9,use_quotations,boolean,boolean,,Quotations,Quotations,False,both
-10,invoiced_target,integer,float,,Invoice Target,Invoicing Target,False,both
-11,id,integer,integer,,ID,ID,False,both
-12,invoiced,integer,float,,Invoiced This Month,Invoiced This Month,False,both
-13,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-14,user_id,many2one,many2one,res.users,Team Leader,Team Leader,False,both
-15,message_is_follower,boolean,boolean,,Is Follower,Is Follower,False,both
-16,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-17,company_id,many2one,many2one,res.company,Company,Company,False,both
-18,message_ids,one2many,one2many,mail.message,Messages,Messages,False,both
-19,message_needaction,boolean,boolean,,Action Needed,Action Needed,False,both
-20,message_unread_counter,integer,integer,,Unread Messages Counter,Unread Messages Counter,False,both
-21,website_ids,one2many,one2many,website,Websites,Websites,False,both
-22,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-23,active,boolean,boolean,,Active,Active,False,both
-24,display_name,char,char,,Display Name,Display Name,False,both
-25,name,char,char,,Sales Team,Sales Team,True,both
-26,message_unread,boolean,boolean,,Unread Messages,Unread Messages,False,both
-27,message_needaction_counter,integer,integer,,Number of Actions,Number of Actions,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,message_follower_ids,one2many,mail.followers,Followers,one2many,mail.followers,Followers,False,both
+1,member_ids,one2many,res.users,Team Members,one2many,res.users,Channel Members,False,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,color,integer,,Color Index,integer,,Color Index,False,both
+1,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
+1,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,False,both
+1,use_quotations,boolean,,Quotations,boolean,,Quotations,False,both
+1,invoiced_target,integer,,Invoice Target,float,,Invoicing Target,False,both
+1,id,integer,,ID,integer,,ID,False,both
+1,invoiced,integer,,Invoiced This Month,float,,Invoiced This Month,False,both
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,user_id,many2one,res.users,Team Leader,many2one,res.users,Team Leader,False,both
+1,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
+1,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
+1,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
+1,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
+1,website_ids,one2many,website,Websites,one2many,website,Websites,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,active,boolean,,Active,boolean,,Active,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,name,char,,Sales Team,char,,Sales Team,True,both
+1,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
+1,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
 ,,,,
-28,sales_to_invoice_amount,integer,,,Amount of sales to invoice,,False,version 1
-29,message_last_post,datetime,,,Last Message Date,,False,version 1
-30,use_invoices,boolean,,,Invoices,,False,version 1
-31,reply_to,char,,,Reply-To,,False,version 1
+1,sales_to_invoice_amount,integer,,Amount of sales to invoice,,,,False,version 1
+2,message_last_post,datetime,,Last Message Date,,,,False,version 1
+3,use_invoices,boolean,,Invoices,,,,False,version 1
+4,reply_to,char,,Reply-To,,,,False,version 1
 ,,,,
-32,sequence,,integer,,,Sequence,False,version 2
-33,abandoned_carts_count,,integer,,,Number of Abandoned Carts,False,version 2
-34,message_has_error,,boolean,,,Message Delivery error,False,version 2
-35,is_favorite,,boolean,,,Show on dashboard,False,version 2
-36,quotations_count,,integer,,,Number of quotations to invoice,False,version 2
-37,sales_to_invoice_count,,integer,,,Number of sales to invoice,False,version 2
-38,message_has_sms_error,,boolean,,,SMS Delivery error,False,version 2
-39,abandoned_carts_amount,,integer,,,Amount of Abandoned Carts,False,version 2
-40,favorite_user_ids,,many2many,res.users,,Favorite Members,False,version 2
-41,message_attachment_count,,integer,,,Attachment Count,False,version 2
-42,dashboard_button_name,,char,,,Dashboard Button,False,version 2
-43,quotations_amount,,float,,,Amount of quotations to invoice,False,version 2
-44,message_has_error_counter,,integer,,,Number of errors,False,version 2
-45,dashboard_graph_data,,text,,,Dashboard Graph Data,False,version 2
-46,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,False,version 2
-47,website_message_ids,,one2many,mail.message,,Website Messages,False,version 2
+5,sequence,,,,integer,,Sequence,False,version 2
+6,abandoned_carts_count,,,,integer,,Number of Abandoned Carts,False,version 2
+7,message_has_error,,,,boolean,,Message Delivery error,False,version 2
+8,is_favorite,,,,boolean,,Show on dashboard,False,version 2
+9,quotations_count,,,,integer,,Number of quotations to invoice,False,version 2
+10,sales_to_invoice_count,,,,integer,,Number of sales to invoice,False,version 2
+11,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
+12,abandoned_carts_amount,,,,integer,,Amount of Abandoned Carts,False,version 2
+13,favorite_user_ids,,,,many2many,res.users,Favorite Members,False,version 2
+14,message_attachment_count,,,,integer,,Attachment Count,False,version 2
+15,dashboard_button_name,,,,char,,Dashboard Button,False,version 2
+16,quotations_amount,,,,float,,Amount of quotations to invoice,False,version 2
+17,message_has_error_counter,,,,integer,,Number of errors,False,version 2
+18,dashboard_graph_data,,,,text,,Dashboard Graph Data,False,version 2
+19,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
+20,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
 ,,,,
 ,,,,

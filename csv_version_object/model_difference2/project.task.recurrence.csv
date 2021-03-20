@@ -1,0 +1,32 @@
+model,project.task.recurrence,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_date,,,,datetime,,Created on,False,version 2
+2,write_date,,,,datetime,,Last Updated on,False,version 2
+3,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+4,repeat_on_month,,,,selection,,Repeat On Month,False,version 2
+5,repeat_number,,,,integer,,Repetitions,False,version 2
+6,task_ids,,,,one2many,project.task,Task,False,version 2
+7,repeat_on_year,,,,selection,,Repeat On Year,False,version 2
+8,repeat_interval,,,,integer,,Repeat Every,False,version 2
+9,id,,,,integer,,ID,False,version 2
+10,sat,,,,boolean,,Sat,False,version 2
+11,repeat_unit,,,,selection,,Repeat Unit,False,version 2
+12,repeat_day,,,,selection,,Repeat Day,False,version 2
+13,wed,,,,boolean,,Wed,False,version 2
+14,sun,,,,boolean,,Sun,False,version 2
+15,fri,,,,boolean,,Fri,False,version 2
+16,recurrence_left,,,,integer,,Number of tasks left to create,False,version 2
+17,create_uid,,,,many2one,res.users,Created by,False,version 2
+18,mon,,,,boolean,,Mon,False,version 2
+19,repeat_month,,,,selection,,Repeat Month,False,version 2
+20,display_name,,,,char,,Display Name,False,version 2
+21,tue,,,,boolean,,Tue,False,version 2
+22,repeat_type,,,,selection,,Until,False,version 2
+23,repeat_until,,,,date,,End Date,False,version 2
+24,next_recurrence_date,,,,date,,Next Recurrence Date,False,version 2
+25,thu,,,,boolean,,Thu,False,version 2
+26,__last_update,,,,datetime,,Last Modified on,False,version 2
+27,repeat_weekday,,,,selection,,Day Of The Week,False,version 2
+28,repeat_week,,,,selection,,Repeat Week,False,version 2
+,,,,
+,,,,

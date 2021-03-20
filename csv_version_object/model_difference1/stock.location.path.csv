@@ -1,0 +1,24 @@
+model,stock.location.path,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,location_from_id,many2one,stock.location,Source Location,,,,True,version 1
+2,create_uid,many2one,res.users,Created by,,,,False,version 1
+3,route_sequence,integer,,Route Sequence,,,,False,version 1
+4,create_date,datetime,,Created on,,,,False,version 1
+5,name,char,,Operation Name,,,,True,version 1
+6,sequence,integer,,Sequence,,,,False,version 1
+7,auto,selection,,Automatic Move,,,,True,version 1
+8,__last_update,datetime,,Last Modified on,,,,False,version 1
+9,company_id,many2one,res.company,Company,,,,False,version 1
+10,warehouse_id,many2one,stock.warehouse,Warehouse,,,,False,version 1
+11,delay,integer,,Delay (days),,,,False,version 1
+12,route_id,many2one,stock.location.route,Route,,,,False,version 1
+13,location_dest_id,many2one,stock.location,Destination Location,,,,True,version 1
+14,picking_type_id,many2one,stock.picking.type,Picking Type,,,,True,version 1
+15,write_date,datetime,,Last Updated on,,,,False,version 1
+16,active,boolean,,Active,,,,False,version 1
+17,propagate,boolean,,Propagate cancel and split,,,,False,version 1
+18,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
+19,id,integer,,ID,,,,False,version 1
+20,display_name,char,,Display Name,,,,False,version 1
+,,,,
+,,,,

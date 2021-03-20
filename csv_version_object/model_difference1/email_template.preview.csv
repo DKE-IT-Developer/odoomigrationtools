@@ -1,0 +1,39 @@
+model,email_template.preview,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_date,datetime,,Created on,,,,False,version 1
+2,sub_object,many2one,ir.model,Sub-model,,,,False,version 1
+3,auto_delete,boolean,,Auto Delete,,,,False,version 1
+4,mail_server_id,many2one,ir.mail_server,Outgoing Mail Server,,,,False,version 1
+5,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
+6,partner_to,char,,To (Partners),,,,False,version 1
+7,ref_ir_act_window,many2one,ir.actions.act_window,Sidebar action,,,,False,version 1
+8,id,integer,,ID,,,,False,version 1
+9,subject,char,,Subject,,,,False,version 1
+10,create_uid,many2one,res.users,Created by,,,,False,version 1
+11,display_name,char,,Display Name,,,,False,version 1
+12,attachment_ids,many2many,ir.attachment,Attachments,,,,False,version 1
+13,__last_update,datetime,,Last Modified on,,,,False,version 1
+14,report_template,many2one,ir.actions.report.xml,Optional report to print and attach,,,,False,version 1
+15,ref_ir_value,many2one,ir.values,Sidebar Button,,,,False,version 1
+16,user_signature,boolean,,Add Signature,,,,False,version 1
+17,null_value,char,,Default Value,,,,False,version 1
+18,email_cc,char,,Cc,,,,False,version 1
+19,partner_ids,many2many,res.partner,Recipients,,,,False,version 1
+20,res_id,selection,,Sample Document,,,,False,version 1
+21,model_id,many2one,ir.model,Applies to,,,,False,version 1
+22,sub_model_object_field,many2one,ir.model.fields,Sub-field,,,,False,version 1
+23,body_html,html,,Body,,,,False,version 1
+24,email_to,char,,To (Emails),,,,False,version 1
+25,scheduled_date,char,,Scheduled Date,,,,False,version 1
+26,write_date,datetime,,Last Updated on,,,,False,version 1
+27,copyvalue,char,,Placeholder Expression,,,,False,version 1
+28,lang,char,,Language,,,,False,version 1
+29,name,char,,Name,,,,False,version 1
+30,model_object_field,many2one,ir.model.fields,Field,,,,False,version 1
+31,report_name,char,,Report Filename,,,,False,version 1
+32,use_default_to,boolean,,Default recipients,,,,False,version 1
+33,reply_to,char,,Reply-To,,,,False,version 1
+34,model,char,,Related Document Model,,,,False,version 1
+35,email_from,char,,From,,,,False,version 1
+,,,,
+,,,,

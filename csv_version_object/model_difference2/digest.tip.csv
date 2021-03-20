@@ -1,0 +1,16 @@
+model,digest.tip,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,,,,many2one,res.users,Created by,False,version 2
+2,display_name,,,,char,,Display Name,False,version 2
+3,name,,,,char,,Name,False,version 2
+4,sequence,,,,integer,,Sequence,False,version 2
+5,__last_update,,,,datetime,,Last Modified on,False,version 2
+6,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+7,user_ids,,,,many2many,res.users,Recipients,False,version 2
+8,write_date,,,,datetime,,Last Updated on,False,version 2
+9,tip_description,,,,html,,Tip description,False,version 2
+10,create_date,,,,datetime,,Created on,False,version 2
+11,group_id,,,,many2one,res.groups,Authorized Group,False,version 2
+12,id,,,,integer,,ID,False,version 2
+,,,,
+,,,,

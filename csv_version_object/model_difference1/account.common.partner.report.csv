@@ -1,0 +1,17 @@
+model,account.common.partner.report,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,,,,False,version 1
+2,display_name,char,,Display Name,,,,False,version 1
+3,__last_update,datetime,,Last Modified on,,,,False,version 1
+4,date_from,date,,Start Date,,,,False,version 1
+5,result_selection,selection,,Partner's,,,,True,version 1
+6,journal_ids,many2many,account.journal,Journals,,,,True,version 1
+7,company_id,many2one,res.company,Company,,,,False,version 1
+8,write_date,datetime,,Last Updated on,,,,False,version 1
+9,date_to,date,,End Date,,,,False,version 1
+10,create_date,datetime,,Created on,,,,False,version 1
+11,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
+12,id,integer,,ID,,,,False,version 1
+13,target_move,selection,,Target Moves,,,,True,version 1
+,,,,
+,,,,

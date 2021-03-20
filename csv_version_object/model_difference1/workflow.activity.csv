@@ -1,0 +1,24 @@
+model,workflow.activity,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,,,,False,version 1
+2,kind,selection,,Kind,,,,True,version 1
+3,create_date,datetime,,Created on,,,,False,version 1
+4,name,char,,Name,,,,True,version 1
+5,join_mode,selection,,Join Mode,,,,True,version 1
+6,out_transitions,one2many,workflow.transition,Outgoing Transitions,,,,False,version 1
+7,__last_update,datetime,,Last Modified on,,,,False,version 1
+8,flow_stop,boolean,,Flow Stop,,,,False,version 1
+9,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
+10,subflow_id,many2one,workflow,Subflow,,,,False,version 1
+11,split_mode,selection,,Split Mode,,,,True,version 1
+12,write_date,datetime,,Last Updated on,,,,False,version 1
+13,action,text,,Python Action,,,,False,version 1
+14,display_name,char,,Display Name,,,,False,version 1
+15,signal_send,char,,Signal (subflow.*),,,,False,version 1
+16,action_id,many2one,ir.actions.server,Server Action,,,,False,version 1
+17,wkf_id,many2one,workflow,Workflow,,,,True,version 1
+18,id,integer,,ID,,,,False,version 1
+19,in_transitions,one2many,workflow.transition,Incoming Transitions,,,,False,version 1
+20,flow_start,boolean,,Flow Start,,,,False,version 1
+,,,,
+,,,,

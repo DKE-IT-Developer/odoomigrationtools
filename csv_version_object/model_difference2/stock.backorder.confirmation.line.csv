@@ -1,0 +1,14 @@
+model,stock.backorder.confirmation.line,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,,,,many2one,res.users,Created by,False,version 2
+2,display_name,,,,char,,Display Name,False,version 2
+3,__last_update,,,,datetime,,Last Modified on,False,version 2
+4,to_backorder,,,,boolean,,To Backorder,False,version 2
+5,picking_id,,,,many2one,stock.picking,Transfer,False,version 2
+6,write_date,,,,datetime,,Last Updated on,False,version 2
+7,create_date,,,,datetime,,Created on,False,version 2
+8,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+9,id,,,,integer,,ID,False,version 2
+10,backorder_confirmation_id,,,,many2one,stock.backorder.confirmation,Immediate Transfer,False,version 2
+,,,,
+,,,,

@@ -1,39 +1,39 @@
 model,mail.template,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,create_date,datetime,datetime,,Created on,Created on,False,both
-2,sub_object,many2one,many2one,ir.model,Sub-model,Sub-model,False,both
-3,auto_delete,boolean,boolean,,Auto Delete,Auto Delete,False,both
-4,mail_server_id,many2one,many2one,ir.mail_server,Outgoing Mail Server,Outgoing Mail Server,False,both
-5,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-6,partner_to,char,char,,To (Partners),To (Partners),False,both
-7,ref_ir_act_window,many2one,many2one,ir.actions.act_window,Sidebar action,Sidebar action,False,both
-8,id,integer,integer,,ID,ID,False,both
-9,subject,char,char,,Subject,Subject,False,both
-10,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-11,display_name,char,char,,Display Name,Display Name,False,both
-12,attachment_ids,many2many,many2many,ir.attachment,Attachments,Attachments,False,both
-13,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-14,report_template,many2one,many2one,ir.actions.report,Optional report to print and attach,Optional report to print and attach,False,both
-15,null_value,char,char,,Default Value,Default Value,False,both
-16,email_cc,char,char,,Cc,Cc,False,both
-17,model_id,many2one,many2one,ir.model,Applies to,Applies to,False,both
-18,sub_model_object_field,many2one,many2one,ir.model.fields,Sub-field,Sub-field,False,both
-19,body_html,html,html,,Body,Body,False,both
-20,reply_to,char,char,,Reply-To,Reply-To,False,both
-21,email_to,char,char,,To (Emails),To (Emails),False,both
-22,scheduled_date,char,char,,Scheduled Date,Scheduled Date,False,both
-23,copyvalue,char,char,,Placeholder Expression,Placeholder Expression,False,both
-24,lang,char,char,,Language,Language,False,both
-25,name,char,char,,Name,Name,False,both
-26,model_object_field,many2one,many2one,ir.model.fields,Field,Field,False,both
-27,report_name,char,char,,Report Filename,Report Filename,False,both
-28,use_default_to,boolean,boolean,,Default recipients,Default recipients,False,both
-29,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-30,model,char,char,,Related Document Model,Related Document Model,False,both
-31,email_from,char,char,,From,From,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,sub_object,many2one,ir.model,Sub-model,many2one,ir.model,Sub-model,False,both
+1,auto_delete,boolean,,Auto Delete,boolean,,Auto Delete,False,both
+1,mail_server_id,many2one,ir.mail_server,Outgoing Mail Server,many2one,ir.mail_server,Outgoing Mail Server,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,partner_to,char,,To (Partners),char,,To (Partners),False,both
+1,ref_ir_act_window,many2one,ir.actions.act_window,Sidebar action,many2one,ir.actions.act_window,Sidebar action,False,both
+1,id,integer,,ID,integer,,ID,False,both
+1,subject,char,,Subject,char,,Subject,False,both
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,attachment_ids,many2many,ir.attachment,Attachments,many2many,ir.attachment,Attachments,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,report_template,many2one,ir.actions.report.xml,Optional report to print and attach,many2one,ir.actions.report,Optional report to print and attach,False,both
+1,null_value,char,,Default Value,char,,Default Value,False,both
+1,email_cc,char,,Cc,char,,Cc,False,both
+1,model_id,many2one,ir.model,Applies to,many2one,ir.model,Applies to,False,both
+1,sub_model_object_field,many2one,ir.model.fields,Sub-field,many2one,ir.model.fields,Sub-field,False,both
+1,body_html,html,,Body,html,,Body,False,both
+1,reply_to,char,,Reply-To,char,,Reply-To,False,both
+1,email_to,char,,To (Emails),char,,To (Emails),False,both
+1,scheduled_date,char,,Scheduled Date,char,,Scheduled Date,False,both
+1,copyvalue,char,,Placeholder Expression,char,,Placeholder Expression,False,both
+1,lang,char,,Language,char,,Language,False,both
+1,name,char,,Name,char,,Name,False,both
+1,model_object_field,many2one,ir.model.fields,Field,many2one,ir.model.fields,Field,False,both
+1,report_name,char,,Report Filename,char,,Report Filename,False,both
+1,use_default_to,boolean,,Default recipients,boolean,,Default recipients,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,model,char,,Related Document Model,char,,Related Document Model,False,both
+1,email_from,char,,From,char,,From,False,both
 ,,,,
-32,ref_ir_value,many2one,,ir.values,Sidebar Button,,False,version 1
-33,user_signature,boolean,,,Add Signature,,False,version 1
+1,ref_ir_value,many2one,ir.values,Sidebar Button,,,,False,version 1
+2,user_signature,boolean,,Add Signature,,,,False,version 1
 ,,,,
 ,,,,
 ,,,,

@@ -1,16 +1,16 @@
 model,base.language.install,transient,True
-no,field,type1,type2,relation,string1,string2,required,source
-1,lang,selection,selection,,Language,Language,True,both
-2,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-3,display_name,char,char,,Display Name,Display Name,False,both
-4,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-5,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-6,state,selection,selection,,Status,Status,False,both
-7,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-8,create_date,datetime,datetime,,Created on,Created on,False,both
-9,website_ids,many2many,many2many,website,Websites to translate,Websites to translate,False,both
-10,id,integer,integer,,ID,ID,False,both
-11,overwrite,boolean,boolean,,Overwrite Existing Terms,Overwrite Existing Terms,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,lang,selection,,Language,selection,,Language,True,both
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,state,selection,,Status,selection,,Status,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,website_ids,many2many,website,Websites to translate,many2many,website,Websites to translate,False,both
+1,id,integer,,ID,integer,,ID,False,both
+1,overwrite,boolean,,Overwrite Existing Terms,boolean,,Overwrite Existing Terms,False,both
 ,,,,
 ,,,,
 ,,,,

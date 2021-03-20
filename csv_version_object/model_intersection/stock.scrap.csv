@@ -1,48 +1,48 @@
 model,stock.scrap,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,origin,char,char,,Source Document,Source Document,False,both
-2,create_date,datetime,datetime,,Created on,Created on,False,both
-3,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-4,package_id,many2one,many2one,stock.quant.package,Package,Package,False,both
-5,scrap_qty,float,float,,Quantity,Quantity,True,both
-6,lot_id,many2one,many2one,stock.production.lot,Lot,Lot/Serial,False,both
-7,location_id,many2one,many2one,stock.location,Location,Source Location,True,both
-8,id,integer,integer,,ID,ID,False,both
-9,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-10,display_name,char,char,,Display Name,Display Name,False,both
-11,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-12,scrap_location_id,many2one,many2one,stock.location,Scrap Location,Scrap Location,True,both
-13,state,selection,selection,,Status,Status,False,both
-14,owner_id,many2one,many2one,res.partner,Owner,Owner,False,both
-15,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-16,move_id,many2one,many2one,stock.move,Scrap Move,Scrap Move,False,both
-17,name,char,char,,Reference,Reference,True,both
-18,tracking,selection,selection,,Tracking,Product Tracking,False,both
-19,product_id,many2one,many2one,product.product,Product,Product,True,both
-20,product_uom_id,many2one,many2one,uom.uom,Unit of Measure,Unit of Measure,True,both
-21,workorder_id,many2one,many2one,mrp.workorder,Work Order,Work Order,False,both
-22,production_id,many2one,many2one,mrp.production,Manufacturing Order,Manufacturing Order,False,both
-23,picking_id,many2one,many2one,stock.picking,Picking,Picking,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,origin,char,,Source Document,char,,Source Document,False,both
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,package_id,many2one,stock.quant.package,Package,many2one,stock.quant.package,Package,False,both
+1,scrap_qty,float,,Quantity,float,,Quantity,True,both
+1,lot_id,many2one,stock.production.lot,Lot,many2one,stock.production.lot,Lot/Serial,False,both
+1,location_id,many2one,stock.location,Location,many2one,stock.location,Source Location,True,both
+1,id,integer,,ID,integer,,ID,False,both
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,scrap_location_id,many2one,stock.location,Scrap Location,many2one,stock.location,Scrap Location,True,both
+1,state,selection,,Status,selection,,Status,False,both
+1,owner_id,many2one,res.partner,Owner,many2one,res.partner,Owner,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,move_id,many2one,stock.move,Scrap Move,many2one,stock.move,Scrap Move,False,both
+1,name,char,,Reference,char,,Reference,True,both
+1,tracking,selection,,Tracking,selection,,Product Tracking,False,both
+1,product_id,many2one,product.product,Product,many2one,product.product,Product,True,both
+1,product_uom_id,many2one,product.uom,Unit of Measure,many2one,uom.uom,Unit of Measure,True,both
+1,workorder_id,many2one,mrp.workorder,Work Order,many2one,mrp.workorder,Work Order,False,both
+1,production_id,many2one,mrp.production,Manufacturing Order,many2one,mrp.production,Manufacturing Order,False,both
+1,picking_id,many2one,stock.picking,Picking,many2one,stock.picking,Picking,False,both
 ,,,,
-24,date_expected,datetime,,,Expected Date,,False,version 1
+1,date_expected,datetime,,Expected Date,,,,False,version 1
 ,,,,
-25,message_follower_ids,,one2many,mail.followers,,Followers,False,version 2
-26,date_done,,datetime,,,Date,False,version 2
-27,message_needaction,,boolean,,,Action Needed,False,version 2
-28,message_channel_ids,,many2many,mail.channel,,Followers (Channels),False,version 2
-29,message_partner_ids,,many2many,res.partner,,Followers (Partners),False,version 2
-30,message_main_attachment_id,,many2one,ir.attachment,,Main Attachment,False,version 2
-31,message_is_follower,,boolean,,,Is Follower,False,version 2
-32,company_id,,many2one,res.company,,Company,True,version 2
-33,message_ids,,one2many,mail.message,,Messages,False,version 2
-34,message_needaction_counter,,integer,,,Number of Actions,False,version 2
-35,message_attachment_count,,integer,,,Attachment Count,False,version 2
-36,message_unread_counter,,integer,,,Unread Messages Counter,False,version 2
-37,message_has_error_counter,,integer,,,Number of errors,False,version 2
-38,website_message_ids,,one2many,mail.message,,Website Messages,False,version 2
-39,message_has_error,,boolean,,,Message Delivery error,False,version 2
-40,product_uom_category_id,,many2one,uom.category,,Category,False,version 2
-41,message_has_sms_error,,boolean,,,SMS Delivery error,False,version 2
-42,message_unread,,boolean,,,Unread Messages,False,version 2
+2,message_follower_ids,,,,one2many,mail.followers,Followers,False,version 2
+3,date_done,,,,datetime,,Date,False,version 2
+4,message_needaction,,,,boolean,,Action Needed,False,version 2
+5,message_channel_ids,,,,many2many,mail.channel,Followers (Channels),False,version 2
+6,message_partner_ids,,,,many2many,res.partner,Followers (Partners),False,version 2
+7,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
+8,message_is_follower,,,,boolean,,Is Follower,False,version 2
+9,company_id,,,,many2one,res.company,Company,True,version 2
+10,message_ids,,,,one2many,mail.message,Messages,False,version 2
+11,message_needaction_counter,,,,integer,,Number of Actions,False,version 2
+12,message_attachment_count,,,,integer,,Attachment Count,False,version 2
+13,message_unread_counter,,,,integer,,Unread Messages Counter,False,version 2
+14,message_has_error_counter,,,,integer,,Number of errors,False,version 2
+15,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
+16,message_has_error,,,,boolean,,Message Delivery error,False,version 2
+17,product_uom_category_id,,,,many2one,uom.category,Category,False,version 2
+18,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
+19,message_unread,,,,boolean,,Unread Messages,False,version 2
 ,,,,
 ,,,,

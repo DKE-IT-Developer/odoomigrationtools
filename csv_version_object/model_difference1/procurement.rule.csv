@@ -1,0 +1,29 @@
+model,procurement.rule,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_date,datetime,,Created on,,,,False,version 1
+2,sequence,integer,,Sequence,,,,False,version 1
+3,partner_address_id,many2one,res.partner,Partner Address,,,,False,version 1
+4,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
+5,procure_method,selection,,Move Supply Method,,,,True,version 1
+6,location_id,many2one,stock.location,Procurement Location,,,,False,version 1
+7,id,integer,,ID,,,,False,version 1
+8,create_uid,many2one,res.users,Created by,,,,False,version 1
+9,display_name,char,,Display Name,,,,False,version 1
+10,location_src_id,many2one,stock.location,Source Location,,,,False,version 1
+11,__last_update,datetime,,Last Modified on,,,,False,version 1
+12,company_id,many2one,res.company,Company,,,,False,version 1
+13,delay,integer,,Number of Days,,,,False,version 1
+14,warehouse_id,many2one,stock.warehouse,Served Warehouse,,,,False,version 1
+15,propagate,boolean,,Propagate cancel and split,,,,False,version 1
+16,write_date,datetime,,Last Updated on,,,,False,version 1
+17,active,boolean,,Active,,,,False,version 1
+18,route_sequence,integer,,Route Sequence,,,,False,version 1
+19,name,char,,Name,,,,True,version 1
+20,picking_type_id,many2one,stock.picking.type,Picking Type,,,,True,version 1
+21,route_id,many2one,stock.location.route,Route,,,,False,version 1
+22,action,selection,,Action,,,,True,version 1
+23,group_id,many2one,procurement.group,Fixed Procurement Group,,,,False,version 1
+24,propagate_warehouse_id,many2one,stock.warehouse,Warehouse to Propagate,,,,False,version 1
+25,group_propagation_option,selection,,Propagation of Procurement Group,,,,False,version 1
+,,,,
+,,,,

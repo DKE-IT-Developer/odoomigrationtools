@@ -1,0 +1,30 @@
+model,account.financial.html.report.line,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,children_ids,,,,one2many,account.financial.html.report.line,Children,False,version 2
+2,code,,,,char,,Code,False,version 2
+3,create_date,,,,datetime,,Created on,False,version 2
+4,sequence,,,,integer,,Sequence,False,version 2
+5,domain,,,,char,,Domain,False,version 2
+6,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+7,special_date_changer,,,,selection,,Special Date Changer,False,version 2
+8,id,,,,integer,,ID,False,version 2
+9,create_uid,,,,many2one,res.users,Created by,False,version 2
+10,display_name,,,,char,,Display Name,False,version 2
+11,parent_path,,,,char,,Parent Path,False,version 2
+12,parent_id,,,,many2one,account.financial.html.report.line,Parent,False,version 2
+13,financial_report_id,,,,many2one,account.financial.html.report,Financial Report,False,version 2
+14,action_id,,,,many2one,ir.actions.actions,Action,False,version 2
+15,formulas,,,,char,,Formulas,False,version 2
+16,print_on_new_page,,,,boolean,,Print On New Page,False,version 2
+17,figure_type,,,,selection,,Type,True,version 2
+18,green_on_positive,,,,boolean,,Is growth good when positive,False,version 2
+19,write_date,,,,datetime,,Last Updated on,False,version 2
+20,name,,,,char,,Section Name,False,version 2
+21,level,,,,integer,,Level,True,version 2
+22,show_domain,,,,selection,,Show Domain,False,version 2
+23,__last_update,,,,datetime,,Last Modified on,False,version 2
+24,hide_if_empty,,,,boolean,,Hide If Empty,False,version 2
+25,hide_if_zero,,,,boolean,,Hide If Zero,False,version 2
+26,groupby,,,,char,,Group by,False,version 2
+,,,,
+,,,,

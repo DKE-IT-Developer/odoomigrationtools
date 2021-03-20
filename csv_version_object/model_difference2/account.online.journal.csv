@@ -1,0 +1,22 @@
+model,account.online.journal,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,,,,many2one,res.users,Created by,False,version 2
+2,__last_update,,,,datetime,,Last Modified on,False,version 2
+3,display_name,,,,char,,Display Name,False,version 2
+4,name,,,,char,,Journal Name,True,version 2
+5,yodlee_account_status,,,,char,,Yodlee Account Status,False,version 2
+6,account_online_provider_id,,,,many2one,account.online.provider,Account Online Provider,False,version 2
+7,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+8,yodlee_status_code,,,,integer,,Yodlee Status Code,False,version 2
+9,online_identifier,,,,char,,Online Identifier,False,version 2
+10,journal_ids,,,,one2many,account.journal,Journal,False,version 2
+11,last_sync,,,,date,,Last synchronization,False,version 2
+12,account_number,,,,char,,Account Number,False,version 2
+13,write_date,,,,datetime,,Last Updated on,False,version 2
+14,create_date,,,,datetime,,Created on,False,version 2
+15,provider_name,,,,char,,Provider,False,version 2
+16,balance,,,,float,,Balance,False,version 2
+17,id,,,,integer,,ID,False,version 2
+18,ponto_last_synchronization_identifier,,,,char,,Ponto Last Synchronization Identifier,False,version 2
+,,,,
+,,,,

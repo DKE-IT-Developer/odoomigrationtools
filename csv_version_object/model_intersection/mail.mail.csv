@@ -1,70 +1,70 @@
 model,mail.mail,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,create_date,datetime,datetime,,Created on,Created on,False,both
-2,scheduled_date,char,char,,Scheduled Send Date,Scheduled Send Date,False,both
-3,auto_delete,boolean,boolean,,Auto Delete,Auto Delete,False,both
-4,mail_server_id,many2one,many2one,ir.mail_server,Outgoing mail server,Outgoing mail server,False,both
-5,notification_ids,one2many,one2many,mail.notification,Notifications,Notifications,False,both
-6,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-7,references,text,text,,References,References,False,both
-8,needaction,boolean,boolean,,Need Action,Need Action,False,both
-9,id,integer,integer,,ID,ID,False,both
-10,subject,char,char,,Subject,Subject,False,both
-11,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-12,display_name,char,char,,Display Name,Display Name,False,both
-13,attachment_ids,many2many,many2many,ir.attachment,Attachments,Attachments,False,both
-14,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-15,fetchmail_server_id,many2one,many2one,fetchmail.server,Inbound Mail Server,Inbound Mail Server,False,both
-16,notification,boolean,boolean,,Is Notification,Is Notification,False,both
-17,parent_id,many2one,many2one,mail.message,Parent Message,Parent Message,False,both
-18,state,selection,selection,,Status,Status,False,both
-19,subtype_id,many2one,many2one,mail.message.subtype,Subtype,Subtype,False,both
-20,email_cc,char,char,,Cc,Cc,False,both
-21,partner_ids,many2many,many2many,res.partner,Recipients,Recipients,False,both
-22,res_id,integer,many2one_reference,,Related Document ID,Related Document ID,False,both
-23,message_id,char,char,,Message-Id,Message-Id,False,both
-24,body,html,html,,Contents,Contents,False,both
-25,model,char,char,,Related Document Model,Related Document Model,False,both
-26,recipient_ids,many2many,many2many,res.partner,To (Partners),To (Partners),False,both
-27,record_name,char,char,,Message Record Name,Message Record Name,False,both
-28,description,char,char,,Description,Short description,False,both
-29,channel_ids,many2many,many2many,mail.channel,Channels,Channels,False,both
-30,child_ids,one2many,one2many,mail.message,Child Messages,Child Messages,False,both
-31,body_html,text,text,,Rich-text Contents,Rich-text Contents,False,both
-32,email_to,text,text,,To,To,False,both
-33,no_auto_thread,boolean,boolean,,No threading for answers,No threading for answers,False,both
-34,date,datetime,datetime,,Date,Date,False,both
-35,write_date,datetime,datetime,,Last Updated on,Last Updated on,False,both
-36,author_id,many2one,many2one,res.partner,Author,Author,False,both
-37,mail_message_id,many2one,many2one,mail.message,Message,Message,True,both
-38,starred_partner_ids,many2many,many2many,res.partner,Favorited By,Favorited By,False,both
-39,failure_reason,text,text,,Failure Reason,Failure Reason,False,both
-40,headers,text,text,,Headers,Headers,False,both
-41,author_avatar,binary,binary,,Author's avatar,Author's avatar,False,both
-42,reply_to,char,char,,Reply-To,Reply-To,False,both
-43,starred,boolean,boolean,,Starred,Starred,False,both
-44,message_type,selection,selection,,Type,Type,True,both
-45,email_from,char,char,,From,From,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_date,datetime,,Created on,datetime,,Created on,False,both
+1,scheduled_date,char,,Scheduled Send Date,char,,Scheduled Send Date,False,both
+1,auto_delete,boolean,,Auto Delete,boolean,,Auto Delete,False,both
+1,mail_server_id,many2one,ir.mail_server,Outgoing mail server,many2one,ir.mail_server,Outgoing mail server,False,both
+1,notification_ids,one2many,mail.notification,Notifications,one2many,mail.notification,Notifications,False,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,references,text,,References,text,,References,False,both
+1,needaction,boolean,,Need Action,boolean,,Need Action,False,both
+1,id,integer,,ID,integer,,ID,False,both
+1,subject,char,,Subject,char,,Subject,False,both
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,attachment_ids,many2many,ir.attachment,Attachments,many2many,ir.attachment,Attachments,False,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,fetchmail_server_id,many2one,fetchmail.server,Inbound Mail Server,many2one,fetchmail.server,Inbound Mail Server,False,both
+1,notification,boolean,,Is Notification,boolean,,Is Notification,False,both
+1,parent_id,many2one,mail.message,Parent Message,many2one,mail.message,Parent Message,False,both
+1,state,selection,,Status,selection,,Status,False,both
+1,subtype_id,many2one,mail.message.subtype,Subtype,many2one,mail.message.subtype,Subtype,False,both
+1,email_cc,char,,Cc,char,,Cc,False,both
+1,partner_ids,many2many,res.partner,Recipients,many2many,res.partner,Recipients,False,both
+1,res_id,integer,,Related Document ID,many2one_reference,,Related Document ID,False,both
+1,message_id,char,,Message-Id,char,,Message-Id,False,both
+1,body,html,,Contents,html,,Contents,False,both
+1,model,char,,Related Document Model,char,,Related Document Model,False,both
+1,recipient_ids,many2many,res.partner,To (Partners),many2many,res.partner,To (Partners),False,both
+1,record_name,char,,Message Record Name,char,,Message Record Name,False,both
+1,description,char,,Description,char,,Short description,False,both
+1,channel_ids,many2many,mail.channel,Channels,many2many,mail.channel,Channels,False,both
+1,child_ids,one2many,mail.message,Child Messages,one2many,mail.message,Child Messages,False,both
+1,body_html,text,,Rich-text Contents,text,,Rich-text Contents,False,both
+1,email_to,text,,To,text,,To,False,both
+1,no_auto_thread,boolean,,No threading for answers,boolean,,No threading for answers,False,both
+1,date,datetime,,Date,datetime,,Date,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+1,author_id,many2one,res.partner,Author,many2one,res.partner,Author,False,both
+1,mail_message_id,many2one,mail.message,Message,many2one,mail.message,Message,True,both
+1,starred_partner_ids,many2many,res.partner,Favorited By,many2many,res.partner,Favorited By,False,both
+1,failure_reason,text,,Failure Reason,text,,Failure Reason,False,both
+1,headers,text,,Headers,text,,Headers,False,both
+1,author_avatar,binary,,Author's avatar,binary,,Author's avatar,False,both
+1,reply_to,char,,Reply-To,char,,Reply-To,False,both
+1,starred,boolean,,Starred,boolean,,Starred,False,both
+1,message_type,selection,,Type,selection,,Type,True,both
+1,email_from,char,,From,char,,From,False,both
 ,,,,
-46,needaction_partner_ids,many2many,,res.partner,Partners with Need Action,,False,version 1
-47,path,char,,,Discussion Path,,False,version 1
-48,website_published,boolean,,,Published,,False,version 1
+1,needaction_partner_ids,many2many,res.partner,Partners with Need Action,,,,False,version 1
+2,path,char,,Discussion Path,,,,False,version 1
+3,website_published,boolean,,Published,,,,False,version 1
 ,,,,
-49,is_internal,,boolean,,,Employee Only,False,version 2
-50,add_sign,,boolean,,,Add Sign,False,version 2
-51,email_layout_xmlid,,char,,,Layout,False,version 2
-52,moderator_id,,many2one,res.users,,Moderated By,False,version 2
-53,has_sms_error,,boolean,,,Has SMS error,False,version 2
-54,mail_activity_type_id,,many2one,mail.activity.type,,Mail Activity Type,False,version 2
-55,rating_value,,float,,,Rating Value,False,version 2
-56,notified_partner_ids,,many2many,res.partner,,Partners with Need Action,False,version 2
-57,moderation_status,,selection,,,Moderation Status,False,version 2
-58,snailmail_error,,boolean,,,Snailmail message in error,False,version 2
-59,need_moderation,,boolean,,,Need moderation,False,version 2
-60,letter_ids,,one2many,snailmail.letter,,Letter,False,version 2
-61,has_error,,boolean,,,Has error,False,version 2
-62,canned_response_ids,,one2many,mail.shortcode,,Canned Responses,False,version 2
-63,rating_ids,,one2many,rating.rating,,Related ratings,False,version 2
-64,mail_ids,,one2many,mail.mail,,Mails,False,version 2
+4,is_internal,,,,boolean,,Employee Only,False,version 2
+5,add_sign,,,,boolean,,Add Sign,False,version 2
+6,email_layout_xmlid,,,,char,,Layout,False,version 2
+7,moderator_id,,,,many2one,res.users,Moderated By,False,version 2
+8,has_sms_error,,,,boolean,,Has SMS error,False,version 2
+9,mail_activity_type_id,,,,many2one,mail.activity.type,Mail Activity Type,False,version 2
+10,rating_value,,,,float,,Rating Value,False,version 2
+11,notified_partner_ids,,,,many2many,res.partner,Partners with Need Action,False,version 2
+12,moderation_status,,,,selection,,Moderation Status,False,version 2
+13,snailmail_error,,,,boolean,,Snailmail message in error,False,version 2
+14,need_moderation,,,,boolean,,Need moderation,False,version 2
+15,letter_ids,,,,one2many,snailmail.letter,Letter,False,version 2
+16,has_error,,,,boolean,,Has error,False,version 2
+17,canned_response_ids,,,,one2many,mail.shortcode,Canned Responses,False,version 2
+18,rating_ids,,,,one2many,rating.rating,Related ratings,False,version 2
+19,mail_ids,,,,one2many,mail.mail,Mails,False,version 2
 ,,,,
 ,,,,

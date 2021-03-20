@@ -1,0 +1,24 @@
+model,stock.package_level,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,,,,many2one,res.users,Created by,False,version 2
+2,is_fresh_package,,,,boolean,,Is Fresh Package,False,version 2
+3,show_lots_m2o,,,,boolean,,Show Lots M2O,False,version 2
+4,display_name,,,,char,,Display Name,False,version 2
+5,state,,,,selection,,State,False,version 2
+6,show_lots_text,,,,boolean,,Show Lots Text,False,version 2
+7,__last_update,,,,datetime,,Last Modified on,False,version 2
+8,is_done,,,,boolean,,Done,False,version 2
+9,move_line_ids,,,,one2many,stock.move.line,Move Line,False,version 2
+10,company_id,,,,many2one,res.company,Company,True,version 2
+11,move_ids,,,,one2many,stock.move,Move,False,version 2
+12,package_id,,,,many2one,stock.quant.package,Package,True,version 2
+13,location_dest_id,,,,many2one,stock.location,To,False,version 2
+14,picking_type_code,,,,selection,,Type of Operation,False,version 2
+15,write_date,,,,datetime,,Last Updated on,False,version 2
+16,id,,,,integer,,ID,False,version 2
+17,create_date,,,,datetime,,Created on,False,version 2
+18,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+19,location_id,,,,many2one,stock.location,From,False,version 2
+20,picking_id,,,,many2one,stock.picking,Picking,False,version 2
+,,,,
+,,,,

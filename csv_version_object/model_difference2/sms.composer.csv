@@ -1,0 +1,34 @@
+model,sms.composer,transient,True
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_date,,,,datetime,,Created on,False,version 2
+2,number_field_name,,,,char,,Number Field,False,version 2
+3,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+4,res_ids_count,,,,integer,,Visible records count,False,version 2
+5,numbers,,,,char,,Recipients (Numbers),False,version 2
+6,mass_force_send,,,,boolean,,Send directly,False,version 2
+7,active_domain,,,,text,,Active domain,False,version 2
+8,id,,,,integer,,ID,False,version 2
+9,composition_mode,,,,selection,,Composition Mode,True,version 2
+10,create_uid,,,,many2one,res.users,Created by,False,version 2
+11,display_name,,,,char,,Display Name,False,version 2
+12,recipient_invalid_count,,,,integer,,# Invalid recipients,False,version 2
+13,__last_update,,,,datetime,,Last Modified on,False,version 2
+14,mass_keep_log,,,,boolean,,Keep a note on document,False,version 2
+15,mass_use_blacklist,,,,boolean,,Use blacklist,False,version 2
+16,recipient_single_description,,,,text,,Recipients (Partners),False,version 2
+17,res_model,,,,char,,Document Model Name,False,version 2
+18,recipient_single_number,,,,char,,Stored Recipient Number,False,version 2
+19,res_id,,,,integer,,Document ID,False,version 2
+20,body,,,,text,,Message,True,version 2
+21,write_date,,,,datetime,,Last Updated on,False,version 2
+22,res_ids,,,,char,,Document IDs,False,version 2
+23,active_domain_count,,,,integer,,Active records count,False,version 2
+24,recipient_valid_count,,,,integer,,# Valid recipients,False,version 2
+25,use_active_domain,,,,boolean,,Use active domain,False,version 2
+26,recipient_single_number_itf,,,,char,,Recipient Number,False,version 2
+27,sanitized_numbers,,,,char,,Sanitized Number,False,version 2
+28,recipient_single_valid,,,,boolean,,Is valid,False,version 2
+29,comment_single_recipient,,,,boolean,,Single Mode,False,version 2
+30,template_id,,,,many2one,sms.template,Use Template,False,version 2
+,,,,
+,,,,

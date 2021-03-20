@@ -1,0 +1,17 @@
+model,account.report.manager,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,footnotes_ids,,,,one2many,account.report.footnote,Footnotes,False,version 2
+2,display_name,,,,char,,Display Name,False,version 2
+3,create_uid,,,,many2one,res.users,Created by,False,version 2
+4,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
+5,__last_update,,,,datetime,,Last Modified on,False,version 2
+6,company_id,,,,many2one,res.company,Company,False,version 2
+7,summary,,,,char,,Summary,False,version 2
+8,write_date,,,,datetime,,Last Updated on,False,version 2
+9,id,,,,integer,,ID,False,version 2
+10,create_date,,,,datetime,,Created on,False,version 2
+11,report_name,,,,char,,Report Name,True,version 2
+12,partner_id,,,,many2one,res.partner,Partner,False,version 2
+13,financial_report_id,,,,many2one,account.financial.html.report,Financial Report,False,version 2
+,,,,
+,,,,

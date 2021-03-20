@@ -1,0 +1,22 @@
+model,report.all.channels.sales,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,analytic_account_id,,,,many2one,account.analytic.account,Analytic Account,False,version 2
+2,price_subtotal,,,,float,,Price Subtotal,False,version 2
+3,price_total,,,,float,,Total,False,version 2
+4,user_id,,,,many2one,res.users,Salesperson,False,version 2
+5,name,,,,char,,Order Reference,False,version 2
+6,display_name,,,,char,,Display Name,False,version 2
+7,__last_update,,,,datetime,,Last Modified on,False,version 2
+8,categ_id,,,,many2one,product.category,Product Category,False,version 2
+9,country_id,,,,many2one,res.country,Partner Country,False,version 2
+10,company_id,,,,many2one,res.company,Company,False,version 2
+11,product_tmpl_id,,,,many2one,product.template,Product Template,False,version 2
+12,team_id,,,,many2one,crm.team,Sales Team,False,version 2
+13,product_qty,,,,float,,Product Quantity,False,version 2
+14,pricelist_id,,,,many2one,product.pricelist,Pricelist,False,version 2
+15,date_order,,,,datetime,,Date Order,False,version 2
+16,partner_id,,,,many2one,res.partner,Partner,False,version 2
+17,id,,,,integer,,ID,False,version 2
+18,product_id,,,,many2one,product.product,Product,False,version 2
+,,,,
+,,,,

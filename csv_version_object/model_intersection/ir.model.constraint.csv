@@ -1,21 +1,21 @@
 model,ir.model.constraint,transient,False
-no,field,type1,type2,relation,string1,string2,required,source
-1,create_uid,many2one,many2one,res.users,Created by,Created by,False,both
-2,display_name,char,char,,Display Name,Display Name,False,both
-3,name,char,char,,Constraint,Constraint,True,both
-4,definition,char,char,,Definition,Definition,False,both
-5,__last_update,datetime,datetime,,Last Modified on,Last Modified on,False,both
-6,module,many2one,many2one,ir.module.module,Module,Module,True,both
-7,write_uid,many2one,many2one,res.users,Last Updated by,Last Updated by,False,both
-8,write_date,datetime,datetime,,Last Updated on,Write Date,False,both
-9,create_date,datetime,datetime,,Created on,Create Date,False,both
-10,model,many2one,many2one,ir.model,Model,Model,True,both
-11,type,char,char,,Constraint Type,Constraint Type,True,both
-12,id,integer,integer,,ID,ID,False,both
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+1,display_name,char,,Display Name,char,,Display Name,False,both
+1,name,char,,Constraint,char,,Constraint,True,both
+1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+1,module,many2one,ir.module.module,Module,many2one,ir.module.module,Module,True,both
+1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+1,write_date,datetime,,Last Updated on,datetime,,Write Date,False,both
+1,create_date,datetime,,Created on,datetime,,Create Date,False,both
+1,model,many2one,ir.model,Model,many2one,ir.model,Model,True,both
+1,definition,char,,Definition,char,,Definition,False,both
+1,type,char,,Constraint Type,char,,Constraint Type,True,both
+1,id,integer,,ID,integer,,ID,False,both
 ,,,,
-13,date_update,datetime,,,Update Date,,False,version 1
-14,date_init,datetime,,,Initialization Date,,False,version 1
+1,date_update,datetime,,Update Date,,,,False,version 1
+2,date_init,datetime,,Initialization Date,,,,False,version 1
 ,,,,
-15,message,,char,,,Message,False,version 2
+3,message,,,,char,,Message,False,version 2
 ,,,,
 ,,,,
