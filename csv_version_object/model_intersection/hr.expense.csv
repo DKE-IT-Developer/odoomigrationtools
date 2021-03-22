@@ -1,78 +1,78 @@
 model,hr.expense,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,message_follower_ids,one2many,mail.followers,Followers,one2many,mail.followers,Followers,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,reference,char,,Bill Reference,char,,Bill Reference,False,both
-1,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
-1,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
-1,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,False,both
-1,payment_mode,selection,,Payment By,selection,,Paid By,False,both
-1,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
-1,account_id,many2one,account.account,Account,many2one,account.account,Account,False,both
-1,analytic_account_id,many2one,account.analytic.account,Analytic Account,many2one,account.analytic.account,Analytic Account,False,both
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,employee_id,many2one,hr.employee,Employee,many2one,hr.employee,Employee,True,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
-1,id,integer,,ID,integer,,ID,False,both
-1,state,selection,,Status,selection,,Status,False,both
-1,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
-1,tax_ids,many2many,account.tax,Taxes,many2many,account.tax,Taxes,False,both
-1,description,text,,Description,text,,Notes...,False,both
-1,attachment_number,integer,,Number of Attachments,integer,,Number of Attachments,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,date,date,,Date,date,,Expense Date,False,both
-1,name,char,,Expense Description,char,,Description,True,both
-1,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
-1,total_amount,float,,Total,monetary,,Total,False,both
-1,product_uom_id,many2one,product.uom,Unit of Measure,many2one,uom.uom,Unit of Measure,False,both
-1,untaxed_amount,float,,Subtotal,float,,Subtotal,False,both
-1,product_id,many2one,product.product,Product,many2one,product.product,Product,False,both
-1,unit_amount,float,,Unit Price,float,,Unit Price,True,both
-1,sheet_id,many2one,hr.expense.sheet,Expense Report,many2one,hr.expense.sheet,Expense Report,False,both
-1,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
-1,quantity,float,,Quantity,float,,Quantity,True,both
+2,create_date,datetime,,Created on,datetime,,Created on,False,both
+3,reference,char,,Bill Reference,char,,Bill Reference,False,both
+4,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
+5,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
+6,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
+7,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+8,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,False,both
+9,payment_mode,selection,,Payment By,selection,,Paid By,False,both
+10,id,integer,,ID,integer,,ID,False,both
+11,account_id,many2one,account.account,Account,many2one,account.account,Account,False,both
+12,analytic_account_id,many2one,account.analytic.account,Analytic Account,many2one,account.analytic.account,Analytic Account,False,both
+13,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+14,employee_id,many2one,hr.employee,Employee,many2one,hr.employee,Employee,True,both
+15,display_name,char,,Display Name,char,,Display Name,False,both
+16,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
+17,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+18,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
+19,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
+20,state,selection,,Status,selection,,Status,False,both
+21,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
+22,tax_ids,many2many,account.tax,Taxes,many2many,account.tax,Taxes,False,both
+23,description,text,,Description,text,,Notes...,False,both
+24,attachment_number,integer,,Number of Attachments,integer,,Number of Attachments,False,both
+25,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+26,date,date,,Date,date,,Expense Date,False,both
+27,name,char,,Expense Description,char,,Description,True,both
+28,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
+29,total_amount,float,,Total,monetary,,Total,False,both
+30,product_uom_id,many2one,product.uom,Unit of Measure,many2one,uom.uom,Unit of Measure,False,both
+31,untaxed_amount,float,,Subtotal,float,,Subtotal,False,both
+32,product_id,many2one,product.product,Product,many2one,product.product,Product,False,both
+33,unit_amount,float,,Unit Price,float,,Unit Price,True,both
+34,sheet_id,many2one,hr.expense.sheet,Expense Report,many2one,hr.expense.sheet,Expense Report,False,both
+35,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
+36,quantity,float,,Quantity,float,,Quantity,True,both
 ,,,,
-1,message_last_post,datetime,,Last Message Date,,,,False,version 1
+37,message_last_post,datetime,,Last Message Date,,,,False,version 1
 ,,,,
-2,analytic_tag_ids,,,,many2many,account.analytic.tag,Analytic Tags,False,version 2
-3,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
-4,is_refused,,,,boolean,,Explicitly Refused by manager or accountant,False,version 2
-5,activity_date_deadline,,,,date,,Next Activity Deadline,False,version 2
-6,extract_error_message,,,,text,,Error message,False,version 2
-7,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
-8,sample,,,,boolean,,Sample,False,version 2
-9,activity_user_id,,,,many2one,res.users,Responsible User,False,version 2
-10,extract_status_code,,,,integer,,Status code,False,version 2
-11,accounting_date,,,,date,,Accounting Date,False,version 2
-12,total_amount_company,,,,monetary,,Total (Company Currency),False,version 2
-13,extract_state,,,,selection,,Extract state,True,version 2
-14,predicted_category,,,,selection,,Predicted Category,False,version 2
-15,sale_order_id,,,,many2one,sale.order,Customer to Reinvoice,False,version 2
-16,is_editable,,,,boolean,,Is Editable By Current User,False,version 2
-17,activity_type_id,,,,many2one,mail.activity.type,Next Activity Type,False,version 2
-18,activity_ids,,,,one2many,mail.activity,Activities,False,version 2
-19,activity_exception_icon,,,,char,,Icon,False,version 2
-20,product_uom_category_id,,,,many2one,uom.category,Category,False,version 2
-21,is_ref_editable,,,,boolean,,Reference Is Editable By Current User,False,version 2
-22,activity_state,,,,selection,,Activity State,False,version 2
-23,extract_can_show_send_button,,,,boolean,,Can show the ocr send button,False,version 2
-24,company_currency_id,,,,many2one,res.currency,Report Company Currency,False,version 2
-25,message_has_error,,,,boolean,,Message Delivery error,False,version 2
-26,activity_exception_decoration,,,,selection,,Activity Exception Decoration,False,version 2
-27,activity_type_icon,,,,char,,Activity Type Icon,False,version 2
-28,message_attachment_count,,,,integer,,Attachment Count,False,version 2
-29,extract_remote_id,,,,integer,,Id of the request to IAP-OCR,False,version 2
-30,extract_word_ids,,,,one2many,hr.expense.extract.words,Extract Word,False,version 2
-31,message_has_error_counter,,,,integer,,Number of errors,False,version 2
-32,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
-33,can_be_reinvoiced,,,,boolean,,Can be reinvoiced,False,version 2
-34,activity_summary,,,,char,,Next Activity Summary,False,version 2
-35,extract_can_show_resend_button,,,,boolean,,Can show the ocr resend button,False,version 2
-36,amount_residual,,,,monetary,,Amount Due,False,version 2
+38,analytic_tag_ids,,,,many2many,account.analytic.tag,Analytic Tags,False,version 2
+39,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
+40,is_refused,,,,boolean,,Explicitly Refused by manager or accountant,False,version 2
+41,activity_date_deadline,,,,date,,Next Activity Deadline,False,version 2
+42,extract_error_message,,,,text,,Error message,False,version 2
+43,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
+44,sample,,,,boolean,,Sample,False,version 2
+45,activity_user_id,,,,many2one,res.users,Responsible User,False,version 2
+46,extract_status_code,,,,integer,,Status code,False,version 2
+47,accounting_date,,,,date,,Accounting Date,False,version 2
+48,total_amount_company,,,,monetary,,Total (Company Currency),False,version 2
+49,extract_state,,,,selection,,Extract state,True,version 2
+50,predicted_category,,,,selection,,Predicted Category,False,version 2
+51,sale_order_id,,,,many2one,sale.order,Customer to Reinvoice,False,version 2
+52,is_editable,,,,boolean,,Is Editable By Current User,False,version 2
+53,activity_type_id,,,,many2one,mail.activity.type,Next Activity Type,False,version 2
+54,activity_ids,,,,one2many,mail.activity,Activities,False,version 2
+55,activity_exception_icon,,,,char,,Icon,False,version 2
+56,product_uom_category_id,,,,many2one,uom.category,Category,False,version 2
+57,is_ref_editable,,,,boolean,,Reference Is Editable By Current User,False,version 2
+58,activity_state,,,,selection,,Activity State,False,version 2
+59,extract_can_show_send_button,,,,boolean,,Can show the ocr send button,False,version 2
+60,company_currency_id,,,,many2one,res.currency,Report Company Currency,False,version 2
+61,message_has_error,,,,boolean,,Message Delivery error,False,version 2
+62,activity_exception_decoration,,,,selection,,Activity Exception Decoration,False,version 2
+63,activity_type_icon,,,,char,,Activity Type Icon,False,version 2
+64,message_attachment_count,,,,integer,,Attachment Count,False,version 2
+65,extract_remote_id,,,,integer,,Id of the request to IAP-OCR,False,version 2
+66,extract_word_ids,,,,one2many,hr.expense.extract.words,Extract Word,False,version 2
+67,message_has_error_counter,,,,integer,,Number of errors,False,version 2
+68,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
+69,can_be_reinvoiced,,,,boolean,,Can be reinvoiced,False,version 2
+70,activity_summary,,,,char,,Next Activity Summary,False,version 2
+71,extract_can_show_resend_button,,,,boolean,,Can show the ocr resend button,False,version 2
+72,amount_residual,,,,monetary,,Amount Due,False,version 2
 ,,,,
 ,,,,

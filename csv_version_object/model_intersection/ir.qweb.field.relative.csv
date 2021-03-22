@@ -1,8 +1,8 @@
 model,ir.qweb.field.relative,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,display_name,char,,Display Name,char,,Display Name,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+2,id,integer,,ID,integer,,ID,False,both
+3,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
 ,,,,
 ,,,,
 ,,,,

@@ -1,0 +1,179 @@
+model,delivery.carrier,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,code,char,,Internal Reference,,,,False,version 1
+2,incoming_qty,float,,Incoming,,,,False,version 1
+3,standard_price,float,,Cost,,,,False,version 1
+4,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
+5,sales_count,integer,,# Sales,,,,False,version 1
+6,description_mobile,text,,Description,,,,False,version 1
+7,availability,selection,,Availability,,,,False,version 1
+8,partner_ref,char,,Customer Ref,,,,False,version 1
+9,display_name,char,,Display Name,,,,False,version 1
+10,price_rule_ids,one2many,delivery.price.rule,Pricing Rules,,,,False,version 1
+11,item_ids,one2many,product.pricelist.item,Pricelist Items,,,,False,version 1
+12,route_from_categ_ids,many2many,stock.location.route,Category Routes,,,,False,version 1
+13,company_id,many2one,res.company,Company,,,,False,version 1
+14,discount_ids,one2many,product.discount,Discounts,,,,False,version 1
+15,prod_environment,boolean,,Environment,,,,False,version 1
+16,rating_count,integer,,Rating count,,,,False,version 1
+17,track_service,selection,,Track Service,,,,False,version 1
+18,purchase_line_warn_msg,text,,Message for Purchase Order Line,,,,False,version 1
+19,pricelist_id,many2one,product.pricelist,Pricelist,,,,False,version 1
+20,property_stock_account_input,many2one,account.account,Stock Input Account,,,,False,version 1
+21,uom_po_id,many2one,product.uom,Purchase Unit of Measure,,,,True,version 1
+22,reception_count,integer,,Receipt,,,,False,version 1
+23,bom_ids,one2many,mrp.bom,Bill of Materials,,,,False,version 1
+24,warehouse_id,many2one,stock.warehouse,Warehouse,,,,False,version 1
+25,route_ids,many2many,stock.location.route,Routes,,,,False,version 1
+26,reordering_max_qty,float,,Reordering max qty,,,,False,version 1
+27,website_style_ids,many2many,product.style,Styles,,,,False,version 1
+28,rental,boolean,,Can be Rent,,,,False,version 1
+29,product_sale_ok,boolean,,Can be Sold,,,,False,version 1
+30,pricelist_item_ids,many2many,product.pricelist.item,Pricelist item ids,,,,False,version 1
+31,name,char,,Name,,,,True,version 1
+32,website_description,text,,Description for Online Quotations,,,,False,version 1
+33,image_medium,binary,,Medium-sized image,,,,False,version 1
+34,deferred_revenue_category_id,many2one,account.asset.category,Deferred Revenue Type,,,,False,version 1
+35,packaging_ids,one2many,product.packaging,Logistical Units,,,,False,version 1
+36,image_url,char,,URL Image,,,,False,version 1
+37,free_if_more_than,boolean,,Free if Order total is more than,,,,False,version 1
+38,seller_ids,one2many,product.supplierinfo,Vendors,,,,False,version 1
+39,product_image_ids,one2many,product.image,Images,,,,False,version 1
+40,website_message_ids,one2many,mail.message,Website Comments,,,,False,version 1
+41,accessory_product_ids,many2many,product.product,Accessory Products,,,,False,version 1
+42,message_follower_ids,one2many,mail.followers,Followers,,,,False,version 1
+43,orderpoint_ids,one2many,stock.warehouse.orderpoint,Minimum Stock Rules,,,,False,version 1
+44,create_date,datetime,,Created on,,,,False,version 1
+45,zip_to,char,,Zip To,,,,False,version 1
+46,weight,float,,Weight,,,,False,version 1
+47,sequence,integer,,Sequence,,,,False,version 1
+48,message_needaction,boolean,,Action Needed,,,,False,version 1
+49,attribute_line_ids,one2many,product.attribute.line,Product Attributes,,,,False,version 1
+50,currency_id,many2one,res.currency,Currency,,,,False,version 1
+51,website_public_price,float,,Website public price,,,,False,version 1
+52,mo_count,integer,,# Manufacturing Orders,,,,False,version 1
+53,id,integer,,ID,,,,False,version 1
+54,stock_move_ids,one2many,stock.move,Stock move ids,,,,False,version 1
+55,virtual_available,float,,Forecast Quantity,,,,False,version 1
+56,description_picking,text,,Description on Picking,,,,False,version 1
+57,sale_delay,float,,Customer Lead Time,,,,False,version 1
+58,product_tmpl_id,many2one,product.template,Product Template,,,,True,version 1
+59,message_unread_counter,integer,,Unread Messages Counter,,,,False,version 1
+60,available,boolean,,Available,,,,False,version 1
+61,rebrand_reference_product_id,many2one,product.template,Original Product,,,,False,version 1
+62,barcode,char,,Barcode,,,,False,version 1
+63,discount,float,,Default Discount to this Product,,,,True,version 1
+64,fp_export,boolean,,OB Is Exported,,,,False,version 1
+65,product_group_id,many2one,product.group,Group,,,,False,version 1
+66,website_meta_keywords,char,,Website meta keywords,,,,False,version 1
+67,active,boolean,,Active,,,,False,version 1
+68,website_price_difference,boolean,,Website price difference,,,,False,version 1
+69,rating_ids,one2many,rating.rating,Rating,,,,False,version 1
+70,product_variant_count,integer,,# Product Variants,,,,False,version 1
+71,rebrand_customer_id,many2one,res.partner,Rebrand Customer,,,,False,version 1
+72,product_id,many2one,product.product,Delivery Product,,,,True,version 1
+73,task_id,many2one,project.task,Task,,,,False,version 1
+74,state_ids,many2many,res.country.state,States,,,,False,version 1
+75,expert_ids,many2many,expert.condition,Expert System Conditions,,,,False,version 1
+76,amount,float,,Amount,,,,False,version 1
+77,jnt_type,selection,,J&T Type,,,,False,version 1
+78,integration_level,selection,,Integration Level,,,,False,version 1
+79,reordering_min_qty,float,,Reordering min qty,,,,False,version 1
+80,message_unread,boolean,,Unread Messages,,,,False,version 1
+81,message_needaction_counter,integer,,Number of Actions,,,,False,version 1
+82,warranty,float,,Warranty,,,,False,version 1
+83,property_stock_procurement,many2one,stock.location,Procurement Location,,,,False,version 1
+84,fixed_price,float,,Fixed Price,,,,False,version 1
+85,list_price,float,,Sale Price,,,,False,version 1
+86,color,integer,,Color Index,,,,False,version 1
+87,public_categ_ids,many2many,product.public.category,Website Product Category,,,,False,version 1
+88,country_ids,many2many,res.country,Countries,,,,False,version 1
+89,sale_line_warn_msg,text,,Message for Sales Order Line,,,,False,version 1
+90,stock_quant_ids,one2many,stock.quant,Stock quant ids,,,,False,version 1
+91,qty_available,float,,Quantity On Hand,,,,False,version 1
+92,can_be_expensed,boolean,,Can be Expensed,,,,False,version 1
+93,delivery_carrier_product,boolean,,Delivery Service,,,,False,version 1
+94,create_uid,many2one,res.users,Created by,,,,False,version 1
+95,asset_category_id,many2one,account.asset.category,Asset Type,,,,False,version 1
+96,sale_ok,boolean,,Can be Sold,,,,False,version 1
+97,message_is_follower,boolean,,Is Follower,,,,False,version 1
+98,__last_update,datetime,,Last Modified on,,,,False,version 1
+99,purchase_method,selection,,Control Purchase Bills,,,,False,version 1
+100,purchase_ok,boolean,,Can be Purchased,,,,False,version 1
+101,message_last_post,datetime,,Last Message Date,,,,False,version 1
+102,website_price,float,,Website price,,,,False,version 1
+103,property_valuation,selection,,Inventory Valuation,,,,False,version 1
+104,hs_code,char,,HS Code,,,,False,version 1
+105,property_cost_method,selection,,Costing Method,,,,False,version 1
+106,type,selection,,Product Type,,,,True,version 1
+107,rating_last_value,float,,Rating Last Value,,,,False,version 1
+108,delivery_type,selection,,Provider,,,,True,version 1
+109,website_size_y,integer,,Size Y,,,,False,version 1
+110,property_stock_production,many2one,stock.location,Production Location,,,,False,version 1
+111,supplier_taxes_id,many2many,account.tax,Vendor Taxes,,,,False,version 1
+112,jne_type,selection,,JNE Type,,,,False,version 1
+113,website_meta_description,text,,Website meta description,,,,False,version 1
+114,description_sale,text,,Sale Description,,,,False,version 1
+115,property_stock_inventory,many2one,stock.location,Inventory Location,,,,False,version 1
+116,cost_method,char,,Cost method,,,,False,version 1
+117,valuation,char,,Valuation,,,,False,version 1
+118,bom_count,integer,,# Bill of Material,,,,False,version 1
+119,alternative_product_ids,many2many,product.template,Alternative Products,,,,False,version 1
+120,product_variant_ids,one2many,product.product,Products,,,,True,version 1
+121,property_account_expense_id,many2one,account.account,Expense Account,,,,False,version 1
+122,purchase_line_warn,selection,,Purchase Order Line,,,,True,version 1
+123,image_small,binary,,Small-sized image,,,,False,version 1
+124,property_stock_account_output,many2one,account.account,Stock Output Account,,,,False,version 1
+125,zip_from,char,,Zip From,,,,False,version 1
+126,description_purchase,text,,Purchase Description,,,,False,version 1
+127,attribute_value_ids,many2many,product.attribute.value,Attributes,,,,False,version 1
+128,margin,integer,,Margin,,,,False,version 1
+129,sale_line_warn,selection,,Sales Order Line,,,,True,version 1
+130,nbr_reordering_rules,integer,,Reordering Rules,,,,False,version 1
+131,video_url,char,,Video URL,,,,False,version 1
+132,message_channel_ids,many2many,mail.channel,Followers (Channels),,,,False,version 1
+133,message_partner_ids,many2many,res.partner,Followers (Partners),,,,False,version 1
+134,sell_mobile,boolean,,Sell to Mobile App,,,,False,version 1
+135,price_extra,float,,Variant Price Extra,,,,False,version 1
+136,uom_id,many2one,product.uom,Unit of Measure,,,,True,version 1
+137,default_code,char,,Internal Reference,,,,False,version 1
+138,location_id,many2one,stock.location,Location,,,,False,version 1
+139,message_ids,one2many,mail.message,Messages,,,,False,version 1
+140,delivery_count,integer,,Delivery,,,,False,version 1
+141,brand_ids,many2many,product.brand,Product Brand,,,,False,version 1
+142,image,binary,,Image,,,,False,version 1
+143,availability_warning,text,,Availability Warning,,,,False,version 1
+144,lst_price,float,,Sale Price,,,,False,version 1
+145,review_ids,one2many,product.review,Reviews,,,,False,version 1
+146,image_variant,binary,,Variant Image,,,,False,version 1
+147,website_meta_title,char,,Website meta title,,,,False,version 1
+148,qty_check,boolean,,Check Qty on E-commerce,,,,False,version 1
+149,default_carrier,boolean,,Default,,,,False,version 1
+150,website_url,char,,Website URL,,,,False,version 1
+151,taxes_id,many2many,account.tax,Customer Taxes,,,,False,version 1
+152,property_account_income_id,many2one,account.account,Income Account,,,,False,version 1
+153,description,text,,Description,,,,False,version 1
+154,banner_ids,many2many,sale.banner,Banner,,,,False,version 1
+155,price,float,,Price,,,,False,version 1
+156,expense_policy,selection,,Re-Invoice Expenses,,,,False,version 1
+157,write_date,datetime,,Last Updated on,,,,False,version 1
+158,categ_id,many2one,product.category,Internal Category,,,,True,version 1
+159,materi_ids,many2many,res.materi,File Materi,,,,False,version 1
+160,purchase_count,integer,,# Purchases,,,,False,version 1
+161,volume,float,,Volume,,,,False,version 1
+162,tracking,selection,,Tracking,,,,True,version 1
+163,product_type,selection,,Product Type,,,,False,version 1
+164,produce_delay,float,,Manufacturing Lead Time,,,,False,version 1
+165,property_account_creditor_price_difference,many2one,account.account,Price Difference Account,,,,False,version 1
+166,website_sequence,integer,,Website Sequence,,,,False,version 1
+167,website_published,boolean,,Visible in Website,,,,False,version 1
+168,tiki_type,selection,,Tiki Type,,,,False,version 1
+169,outgoing_qty,float,,Outgoing,,,,False,version 1
+170,invoice_policy,selection,,Invoicing Policy,,,,False,version 1
+171,discussion_ids,one2many,product.discussion,Discussions,,,,False,version 1
+172,website_size_x,integer,,Size X,,,,False,version 1
+173,tag_ids,many2many,product.tag,Product Tag,,,,False,version 1
+174,fp_date,datetime,,OB Exported Date,,,,False,version 1
+175,product_variant_id,many2one,product.product,Product,,,,False,version 1
+,,,,
+,,,,

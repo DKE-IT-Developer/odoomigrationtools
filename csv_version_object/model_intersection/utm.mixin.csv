@@ -1,0 +1,12 @@
+model,utm.mixin,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,display_name,char,,Display Name,char,,Display Name,False,both
+2,medium_id,many2one,utm.medium,Medium,many2one,utm.medium,Medium,False,both
+3,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+4,campaign_id,many2one,utm.campaign,Campaign,many2one,utm.campaign,Campaign,False,both
+5,source_id,many2one,utm.source,Source,many2one,utm.source,Source,False,both
+6,id,integer,,ID,integer,,ID,False,both
+,,,,
+,,,,
+,,,,
+,,,,

@@ -1,358 +1,418 @@
 model,res.users,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,signup_valid,boolean,,Signup Token is Valid,boolean,,Signup Token is Valid,False,both
-1,groups_id,many2many,res.groups,Groups,many2many,res.groups,Groups,False,both
-1,sale_order_count,integer,,# of Sales Order,integer,,Sale Order Count,False,both
-1,bank_account_count,integer,,Bank,integer,,Bank,False,both
-1,purchase_order_count,integer,,# of Purchase Order,integer,,Purchase Order Count,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,in_group_58,boolean,,Properties on lines,boolean,,Display incoterms on Sales Order and related invoices,False,both
-1,in_group_59,boolean,,Discount on lines,boolean,,Display Serial & Lot Number on Invoices,False,both
-1,contact_address,char,,Complete Address,char,,Complete Address,False,both
-1,in_group_50,boolean,,Time Estimation on Tasks,boolean,,Manage Different Stock Owners,False,both
-1,property_product_pricelist,many2one,product.pricelist,Sale Pricelist,many2one,product.pricelist,Pricelist,False,both
-1,signup_url,char,,Signup URL,char,,Signup URL,False,both
-1,in_group_55,boolean,,Addresses in Sales Orders,boolean,,Manage Work Order Operations,False,both
-1,in_group_56,boolean,,Tax display B2B,boolean,,Produce residual products,False,both
-1,journal_item_count,integer,,Journal Items,integer,,Journal Items,False,both
-1,parent_name,char,,Parent name,char,,Parent name,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,title,many2one,res.partner.title,Title,many2one,res.partner.title,Title,False,both
-1,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
-1,commercial_company_name,char,,Company Name Entity,char,,Company Name Entity,False,both
-1,parent_id,many2one,res.partner,Related Company,many2one,res.partner,Related Company,False,both
-1,employee,boolean,,Employee,boolean,,Employee,False,both
-1,is_company,boolean,,Is a Company,boolean,,Is a Company,False,both
-1,supplier_invoice_count,integer,,# Vendor Bills,integer,,# Vendor Bills,False,both
-1,property_supplier_payment_term_id,many2one,account.payment.term,Vendor Payment Terms,many2one,account.payment.term,Vendor Payment Terms,False,both
-1,channel_ids,many2many,mail.channel,Channels,many2many,mail.channel,Channels,False,both
-1,in_group_32,boolean,,Pro-forma Invoices,boolean,,Purchase Receipt,False,both
-1,child_ids,one2many,res.partner,Contacts,one2many,res.partner,Contact,False,both
-1,company_ids,many2many,res.company,Companies,many2many,res.company,Companies,False,both
-1,user_ids,one2many,res.users,Users,one2many,res.users,Users,False,both
-1,calendar_last_notif_ack,datetime,,Last notification marked as read from base Calendar,datetime,,Last notification marked as read from base Calendar,False,both
-1,password,char,,Password,char,,Password,False,both
-1,in_group_63,boolean,,Enable Route on Sales Order Line,boolean,,Use Rating on Project,False,both
-1,in_group_62,boolean,,Analytic Accounting for Sales,boolean,,Use Subtasks,False,both
-1,image_medium,binary,,Medium-sized image,binary,,Medium-sized image,False,both
-1,name,char,,Name,char,,Name,False,both
-1,in_group_15,boolean,,Manage Multiple Units of Measure,boolean,,Basic Pricelists,False,both
-1,debit_limit,monetary,,Payable Limit,monetary,,Payable Limit,False,both
-1,in_group_16,boolean,,Manage Product Packaging,boolean,,Advanced Pricelists,False,both
-1,signup_token,char,,Signup token,char,,Signup Token,False,both
-1,log_ids,one2many,res.users.log,User log entries,one2many,res.users.log,User log entries,False,both
-1,message_bounce,integer,,Bounce,integer,,Bounce,False,both
-1,message_follower_ids,one2many,mail.followers,Followers,one2many,mail.followers,Followers,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,employee_ids,one2many,hr.employee,Related employees,one2many,hr.employee,Related employee,False,both
-1,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
-1,has_unreconciled_entries,boolean,,Has unreconciled entries,boolean,,Has Unreconciled Entries,False,both
-1,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,False,both
-1,street,char,,Street,char,,Street,False,both
-1,task_ids,one2many,project.task,Tasks,one2many,project.task,Tasks,False,both
-1,partner_id,many2one,res.partner,Related Partner,many2one,res.partner,Related Partner,True,both
-1,sale_team_id,many2one,crm.team,Sales Team,many2one,crm.team,User's Sales Team,False,both
-1,in_group_8,boolean,,Contact Creation,boolean,,Contact Creation,False,both
-1,in_group_6,boolean,,Multi Currencies,boolean,,Technical Features,False,both
-1,in_group_7,boolean,,Technical Features,boolean,,Access to export feature,False,both
-1,in_group_5,boolean,,Multi Companies,boolean,,Multi Currencies,False,both
-1,country_id,many2one,res.country,Country,many2one,res.country,Country,False,both
-1,tz_offset,char,,Timezone offset,char,,Timezone offset,False,both
-1,state,selection,,Status,selection,,Status,False,both
-1,debit,monetary,,Total Payable,monetary,,Total Payable,False,both
-1,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
-1,in_group_57,boolean,,Tax display B2C,boolean,,Locked by default,False,both
-1,ref,char,,Internal Reference,char,,Reference,False,both
-1,email,char,,Email,char,,Email,False,both
-1,action_id,many2one,ir.actions.actions,Home Action,many2one,ir.actions.actions,Home Action,False,both
-1,picking_warn,selection,,Stock Picking,selection,,Stock Picking,False,both
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,street2,char,,Street2,char,,Street2,False,both
-1,barcode,char,,Barcode,char,,Badge ID,False,both
-1,state_id,many2one,res.country.state,State,many2one,res.country.state,State,False,both
-1,active,boolean,,Active,boolean,,Active,False,both
-1,tz,selection,,Timezone,selection,,Timezone,False,both
-1,signup_expiration,datetime,,Signup expiration,datetime,,Signup Expiration,False,both
-1,zip,char,,Zip,char,,Zip,False,both
-1,property_account_payable_id,many2one,account.account,Account Payable,many2one,account.account,Account Payable,True,both
-1,credit,monetary,,Total Receivable,monetary,,Total Receivable,False,both
-1,commercial_partner_id,many2one,res.partner,Commercial Entity,many2one,res.partner,Commercial Entity,False,both
-1,signature,html,,Signature,html,,Email Signature,False,both
-1,login,char,,Login,char,,Login,True,both
-1,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
-1,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
-1,comment,text,,Notes,text,,Notes,False,both
-1,sale_warn,selection,,Sales Order,selection,,Sales Warnings,False,both
-1,purchase_warn,selection,,Purchase Order,selection,,Purchase Order,False,both
-1,color,integer,,Color Index,integer,,Color Index,False,both
-1,in_group_14,boolean,,Pricelists On Product,boolean,,Analytic Accounting Tags,False,both
-1,invoice_ids,one2many,account.invoice,Invoices,one2many,account.move,Invoices,False,both
-1,team_id,many2one,crm.team,Sales Team,many2one,crm.team,Sales Team,False,both
-1,in_group_17,boolean,,Manage Properties of Product,boolean,,Manage Product Packaging,False,both
-1,in_group_11,boolean,,Public,boolean,,Access to Private Addresses,False,both
-1,in_group_12,boolean,,Sales Pricelists,boolean,,Manage Multiple Units of Measure,False,both
-1,in_group_13,boolean,,Manage Pricelist Items,boolean,,Analytic Accounting,False,both
-1,total_invoiced,monetary,,Total Invoiced,monetary,,Total Invoiced,False,both
-1,trust,selection,,Degree of trust you have in this debtor,selection,,Degree of trust you have in this debtor,False,both
-1,in_group_18,boolean,,Manage Product Variants,boolean,,Manage Product Variants,False,both
-1,in_group_19,boolean,,Manage multiple stock_locations,boolean,,Discount on lines,False,both
-1,property_payment_term_id,many2one,account.payment.term,Customer Payment Terms,many2one,account.payment.term,Customer Payment Terms,False,both
-1,city,char,,City,char,,City,False,both
-1,user_id,many2one,res.users,Salesperson,many2one,res.users,Salesperson,False,both
-1,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
-1,ref_company_ids,one2many,res.company,Companies that refers to partner,one2many,res.company,Companies that refers to partner,False,both
-1,email_formatted,char,,Formatted Email,char,,Formatted Email,False,both
-1,im_status,char,,IM Status,char,,IM Status,False,both
-1,last_website_so_id,many2one,sale.order,Last Online Sale Order,many2one,sale.order,Last Online Sales Order,False,both
-1,last_time_entries_checked,datetime,,Latest Invoices & Payments Matching Date,datetime,,Latest Invoices & Payments Matching Date,False,both
-1,type,selection,,Address Type,selection,,Address Type,False,both
-1,vat,char,,TIN,char,,Tax ID,False,both
-1,function,char,,Job Position,char,,Job Position,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,picking_warn_msg,text,,Message for Stock Picking,text,,Message for Stock Picking,False,both
-1,payment_token_count,integer,,Count Payment Token,integer,,Count Payment Token,False,both
-1,share,boolean,,Share User,boolean,,Share User,False,both
-1,in_group_23,boolean,,Manage Lots / Serial Numbers,boolean,,Tax display B2B,False,both
-1,in_group_24,boolean,,Manage Packages,boolean,,Tax display B2C,False,both
-1,phone,char,,Phone,char,,Phone,False,both
-1,website_meta_description,text,,Website meta description,text,,Website meta description,False,both
-1,task_count,integer,,# Tasks,integer,,# Tasks,False,both
-1,payment_token_ids,one2many,payment.token,Payment Tokens,one2many,payment.token,Payment Tokens,False,both
-1,property_purchase_currency_id,many2one,res.currency,Supplier Currency,many2one,res.currency,Supplier Currency,False,both
-1,sale_order_ids,one2many,sale.order,Sales Order,one2many,sale.order,Sales Order,False,both
-1,login_date,datetime,,Latest connection,datetime,,Latest authentication,False,both
-1,website_meta_keywords,char,,Website meta keywords,char,,Website meta keywords,False,both
-1,companies_count,integer,,Number of Companies,integer,,Number of Companies,False,both
-1,invoice_warn_msg,text,,Message for Invoice,text,,Message for Invoice,False,both
-1,website,char,,Website,char,,Website Link,False,both
-1,in_group_36,boolean,,Manage Work Order Operations,boolean,,Send an automatic reminder email to confirm delivery,False,both
-1,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
-1,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
-1,company_type,selection,,Company Type,selection,,Company Type,False,both
-1,signup_type,char,,Signup Token Type,char,,Signup Token Type,False,both
-1,property_account_receivable_id,many2one,account.account,Account Receivable,many2one,account.account,Account Receivable,True,both
-1,id,integer,,ID,integer,,ID,False,both
-1,date,date,,Date,date,,Date,False,both
-1,new_password,char,,Set Password,char,,Set Password,False,both
-1,invoice_warn,selection,,Invoice,selection,,Invoice,False,both
-1,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
-1,property_account_position_id,many2one,account.fiscal.position,Fiscal Position,many2one,account.fiscal.position,Fiscal Position,False,both
-1,website_meta_title,char,,Website meta title,char,,Website meta title,False,both
-1,company_name,char,,Company Name,char,,Company Name,False,both
-1,property_stock_supplier,many2one,stock.location,Vendor Location,many2one,stock.location,Vendor Location,False,both
-1,website_published,boolean,,Visible in Website,boolean,,Visible on current website,False,both
-1,website_url,char,,Website URL,char,,Website URL,False,both
-1,bank_ids,one2many,res.partner.bank,Banks,one2many,res.partner.bank,Banks,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,property_stock_customer,many2one,stock.location,Customer Location,many2one,stock.location,Customer Location,False,both
-1,website_short_description,text,,Website Partner Short Description,text,,Website Partner Short Description,False,both
-1,in_group_40,boolean,,Attendances,boolean,,Pro-forma Invoices,False,both
-1,in_group_47,boolean,,A warning can be set on a product or a customer (Purchase),boolean,,Display Serial & Lot Number in Delivery Slips,False,both
-1,in_group_46,boolean,,Manage Vendor Price,boolean,,Manage Lots / Serial Numbers,False,both
-1,category_id,many2many,res.partner.category,Tags,many2many,res.partner.category,Tags,False,both
-1,lang,selection,,Language,selection,,Language,False,both
-1,credit_limit,float,,Credit Limit,float,,Credit Limit,False,both
-1,contract_ids,one2many,account.analytic.account,Contracts,one2many,account.analytic.account,Partner Contracts,False,both
-1,purchase_warn_msg,text,,Message for Purchase Order,text,,Message for Purchase Order,False,both
-1,mobile,char,,Mobile,char,,Mobile,False,both
-1,partner_share,boolean,,Share Partner,boolean,,Share Partner,False,both
-1,in_group_37,boolean,,Manage Inventory Valuation and Costing Methods,boolean,,Lock Confirmed Sales,False,both
-1,website_description,html,,Website Partner Full Description,html,,Website Partner Full Description,False,both
-1,sale_warn_msg,text,,Message for Sales Order,text,,Message for Sales Order,False,both
-1,self,many2one,res.partner,Self,many2one,res.partner,Self,False,both
+2,groups_id,many2many,res.groups,Groups,many2many,res.groups,Groups,False,both
+3,sale_order_count,integer,,# of Sales Order,integer,,Sale Order Count,False,both
+4,invoice_warn,selection,,Invoice,selection,,Invoice,False,both
+5,purchase_order_count,integer,,# of Purchase Order,integer,,Purchase Order Count,False,both
+6,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+7,in_group_59,boolean,,Allow Dynamic Export Excel,boolean,,Display Serial & Lot Number on Invoices,False,both
+8,contact_address,char,,Complete Address,char,,Complete Address,False,both
+9,in_group_52,boolean,,Manage Work Order Operations,boolean,,Require a signature on your delivery orders,False,both
+10,property_product_pricelist,many2one,product.pricelist,Sale Pricelist,many2one,product.pricelist,Pricelist,False,both
+11,signup_url,char,,Signup URL,char,,Signup URL,False,both
+12,in_group_55,boolean,,Analytic Accounting for Purchases,boolean,,Manage Work Order Operations,False,both
+13,in_group_56,boolean,,Manage Vendor Price,boolean,,Produce residual products,False,both
+14,journal_item_count,integer,,Journal Items,integer,,Journal Items,False,both
+15,parent_name,char,,Parent name,char,,Parent name,False,both
+16,display_name,char,,Display Name,char,,Display Name,False,both
+17,title,many2one,res.partner.title,Title,many2one,res.partner.title,Title,False,both
+18,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
+19,commercial_company_name,char,,Company Name Entity,char,,Company Name Entity,False,both
+20,parent_id,many2one,res.partner,Related Company,many2one,res.partner,Related Company,False,both
+21,employee,boolean,,Employee,boolean,,Employee,False,both
+22,supplier_invoice_count,integer,,# Vendor Bills,integer,,# Vendor Bills,False,both
+23,property_supplier_payment_term_id,many2one,account.payment.term,Vendor Payment Terms,many2one,account.payment.term,Vendor Payment Terms,False,both
+24,channel_ids,many2many,mail.channel,Channels,many2many,mail.channel,Channels,False,both
+25,child_ids,one2many,res.partner,Contacts,one2many,res.partner,Contact,False,both
+26,company_ids,many2many,res.company,Companies,many2many,res.company,Companies,False,both
+27,user_ids,one2many,res.users,Users,one2many,res.users,Users,False,both
+28,calendar_last_notif_ack,datetime,,Last notification marked as read from base Calendar,datetime,,Last notification marked as read from base Calendar,False,both
+29,password,char,,Password,char,,Password,False,both
+30,image_medium,binary,,Medium-sized image,binary,,Medium-sized image,False,both
+31,name,char,,Name,char,,Name,False,both
+32,in_group_15,boolean,,Manage Pricelist Items,boolean,,Basic Pricelists,False,both
+33,debit_limit,monetary,,Payable Limit,monetary,,Payable Limit,False,both
+34,in_group_16,boolean,,Pricelists On Product,boolean,,Advanced Pricelists,False,both
+35,signup_token,char,,Signup token,char,,Signup Token,False,both
+36,contract_ids,one2many,account.analytic.account,Contracts,one2many,account.analytic.account,Partner Contracts,False,both
+37,log_ids,one2many,res.users.log,User log entries,one2many,res.users.log,User log entries,False,both
+38,message_bounce,integer,,Bounce,integer,,Bounce,False,both
+39,message_follower_ids,one2many,mail.followers,Followers,one2many,mail.followers,Followers,False,both
+40,create_date,datetime,,Created on,datetime,,Created on,False,both
+41,employee_ids,one2many,hr.employee,Related employees,one2many,hr.employee,Related employee,False,both
+42,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
+43,has_unreconciled_entries,boolean,,Has unreconciled entries,boolean,,Has Unreconciled Entries,False,both
+44,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,False,both
+45,street,char,,Address,char,,Street,False,both
+46,task_ids,one2many,project.task,Tasks,one2many,project.task,Tasks,False,both
+47,partner_id,many2one,res.partner,Related Partner,many2one,res.partner,Related Partner,True,both
+48,sale_team_id,many2one,crm.team,Sales Team,many2one,crm.team,User's Sales Team,False,both
+49,in_group_8,boolean,,Contact Creation,boolean,,Contact Creation,False,both
+50,in_group_6,boolean,,Multi Currencies,boolean,,Technical Features,False,both
+51,in_group_7,boolean,,Technical Features,boolean,,Access to export feature,False,both
+52,in_group_5,boolean,,Multi Companies,boolean,,Multi Currencies,False,both
+53,country_id,many2one,res.country,Country,many2one,res.country,Country,False,both
+54,tz_offset,char,,Timezone offset,char,,Timezone offset,False,both
+55,state,selection,,Status,selection,,Status,False,both
+56,in_group_43,boolean,,Manage Packages,boolean,,Manage Multiple Warehouses,False,both
+57,debit,monetary,,Total Payable,monetary,,Total Payable,False,both
+58,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
+59,in_group_57,boolean,,A warning can be set on a product or a customer (Purchase),boolean,,Locked by default,False,both
+60,ref,char,,Internal Reference,char,,Reference,False,both
+61,email,char,,Email,char,,Email,False,both
+62,action_id,many2one,ir.actions.actions,Home Action,many2one,ir.actions.actions,Home Action,False,both
+63,picking_warn,selection,,Stock Picking,selection,,Stock Picking,False,both
+64,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+65,street2,char,,Street2,char,,Street2,False,both
+66,barcode,char,,Barcode,char,,Badge ID,False,both
+67,website_meta_keywords,char,,Website meta keywords,char,,Website meta keywords,False,both
+68,active,boolean,,Active,boolean,,Active,False,both
+69,tz,selection,,Timezone,selection,,Timezone,False,both
+70,signup_expiration,datetime,,Signup expiration,datetime,,Signup Expiration,False,both
+71,zip,char,,ZIP,char,,Zip,False,both
+72,property_account_payable_id,many2one,account.account,Account Payable,many2one,account.account,Account Payable,True,both
+73,credit,monetary,,Total Receivable,monetary,,Total Receivable,False,both
+74,commercial_partner_id,many2one,res.partner,Commercial Entity,many2one,res.partner,Commercial Entity,False,both
+75,signature,html,,Signature,html,,Email Signature,False,both
+76,login,char,,Login,char,,Login,True,both
+77,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
+78,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
+79,comment,text,,Notes,text,,Notes,False,both
+80,sale_warn,selection,,Sales Order,selection,,Sales Warnings,False,both
+81,purchase_warn,selection,,Purchase Order,selection,,Purchase Order,False,both
+82,website_url,char,,Website URL,char,,Website URL,False,both
+83,color,integer,,Color Index,integer,,Color Index,False,both
+84,in_group_14,boolean,,Sales Pricelists,boolean,,Analytic Accounting Tags,False,both
+85,invoice_ids,one2many,account.invoice,Invoices,one2many,account.move,Invoices,False,both
+86,team_id,many2one,crm.team,Sales Team,many2one,crm.team,Sales Team,False,both
+87,in_group_17,boolean,,Manage Multiple Units of Measure,boolean,,Manage Product Packaging,False,both
+88,in_group_13,boolean,,Analytic Accounting,boolean,,Analytic Accounting,False,both
+89,total_invoiced,monetary,,Total Invoiced,monetary,,Total Invoiced,False,both
+90,trust,selection,,Degree of trust you have in this debtor,selection,,Degree of trust you have in this debtor,False,both
+91,in_group_18,boolean,,Manage Product Packaging,boolean,,Manage Product Variants,False,both
+92,in_group_19,boolean,,Manage Properties of Product,boolean,,Discount on lines,False,both
+93,property_payment_term_id,many2one,account.payment.term,Customer Payment Terms,many2one,account.payment.term,Customer Payment Terms,False,both
+94,city,char,,City,char,,City,False,both
+95,user_id,many2one,res.users,Salesperson,many2one,res.users,Salesperson,False,both
+96,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
+97,ref_company_ids,one2many,res.company,Companies that refers to partner,one2many,res.company,Companies that refers to partner,False,both
+98,email_formatted,char,,Formatted Email,char,,Formatted Email,False,both
+99,im_status,char,,IM Status,char,,IM Status,False,both
+100,last_website_so_id,many2one,sale.order,Last Online Sale Order,many2one,sale.order,Last Online Sales Order,False,both
+101,last_time_entries_checked,datetime,,Latest Invoices & Payments Matching Date,datetime,,Latest Invoices & Payments Matching Date,False,both
+102,type,selection,,Address Type,selection,,Address Type,False,both
+103,vat,char,,TIN,char,,Tax ID,False,both
+104,function,char,,Job Position,char,,Job Position,False,both
+105,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+106,picking_warn_msg,text,,Message for Stock Picking,text,,Message for Stock Picking,False,both
+107,payment_token_count,integer,,Count Payment Token,integer,,Count Payment Token,False,both
+108,in_group_32,boolean,,Tax display B2C,boolean,,Purchase Receipt,False,both
+109,phone,char,,Phone,char,,Phone,False,both
+110,website_meta_description,text,,Website meta description,text,,Website meta description,False,both
+111,task_count,integer,,# Tasks,integer,,# Tasks,False,both
+112,payment_token_ids,one2many,payment.token,Payment Tokens,one2many,payment.token,Payment Tokens,False,both
+113,property_purchase_currency_id,many2one,res.currency,Supplier Currency,many2one,res.currency,Supplier Currency,False,both
+114,sale_order_ids,one2many,sale.order,Sales Order,one2many,sale.order,Sales Order,False,both
+115,login_date,datetime,,Latest connection,datetime,,Latest authentication,False,both
+116,state_id,many2one,res.country.state,State,many2one,res.country.state,State,False,both
+117,companies_count,integer,,Number of Companies,integer,,Number of Companies,False,both
+118,invoice_warn_msg,text,,Message for Invoice,text,,Message for Invoice,False,both
+119,in_group_29,boolean,,Personalize sale order and invoice report,boolean,,A warning can be set on a partner (Account),False,both
+120,in_group_38,boolean,,Manage multiple stock_locations,boolean,,Addresses in Sales Orders,False,both
+121,in_group_39,boolean,,Manage multiple warehouses,boolean,,A warning can be set on a product or a customer (Sale),False,both
+122,in_group_36,boolean,,A warning can be set on a product or a customer (Sale),boolean,,Send an automatic reminder email to confirm delivery,False,both
+123,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
+124,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
+125,in_group_35,boolean,,Display incoterms on Sales Order and related invoices,boolean,,A warning can be set on a product or a customer (Purchase),False,both
+126,company_type,selection,,Company Type,selection,,Company Type,False,both
+127,in_group_30,boolean,,Addresses in Sales Orders,boolean,,Allow the cash rounding management,False,both
+128,in_group_31,boolean,,Tax display B2B,boolean,,Sale Receipt,False,both
+129,signup_type,char,,Signup Token Type,char,,Signup Token Type,False,both
+130,property_account_receivable_id,many2one,account.account,Account Receivable,many2one,account.account,Account Receivable,True,both
+131,id,integer,,ID,integer,,ID,False,both
+132,date,date,,Date,date,,Date,False,both
+133,new_password,char,,Set Password,char,,Set Password,False,both
+134,bank_account_count,integer,,Bank,integer,,Bank,False,both
+135,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
+136,website,char,,Website,char,,Website Link,False,both
+137,property_account_position_id,many2one,account.fiscal.position,Fiscal Position,many2one,account.fiscal.position,Fiscal Position,False,both
+138,website_meta_title,char,,Website meta title,char,,Website meta title,False,both
+139,company_name,char,,Company Name,char,,Company Name,False,both
+140,property_stock_supplier,many2one,stock.location,Vendor Location,many2one,stock.location,Vendor Location,False,both
+141,website_published,boolean,,Visible in Website,boolean,,Visible on current website,False,both
+142,is_company,boolean,,Is a Company,boolean,,Is a Company,False,both
+143,bank_ids,one2many,res.partner.bank,Banks,one2many,res.partner.bank,Banks,False,both
+144,in_group_49,boolean,,Show multi image on eCommerce,boolean,,Manage Push and Pull inventory flows,False,both
+145,in_group_48,boolean,,Enable Route on Sales Order Line,boolean,,Manage Packages,False,both
+146,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+147,share,boolean,,Share User,boolean,,Share User,False,both
+148,property_stock_customer,many2one,stock.location,Customer Location,many2one,stock.location,Customer Location,False,both
+149,in_group_42,boolean,,Manage Lots / Serial Numbers,boolean,,Manage Multiple Stock Locations,False,both
+150,website_short_description,text,,Website Partner Short Description,text,,Website Partner Short Description,False,both
+151,in_group_47,boolean,,Manage Inventory Valuation and Costing Methods,boolean,,Display Serial & Lot Number in Delivery Slips,False,both
+152,in_group_46,boolean,,A warning can be set on a partner (Stock),boolean,,Manage Lots / Serial Numbers,False,both
+153,category_id,many2many,res.partner.category,Tags,many2many,res.partner.category,Tags,False,both
+154,lang,selection,,Language,selection,,Language,False,both
+155,credit_limit,float,,Credit Limit,float,,Credit Limit,False,both
+156,purchase_warn_msg,text,,Message for Purchase Order,text,,Message for Purchase Order,False,both
+157,mobile,boolean,,Mobile App User,char,,Mobile,False,both
+158,partner_share,boolean,,Share Partner,boolean,,Share Partner,False,both
+159,in_group_37,boolean,,Analytic Accounting for Sales,boolean,,Lock Confirmed Sales,False,both
+160,website_description,html,,Website Partner Full Description,html,,Website Partner Full Description,False,both
+161,sel_groups_53_54,selection,,Purchases,selection,,Manufacturing,False,both
+162,sale_warn_msg,text,,Message for Sales Order,text,,Message for Sales Order,False,both
+163,self,many2one,res.partner,Self,many2one,res.partner,Self,False,both
 ,,,,
-1,image,binary,,Image,,,,False,version 1
-2,alias_id,many2one,mail.alias,Alias,,,,False,version 1
-3,in_group_10,boolean,,Portal,,,,False,version 1
-4,in_group_54,boolean,,Personalize sale order and invoice report,,,,False,version 1
-5,sel_groups_29_30_31,selection,,Accounting & Finance,,,,False,version 1
-6,password_crypt,char,,Encrypted Password,,,,False,version 1
-7,issued_total,monetary,,Journal Items,,,,False,version 1
-8,opt_out,boolean,,Opt-Out,,,,False,version 1
-9,message_last_post,datetime,,Last Message Date,,,,False,version 1
-10,contracts_count,integer,,Contracts,,,,False,version 1
-11,sel_groups_51_52_53,selection,,Sales,,,,False,version 1
-12,in_group_28,boolean,,Analytic Accounting,,,,False,version 1
-13,fax,char,,Fax,,,,False,version 1
-14,in_group_20,boolean,,Manage multiple warehouses,,,,False,version 1
-15,in_group_25,boolean,,Manage Push and Pull inventory flows,,,,False,version 1
-16,in_group_27,boolean,,A warning can be set on a partner (Stock),,,,False,version 1
-17,in_group_26,boolean,,Manage Different Stock Owners,,,,False,version 1
-18,sel_groups_64_65,selection,,Website,,,,False,version 1
-19,sel_groups_48_49,selection,,Project,,,,False,version 1
-20,in_group_66,boolean,,Show multi image on eCommerce,,,,False,version 1
-21,in_group_61,boolean,,A warning can be set on a product or a customer (Sale),,,,False,version 1
-22,in_group_60,boolean,,Display incoterms on Sales Order and related invoices,,,,False,version 1
-23,customer,boolean,,Is a Customer,,,,False,version 1
-24,image_small,binary,,Small-sized image,,,,False,version 1
-25,sel_groups_1_38_39,selection,,Employees,,,,False,version 1
-26,notify_email,selection,,Email Messages and Notifications,,,,True,version 1
-27,in_group_33,boolean,,A warning can be set on a partner (Account),,,,False,version 1
-28,sel_groups_43_44,selection,,Purchases,,,,False,version 1
-29,in_group_9,boolean,,Access to Private Addresses,,,,False,version 1
-30,supplier,boolean,,Is a Vendor,,,,False,version 1
-31,alias_contact,selection,,Alias Contact Security,,,,False,version 1
-32,sel_groups_41_42,selection,,Expenses,,,,False,version 1
-33,sel_groups_21_22,selection,,Inventory,,,,False,version 1
-34,in_group_45,boolean,,Analytic Accounting for Purchases,,,,False,version 1
-35,sel_groups_3_4,selection,,Administration,,,,False,version 1
-36,sel_groups_34_35,selection,,Manufacturing,,,,False,version 1
+164,street_npwp_2,char,,Street 2,,,,False,version 1
+165,street_npwp_1,char,,Street 1,,,,False,version 1
+166,opt_out,boolean,,Opt-Out,,,,False,version 1
+167,main_street,char,,Main Street,,,,False,version 1
+168,contracts_count,integer,,Contracts,,,,False,version 1
+169,fax,char,,Fax,,,,False,version 1
+170,kabupaten_id,many2one,res.kabupaten,Kabupaten,,,,False,version 1
+171,in_group_67,boolean,,Attendances,,,,False,version 1
+172,in_group_60,boolean,,Dashboard Manager,,,,False,version 1
+173,npwp_street,char,,NPWP Street,,,,False,version 1
+174,image_url,char,,URL Image,,,,False,version 1
+175,rt_npwp,char,,RT,,,,False,version 1
+176,mobile_verified,boolean,,Verified,,,,False,version 1
+177,nama_npwp,char,,Nama Npwp,,,,False,version 1
+178,ktp,char,,KTP,,,,False,version 1
+179,credit_point_history_ids,one2many,credit.point.history,Credit Points History,,,,False,version 1
+180,sel_groups_68_69,selection,,Expenses,,,,False,version 1
+181,supplier,boolean,,Is a Vendor,,,,False,version 1
+182,state_npwp,selection,,Status,,,,False,version 1
+183,password_crypt,char,,Encrypted Password,,,,False,version 1
+184,is_npwp,boolean,,Is NPWP Address?,,,,False,version 1
+185,kecamatan_npwp_id,many2one,res.kecamatan,Kecamatan,,,,False,version 1
+186,in_group_28,boolean,,A warning can be set on a partner (Account),,,,False,version 1
+187,city_npwp,char,,city,,,,False,version 1
+188,in_group_20,boolean,,Manage Product Variants,,,,False,version 1
+189,in_group_25,boolean,,Show Full Accounting Features,,,,False,version 1
+190,in_group_27,boolean,,Pro-forma Invoices,,,,False,version 1
+191,area_categ_id,many2one,area.category,Area,,,,False,version 1
+192,customer,boolean,,Is a Customer,,,,False,version 1
+193,npa_idi,char,,NPA-IDI,,,,False,version 1
+194,in_group_98,boolean,,Time Estimation on Tasks,,,,False,version 1
+195,in_group_99,boolean,,Dokumen DKE Makloon,,,,False,version 1
+196,in_group_90,boolean,,Accounting Reports,,,,False,version 1
+197,in_group_91,boolean,,Invoicing Reports,,,,False,version 1
+198,purchase_value,monetary,,Total Purchase Value,,,,False,version 1
+199,sel_groups_50_51,selection,,Manufacturing,,,,False,version 1
+200,cluster,selection,,Cluster,,,,False,version 1
+201,sel_groups_96_97,selection,,Project,,,,False,version 1
+202,sel_groups_11_12,selection,,Website,,,,False,version 1
+203,npwp,char,,NPWP,,,,False,version 1
+204,sel_groups_40_41,selection,,Inventory,,,,False,version 1
+205,nomor,char,,Nomor,,,,False,version 1
+206,fcm_id,char,,FCM ID,,,,False,version 1
+207,nickname,char,,Nick Name,,,,False,version 1
+208,sel_groups_1_65_66,selection,,Employees,,,,False,version 1
+209,kelurahan_id,many2one,res.kelurahan,Kelurahan,,,,False,version 1
+210,alias_id,many2one,mail.alias,Alias,,,,False,version 1
+211,kabupaten_npwp_id,many2one,res.kabupaten,Kabupaten,,,,False,version 1
+212,blok,char,,Blok,,,,False,version 1
+213,trust_value,float,,Trust Value,,,,False,version 1
+214,sell_value,monetary,,Total Sell Value,,,,False,version 1
+215,ongkir_city_id,many2one,res.city.ongkir,City/Location,,,,False,version 1
+216,date_birth,date,,Date Birth,,,,False,version 1
+217,notify_email,selection,,Email Messages and Notifications,,,,True,version 1
+218,is_premium,boolean,,Is Premium Customer,,,,False,version 1
+219,rt,char,,RT,,,,False,version 1
+220,rw,char,,RW,,,,False,version 1
+221,in_group_9,boolean,,Portal,,,,False,version 1
+222,sel_groups_21_22_23,selection,,Sales,,,,False,version 1
+223,code_transaction,selection,,Kode Transaksi,,,,False,version 1
+224,rw_npwp,char,,RW,,,,False,version 1
+225,fp_export,boolean,,LT Is Exported,,,,False,version 1
+226,ongkir_subdistrict_id,many2one,res.subdistrict.ongkir,Subdistrict,,,,False,version 1
+227,propinsi_npwp,many2one,res.country.state,Province,,,,False,version 1
+228,issued_total,monetary,,Journal Items,,,,False,version 1
+229,fp_date,datetime,,LT Exported Date,,,,False,version 1
+230,id_number,char,,ID Number,,,,False,version 1
+231,image,binary,,Image,,,,False,version 1
+232,in_group_10,boolean,,Public,,,,False,version 1
+233,message_last_post,datetime,,Last Message Date,,,,False,version 1
+234,property_delivery_carrier_id,many2one,delivery.carrier,Delivery Method,,,,False,version 1
+235,in_group_89,boolean,,Taxes,,,,False,version 1
+236,in_group_88,boolean,,Faktur Pajak,,,,False,version 1
+237,in_group_87,boolean,,Vendor Payments,,,,False,version 1
+238,in_group_86,boolean,,Payable,,,,False,version 1
+239,in_group_85,boolean,,Customer Payments,,,,False,version 1
+240,in_group_84,boolean,,Receivable,,,,False,version 1
+241,kecamatan_id,many2one,res.kecamatan,Kecamatan,,,,False,version 1
+242,image_small,binary,,Small-sized image,,,,False,version 1
+243,available_for_chat,boolean,,Available for Chat,,,,False,version 1
+244,attn,char,,Attention,,,,False,version 1
+245,in_group_34,boolean,,Discount on lines,,,,False,version 1
+246,in_group_33,boolean,,Properties on lines,,,,False,version 1
+247,in_group_44,boolean,,Manage Push and Pull inventory flows,,,,False,version 1
+248,npwp_name,char,,NPWP Name,,,,False,version 1
+249,credit_point,float,,Credit Points,,,,True,version 1
+250,blok_npwp,char,,Blok,,,,False,version 1
+251,npwp_no,char,,No NPWP,,,,False,version 1
+252,kode_pos_npwp,char,,kode pos,,,,False,version 1
+253,alias_contact,selection,,Alias Contact Security,,,,False,version 1
+254,in_group_45,boolean,,Manage Different Stock Owners,,,,False,version 1
+255,nomor_npwp,char,,Nomor,,,,False,version 1
+256,sel_groups_3_4,selection,,Administration,,,,False,version 1
+257,kelurahan_npwp_id,many2one,res.kelurahan,Kelurahan,,,,False,version 1
+258,file_binary,binary,,Dokumen Profesi,,,,False,version 1
+259,sel_groups_24_26_83,selection,,Accounting & Finance,,,,False,version 1
 ,,,,
-37,country_code,,,,char,,Country Code,False,version 2
-38,children,,,,integer,,Number of Children,False,version 2
-39,activity_date_deadline,,,,date,,Next Activity Deadline,False,version 2
-40,private_email,,,,char,,Private Email,False,version 2
-41,receipt_reminder_email,,,,boolean,,Receipt Reminder,False,version 2
-42,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
-43,sel_groups_26_25_27_28,,,,selection,,Accounting,False,version 2
-44,department_id,,,,many2one,hr.department,Department,False,version 2
-45,sel_groups_33_34,,,,selection,,Purchase,False,version 2
-46,in_group_68,,,,boolean,,Multi-website,False,version 2
-47,in_group_64,,,,boolean,,Use Recurring Tasks,False,version 2
-48,sel_groups_67,,,,selection,,Contracts,False,version 2
-49,work_location,,,,char,,Work Location,False,version 2
-50,image_128,,,,binary,,Image 128,False,version 2
-51,gender,,,,selection,,Gender,False,version 2
-52,visitor_ids,,,,one2many,website.visitor,Visitors,False,version 2
-53,online_partner_vendor_name,,,,char,,Online Partner Vendor Name,False,version 2
-54,totp_enabled,,,,boolean,,Two-factor authentication,False,version 2
-55,image_1920,,,,binary,,Image,False,version 2
-56,job_title,,,,char,,Job Title,False,version 2
-57,website_id,,,,many2one,website,Website,False,version 2
-58,emergency_contact,,,,char,,Emergency Contact,False,version 2
-59,purchase_line_ids,,,,one2many,purchase.order.line,Purchase Lines,False,version 2
-60,km_home_work,,,,integer,,Home-Work Distance,False,version 2
-61,activity_type_icon,,,,char,,Activity Type Icon,False,version 2
-62,employee_count,,,,integer,,Employee Count,False,version 2
-63,sel_groups_69_70,,,,selection,,Website,False,version 2
-64,active_lang_count,,,,integer,,Active Lang Count,False,version 2
-65,message_has_error_counter,,,,integer,,Number of errors,False,version 2
-66,employee_phone,,,,char,,Private Phone,False,version 2
-67,sel_groups_65_66,,,,selection,,Employees,False,version 2
-68,employee_parent_id,,,,many2one,hr.employee,Manager,False,version 2
-69,image_256,,,,binary,,Image 256,False,version 2
-70,address_id,,,,many2one,res.partner,Work Address,False,version 2
-71,moderation_counter,,,,integer,,Moderation count,False,version 2
-72,image_1024,,,,binary,,Image 1024,False,version 2
-73,same_vat_partner_id,,,,many2one,res.partner,Partner with same Tax ID,False,version 2
-74,last_activity,,,,date,,Last Activity,False,version 2
-75,employee_bank_account_id,,,,many2one,res.partner.bank,Employee's Bank Account Number,False,version 2
-76,online_partner_bank_account,,,,char,,Online Partner Bank Account,False,version 2
-77,contact_address_complete,,,,char,,Contact Address Complete,False,version 2
-78,pin,,,,char,,PIN,False,version 2
-79,certificate,,,,selection,,Certificate Level,False,version 2
-80,customer_rank,,,,integer,,Customer Rank,False,version 2
-81,accesses_count,,,,integer,,# Access Rights,False,version 2
-82,vehicle,,,,char,,Company Vehicle,False,version 2
-83,last_activity_time,,,,char,,Last Activity Time,False,version 2
-84,can_publish,,,,boolean,,Can Publish,False,version 2
-85,resource_ids,,,,one2many,resource.resource,Resources,False,version 2
-86,payment_responsible_id,,,,many2one,res.users,Follow-up Responsible,False,version 2
-87,sel_groups_25_26_27_28,,,,selection,,Accounting,False,version 2
-88,l10n_id_tax_address,,,,char,,Tax Address,False,version 2
-89,is_published,,,,boolean,,Is Published,False,version 2
-90,odoobot_failed,,,,boolean,,Odoobot Failed,False,version 2
-91,notification_type,,,,selection,,Notification,True,version 2
-92,visa_expire,,,,date,,Visa Expire Date,False,version 2
-93,employee_id,,,,many2one,hr.employee,Company employee,False,version 2
-94,spouse_complete_name,,,,char,,Spouse Complete Name,False,version 2
-95,followup_level,,,,many2one,account_followup.followup.line,Follow-up Level,False,version 2
-96,unpaid_invoices,,,,one2many,account.move,Unpaid Invoices,False,version 2
-97,category_ids,,,,many2many,hr.employee.category,Employee Tags,False,version 2
-98,is_seo_optimized,,,,boolean,,SEO optimized,False,version 2
-99,message_attachment_count,,,,integer,,Attachment Count,False,version 2
-100,email_normalized,,,,char,,Normalized Email,False,version 2
-101,sel_groups_44_45,,,,selection,,Inventory,False,version 2
-102,birthday,,,,date,,Date of Birth,False,version 2
-103,partner_longitude,,,,float,,Geo Longitude,False,version 2
-104,work_email,,,,char,,Work Email,False,version 2
-105,api_key_ids,,,,one2many,res.users.apikeys,API Keys,False,version 2
-106,spouse_birthdate,,,,date,,Spouse Birthdate,False,version 2
-107,place_of_birth,,,,char,,Place of Birth,False,version 2
-108,total_overdue,,,,monetary,,Total Overdue,False,version 2
-109,reminder_date_before_receipt,,,,integer,,Days Before Receipt,False,version 2
-110,unreconciled_aml_ids,,,,one2many,account.move.line,Unreconciled Aml,False,version 2
-111,in_group_51,,,,boolean,,A warning can be set on a partner (Stock),False,version 2
-112,in_group_52,,,,boolean,,Require a signature on your delivery orders,False,version 2
-113,additional_info,,,,char,,Additional info,False,version 2
-114,odoobot_state,,,,selection,,OdooBot Status,False,version 2
-115,employee_country_id,,,,many2one,res.country,Employee's Country,False,version 2
-116,active_partner,,,,boolean,,Partner is Active,False,version 2
-117,study_field,,,,char,,Field of Study,False,version 2
-118,rules_count,,,,integer,,# Record Rules,False,version 2
-119,activity_type_id,,,,many2one,mail.activity.type,Next Activity Type,False,version 2
-120,sel_groups_2_3,,,,selection,,Administration,False,version 2
-121,phone_sanitized_blacklisted,,,,boolean,,Phone Blacklisted,False,version 2
-122,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
-123,supplier_rank,,,,integer,,Supplier Rank,False,version 2
-124,address_home_id,,,,many2one,res.partner,Address,False,version 2
-125,permit_no,,,,char,,Work Permit No,False,version 2
-126,l10n_id_nik,,,,char,,NIK,False,version 2
-127,phone_blacklisted,,,,boolean,,Blacklisted Phone is Phone,False,version 2
-128,study_school,,,,char,,School,False,version 2
-129,visa_no,,,,char,,Visa No,False,version 2
-130,marital,,,,selection,,Marital Status,False,version 2
-131,website_meta_og_img,,,,char,,Website opengraph image,False,version 2
-132,in_group_71,,,,boolean,,Allow to define fiscal years of more or less than a year,False,version 2
-133,partner_latitude,,,,float,,Geo Latitude,False,version 2
-134,payment_next_action_date,,,,date,,Next Action Date,False,version 2
-135,identification_id,,,,char,,Identification No,False,version 2
-136,is_blacklisted,,,,boolean,,Blacklist,False,version 2
-137,activity_exception_decoration,,,,selection,,Activity Exception Decoration,False,version 2
-138,work_phone,,,,char,,Work Phone,False,version 2
-139,partner_gid,,,,integer,,Company database ID,False,version 2
-140,in_group_4,,,,boolean,,Multi Companies,False,version 2
-141,mobile_blacklisted,,,,boolean,,Blacklisted Phone Is Mobile,False,version 2
-142,seo_name,,,,char,,Seo name,False,version 2
-143,resource_calendar_id,,,,many2one,resource.calendar,Default Working Hours,False,version 2
-144,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
-145,is_address_home_a_company,,,,boolean,,The employee address has a company linked,False,version 2
-146,moderation_channel_ids,,,,many2many,mail.channel,Moderated channels,False,version 2
-147,online_partner_information,,,,char,,Online Partner Information,False,version 2
-148,additional_note,,,,text,,Additional Note,False,version 2
-149,followup_status,,,,selection,,Follow-up Status,False,version 2
-150,ocn_token,,,,char,,OCN Token,False,version 2
-151,activity_user_id,,,,many2one,res.users,Responsible User,False,version 2
-152,hr_presence_state,,,,selection,,Hr Presence State,False,version 2
-153,mobile_phone,,,,char,,Work Mobile,False,version 2
-154,industry_id,,,,many2one,res.partner.industry,Industry,False,version 2
-155,is_moderator,,,,boolean,,Is moderator,False,version 2
-156,property_warehouse_id,,,,many2one,stock.warehouse,Default Warehouse,False,version 2
-157,sel_groups_72_73_74,,,,selection,,Expenses,False,version 2
-158,sel_groups_60_61,,,,selection,,Project,False,version 2
-159,activity_ids,,,,one2many,mail.activity,Activities,False,version 2
-160,expense_manager_id,,,,many2one,res.users,Expense,False,version 2
-161,activity_exception_icon,,,,char,,Icon,False,version 2
-162,on_time_rate,,,,float,,On-Time Delivery Rate,False,version 2
-163,total_due,,,,monetary,,Total Due,False,version 2
-164,activity_state,,,,selection,,Activity State,False,version 2
-165,in_group_29,,,,boolean,,A warning can be set on a partner (Account),False,version 2
-166,coach_id,,,,many2one,hr.employee,Coach,False,version 2
-167,in_group_39,,,,boolean,,A warning can be set on a product or a customer (Sale),False,version 2
-168,in_group_35,,,,boolean,,A warning can be set on a product or a customer (Purchase),False,version 2
-169,in_group_30,,,,boolean,,Allow the cash rounding management,False,version 2
-170,in_group_31,,,,boolean,,Sale Receipt,False,version 2
-171,message_has_error,,,,boolean,,Message Delivery error,False,version 2
-172,in_group_38,,,,boolean,,Addresses in Sales Orders,False,version 2
-173,groups_count,,,,integer,,# Groups,False,version 2
-174,bank_account_id,,,,many2one,res.partner.bank,Bank Account Number,False,version 2
-175,l10n_id_tax_name,,,,char,,Tax Name,False,version 2
-176,passport_id,,,,char,,Passport No,False,version 2
-177,phone_sanitized,,,,char,,Sanitized Number,False,version 2
-178,emergency_phone,,,,char,,Emergency Phone,False,version 2
-179,in_group_49,,,,boolean,,Manage Push and Pull inventory flows,False,version 2
-180,in_group_48,,,,boolean,,Manage Packages,False,version 2
-181,sel_groups_20_21_22,,,,selection,,Sales,False,version 2
-182,in_group_43,,,,boolean,,Manage Multiple Warehouses,False,version 2
-183,in_group_42,,,,boolean,,Manage Multiple Stock Locations,False,version 2
-184,in_group_41,,,,boolean,,Quotation Templates,False,version 2
-185,can_edit,,,,boolean,,Can Edit,False,version 2
-186,l10n_id_kode_transaksi,,,,selection,,Kode Transaksi,False,version 2
-187,activity_summary,,,,char,,Next Activity Summary,False,version 2
-188,l10n_id_pkp,,,,boolean,,ID PKP,False,version 2
-189,sel_groups_1_9_10,,,,selection,,User types,False,version 2
-190,image_512,,,,binary,,Image 512,False,version 2
-191,country_of_birth,,,,many2one,res.country,Country of Birth,False,version 2
-192,sel_groups_53_54,,,,selection,,Manufacturing,False,version 2
+260,country_code,,,,char,,Country Code,False,version 2
+261,children,,,,integer,,Number of Children,False,version 2
+262,activity_date_deadline,,,,date,,Next Activity Deadline,False,version 2
+263,private_email,,,,char,,Private Email,False,version 2
+264,receipt_reminder_email,,,,boolean,,Receipt Reminder,False,version 2
+265,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
+266,sel_groups_26_25_27_28,,,,selection,,Accounting,False,version 2
+267,department_id,,,,many2one,hr.department,Department,False,version 2
+268,sel_groups_33_34,,,,selection,,Purchase,False,version 2
+269,in_group_68,,,,boolean,,Multi-website,False,version 2
+270,in_group_64,,,,boolean,,Use Recurring Tasks,False,version 2
+271,sel_groups_67,,,,selection,,Contracts,False,version 2
+272,in_group_63,,,,boolean,,Use Rating on Project,False,version 2
+273,in_group_62,,,,boolean,,Use Subtasks,False,version 2
+274,work_location,,,,char,,Work Location,False,version 2
+275,image_128,,,,binary,,Image 128,False,version 2
+276,gender,,,,selection,,Gender,False,version 2
+277,visitor_ids,,,,one2many,website.visitor,Visitors,False,version 2
+278,online_partner_vendor_name,,,,char,,Online Partner Vendor Name,False,version 2
+279,totp_enabled,,,,boolean,,Two-factor authentication,False,version 2
+280,image_1920,,,,binary,,Image,False,version 2
+281,job_title,,,,char,,Job Title,False,version 2
+282,website_id,,,,many2one,website,Website,False,version 2
+283,emergency_contact,,,,char,,Emergency Contact,False,version 2
+284,purchase_line_ids,,,,one2many,purchase.order.line,Purchase Lines,False,version 2
+285,km_home_work,,,,integer,,Home-Work Distance,False,version 2
+286,activity_type_icon,,,,char,,Activity Type Icon,False,version 2
+287,employee_count,,,,integer,,Employee Count,False,version 2
+288,sel_groups_69_70,,,,selection,,Website,False,version 2
+289,active_lang_count,,,,integer,,Active Lang Count,False,version 2
+290,message_has_error_counter,,,,integer,,Number of errors,False,version 2
+291,employee_phone,,,,char,,Private Phone,False,version 2
+292,sel_groups_65_66,,,,selection,,Employees,False,version 2
+293,employee_parent_id,,,,many2one,hr.employee,Manager,False,version 2
+294,image_256,,,,binary,,Image 256,False,version 2
+295,address_id,,,,many2one,res.partner,Work Address,False,version 2
+296,moderation_counter,,,,integer,,Moderation count,False,version 2
+297,image_1024,,,,binary,,Image 1024,False,version 2
+298,same_vat_partner_id,,,,many2one,res.partner,Partner with same Tax ID,False,version 2
+299,last_activity,,,,date,,Last Activity,False,version 2
+300,employee_bank_account_id,,,,many2one,res.partner.bank,Employee's Bank Account Number,False,version 2
+301,online_partner_bank_account,,,,char,,Online Partner Bank Account,False,version 2
+302,contact_address_complete,,,,char,,Contact Address Complete,False,version 2
+303,pin,,,,char,,PIN,False,version 2
+304,certificate,,,,selection,,Certificate Level,False,version 2
+305,customer_rank,,,,integer,,Customer Rank,False,version 2
+306,accesses_count,,,,integer,,# Access Rights,False,version 2
+307,vehicle,,,,char,,Company Vehicle,False,version 2
+308,last_activity_time,,,,char,,Last Activity Time,False,version 2
+309,can_publish,,,,boolean,,Can Publish,False,version 2
+310,in_group_23,,,,boolean,,Tax display B2B,False,version 2
+311,in_group_24,,,,boolean,,Tax display B2C,False,version 2
+312,resource_ids,,,,one2many,resource.resource,Resources,False,version 2
+313,payment_responsible_id,,,,many2one,res.users,Follow-up Responsible,False,version 2
+314,sel_groups_25_26_27_28,,,,selection,,Accounting,False,version 2
+315,l10n_id_tax_address,,,,char,,Tax Address,False,version 2
+316,is_published,,,,boolean,,Is Published,False,version 2
+317,odoobot_failed,,,,boolean,,Odoobot Failed,False,version 2
+318,notification_type,,,,selection,,Notification,True,version 2
+319,visa_expire,,,,date,,Visa Expire Date,False,version 2
+320,employee_id,,,,many2one,hr.employee,Company employee,False,version 2
+321,spouse_complete_name,,,,char,,Spouse Complete Name,False,version 2
+322,followup_level,,,,many2one,account_followup.followup.line,Follow-up Level,False,version 2
+323,unpaid_invoices,,,,one2many,account.move,Unpaid Invoices,False,version 2
+324,category_ids,,,,many2many,hr.employee.category,Employee Tags,False,version 2
+325,is_seo_optimized,,,,boolean,,SEO optimized,False,version 2
+326,message_attachment_count,,,,integer,,Attachment Count,False,version 2
+327,email_normalized,,,,char,,Normalized Email,False,version 2
+328,sel_groups_44_45,,,,selection,,Inventory,False,version 2
+329,birthday,,,,date,,Date of Birth,False,version 2
+330,partner_longitude,,,,float,,Geo Longitude,False,version 2
+331,work_email,,,,char,,Work Email,False,version 2
+332,api_key_ids,,,,one2many,res.users.apikeys,API Keys,False,version 2
+333,spouse_birthdate,,,,date,,Spouse Birthdate,False,version 2
+334,place_of_birth,,,,char,,Place of Birth,False,version 2
+335,total_overdue,,,,monetary,,Total Overdue,False,version 2
+336,reminder_date_before_receipt,,,,integer,,Days Before Receipt,False,version 2
+337,in_group_58,,,,boolean,,Display incoterms on Sales Order and related invoices,False,version 2
+338,unreconciled_aml_ids,,,,one2many,account.move.line,Unreconciled Aml,False,version 2
+339,in_group_50,,,,boolean,,Manage Different Stock Owners,False,version 2
+340,in_group_51,,,,boolean,,A warning can be set on a partner (Stock),False,version 2
+341,additional_info,,,,char,,Additional info,False,version 2
+342,odoobot_state,,,,selection,,OdooBot Status,False,version 2
+343,employee_country_id,,,,many2one,res.country,Employee's Country,False,version 2
+344,active_partner,,,,boolean,,Partner is Active,False,version 2
+345,study_field,,,,char,,Field of Study,False,version 2
+346,rules_count,,,,integer,,# Record Rules,False,version 2
+347,activity_type_id,,,,many2one,mail.activity.type,Next Activity Type,False,version 2
+348,sel_groups_2_3,,,,selection,,Administration,False,version 2
+349,phone_sanitized_blacklisted,,,,boolean,,Phone Blacklisted,False,version 2
+350,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
+351,supplier_rank,,,,integer,,Supplier Rank,False,version 2
+352,address_home_id,,,,many2one,res.partner,Address,False,version 2
+353,permit_no,,,,char,,Work Permit No,False,version 2
+354,l10n_id_nik,,,,char,,NIK,False,version 2
+355,phone_blacklisted,,,,boolean,,Blacklisted Phone is Phone,False,version 2
+356,study_school,,,,char,,School,False,version 2
+357,visa_no,,,,char,,Visa No,False,version 2
+358,marital,,,,selection,,Marital Status,False,version 2
+359,website_meta_og_img,,,,char,,Website opengraph image,False,version 2
+360,in_group_71,,,,boolean,,Allow to define fiscal years of more or less than a year,False,version 2
+361,partner_latitude,,,,float,,Geo Latitude,False,version 2
+362,payment_next_action_date,,,,date,,Next Action Date,False,version 2
+363,identification_id,,,,char,,Identification No,False,version 2
+364,is_blacklisted,,,,boolean,,Blacklist,False,version 2
+365,activity_exception_decoration,,,,selection,,Activity Exception Decoration,False,version 2
+366,work_phone,,,,char,,Work Phone,False,version 2
+367,partner_gid,,,,integer,,Company database ID,False,version 2
+368,in_group_4,,,,boolean,,Multi Companies,False,version 2
+369,mobile_blacklisted,,,,boolean,,Blacklisted Phone Is Mobile,False,version 2
+370,seo_name,,,,char,,Seo name,False,version 2
+371,resource_calendar_id,,,,many2one,resource.calendar,Default Working Hours,False,version 2
+372,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
+373,is_address_home_a_company,,,,boolean,,The employee address has a company linked,False,version 2
+374,moderation_channel_ids,,,,many2many,mail.channel,Moderated channels,False,version 2
+375,online_partner_information,,,,char,,Online Partner Information,False,version 2
+376,in_group_11,,,,boolean,,Access to Private Addresses,False,version 2
+377,in_group_12,,,,boolean,,Manage Multiple Units of Measure,False,version 2
+378,additional_note,,,,text,,Additional Note,False,version 2
+379,followup_status,,,,selection,,Follow-up Status,False,version 2
+380,ocn_token,,,,char,,OCN Token,False,version 2
+381,activity_user_id,,,,many2one,res.users,Responsible User,False,version 2
+382,hr_presence_state,,,,selection,,Hr Presence State,False,version 2
+383,mobile_phone,,,,char,,Work Mobile,False,version 2
+384,industry_id,,,,many2one,res.partner.industry,Industry,False,version 2
+385,is_moderator,,,,boolean,,Is moderator,False,version 2
+386,property_warehouse_id,,,,many2one,stock.warehouse,Default Warehouse,False,version 2
+387,sel_groups_72_73_74,,,,selection,,Expenses,False,version 2
+388,sel_groups_60_61,,,,selection,,Project,False,version 2
+389,activity_ids,,,,one2many,mail.activity,Activities,False,version 2
+390,expense_manager_id,,,,many2one,res.users,Expense,False,version 2
+391,activity_exception_icon,,,,char,,Icon,False,version 2
+392,on_time_rate,,,,float,,On-Time Delivery Rate,False,version 2
+393,total_due,,,,monetary,,Total Due,False,version 2
+394,activity_state,,,,selection,,Activity State,False,version 2
+395,coach_id,,,,many2one,hr.employee,Coach,False,version 2
+396,message_has_error,,,,boolean,,Message Delivery error,False,version 2
+397,groups_count,,,,integer,,# Groups,False,version 2
+398,bank_account_id,,,,many2one,res.partner.bank,Bank Account Number,False,version 2
+399,l10n_id_tax_name,,,,char,,Tax Name,False,version 2
+400,passport_id,,,,char,,Passport No,False,version 2
+401,phone_sanitized,,,,char,,Sanitized Number,False,version 2
+402,emergency_phone,,,,char,,Emergency Phone,False,version 2
+403,sel_groups_20_21_22,,,,selection,,Sales,False,version 2
+404,in_group_41,,,,boolean,,Quotation Templates,False,version 2
+405,in_group_40,,,,boolean,,Pro-forma Invoices,False,version 2
+406,can_edit,,,,boolean,,Can Edit,False,version 2
+407,l10n_id_kode_transaksi,,,,selection,,Kode Transaksi,False,version 2
+408,activity_summary,,,,char,,Next Activity Summary,False,version 2
+409,l10n_id_pkp,,,,boolean,,ID PKP,False,version 2
+410,sel_groups_1_9_10,,,,selection,,User types,False,version 2
+411,image_512,,,,binary,,Image 512,False,version 2
+412,country_of_birth,,,,many2one,res.country,Country of Birth,False,version 2
 ,,,,
 ,,,,

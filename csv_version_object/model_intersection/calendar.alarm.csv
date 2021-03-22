@@ -1,19 +1,19 @@
 model,calendar.alarm,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,name,char,,Name,char,,Name,True,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,interval,selection,,Unit,selection,,Unit,True,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,duration_minutes,integer,,Duration in minutes,integer,,Duration in minutes,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,duration,integer,,Amount,integer,,Remind Before,True,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,id,integer,,ID,integer,,ID,False,both
+2,display_name,char,,Display Name,char,,Display Name,False,both
+3,name,char,,Name,char,,Name,True,both
+4,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+5,interval,selection,,Unit,selection,,Unit,True,both
+6,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+7,duration_minutes,integer,,Duration in minutes,integer,,Duration in minutes,False,both
+8,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+9,duration,integer,,Amount,integer,,Remind Before,True,both
+10,create_date,datetime,,Created on,datetime,,Created on,False,both
+11,id,integer,,ID,integer,,ID,False,both
 ,,,,
-1,type,selection,,Type,,,,True,version 1
+12,type,selection,,Type,,,,True,version 1
 ,,,,
-2,alarm_type,,,,selection,,Type,True,version 2
+13,alarm_type,,,,selection,,Type,True,version 2
 ,,,,
 ,,,,

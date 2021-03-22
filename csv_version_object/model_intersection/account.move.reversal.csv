@@ -1,24 +1,24 @@
 model,account.move.reversal,transient,True
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,journal_id,many2one,account.journal,Use Specific Journal,many2one,account.journal,Use Specific Journal,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,date,date,,Reversal date,date,,Reversal date,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,id,integer,,ID,integer,,ID,False,both
+2,create_date,datetime,,Created on,datetime,,Created on,False,both
+3,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+4,journal_id,many2one,account.journal,Use Specific Journal,many2one,account.journal,Use Specific Journal,False,both
+5,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+6,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+7,date,date,,Reversal date,date,,Reversal date,False,both
+8,display_name,char,,Display Name,char,,Display Name,False,both
+9,id,integer,,ID,integer,,ID,False,both
 ,,,,
 ,,,,
-1,move_type,,,,char,,Move Type,False,version 2
-2,residual,,,,monetary,,Residual,False,version 2
-3,company_id,,,,many2one,res.company,Company,True,version 2
-4,currency_id,,,,many2one,res.currency,Currency,False,version 2
-5,reason,,,,char,,Reason,False,version 2
-6,new_move_ids,,,,many2many,account.move,New Move,False,version 2
-7,date_mode,,,,selection,,Date Mode,True,version 2
-8,refund_method,,,,selection,,Credit Method,True,version 2
-9,move_ids,,,,many2many,account.move,Move,False,version 2
+10,move_type,,,,char,,Move Type,False,version 2
+11,residual,,,,monetary,,Residual,False,version 2
+12,company_id,,,,many2one,res.company,Company,True,version 2
+13,currency_id,,,,many2one,res.currency,Currency,False,version 2
+14,reason,,,,char,,Reason,False,version 2
+15,new_move_ids,,,,many2many,account.move,New Move,False,version 2
+16,date_mode,,,,selection,,Date Mode,True,version 2
+17,refund_method,,,,selection,,Credit Method,True,version 2
+18,move_ids,,,,many2many,account.move,Move,False,version 2
 ,,,,
 ,,,,

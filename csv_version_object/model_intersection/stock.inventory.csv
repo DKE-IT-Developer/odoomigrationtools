@@ -1,58 +1,58 @@
 model,stock.inventory,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,name,char,,Inventory Reference,char,,Inventory Reference,True,both
-1,accounting_date,date,,Force Accounting Date,date,,Accounting Date,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,exhausted,boolean,,Include Exhausted Products,boolean,,Include Exhausted Products,False,both
-1,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,move_ids,one2many,stock.move,Created Moves,one2many,stock.move,Created Moves,False,both
-1,state,selection,,Status,selection,,Status,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,line_ids,one2many,stock.inventory.line,Inventories,one2many,stock.inventory.line,Inventories,False,both
-1,date,datetime,,Inventory Date,datetime,,Inventory Date,True,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,id,integer,,ID,integer,,ID,False,both
+2,create_date,datetime,,Created on,datetime,,Created on,False,both
+3,name,char,,Inventory Reference,char,,Inventory Reference,True,both
+4,accounting_date,date,,Force Accounting Date,date,,Accounting Date,False,both
+5,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+6,exhausted,boolean,,Include Exhausted Products,boolean,,Include Exhausted Products,False,both
+7,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
+8,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+9,move_ids,one2many,stock.move,Created Moves,one2many,stock.move,Created Moves,False,both
+10,state,selection,,Status,selection,,Status,False,both
+11,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+12,line_ids,one2many,stock.inventory.line,Inventories,one2many,stock.inventory.line,Inventories,False,both
+13,date,datetime,,Inventory Date,datetime,,Inventory Date,True,both
+14,display_name,char,,Display Name,char,,Display Name,False,both
+15,id,integer,,ID,integer,,ID,False,both
 ,,,,
-1,package_id,many2one,stock.quant.package,Inventoried Pack,,,,False,version 1
-2,lot_id,many2one,stock.production.lot,Inventoried Lot/Serial Number,,,,False,version 1
-3,total_qty,float,,Total Quantity,,,,False,version 1
-4,partner_id,many2one,res.partner,Inventoried Owner,,,,False,version 1
-5,product_id,many2one,product.product,Inventoried Product,,,,False,version 1
-6,location_id,many2one,stock.location,Inventoried Location,,,,True,version 1
-7,filter,selection,,Inventory of,,,,True,version 1
-8,category_id,many2one,product.category,Inventoried Category,,,,False,version 1
+16,package_id,many2one,stock.quant.package,Inventoried Pack,,,,False,version 1
+17,lot_id,many2one,stock.production.lot,Inventoried Lot/Serial Number,,,,False,version 1
+18,total_qty,float,,Total Quantity,,,,False,version 1
+19,location_id,many2one,stock.location,Inventoried Location,,,,True,version 1
+20,product_id,many2one,product.product,Inventoried Product,,,,False,version 1
+21,partner_id,many2one,res.partner,Inventoried Owner,,,,False,version 1
+22,filter,selection,,Inventory of,,,,True,version 1
+23,category_id,many2one,product.category,Inventoried Category,,,,False,version 1
 ,,,,
-9,message_follower_ids,,,,one2many,mail.followers,Followers,False,version 2
-10,message_needaction,,,,boolean,,Action Needed,False,version 2
-11,message_channel_ids,,,,many2many,mail.channel,Followers (Channels),False,version 2
-12,has_account_moves,,,,boolean,,Has Account Moves,False,version 2
-13,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
-14,message_has_error,,,,boolean,,Message Delivery error,False,version 2
-15,activity_date_deadline,,,,date,,Next Activity Deadline,False,version 2
-16,message_is_follower,,,,boolean,,Is Follower,False,version 2
-17,activity_exception_decoration,,,,selection,,Activity Exception Decoration,False,version 2
-18,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
-19,activity_type_icon,,,,char,,Activity Type Icon,False,version 2
-20,message_ids,,,,one2many,mail.message,Messages,False,version 2
-21,activity_user_id,,,,many2one,res.users,Responsible User,False,version 2
-22,message_attachment_count,,,,integer,,Attachment Count,False,version 2
-23,message_unread_counter,,,,integer,,Unread Messages Counter,False,version 2
-24,prefill_counted_quantity,,,,selection,,Counted Quantities,False,version 2
-25,start_empty,,,,boolean,,Empty Inventory,False,version 2
-26,message_has_error_counter,,,,integer,,Number of errors,False,version 2
-27,activity_type_id,,,,many2one,mail.activity.type,Next Activity Type,False,version 2
-28,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
-29,activity_ids,,,,one2many,mail.activity,Activities,False,version 2
-30,activity_summary,,,,char,,Next Activity Summary,False,version 2
-31,activity_exception_icon,,,,char,,Icon,False,version 2
-32,product_ids,,,,many2many,product.product,Products,False,version 2
-33,activity_state,,,,selection,,Activity State,False,version 2
-34,location_ids,,,,many2many,stock.location,Locations,False,version 2
-35,message_unread,,,,boolean,,Unread Messages,False,version 2
-36,message_needaction_counter,,,,integer,,Number of Actions,False,version 2
-37,message_partner_ids,,,,many2many,res.partner,Followers (Partners),False,version 2
+24,message_follower_ids,,,,one2many,mail.followers,Followers,False,version 2
+25,message_needaction,,,,boolean,,Action Needed,False,version 2
+26,message_channel_ids,,,,many2many,mail.channel,Followers (Channels),False,version 2
+27,has_account_moves,,,,boolean,,Has Account Moves,False,version 2
+28,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
+29,message_has_error,,,,boolean,,Message Delivery error,False,version 2
+30,activity_date_deadline,,,,date,,Next Activity Deadline,False,version 2
+31,message_is_follower,,,,boolean,,Is Follower,False,version 2
+32,activity_exception_decoration,,,,selection,,Activity Exception Decoration,False,version 2
+33,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
+34,activity_type_icon,,,,char,,Activity Type Icon,False,version 2
+35,message_ids,,,,one2many,mail.message,Messages,False,version 2
+36,activity_user_id,,,,many2one,res.users,Responsible User,False,version 2
+37,message_attachment_count,,,,integer,,Attachment Count,False,version 2
+38,message_unread_counter,,,,integer,,Unread Messages Counter,False,version 2
+39,prefill_counted_quantity,,,,selection,,Counted Quantities,False,version 2
+40,start_empty,,,,boolean,,Empty Inventory,False,version 2
+41,message_has_error_counter,,,,integer,,Number of errors,False,version 2
+42,activity_type_id,,,,many2one,mail.activity.type,Next Activity Type,False,version 2
+43,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
+44,activity_ids,,,,one2many,mail.activity,Activities,False,version 2
+45,activity_summary,,,,char,,Next Activity Summary,False,version 2
+46,activity_exception_icon,,,,char,,Icon,False,version 2
+47,product_ids,,,,many2many,product.product,Products,False,version 2
+48,activity_state,,,,selection,,Activity State,False,version 2
+49,location_ids,,,,many2many,stock.location,Locations,False,version 2
+50,message_unread,,,,boolean,,Unread Messages,False,version 2
+51,message_needaction_counter,,,,integer,,Number of Actions,False,version 2
+52,message_partner_ids,,,,many2many,res.partner,Followers (Partners),False,version 2
 ,,,,
 ,,,,

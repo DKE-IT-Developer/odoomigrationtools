@@ -1,0 +1,17 @@
+model,mass.object,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,,,,False,version 1
+2,model_id,many2one,ir.model,Model,,,,True,version 1
+3,display_name,char,,Display Name,,,,False,version 1
+4,name,char,,Name,,,,True,version 1
+5,__last_update,datetime,,Last Modified on,,,,False,version 1
+6,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
+7,ref_ir_act_window_id,many2one,ir.actions.act_window,Sidebar action,,,,False,version 1
+8,field_ids,many2many,ir.model.fields,Fields,,,,False,version 1
+9,ref_ir_value_id,many2one,ir.values,Sidebar button,,,,False,version 1
+10,create_date,datetime,,Created on,,,,False,version 1
+11,write_date,datetime,,Last Updated on,,,,False,version 1
+12,model_list,char,,Model List,,,,False,version 1
+13,id,integer,,ID,,,,False,version 1
+,,,,
+,,,,

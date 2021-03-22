@@ -1,47 +1,47 @@
 model,sale.report,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,qty_to_invoice,float,,Qty To Invoice,float,,Qty To Invoice,False,both
-1,nbr,integer,,# of Lines,integer,,# of Lines,False,both
-1,product_uom_qty,float,,# of Qty,float,,Qty Ordered,False,both
-1,price_subtotal,float,,Untaxed Total,float,,Untaxed Total,False,both
-1,team_id,many2one,crm.team,Sales Team,many2one,crm.team,Sales Team,False,both
-1,partner_id,many2one,res.partner,Partner,many2one,res.partner,Customer,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,analytic_account_id,many2one,account.analytic.account,Analytic Account,many2one,account.analytic.account,Analytic Account,False,both
-1,user_id,many2one,res.users,Salesperson,many2one,res.users,Salesperson,False,both
-1,weight,float,,Gross Weight,float,,Gross Weight,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,country_id,many2one,res.country,Partner Country,many2one,res.country,Customer Country,False,both
-1,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-1,product_tmpl_id,many2one,product.template,Product Template,many2one,product.template,Product,False,both
-1,state,selection,,Status,selection,,Status,False,both
-1,pricelist_id,many2one,product.pricelist,Pricelist,many2one,product.pricelist,Pricelist,False,both
-1,qty_invoiced,float,,Qty Invoiced,float,,Qty Invoiced,False,both
-1,warehouse_id,many2one,stock.warehouse,Warehouse,many2one,stock.warehouse,Warehouse,False,both
-1,volume,float,,Volume,float,,Volume,False,both
-1,date,datetime,,Date Order,datetime,,Order Date,False,both
-1,qty_delivered,float,,Qty Delivered,float,,Qty Delivered,False,both
-1,categ_id,many2one,product.category,Product Category,many2one,product.category,Product Category,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,price_total,float,,Total,float,,Total,False,both
-1,name,char,,Order Reference,char,,Order Reference,False,both
-1,product_uom,many2one,product.uom,Unit of Measure,many2one,uom.uom,Unit of Measure,False,both
-1,product_id,many2one,product.product,Product,many2one,product.product,Product Variant,False,both
-1,commercial_partner_id,many2one,res.partner,Commercial Entity,many2one,res.partner,Customer Entity,False,both
+2,nbr,integer,,# of Lines,integer,,# of Lines,False,both
+3,product_uom_qty,float,,# of Qty,float,,Qty Ordered,False,both
+4,price_subtotal,float,,Untaxed Total,float,,Untaxed Total,False,both
+5,team_id,many2one,crm.team,Sales Team,many2one,crm.team,Sales Team,False,both
+6,partner_id,many2one,res.partner,Partner,many2one,res.partner,Customer,False,both
+7,id,integer,,ID,integer,,ID,False,both
+8,analytic_account_id,many2one,account.analytic.account,Analytic Account,many2one,account.analytic.account,Analytic Account,False,both
+9,display_name,char,,Display Name,char,,Display Name,False,both
+10,product_uom,many2one,product.uom,Unit of Measure,many2one,uom.uom,Unit of Measure,False,both
+11,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+12,country_id,many2one,res.country,Partner Country,many2one,res.country,Customer Country,False,both
+13,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
+14,product_tmpl_id,many2one,product.template,Product Template,many2one,product.template,Product,False,both
+15,state,selection,,Status,selection,,Status,False,both
+16,pricelist_id,many2one,product.pricelist,Pricelist,many2one,product.pricelist,Pricelist,False,both
+17,qty_invoiced,float,,Qty Invoiced,float,,Qty Invoiced,False,both
+18,weight,float,,Gross Weight,float,,Gross Weight,False,both
+19,warehouse_id,many2one,stock.warehouse,Warehouse,many2one,stock.warehouse,Warehouse,False,both
+20,volume,float,,Volume,float,,Volume,False,both
+21,date,datetime,,Date Order,datetime,,Order Date,False,both
+22,qty_delivered,float,,Qty Delivered,float,,Qty Delivered,False,both
+23,categ_id,many2one,product.category,Product Category,many2one,product.category,Product Category,False,both
+24,name,char,,Order Reference,char,,Order Reference,False,both
+25,price_total,float,,Total,float,,Total,False,both
+26,product_id,many2one,product.product,Product,many2one,product.product,Product Variant,False,both
+27,user_id,many2one,res.users,Salesperson,many2one,res.users,Salesperson,False,both
+28,commercial_partner_id,many2one,res.partner,Commercial Entity,many2one,res.partner,Customer Entity,False,both
 ,,,,
 ,,,,
-1,untaxed_amount_to_invoice,,,,float,,Untaxed Amount To Invoice,False,version 2
-2,order_id,,,,many2one,sale.order,Order #,False,version 2
-3,website_id,,,,many2one,website,Website,False,version 2
-4,campaign_id,,,,many2one,utm.campaign,Campaign,False,version 2
-5,avg_days_to_confirm,,,,float,,Average Days To Confirm,False,version 2
-6,discount,,,,float,,Discount %,False,version 2
-7,discount_amount,,,,float,,Discount Amount,False,version 2
-8,invoice_status,,,,selection,,Invoice Status,False,version 2
-9,medium_id,,,,many2one,utm.medium,Medium,False,version 2
-10,industry_id,,,,many2one,res.partner.industry,Customer Industry,False,version 2
-11,is_abandoned_cart,,,,boolean,,Abandoned Cart,False,version 2
-12,source_id,,,,many2one,utm.source,Source,False,version 2
-13,untaxed_amount_invoiced,,,,float,,Untaxed Amount Invoiced,False,version 2
+29,untaxed_amount_to_invoice,,,,float,,Untaxed Amount To Invoice,False,version 2
+30,order_id,,,,many2one,sale.order,Order #,False,version 2
+31,website_id,,,,many2one,website,Website,False,version 2
+32,campaign_id,,,,many2one,utm.campaign,Campaign,False,version 2
+33,avg_days_to_confirm,,,,float,,Average Days To Confirm,False,version 2
+34,discount,,,,float,,Discount %,False,version 2
+35,discount_amount,,,,float,,Discount Amount,False,version 2
+36,invoice_status,,,,selection,,Invoice Status,False,version 2
+37,medium_id,,,,many2one,utm.medium,Medium,False,version 2
+38,industry_id,,,,many2one,res.partner.industry,Customer Industry,False,version 2
+39,is_abandoned_cart,,,,boolean,,Abandoned Cart,False,version 2
+40,source_id,,,,many2one,utm.source,Source,False,version 2
+41,untaxed_amount_invoiced,,,,float,,Untaxed Amount Invoiced,False,version 2
 ,,,,
 ,,,,

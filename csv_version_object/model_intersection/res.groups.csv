@@ -1,27 +1,27 @@
 model,res.groups,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,comment,text,,Comment,text,,Comment,False,both
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,name,char,,Name,char,,Name,True,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,color,integer,,Color Index,integer,,Color Index,False,both
-1,share,boolean,,Share Group,boolean,,Share Group,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,rule_groups,many2many,ir.rule,Rules,many2many,ir.rule,Rules,False,both
-1,implied_ids,many2many,res.groups,Inherits,many2many,res.groups,Inherits,False,both
-1,users,many2many,res.users,Users,many2many,res.users,Users,False,both
-1,full_name,char,,Group Name,char,,Group Name,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,view_access,many2many,ir.ui.view,Views,many2many,ir.ui.view,Views,False,both
-1,category_id,many2one,ir.module.category,Application,many2one,ir.module.category,Application,False,both
-1,model_access,one2many,ir.model.access,Access Controls,one2many,ir.model.access,Access Controls,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,trans_implied_ids,many2many,res.groups,Transitively inherits,many2many,res.groups,Transitively inherits,False,both
-1,menu_access,many2many,ir.ui.menu,Access Menu,many2many,ir.ui.menu,Access Menu,False,both
+2,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+3,display_name,char,,Display Name,char,,Display Name,False,both
+4,menu_access,many2many,ir.ui.menu,Access Menu,many2many,ir.ui.menu,Access Menu,False,both
+5,name,char,,Name,char,,Name,True,both
+6,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+7,color,integer,,Color Index,integer,,Color Index,False,both
+8,share,boolean,,Share Group,boolean,,Share Group,False,both
+9,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+10,rule_groups,many2many,ir.rule,Rules,many2many,ir.rule,Rules,False,both
+11,implied_ids,many2many,res.groups,Inherits,many2many,res.groups,Inherits,False,both
+12,full_name,char,,Group Name,char,,Group Name,False,both
+13,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+14,create_date,datetime,,Created on,datetime,,Created on,False,both
+15,users,many2many,res.users,Users,many2many,res.users,Users,False,both
+16,category_id,many2one,ir.module.category,Application,many2one,ir.module.category,Application,False,both
+17,model_access,one2many,ir.model.access,Access Controls,one2many,ir.model.access,Access Controls,False,both
+18,id,integer,,ID,integer,,ID,False,both
+19,trans_implied_ids,many2many,res.groups,Transitively inherits,many2many,res.groups,Transitively inherits,False,both
+20,view_access,many2many,ir.ui.view,Views,many2many,ir.ui.view,Views,False,both
 ,,,,
-1,is_portal,boolean,,Portal,,,,False,version 1
+21,is_portal,boolean,,Portal,,,,False,version 1
 ,,,,
 ,,,,
 ,,,,

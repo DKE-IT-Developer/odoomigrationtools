@@ -1,22 +1,22 @@
 model,mail.channel.partner,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,seen_message_id,many2one,mail.message,Last Seen,many2one,mail.message,Last Seen,False,both
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,is_minimized,boolean,,Conversation is minimized,boolean,,Conversation is minimized,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,is_pinned,boolean,,Is pinned on the interface,boolean,,Is pinned on the interface,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,channel_id,many2one,mail.channel,Channel,many2one,mail.channel,Channel,False,both
-1,fold_state,selection,,Conversation Fold State,selection,,Conversation Fold State,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,partner_id,many2one,res.partner,Recipient,many2one,res.partner,Recipient,False,both
-1,id,integer,,ID,integer,,ID,False,both
+2,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+3,display_name,char,,Display Name,char,,Display Name,False,both
+4,is_minimized,boolean,,Conversation is minimized,boolean,,Conversation is minimized,False,both
+5,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+6,is_pinned,boolean,,Is pinned on the interface,boolean,,Is pinned on the interface,False,both
+7,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+8,channel_id,many2one,mail.channel,Channel,many2one,mail.channel,Channel,False,both
+9,fold_state,selection,,Conversation Fold State,selection,,Conversation Fold State,False,both
+10,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+11,create_date,datetime,,Created on,datetime,,Created on,False,both
+12,partner_id,many2one,res.partner,Recipient,many2one,res.partner,Recipient,False,both
+13,id,integer,,ID,integer,,ID,False,both
 ,,,,
 ,,,,
-1,partner_email,,,,char,,Email,False,version 2
-2,fetched_message_id,,,,many2one,mail.message,Last Fetched,False,version 2
-3,custom_channel_name,,,,char,,Custom channel name,False,version 2
+14,partner_email,,,,char,,Email,False,version 2
+15,fetched_message_id,,,,many2one,mail.message,Last Fetched,False,version 2
+16,custom_channel_name,,,,char,,Custom channel name,False,version 2
 ,,,,
 ,,,,

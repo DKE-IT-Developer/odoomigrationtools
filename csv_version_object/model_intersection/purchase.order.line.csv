@@ -1,50 +1,54 @@
 model,purchase.order.line,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,product_uom,many2one,product.uom,Product Unit of Measure,many2one,uom.uom,Unit of Measure,False,both
-1,analytic_tag_ids,many2many,account.analytic.tag,Analytic Tags,many2many,account.analytic.tag,Analytic Tags,False,both
-1,price_unit,float,,Unit Price,float,,Unit Price,True,both
-1,price_subtotal,monetary,,Subtotal,monetary,,Subtotal,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,False,both
-1,product_qty,float,,Quantity,float,,Quantity,True,both
-1,date_order,datetime,,Order Date,datetime,,Order Date,False,both
-1,partner_id,many2one,res.partner,Partner,many2one,res.partner,Partner,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,qty_received,float,,Received Qty,float,,Received Qty,False,both
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,price_tax,monetary,,Tax,float,,Tax,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,sequence,integer,,Sequence,integer,,Sequence,False,both
-1,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-1,move_ids,one2many,stock.move,Reservation,one2many,stock.move,Reservation,False,both
-1,state,selection,,Status,selection,,Status,False,both
-1,account_analytic_id,many2one,account.analytic.account,Analytic Account,many2one,account.analytic.account,Analytic Account,False,both
-1,order_id,many2one,purchase.order,Order Reference,many2one,purchase.order,Order Reference,True,both
-1,qty_invoiced,float,,Billed Qty,float,,Billed Qty,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,name,text,,Description,text,,Description,True,both
-1,price_total,monetary,,Total,monetary,,Total,False,both
-1,product_id,many2one,product.product,Product,many2one,product.product,Product,False,both
-1,date_planned,datetime,,Scheduled Date,datetime,,Delivery Date,False,both
-1,invoice_lines,one2many,account.invoice.line,Bill Lines,one2many,account.move.line,Bill Lines,False,both
-1,taxes_id,many2many,account.tax,Taxes,many2many,account.tax,Taxes,False,both
+2,product_uom,many2one,product.uom,Product Unit of Measure,many2one,uom.uom,Unit of Measure,False,both
+3,analytic_tag_ids,many2many,account.analytic.tag,Analytic Tags,many2many,account.analytic.tag,Analytic Tags,False,both
+4,price_unit,float,,Unit Price,float,,Unit Price,True,both
+5,qty_invoiced,float,,Billed Qty,float,,Billed Qty,False,both
+6,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+7,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,False,both
+8,product_qty,float,,Quantity,float,,Quantity,True,both
+9,date_order,datetime,,Order Date,datetime,,Order Date,False,both
+10,partner_id,many2one,res.partner,Partner,many2one,res.partner,Partner,False,both
+11,id,integer,,ID,integer,,ID,False,both
+12,qty_received,float,,Received Qty,float,,Received Qty,False,both
+13,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+14,price_tax,monetary,,Tax,float,,Tax,False,both
+15,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+16,sequence,integer,,Sequence,integer,,Sequence,False,both
+17,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
+18,move_ids,one2many,stock.move,Reservation,one2many,stock.move,Reservation,False,both
+19,state,selection,,Status,selection,,Status,False,both
+20,account_analytic_id,many2one,account.analytic.account,Analytic Account,many2one,account.analytic.account,Analytic Account,False,both
+21,order_id,many2one,purchase.order,Order Reference,many2one,purchase.order,Order Reference,True,both
+22,price_subtotal,monetary,,Subtotal,monetary,,Subtotal,False,both
+23,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+24,display_name,char,,Display Name,char,,Display Name,False,both
+25,name,text,,Description,text,,Description,True,both
+26,price_total,monetary,,Total,monetary,,Total,False,both
+27,product_id,many2one,product.product,Product,many2one,product.product,Product,False,both
+28,date_planned,datetime,,Scheduled Date,datetime,,Delivery Date,False,both
+29,invoice_lines,one2many,account.invoice.line,Bill Lines,one2many,account.move.line,Bill Lines,False,both
+30,taxes_id,many2many,account.tax,Taxes,many2many,account.tax,Taxes,False,both
 ,,,,
-1,procurement_ids,one2many,procurement.order,Associated Procurements,,,,False,version 1
+31,procurement_ids,one2many,procurement.order,Associated Procurements,,,,False,version 1
+32,order_name,char,,Order,,,,False,version 1
+33,qty_available,float,,Stock Qty,,,,False,version 1
+34,delivery_status,selection,,Delivery Status,,,,False,version 1
+35,vendor_name,char,,Vendor,,,,False,version 1
 ,,,,
-2,qty_to_invoice,,,,float,,To Invoice Quantity,False,version 2
-3,product_uom_qty,,,,float,,Total Quantity,False,version 2
-4,sale_order_id,,,,many2one,sale.order,Sale Order,False,version 2
-5,display_type,,,,selection,,Display Type,False,version 2
-6,propagate_cancel,,,,boolean,,Propagate cancellation,False,version 2
-7,product_uom_category_id,,,,many2one,uom.category,Category,False,version 2
-8,product_type,,,,selection,,Product Type,False,version 2
-9,sale_line_id,,,,many2one,sale.order.line,Origin Sale Item,False,version 2
-10,orderpoint_id,,,,many2one,stock.warehouse.orderpoint,Orderpoint,False,version 2
-11,product_description_variants,,,,char,,Custom Description,False,version 2
-12,move_dest_ids,,,,one2many,stock.move,Downstream Moves,False,version 2
-13,qty_received_manual,,,,float,,Manual Received Qty,False,version 2
-14,qty_received_method,,,,selection,,Received Qty Method,False,version 2
+36,qty_to_invoice,,,,float,,To Invoice Quantity,False,version 2
+37,product_uom_qty,,,,float,,Total Quantity,False,version 2
+38,sale_order_id,,,,many2one,sale.order,Sale Order,False,version 2
+39,display_type,,,,selection,,Display Type,False,version 2
+40,propagate_cancel,,,,boolean,,Propagate cancellation,False,version 2
+41,product_uom_category_id,,,,many2one,uom.category,Category,False,version 2
+42,product_type,,,,selection,,Product Type,False,version 2
+43,sale_line_id,,,,many2one,sale.order.line,Origin Sale Item,False,version 2
+44,orderpoint_id,,,,many2one,stock.warehouse.orderpoint,Orderpoint,False,version 2
+45,product_description_variants,,,,char,,Custom Description,False,version 2
+46,move_dest_ids,,,,one2many,stock.move,Downstream Moves,False,version 2
+47,qty_received_manual,,,,float,,Manual Received Qty,False,version 2
+48,qty_received_method,,,,selection,,Received Qty Method,False,version 2
 ,,,,
 ,,,,

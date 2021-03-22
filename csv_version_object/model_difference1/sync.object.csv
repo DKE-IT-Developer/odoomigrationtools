@@ -1,0 +1,18 @@
+model,sync.object,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,,,,False,version 1
+2,last_backward_sync_datetime,datetime,,Direct Backward Sync Time,,,,False,version 1
+3,display_name,char,,Display Name,,,,False,version 1
+4,name,char,,Folder name,,,,False,version 1
+5,__last_update,datetime,,Last Modified on,,,,False,version 1
+6,sync_model_id,many2one,sync.model,Model to sync,,,,False,version 1
+7,last_sync_datetime,datetime,,Direct Sync Time,,,,False,version 1
+8,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
+9,create_date,datetime,,Created on,,,,False,version 1
+10,key,char,,ID in client,,,,False,version 1
+11,write_date,datetime,,Last Updated on,,,,False,version 1
+12,path,char,,Path,,,,False,version 1
+13,res_id,integer,,RES ID,,,,False,version 1
+14,id,integer,,ID,,,,False,version 1
+,,,,
+,,,,

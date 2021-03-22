@@ -1,17 +1,17 @@
 model,account.common.report,transient,True
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,date_from,date,,Start Date,date,,Start Date,False,both
-1,journal_ids,many2many,account.journal,Journals,many2many,account.journal,Journals,True,both
-1,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,date_to,date,,End Date,date,,End Date,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,target_move,selection,,Target Moves,selection,,Target Moves,True,both
+2,display_name,char,,Display Name,char,,Display Name,False,both
+3,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+4,date_from,date,,Start Date,date,,Start Date,False,both
+5,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
+6,journal_ids,many2many,account.journal,Journals,many2many,account.journal,Journals,True,both
+7,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+8,date_to,date,,End Date,date,,End Date,False,both
+9,create_date,datetime,,Created on,datetime,,Created on,False,both
+10,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+11,id,integer,,ID,integer,,ID,False,both
+12,target_move,selection,,Target Moves,selection,,Target Moves,True,both
 ,,,,
 ,,,,
 ,,,,

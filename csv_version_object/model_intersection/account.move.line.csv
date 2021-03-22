@@ -1,91 +1,91 @@
 model,account.move.line,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,statement_id,many2one,account.bank.statement,Statement,many2one,account.bank.statement,Statement,False,both
-1,analytic_tag_ids,many2many,account.analytic.tag,Analytic tags,many2many,account.analytic.tag,Analytic Tags,False,both
-1,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-1,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,True,both
-1,date_maturity,date,,Due date,date,,Due Date,False,both
-1,matched_debit_ids,one2many,account.partial.reconcile,Matched debit ids,one2many,account.partial.reconcile,Matched Debits,False,both
-1,partner_id,many2one,res.partner,Partner,many2one,res.partner,Partner,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,account_id,many2one,account.account,Account,many2one,account.account,Account,False,both
-1,analytic_account_id,many2one,account.analytic.account,Analytic Account,many2one,account.analytic.account,Analytic Account,False,both
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,full_reconcile_id,many2one,account.full.reconcile,Matching Number,many2one,account.full.reconcile,Matching,False,both
-1,journal_id,many2one,account.journal,Journal,many2one,account.journal,Journal,False,both
-1,amount_residual_currency,monetary,,Residual Amount in Currency,monetary,,Residual Amount in Currency,False,both
-1,debit,monetary,,Debit,monetary,,Debit,False,both
-1,blocked,boolean,,No Follow-up,boolean,,No Follow-up,False,both
-1,ref,char,,Reference,char,,Reference,False,both
-1,tax_ids,many2many,account.tax,Taxes,many2many,account.tax,Taxes,False,both
-1,matched_credit_ids,one2many,account.partial.reconcile,Matched credit ids,one2many,account.partial.reconcile,Matched Credits,False,both
-1,reconciled,boolean,,Reconciled,boolean,,Reconciled,False,both
-1,credit,monetary,,Credit,monetary,,Credit,False,both
-1,analytic_line_ids,one2many,account.analytic.line,Analytic lines,one2many,account.analytic.line,Analytic lines,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,date,date,,Date,date,,Date,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,move_id,many2one,account.move,Journal Entry,many2one,account.move,Journal Entry,True,both
-1,name,char,,Label,char,,Label,False,both
-1,payment_id,many2one,account.payment,Originator Payment,many2one,account.payment,Originator Payment,False,both
-1,company_currency_id,many2one,res.currency,Company Currency,many2one,res.currency,Company Currency,False,both
-1,product_id,many2one,product.product,Product,many2one,product.product,Product,False,both
-1,product_uom_id,many2one,product.uom,Unit of Measure,many2one,uom.uom,Unit of Measure,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,tax_line_id,many2one,account.tax,Originator tax,many2one,account.tax,Originator Tax,False,both
-1,amount_residual,monetary,,Residual Amount,monetary,,Residual Amount,False,both
-1,tax_exigible,boolean,,Appears in VAT report,boolean,,Appears in VAT report,False,both
-1,amount_currency,monetary,,Amount currency,monetary,,Amount in Currency,False,both
-1,balance,monetary,,Balance,monetary,,Balance,False,both
-1,quantity,float,,Quantity,float,,Quantity,False,both
+2,statement_id,many2one,account.bank.statement,Statement,many2one,account.bank.statement,Statement,False,both
+3,analytic_tag_ids,many2many,account.analytic.tag,Analytic tags,many2many,account.analytic.tag,Analytic Tags,False,both
+4,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
+5,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,True,both
+6,date_maturity,date,,Due date,date,,Due Date,False,both
+7,matched_debit_ids,one2many,account.partial.reconcile,Matched debit ids,one2many,account.partial.reconcile,Matched Debits,False,both
+8,partner_id,many2one,res.partner,Partner,many2one,res.partner,Partner,False,both
+9,id,integer,,ID,integer,,ID,False,both
+10,account_id,many2one,account.account,Account,many2one,account.account,Account,False,both
+11,analytic_account_id,many2one,account.analytic.account,Analytic Account,many2one,account.analytic.account,Analytic Account,False,both
+12,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+13,display_name,char,,Display Name,char,,Display Name,False,both
+14,full_reconcile_id,many2one,account.full.reconcile,Matching Number,many2one,account.full.reconcile,Matching,False,both
+15,journal_id,many2one,account.journal,Journal,many2one,account.journal,Journal,False,both
+16,amount_residual_currency,monetary,,Residual Amount in Currency,monetary,,Residual Amount in Currency,False,both
+17,debit,monetary,,Debit,monetary,,Debit,False,both
+18,blocked,boolean,,No Follow-up,boolean,,No Follow-up,False,both
+19,ref,char,,Reference,char,,Reference,False,both
+20,tax_ids,many2many,account.tax,Taxes,many2many,account.tax,Taxes,False,both
+21,matched_credit_ids,one2many,account.partial.reconcile,Matched credit ids,one2many,account.partial.reconcile,Matched Credits,False,both
+22,reconciled,boolean,,Reconciled,boolean,,Reconciled,False,both
+23,credit,monetary,,Credit,monetary,,Credit,False,both
+24,analytic_line_ids,one2many,account.analytic.line,Analytic lines,one2many,account.analytic.line,Analytic lines,False,both
+25,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+26,date,date,,Date,date,,Date,False,both
+27,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+28,move_id,many2one,account.move,Journal Entry,many2one,account.move,Journal Entry,True,both
+29,name,char,,Label,char,,Label,False,both
+30,payment_id,many2one,account.payment,Originator Payment,many2one,account.payment,Originator Payment,False,both
+31,company_currency_id,many2one,res.currency,Company Currency,many2one,res.currency,Company Currency,False,both
+32,product_id,many2one,product.product,Product,many2one,product.product,Product,False,both
+33,product_uom_id,many2one,product.uom,Unit of Measure,many2one,uom.uom,Unit of Measure,False,both
+34,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+35,tax_line_id,many2one,account.tax,Originator tax,many2one,account.tax,Originator Tax,False,both
+36,amount_residual,monetary,,Residual Amount,monetary,,Residual Amount,False,both
+37,tax_exigible,boolean,,Appears in VAT report,boolean,,Appears in VAT report,False,both
+38,amount_currency,monetary,,Amount currency,monetary,,Amount in Currency,False,both
+39,balance,monetary,,Balance,monetary,,Balance,False,both
+40,quantity,float,,Quantity,float,,Quantity,False,both
 ,,,,
-1,debit_cash_basis,monetary,,Debit cash basis,,,,False,version 1
-2,invoice_id,many2one,account.invoice,Invoice id,,,,False,version 1
-3,counterpart,char,,Counterpart,,,,False,version 1
-4,credit_cash_basis,monetary,,Credit cash basis,,,,False,version 1
-5,balance_cash_basis,monetary,,Balance cash basis,,,,False,version 1
-6,narration,text,,Narration,,,,False,version 1
-7,user_type_id,many2one,account.account.type,Type,,,,False,version 1
+41,debit_cash_basis,monetary,,Debit cash basis,,,,False,version 1
+42,invoice_id,many2one,account.invoice,Invoice id,,,,False,version 1
+43,counterpart,char,,Counterpart,,,,False,version 1
+44,credit_cash_basis,monetary,,Credit cash basis,,,,False,version 1
+45,balance_cash_basis,monetary,,Balance cash basis,,,,False,version 1
+46,narration,text,,Narration,,,,False,version 1
+47,user_type_id,many2one,account.account.type,Type,,,,False,version 1
 ,,,,
-8,sale_line_ids,,,,many2many,sale.order.line,Sales Order Lines,False,version 2
-9,price_unit,,,,float,,Unit Price,False,version 2
-10,predict_from_name,,,,boolean,,Predict From Name,False,version 2
-11,exclude_from_invoice_tab,,,,boolean,,Exclude From Invoice Tab,False,version 2
-12,tax_tag_ids,,,,many2many,account.account.tag,Tags,False,version 2
-13,reconcile_model_id,,,,many2one,account.reconcile.model,Reconciliation Model,False,version 2
-14,expected_pay_date,,,,date,,Expected Payment Date,False,version 2
-15,purchase_order_id,,,,many2one,purchase.order,Purchase Order,False,version 2
-16,followup_date,,,,date,,Latest Follow-up,False,version 2
-17,cumulated_balance,,,,monetary,,Cumulated Balance,False,version 2
-18,tax_base_amount,,,,monetary,,Base Amount,False,version 2
-19,next_action_date,,,,date,,Next Action Date,False,version 2
-20,is_rounding_line,,,,boolean,,Is Rounding Line,False,version 2
-21,account_root_id,,,,many2one,account.root,Account Root,False,version 2
-22,asset_ids,,,,many2many,account.asset,Asset Linked,False,version 2
-23,sequence,,,,integer,,Sequence,False,version 2
-24,account_internal_type,,,,selection,,Internal Type,False,version 2
-25,price_subtotal,,,,monetary,,Subtotal,False,version 2
-26,expense_id,,,,many2one,hr.expense,Expense,False,version 2
-27,account_internal_group,,,,selection,,Internal Group,False,version 2
-28,product_uom_category_id,,,,many2one,uom.category,Category,False,version 2
-29,statement_line_id,,,,many2one,account.bank.statement.line,Originator Statement Line,False,version 2
-30,matching_number,,,,char,,Matching #,False,version 2
-31,purchase_line_id,,,,many2one,purchase.order.line,Purchase Order Line,False,version 2
-32,tax_audit,,,,char,,Tax Audit String,False,version 2
-33,recompute_tax_line,,,,boolean,,Recompute Tax Line,False,version 2
-34,parent_state,,,,selection,,Status,False,version 2
-35,move_name,,,,char,,Number,False,version 2
-36,discount,,,,float,,Discount (%),False,version 2
-37,tax_fiscal_country_id,,,,many2one,res.country,Fiscal Country,False,version 2
-38,display_type,,,,selection,,Display Type,False,version 2
-39,internal_note,,,,text,,Internal Note,False,version 2
-40,tax_repartition_line_id,,,,many2one,account.tax.repartition.line,Originator Tax Distribution Line,False,version 2
-41,price_total,,,,monetary,,Total,False,version 2
-42,move_attachment_ids,,,,one2many,ir.attachment,Move Attachment,False,version 2
-43,followup_line_id,,,,many2one,account_followup.followup.line,Follow-up Level,False,version 2
-44,tax_group_id,,,,many2one,account.tax.group,Originator tax group,False,version 2
-45,is_anglo_saxon_line,,,,boolean,,Is Anglo Saxon Line,False,version 2
+48,sale_line_ids,,,,many2many,sale.order.line,Sales Order Lines,False,version 2
+49,price_unit,,,,float,,Unit Price,False,version 2
+50,predict_from_name,,,,boolean,,Predict From Name,False,version 2
+51,exclude_from_invoice_tab,,,,boolean,,Exclude From Invoice Tab,False,version 2
+52,tax_tag_ids,,,,many2many,account.account.tag,Tags,False,version 2
+53,reconcile_model_id,,,,many2one,account.reconcile.model,Reconciliation Model,False,version 2
+54,expected_pay_date,,,,date,,Expected Payment Date,False,version 2
+55,purchase_order_id,,,,many2one,purchase.order,Purchase Order,False,version 2
+56,followup_date,,,,date,,Latest Follow-up,False,version 2
+57,cumulated_balance,,,,monetary,,Cumulated Balance,False,version 2
+58,tax_base_amount,,,,monetary,,Base Amount,False,version 2
+59,next_action_date,,,,date,,Next Action Date,False,version 2
+60,is_rounding_line,,,,boolean,,Is Rounding Line,False,version 2
+61,account_root_id,,,,many2one,account.root,Account Root,False,version 2
+62,asset_ids,,,,many2many,account.asset,Asset Linked,False,version 2
+63,sequence,,,,integer,,Sequence,False,version 2
+64,account_internal_type,,,,selection,,Internal Type,False,version 2
+65,price_subtotal,,,,monetary,,Subtotal,False,version 2
+66,expense_id,,,,many2one,hr.expense,Expense,False,version 2
+67,account_internal_group,,,,selection,,Internal Group,False,version 2
+68,product_uom_category_id,,,,many2one,uom.category,Category,False,version 2
+69,statement_line_id,,,,many2one,account.bank.statement.line,Originator Statement Line,False,version 2
+70,matching_number,,,,char,,Matching #,False,version 2
+71,purchase_line_id,,,,many2one,purchase.order.line,Purchase Order Line,False,version 2
+72,tax_audit,,,,char,,Tax Audit String,False,version 2
+73,recompute_tax_line,,,,boolean,,Recompute Tax Line,False,version 2
+74,parent_state,,,,selection,,Status,False,version 2
+75,move_name,,,,char,,Number,False,version 2
+76,discount,,,,float,,Discount (%),False,version 2
+77,tax_fiscal_country_id,,,,many2one,res.country,Fiscal Country,False,version 2
+78,display_type,,,,selection,,Display Type,False,version 2
+79,internal_note,,,,text,,Internal Note,False,version 2
+80,tax_repartition_line_id,,,,many2one,account.tax.repartition.line,Originator Tax Distribution Line,False,version 2
+81,price_total,,,,monetary,,Total,False,version 2
+82,move_attachment_ids,,,,one2many,ir.attachment,Move Attachment,False,version 2
+83,followup_line_id,,,,many2one,account_followup.followup.line,Follow-up Level,False,version 2
+84,tax_group_id,,,,many2one,account.tax.group,Originator tax group,False,version 2
+85,is_anglo_saxon_line,,,,boolean,,Is Anglo Saxon Line,False,version 2
 ,,,,
 ,,,,

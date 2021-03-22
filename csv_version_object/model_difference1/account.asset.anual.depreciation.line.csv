@@ -1,0 +1,20 @@
+model,account.asset.anual.depreciation.line,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,asset_id,many2one,account.asset.asset,Asset,,,,False,version 1
+2,method_number,integer,,Number of Depreciations,,,,False,version 1
+3,code,char,,Code,,,,False,version 1
+4,display_name,char,,Display Name,,,,False,version 1
+5,name,char,,Name,,,,False,version 1
+6,__last_update,datetime,,Last Modified on,,,,False,version 1
+7,categ_name,char,,Category Name,,,,False,version 1
+8,value,char,,Purchase Value,,,,False,version 1
+9,id,integer,,ID,,,,False,version 1
+10,depreciation_amount,char,,Depreciation Amount,,,,False,version 1
+11,residual_value,char,,Residual Value,,,,False,version 1
+12,date,date,,Purchase Date,,,,False,version 1
+13,year,char,,Depreciation Year,,,,False,version 1
+14,cumulative_depreciation_amount,char,,Cumulative Depreciation Amount,,,,False,version 1
+15,categ_id,many2one,account.asset.category,Category,,,,False,version 1
+16,method,char,,Method,,,,False,version 1
+,,,,
+,,,,

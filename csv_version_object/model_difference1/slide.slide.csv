@@ -10,7 +10,7 @@ no,field,type1,relation1,string1,type2,relation2,string2,required,source
 8,download_security,selection,,Download Security,,,,True,version 1
 9,likes,integer,,Likes,,,,False,version 1
 10,message_unread,boolean,,Unread Messages,,,,False,version 1
-11,id,integer,,ID,,,,False,version 1
+11,message_ids,one2many,mail.message,Messages,,,,False,version 1
 12,create_uid,many2one,res.users,Created by,,,,False,version 1
 13,total_views,integer,,Total # Views,,,,False,version 1
 14,embed_code,text,,Embed Code,,,,False,version 1
@@ -18,7 +18,7 @@ no,field,type1,relation1,string1,type2,relation2,string2,required,source
 16,message_is_follower,boolean,,Is Follower,,,,False,version 1
 17,__last_update,datetime,,Last Modified on,,,,False,version 1
 18,message_last_post,datetime,,Last Message Date,,,,False,version 1
-19,message_ids,one2many,mail.message,Messages,,,,False,version 1
+19,id,integer,,ID,,,,False,version 1
 20,website_meta_title,char,,Website meta title,,,,False,version 1
 21,index_content,text,,Transcript,,,,False,version 1
 22,image_thumb,binary,,Thumbnail,,,,False,version 1

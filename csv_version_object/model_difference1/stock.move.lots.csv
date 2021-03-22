@@ -1,23 +1,23 @@
 model,stock.move.lots,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,create_uid,many2one,res.users,Created by,,,,False,version 1
-2,create_date,datetime,,Created on,,,,False,version 1
+2,display_name,char,,Display Name,,,,False,version 1
 3,product_id,many2one,product.product,Product,,,,False,version 1
 4,done_wo,boolean,,Done for Work Order,,,,False,version 1
 5,__last_update,datetime,,Last Modified on,,,,False,version 1
-6,plus_visible,boolean,,Plus Visible,,,,False,version 1
-7,done_move,boolean,,Move Done,,,,False,version 1
-8,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
-9,move_id,many2one,stock.move,Move,,,,False,version 1
+6,id,integer,,ID,,,,False,version 1
+7,quantity_done,float,,Done,,,,False,version 1
+8,quantity,float,,To Do,,,,False,version 1
+9,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
 10,lot_produced_qty,float,,Quantity Finished Product,,,,False,version 1
-11,workorder_id,many2one,mrp.workorder,Work Order,,,,False,version 1
-12,display_name,char,,Display Name,,,,False,version 1
+11,create_date,datetime,,Created on,,,,False,version 1
+12,workorder_id,many2one,mrp.workorder,Work Order,,,,False,version 1
 13,production_id,many2one,mrp.production,Production Order,,,,False,version 1
 14,write_date,datetime,,Last Updated on,,,,False,version 1
 15,lot_id,many2one,stock.production.lot,Lot,,,,False,version 1
 16,lot_produced_id,many2one,stock.production.lot,Finished Lot,,,,False,version 1
-17,id,integer,,ID,,,,False,version 1
-18,quantity,float,,To Do,,,,False,version 1
-19,quantity_done,float,,Done,,,,False,version 1
+17,done_move,boolean,,Move Done,,,,False,version 1
+18,move_id,many2one,stock.move,Move,,,,False,version 1
+19,plus_visible,boolean,,Plus Visible,,,,False,version 1
 ,,,,
 ,,,,

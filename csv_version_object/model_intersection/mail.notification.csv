@@ -1,23 +1,23 @@
 model,mail.notification,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,mail_message_id,many2one,mail.message,Message,many2one,mail.message,Message,True,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,is_read,boolean,,Is Read,boolean,,Is Read,False,both
-1,res_partner_id,many2one,res.partner,Needaction Recipient,many2one,res.partner,Recipient,False,both
-1,id,integer,,ID,integer,,ID,False,both
+2,display_name,char,,Display Name,char,,Display Name,False,both
+3,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+4,is_read,boolean,,Is Read,boolean,,Is Read,False,both
+5,res_partner_id,many2one,res.partner,Needaction Recipient,many2one,res.partner,Recipient,False,both
+6,id,integer,,ID,integer,,ID,False,both
 ,,,,
-1,is_email,boolean,,Sent by Email,,,,False,version 1
-2,email_status,selection,,Email Status,,,,False,version 1
+7,is_email,boolean,,Sent by Email,,,,False,version 1
+8,email_status,selection,,Email Status,,,,False,version 1
 ,,,,
-3,letter_id,,,,many2one,snailmail.letter,Snailmail Letter,False,version 2
-4,notification_status,,,,selection,,Status,False,version 2
-5,read_date,,,,datetime,,Read Date,False,version 2
-6,failure_type,,,,selection,,Failure type,False,version 2
-7,failure_reason,,,,text,,Failure reason,False,version 2
-8,mail_id,,,,many2one,mail.mail,Mail,False,version 2
-9,notification_type,,,,selection,,Notification Type,True,version 2
-10,sms_number,,,,char,,SMS Number,False,version 2
-11,sms_id,,,,many2one,sms.sms,SMS,False,version 2
+9,letter_id,,,,many2one,snailmail.letter,Snailmail Letter,False,version 2
+10,notification_status,,,,selection,,Status,False,version 2
+11,read_date,,,,datetime,,Read Date,False,version 2
+12,failure_type,,,,selection,,Failure type,False,version 2
+13,failure_reason,,,,text,,Failure reason,False,version 2
+14,mail_id,,,,many2one,mail.mail,Mail,False,version 2
+15,notification_type,,,,selection,,Notification Type,True,version 2
+16,sms_number,,,,char,,SMS Number,False,version 2
+17,sms_id,,,,many2one,sms.sms,SMS,False,version 2
 ,,,,
 ,,,,

@@ -2,18 +2,18 @@ model,stock.history,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,display_name,char,,Display Name,,,,False,version 1
 2,product_id,many2one,product.product,Product,,,,True,version 1
-3,__last_update,datetime,,Last Modified on,,,,False,version 1
-4,price_unit_on_quant,float,,Value,,,,False,version 1
+3,price_unit_on_quant,float,,Value,,,,False,version 1
+4,__last_update,datetime,,Last Modified on,,,,False,version 1
 5,company_id,many2one,res.company,Company,,,,False,version 1
 6,source,char,,Source,,,,False,version 1
 7,product_categ_id,many2one,product.category,Product Category,,,,True,version 1
-8,inventory_value,float,,Inventory Value,,,,False,version 1
+8,product_template_id,many2one,product.template,Product Template,,,,True,version 1
 9,date,datetime,,Operation Date,,,,False,version 1
 10,serial_number,char,,Lot/Serial Number,,,,True,version 1
 11,quantity,float,,Product Quantity,,,,False,version 1
 12,location_id,many2one,stock.location,Location,,,,True,version 1
 13,id,integer,,ID,,,,False,version 1
 14,move_id,many2one,stock.move,Stock Move,,,,True,version 1
-15,product_template_id,many2one,product.template,Product Template,,,,True,version 1
+15,inventory_value,float,,Inventory Value,,,,False,version 1
 ,,,,
 ,,,,

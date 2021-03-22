@@ -1,197 +1,247 @@
 model,res.partner,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,signup_valid,boolean,,Signup Token is Valid,boolean,,Signup Token is Valid,False,both
-1,sale_order_count,integer,,# of Sales Order,integer,,Sale Order Count,False,both
-1,bank_account_count,integer,,Bank,integer,,Bank,False,both
-1,purchase_order_count,integer,,# of Purchase Order,integer,,Purchase Order Count,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,contact_address,char,,Complete Address,char,,Complete Address,False,both
-1,property_product_pricelist,many2one,product.pricelist,Sale Pricelist,many2one,product.pricelist,Pricelist,False,both
-1,signup_url,char,,Signup URL,char,,Signup URL,False,both
-1,journal_item_count,integer,,Journal Items,integer,,Journal Items,False,both
-1,parent_name,char,,Parent name,char,,Parent name,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,title,many2one,res.partner.title,Title,many2one,res.partner.title,Title,False,both
-1,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-1,commercial_company_name,char,,Company Name Entity,char,,Company Name Entity,False,both
-1,parent_id,many2one,res.partner,Related Company,many2one,res.partner,Related Company,False,both
-1,employee,boolean,,Employee,boolean,,Employee,False,both
-1,supplier_invoice_count,integer,,# Vendor Bills,integer,,# Vendor Bills,False,both
-1,property_supplier_payment_term_id,many2one,account.payment.term,Vendor Payment Terms,many2one,account.payment.term,Vendor Payment Terms,False,both
-1,channel_ids,many2many,mail.channel,Channels,many2many,mail.channel,Channels,False,both
-1,child_ids,one2many,res.partner,Contacts,one2many,res.partner,Contact,False,both
-1,user_ids,one2many,res.users,Users,one2many,res.users,Users,False,both
-1,calendar_last_notif_ack,datetime,,Last notification marked as read from base Calendar,datetime,,Last notification marked as read from base Calendar,False,both
-1,image_medium,binary,,Medium-sized image,binary,,Medium-sized image,False,both
-1,name,char,,Name,char,,Name,False,both
-1,debit_limit,monetary,,Payable Limit,monetary,,Payable Limit,False,both
-1,signup_token,char,,Signup token,char,,Signup Token,False,both
-1,contract_ids,one2many,account.analytic.account,Contracts,one2many,account.analytic.account,Partner Contracts,False,both
-1,commercial_partner_id,many2one,res.partner,Commercial Entity,many2one,res.partner,Commercial Entity,False,both
-1,message_follower_ids,one2many,mail.followers,Followers,one2many,mail.followers,Followers,False,both
-1,total_invoiced,monetary,,Total Invoiced,monetary,,Total Invoiced,False,both
-1,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
-1,has_unreconciled_entries,boolean,,Has unreconciled entries,boolean,,Has Unreconciled Entries,False,both
-1,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,False,both
-1,street,char,,Street,char,,Street,False,both
-1,task_ids,one2many,project.task,Tasks,one2many,project.task,Tasks,False,both
-1,country_id,many2one,res.country,Country,many2one,res.country,Country,False,both
-1,tz_offset,char,,Timezone offset,char,,Timezone offset,False,both
-1,debit,monetary,,Total Payable,monetary,,Total Payable,False,both
-1,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
-1,ref,char,,Internal Reference,char,,Reference,False,both
-1,email,char,,Email,char,,Email,False,both
-1,picking_warn,selection,,Stock Picking,selection,,Stock Picking,False,both
-1,city,char,,City,char,,City,False,both
-1,street2,char,,Street2,char,,Street2,False,both
-1,barcode,char,,Barcode,char,,Barcode,False,both
-1,state_id,many2one,res.country.state,State,many2one,res.country.state,State,False,both
-1,active,boolean,,Active,boolean,,Active,False,both
-1,tz,selection,,Timezone,selection,,Timezone,False,both
-1,signup_expiration,datetime,,Signup expiration,datetime,,Signup Expiration,False,both
-1,zip,char,,Zip,char,,Zip,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,credit,monetary,,Total Receivable,monetary,,Total Receivable,False,both
-1,message_bounce,integer,,Bounce,integer,,Bounce,False,both
-1,is_company,boolean,,Is a Company,boolean,,Is a Company,False,both
-1,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
-1,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
-1,comment,text,,Notes,text,,Notes,False,both
-1,sale_warn,selection,,Sales Order,selection,,Sales Warnings,False,both
-1,purchase_warn,selection,,Purchase Order,selection,,Purchase Order,False,both
-1,color,integer,,Color Index,integer,,Color Index,False,both
-1,invoice_ids,one2many,account.invoice,Invoices,one2many,account.move,Invoices,False,both
-1,team_id,many2one,crm.team,Sales Team,many2one,crm.team,Sales Team,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,trust,selection,,Degree of trust you have in this debtor,selection,,Degree of trust you have in this debtor,False,both
-1,property_payment_term_id,many2one,account.payment.term,Customer Payment Terms,many2one,account.payment.term,Customer Payment Terms,False,both
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,user_id,many2one,res.users,Salesperson,many2one,res.users,Salesperson,False,both
-1,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
-1,ref_company_ids,one2many,res.company,Companies that refers to partner,one2many,res.company,Companies that refers to partner,False,both
-1,email_formatted,char,,Formatted Email,char,,Formatted Email,False,both
-1,im_status,char,,IM Status,char,,IM Status,False,both
-1,last_website_so_id,many2one,sale.order,Last Online Sale Order,many2one,sale.order,Last Online Sales Order,False,both
-1,last_time_entries_checked,datetime,,Latest Invoices & Payments Matching Date,datetime,,Latest Invoices & Payments Matching Date,False,both
-1,type,selection,,Address Type,selection,,Address Type,False,both
-1,vat,char,,TIN,char,,Tax ID,False,both
-1,function,char,,Job Position,char,,Job Position,False,both
-1,picking_warn_msg,text,,Message for Stock Picking,text,,Message for Stock Picking,False,both
-1,payment_token_count,integer,,Count Payment Token,integer,,Count Payment Token,False,both
-1,phone,char,,Phone,char,,Phone,False,both
-1,website_meta_description,text,,Website meta description,text,,Website meta description,False,both
-1,task_count,integer,,# Tasks,integer,,# Tasks,False,both
-1,payment_token_ids,one2many,payment.token,Payment Tokens,one2many,payment.token,Payment Tokens,False,both
-1,property_purchase_currency_id,many2one,res.currency,Supplier Currency,many2one,res.currency,Supplier Currency,False,both
-1,sale_order_ids,one2many,sale.order,Sales Order,one2many,sale.order,Sales Order,False,both
-1,website_meta_keywords,char,,Website meta keywords,char,,Website meta keywords,False,both
-1,invoice_warn_msg,text,,Message for Invoice,text,,Message for Invoice,False,both
-1,website,char,,Website,char,,Website Link,False,both
-1,property_account_payable_id,many2one,account.account,Account Payable,many2one,account.account,Account Payable,True,both
-1,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
-1,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
-1,company_type,selection,,Company Type,selection,,Company Type,False,both
-1,signup_type,char,,Signup Token Type,char,,Signup Token Type,False,both
-1,property_account_receivable_id,many2one,account.account,Account Receivable,many2one,account.account,Account Receivable,True,both
-1,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
-1,date,date,,Date,date,,Date,False,both
-1,self,many2one,res.partner,Self,many2one,res.partner,Self,False,both
-1,invoice_warn,selection,,Invoice,selection,,Invoice,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,property_account_position_id,many2one,account.fiscal.position,Fiscal Position,many2one,account.fiscal.position,Fiscal Position,False,both
-1,website_meta_title,char,,Website meta title,char,,Website meta title,False,both
-1,company_name,char,,Company Name,char,,Company Name,False,both
-1,property_stock_supplier,many2one,stock.location,Vendor Location,many2one,stock.location,Vendor Location,False,both
-1,website_published,boolean,,Visible in Website,boolean,,Visible on current website,False,both
-1,website_url,char,,Website URL,char,,Website URL,False,both
-1,bank_ids,one2many,res.partner.bank,Banks,one2many,res.partner.bank,Banks,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,property_stock_customer,many2one,stock.location,Customer Location,many2one,stock.location,Customer Location,False,both
-1,website_short_description,text,,Website Partner Short Description,text,,Website Partner Short Description,False,both
-1,category_id,many2many,res.partner.category,Tags,many2many,res.partner.category,Tags,False,both
-1,lang,selection,,Language,selection,,Language,False,both
-1,credit_limit,float,,Credit Limit,float,,Credit Limit,False,both
-1,purchase_warn_msg,text,,Message for Purchase Order,text,,Message for Purchase Order,False,both
-1,mobile,char,,Mobile,char,,Mobile,False,both
-1,partner_share,boolean,,Share Partner,boolean,,Share Partner,False,both
-1,website_description,html,,Website Partner Full Description,html,,Website Partner Full Description,False,both
-1,sale_warn_msg,text,,Message for Sales Order,text,,Message for Sales Order,False,both
+2,sale_order_count,integer,,# of Sales Order,integer,,Sale Order Count,False,both
+3,invoice_warn,selection,,Invoice,selection,,Invoice,False,both
+4,purchase_order_count,integer,,# of Purchase Order,integer,,Purchase Order Count,False,both
+5,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+6,contact_address,char,,Complete Address,char,,Complete Address,False,both
+7,property_product_pricelist,many2one,product.pricelist,Sale Pricelist,many2one,product.pricelist,Pricelist,False,both
+8,signup_url,char,,Signup URL,char,,Signup URL,False,both
+9,journal_item_count,integer,,Journal Items,integer,,Journal Items,False,both
+10,parent_name,char,,Parent name,char,,Parent name,False,both
+11,display_name,char,,Display Name,char,,Display Name,False,both
+12,title,many2one,res.partner.title,Title,many2one,res.partner.title,Title,False,both
+13,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
+14,commercial_company_name,char,,Company Name Entity,char,,Company Name Entity,False,both
+15,parent_id,many2one,res.partner,Related Company,many2one,res.partner,Related Company,False,both
+16,employee,boolean,,Employee,boolean,,Employee,False,both
+17,supplier_invoice_count,integer,,# Vendor Bills,integer,,# Vendor Bills,False,both
+18,property_supplier_payment_term_id,many2one,account.payment.term,Vendor Payment Terms,many2one,account.payment.term,Vendor Payment Terms,False,both
+19,channel_ids,many2many,mail.channel,Channels,many2many,mail.channel,Channels,False,both
+20,child_ids,one2many,res.partner,Contacts,one2many,res.partner,Contact,False,both
+21,user_ids,one2many,res.users,Users,one2many,res.users,Users,False,both
+22,calendar_last_notif_ack,datetime,,Last notification marked as read from base Calendar,datetime,,Last notification marked as read from base Calendar,False,both
+23,image_medium,binary,,Medium-sized image,binary,,Medium-sized image,False,both
+24,name,char,,Name,char,,Name,False,both
+25,debit_limit,monetary,,Payable Limit,monetary,,Payable Limit,False,both
+26,signup_token,char,,Signup token,char,,Signup Token,False,both
+27,contract_ids,one2many,account.analytic.account,Contracts,one2many,account.analytic.account,Partner Contracts,False,both
+28,commercial_partner_id,many2one,res.partner,Commercial Entity,many2one,res.partner,Commercial Entity,False,both
+29,message_follower_ids,one2many,mail.followers,Followers,one2many,mail.followers,Followers,False,both
+30,total_invoiced,monetary,,Total Invoiced,monetary,,Total Invoiced,False,both
+31,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
+32,has_unreconciled_entries,boolean,,Has unreconciled entries,boolean,,Has Unreconciled Entries,False,both
+33,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,False,both
+34,street,char,,Street,char,,Street,False,both
+35,task_ids,one2many,project.task,Tasks,one2many,project.task,Tasks,False,both
+36,country_id,many2one,res.country,Country,many2one,res.country,Country,False,both
+37,tz_offset,char,,Timezone offset,char,,Timezone offset,False,both
+38,debit,monetary,,Total Payable,monetary,,Total Payable,False,both
+39,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
+40,ref,char,,Internal Reference,char,,Reference,False,both
+41,email,char,,Email,char,,Email,False,both
+42,picking_warn,selection,,Stock Picking,selection,,Stock Picking,False,both
+43,city,char,,City,char,,City,False,both
+44,street2,char,,Street2,char,,Street2,False,both
+45,barcode,char,,Barcode,char,,Barcode,False,both
+46,website_meta_keywords,char,,Website meta keywords,char,,Website meta keywords,False,both
+47,active,boolean,,Active,boolean,,Active,False,both
+48,tz,selection,,Timezone,selection,,Timezone,False,both
+49,signup_expiration,datetime,,Signup expiration,datetime,,Signup Expiration,False,both
+50,zip,char,,Zip,char,,Zip,False,both
+51,ref_company_ids,one2many,res.company,Companies that refers to partner,one2many,res.company,Companies that refers to partner,False,both
+52,credit,monetary,,Total Receivable,monetary,,Total Receivable,False,both
+53,message_bounce,integer,,Bounce,integer,,Bounce,False,both
+54,is_company,boolean,,Is a Company,boolean,,Is a Company,False,both
+55,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
+56,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
+57,comment,text,,Notes,text,,Notes,False,both
+58,sale_warn,selection,,Sales Order,selection,,Sales Warnings,False,both
+59,purchase_warn,selection,,Purchase Order,selection,,Purchase Order,False,both
+60,color,integer,,Color Index,integer,,Color Index,False,both
+61,invoice_ids,one2many,account.invoice,Invoices,one2many,account.move,Invoices,False,both
+62,team_id,many2one,crm.team,Sales Team,many2one,crm.team,Sales Team,False,both
+63,create_date,datetime,,Created on,datetime,,Created on,False,both
+64,trust,selection,,Degree of trust you have in this debtor,selection,,Degree of trust you have in this debtor,False,both
+65,property_payment_term_id,many2one,account.payment.term,Customer Payment Terms,many2one,account.payment.term,Customer Payment Terms,False,both
+66,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+67,user_id,many2one,res.users,Salesperson,many2one,res.users,Salesperson,False,both
+68,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
+69,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+70,email_formatted,char,,Formatted Email,char,,Formatted Email,False,both
+71,im_status,char,,IM Status,char,,IM Status,False,both
+72,last_website_so_id,many2one,sale.order,Last Online Sale Order,many2one,sale.order,Last Online Sales Order,False,both
+73,last_time_entries_checked,datetime,,Latest Invoices & Payments Matching Date,datetime,,Latest Invoices & Payments Matching Date,False,both
+74,type,selection,,Address Type,selection,,Address Type,False,both
+75,vat,char,,TIN,char,,Tax ID,False,both
+76,function,char,,Job Position,char,,Job Position,False,both
+77,picking_warn_msg,text,,Message for Stock Picking,text,,Message for Stock Picking,False,both
+78,payment_token_count,integer,,Count Payment Token,integer,,Count Payment Token,False,both
+79,phone,char,,Phone,char,,Phone,False,both
+80,website_meta_description,text,,Website meta description,text,,Website meta description,False,both
+81,task_count,integer,,# Tasks,integer,,# Tasks,False,both
+82,payment_token_ids,one2many,payment.token,Payment Tokens,one2many,payment.token,Payment Tokens,False,both
+83,property_purchase_currency_id,many2one,res.currency,Supplier Currency,many2one,res.currency,Supplier Currency,False,both
+84,sale_order_ids,one2many,sale.order,Sales Order,one2many,sale.order,Sales Order,False,both
+85,state_id,many2one,res.country.state,State,many2one,res.country.state,State,False,both
+86,invoice_warn_msg,text,,Message for Invoice,text,,Message for Invoice,False,both
+87,website,char,,Website,char,,Website Link,False,both
+88,property_account_payable_id,many2one,account.account,Account Payable,many2one,account.account,Account Payable,True,both
+89,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
+90,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
+91,company_type,selection,,Company Type,selection,,Company Type,False,both
+92,signup_type,char,,Signup Token Type,char,,Signup Token Type,False,both
+93,property_account_receivable_id,many2one,account.account,Account Receivable,many2one,account.account,Account Receivable,True,both
+94,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
+95,date,date,,Date,date,,Date,False,both
+96,self,many2one,res.partner,Self,many2one,res.partner,Self,False,both
+97,bank_account_count,integer,,Bank,integer,,Bank,False,both
+98,id,integer,,ID,integer,,ID,False,both
+99,property_account_position_id,many2one,account.fiscal.position,Fiscal Position,many2one,account.fiscal.position,Fiscal Position,False,both
+100,website_meta_title,char,,Website meta title,char,,Website meta title,False,both
+101,company_name,char,,Company Name,char,,Company Name,False,both
+102,property_stock_supplier,many2one,stock.location,Vendor Location,many2one,stock.location,Vendor Location,False,both
+103,website_published,boolean,,Visible in Website,boolean,,Visible on current website,False,both
+104,website_url,char,,Website URL,char,,Website URL,False,both
+105,bank_ids,one2many,res.partner.bank,Banks,one2many,res.partner.bank,Banks,False,both
+106,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+107,property_stock_customer,many2one,stock.location,Customer Location,many2one,stock.location,Customer Location,False,both
+108,website_short_description,text,,Website Partner Short Description,text,,Website Partner Short Description,False,both
+109,category_id,many2many,res.partner.category,Tags,many2many,res.partner.category,Tags,False,both
+110,lang,selection,,Language,selection,,Language,False,both
+111,credit_limit,float,,Credit Limit,float,,Credit Limit,False,both
+112,purchase_warn_msg,text,,Message for Purchase Order,text,,Message for Purchase Order,False,both
+113,mobile,char,,Mobile,char,,Mobile,False,both
+114,partner_share,boolean,,Share Partner,boolean,,Share Partner,False,both
+115,website_description,html,,Website Partner Full Description,html,,Website Partner Full Description,False,both
+116,sale_warn_msg,text,,Message for Sales Order,text,,Message for Sales Order,False,both
 ,,,,
-1,fax,char,,Fax,,,,False,version 1
-2,notify_email,selection,,Email Messages and Notifications,,,,True,version 1
-3,image_small,binary,,Small-sized image,,,,False,version 1
-4,image,binary,,Image,,,,False,version 1
-5,customer,boolean,,Is a Customer,,,,False,version 1
-6,issued_total,monetary,,Journal Items,,,,False,version 1
-7,opt_out,boolean,,Opt-Out,,,,False,version 1
-8,message_last_post,datetime,,Last Message Date,,,,False,version 1
-9,contracts_count,integer,,Contracts,,,,False,version 1
-10,supplier,boolean,,Is a Vendor,,,,False,version 1
+117,id_number,char,,ID Number,,,,False,version 1
+118,kelurahan_id,many2one,res.kelurahan,Kelurahan,,,,False,version 1
+119,image,binary,,Image,,,,False,version 1
+120,state_npwp,selection,,Status,,,,False,version 1
+121,street_npwp_2,char,,Street 2,,,,False,version 1
+122,street_npwp_1,char,,Street 1,,,,False,version 1
+123,issued_total,monetary,,Journal Items,,,,False,version 1
+124,opt_out,boolean,,Opt-Out,,,,False,version 1
+125,is_npwp,boolean,,Is NPWP Address?,,,,False,version 1
+126,main_street,char,,Main Street,,,,False,version 1
+127,property_delivery_carrier_id,many2one,delivery.carrier,Delivery Method,,,,False,version 1
+128,kecamatan_npwp_id,many2one,res.kecamatan,Kecamatan,,,,False,version 1
+129,contracts_count,integer,,Contracts,,,,False,version 1
+130,blok,char,,Blok,,,,False,version 1
+131,fax,char,,Fax,,,,False,version 1
+132,trust_value,float,,Trust Value,,,,False,version 1
+133,sell_value,monetary,,Total Sell Value,,,,False,version 1
+134,kecamatan_id,many2one,res.kecamatan,Kecamatan,,,,False,version 1
+135,ongkir_city_id,many2one,res.city.ongkir,City/Location,,,,False,version 1
+136,kabupaten_id,many2one,res.kabupaten,Kabupaten,,,,False,version 1
+137,area_categ_id,many2one,area.category,Area,,,,False,version 1
+138,customer,boolean,,Is a Customer,,,,False,version 1
+139,date_birth,date,,Date Birth,,,,False,version 1
+140,npa_idi,char,,NPA-IDI,,,,False,version 1
+141,npwp_street,char,,NPWP Street,,,,False,version 1
+142,rt_npwp,char,,RT,,,,False,version 1
+143,image_small,binary,,Small-sized image,,,,False,version 1
+144,image_url,char,,URL Image,,,,False,version 1
+145,purchase_value,monetary,,Total Purchase Value,,,,False,version 1
+146,attn,char,,Attention,,,,False,version 1
+147,nama_npwp,char,,Nama Npwp,,,,False,version 1
+148,notify_email,selection,,Email Messages and Notifications,,,,True,version 1
+149,message_last_post,datetime,,Last Message Date,,,,False,version 1
+150,ktp,char,,KTP,,,,False,version 1
+151,city_npwp,char,,city,,,,False,version 1
+152,credit_point_history_ids,one2many,credit.point.history,Credit Points History,,,,False,version 1
+153,is_premium,boolean,,Is Premium Customer,,,,False,version 1
+154,cluster,selection,,Cluster,,,,False,version 1
+155,credit_point,float,,Credit Points,,,,True,version 1
+156,rt,char,,RT,,,,False,version 1
+157,rw,char,,RW,,,,False,version 1
+158,nomor_npwp,char,,Nomor,,,,False,version 1
+159,kelurahan_npwp_id,many2one,res.kelurahan,Kelurahan,,,,False,version 1
+160,npwp_name,char,,NPWP Name,,,,False,version 1
+161,blok_npwp,char,,Blok,,,,False,version 1
+162,supplier,boolean,,Is a Vendor,,,,False,version 1
+163,available_for_chat,boolean,,Available for Chat,,,,False,version 1
+164,code_transaction,selection,,Kode Transaksi,,,,False,version 1
+165,npwp,char,,NPWP,,,,False,version 1
+166,npwp_no,char,,No NPWP,,,,False,version 1
+167,kode_pos_npwp,char,,kode pos,,,,False,version 1
+168,nomor,char,,Nomor,,,,False,version 1
+169,rw_npwp,char,,RW,,,,False,version 1
+170,fp_export,boolean,,LT Is Exported,,,,False,version 1
+171,ongkir_subdistrict_id,many2one,res.subdistrict.ongkir,Subdistrict,,,,False,version 1
+172,propinsi_npwp,many2one,res.country.state,Province,,,,False,version 1
+173,nickname,char,,Nick Name,,,,False,version 1
+174,fp_date,datetime,,LT Exported Date,,,,False,version 1
+175,kabupaten_npwp_id,many2one,res.kabupaten,Kabupaten,,,,False,version 1
+176,file_binary,binary,,Dokumen Profesi,,,,False,version 1
 ,,,,
-11,country_code,,,,char,,Country Code,False,version 2
-12,purchase_line_ids,,,,one2many,purchase.order.line,Purchase Lines,False,version 2
-13,additional_info,,,,char,,Additional info,False,version 2
-14,activity_date_deadline,,,,date,,Next Activity Deadline,False,version 2
-15,receipt_reminder_email,,,,boolean,,Receipt Reminder,False,version 2
-16,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
-17,unreconciled_aml_ids,,,,one2many,account.move.line,Unreconciled Aml,False,version 2
-18,activity_type_id,,,,many2one,mail.activity.type,Next Activity Type,False,version 2
-19,image_128,,,,binary,,Image 128,False,version 2
-20,phone_sanitized_blacklisted,,,,boolean,,Phone Blacklisted,False,version 2
-21,supplier_rank,,,,integer,,Supplier Rank,False,version 2
-22,visitor_ids,,,,one2many,website.visitor,Visitors,False,version 2
-23,online_partner_vendor_name,,,,char,,Online Partner Vendor Name,False,version 2
-24,image_1920,,,,binary,,Image,False,version 2
-25,l10n_id_nik,,,,char,,NIK,False,version 2
-26,phone_blacklisted,,,,boolean,,Blacklisted Phone is Phone,False,version 2
-27,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
-28,website_id,,,,many2one,website,Website,False,version 2
-29,website_meta_og_img,,,,char,,Website opengraph image,False,version 2
-30,partner_latitude,,,,float,,Geo Latitude,False,version 2
-31,payment_next_action_date,,,,date,,Next Action Date,False,version 2
-32,is_blacklisted,,,,boolean,,Blacklist,False,version 2
-33,l10n_id_kode_transaksi,,,,selection,,Kode Transaksi,False,version 2
-34,activity_exception_decoration,,,,selection,,Activity Exception Decoration,False,version 2
-35,industry_id,,,,many2one,res.partner.industry,Industry,False,version 2
-36,activity_type_icon,,,,char,,Activity Type Icon,False,version 2
-37,mobile_blacklisted,,,,boolean,,Blacklisted Phone Is Mobile,False,version 2
-38,activity_ids,,,,one2many,mail.activity,Activities,False,version 2
-39,active_lang_count,,,,integer,,Active Lang Count,False,version 2
-40,message_has_error_counter,,,,integer,,Number of errors,False,version 2
-41,seo_name,,,,char,,Seo name,False,version 2
-42,l10n_id_tax_address,,,,char,,Tax Address,False,version 2
-43,followup_level,,,,many2one,account_followup.followup.line,Follow-up Level,False,version 2
-44,image_256,,,,binary,,Image 256,False,version 2
-45,online_partner_information,,,,char,,Online Partner Information,False,version 2
-46,image_1024,,,,binary,,Image 1024,False,version 2
-47,same_vat_partner_id,,,,many2one,res.partner,Partner with same Tax ID,False,version 2
-48,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
-49,partner_gid,,,,integer,,Company database ID,False,version 2
-50,contact_address_complete,,,,char,,Contact Address Complete,False,version 2
-51,followup_status,,,,selection,,Follow-up Status,False,version 2
-52,customer_rank,,,,integer,,Customer Rank,False,version 2
-53,ocn_token,,,,char,,OCN Token,False,version 2
-54,activity_user_id,,,,many2one,res.users,Responsible User,False,version 2
-55,l10n_id_pkp,,,,boolean,,ID PKP,False,version 2
-56,can_publish,,,,boolean,,Can Publish,False,version 2
-57,payment_responsible_id,,,,many2one,res.users,Follow-up Responsible,False,version 2
-58,online_partner_bank_account,,,,char,,Online Partner Bank Account,False,version 2
-59,activity_exception_icon,,,,char,,Icon,False,version 2
-60,on_time_rate,,,,float,,On-Time Delivery Rate,False,version 2
-61,total_due,,,,monetary,,Total Due,False,version 2
-62,activity_state,,,,selection,,Activity State,False,version 2
-63,is_published,,,,boolean,,Is Published,False,version 2
-64,message_has_error,,,,boolean,,Message Delivery error,False,version 2
-65,l10n_id_tax_name,,,,char,,Tax Name,False,version 2
-66,unpaid_invoices,,,,one2many,account.move,Unpaid Invoices,False,version 2
-67,reminder_date_before_receipt,,,,integer,,Days Before Receipt,False,version 2
-68,is_seo_optimized,,,,boolean,,SEO optimized,False,version 2
-69,phone_sanitized,,,,char,,Sanitized Number,False,version 2
-70,message_attachment_count,,,,integer,,Attachment Count,False,version 2
-71,email_normalized,,,,char,,Normalized Email,False,version 2
-72,partner_longitude,,,,float,,Geo Longitude,False,version 2
-73,total_overdue,,,,monetary,,Total Overdue,False,version 2
-74,activity_summary,,,,char,,Next Activity Summary,False,version 2
-75,image_512,,,,binary,,Image 512,False,version 2
+177,country_code,,,,char,,Country Code,False,version 2
+178,purchase_line_ids,,,,one2many,purchase.order.line,Purchase Lines,False,version 2
+179,additional_info,,,,char,,Additional info,False,version 2
+180,activity_date_deadline,,,,date,,Next Activity Deadline,False,version 2
+181,receipt_reminder_email,,,,boolean,,Receipt Reminder,False,version 2
+182,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
+183,unreconciled_aml_ids,,,,one2many,account.move.line,Unreconciled Aml,False,version 2
+184,activity_type_id,,,,many2one,mail.activity.type,Next Activity Type,False,version 2
+185,image_128,,,,binary,,Image 128,False,version 2
+186,phone_sanitized_blacklisted,,,,boolean,,Phone Blacklisted,False,version 2
+187,supplier_rank,,,,integer,,Supplier Rank,False,version 2
+188,visitor_ids,,,,one2many,website.visitor,Visitors,False,version 2
+189,online_partner_vendor_name,,,,char,,Online Partner Vendor Name,False,version 2
+190,image_1920,,,,binary,,Image,False,version 2
+191,l10n_id_nik,,,,char,,NIK,False,version 2
+192,phone_blacklisted,,,,boolean,,Blacklisted Phone is Phone,False,version 2
+193,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
+194,website_id,,,,many2one,website,Website,False,version 2
+195,website_meta_og_img,,,,char,,Website opengraph image,False,version 2
+196,partner_latitude,,,,float,,Geo Latitude,False,version 2
+197,payment_next_action_date,,,,date,,Next Action Date,False,version 2
+198,is_blacklisted,,,,boolean,,Blacklist,False,version 2
+199,l10n_id_kode_transaksi,,,,selection,,Kode Transaksi,False,version 2
+200,activity_exception_decoration,,,,selection,,Activity Exception Decoration,False,version 2
+201,industry_id,,,,many2one,res.partner.industry,Industry,False,version 2
+202,activity_type_icon,,,,char,,Activity Type Icon,False,version 2
+203,mobile_blacklisted,,,,boolean,,Blacklisted Phone Is Mobile,False,version 2
+204,activity_ids,,,,one2many,mail.activity,Activities,False,version 2
+205,active_lang_count,,,,integer,,Active Lang Count,False,version 2
+206,message_has_error_counter,,,,integer,,Number of errors,False,version 2
+207,seo_name,,,,char,,Seo name,False,version 2
+208,l10n_id_tax_address,,,,char,,Tax Address,False,version 2
+209,followup_level,,,,many2one,account_followup.followup.line,Follow-up Level,False,version 2
+210,image_256,,,,binary,,Image 256,False,version 2
+211,online_partner_information,,,,char,,Online Partner Information,False,version 2
+212,image_1024,,,,binary,,Image 1024,False,version 2
+213,same_vat_partner_id,,,,many2one,res.partner,Partner with same Tax ID,False,version 2
+214,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
+215,partner_gid,,,,integer,,Company database ID,False,version 2
+216,contact_address_complete,,,,char,,Contact Address Complete,False,version 2
+217,followup_status,,,,selection,,Follow-up Status,False,version 2
+218,customer_rank,,,,integer,,Customer Rank,False,version 2
+219,ocn_token,,,,char,,OCN Token,False,version 2
+220,activity_user_id,,,,many2one,res.users,Responsible User,False,version 2
+221,l10n_id_pkp,,,,boolean,,ID PKP,False,version 2
+222,can_publish,,,,boolean,,Can Publish,False,version 2
+223,payment_responsible_id,,,,many2one,res.users,Follow-up Responsible,False,version 2
+224,online_partner_bank_account,,,,char,,Online Partner Bank Account,False,version 2
+225,activity_exception_icon,,,,char,,Icon,False,version 2
+226,on_time_rate,,,,float,,On-Time Delivery Rate,False,version 2
+227,total_due,,,,monetary,,Total Due,False,version 2
+228,activity_state,,,,selection,,Activity State,False,version 2
+229,is_published,,,,boolean,,Is Published,False,version 2
+230,message_has_error,,,,boolean,,Message Delivery error,False,version 2
+231,l10n_id_tax_name,,,,char,,Tax Name,False,version 2
+232,unpaid_invoices,,,,one2many,account.move,Unpaid Invoices,False,version 2
+233,reminder_date_before_receipt,,,,integer,,Days Before Receipt,False,version 2
+234,is_seo_optimized,,,,boolean,,SEO optimized,False,version 2
+235,phone_sanitized,,,,char,,Sanitized Number,False,version 2
+236,message_attachment_count,,,,integer,,Attachment Count,False,version 2
+237,email_normalized,,,,char,,Normalized Email,False,version 2
+238,partner_longitude,,,,float,,Geo Longitude,False,version 2
+239,total_overdue,,,,monetary,,Total Overdue,False,version 2
+240,activity_summary,,,,char,,Next Activity Summary,False,version 2
+241,image_512,,,,binary,,Image 512,False,version 2
 ,,,,
 ,,,,

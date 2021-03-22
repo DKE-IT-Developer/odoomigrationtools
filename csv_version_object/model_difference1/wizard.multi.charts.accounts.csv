@@ -19,8 +19,8 @@ no,field,type1,relation1,string1,type2,relation2,string2,required,source
 17,use_anglo_saxon,boolean,,Use Anglo-Saxon Accounting,,,,False,version 1
 18,sale_tax_rate,float,,Sales Tax(%),,,,False,version 1
 19,code_digits,integer,,# of Digits,,,,True,version 1
-20,purchase_tax_id,many2one,account.tax.template,Default Purchase Tax,,,,False,version 1
+20,chart_template_id,many2one,account.chart.template,Chart Template,,,,True,version 1
 21,sale_tax_id,many2one,account.tax.template,Default Sales Tax,,,,False,version 1
-22,chart_template_id,many2one,account.chart.template,Chart Template,,,,True,version 1
+22,purchase_tax_id,many2one,account.tax.template,Default Purchase Tax,,,,False,version 1
 ,,,,
 ,,,,

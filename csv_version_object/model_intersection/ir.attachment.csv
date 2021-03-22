@@ -1,43 +1,49 @@
 model,ir.attachment,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,create_date,datetime,,Date Created,datetime,,Created on,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,res_model,char,,Resource Model,char,,Resource Model,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,res_name,char,,Resource Name,char,,Resource Name,False,both
-1,file_size,integer,,File Size,integer,,File Size,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,create_uid,many2one,res.users,Owner,many2one,res.users,Created by,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-1,res_id,integer,,Resource ID,many2one_reference,,Resource ID,False,both
-1,index_content,text,,Indexed Content,text,,Indexed Content,False,both
-1,type,selection,,Type,selection,,Type,True,both
-1,public,boolean,,Is public document,boolean,,Is public document,False,both
-1,store_fname,char,,Stored Filename,char,,Stored Filename,False,both
-1,description,text,,Description,text,,Description,False,both
-1,res_field,char,,Resource Field,char,,Resource Field,False,both
-1,mimetype,char,,Mime Type,char,,Mime Type,False,both
-1,name,char,,Attachment Name,char,,Name,True,both
-1,url,char,,Url,char,,Url,False,both
-1,db_datas,binary,,Database Data,binary,,Database Data,False,both
-1,website_url,char,,Attachment URL,char,,Website URL,False,both
-1,checksum,char,,Checksum/SHA1,char,,Checksum/SHA1,False,both
-1,local_url,char,,Attachment URL,char,,Attachment URL,False,both
-1,datas,binary,,File Content,binary,,File Content (base64),False,both
+2,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+3,res_model,char,,Resource Model,char,,Resource Model,False,both
+4,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+5,res_name,char,,Resource Name,char,,Resource Name,False,both
+6,file_size,integer,,File Size,integer,,File Size,False,both
+7,id,integer,,ID,integer,,ID,False,both
+8,create_uid,many2one,res.users,Owner,many2one,res.users,Created by,False,both
+9,display_name,char,,Display Name,char,,Display Name,False,both
+10,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+11,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
+12,type,selection,,Type,selection,,Type,True,both
+13,index_content,text,,Indexed Content,text,,Indexed Content,False,both
+14,res_id,integer,,Resource ID,many2one_reference,,Resource ID,False,both
+15,public,boolean,,Is public document,boolean,,Is public document,False,both
+16,local_url,char,,Attachment URL,char,,Attachment URL,False,both
+17,description,text,,Description,text,,Description,False,both
+18,store_fname,char,,Stored Filename,char,,Stored Filename,False,both
+19,res_field,char,,Resource Field,char,,Resource Field,False,both
+20,mimetype,char,,Mime Type,char,,Mime Type,False,both
+21,name,char,,Attachment Name,char,,Name,True,both
+22,url,char,,Url,char,,Url,False,both
+23,db_datas,binary,,Database Data,binary,,Database Data,False,both
+24,website_url,char,,Attachment URL,char,,Website URL,False,both
+25,checksum,char,,Checksum/SHA1,char,,Checksum/SHA1,False,both
+26,datas,binary,,File Content,binary,,File Content (base64),False,both
 ,,,,
-1,priority,selection,,Priority,,,,False,version 1
-2,datas_fname,char,,File Name,,,,False,version 1
+27,cloud_key,char,,GoogleDrive ID,,,,False,version 1
+28,for_delete,boolean,,Marked for delete,,,,False,version 1
+29,cloud_path,char,,Cloud path,,,,False,version 1
+30,last_sync_datetime,datetime,,Time of last update,,,,False,version 1
+31,active,boolean,,Active,,,,False,version 1
+32,sync_model_id,many2one,sync.model,Synced Model,,,,False,version 1
+33,priority,selection,,Priority,,,,False,version 1
+34,datas_fname,char,,File Name,,,,False,version 1
 ,,,,
-3,website_id,,,,many2one,website,Website,False,version 2
-4,raw,,,,binary,,File Content (raw),False,version 2
-5,original_id,,,,many2one,ir.attachment,"Original (unoptimized, unresized) attachment",False,version 2
-6,key,,,,char,,Key,False,version 2
-7,theme_template_id,,,,many2one,theme.ir.attachment,Theme Template,False,version 2
-8,access_token,,,,char,,Access Token,False,version 2
-9,image_width,,,,integer,,Image Width,False,version 2
-10,image_height,,,,integer,,Image Height,False,version 2
-11,image_src,,,,char,,Image Src,False,version 2
+35,website_id,,,,many2one,website,Website,False,version 2
+36,raw,,,,binary,,File Content (raw),False,version 2
+37,original_id,,,,many2one,ir.attachment,"Original (unoptimized, unresized) attachment",False,version 2
+38,key,,,,char,,Key,False,version 2
+39,theme_template_id,,,,many2one,theme.ir.attachment,Theme Template,False,version 2
+40,access_token,,,,char,,Access Token,False,version 2
+41,image_width,,,,integer,,Image Width,False,version 2
+42,image_height,,,,integer,,Image Height,False,version 2
+43,image_src,,,,char,,Image Src,False,version 2
 ,,,,
 ,,,,

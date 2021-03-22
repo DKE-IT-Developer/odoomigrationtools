@@ -1,77 +1,77 @@
 model,mrp.workorder,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,product_tracking,selection,,Tracking,selection,,Tracking,False,both
-1,time_ids,one2many,mrp.workcenter.productivity,Time ids,one2many,mrp.workcenter.productivity,Time,False,both
-1,production_state,selection,,State,selection,,Production State,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,is_produced,boolean,,Is produced,boolean,,Has Been Produced,False,both
-1,scrap_ids,one2many,stock.scrap,Scrap ids,one2many,stock.scrap,Scrap,False,both
-1,next_work_order_id,many2one,mrp.workorder,Next Work Order,many2one,mrp.workorder,Next Work Order,False,both
-1,duration,float,,Real Duration,float,,Real Duration,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,duration_expected,float,,Expected Duration,float,,Expected Duration,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,date_start,datetime,,Effective Start Date,datetime,,Start Date,False,both
-1,qty_production,float,,Original Production Quantity,float,,Original Production Quantity,False,both
-1,duration_unit,float,,Duration Per Unit,float,,Duration Per Unit,False,both
-1,state,selection,,Status,selection,,Status,False,both
-1,is_user_working,boolean,,Is Current User Working,boolean,,Is the Current User Working,False,both
-1,workcenter_id,many2one,mrp.workcenter,Work Center,many2one,mrp.workcenter,Work Center,True,both
-1,date_finished,datetime,,Effective End Date,datetime,,End Date,False,both
-1,qty_produced,float,,Quantity,float,,Quantity,False,both
-1,qty_producing,float,,Currently Produced Quantity,float,,Currently Produced Quantity,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,scrap_count,integer,,Scrap Move,integer,,Scrap Move,False,both
-1,name,char,,Work Order,char,,Work Order,True,both
-1,date_planned_start,datetime,,Scheduled Date Start,datetime,,Scheduled Start Date,False,both
-1,product_id,many2one,product.product,Product,many2one,product.product,Product,False,both
-1,duration_percent,integer,,Duration Deviation (%),integer,,Duration Deviation (%),False,both
-1,move_raw_ids,one2many,stock.move,Moves,one2many,stock.move,Raw Moves,False,both
-1,product_uom_id,many2one,product.uom,Unit of Measure,many2one,uom.uom,Unit of Measure,True,both
-1,production_date,datetime,,Production Date,datetime,,Production Date,False,both
-1,production_availability,selection,,Availability,selection,,Stock Availability,False,both
-1,date_planned_finished,datetime,,Scheduled Date Finished,datetime,,Scheduled End Date,False,both
-1,production_id,many2one,mrp.production,Manufacturing Order,many2one,mrp.production,Manufacturing Order,True,both
-1,worksheet,binary,,Worksheet,binary,,Worksheet,False,both
-1,operation_id,many2one,mrp.routing.workcenter,Operation,many2one,mrp.routing.workcenter,Operation,False,both
-1,working_state,selection,,Status,selection,,Workcenter Status,False,both
+2,time_ids,one2many,mrp.workcenter.productivity,Time ids,one2many,mrp.workcenter.productivity,Time,False,both
+3,production_state,selection,,State,selection,,Production State,False,both
+4,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+5,is_produced,boolean,,Is produced,boolean,,Has Been Produced,False,both
+6,scrap_ids,one2many,stock.scrap,Scrap ids,one2many,stock.scrap,Scrap,False,both
+7,next_work_order_id,many2one,mrp.workorder,Next Work Order,many2one,mrp.workorder,Next Work Order,False,both
+8,duration,float,,Real Duration,float,,Real Duration,False,both
+9,create_date,datetime,,Created on,datetime,,Created on,False,both
+10,duration_expected,float,,Expected Duration,float,,Expected Duration,False,both
+11,id,integer,,ID,integer,,ID,False,both
+12,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+13,display_name,char,,Display Name,char,,Display Name,False,both
+14,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+15,date_start,datetime,,Effective Start Date,datetime,,Start Date,False,both
+16,qty_production,float,,Original Production Quantity,float,,Original Production Quantity,False,both
+17,duration_unit,float,,Duration Per Unit,float,,Duration Per Unit,False,both
+18,state,selection,,Status,selection,,Status,False,both
+19,is_user_working,boolean,,Is Current User Working,boolean,,Is the Current User Working,False,both
+20,workcenter_id,many2one,mrp.workcenter,Work Center,many2one,mrp.workcenter,Work Center,True,both
+21,date_finished,datetime,,Effective End Date,datetime,,End Date,False,both
+22,qty_produced,float,,Quantity,float,,Quantity,False,both
+23,qty_producing,float,,Currently Produced Quantity,float,,Currently Produced Quantity,False,both
+24,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+25,scrap_count,integer,,Scrap Move,integer,,Scrap Move,False,both
+26,name,char,,Work Order,char,,Work Order,True,both
+27,date_planned_start,datetime,,Scheduled Date Start,datetime,,Scheduled Start Date,False,both
+28,product_id,many2one,product.product,Product,many2one,product.product,Product,False,both
+29,duration_percent,integer,,Duration Deviation (%),integer,,Duration Deviation (%),False,both
+30,move_raw_ids,one2many,stock.move,Moves,one2many,stock.move,Raw Moves,False,both
+31,product_uom_id,many2one,product.uom,Unit of Measure,many2one,uom.uom,Unit of Measure,True,both
+32,production_date,datetime,,Production Date,datetime,,Production Date,False,both
+33,production_availability,selection,,Availability,selection,,Stock Availability,False,both
+34,date_planned_finished,datetime,,Scheduled Date Finished,datetime,,Scheduled End Date,False,both
+35,production_id,many2one,mrp.production,Manufacturing Order,many2one,mrp.production,Manufacturing Order,True,both
+36,worksheet,binary,,Worksheet,binary,,Worksheet,False,both
+37,operation_id,many2one,mrp.routing.workcenter,Operation,many2one,mrp.routing.workcenter,Operation,False,both
+38,working_state,selection,,Status,selection,,Workcenter Status,False,both
 ,,,,
-1,message_follower_ids,one2many,mail.followers,Followers,,,,False,version 1
-2,message_needaction,boolean,,Action Needed,,,,False,version 1
-3,message_channel_ids,many2many,mail.channel,Followers (Channels),,,,False,version 1
-4,message_partner_ids,many2many,res.partner,Followers (Partners),,,,False,version 1
-5,production_messages,html,,Workorder Message,,,,False,version 1
-6,message_ids,one2many,mail.message,Messages,,,,False,version 1
-7,active_move_lot_ids,one2many,stock.move.lots,Active move lot ids,,,,False,version 1
-8,capacity,float,,Capacity,,,,False,version 1
-9,message_is_follower,boolean,,Is Follower,,,,False,version 1
-10,message_last_post,datetime,,Last Message Date,,,,False,version 1
-11,color,integer,,Color,,,,False,version 1
-12,message_unread_counter,integer,,Unread Messages Counter,,,,False,version 1
-13,move_lot_ids,one2many,stock.move.lots,Moves to Track,,,,False,version 1
-14,message_unread,boolean,,Unread Messages,,,,False,version 1
-15,final_lot_id,many2one,stock.production.lot,Current Lot,,,,False,version 1
-16,message_needaction_counter,integer,,Number of Actions,,,,False,version 1
+39,message_follower_ids,one2many,mail.followers,Followers,,,,False,version 1
+40,message_needaction,boolean,,Action Needed,,,,False,version 1
+41,message_channel_ids,many2many,mail.channel,Followers (Channels),,,,False,version 1
+42,message_partner_ids,many2many,res.partner,Followers (Partners),,,,False,version 1
+43,production_messages,html,,Workorder Message,,,,False,version 1
+44,message_ids,one2many,mail.message,Messages,,,,False,version 1
+45,active_move_lot_ids,one2many,stock.move.lots,Active move lot ids,,,,False,version 1
+46,capacity,float,,Capacity,,,,False,version 1
+47,message_is_follower,boolean,,Is Follower,,,,False,version 1
+48,message_last_post,datetime,,Last Message Date,,,,False,version 1
+49,color,integer,,Color,,,,False,version 1
+50,message_unread_counter,integer,,Unread Messages Counter,,,,False,version 1
+51,move_lot_ids,one2many,stock.move.lots,Moves to Track,,,,False,version 1
+52,message_unread,boolean,,Unread Messages,,,,False,version 1
+53,final_lot_id,many2one,stock.production.lot,Current Lot,,,,False,version 1
+54,message_needaction_counter,integer,,Number of Actions,,,,False,version 1
 ,,,,
-17,company_id,,,,many2one,res.company,Company,False,version 2
-18,use_create_components_lots,,,,boolean,,Create New Lots/Serial Numbers for Components,False,version 2
-19,operation_note,,,,text,,Description,False,version 2
-20,consumption,,,,selection,,Consumption,True,version 2
-21,worksheet_google_slide,,,,char,,Worksheet URL,False,version 2
-22,finished_lot_id,,,,many2one,stock.production.lot,Lot/Serial Number,False,version 2
-23,working_user_ids,,,,one2many,res.users,Working user on this work order.,False,version 2
-24,progress,,,,float,,Progress Done (%),False,version 2
-25,production_bom_id,,,,many2one,mrp.bom,Bill of Material,False,version 2
-26,move_finished_ids,,,,one2many,stock.move,Finished Moves,False,version 2
-27,leave_id,,,,many2one,resource.calendar.leaves,Leave,False,version 2
-28,show_json_popover,,,,boolean,,Show Popover?,False,version 2
-29,json_popover,,,,char,,Popover Data JSON,False,version 2
-30,worksheet_type,,,,selection,,Worksheet Type,False,version 2
-31,move_line_ids,,,,one2many,stock.move.line,Moves to Track,False,version 2
-32,last_working_user_id,,,,one2many,res.users,Last user that worked on this work order.,False,version 2
-33,qty_remaining,,,,float,,Quantity To Be Produced,False,version 2
+55,company_id,,,,many2one,res.company,Company,False,version 2
+56,use_create_components_lots,,,,boolean,,Create New Lots/Serial Numbers for Components,False,version 2
+57,operation_note,,,,text,,Description,False,version 2
+58,consumption,,,,selection,,Consumption,True,version 2
+59,worksheet_google_slide,,,,char,,Worksheet URL,False,version 2
+60,finished_lot_id,,,,many2one,stock.production.lot,Lot/Serial Number,False,version 2
+61,working_user_ids,,,,one2many,res.users,Working user on this work order.,False,version 2
+62,progress,,,,float,,Progress Done (%),False,version 2
+63,production_bom_id,,,,many2one,mrp.bom,Bill of Material,False,version 2
+64,move_finished_ids,,,,one2many,stock.move,Finished Moves,False,version 2
+65,leave_id,,,,many2one,resource.calendar.leaves,Leave,False,version 2
+66,show_json_popover,,,,boolean,,Show Popover?,False,version 2
+67,json_popover,,,,char,,Popover Data JSON,False,version 2
+68,worksheet_type,,,,selection,,Worksheet Type,False,version 2
+69,move_line_ids,,,,one2many,stock.move.line,Moves to Track,False,version 2
+70,last_working_user_id,,,,one2many,res.users,Last user that worked on this work order.,False,version 2
+71,qty_remaining,,,,float,,Quantity To Be Produced,False,version 2
 ,,,,
 ,,,,

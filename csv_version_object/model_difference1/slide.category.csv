@@ -1,20 +1,20 @@
 model,slide.category,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,nbr_presentations,integer,,Number of Presentations,,,,False,version 1
-2,nbr_videos,integer,,Number of Videos,,,,False,version 1
-3,create_date,datetime,,Created on,,,,False,version 1
-4,name,char,,Name,,,,True,version 1
-5,sequence,integer,,Sequence,,,,False,version 1
-6,slide_ids,one2many,slide.slide,Slides,,,,False,version 1
-7,id,integer,,ID,,,,False,version 1
-8,__last_update,datetime,,Last Modified on,,,,False,version 1
+2,display_name,char,,Display Name,,,,False,version 1
+3,name,char,,Name,,,,True,version 1
+4,nbr_videos,integer,,Number of Videos,,,,False,version 1
+5,slide_ids,one2many,slide.slide,Slides,,,,False,version 1
+6,id,integer,,ID,,,,False,version 1
+7,__last_update,datetime,,Last Modified on,,,,False,version 1
+8,sequence,integer,,Sequence,,,,False,version 1
 9,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
-10,channel_id,many2one,slide.channel,Channel,,,,True,version 1
-11,total,integer,,Total,,,,False,version 1
+10,nbr_documents,integer,,Number of Documents,,,,False,version 1
+11,channel_id,many2one,slide.channel,Channel,,,,True,version 1
 12,nbr_infographics,integer,,Number of Infographics,,,,False,version 1
-13,nbr_documents,integer,,Number of Documents,,,,False,version 1
-14,display_name,char,,Display Name,,,,False,version 1
-15,write_date,datetime,,Last Updated on,,,,False,version 1
+13,write_date,datetime,,Last Updated on,,,,False,version 1
+14,create_date,datetime,,Created on,,,,False,version 1
+15,total,integer,,Total,,,,False,version 1
 16,create_uid,many2one,res.users,Created by,,,,False,version 1
 ,,,,
 ,,,,

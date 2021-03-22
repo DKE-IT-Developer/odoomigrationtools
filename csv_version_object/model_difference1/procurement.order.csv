@@ -11,7 +11,7 @@ no,field,type1,relation1,string1,type2,relation2,string2,required,source
 9,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
 10,product_qty,float,,Quantity,,,,True,version 1
 11,location_id,many2one,stock.location,Procurement Location,,,,False,version 1
-12,id,integer,,ID,,,,False,version 1
+12,message_ids,one2many,mail.message,Messages,,,,False,version 1
 13,purchase_id,many2one,purchase.order,Purchase Order,,,,False,version 1
 14,priority,selection,,Priority,,,,True,version 1
 15,partner_dest_id,many2one,res.partner,Customer Address,,,,False,version 1
@@ -19,7 +19,7 @@ no,field,type1,relation1,string1,type2,relation2,string2,required,source
 17,orderpoint_id,many2one,stock.warehouse.orderpoint,Minimum Stock Rule,,,,False,version 1
 18,message_last_post,datetime,,Last Message Date,,,,False,version 1
 19,company_id,many2one,res.company,Company,,,,True,version 1
-20,message_ids,one2many,mail.message,Messages,,,,False,version 1
+20,id,integer,,ID,,,,False,version 1
 21,move_ids,one2many,stock.move,Moves,,,,False,version 1
 22,state,selection,,Status,,,,True,version 1
 23,bom_id,many2one,mrp.bom,BoM,,,,False,version 1

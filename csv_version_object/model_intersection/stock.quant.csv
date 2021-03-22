@@ -1,42 +1,43 @@
 model,stock.quant,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,in_date,datetime,,Incoming Date,datetime,,Incoming Date,False,both
-1,create_date,datetime,,Creation Date,datetime,,Created on,False,both
-1,product_id,many2one,product.product,Product,many2one,product.product,Product,True,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,product_uom_id,many2one,product.uom,Unit of Measure,many2one,uom.uom,Unit of Measure,False,both
-1,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,package_id,many2one,stock.quant.package,Package,many2one,stock.quant.package,Package,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,lot_id,many2one,stock.production.lot,Lot/Serial Number,many2one,stock.production.lot,Lot/Serial Number,False,both
-1,owner_id,many2one,res.partner,Owner,many2one,res.partner,Owner,False,both
-1,location_id,many2one,stock.location,Location,many2one,stock.location,Location,True,both
-1,id,integer,,ID,integer,,ID,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
+2,in_date,datetime,,Incoming Date,datetime,,Incoming Date,False,both
+3,create_date,datetime,,Creation Date,datetime,,Created on,False,both
+4,product_id,many2one,product.product,Product,many2one,product.product,Product,True,both
+5,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+6,product_uom_id,many2one,product.uom,Unit of Measure,many2one,uom.uom,Unit of Measure,False,both
+7,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
+8,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+9,package_id,many2one,stock.quant.package,Package,many2one,stock.quant.package,Package,False,both
+10,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+11,lot_id,many2one,stock.production.lot,Lot/Serial Number,many2one,stock.production.lot,Lot/Serial Number,False,both
+12,owner_id,many2one,res.partner,Owner,many2one,res.partner,Owner,False,both
+13,location_id,many2one,stock.location,Location,many2one,stock.location,Location,True,both
+14,id,integer,,ID,integer,,ID,False,both
+15,display_name,char,,Display Name,char,,Display Name,False,both
 ,,,,
-1,produced_quant_ids,many2many,stock.quant,Produced quant ids,,,,False,version 1
-2,qty,float,,Quantity,,,,True,version 1
-3,propagated_from_id,many2one,stock.quant,Linked Quant,,,,False,version 1
-4,cost,float,,Unit Cost,,,,False,version 1
-5,inventory_value,float,,Inventory Value,,,,False,version 1
-6,reservation_id,many2one,stock.move,Reserved for Move,,,,False,version 1
-7,negative_dest_location_id,many2one,stock.location,Negative Destination Location,,,,False,version 1
-8,name,char,,Identifier,,,,False,version 1
-9,packaging_type_id,many2one,product.packaging,Type of packaging,,,,False,version 1
-10,consumed_quant_ids,many2many,stock.quant,Consumed quant ids,,,,False,version 1
-11,history_ids,many2many,stock.move,Moves,,,,False,version 1
-12,negative_move_id,many2one,stock.move,Move Negative Quant,,,,False,version 1
+16,produced_quant_ids,many2many,stock.quant,Produced quant ids,,,,False,version 1
+17,qty,float,,Quantity,,,,True,version 1
+18,propagated_from_id,many2one,stock.quant,Linked Quant,,,,False,version 1
+19,cost,float,,Unit Cost,,,,False,version 1
+20,inventory_value,float,,Inventory Value,,,,False,version 1
+21,reservation_id,many2one,stock.move,Reserved for Move,,,,False,version 1
+22,negative_dest_location_id,many2one,stock.location,Negative Destination Location,,,,False,version 1
+23,name,char,,Identifier,,,,False,version 1
+24,categ_id,many2one,product.category,Product Category,,,,False,version 1
+25,packaging_type_id,many2one,product.packaging,Type of packaging,,,,False,version 1
+26,consumed_quant_ids,many2many,stock.quant,Consumed quant ids,,,,False,version 1
+27,history_ids,many2many,stock.move,Moves,,,,False,version 1
+28,negative_move_id,many2one,stock.move,Move Negative Quant,,,,False,version 1
 ,,,,
-13,inventory_quantity,,,,float,,Inventoried Quantity,False,version 2
-14,currency_id,,,,many2one,res.currency,Currency,False,version 2
-15,available_quantity,,,,float,,Available Quantity,False,version 2
-16,on_hand,,,,boolean,,On Hand,False,version 2
-17,reserved_quantity,,,,float,,Reserved Quantity,True,version 2
-18,tracking,,,,selection,,Tracking,False,version 2
-19,value,,,,monetary,,Value,False,version 2
-20,product_tmpl_id,,,,many2one,product.template,Product Template,False,version 2
-21,quantity,,,,float,,Quantity,False,version 2
+29,inventory_quantity,,,,float,,Inventoried Quantity,False,version 2
+30,currency_id,,,,many2one,res.currency,Currency,False,version 2
+31,available_quantity,,,,float,,Available Quantity,False,version 2
+32,on_hand,,,,boolean,,On Hand,False,version 2
+33,reserved_quantity,,,,float,,Reserved Quantity,True,version 2
+34,tracking,,,,selection,,Tracking,False,version 2
+35,value,,,,monetary,,Value,False,version 2
+36,product_tmpl_id,,,,many2one,product.template,Product Template,False,version 2
+37,quantity,,,,float,,Quantity,False,version 2
 ,,,,
 ,,,,

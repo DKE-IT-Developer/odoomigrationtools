@@ -1,65 +1,65 @@
 model,website,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,domain,char,,Website Domain,char,,Website Domain,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,social_linkedin,char,,LinkedIn Account,char,,LinkedIn Account,False,both
-1,cdn_filters,text,,CDN Filters,text,,CDN Filters,False,both
-1,social_facebook,char,,Facebook Account,char,,Facebook Account,False,both
-1,language_ids,many2many,res.lang,Languages,many2many,res.lang,Languages,False,both
-1,favicon,binary,,Website Favicon,binary,,Website Favicon,False,both
-1,google_analytics_key,char,,Google Analytics Key,char,,Google Analytics Key,False,both
-1,social_twitter,char,,Twitter Account,char,,Twitter Account,False,both
-1,partner_id,many2one,res.partner,Public Partner,many2one,res.partner,Public Partner,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,cdn_url,char,,CDN Base URL,char,,CDN Base URL,False,both
-1,pricelist_ids,one2many,product.pricelist,Price list available for this Ecommerce/Website,one2many,product.pricelist,Price list available for this Ecommerce/Website,False,both
-1,user_id,many2one,res.users,Public User,many2one,res.users,Public User,True,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
-1,salesteam_id,many2one,crm.team,Sales Team,many2one,crm.team,Sales Team,False,both
-1,social_github,char,,GitHub Account,char,,GitHub Account,False,both
-1,default_lang_id,many2one,res.lang,Default Language,many2one,res.lang,Default Language,True,both
-1,pricelist_id,many2one,product.pricelist,Default Pricelist,many2one,product.pricelist,Default Pricelist,False,both
-1,menu_id,many2one,website.menu,Main Menu,many2one,website.menu,Main Menu,False,both
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,social_youtube,char,,Youtube Account,char,,Youtube Account,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,currency_id,many2one,res.currency,Default Currency,many2one,res.currency,Default Currency,False,both
-1,cdn_activated,boolean,,Activate CDN for assets,boolean,,Content Delivery Network (CDN),False,both
-1,name,char,,Website Name,char,,Website Name,True,both
-1,salesperson_id,many2one,res.users,Salesperson,many2one,res.users,Salesperson,False,both
+2,create_date,datetime,,Created on,datetime,,Created on,False,both
+3,social_linkedin,char,,LinkedIn Account,char,,LinkedIn Account,False,both
+4,cdn_filters,text,,CDN Filters,text,,CDN Filters,False,both
+5,social_twitter,char,,Twitter Account,char,,Twitter Account,False,both
+6,language_ids,many2many,res.lang,Languages,many2many,res.lang,Languages,False,both
+7,favicon,binary,,Website Favicon,binary,,Website Favicon,False,both
+8,google_analytics_key,char,,Google Analytics Key,char,,Google Analytics Key,False,both
+9,social_facebook,char,,Facebook Account,char,,Facebook Account,False,both
+10,partner_id,many2one,res.partner,Public Partner,many2one,res.partner,Public Partner,False,both
+11,id,integer,,ID,integer,,ID,False,both
+12,cdn_url,char,,CDN Base URL,char,,CDN Base URL,False,both
+13,pricelist_ids,one2many,product.pricelist,Price list available for this Ecommerce/Website,one2many,product.pricelist,Price list available for this Ecommerce/Website,False,both
+14,user_id,many2one,res.users,Public User,many2one,res.users,Public User,True,both
+15,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+16,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
+17,salesteam_id,many2one,crm.team,Sales Team,many2one,crm.team,Sales Team,False,both
+18,social_github,char,,GitHub Account,char,,GitHub Account,False,both
+19,default_lang_id,many2one,res.lang,Default Language,many2one,res.lang,Default Language,True,both
+20,pricelist_id,many2one,product.pricelist,Default Pricelist,many2one,product.pricelist,Default Pricelist,False,both
+21,menu_id,many2one,website.menu,Main Menu,many2one,website.menu,Main Menu,False,both
+22,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+23,social_youtube,char,,Youtube Account,char,,Youtube Account,False,both
+24,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+25,display_name,char,,Display Name,char,,Display Name,False,both
+26,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+27,currency_id,many2one,res.currency,Default Currency,many2one,res.currency,Default Currency,False,both
+28,cdn_activated,boolean,,Activate CDN for assets,boolean,,Content Delivery Network (CDN),False,both
+29,name,char,,Website Name,char,,Website Name,True,both
+30,salesperson_id,many2one,res.users,Salesperson,many2one,res.users,Salesperson,False,both
 ,,,,
-1,compress_html,boolean,,Compress HTML,,,,False,version 1
-2,default_lang_code,char,,Default language code,,,,False,version 1
-3,social_googleplus,char,,Google+ Account,,,,False,version 1
-4,website_form_enable_metadata,boolean,,Write metadata,,,,False,version 1
+31,compress_html,boolean,,Compress HTML,,,,False,version 1
+32,default_lang_code,char,,Default language code,,,,False,version 1
+33,social_googleplus,char,,Google+ Account,,,,False,version 1
+34,website_form_enable_metadata,boolean,,Write metadata,,,,False,version 1
 ,,,,
-5,social_instagram,,,,char,,Instagram Account,False,version 2
-6,google_management_client_id,,,,char,,Google Client ID,False,version 2
-7,cart_recovery_mail_template_id,,,,many2one,mail.template,Cart Recovery Email,False,version 2
-8,robots_txt,,,,text,,Robots.txt,False,version 2
-9,country_group_ids,,,,many2many,res.country.group,Country Groups,False,version 2
-10,logo,,,,binary,,Website Logo,False,version 2
-11,google_search_console,,,,char,,Google Search Console,False,version 2
-12,custom_code_head,,,,text,,Custom <head> code,False,version 2
-13,google_management_client_secret,,,,char,,Google Client Secret,False,version 2
-14,auth_signup_uninvited,,,,selection,,Customer Account,False,version 2
-15,google_maps_api_key,,,,char,,Google Maps API Key,False,version 2
-16,shop_extra_field_ids,,,,one2many,website.sale.extra.field,E-Commerce Extra Fields,False,version 2
-17,warehouse_id,,,,many2one,stock.warehouse,Warehouse,False,version 2
-18,custom_code_footer,,,,text,,Custom end of <body> code,False,version 2
-19,theme_id,,,,many2one,ir.module.module,Theme,False,version 2
-20,homepage_id,,,,many2one,website.page,Homepage,False,version 2
-21,has_social_default_image,,,,boolean,,Has Social Default Image,False,version 2
-22,cart_abandoned_delay,,,,float,,Abandoned Delay,False,version 2
-23,social_default_image,,,,binary,,Default Social Share Image,False,version 2
-24,auto_redirect_lang,,,,boolean,,Autoredirect Language,False,version 2
-25,shop_ppg,,,,integer,,Number of products in the grid on the shop,False,version 2
-26,specific_user_account,,,,boolean,,Specific User Account,False,version 2
-27,all_pricelist_ids,,,,one2many,product.pricelist,All pricelists,False,version 2
-28,shop_ppr,,,,integer,,Number of grid columns on the shop,False,version 2
-29,cookies_bar,,,,boolean,,Cookies Bar,False,version 2
+35,social_instagram,,,,char,,Instagram Account,False,version 2
+36,google_management_client_id,,,,char,,Google Client ID,False,version 2
+37,cart_recovery_mail_template_id,,,,many2one,mail.template,Cart Recovery Email,False,version 2
+38,robots_txt,,,,text,,Robots.txt,False,version 2
+39,country_group_ids,,,,many2many,res.country.group,Country Groups,False,version 2
+40,logo,,,,binary,,Website Logo,False,version 2
+41,google_search_console,,,,char,,Google Search Console,False,version 2
+42,custom_code_head,,,,text,,Custom <head> code,False,version 2
+43,google_management_client_secret,,,,char,,Google Client Secret,False,version 2
+44,auth_signup_uninvited,,,,selection,,Customer Account,False,version 2
+45,google_maps_api_key,,,,char,,Google Maps API Key,False,version 2
+46,shop_extra_field_ids,,,,one2many,website.sale.extra.field,E-Commerce Extra Fields,False,version 2
+47,warehouse_id,,,,many2one,stock.warehouse,Warehouse,False,version 2
+48,custom_code_footer,,,,text,,Custom end of <body> code,False,version 2
+49,theme_id,,,,many2one,ir.module.module,Theme,False,version 2
+50,homepage_id,,,,many2one,website.page,Homepage,False,version 2
+51,has_social_default_image,,,,boolean,,Has Social Default Image,False,version 2
+52,cart_abandoned_delay,,,,float,,Abandoned Delay,False,version 2
+53,social_default_image,,,,binary,,Default Social Share Image,False,version 2
+54,auto_redirect_lang,,,,boolean,,Autoredirect Language,False,version 2
+55,shop_ppg,,,,integer,,Number of products in the grid on the shop,False,version 2
+56,specific_user_account,,,,boolean,,Specific User Account,False,version 2
+57,all_pricelist_ids,,,,one2many,product.pricelist,All pricelists,False,version 2
+58,shop_ppr,,,,integer,,Number of grid columns on the shop,False,version 2
+59,cookies_bar,,,,boolean,,Cookies Bar,False,version 2
 ,,,,
 ,,,,

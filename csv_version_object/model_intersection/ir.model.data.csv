@@ -1,22 +1,22 @@
 model,ir.model.data,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,noupdate,boolean,,Non Updatable,boolean,,Non Updatable,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,name,char,,External Identifier,char,,External Identifier,True,both
-1,reference,char,,Reference,char,,Reference,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,module,char,,Module,char,,Module,True,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,complete_name,char,,Complete ID,char,,Complete ID,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,model,char,,Model Name,char,,Model Name,True,both
-1,res_id,integer,,Record ID,many2one_reference,,Record ID,False,both
-1,id,integer,,ID,integer,,ID,False,both
+2,noupdate,boolean,,Non Updatable,boolean,,Non Updatable,False,both
+3,display_name,char,,Display Name,char,,Display Name,False,both
+4,name,char,,External Identifier,char,,External Identifier,True,both
+5,reference,char,,Reference,char,,Reference,False,both
+6,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+7,module,char,,Module,char,,Module,True,both
+8,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+9,complete_name,char,,Complete ID,char,,Complete ID,False,both
+10,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+11,create_date,datetime,,Created on,datetime,,Created on,False,both
+12,model,char,,Model Name,char,,Model Name,True,both
+13,res_id,integer,,Record ID,many2one_reference,,Record ID,False,both
+14,id,integer,,ID,integer,,ID,False,both
 ,,,,
-1,date_update,datetime,,Update Date,,,,False,version 1
-2,date_init,datetime,,Init Date,,,,False,version 1
+15,date_update,datetime,,Update Date,,,,False,version 1
+16,date_init,datetime,,Init Date,,,,False,version 1
 ,,,,
 ,,,,
 ,,,,

@@ -1,126 +1,126 @@
 model,hr.employee,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,message_follower_ids,one2many,mail.followers,Followers,one2many,mail.followers,Followers,False,both
-1,address_id,many2one,res.partner,Working Address,many2one,res.partner,Work Address,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,coach_id,many2one,hr.employee,Coach,many2one,hr.employee,Coach,False,both
-1,resource_id,many2one,resource.resource,Resource,many2one,resource.resource,Resource,True,both
-1,color,integer,,Color Index,integer,,Color Index,False,both
-1,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
-1,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
-1,marital,selection,,Marital Status,selection,,Marital Status,False,both
-1,sinid,char,,SIN No,char,,SIN No,False,both
-1,identification_id,char,,Identification No,char,,Identification No,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,contract_id,many2one,hr.contract,Current Contract,many2one,hr.contract,Current Contract,False,both
-1,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,work_phone,char,,Work Phone,char,,Work Phone,False,both
-1,country_id,many2one,res.country,Nationality (Country),many2one,res.country,Nationality (Country),False,both
-1,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
-1,category_ids,many2many,hr.employee.category,Tags,many2many,hr.employee.category,Tags,False,both
-1,parent_id,many2one,hr.employee,Manager,many2one,hr.employee,Manager,False,both
-1,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
-1,contracts_count,integer,,Contracts,integer,,Contract Count,False,both
-1,vehicle,char,,Company Vehicle,char,,Company Vehicle,False,both
-1,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
-1,department_id,many2one,hr.department,Department,many2one,hr.department,Department,False,both
-1,mobile_phone,char,,Work Mobile,char,,Work Mobile,False,both
-1,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
-1,bank_account_id,many2one,res.partner.bank,Bank Account Number,many2one,res.partner.bank,Bank Account Number,False,both
-1,child_ids,one2many,hr.employee,Subordinates,one2many,hr.employee,Direct subordinates,False,both
-1,birthday,date,,Date of Birth,date,,Date of Birth,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,active,boolean,,Active,boolean,,Active,False,both
-1,user_id,many2one,res.users,User,many2one,res.users,User,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,work_email,char,,Work Email,char,,Work Email,False,both
-1,job_id,many2one,hr.job,Job Title,many2one,hr.job,Job Position,False,both
-1,work_location,char,,Work Location,char,,Work Location,False,both
-1,name,char,,Name,char,,Employee Name,False,both
-1,gender,selection,,Gender,selection,,Gender,False,both
-1,ssnid,char,,SSN No,char,,SSN No,False,both
-1,children,integer,,Number of Children,integer,,Number of Children,False,both
-1,address_home_id,many2one,res.partner,Home Address,many2one,res.partner,Address,False,both
-1,passport_id,char,,Passport No,char,,Passport No,False,both
-1,contract_ids,one2many,hr.contract,Contracts,one2many,hr.contract,Employee Contracts,False,both
-1,place_of_birth,char,,Place of Birth,char,,Place of Birth,False,both
-1,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
-1,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
-1,notes,text,,Notes,text,,Notes,False,both
+2,address_id,many2one,res.partner,Working Address,many2one,res.partner,Work Address,False,both
+3,create_date,datetime,,Created on,datetime,,Created on,False,both
+4,coach_id,many2one,hr.employee,Coach,many2one,hr.employee,Coach,False,both
+5,resource_id,many2one,resource.resource,Resource,many2one,resource.resource,Resource,True,both
+6,color,integer,,Color Index,integer,,Color Index,False,both
+7,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
+8,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
+9,marital,selection,,Marital Status,selection,,Marital Status,False,both
+10,sinid,char,,SIN No,char,,SIN No,False,both
+11,identification_id,char,,Identification No,char,,Identification No,False,both
+12,id,integer,,ID,integer,,ID,False,both
+13,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+14,display_name,char,,Display Name,char,,Display Name,False,both
+15,contract_id,many2one,hr.contract,Current Contract,many2one,hr.contract,Current Contract,False,both
+16,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
+17,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+18,work_phone,char,,Work Phone,char,,Work Phone,False,both
+19,country_id,many2one,res.country,Nationality (Country),many2one,res.country,Nationality (Country),False,both
+20,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
+21,category_ids,many2many,hr.employee.category,Tags,many2many,hr.employee.category,Tags,False,both
+22,parent_id,many2one,hr.employee,Manager,many2one,hr.employee,Manager,False,both
+23,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
+24,contracts_count,integer,,Contracts,integer,,Contract Count,False,both
+25,vehicle,char,,Company Vehicle,char,,Company Vehicle,False,both
+26,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
+27,department_id,many2one,hr.department,Department,many2one,hr.department,Department,False,both
+28,mobile_phone,char,,Work Mobile,char,,Work Mobile,False,both
+29,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
+30,bank_account_id,many2one,res.partner.bank,Bank Account Number,many2one,res.partner.bank,Bank Account Number,False,both
+31,child_ids,one2many,hr.employee,Subordinates,one2many,hr.employee,Direct subordinates,False,both
+32,birthday,date,,Date of Birth,date,,Date of Birth,False,both
+33,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+34,active,boolean,,Active,boolean,,Active,False,both
+35,user_id,many2one,res.users,User,many2one,res.users,User,False,both
+36,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+37,work_email,char,,Work Email,char,,Work Email,False,both
+38,job_id,many2one,hr.job,Job Title,many2one,hr.job,Job Position,False,both
+39,work_location,char,,Work Location,char,,Work Location,False,both
+40,name,char,,Name,char,,Employee Name,False,both
+41,gender,selection,,Gender,selection,,Gender,False,both
+42,notes,text,,Notes,text,,Notes,False,both
+43,children,integer,,Number of Children,integer,,Number of Children,False,both
+44,address_home_id,many2one,res.partner,Home Address,many2one,res.partner,Address,False,both
+45,passport_id,char,,Passport No,char,,Passport No,False,both
+46,contract_ids,one2many,hr.contract,Contracts,one2many,hr.contract,Employee Contracts,False,both
+47,place_of_birth,char,,Place of Birth,char,,Place of Birth,False,both
+48,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
+49,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
+50,ssnid,char,,SSN No,char,,SSN No,False,both
 ,,,,
-1,code,char,,Code,,,,False,version 1
-2,image,binary,,Photo,,,,False,version 1
-3,manager,boolean,,Is a Manager,,,,False,version 1
-4,city,char,,City,,,,False,version 1
-5,message_last_post,datetime,,Last Message Date,,,,False,version 1
-6,medic_exam,date,,Medical Examination Date,,,,False,version 1
-7,image_medium,binary,,Medium-sized photo,,,,False,version 1
-8,name_related,char,,Resource Name,,,,False,version 1
-9,image_small,binary,,Small-sized photo,,,,False,version 1
-10,vehicle_distance,integer,,Home-Work Dist.,,,,False,version 1
-11,time_efficiency,float,,Efficiency Factor,,,,True,version 1
-12,last_login,datetime,,Latest Connection,,,,False,version 1
-13,calendar_id,many2one,resource.calendar,Working Time,,,,False,version 1
-14,login,char,,Login,,,,False,version 1
-15,resource_type,selection,,Resource Type,,,,True,version 1
+51,code,char,,Code,,,,False,version 1
+52,image,binary,,Photo,,,,False,version 1
+53,manager,boolean,,Is a Manager,,,,False,version 1
+54,city,char,,City,,,,False,version 1
+55,message_last_post,datetime,,Last Message Date,,,,False,version 1
+56,medic_exam,date,,Medical Examination Date,,,,False,version 1
+57,image_medium,binary,,Medium-sized photo,,,,False,version 1
+58,image_small,binary,,Small-sized photo,,,,False,version 1
+59,name_related,char,,Resource Name,,,,False,version 1
+60,vehicle_distance,integer,,Home-Work Dist.,,,,False,version 1
+61,time_efficiency,float,,Efficiency Factor,,,,True,version 1
+62,last_login,datetime,,Latest Connection,,,,False,version 1
+63,calendar_id,many2one,resource.calendar,Working Time,,,,False,version 1
+64,login,char,,Login,,,,False,version 1
+65,resource_type,selection,,Resource Type,,,,True,version 1
 ,,,,
-16,last_activity_time,,,,char,,Last Activity Time,False,version 2
-17,departure_date,,,,date,,Departure Date,False,version 2
-18,expense_manager_id,,,,many2one,res.users,Expense,False,version 2
-19,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
-20,activity_date_deadline,,,,date,,Next Activity Deadline,False,version 2
-21,private_email,,,,char,,Private Email,False,version 2
-22,tz,,,,selection,,Timezone,False,version 2
-23,certificate,,,,selection,,Certificate Level,False,version 2
-24,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
-25,additional_note,,,,text,,Additional Note,False,version 2
-26,departure_description,,,,text,,Additional Information,False,version 2
-27,activity_user_id,,,,many2one,res.users,Responsible User,False,version 2
-28,image_1024,,,,binary,,Image 1024,False,version 2
-29,hr_presence_state,,,,selection,,Hr Presence State,False,version 2
-30,hr_icon_display,,,,selection,,Hr Icon Display,False,version 2
-31,resource_calendar_id,,,,many2one,resource.calendar,Working Hours,False,version 2
-32,subordinate_ids,,,,one2many,hr.employee,Subordinates,False,version 2
-33,activity_type_id,,,,many2one,mail.activity.type,Next Activity Type,False,version 2
-34,phone,,,,char,,Private Phone,False,version 2
-35,study_school,,,,char,,School,False,version 2
-36,activity_ids,,,,one2many,mail.activity,Activities,False,version 2
-37,study_field,,,,char,,Field of Study,False,version 2
-38,image_128,,,,binary,,Image 128,False,version 2
-39,last_activity,,,,date,,Last Activity,False,version 2
-40,activity_exception_icon,,,,char,,Icon,False,version 2
-41,calendar_mismatch,,,,boolean,,Calendar Mismatch,False,version 2
-42,activity_state,,,,selection,,Activity State,False,version 2
-43,permit_no,,,,char,,Work Permit No,False,version 2
-44,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
-45,pin,,,,char,,PIN,False,version 2
-46,departure_reason,,,,selection,,Departure Reason,False,version 2
-47,visa_no,,,,char,,Visa No,False,version 2
-48,child_all_count,,,,integer,,Indirect Subordinates Count,False,version 2
-49,message_has_error,,,,boolean,,Message Delivery error,False,version 2
-50,first_contract_date,,,,date,,First Contract Date,False,version 2
-51,image_512,,,,binary,,Image 512,False,version 2
-52,visa_expire,,,,date,,Visa Expire Date,False,version 2
-53,emergency_contact,,,,char,,Emergency Contact,False,version 2
-54,spouse_complete_name,,,,char,,Spouse Complete Name,False,version 2
-55,activity_exception_decoration,,,,selection,,Activity Exception Decoration,False,version 2
-56,km_home_work,,,,integer,,Home-Work Distance,False,version 2
-57,activity_type_icon,,,,char,,Activity Type Icon,False,version 2
-58,message_attachment_count,,,,integer,,Attachment Count,False,version 2
-59,country_of_birth,,,,many2one,res.country,Country of Birth,False,version 2
-60,job_title,,,,char,,Job Title,False,version 2
-61,barcode,,,,char,,Badge ID,False,version 2
-62,emergency_phone,,,,char,,Emergency Phone,False,version 2
-63,message_has_error_counter,,,,integer,,Number of errors,False,version 2
-64,image_1920,,,,binary,,Image,False,version 2
-65,contract_warning,,,,boolean,,Contract Warning,False,version 2
-66,is_address_home_a_company,,,,boolean,,The employee address has a company linked,False,version 2
-67,user_partner_id,,,,many2one,res.partner,User's partner,False,version 2
-68,activity_summary,,,,char,,Next Activity Summary,False,version 2
-69,spouse_birthdate,,,,date,,Spouse Birthdate,False,version 2
-70,image_256,,,,binary,,Image 256,False,version 2
+66,last_activity_time,,,,char,,Last Activity Time,False,version 2
+67,departure_date,,,,date,,Departure Date,False,version 2
+68,expense_manager_id,,,,many2one,res.users,Expense,False,version 2
+69,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
+70,activity_date_deadline,,,,date,,Next Activity Deadline,False,version 2
+71,private_email,,,,char,,Private Email,False,version 2
+72,tz,,,,selection,,Timezone,False,version 2
+73,certificate,,,,selection,,Certificate Level,False,version 2
+74,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
+75,additional_note,,,,text,,Additional Note,False,version 2
+76,departure_description,,,,text,,Additional Information,False,version 2
+77,activity_user_id,,,,many2one,res.users,Responsible User,False,version 2
+78,image_1024,,,,binary,,Image 1024,False,version 2
+79,hr_presence_state,,,,selection,,Hr Presence State,False,version 2
+80,hr_icon_display,,,,selection,,Hr Icon Display,False,version 2
+81,resource_calendar_id,,,,many2one,resource.calendar,Working Hours,False,version 2
+82,subordinate_ids,,,,one2many,hr.employee,Subordinates,False,version 2
+83,activity_type_id,,,,many2one,mail.activity.type,Next Activity Type,False,version 2
+84,phone,,,,char,,Private Phone,False,version 2
+85,study_school,,,,char,,School,False,version 2
+86,activity_ids,,,,one2many,mail.activity,Activities,False,version 2
+87,study_field,,,,char,,Field of Study,False,version 2
+88,image_128,,,,binary,,Image 128,False,version 2
+89,last_activity,,,,date,,Last Activity,False,version 2
+90,activity_exception_icon,,,,char,,Icon,False,version 2
+91,calendar_mismatch,,,,boolean,,Calendar Mismatch,False,version 2
+92,activity_state,,,,selection,,Activity State,False,version 2
+93,permit_no,,,,char,,Work Permit No,False,version 2
+94,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
+95,pin,,,,char,,PIN,False,version 2
+96,departure_reason,,,,selection,,Departure Reason,False,version 2
+97,visa_no,,,,char,,Visa No,False,version 2
+98,child_all_count,,,,integer,,Indirect Subordinates Count,False,version 2
+99,message_has_error,,,,boolean,,Message Delivery error,False,version 2
+100,first_contract_date,,,,date,,First Contract Date,False,version 2
+101,image_512,,,,binary,,Image 512,False,version 2
+102,visa_expire,,,,date,,Visa Expire Date,False,version 2
+103,emergency_contact,,,,char,,Emergency Contact,False,version 2
+104,spouse_complete_name,,,,char,,Spouse Complete Name,False,version 2
+105,activity_exception_decoration,,,,selection,,Activity Exception Decoration,False,version 2
+106,km_home_work,,,,integer,,Home-Work Distance,False,version 2
+107,activity_type_icon,,,,char,,Activity Type Icon,False,version 2
+108,message_attachment_count,,,,integer,,Attachment Count,False,version 2
+109,country_of_birth,,,,many2one,res.country,Country of Birth,False,version 2
+110,job_title,,,,char,,Job Title,False,version 2
+111,barcode,,,,char,,Badge ID,False,version 2
+112,emergency_phone,,,,char,,Emergency Phone,False,version 2
+113,message_has_error_counter,,,,integer,,Number of errors,False,version 2
+114,image_1920,,,,binary,,Image,False,version 2
+115,contract_warning,,,,boolean,,Contract Warning,False,version 2
+116,is_address_home_a_company,,,,boolean,,The employee address has a company linked,False,version 2
+117,user_partner_id,,,,many2one,res.partner,User's partner,False,version 2
+118,activity_summary,,,,char,,Next Activity Summary,False,version 2
+119,spouse_birthdate,,,,date,,Spouse Birthdate,False,version 2
+120,image_256,,,,binary,,Image 256,False,version 2
 ,,,,
 ,,,,

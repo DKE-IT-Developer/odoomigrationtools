@@ -1,41 +1,41 @@
 model,account.account,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,code,char,,Code,char,,Code,True,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,reconcile,boolean,,Allow Reconciliation,boolean,,Allow Reconciliation,False,both
-1,name,char,,Name,char,,Account Name,True,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,deprecated,boolean,,Deprecated,boolean,,Deprecated,False,both
-1,tag_ids,many2many,account.account.tag,Tags,many2many,account.account.tag,Tags,False,both
-1,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,currency_id,many2one,res.currency,Account Currency,many2one,res.currency,Account Currency,False,both
-1,note,text,,Internal Notes,text,,Internal Notes,False,both
-1,internal_type,selection,,Internal Type,selection,,Internal Type,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,user_type_id,many2one,account.account.type,Type,many2one,account.account.type,Type,True,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,tax_ids,many2many,account.tax,Default Taxes,many2many,account.tax,Default Taxes,False,both
+2,internal_type,selection,,Internal Type,selection,,Internal Type,False,both
+3,display_name,char,,Display Name,char,,Display Name,False,both
+4,name,char,,Name,char,,Account Name,True,both
+5,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+6,deprecated,boolean,,Deprecated,boolean,,Deprecated,False,both
+7,tag_ids,many2many,account.account.tag,Tags,many2many,account.account.tag,Tags,False,both
+8,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
+9,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+10,currency_id,many2one,res.currency,Account Currency,many2one,res.currency,Account Currency,False,both
+11,note,text,,Internal Notes,text,,Internal Notes,False,both
+12,code,char,,Code,char,,Code,True,both
+13,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+14,user_type_id,many2one,account.account.type,Type,many2one,account.account.type,Type,True,both
+15,create_date,datetime,,Created on,datetime,,Created on,False,both
+16,id,integer,,ID,integer,,ID,False,both
+17,reconcile,boolean,,Allow Reconciliation,boolean,,Allow Reconciliation,False,both
+18,tax_ids,many2many,account.tax,Default Taxes,many2many,account.tax,Default Taxes,False,both
 ,,,,
-1,last_time_entries_checked,datetime,,Latest Invoices & Payments Matching Date,,,,False,version 1
+19,last_time_entries_checked,datetime,,Latest Invoices & Payments Matching Date,,,,False,version 1
 ,,,,
-2,opening_credit,,,,monetary,,Opening Credit,False,version 2
-3,is_off_balance,,,,boolean,,Is Off Balance,False,version 2
-4,allowed_journal_ids,,,,many2many,account.journal,Allowed Journals,False,version 2
-5,create_asset,,,,selection,,Create Asset,True,version 2
-6,can_create_asset,,,,boolean,,Can Create Asset,False,version 2
-7,used,,,,boolean,,Used,False,version 2
-8,root_id,,,,many2one,account.root,Root,False,version 2
-9,form_view_ref,,,,char,,Form View Ref,False,version 2
-10,internal_group,,,,selection,,Internal Group,False,version 2
-11,exclude_provision_currency_ids,,,,many2many,res.currency,Exclude Provision Currency,False,version 2
-12,asset_type,,,,selection,,Asset Type,False,version 2
-13,opening_balance,,,,monetary,,Opening Balance,False,version 2
-14,opening_debit,,,,monetary,,Opening Debit,False,version 2
-15,multiple_assets_per_line,,,,boolean,,Multiple Assets per Line,False,version 2
-16,group_id,,,,many2one,account.group,Group,False,version 2
-17,asset_model,,,,many2one,account.asset,Asset Model,False,version 2
+20,opening_credit,,,,monetary,,Opening Credit,False,version 2
+21,is_off_balance,,,,boolean,,Is Off Balance,False,version 2
+22,allowed_journal_ids,,,,many2many,account.journal,Allowed Journals,False,version 2
+23,create_asset,,,,selection,,Create Asset,True,version 2
+24,can_create_asset,,,,boolean,,Can Create Asset,False,version 2
+25,used,,,,boolean,,Used,False,version 2
+26,root_id,,,,many2one,account.root,Root,False,version 2
+27,form_view_ref,,,,char,,Form View Ref,False,version 2
+28,internal_group,,,,selection,,Internal Group,False,version 2
+29,exclude_provision_currency_ids,,,,many2many,res.currency,Exclude Provision Currency,False,version 2
+30,asset_type,,,,selection,,Asset Type,False,version 2
+31,opening_balance,,,,monetary,,Opening Balance,False,version 2
+32,opening_debit,,,,monetary,,Opening Debit,False,version 2
+33,multiple_assets_per_line,,,,boolean,,Multiple Assets per Line,False,version 2
+34,group_id,,,,many2one,account.group,Group,False,version 2
+35,asset_model,,,,many2one,account.asset,Asset Model,False,version 2
 ,,,,
 ,,,,

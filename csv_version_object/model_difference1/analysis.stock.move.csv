@@ -1,0 +1,21 @@
+model,analysis.stock.move,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,__last_update,datetime,,Last Modified on,,,,False,version 1
+2,date_expected,datetime,,Expected Date,,,,False,version 1
+3,location_name,char,,Location,,,,False,version 1
+4,location_other_name,char,,Location From/To,,,,False,version 1
+5,move_type,char,,Move Type (In/Out),,,,False,version 1
+6,categ_name,char,,Product Category,,,,False,version 1
+7,company_id,many2one,res.company,Company,,,,False,version 1
+8,location_other_usage,char,,Location From/To Category,,,,False,version 1
+9,id,integer,,ID,,,,False,version 1
+10,product_signed_qty,float,,Signed Qty,,,,False,version 1
+11,product_qty,float,,Qty,,,,False,version 1
+12,date,datetime,,Date,,,,False,version 1
+13,current_cost,float,,Current Cost,,,,False,version 1
+14,signed_value_current_cost,float,,Signed Value (Current Cost),,,,False,version 1
+15,product_name,char,,Product,,,,False,version 1
+16,value_current_cost,float,,Value (Current Cost),,,,False,version 1
+17,display_name,char,,Display Name,,,,False,version 1
+,,,,
+,,,,

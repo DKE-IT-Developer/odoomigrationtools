@@ -1,69 +1,69 @@
 model,mail.channel,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,message_follower_ids,one2many,mail.followers,Followers,one2many,mail.followers,Followers,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,alias_defaults,text,,Default Values,text,,Default Values,True,both
-1,is_member,boolean,,Is a member,boolean,,Is a member,False,both
-1,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
-1,is_subscribed,boolean,,Is Subscribed,boolean,,Is Subscribed,False,both
-1,alias_id,many2one,mail.alias,Alias,many2one,mail.alias,Alias,True,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,channel_last_seen_partner_ids,one2many,mail.channel.partner,Last Seen,one2many,mail.channel.partner,Last Seen,False,both
-1,alias_name,char,,Alias Name,char,,Alias Name,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,channel_message_ids,many2many,mail.message,Channel message ids,many2many,mail.message,Channel Message,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,uuid,char,,UUID,char,,UUID,False,both
-1,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,alias_force_thread_id,integer,,Record Thread ID,integer,,Record Thread ID,False,both
-1,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
-1,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
-1,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
-1,alias_domain,char,,Alias domain,char,,Alias domain,False,both
-1,alias_parent_model_id,many2one,ir.model,Parent Model,many2one,ir.model,Parent Model,False,both
-1,description,text,,Description,text,,Description,False,both
-1,channel_partner_ids,many2many,res.partner,Listeners,many2many,res.partner,Listeners,False,both
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,alias_contact,selection,,Alias Contact Security,selection,,Alias Contact Security,True,both
-1,public,selection,,Privacy,selection,,Privacy,True,both
-1,group_public_id,many2one,res.groups,Authorized Group,many2one,res.groups,Authorized Group,False,both
-1,alias_model_id,many2one,ir.model,Aliased Model,many2one,ir.model,Aliased Model,True,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,alias_parent_thread_id,integer,,Parent Record Thread ID,integer,,Parent Record Thread ID,False,both
-1,group_ids,many2many,res.groups,Auto Subscription,many2many,res.groups,Auto Subscription,False,both
-1,name,char,,Name,char,,Name,True,both
-1,alias_user_id,many2one,res.users,Owner,many2one,res.users,Owner,False,both
-1,channel_type,selection,,Channel Type,selection,,Channel Type,False,both
-1,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
-1,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
-1,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
-1,email_send,boolean,,Send messages by email,boolean,,Send messages by email,False,both
+2,create_date,datetime,,Created on,datetime,,Created on,False,both
+3,alias_defaults,text,,Default Values,text,,Default Values,True,both
+4,is_member,boolean,,Is a member,boolean,,Is a member,False,both
+5,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
+6,is_subscribed,boolean,,Is Subscribed,boolean,,Is Subscribed,False,both
+7,alias_id,many2one,mail.alias,Alias,many2one,mail.alias,Alias,True,both
+8,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+9,channel_last_seen_partner_ids,one2many,mail.channel.partner,Last Seen,one2many,mail.channel.partner,Last Seen,False,both
+10,alias_name,char,,Alias Name,char,,Alias Name,False,both
+11,id,integer,,ID,integer,,ID,False,both
+12,channel_message_ids,many2many,mail.message,Channel message ids,many2many,mail.message,Channel Message,False,both
+13,display_name,char,,Display Name,char,,Display Name,False,both
+14,uuid,char,,UUID,char,,UUID,False,both
+15,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
+16,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+17,alias_force_thread_id,integer,,Record Thread ID,integer,,Record Thread ID,False,both
+18,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
+19,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
+20,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
+21,alias_domain,char,,Alias domain,char,,Alias domain,False,both
+22,alias_parent_model_id,many2one,ir.model,Parent Model,many2one,ir.model,Parent Model,False,both
+23,description,text,,Description,text,,Description,False,both
+24,channel_partner_ids,many2many,res.partner,Listeners,many2many,res.partner,Listeners,False,both
+25,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+26,alias_contact,selection,,Alias Contact Security,selection,,Alias Contact Security,True,both
+27,public,selection,,Privacy,selection,,Privacy,True,both
+28,group_public_id,many2one,res.groups,Authorized Group,many2one,res.groups,Authorized Group,False,both
+29,alias_model_id,many2one,ir.model,Aliased Model,many2one,ir.model,Aliased Model,True,both
+30,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+31,alias_parent_thread_id,integer,,Parent Record Thread ID,integer,,Parent Record Thread ID,False,both
+32,group_ids,many2many,res.groups,Auto Subscription,many2many,res.groups,Auto Subscription,False,both
+33,name,char,,Name,char,,Name,True,both
+34,alias_user_id,many2one,res.users,Owner,many2one,res.users,Owner,False,both
+35,channel_type,selection,,Channel Type,selection,,Channel Type,False,both
+36,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
+37,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
+38,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
+39,email_send,boolean,,Send messages by email,boolean,,Send messages by email,False,both
 ,,,,
-1,image_medium,binary,,Medium-sized photo,,,,False,version 1
-2,image_small,binary,,Small-sized photo,,,,False,version 1
-3,image,binary,,Photo,,,,False,version 1
-4,message_last_post,datetime,,Last Message Date,,,,False,version 1
+40,image_medium,binary,,Medium-sized photo,,,,False,version 1
+41,image_small,binary,,Small-sized photo,,,,False,version 1
+42,image,binary,,Photo,,,,False,version 1
+43,message_last_post,datetime,,Last Message Date,,,,False,version 1
 ,,,,
-5,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
-6,message_has_error,,,,boolean,,Message Delivery error,False,version 2
-7,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
-8,message_attachment_count,,,,integer,,Attachment Count,False,version 2
-9,moderation_count,,,,integer,,Moderated emails count,False,version 2
-10,moderation_notify_msg,,,,text,,Notification message,False,version 2
-11,moderation_guidelines,,,,boolean,,Send guidelines to new subscribers,False,version 2
-12,is_chat,,,,boolean,,Is a chat,False,version 2
-13,message_has_error_counter,,,,integer,,Number of errors,False,version 2
-14,is_moderator,,,,boolean,,Moderator,False,version 2
-15,moderation,,,,boolean,,Moderate this channel,False,version 2
-16,active,,,,boolean,,Active,False,version 2
-17,moderation_ids,,,,one2many,mail.moderation,Moderated Emails,False,version 2
-18,image_128,,,,binary,,Image,False,version 2
-19,subscription_department_ids,,,,many2many,hr.department,HR Departments,False,version 2
-20,moderation_guidelines_msg,,,,text,,Guidelines,False,version 2
-21,alias_bounced_content,,,,html,,Custom Bounced Message,False,version 2
-22,moderator_ids,,,,many2many,res.users,Moderators,False,version 2
-23,moderation_notify,,,,boolean,,Automatic notification,False,version 2
-24,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
+44,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
+45,message_has_error,,,,boolean,,Message Delivery error,False,version 2
+46,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
+47,message_attachment_count,,,,integer,,Attachment Count,False,version 2
+48,moderation_count,,,,integer,,Moderated emails count,False,version 2
+49,moderation_notify_msg,,,,text,,Notification message,False,version 2
+50,moderation_guidelines,,,,boolean,,Send guidelines to new subscribers,False,version 2
+51,is_chat,,,,boolean,,Is a chat,False,version 2
+52,message_has_error_counter,,,,integer,,Number of errors,False,version 2
+53,is_moderator,,,,boolean,,Moderator,False,version 2
+54,moderation,,,,boolean,,Moderate this channel,False,version 2
+55,active,,,,boolean,,Active,False,version 2
+56,moderation_ids,,,,one2many,mail.moderation,Moderated Emails,False,version 2
+57,image_128,,,,binary,,Image,False,version 2
+58,subscription_department_ids,,,,many2many,hr.department,HR Departments,False,version 2
+59,moderation_guidelines_msg,,,,text,,Guidelines,False,version 2
+60,alias_bounced_content,,,,html,,Custom Bounced Message,False,version 2
+61,moderator_ids,,,,many2many,res.users,Moderators,False,version 2
+62,moderation_notify,,,,boolean,,Automatic notification,False,version 2
+63,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
 ,,,,
 ,,,,

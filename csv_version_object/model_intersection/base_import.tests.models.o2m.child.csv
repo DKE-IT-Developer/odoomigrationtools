@@ -1,14 +1,14 @@
 model,base_import.tests.models.o2m.child,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,value,integer,,Value,integer,,Value,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,parent_id,many2one,base_import.tests.models.o2m,Parent id,many2one,base_import.tests.models.o2m,Parent,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,id,integer,,ID,integer,,ID,False,both
+2,create_date,datetime,,Created on,datetime,,Created on,False,both
+3,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+4,value,integer,,Value,integer,,Value,False,both
+5,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+6,parent_id,many2one,base_import.tests.models.o2m,Parent id,many2one,base_import.tests.models.o2m,Parent,False,both
+7,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+8,display_name,char,,Display Name,char,,Display Name,False,both
+9,id,integer,,ID,integer,,ID,False,both
 ,,,,
 ,,,,
 ,,,,

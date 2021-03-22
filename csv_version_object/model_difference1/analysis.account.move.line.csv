@@ -1,0 +1,16 @@
+model,analysis.account.move.line,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,account_type_name,char,,Account Type,,,,False,version 1
+2,display_name,char,,Display Name,,,,False,version 1
+3,__last_update,datetime,,Last Modified on,,,,False,version 1
+4,abs_balance,float,,Absolute Balance,,,,False,version 1
+5,company_id,many2one,res.company,Company,,,,False,version 1
+6,id,integer,,ID,,,,False,version 1
+7,reversed_balance,float,,Reversed Balance,,,,False,version 1
+8,move_date,date,,Date,,,,False,version 1
+9,balance,float,,Balance,,,,False,version 1
+10,partner_id,many2one,res.partner,Partner,,,,False,version 1
+11,account_name,char,,Account,,,,False,version 1
+12,accont_code,char,,Code,,,,False,version 1
+,,,,
+,,,,

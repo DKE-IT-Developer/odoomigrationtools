@@ -1,26 +1,26 @@
 model,resource.calendar.attendance,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,dayofweek,selection,,Day of Week,selection,,Day of Week,True,both
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,calendar_id,many2one,resource.calendar,Resource's Calendar,many2one,resource.calendar,Resource's Calendar,True,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,name,char,,Name,char,,Name,True,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,date_from,date,,Starting Date,date,,Starting Date,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,hour_from,float,,Work from,float,,Work from,True,both
-1,hour_to,float,,Work to,float,,Work to,True,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,date_to,date,,End Date,date,,End Date,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,id,integer,,ID,integer,,ID,False,both
+2,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+3,calendar_id,many2one,resource.calendar,Resource's Calendar,many2one,resource.calendar,Resource's Calendar,True,both
+4,display_name,char,,Display Name,char,,Display Name,False,both
+5,name,char,,Name,char,,Name,True,both
+6,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+7,date_from,date,,Starting Date,date,,Starting Date,False,both
+8,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+9,hour_from,float,,Work from,float,,Work from,True,both
+10,hour_to,float,,Work to,float,,Work to,True,both
+11,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+12,date_to,date,,End Date,date,,End Date,False,both
+13,create_date,datetime,,Created on,datetime,,Created on,False,both
+14,id,integer,,ID,integer,,ID,False,both
 ,,,,
 ,,,,
-1,day_period,,,,selection,,Day Period,True,version 2
-2,resource_id,,,,many2one,resource.resource,Resource,False,version 2
-3,sequence,,,,integer,,Sequence,False,version 2
-4,week_type,,,,selection,,Week Even/Odd,False,version 2
-5,two_weeks_calendar,,,,boolean,,Calendar in 2 weeks mode,False,version 2
-6,display_type,,,,selection,,Display Type,False,version 2
+15,day_period,,,,selection,,Day Period,True,version 2
+16,resource_id,,,,many2one,resource.resource,Resource,False,version 2
+17,sequence,,,,integer,,Sequence,False,version 2
+18,week_type,,,,selection,,Week Even/Odd,False,version 2
+19,two_weeks_calendar,,,,boolean,,Calendar in 2 weeks mode,False,version 2
+20,display_type,,,,selection,,Display Type,False,version 2
 ,,,,
 ,,,,

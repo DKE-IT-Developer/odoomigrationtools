@@ -1,101 +1,118 @@
 model,stock.picking,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,origin,char,,Source Document,char,,Source Document,False,both
-1,message_follower_ids,one2many,mail.followers,Followers,one2many,mail.followers,Followers,False,both
-1,has_scrap_move,boolean,,Has Scrap Moves,boolean,,Has Scrap Moves,False,both
-1,date_done,datetime,,Date of Transfer,datetime,,Date of Transfer,False,both
-1,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
-1,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
-1,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,partner_id,many2one,res.partner,Partner,many2one,res.partner,Contact,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,backorder_id,many2one,stock.picking,Back Order of,many2one,stock.picking,Back Order of,False,both
-1,purchase_id,many2one,purchase.order,Purchase Orders,many2one,purchase.order,Purchase Orders,False,both
-1,note,text,,Notes,text,,Notes,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
-1,picking_type_id,many2one,stock.picking.type,Picking Type,many2one,stock.picking.type,Operation Type,True,both
-1,location_id,many2one,stock.location,Source Location Zone,many2one,stock.location,Source Location,True,both
-1,move_type,selection,,Delivery Type,selection,,Shipping Policy,True,both
-1,sale_id,many2one,sale.order,Sale Order,many2one,sale.order,Sales Order,False,both
-1,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-1,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
-1,priority,selection,,Priority,selection,,Priority,False,both
-1,state,selection,,Status,selection,,Status,False,both
-1,picking_type_code,selection,,Type of Operation,selection,,Type of Operation,False,both
-1,picking_type_entire_packs,boolean,,Allow moving packs,boolean,,Move Entire Packages,False,both
-1,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
-1,owner_id,many2one,res.partner,Owner,many2one,res.partner,Assign Owner,False,both
-1,move_lines,one2many,stock.move,Stock Moves,one2many,stock.move,Stock Moves,False,both
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,printed,boolean,,Printed,boolean,,Printed,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,date,datetime,,Creation Date,datetime,,Creation Date,False,both
-1,product_id,many2one,product.product,Product,many2one,product.product,Product,False,both
-1,group_id,many2one,procurement.group,Procurement Group,many2one,procurement.group,Procurement Group,False,both
-1,name,char,,Reference,char,,Reference,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,location_dest_id,many2one,stock.location,Destination Location Zone,many2one,stock.location,Destination Location,True,both
-1,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
-1,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
+2,message_follower_ids,one2many,mail.followers,Followers,one2many,mail.followers,Followers,False,both
+3,has_scrap_move,boolean,,Has Scrap Moves,boolean,,Has Scrap Moves,False,both
+4,date_done,datetime,,Date of Transfer,datetime,,Date of Transfer,False,both
+5,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
+6,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
+7,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
+8,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+9,create_date,datetime,,Created on,datetime,,Created on,False,both
+10,partner_id,many2one,res.partner,Partner,many2one,res.partner,Contact,False,both
+11,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
+12,move_lines,one2many,stock.move,Stock Moves,one2many,stock.move,Stock Moves,False,both
+13,purchase_id,many2one,purchase.order,Purchase Orders,many2one,purchase.order,Purchase Orders,False,both
+14,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+15,display_name,char,,Display Name,char,,Display Name,False,both
+16,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
+17,picking_type_id,many2one,stock.picking.type,Picking Type,many2one,stock.picking.type,Operation Type,True,both
+18,location_id,many2one,stock.location,Source Location Zone,many2one,stock.location,Source Location,True,both
+19,move_type,selection,,Delivery Type,selection,,Shipping Policy,True,both
+20,sale_id,many2one,sale.order,Sale Order,many2one,sale.order,Sales Order,False,both
+21,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
+22,id,integer,,ID,integer,,ID,False,both
+23,note,text,,Notes,text,,Notes,False,both
+24,state,selection,,Status,selection,,Status,False,both
+25,picking_type_code,selection,,Type of Operation,selection,,Type of Operation,False,both
+26,picking_type_entire_packs,boolean,,Allow moving packs,boolean,,Move Entire Packages,False,both
+27,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
+28,owner_id,many2one,res.partner,Owner,many2one,res.partner,Assign Owner,False,both
+29,backorder_id,many2one,stock.picking,Back Order of,many2one,stock.picking,Back Order of,False,both
+30,printed,boolean,,Printed,boolean,,Printed,False,both
+31,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+32,date,datetime,,Creation Date,datetime,,Creation Date,False,both
+33,product_id,many2one,product.product,Product,many2one,product.product,Product,False,both
+34,group_id,many2one,procurement.group,Procurement Group,many2one,procurement.group,Procurement Group,False,both
+35,name,char,,Reference,char,,Reference,False,both
+36,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+37,location_dest_id,many2one,stock.location,Destination Location Zone,many2one,stock.location,Destination Location,True,both
+38,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
+39,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
+40,priority,selection,,Priority,selection,,Priority,False,both
 ,,,,
-1,pack_operation_product_ids,one2many,stock.pack.operation,Non pack,,,,False,version 1
-2,min_date,datetime,,Scheduled Date,,,,False,version 1
-3,launch_pack_operations,boolean,,Launch Pack Operations,,,,False,version 1
-4,pack_operation_ids,one2many,stock.pack.operation,Related Packing Operations,,,,False,version 1
-5,pack_operation_exist,boolean,,Has Pack Operations,,,,False,version 1
-6,pack_operation_pack_ids,one2many,stock.pack.operation,Pack,,,,False,version 1
-7,recompute_pack_op,boolean,,Recompute pack operation?,,,,False,version 1
-8,message_last_post,datetime,,Last Message Date,,,,False,version 1
-9,max_date,datetime,,Max. Expected Date,,,,False,version 1
-10,quant_reserved_exist,boolean,,Has quants already reserved,,,,False,version 1
+41,number_of_packages,integer,,Number of Packages,,,,False,version 1
+42,carrier_id,many2one,delivery.carrier,Carrier,,,,False,version 1
+43,launch_pack_operations,boolean,,Launch Pack Operations,,,,False,version 1
+44,pack_operation_product_ids,one2many,stock.pack.operation,Non pack,,,,False,version 1
+45,package_ids,many2many,stock.quant.package,Packages,,,,False,version 1
+46,tracking_details,one2many,stock.picking.tracking.details,Tracking Details,,,,False,version 1
+47,message_last_post,datetime,,Last Message Date,,,,False,version 1
+48,printer_data,text,,Printer Data,,,,False,version 1
+49,weight_bulk,float,,Bulk Weight,,,,False,version 1
+50,delivery_type,selection,,Provider,,,,False,version 1
+51,volume,float,,Volume,,,,False,version 1
+52,pack_operation_exist,boolean,,Has Pack Operations,,,,False,version 1
+53,pack_operation_pack_ids,one2many,stock.pack.operation,Pack,,,,False,version 1
+54,location_source_transit_id,many2one,stock.location,Source Location Before Transit,,,,False,version 1
+55,max_date,datetime,,Max. Expected Date,,,,False,version 1
+56,quant_reserved_exist,boolean,,Has quants already reserved,,,,False,version 1
+57,carrier_tracking_ref,char,,Tracking Reference,,,,False,version 1
+58,weight,float,,Weight,,,,False,version 1
+59,shipping_weight,float,,Weight for Shipping,,,,False,version 1
+60,delivered,boolean,,Delivered,,,,False,version 1
+61,weight_uom_id,many2one,product.uom,Unit of Measure,,,,True,version 1
+62,location_dest_transit_id,many2one,stock.location,Destination Location After Transit,,,,False,version 1
+63,min_date,datetime,,Scheduled Date,,,,False,version 1
+64,pack_operation_ids,one2many,stock.pack.operation,Related Packing Operations,,,,False,version 1
+65,recompute_pack_op,boolean,,Recompute pack operation?,,,,False,version 1
+66,carrier_price,float,,Shipping Cost,,,,False,version 1
+67,is_transit,boolean,,Transit,,,,False,version 1
 ,,,,
-11,has_tracking,,,,boolean,,Has Tracking,False,version 2
-12,activity_type_icon,,,,char,,Activity Type Icon,False,version 2
-13,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
-14,immediate_transfer,,,,boolean,,Immediate Transfer,False,version 2
-15,move_ids_without_package,,,,one2many,stock.move,Stock moves not in package,False,version 2
-16,activity_date_deadline,,,,date,,Next Activity Deadline,False,version 2
-17,move_line_nosuggest_ids,,,,one2many,stock.move.line,Move Line Nosuggest,False,version 2
-18,user_id,,,,many2one,res.users,Responsible,False,version 2
-19,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
-20,has_deadline_issue,,,,boolean,,Is late,False,version 2
-21,move_line_exist,,,,boolean,,Has Pack Operations,False,version 2
-22,activity_user_id,,,,many2one,res.users,Responsible User,False,version 2
-23,package_level_ids_details,,,,one2many,stock.package_level,Package Level Ids Details,False,version 2
-24,move_line_ids,,,,one2many,stock.move.line,Operations,False,version 2
-25,scheduled_date,,,,datetime,,Scheduled Date,False,version 2
-26,show_reserved,,,,boolean,,Pre-fill Detailed Operations,False,version 2
-27,show_operations,,,,boolean,,Show Operations,False,version 2
-28,activity_type_id,,,,many2one,mail.activity.type,Next Activity Type,False,version 2
-29,activity_ids,,,,one2many,mail.activity,Activities,False,version 2
-30,date_deadline,,,,datetime,,Deadline,False,version 2
-31,activity_exception_icon,,,,char,,Icon,False,version 2
-32,products_availability_state,,,,selection,,Products Availability State,False,version 2
-33,activity_state,,,,selection,,Activity State,False,version 2
-34,show_mark_as_todo,,,,boolean,,Show Mark As Todo,False,version 2
-35,show_check_availability,,,,boolean,,Show Check Availability,False,version 2
-36,show_lots_text,,,,boolean,,Show Lots Text,False,version 2
-37,website_id,,,,many2one,website,Website,False,version 2
-38,move_line_ids_without_package,,,,one2many,stock.move.line,Operations without package,False,version 2
-39,message_has_error,,,,boolean,,Message Delivery error,False,version 2
-40,show_validate,,,,boolean,,Show Validate,False,version 2
-41,products_availability,,,,char,,Product Availability,False,version 2
-42,activity_exception_decoration,,,,selection,,Activity Exception Decoration,False,version 2
-43,hide_picking_type,,,,boolean,,Hide Picking Type,False,version 2
-44,message_attachment_count,,,,integer,,Attachment Count,False,version 2
-45,has_packages,,,,boolean,,Has Packages,False,version 2
-46,message_has_error_counter,,,,integer,,Number of errors,False,version 2
-47,package_level_ids,,,,one2many,stock.package_level,Package Level,False,version 2
-48,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
-49,json_popover,,,,char,,JSON data for the popover widget,False,version 2
-50,backorder_ids,,,,one2many,stock.picking,Back Orders,False,version 2
-51,activity_summary,,,,char,,Next Activity Summary,False,version 2
-52,is_locked,,,,boolean,,Is Locked,False,version 2
-53,delay_alert_date,,,,datetime,,Delay Alert Date,False,version 2
-54,use_create_lots,,,,boolean,,Create New Lots/Serial Numbers,False,version 2
-55,signature,,,,binary,,Signature,False,version 2
+68,has_tracking,,,,boolean,,Has Tracking,False,version 2
+69,activity_type_icon,,,,char,,Activity Type Icon,False,version 2
+70,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
+71,immediate_transfer,,,,boolean,,Immediate Transfer,False,version 2
+72,move_ids_without_package,,,,one2many,stock.move,Stock moves not in package,False,version 2
+73,activity_date_deadline,,,,date,,Next Activity Deadline,False,version 2
+74,move_line_nosuggest_ids,,,,one2many,stock.move.line,Move Line Nosuggest,False,version 2
+75,user_id,,,,many2one,res.users,Responsible,False,version 2
+76,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
+77,has_deadline_issue,,,,boolean,,Is late,False,version 2
+78,move_line_exist,,,,boolean,,Has Pack Operations,False,version 2
+79,activity_user_id,,,,many2one,res.users,Responsible User,False,version 2
+80,package_level_ids_details,,,,one2many,stock.package_level,Package Level Ids Details,False,version 2
+81,move_line_ids,,,,one2many,stock.move.line,Operations,False,version 2
+82,scheduled_date,,,,datetime,,Scheduled Date,False,version 2
+83,show_reserved,,,,boolean,,Pre-fill Detailed Operations,False,version 2
+84,show_operations,,,,boolean,,Show Operations,False,version 2
+85,activity_type_id,,,,many2one,mail.activity.type,Next Activity Type,False,version 2
+86,activity_ids,,,,one2many,mail.activity,Activities,False,version 2
+87,date_deadline,,,,datetime,,Deadline,False,version 2
+88,activity_exception_icon,,,,char,,Icon,False,version 2
+89,products_availability_state,,,,selection,,Products Availability State,False,version 2
+90,activity_state,,,,selection,,Activity State,False,version 2
+91,show_mark_as_todo,,,,boolean,,Show Mark As Todo,False,version 2
+92,show_check_availability,,,,boolean,,Show Check Availability,False,version 2
+93,show_lots_text,,,,boolean,,Show Lots Text,False,version 2
+94,website_id,,,,many2one,website,Website,False,version 2
+95,move_line_ids_without_package,,,,one2many,stock.move.line,Operations without package,False,version 2
+96,message_has_error,,,,boolean,,Message Delivery error,False,version 2
+97,show_validate,,,,boolean,,Show Validate,False,version 2
+98,products_availability,,,,char,,Product Availability,False,version 2
+99,activity_exception_decoration,,,,selection,,Activity Exception Decoration,False,version 2
+100,hide_picking_type,,,,boolean,,Hide Picking Type,False,version 2
+101,message_attachment_count,,,,integer,,Attachment Count,False,version 2
+102,has_packages,,,,boolean,,Has Packages,False,version 2
+103,message_has_error_counter,,,,integer,,Number of errors,False,version 2
+104,package_level_ids,,,,one2many,stock.package_level,Package Level,False,version 2
+105,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
+106,json_popover,,,,char,,JSON data for the popover widget,False,version 2
+107,backorder_ids,,,,one2many,stock.picking,Back Orders,False,version 2
+108,activity_summary,,,,char,,Next Activity Summary,False,version 2
+109,is_locked,,,,boolean,,Is Locked,False,version 2
+110,delay_alert_date,,,,datetime,,Delay Alert Date,False,version 2
+111,use_create_lots,,,,boolean,,Create New Lots/Serial Numbers,False,version 2
+112,signature,,,,binary,,Signature,False,version 2
 ,,,,
 ,,,,

@@ -1,0 +1,28 @@
+model,analysis.sale,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,state_name,char,,Customer Address (State),,,,False,version 1
+2,product_uom_qty,float,,Product Qty,,,,False,version 1
+3,date_order,datetime,,Date Order,,,,False,version 1
+4,partner_id,many2one,res.partner,Customer,,,,False,version 1
+5,id,integer,,ID,,,,False,version 1
+6,display_name,char,,Display Name,,,,False,version 1
+7,__last_update,datetime,,Last Modified on,,,,False,version 1
+8,partner_name,char,,Customer,,,,False,version 1
+9,sale_gross,float,,Gross Sales,,,,False,version 1
+10,company_id,many2one,res.company,Company,,,,False,version 1
+11,saleperson_name,char,,Saleperson,,,,False,version 1
+12,product_name,char,,Product,,,,False,version 1
+13,sale_total,float,,Total Net Sales,,,,False,version 1
+14,sale_state,char,,Sale Order Status,,,,False,version 1
+15,sale_discount,float,,Discount Amount,,,,False,version 1
+16,sale_tax,float,,Tax Amount,,,,False,version 1
+17,sale_margin,float,,Total Margin,,,,False,version 1
+18,product_category_name,char,,Product Category,,,,False,version 1
+19,delivered_qty,float,,Delivered Qty,,,,False,version 1
+20,saleteam_name,char,,Salesteam,,,,False,version 1
+21,sale_cost,float,,Total Cost,,,,False,version 1
+22,invoice_status,char,,Invoice Status,,,,False,version 1
+23,invoiced_qty,float,,Invoiced Qty,,,,False,version 1
+24,saleperson_id,many2one,res.users,Saleperson,,,,False,version 1
+,,,,
+,,,,

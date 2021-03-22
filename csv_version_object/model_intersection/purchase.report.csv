@@ -1,44 +1,44 @@
 model,purchase.report,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,weight,float,,Gross Weight,float,,Gross Weight,False,both
-1,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,False,both
-1,delay_pass,float,,Days to Deliver,float,,Days to Receive,False,both
-1,date_order,datetime,,Order Date,datetime,,Order Date,False,both
-1,partner_id,many2one,res.partner,Vendor,many2one,res.partner,Vendor,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,delay,float,,Days to Validate,float,,Days to Confirm,False,both
-1,user_id,many2one,res.users,Responsible,many2one,res.users,Purchase Representative,False,both
-1,product_uom,many2one,product.uom,Reference Unit of Measure,many2one,uom.uom,Reference Unit of Measure,True,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,country_id,many2one,res.country,Partner Country,many2one,res.country,Partner Country,False,both
-1,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-1,product_tmpl_id,many2one,product.template,Product Template,many2one,product.template,Product Template,False,both
-1,state,selection,,Order Status,selection,,Status,False,both
-1,fiscal_position_id,many2one,account.fiscal.position,Fiscal Position,many2one,account.fiscal.position,Fiscal Position,False,both
-1,account_analytic_id,many2one,account.analytic.account,Analytic Account,many2one,account.analytic.account,Analytic Account,False,both
-1,price_average,float,,Average Price,float,,Average Cost,False,both
-1,volume,float,,Volume,float,,Volume,False,both
-1,nbr_lines,integer,,# of Lines,integer,,# of Lines,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,date_approve,date,,Date Approved,datetime,,Confirmation Date,False,both
-1,price_total,float,,Total Price,float,,Total,False,both
-1,product_id,many2one,product.product,Product,many2one,product.product,Product,False,both
-1,picking_type_id,many2one,stock.warehouse,Warehouse,many2one,stock.warehouse,Warehouse,False,both
-1,category_id,many2one,product.category,Product Category,many2one,product.category,Product Category,False,both
-1,commercial_partner_id,many2one,res.partner,Commercial Entity,many2one,res.partner,Commercial Entity,False,both
+2,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,False,both
+3,delay_pass,float,,Days to Deliver,float,,Days to Receive,False,both
+4,date_order,datetime,,Order Date,datetime,,Order Date,False,both
+5,partner_id,many2one,res.partner,Vendor,many2one,res.partner,Vendor,False,both
+6,id,integer,,ID,integer,,ID,False,both
+7,delay,float,,Days to Validate,float,,Days to Confirm,False,both
+8,user_id,many2one,res.users,Responsible,many2one,res.users,Purchase Representative,False,both
+9,product_uom,many2one,product.uom,Reference Unit of Measure,many2one,uom.uom,Reference Unit of Measure,True,both
+10,picking_type_id,many2one,stock.warehouse,Warehouse,many2one,stock.warehouse,Warehouse,False,both
+11,country_id,many2one,res.country,Partner Country,many2one,res.country,Partner Country,False,both
+12,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
+13,product_tmpl_id,many2one,product.template,Product Template,many2one,product.template,Product Template,False,both
+14,state,selection,,Order Status,selection,,Status,False,both
+15,date_approve,date,,Date Approved,datetime,,Confirmation Date,False,both
+16,account_analytic_id,many2one,account.analytic.account,Analytic Account,many2one,account.analytic.account,Analytic Account,False,both
+17,price_average,float,,Average Price,float,,Average Cost,False,both
+18,volume,float,,Volume,float,,Volume,False,both
+19,nbr_lines,integer,,# of Lines,integer,,# of Lines,False,both
+20,display_name,char,,Display Name,char,,Display Name,False,both
+21,fiscal_position_id,many2one,account.fiscal.position,Fiscal Position,many2one,account.fiscal.position,Fiscal Position,False,both
+22,price_total,float,,Total Price,float,,Total,False,both
+23,product_id,many2one,product.product,Product,many2one,product.product,Product,False,both
+24,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+25,category_id,many2one,product.category,Product Category,many2one,product.category,Product Category,False,both
+26,commercial_partner_id,many2one,res.partner,Commercial Entity,many2one,res.partner,Commercial Entity,False,both
 ,,,,
-1,price_standard,float,,Products Value,,,,False,version 1
-2,negociation,float,,Purchase-Standard Price,,,,False,version 1
-3,unit_quantity,float,,Product Quantity,,,,False,version 1
+27,price_standard,float,,Products Value,,,,False,version 1
+28,negociation,float,,Purchase-Standard Price,,,,False,version 1
+29,unit_quantity,float,,Product Quantity,,,,False,version 1
 ,,,,
-4,order_id,,,,many2one,purchase.order,Order,False,version 2
-5,qty_billed,,,,float,,Qty Billed,False,version 2
-6,avg_receipt_delay,,,,float,,Average Receipt Delay,False,version 2
-7,untaxed_total,,,,float,,Untaxed Total,False,version 2
-8,qty_received,,,,float,,Qty Received,False,version 2
-9,qty_to_be_billed,,,,float,,Qty to be Billed,False,version 2
-10,avg_days_to_purchase,,,,float,,Average Days to Purchase,False,version 2
-11,effective_date,,,,datetime,,Effective Date,False,version 2
-12,qty_ordered,,,,float,,Qty Ordered,False,version 2
+30,order_id,,,,many2one,purchase.order,Order,False,version 2
+31,qty_billed,,,,float,,Qty Billed,False,version 2
+32,avg_receipt_delay,,,,float,,Average Receipt Delay,False,version 2
+33,untaxed_total,,,,float,,Untaxed Total,False,version 2
+34,qty_received,,,,float,,Qty Received,False,version 2
+35,qty_to_be_billed,,,,float,,Qty to be Billed,False,version 2
+36,avg_days_to_purchase,,,,float,,Average Days to Purchase,False,version 2
+37,effective_date,,,,datetime,,Effective Date,False,version 2
+38,qty_ordered,,,,float,,Qty Ordered,False,version 2
 ,,,,
 ,,,,

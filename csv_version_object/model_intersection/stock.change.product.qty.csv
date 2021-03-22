@@ -1,19 +1,19 @@
 model,stock.change.product.qty,transient,True
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,product_id,many2one,product.product,Product,many2one,product.product,Product,True,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,product_tmpl_id,many2one,product.template,Template,many2one,product.template,Template,True,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,new_quantity,float,,New Quantity on Hand,float,,New Quantity on Hand,True,both
-1,id,integer,,ID,integer,,ID,False,both
-1,product_variant_count,integer,,Variant Count,integer,,Variant Count,False,both
+2,display_name,char,,Display Name,char,,Display Name,False,both
+3,product_id,many2one,product.product,Product,many2one,product.product,Product,True,both
+4,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+5,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+6,product_tmpl_id,many2one,product.template,Template,many2one,product.template,Template,True,both
+7,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+8,create_date,datetime,,Created on,datetime,,Created on,False,both
+9,new_quantity,float,,New Quantity on Hand,float,,New Quantity on Hand,True,both
+10,id,integer,,ID,integer,,ID,False,both
+11,product_variant_count,integer,,Variant Count,integer,,Variant Count,False,both
 ,,,,
-1,lot_id,many2one,stock.production.lot,Lot/Serial Number,,,,False,version 1
-2,location_id,many2one,stock.location,Location,,,,True,version 1
+12,lot_id,many2one,stock.production.lot,Lot/Serial Number,,,,False,version 1
+13,location_id,many2one,stock.location,Location,,,,True,version 1
 ,,,,
 ,,,,
 ,,,,

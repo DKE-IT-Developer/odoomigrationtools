@@ -1,23 +1,23 @@
 model,ir.module.category,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,xml_id,char,,External ID,char,,External ID,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,description,text,,Description,text,,Description,False,both
-1,sequence,integer,,Sequence,integer,,Sequence,False,both
-1,module_ids,one2many,ir.module.module,Modules,one2many,ir.module.module,Modules,False,both
-1,module_nr,integer,,Number of Apps,integer,,Number of Apps,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,child_ids,one2many,ir.module.category,Child Applications,one2many,ir.module.category,Child Applications,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,visible,boolean,,Visible,boolean,,Visible,False,both
-1,parent_id,many2one,ir.module.category,Parent Application,many2one,ir.module.category,Parent Application,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,name,char,,Name,char,,Name,True,both
+2,xml_id,char,,External ID,char,,External ID,False,both
+3,display_name,char,,Display Name,char,,Display Name,False,both
+4,description,text,,Description,text,,Description,False,both
+5,sequence,integer,,Sequence,integer,,Sequence,False,both
+6,module_ids,one2many,ir.module.module,Modules,one2many,ir.module.module,Modules,False,both
+7,module_nr,integer,,Number of Apps,integer,,Number of Apps,False,both
+8,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+9,child_ids,one2many,ir.module.category,Child Applications,one2many,ir.module.category,Child Applications,False,both
+10,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+11,parent_id,many2one,ir.module.category,Parent Application,many2one,ir.module.category,Parent Application,False,both
+12,visible,boolean,,Visible,boolean,,Visible,False,both
+13,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+14,create_date,datetime,,Created on,datetime,,Created on,False,both
+15,id,integer,,ID,integer,,ID,False,both
+16,name,char,,Name,char,,Name,True,both
 ,,,,
 ,,,,
-1,exclusive,,,,boolean,,Exclusive,False,version 2
+17,exclusive,,,,boolean,,Exclusive,False,version 2
 ,,,,
 ,,,,

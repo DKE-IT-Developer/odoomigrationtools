@@ -1,47 +1,47 @@
 model,account.chart.template,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,bank_account_code_prefix,char,,Prefix of the bank accounts,char,,Prefix of the bank accounts,True,both
-1,cash_account_code_prefix,char,,Prefix of the main cash accounts,char,,Prefix of the main cash accounts,True,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,True,both
-1,visible,boolean,,Can be Visible?,boolean,,Can be Visible?,False,both
-1,property_account_receivable_id,many2one,account.account.template,Receivable Account,many2one,account.account.template,Receivable Account,False,both
-1,property_stock_valuation_account_id,many2one,account.account.template,Account Template for Stock Valuation,many2one,account.account.template,Account Template for Stock Valuation,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,complete_tax_set,boolean,,Complete Set of Taxes,boolean,,Complete Set of Taxes,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,expense_currency_exchange_account_id,many2one,account.account.template,Loss Exchange Rate Account,many2one,account.account.template,Loss Exchange Rate Account,False,both
-1,property_stock_account_output_categ_id,many2one,account.account.template,Output Account for Stock Valuation,many2one,account.account.template,Output Account for Stock Valuation,False,both
-1,tax_template_ids,one2many,account.tax.template,Tax Template List,one2many,account.tax.template,Tax Template List,False,both
-1,parent_id,many2one,account.chart.template,Parent Chart Template,many2one,account.chart.template,Parent Chart Template,False,both
-1,property_account_income_categ_id,many2one,account.account.template,Category of Income Account,many2one,account.account.template,Category of Income Account,False,both
-1,property_stock_account_input_categ_id,many2one,account.account.template,Input Account for Stock Valuation,many2one,account.account.template,Input Account for Stock Valuation,False,both
-1,property_account_income_id,many2one,account.account.template,Income Account on Product Template,many2one,account.account.template,Income Account on Product Template,False,both
-1,property_account_expense_categ_id,many2one,account.account.template,Category of Expense Account,many2one,account.account.template,Category of Expense Account,False,both
-1,account_ids,one2many,account.account.template,Associated Account Templates,one2many,account.account.template,Associated Account Templates,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,use_anglo_saxon,boolean,,Use Anglo-Saxon accounting,boolean,,Use Anglo-Saxon accounting,False,both
-1,code_digits,integer,,# of Digits,integer,,# of Digits,True,both
-1,name,char,,Name,char,,Name,True,both
-1,property_account_expense_id,many2one,account.account.template,Expense Account on Product Template,many2one,account.account.template,Expense Account on Product Template,False,both
-1,property_account_payable_id,many2one,account.account.template,Payable Account,many2one,account.account.template,Payable Account,False,both
-1,income_currency_exchange_account_id,many2one,account.account.template,Gain Exchange Rate Account,many2one,account.account.template,Gain Exchange Rate Account,False,both
+2,cash_account_code_prefix,char,,Prefix of the main cash accounts,char,,Prefix of the main cash accounts,True,both
+3,create_date,datetime,,Created on,datetime,,Created on,False,both
+4,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+5,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,True,both
+6,visible,boolean,,Can be Visible?,boolean,,Can be Visible?,False,both
+7,property_account_receivable_id,many2one,account.account.template,Receivable Account,many2one,account.account.template,Receivable Account,False,both
+8,property_stock_valuation_account_id,many2one,account.account.template,Account Template for Stock Valuation,many2one,account.account.template,Account Template for Stock Valuation,False,both
+9,id,integer,,ID,integer,,ID,False,both
+10,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+11,complete_tax_set,boolean,,Complete Set of Taxes,boolean,,Complete Set of Taxes,False,both
+12,display_name,char,,Display Name,char,,Display Name,False,both
+13,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+14,expense_currency_exchange_account_id,many2one,account.account.template,Loss Exchange Rate Account,many2one,account.account.template,Loss Exchange Rate Account,False,both
+15,property_stock_account_output_categ_id,many2one,account.account.template,Output Account for Stock Valuation,many2one,account.account.template,Output Account for Stock Valuation,False,both
+16,tax_template_ids,one2many,account.tax.template,Tax Template List,one2many,account.tax.template,Tax Template List,False,both
+17,parent_id,many2one,account.chart.template,Parent Chart Template,many2one,account.chart.template,Parent Chart Template,False,both
+18,property_account_income_categ_id,many2one,account.account.template,Category of Income Account,many2one,account.account.template,Category of Income Account,False,both
+19,property_stock_account_input_categ_id,many2one,account.account.template,Input Account for Stock Valuation,many2one,account.account.template,Input Account for Stock Valuation,False,both
+20,property_account_income_id,many2one,account.account.template,Income Account on Product Template,many2one,account.account.template,Income Account on Product Template,False,both
+21,property_account_expense_categ_id,many2one,account.account.template,Category of Expense Account,many2one,account.account.template,Category of Expense Account,False,both
+22,account_ids,one2many,account.account.template,Associated Account Templates,one2many,account.account.template,Associated Account Templates,False,both
+23,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+24,use_anglo_saxon,boolean,,Use Anglo-Saxon accounting,boolean,,Use Anglo-Saxon accounting,False,both
+25,code_digits,integer,,# of Digits,integer,,# of Digits,True,both
+26,name,char,,Name,char,,Name,True,both
+27,property_account_expense_id,many2one,account.account.template,Expense Account on Product Template,many2one,account.account.template,Expense Account on Product Template,False,both
+28,property_account_payable_id,many2one,account.account.template,Payable Account,many2one,account.account.template,Payable Account,False,both
+29,income_currency_exchange_account_id,many2one,account.account.template,Gain Exchange Rate Account,many2one,account.account.template,Gain Exchange Rate Account,False,both
 ,,,,
-1,transfer_account_id,many2one,account.account.template,Transfer Account,,,,True,version 1
-2,company_id,many2one,res.company,Company,,,,False,version 1
+30,transfer_account_id,many2one,account.account.template,Transfer Account,,,,True,version 1
+31,company_id,many2one,res.company,Company,,,,False,version 1
 ,,,,
-3,default_cash_difference_income_account_id,,,,many2one,account.account.template,Cash Difference Income Account,False,version 2
-4,spoken_languages,,,,char,,Spoken Languages,False,version 2
-5,default_cash_difference_expense_account_id,,,,many2one,account.account.template,Cash Difference Expense Account,False,version 2
-6,property_tax_payable_account_id,,,,many2one,account.account.template,Tax current account (payable),False,version 2
-7,transfer_account_code_prefix,,,,char,,Prefix of the main transfer accounts,True,version 2
-8,property_advance_tax_payment_account_id,,,,many2one,account.account.template,Advance tax payment account,False,version 2
-9,property_cash_basis_base_account_id,,,,many2one,account.account.template,Base Tax Received Account,False,version 2
-10,property_tax_receivable_account_id,,,,many2one,account.account.template,Tax current account (receivable),False,version 2
-11,default_pos_receivable_account_id,,,,many2one,account.account.template,PoS receivable account,False,version 2
-12,account_journal_suspense_account_id,,,,many2one,account.account.template,Journal Suspense Account,False,version 2
+32,default_cash_difference_income_account_id,,,,many2one,account.account.template,Cash Difference Income Account,False,version 2
+33,spoken_languages,,,,char,,Spoken Languages,False,version 2
+34,default_cash_difference_expense_account_id,,,,many2one,account.account.template,Cash Difference Expense Account,False,version 2
+35,property_tax_payable_account_id,,,,many2one,account.account.template,Tax current account (payable),False,version 2
+36,transfer_account_code_prefix,,,,char,,Prefix of the main transfer accounts,True,version 2
+37,property_advance_tax_payment_account_id,,,,many2one,account.account.template,Advance tax payment account,False,version 2
+38,property_cash_basis_base_account_id,,,,many2one,account.account.template,Base Tax Received Account,False,version 2
+39,property_tax_receivable_account_id,,,,many2one,account.account.template,Tax current account (receivable),False,version 2
+40,default_pos_receivable_account_id,,,,many2one,account.account.template,PoS receivable account,False,version 2
+41,account_journal_suspense_account_id,,,,many2one,account.account.template,Journal Suspense Account,False,version 2
 ,,,,
 ,,,,

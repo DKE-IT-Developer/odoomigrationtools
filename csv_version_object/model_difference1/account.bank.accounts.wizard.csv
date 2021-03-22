@@ -6,10 +6,10 @@ no,field,type1,relation1,string1,type2,relation2,string2,required,source
 4,acc_name,char,,Account Name.,,,,True,version 1
 5,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
 6,currency_id,many2one,res.currency,Account Currency,,,,False,version 1
-7,write_date,datetime,,Last Updated on,,,,False,version 1
-8,id,integer,,ID,,,,False,version 1
-9,create_date,datetime,,Created on,,,,False,version 1
-10,bank_account_id,many2one,wizard.multi.charts.accounts,Bank Account,,,,True,version 1
-11,display_name,char,,Display Name,,,,False,version 1
+7,create_date,datetime,,Created on,,,,False,version 1
+8,write_date,datetime,,Last Updated on,,,,False,version 1
+9,id,integer,,ID,,,,False,version 1
+10,display_name,char,,Display Name,,,,False,version 1
+11,bank_account_id,many2one,wizard.multi.charts.accounts,Bank Account,,,,True,version 1
 ,,,,
 ,,,,

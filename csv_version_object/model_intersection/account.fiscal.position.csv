@@ -1,27 +1,27 @@
 model,account.fiscal.position,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,zip_to,integer,,Zip Range To,char,,Zip Range To,False,both
-1,sequence,integer,,Sequence,integer,,Sequence,False,both
-1,auto_apply,boolean,,Detect Automatically,boolean,,Detect Automatically,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,vat_required,boolean,,VAT required,boolean,,VAT required,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,country_id,many2one,res.country,Country,many2one,res.country,Country,False,both
-1,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
-1,note,text,,Notes,text,,Notes,False,both
-1,tax_ids,one2many,account.fiscal.position.tax,Tax Mapping,one2many,account.fiscal.position.tax,Tax Mapping,False,both
-1,country_group_id,many2one,res.country.group,Country Group,many2one,res.country.group,Country Group,False,both
-1,states_count,integer,,States count,integer,,States Count,False,both
-1,account_ids,one2many,account.fiscal.position.account,Account Mapping,one2many,account.fiscal.position.account,Account Mapping,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,active,boolean,,Active,boolean,,Active,False,both
-1,name,char,,Fiscal Position,char,,Fiscal Position,True,both
-1,state_ids,many2many,res.country.state,Federal States,many2many,res.country.state,Federal States,False,both
-1,zip_from,integer,,Zip Range From,char,,Zip Range From,False,both
+2,zip_to,integer,,Zip Range To,char,,Zip Range To,False,both
+3,sequence,integer,,Sequence,integer,,Sequence,False,both
+4,auto_apply,boolean,,Detect Automatically,boolean,,Detect Automatically,False,both
+5,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+6,vat_required,boolean,,VAT required,boolean,,VAT required,False,both
+7,id,integer,,ID,integer,,ID,False,both
+8,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+9,display_name,char,,Display Name,char,,Display Name,False,both
+10,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+11,country_id,many2one,res.country,Country,many2one,res.country,Country,False,both
+12,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
+13,note,text,,Notes,text,,Notes,False,both
+14,tax_ids,one2many,account.fiscal.position.tax,Tax Mapping,one2many,account.fiscal.position.tax,Tax Mapping,False,both
+15,country_group_id,many2one,res.country.group,Country Group,many2one,res.country.group,Country Group,False,both
+16,states_count,integer,,States count,integer,,States Count,False,both
+17,account_ids,one2many,account.fiscal.position.account,Account Mapping,one2many,account.fiscal.position.account,Account Mapping,False,both
+18,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+19,active,boolean,,Active,boolean,,Active,False,both
+20,name,char,,Fiscal Position,char,,Fiscal Position,True,both
+21,state_ids,many2many,res.country.state,Federal States,many2many,res.country.state,Federal States,False,both
+22,zip_from,integer,,Zip Range From,char,,Zip Range From,False,both
 ,,,,
 ,,,,
 ,,,,

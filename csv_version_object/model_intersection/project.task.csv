@@ -1,136 +1,173 @@
 model,project.task,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,message_follower_ids,one2many,mail.followers,Followers,one2many,mail.followers,Followers,False,both
-1,create_date,datetime,,Create date,datetime,,Created On,False,both
-1,sequence,integer,,Sequence,integer,,Sequence,False,both
-1,color,integer,,Color Index,integer,,Color Index,False,both
-1,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
-1,date_end,datetime,,Ending Date,datetime,,Ending Date,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,legend_blocked,char,,Kanban Blocked Explanation,char,,Kanban Blocked Explanation,False,both
-1,planned_hours,float,,Initially Planned Hours,float,,Initially Planned Hours,False,both
-1,partner_id,many2one,res.partner,Customer,many2one,res.partner,Customer,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,displayed_image_id,many2one,ir.attachment,Displayed Image,many2one,ir.attachment,Cover Image,False,both
-1,user_id,many2one,res.users,Assigned to,many2one,res.users,Assigned to,False,both
-1,attachment_ids,one2many,ir.attachment,Attachments,one2many,ir.attachment,Main Attachments,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,tag_ids,many2many,project.tags,Tags,many2many,project.tags,Tags,False,both
-1,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
-1,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
-1,priority,selection,,Priority,selection,,Priority,False,both
-1,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
-1,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
-1,manager_id,many2one,res.users,Project Manager,many2one,res.users,Project Manager,False,both
-1,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
-1,project_id,many2one,project.project,Project,many2one,project.project,Project,False,both
-1,date_last_stage_update,datetime,,Last Stage Update,datetime,,Last Stage Update,False,both
-1,date_assign,datetime,,Assigning Date,datetime,,Assigning Date,False,both
-1,description,html,,Description,html,,Description,False,both
-1,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
-1,kanban_state,selection,,Kanban State,selection,,Kanban State,True,both
-1,legend_done,char,,Kanban Valid Explanation,char,,Kanban Valid Explanation,False,both
-1,write_date,datetime,,Write date,datetime,,Last Updated On,False,both
-1,active,boolean,,Active,boolean,,Active,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,legend_normal,char,,Kanban Ongoing Explanation,char,,Kanban Ongoing Explanation,False,both
-1,stage_id,many2one,project.task.type,Stage,many2one,project.task.type,Stage,False,both
-1,name,char,,Task Title,char,,Title,True,both
-1,date_deadline,date,,Deadline,date,,Deadline,False,both
-1,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
-1,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
-1,user_email,char,,User Email,char,,User Email,False,both
+2,create_date,datetime,,Create date,datetime,,Created On,False,both
+3,sequence,integer,,Sequence,integer,,Sequence,False,both
+4,color,integer,,Color Index,integer,,Color Index,False,both
+5,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
+6,date_end,datetime,,Ending Date,datetime,,Ending Date,False,both
+7,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+8,legend_blocked,char,,Kanban Blocked Explanation,char,,Kanban Blocked Explanation,False,both
+9,planned_hours,float,,Initially Planned Hours,float,,Initially Planned Hours,False,both
+10,partner_id,many2one,res.partner,Nama Dokter,many2one,res.partner,Customer,False,both
+11,id,integer,,ID,integer,,ID,False,both
+12,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+13,displayed_image_id,many2one,ir.attachment,Displayed Image,many2one,ir.attachment,Cover Image,False,both
+14,display_name,char,,Display Name,char,,Display Name,False,both
+15,attachment_ids,one2many,ir.attachment,Attachments,one2many,ir.attachment,Main Attachments,False,both
+16,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+17,tag_ids,many2many,project.tags,Tags,many2many,project.tags,Tags,False,both
+18,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
+19,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
+20,priority,selection,,Priority,selection,,Priority,False,both
+21,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
+22,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
+23,manager_id,many2one,res.users,Project Manager,many2one,res.users,Project Manager,False,both
+24,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
+25,project_id,many2one,project.project,Project,many2one,project.project,Project,False,both
+26,date_last_stage_update,datetime,,Last Stage Update,datetime,,Last Stage Update,False,both
+27,date_assign,datetime,,Assigning Date,datetime,,Assigning Date,False,both
+28,description,html,,Description,html,,Description,False,both
+29,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
+30,kanban_state,selection,,Kanban State,selection,,Kanban State,True,both
+31,legend_done,char,,Kanban Valid Explanation,char,,Kanban Valid Explanation,False,both
+32,sale_order_id,many2one,sale.order,Sales Order Dokter,many2one,sale.order,Sales Order,False,both
+33,write_date,datetime,,Write date,datetime,,Last Updated On,False,both
+34,active,boolean,,Active,boolean,,Active,False,both
+35,user_id,many2one,res.users,Assigned to,many2one,res.users,Assigned to,False,both
+36,legend_normal,char,,Kanban Ongoing Explanation,char,,Kanban Ongoing Explanation,False,both
+37,stage_id,many2one,project.task.type,Stage,many2one,project.task.type,Stage,False,both
+38,name,char,,Task Title,char,,Title,True,both
+39,date_deadline,date,,Deadline,date,,Deadline,False,both
+40,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
+41,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
+42,user_email,char,,User Email,char,,User Email,False,both
 ,,,,
-1,notes,text,,Notes,,,,False,version 1
-2,date_start,datetime,,Starting Date,,,,False,version 1
-3,message_last_post,datetime,,Last Message Date,,,,False,version 1
-4,remaining_hours,float,,Remaining Hours,,,,False,version 1
+43,is_rangkapdua,boolean,,Rangkap Dua Dokumen,,,,False,version 1
+44,stage_sequence,integer,,Stage Sequence,,,,False,version 1
+45,tanggal_cetak,date,,Tanggal Cetak,,,,False,version 1
+46,expired_date,date,,Expired Date,,,,False,version 1
+47,date_invoice_after_do,char,,Date Invoice,,,,False,version 1
+48,type_doc,selection,,Type Dokumen,,,,False,version 1
+49,bank,selection,,Bank,,,,False,version 1
+50,pay_price,float,,Jumlah Pembayaran,,,,False,version 1
+51,na_bpom,char,,NA BPOM,,,,False,version 1
+52,makloon_poproduksi_ids,one2many,makloon.po.produksi,Purchase Order,,,,False,version 1
+53,message_last_post,datetime,,Last Message Date,,,,False,version 1
+54,file_name_surat_kuasa,char,,Upload File,,,,False,version 1
+55,user_name,char,,User Name,,,,False,version 1
+56,no_resi,char,,Nomor Resi,,,,False,version 1
+57,makloon_product_ids,one2many,makloon.product.line,Product,,,,False,version 1
+58,file_surat_kuasa,binary,,Surat Kuasa Pembagian Merek(optional),,,,False,version 1
+59,successor_task_ids,one2many,project.task,Successors,,,,False,version 1
+60,tanggal_pembayaran,date,,Tanggal Pembayaran,,,,False,version 1
+61,notes,text,,Notes,,,,False,version 1
+62,makloon_so_dokter_ids,one2many,makloon.so.dokter,Sales Order,,,,False,version 1
+63,mak_line_ids,one2many,makloon.document.line,Document,,,,False,version 1
+64,makloon_po_cetaklabel,one2many,makloon.po.cetaklabel,Purchase Order,,,,False,version 1
+65,file_perjanjian_lisensi,binary,,Surat Perjanjian Lisensi(optional),,,,False,version 1
+66,remaining_hours,float,,Remaining Hours,,,,False,version 1
+67,no_batch,char,,Nomor Batch,,,,False,version 1
+68,product_tmpl_ids,one2many,product.template,Products,,,,False,version 1
+69,predecessor_task_id,many2one,project.task,Predecessor,,,,False,version 1
+70,is_cetak,boolean,,Sudah Dicetak,,,,False,version 1
+71,date_start,datetime,,Starting Date,,,,False,version 1
+72,file_name_perjanjian_lisensi,char,,Upload File,,,,False,version 1
+73,makloon_merek_ids,one2many,makloon.merek.line,Detail Produk,,,,False,version 1
+74,difference_month,integer,,Distance,,,,False,version 1
+75,date_today,char,,Date Today,,,,False,version 1
+76,is_legalisir,boolean,,Legalisir PKS Gizi dan Dokter,,,,False,version 1
+77,passwordnya,char,,Password,,,,False,version 1
+78,tanggal_submit,date,,Tanggal Submit Produk,,,,False,version 1
+79,date_invoice_label,date,,Date Invoice,,,,False,version 1
+80,is_readonly,boolean,,Readonly,,,,False,version 1
+81,date_invoice_before_do,char,,Date Invoice,,,,False,version 1
+82,tanggal_kirim,date,,Tanggal Kirim,,,,False,version 1
+83,is_kirim,boolean,,Sudah Dikirim,,,,False,version 1
 ,,,,
-5,allow_recurring_tasks,,,,boolean,,Recurring Tasks,False,version 2
-6,recurrence_id,,,,many2one,project.task.recurrence,Recurrence,False,version 2
-7,partner_street,,,,char,,Street,False,version 2
-8,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
-9,ribbon_message,,,,char,,Ribbon message,False,version 2
-10,working_days_close,,,,float,,Working days to close,False,version 2
-11,partner_zip,,,,char,,Zip,False,version 2
-12,repeat_on_year,,,,selection,,Repeat On Year,False,version 2
-13,is_closed,,,,boolean,,Closing Stage,False,version 2
-14,activity_date_deadline,,,,date,,Next Activity Deadline,False,version 2
-15,planned_date_begin,,,,datetime,,Start date,False,version 2
-16,wed,,,,boolean,,Wed,False,version 2
-17,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
-18,activity_exception_icon,,,,char,,Icon,False,version 2
-19,fri,,,,boolean,,Fri,False,version 2
-20,repeat_day,,,,selection,,Repeat Day,False,version 2
-21,kanban_state_label,,,,char,,Kanban State Label,False,version 2
-22,parent_id,,,,many2one,project.task,Parent Task,False,version 2
-23,rating_count,,,,integer,,Rating count,False,version 2
-24,email_cc,,,,char,,Email cc,False,version 2
-25,activity_user_id,,,,many2one,res.users,Responsible User,False,version 2
-26,rating_last_feedback,,,,text,,Rating Last Feedback,False,version 2
-27,subtask_project_id,,,,many2one,project.project,Sub-task Project,False,version 2
-28,planned_date_end,,,,datetime,,End date,False,version 2
-29,child_ids,,,,one2many,project.task,Sub-tasks,False,version 2
-30,sale_order_id,,,,many2one,sale.order,Sales Order,False,version 2
-31,mon,,,,boolean,,Mon,False,version 2
-32,invoice_count,,,,integer,,Number of invoices,False,version 2
-33,recurrence_message,,,,char,,Next Recurrencies,False,version 2
-34,repeat_show_day,,,,boolean,,Repeat Show Day,False,version 2
-35,activity_type_id,,,,many2one,mail.activity.type,Next Activity Type,False,version 2
-36,activity_ids,,,,one2many,mail.activity,Activities,False,version 2
-37,allow_subtasks,,,,boolean,,Allow Sub-tasks,False,version 2
-38,recurring_task,,,,boolean,,Recurrent,False,version 2
-39,recurring_count,,,,integer,,Tasks in Recurrence,False,version 2
-40,partner_city,,,,char,,City,False,version 2
-41,project_privacy_visibility,,,,selection,,Project Visibility,False,version 2
-42,access_token,,,,char,,Security Token,False,version 2
-43,activity_state,,,,selection,,Activity State,False,version 2
-44,rating_ids,,,,one2many,rating.rating,Rating,False,version 2
-45,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
-46,repeat_show_week,,,,boolean,,Repeat Show Week,False,version 2
-47,commercial_partner_id,,,,many2one,res.partner,Commercial Entity,False,version 2
-48,sale_line_id,,,,many2one,sale.order.line,Sales Order Item,False,version 2
-49,repeat_weekday,,,,selection,,Day Of The Week,False,version 2
-50,partner_is_company,,,,boolean,,Is a Company,False,version 2
-51,project_sale_order_id,,,,many2one,sale.order,Project's sale order,False,version 2
-52,message_has_error,,,,boolean,,Message Delivery error,False,version 2
-53,repeat_on_month,,,,selection,,Repeat On Month,False,version 2
-54,access_warning,,,,text,,Access warning,False,version 2
-55,repeat_number,,,,integer,,Repetitions,False,version 2
-56,sat,,,,boolean,,Sat,False,version 2
-57,repeat_unit,,,,selection,,Repeat Unit,False,version 2
-58,repeat_interval,,,,integer,,Repeat Every,False,version 2
-59,activity_exception_decoration,,,,selection,,Activity Exception Decoration,False,version 2
-60,sun,,,,boolean,,Sun,False,version 2
-61,activity_type_icon,,,,char,,Activity Type Icon,False,version 2
-62,working_hours_close,,,,float,,Working hours to close,False,version 2
-63,rating_last_image,,,,binary,,Rating Last Image,False,version 2
-64,working_hours_open,,,,float,,Working hours to assign,False,version 2
-65,message_attachment_count,,,,integer,,Attachment Count,False,version 2
-66,repeat_show_dow,,,,boolean,,Repeat Show Dow,False,version 2
-67,working_days_open,,,,float,,Working days to assign,False,version 2
-68,partner_email,,,,char,,Email,False,version 2
-69,subtask_count,,,,integer,,Sub-task count,False,version 2
-70,rating_avg,,,,float,,Rating Average,False,version 2
-71,message_has_error_counter,,,,integer,,Number of errors,False,version 2
-72,allowed_user_ids,,,,many2many,res.users,Visible to,False,version 2
-73,subtask_planned_hours,,,,float,,Sub-tasks Planned Hours,False,version 2
-74,repeat_month,,,,selection,,Repeat Month,False,version 2
-75,recurrence_update,,,,selection,,Recurrence Update,False,version 2
-76,task_to_invoice,,,,boolean,,To invoice,False,version 2
-77,tue,,,,boolean,,Tue,False,version 2
-78,repeat_type,,,,selection,,Until,False,version 2
-79,repeat_until,,,,date,,End Date,False,version 2
-80,project_color,,,,integer,,Project color,False,version 2
-81,activity_summary,,,,char,,Next Activity Summary,False,version 2
-82,repeat_week,,,,selection,,Repeat Week,False,version 2
-83,thu,,,,boolean,,Thu,False,version 2
-84,repeat_show_month,,,,boolean,,Repeat Show Month,False,version 2
-85,email_from,,,,char,,Email From,False,version 2
-86,partner_phone,,,,char,,Phone,False,version 2
-87,rating_last_value,,,,float,,Rating Last Value,False,version 2
-88,access_url,,,,char,,Portal Access URL,False,version 2
-89,partner_mobile,,,,char,,Mobile,False,version 2
+84,allow_recurring_tasks,,,,boolean,,Recurring Tasks,False,version 2
+85,recurrence_id,,,,many2one,project.task.recurrence,Recurrence,False,version 2
+86,partner_street,,,,char,,Street,False,version 2
+87,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
+88,ribbon_message,,,,char,,Ribbon message,False,version 2
+89,working_days_close,,,,float,,Working days to close,False,version 2
+90,partner_zip,,,,char,,Zip,False,version 2
+91,repeat_on_year,,,,selection,,Repeat On Year,False,version 2
+92,is_closed,,,,boolean,,Closing Stage,False,version 2
+93,activity_date_deadline,,,,date,,Next Activity Deadline,False,version 2
+94,planned_date_begin,,,,datetime,,Start date,False,version 2
+95,wed,,,,boolean,,Wed,False,version 2
+96,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
+97,activity_exception_icon,,,,char,,Icon,False,version 2
+98,fri,,,,boolean,,Fri,False,version 2
+99,repeat_day,,,,selection,,Repeat Day,False,version 2
+100,kanban_state_label,,,,char,,Kanban State Label,False,version 2
+101,parent_id,,,,many2one,project.task,Parent Task,False,version 2
+102,rating_count,,,,integer,,Rating count,False,version 2
+103,email_cc,,,,char,,Email cc,False,version 2
+104,activity_user_id,,,,many2one,res.users,Responsible User,False,version 2
+105,rating_last_feedback,,,,text,,Rating Last Feedback,False,version 2
+106,subtask_project_id,,,,many2one,project.project,Sub-task Project,False,version 2
+107,planned_date_end,,,,datetime,,End date,False,version 2
+108,child_ids,,,,one2many,project.task,Sub-tasks,False,version 2
+109,mon,,,,boolean,,Mon,False,version 2
+110,invoice_count,,,,integer,,Number of invoices,False,version 2
+111,recurrence_message,,,,char,,Next Recurrencies,False,version 2
+112,repeat_show_day,,,,boolean,,Repeat Show Day,False,version 2
+113,activity_type_id,,,,many2one,mail.activity.type,Next Activity Type,False,version 2
+114,activity_ids,,,,one2many,mail.activity,Activities,False,version 2
+115,allow_subtasks,,,,boolean,,Allow Sub-tasks,False,version 2
+116,recurring_task,,,,boolean,,Recurrent,False,version 2
+117,recurring_count,,,,integer,,Tasks in Recurrence,False,version 2
+118,partner_city,,,,char,,City,False,version 2
+119,project_privacy_visibility,,,,selection,,Project Visibility,False,version 2
+120,access_token,,,,char,,Security Token,False,version 2
+121,activity_state,,,,selection,,Activity State,False,version 2
+122,rating_ids,,,,one2many,rating.rating,Rating,False,version 2
+123,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
+124,repeat_show_week,,,,boolean,,Repeat Show Week,False,version 2
+125,commercial_partner_id,,,,many2one,res.partner,Commercial Entity,False,version 2
+126,sale_line_id,,,,many2one,sale.order.line,Sales Order Item,False,version 2
+127,repeat_weekday,,,,selection,,Day Of The Week,False,version 2
+128,partner_is_company,,,,boolean,,Is a Company,False,version 2
+129,project_sale_order_id,,,,many2one,sale.order,Project's sale order,False,version 2
+130,message_has_error,,,,boolean,,Message Delivery error,False,version 2
+131,repeat_on_month,,,,selection,,Repeat On Month,False,version 2
+132,access_warning,,,,text,,Access warning,False,version 2
+133,repeat_number,,,,integer,,Repetitions,False,version 2
+134,sat,,,,boolean,,Sat,False,version 2
+135,repeat_unit,,,,selection,,Repeat Unit,False,version 2
+136,repeat_interval,,,,integer,,Repeat Every,False,version 2
+137,activity_exception_decoration,,,,selection,,Activity Exception Decoration,False,version 2
+138,sun,,,,boolean,,Sun,False,version 2
+139,activity_type_icon,,,,char,,Activity Type Icon,False,version 2
+140,working_hours_close,,,,float,,Working hours to close,False,version 2
+141,rating_last_image,,,,binary,,Rating Last Image,False,version 2
+142,working_hours_open,,,,float,,Working hours to assign,False,version 2
+143,message_attachment_count,,,,integer,,Attachment Count,False,version 2
+144,repeat_show_dow,,,,boolean,,Repeat Show Dow,False,version 2
+145,working_days_open,,,,float,,Working days to assign,False,version 2
+146,partner_email,,,,char,,Email,False,version 2
+147,subtask_count,,,,integer,,Sub-task count,False,version 2
+148,rating_avg,,,,float,,Rating Average,False,version 2
+149,message_has_error_counter,,,,integer,,Number of errors,False,version 2
+150,allowed_user_ids,,,,many2many,res.users,Visible to,False,version 2
+151,subtask_planned_hours,,,,float,,Sub-tasks Planned Hours,False,version 2
+152,repeat_month,,,,selection,,Repeat Month,False,version 2
+153,recurrence_update,,,,selection,,Recurrence Update,False,version 2
+154,task_to_invoice,,,,boolean,,To invoice,False,version 2
+155,tue,,,,boolean,,Tue,False,version 2
+156,repeat_type,,,,selection,,Until,False,version 2
+157,repeat_until,,,,date,,End Date,False,version 2
+158,project_color,,,,integer,,Project color,False,version 2
+159,activity_summary,,,,char,,Next Activity Summary,False,version 2
+160,repeat_week,,,,selection,,Repeat Week,False,version 2
+161,thu,,,,boolean,,Thu,False,version 2
+162,repeat_show_month,,,,boolean,,Repeat Show Month,False,version 2
+163,email_from,,,,char,,Email From,False,version 2
+164,partner_phone,,,,char,,Phone,False,version 2
+165,rating_last_value,,,,float,,Rating Last Value,False,version 2
+166,access_url,,,,char,,Portal Access URL,False,version 2
+167,partner_mobile,,,,char,,Mobile,False,version 2
 ,,,,
 ,,,,

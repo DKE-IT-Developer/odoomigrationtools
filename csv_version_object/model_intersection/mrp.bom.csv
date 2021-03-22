@@ -1,46 +1,52 @@
 model,mrp.bom,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,message_follower_ids,one2many,mail.followers,Followers,one2many,mail.followers,Followers,False,both
-1,code,char,,Reference,char,,Reference,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,sequence,integer,,Sequence,integer,,Sequence,False,both
-1,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
-1,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
-1,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,product_qty,float,,Quantity,float,,Quantity,True,both
-1,id,integer,,ID,integer,,ID,False,both
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
-1,picking_type_id,many2one,stock.picking.type,Picking Type,many2one,stock.picking.type,Operation Type,False,both
-1,bom_line_ids,one2many,mrp.bom.line,BoM Lines,one2many,mrp.bom.line,BoM Lines,False,both
-1,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-1,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
-1,product_tmpl_id,many2one,product.template,Product,many2one,product.template,Product,True,both
-1,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
-1,type,selection,,BoM Type,selection,,BoM Type,True,both
-1,ready_to_produce,selection,,Manufacturing Readiness,selection,,Manufacturing Readiness,True,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,active,boolean,,Active,boolean,,Active,False,both
-1,product_id,many2one,product.product,Product Variant,many2one,product.product,Product Variant,False,both
-1,product_uom_id,many2one,product.uom,Product Unit of Measure,many2one,uom.uom,Unit of Measure,True,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
-1,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
+2,code,char,,Reference,char,,Reference,False,both
+3,create_date,datetime,,Created on,datetime,,Created on,False,both
+4,sequence,integer,,Sequence,integer,,Sequence,False,both
+5,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
+6,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
+7,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
+8,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+9,product_qty,float,,Quantity,float,,Quantity,True,both
+10,id,integer,,ID,integer,,ID,False,both
+11,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+12,display_name,char,,Display Name,char,,Display Name,False,both
+13,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
+14,picking_type_id,many2one,stock.picking.type,Picking Type,many2one,stock.picking.type,Operation Type,False,both
+15,bom_line_ids,one2many,mrp.bom.line,BoM Lines,one2many,mrp.bom.line,BoM Lines,False,both
+16,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
+17,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
+18,product_tmpl_id,many2one,product.template,Product,many2one,product.template,Product,True,both
+19,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
+20,type,selection,,BoM Type,selection,,BoM Type,True,both
+21,ready_to_produce,selection,,Manufacturing Readiness,selection,,Manufacturing Readiness,True,both
+22,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+23,active,boolean,,Active,boolean,,Active,False,both
+24,product_id,many2one,product.product,Product Variant,many2one,product.product,Product Variant,False,both
+25,product_uom_id,many2one,product.uom,Product Unit of Measure,many2one,uom.uom,Unit of Measure,True,both
+26,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+27,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
+28,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
 ,,,,
-1,routing_id,many2one,mrp.routing,Routing,,,,False,version 1
-2,message_last_post,datetime,,Last Message Date,,,,False,version 1
+29,company_currency_id,many2one,res.currency,Company Currency,,,,False,version 1
+30,extra_cost,float,,Extra Cost,,,,False,version 1
+31,total_components_cost,float,,Total Components Cost,,,,False,version 1
+32,total_cost,float,,Total Cost,,,,False,version 1
+33,message_last_post,datetime,,Last Message Date,,,,False,version 1
+34,total_labour_cost,float,,Total Labour Cost,,,,False,version 1
+35,routing_id,many2one,mrp.routing,Routing,,,,False,version 1
+36,labour_line_ids,one2many,mrp.bom.labour.line,Labour Lines,,,,False,version 1
 ,,,,
-3,message_has_error_counter,,,,integer,,Number of errors,False,version 2
-4,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
-5,message_has_error,,,,boolean,,Message Delivery error,False,version 2
-6,operation_ids,,,,one2many,mrp.routing.workcenter,Operations,False,version 2
-7,consumption,,,,selection,,Flexible Consumption,True,version 2
-8,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
-9,byproduct_ids,,,,one2many,mrp.bom.byproduct,By-products,False,version 2
-10,product_uom_category_id,,,,many2one,uom.category,Category,False,version 2
-11,message_attachment_count,,,,integer,,Attachment Count,False,version 2
-12,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
+37,message_has_error_counter,,,,integer,,Number of errors,False,version 2
+38,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
+39,message_has_error,,,,boolean,,Message Delivery error,False,version 2
+40,operation_ids,,,,one2many,mrp.routing.workcenter,Operations,False,version 2
+41,consumption,,,,selection,,Flexible Consumption,True,version 2
+42,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
+43,byproduct_ids,,,,one2many,mrp.bom.byproduct,By-products,False,version 2
+44,product_uom_category_id,,,,many2one,uom.category,Category,False,version 2
+45,message_attachment_count,,,,integer,,Attachment Count,False,version 2
+46,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
 ,,,,
 ,,,,

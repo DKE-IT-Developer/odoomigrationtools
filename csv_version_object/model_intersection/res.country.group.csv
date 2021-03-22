@@ -1,15 +1,15 @@
 model,res.country.group,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,name,char,,Name,char,,Name,True,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,country_ids,many2many,res.country,Countries,many2many,res.country,Countries,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,pricelist_ids,many2many,product.pricelist,Pricelists,many2many,product.pricelist,Pricelists,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,id,integer,,ID,integer,,ID,False,both
+2,display_name,char,,Display Name,char,,Display Name,False,both
+3,name,char,,Name,char,,Name,True,both
+4,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+5,country_ids,many2many,res.country,Countries,many2many,res.country,Countries,False,both
+6,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+7,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+8,pricelist_ids,many2many,product.pricelist,Pricelists,many2many,product.pricelist,Pricelists,False,both
+9,create_date,datetime,,Created on,datetime,,Created on,False,both
+10,id,integer,,ID,integer,,ID,False,both
 ,,,,
 ,,,,
 ,,,,

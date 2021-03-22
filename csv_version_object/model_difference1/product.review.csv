@@ -1,0 +1,18 @@
+model,product.review,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,,,,False,version 1
+2,user_id,many2one,res.users,User,,,,False,version 1
+3,product_id,many2one,product.product,Product,,,,False,version 1
+4,__last_update,datetime,,Last Modified on,,,,False,version 1
+5,review_text,text,,Review Text,,,,False,version 1
+6,review_image,binary,,Review Image,,,,False,version 1
+7,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
+8,product_template_id,many2one,product.template,Product,,,,False,version 1
+9,write_date,datetime,,Last Updated on,,,,False,version 1
+10,reviewer_name,char,,Reviewer Name,,,,False,version 1
+11,create_date,datetime,,Created on,,,,False,version 1
+12,partner_id,many2one,res.partner,Partner,,,,False,version 1
+13,id,integer,,ID,,,,False,version 1
+14,display_name,char,,Display Name,,,,False,version 1
+,,,,
+,,,,

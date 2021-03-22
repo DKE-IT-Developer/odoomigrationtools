@@ -1,56 +1,56 @@
 model,account.bank.statement,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,message_follower_ids,one2many,mail.followers,Followers,one2many,mail.followers,Followers,False,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,date_done,datetime,,Closed On,datetime,,Closed On,False,both
-1,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
-1,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
-1,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
-1,balance_start,monetary,,Starting Balance,monetary,,Starting Balance,False,both
-1,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-1,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,False,both
-1,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,difference,monetary,,Difference,monetary,,Difference,False,both
-1,user_id,many2one,res.users,Responsible,many2one,res.users,Responsible,False,both
-1,reference,char,,External Reference,char,,External Reference,False,both
-1,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,journal_id,many2one,account.journal,Journal,many2one,account.journal,Journal,True,both
-1,id,integer,,ID,integer,,ID,False,both
-1,state,selection,,Status,selection,,Status,True,both
-1,all_lines_reconciled,boolean,,All lines reconciled,boolean,,All Lines Reconciled,False,both
-1,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
-1,cashbox_start_id,many2one,account.bank.statement.cashbox,Starting Cashbox,many2one,account.bank.statement.cashbox,Starting Cashbox,False,both
-1,cashbox_end_id,many2one,account.bank.statement.cashbox,Ending Cashbox,many2one,account.bank.statement.cashbox,Ending Cashbox,False,both
-1,journal_type,selection,,Type,selection,,Type,False,both
-1,is_difference_zero,boolean,,Is zero,boolean,,Is zero,False,both
-1,move_line_ids,one2many,account.move.line,Entry lines,one2many,account.move.line,Entry lines,False,both
-1,total_entry_encoding,monetary,,Transactions Subtotal,monetary,,Transactions Subtotal,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,date,date,,Date,date,,Date,True,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,name,char,,Reference,char,,Reference,False,both
-1,balance_end,monetary,,Computed Balance,monetary,,Computed Balance,False,both
-1,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
-1,line_ids,one2many,account.bank.statement.line,Statement lines,one2many,account.bank.statement.line,Statement lines,False,both
-1,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
-1,balance_end_real,monetary,,Ending Balance,monetary,,Ending Balance,False,both
+2,create_date,datetime,,Created on,datetime,,Created on,False,both
+3,reference,char,,External Reference,char,,External Reference,False,both
+4,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
+5,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
+6,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
+7,balance_start,monetary,,Starting Balance,monetary,,Starting Balance,False,both
+8,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
+9,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,False,both
+10,id,integer,,ID,integer,,ID,False,both
+11,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+12,difference,monetary,,Difference,monetary,,Difference,False,both
+13,user_id,many2one,res.users,Responsible,many2one,res.users,Responsible,False,both
+14,date_done,datetime,,Closed On,datetime,,Closed On,False,both
+15,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
+16,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+17,journal_id,many2one,account.journal,Journal,many2one,account.journal,Journal,True,both
+18,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
+19,state,selection,,Status,selection,,Status,True,both
+20,all_lines_reconciled,boolean,,All lines reconciled,boolean,,All Lines Reconciled,False,both
+21,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
+22,cashbox_start_id,many2one,account.bank.statement.cashbox,Starting Cashbox,many2one,account.bank.statement.cashbox,Starting Cashbox,False,both
+23,cashbox_end_id,many2one,account.bank.statement.cashbox,Ending Cashbox,many2one,account.bank.statement.cashbox,Ending Cashbox,False,both
+24,journal_type,selection,,Type,selection,,Type,False,both
+25,is_difference_zero,boolean,,Is zero,boolean,,Is zero,False,both
+26,move_line_ids,one2many,account.move.line,Entry lines,one2many,account.move.line,Entry lines,False,both
+27,total_entry_encoding,monetary,,Transactions Subtotal,monetary,,Transactions Subtotal,False,both
+28,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+29,date,date,,Date,date,,Date,True,both
+30,display_name,char,,Display Name,char,,Display Name,False,both
+31,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+32,name,char,,Reference,char,,Reference,False,both
+33,balance_end,monetary,,Computed Balance,monetary,,Computed Balance,False,both
+34,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
+35,line_ids,one2many,account.bank.statement.line,Statement lines,one2many,account.bank.statement.line,Statement lines,False,both
+36,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
+37,balance_end_real,monetary,,Ending Balance,monetary,,Ending Balance,False,both
 ,,,,
-1,message_last_post,datetime,,Last Message Date,,,,False,version 1
+38,message_last_post,datetime,,Last Message Date,,,,False,version 1
 ,,,,
-2,message_has_error_counter,,,,integer,,Number of errors,False,version 2
-3,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
-4,message_has_error,,,,boolean,,Message Delivery error,False,version 2
-5,country_code,,,,char,,Country Code,False,version 2
-6,sequence_prefix,,,,char,,Sequence Prefix,False,version 2
-7,previous_statement_id,,,,many2one,account.bank.statement,Previous Statement,False,version 2
-8,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
-9,is_valid_balance_start,,,,boolean,,Is Valid Balance Start,False,version 2
-10,move_line_count,,,,integer,,Move Line Count,False,version 2
-11,message_attachment_count,,,,integer,,Attachment Count,False,version 2
-12,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
-13,sequence_number,,,,integer,,Sequence Number,False,version 2
+39,message_has_error_counter,,,,integer,,Number of errors,False,version 2
+40,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
+41,message_has_error,,,,boolean,,Message Delivery error,False,version 2
+42,country_code,,,,char,,Country Code,False,version 2
+43,sequence_prefix,,,,char,,Sequence Prefix,False,version 2
+44,previous_statement_id,,,,many2one,account.bank.statement,Previous Statement,False,version 2
+45,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
+46,is_valid_balance_start,,,,boolean,,Is Valid Balance Start,False,version 2
+47,move_line_count,,,,integer,,Move Line Count,False,version 2
+48,message_attachment_count,,,,integer,,Attachment Count,False,version 2
+49,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
+50,sequence_number,,,,integer,,Sequence Number,False,version 2
 ,,,,
 ,,,,

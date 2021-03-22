@@ -1,21 +1,21 @@
 model,ir.filters,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
 1,sort,text,,Sort,text,,Sort,True,both
-1,model_id,selection,,Model,selection,,Model,True,both
-1,domain,text,,Domain,text,,Domain,True,both
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-1,name,char,,Filter Name,char,,Filter Name,True,both
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-1,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-1,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-1,is_default,boolean,,Default filter,boolean,,Default Filter,False,both
-1,user_id,many2one,res.users,User,many2one,res.users,User,False,both
-1,context,text,,Context,text,,Context,True,both
-1,active,boolean,,Active,boolean,,Active,False,both
-1,display_name,char,,Display Name,char,,Display Name,False,both
-1,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-1,id,integer,,ID,integer,,ID,False,both
-1,action_id,many2one,ir.actions.actions,Action,many2one,ir.actions.actions,Action,False,both
+2,model_id,selection,,Model,selection,,Model,True,both
+3,domain,text,,Domain,text,,Domain,True,both
+4,user_id,many2one,res.users,User,many2one,res.users,User,False,both
+5,name,char,,Filter Name,char,,Filter Name,True,both
+6,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
+7,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
+8,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
+9,is_default,boolean,,Default filter,boolean,,Default Filter,False,both
+10,create_date,datetime,,Created on,datetime,,Created on,False,both
+11,context,text,,Context,text,,Context,True,both
+12,active,boolean,,Active,boolean,,Active,False,both
+13,display_name,char,,Display Name,char,,Display Name,False,both
+14,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
+15,id,integer,,ID,integer,,ID,False,both
+16,action_id,many2one,ir.actions.actions,Action,many2one,ir.actions.actions,Action,False,both
 ,,,,
 ,,,,
 ,,,,

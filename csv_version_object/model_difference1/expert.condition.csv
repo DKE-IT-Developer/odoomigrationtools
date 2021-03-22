@@ -1,0 +1,18 @@
+model,expert.condition,transient,False
+no,field,type1,relation1,string1,type2,relation2,string2,required,source
+1,create_uid,many2one,res.users,Created by,,,,False,version 1
+2,display_name,char,,Display Name,,,,False,version 1
+3,name,char,,Name,,,,False,version 1
+4,sequence,integer,,Sequence,,,,False,version 1
+5,id,integer,,ID,,,,False,version 1
+6,__last_update,datetime,,Last Modified on,,,,False,version 1
+7,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
+8,option_ids,one2many,expert.option,Options,,,,False,version 1
+9,write_date,datetime,,Last Updated on,,,,False,version 1
+10,create_date,datetime,,Created on,,,,False,version 1
+11,desc,text,,Description,,,,False,version 1
+12,final,boolean,,Final,,,,False,version 1
+13,product_tmpl_ids,many2many,product.template,Products,,,,False,version 1
+14,first,boolean,,First,,,,False,version 1
+,,,,
+,,,,
