@@ -1,28 +1,28 @@
-model,res.lang,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,date_format,char,,Date Format,char,,Date Format,True,both
-2,direction,selection,,Direction,selection,,Direction,True,both
-3,code,char,,Locale Code,char,,Locale Code,True,both
-4,display_name,char,,Display Name,char,,Display Name,False,both
-5,name,char,,Name,char,,Name,True,both
-6,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-7,thousands_sep,char,,Thousands Separator,char,,Thousands Separator,False,both
-8,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-9,iso_code,char,,ISO code,char,,ISO code,False,both
-10,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-11,time_format,char,,Time Format,char,,Time Format,True,both
-12,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-13,decimal_point,char,,Decimal Separator,char,,Decimal Separator,True,both
-14,active,boolean,,Active,boolean,,Active,False,both
-15,create_date,datetime,,Created on,datetime,,Created on,False,both
-16,id,integer,,ID,integer,,ID,False,both
-17,grouping,char,,Separator Format,char,,Separator Format,True,both
-,,,,
-18,translatable,boolean,,Translatable,,,,False,version 1
-,,,,
-19,flag_image_url,,,,char,,Flag Image Url,False,version 2
-20,flag_image,,,,binary,,Image,False,version 2
-21,week_start,,,,selection,,First Day of Week,True,version 2
-22,url_code,,,,char,,URL Code,True,version 2
-,,,,
-,,,,
+model;res.lang;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;date_format;char;;Date Format;char;;Date Format;True;both
+2;direction;selection;;Direction;selection;;Direction;True;both
+3;code;char;;Locale Code;char;;Locale Code;True;both
+4;display_name;char;;Display Name;char;;Display Name;False;both
+5;name;char;;Name;char;;Name;True;both
+6;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+7;thousands_sep;char;;Thousands Separator;char;;Thousands Separator;False;both
+8;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+9;iso_code;char;;ISO code;char;;ISO code;False;both
+10;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+11;time_format;char;;Time Format;char;;Time Format;True;both
+12;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+13;decimal_point;char;;Decimal Separator;char;;Decimal Separator;True;both
+14;active;boolean;;Active;boolean;;Active;False;both
+15;create_date;datetime;;Created on;datetime;;Created on;False;both
+16;id;integer;;ID;integer;;ID;False;both
+17;grouping;char;;Separator Format;char;;Separator Format;True;both
+;;;;
+18;translatable;boolean;;Translatable;;;;False;version 1
+;;;;
+19;flag_image_url;;;;char;;Flag Image Url;False;version 2
+20;flag_image;;;;binary;;Image;False;version 2
+21;week_start;;;;selection;;First Day of Week;True;version 2
+22;url_code;;;;char;;URL Code;True;version 2
+;;;;
+;;;;

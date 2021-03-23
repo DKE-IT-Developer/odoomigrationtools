@@ -1,30 +1,30 @@
-model,website.menu,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,website_id,many2one,website,Website,many2one,website,Website,False,both
-3,display_name,char,,Display Name,char,,Display Name,False,both
-4,name,char,,Menu,char,,Menu,True,both
-5,sequence,integer,,Sequence,integer,,Sequence,False,both
-6,url,char,,Url,char,,Url,False,both
-7,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-8,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-9,parent_id,many2one,website.menu,Parent Menu,many2one,website.menu,Parent Menu,False,both
-10,new_window,boolean,,New Window,boolean,,New Window,False,both
-11,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-12,create_date,datetime,,Created on,datetime,,Created on,False,both
-13,child_id,one2many,website.menu,Child Menus,one2many,website.menu,Child Menus,False,both
-14,id,integer,,ID,integer,,ID,False,both
-,,,,
-15,parent_right,integer,,Parent Rigth,,,,False,version 1
-16,parent_left,integer,,Parent Left,,,,False,version 1
-,,,,
-17,mega_menu_classes,,,,char,,Mega Menu Classes,False,version 2
-18,is_visible,,,,boolean,,Is Visible,False,version 2
-19,is_mega_menu,,,,boolean,,Is Mega Menu,False,version 2
-20,theme_template_id,,,,many2one,theme.website.menu,Theme Template,False,version 2
-21,mega_menu_content,,,,html,,Mega Menu Content,False,version 2
-22,group_ids,,,,many2many,res.groups,Visible Groups,False,version 2
-23,parent_path,,,,char,,Parent Path,False,version 2
-24,page_id,,,,many2one,website.page,Related Page,False,version 2
-,,,,
-,,,,
+model;website.menu;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;website_id;many2one;website;Website;many2one;website;Website;False;both
+3;display_name;char;;Display Name;char;;Display Name;False;both
+4;name;char;;Menu;char;;Menu;True;both
+5;sequence;integer;;Sequence;integer;;Sequence;False;both
+6;url;char;;Url;char;;Url;False;both
+7;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+8;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+9;parent_id;many2one;website.menu;Parent Menu;many2one;website.menu;Parent Menu;False;both
+10;new_window;boolean;;New Window;boolean;;New Window;False;both
+11;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+12;create_date;datetime;;Created on;datetime;;Created on;False;both
+13;child_id;one2many;website.menu;Child Menus;one2many;website.menu;Child Menus;False;both
+14;id;integer;;ID;integer;;ID;False;both
+;;;;
+15;parent_right;integer;;Parent Rigth;;;;False;version 1
+16;parent_left;integer;;Parent Left;;;;False;version 1
+;;;;
+17;mega_menu_classes;;;;char;;Mega Menu Classes;False;version 2
+18;is_visible;;;;boolean;;Is Visible;False;version 2
+19;is_mega_menu;;;;boolean;;Is Mega Menu;False;version 2
+20;theme_template_id;;;;many2one;theme.website.menu;Theme Template;False;version 2
+21;mega_menu_content;;;;html;;Mega Menu Content;False;version 2
+22;group_ids;;;;many2many;res.groups;Visible Groups;False;version 2
+23;parent_path;;;;char;;Parent Path;False;version 2
+24;page_id;;;;many2one;website.page;Related Page;False;version 2
+;;;;
+;;;;

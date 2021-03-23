@@ -1,24 +1,24 @@
-model,ir.property,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,value_text,text,,Value text,text,,Value Text,False,both
-2,value_float,float,,Value float,float,,Value Float,False,both
-3,display_name,char,,Display Name,char,,Display Name,False,both
-4,name,char,,Name,char,,Name,False,both
-5,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-6,type,selection,,Type,selection,,Type,True,both
-7,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-8,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-9,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-10,fields_id,many2one,ir.model.fields,Field,many2one,ir.model.fields,Field,True,both
-11,value_datetime,datetime,,Value datetime,datetime,,Value Datetime,False,both
-12,value_binary,binary,,Value binary,binary,,Value Binary,False,both
-13,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-14,create_date,datetime,,Created on,datetime,,Created on,False,both
-15,value_reference,char,,Value reference,char,,Value Reference,False,both
-16,value_integer,integer,,Value integer,integer,,Value Integer,False,both
-17,res_id,char,,Resource,char,,Resource,False,both
-18,id,integer,,ID,integer,,ID,False,both
-,,,,
-,,,,
-,,,,
-,,,,
+model;ir.property;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;value_text;text;;Value text;text;;Value Text;False;both
+2;value_float;float;;Value float;float;;Value Float;False;both
+3;display_name;char;;Display Name;char;;Display Name;False;both
+4;name;char;;Name;char;;Name;False;both
+5;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+6;type;selection;;Type;selection;;Type;True;both
+7;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+8;company_id;many2one;res.company;Company;many2one;res.company;Company;False;both
+9;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+10;fields_id;many2one;ir.model.fields;Field;many2one;ir.model.fields;Field;True;both
+11;value_datetime;datetime;;Value datetime;datetime;;Value Datetime;False;both
+12;value_binary;binary;;Value binary;binary;;Value Binary;False;both
+13;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+14;create_date;datetime;;Created on;datetime;;Created on;False;both
+15;value_reference;char;;Value reference;char;;Value Reference;False;both
+16;value_integer;integer;;Value integer;integer;;Value Integer;False;both
+17;res_id;char;;Resource;char;;Resource;False;both
+18;id;integer;;ID;integer;;ID;False;both
+;;;;
+;;;;
+;;;;
+;;;;

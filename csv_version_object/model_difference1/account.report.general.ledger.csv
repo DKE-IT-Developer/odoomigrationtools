@@ -5,9 +5,9 @@ no,field,type1,relation1,string1,type2,relation2,string2,required,source
 3,display_name,char,,Display Name,,,,False,version 1
 4,__last_update,datetime,,Last Modified on,,,,False,version 1
 5,date_from,date,,Start Date,,,,False,version 1
-6,company_id,many2one,res.company,Company,,,,False,version 1
-7,journal_ids,many2many,account.journal,Journals,,,,True,version 1
-8,account_ids,many2many,account.account,Accounts,,,,False,version 1
+6,journal_ids,many2many,account.journal,Journals,,,,True,version 1
+7,company_id,many2one,res.company,Company,,,,False,version 1
+8,sortby,selection,,Sort by,,,,True,version 1
 9,write_date,datetime,,Last Updated on,,,,False,version 1
 10,date_to,date,,End Date,,,,False,version 1
 11,id,integer,,ID,,,,False,version 1
@@ -15,6 +15,5 @@ no,field,type1,relation1,string1,type2,relation2,string2,required,source
 13,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
 14,display_account,selection,,Display Accounts,,,,True,version 1
 15,target_move,selection,,Target Moves,,,,True,version 1
-16,sortby,selection,,Sort by,,,,True,version 1
 ,,,,
 ,,,,

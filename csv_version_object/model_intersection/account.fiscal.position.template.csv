@@ -1,26 +1,26 @@
-model,account.fiscal.position.template,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,display_name,char,,Display Name,char,,Display Name,False,both
-3,name,char,,Fiscal Position Template,char,,Fiscal Position Template,True,both
-4,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-5,chart_template_id,many2one,account.chart.template,Chart Template,many2one,account.chart.template,Chart Template,True,both
-6,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-7,note,text,,Notes,text,,Notes,False,both
-8,account_ids,one2many,account.fiscal.position.account.template,Account Mapping,one2many,account.fiscal.position.account.template,Account Mapping,False,both
-9,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-10,create_date,datetime,,Created on,datetime,,Created on,False,both
-11,id,integer,,ID,integer,,ID,False,both
-12,tax_ids,one2many,account.fiscal.position.tax.template,Tax Mapping,one2many,account.fiscal.position.tax.template,Tax Mapping,False,both
-,,,,
-,,,,
-13,country_group_id,,,,many2one,res.country.group,Country Group,False,version 2
-14,zip_to,,,,char,,Zip Range To,False,version 2
-15,sequence,,,,integer,,Sequence,False,version 2
-16,auto_apply,,,,boolean,,Detect Automatically,False,version 2
-17,vat_required,,,,boolean,,VAT required,False,version 2
-18,state_ids,,,,many2many,res.country.state,Federal States,False,version 2
-19,country_id,,,,many2one,res.country,Country,False,version 2
-20,zip_from,,,,char,,Zip Range From,False,version 2
-,,,,
-,,,,
+model;account.fiscal.position.template;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;display_name;char;;Display Name;char;;Display Name;False;both
+3;name;char;;Fiscal Position Template;char;;Fiscal Position Template;True;both
+4;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+5;chart_template_id;many2one;account.chart.template;Chart Template;many2one;account.chart.template;Chart Template;True;both
+6;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+7;note;text;;Notes;text;;Notes;False;both
+8;account_ids;one2many;account.fiscal.position.account.template;Account Mapping;one2many;account.fiscal.position.account.template;Account Mapping;False;both
+9;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+10;create_date;datetime;;Created on;datetime;;Created on;False;both
+11;id;integer;;ID;integer;;ID;False;both
+12;tax_ids;one2many;account.fiscal.position.tax.template;Tax Mapping;one2many;account.fiscal.position.tax.template;Tax Mapping;False;both
+;;;;
+;;;;
+13;country_group_id;;;;many2one;res.country.group;Country Group;False;version 2
+14;zip_to;;;;char;;Zip Range To;False;version 2
+15;sequence;;;;integer;;Sequence;False;version 2
+16;auto_apply;;;;boolean;;Detect Automatically;False;version 2
+17;vat_required;;;;boolean;;VAT required;False;version 2
+18;state_ids;;;;many2many;res.country.state;Federal States;False;version 2
+19;country_id;;;;many2one;res.country;Country;False;version 2
+20;zip_from;;;;char;;Zip Range From;False;version 2
+;;;;
+;;;;

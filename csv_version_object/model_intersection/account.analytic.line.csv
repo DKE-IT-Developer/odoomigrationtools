@@ -1,35 +1,35 @@
-model,account.analytic.line,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,code,char,,Code,char,,Code,False,both
-2,create_date,datetime,,Created on,datetime,,Created on,False,both
-3,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-4,currency_id,many2one,res.currency,Account Currency,many2one,res.currency,Currency,False,both
-5,partner_id,many2one,res.partner,Partner,many2one,res.partner,Partner,False,both
-6,id,integer,,ID,integer,,ID,False,both
-7,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-8,user_id,many2one,res.users,User,many2one,res.users,User,False,both
-9,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-10,tag_ids,many2many,account.analytic.tag,Tags,many2many,account.analytic.tag,Tags,False,both
-11,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
-12,ref,char,,Ref.,char,,Ref.,False,both
-13,account_id,many2one,account.analytic.account,Analytic Account,many2one,account.analytic.account,Analytic Account,True,both
-14,general_account_id,many2one,account.account,Financial Account,many2one,account.account,Financial Account,False,both
-15,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-16,date,date,,Date,date,,Date,True,both
-17,display_name,char,,Display Name,char,,Display Name,False,both
-18,move_id,many2one,account.move.line,Move Line,many2one,account.move.line,Journal Item,False,both
-19,product_id,many2one,product.product,Product,many2one,product.product,Product,False,both
-20,name,char,,Description,char,,Description,True,both
-21,product_uom_id,many2one,product.uom,Unit of Measure,many2one,uom.uom,Unit of Measure,False,both
-22,so_line,many2one,sale.order.line,Sale Order Line,many2one,sale.order.line,Sales Order Item,False,both
-23,amount,monetary,,Amount,monetary,,Amount,True,both
-24,unit_amount,float,,Quantity,float,,Quantity,False,both
-,,,,
-25,company_currency_id,many2one,res.currency,Currency,,,,False,version 1
-26,analytic_amount_currency,monetary,,Amount Currency,,,,False,version 1
-27,amount_currency,monetary,,Amount currency,,,,False,version 1
-,,,,
-28,group_id,,,,many2one,account.analytic.group,Group,False,version 2
-29,product_uom_category_id,,,,many2one,uom.category,Category,False,version 2
-,,,,
-,,,,
+model;account.analytic.line;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;code;char;;Code;char;;Code;False;both
+2;create_date;datetime;;Created on;datetime;;Created on;False;both
+3;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+4;currency_id;many2one;res.currency;Account Currency;many2one;res.currency;Currency;False;both
+5;partner_id;many2one;res.partner;Partner;many2one;res.partner;Partner;False;both
+6;id;integer;;ID;integer;;ID;False;both
+7;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+8;user_id;many2one;res.users;User;many2one;res.users;User;False;both
+9;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+10;tag_ids;many2many;account.analytic.tag;Tags;many2many;account.analytic.tag;Tags;False;both
+11;company_id;many2one;res.company;Company;many2one;res.company;Company;True;both
+12;ref;char;;Ref.;char;;Ref.;False;both
+13;account_id;many2one;account.analytic.account;Analytic Account;many2one;account.analytic.account;Analytic Account;True;both
+14;general_account_id;many2one;account.account;Financial Account;many2one;account.account;Financial Account;False;both
+15;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+16;date;date;;Date;date;;Date;True;both
+17;display_name;char;;Display Name;char;;Display Name;False;both
+18;move_id;many2one;account.move.line;Move Line;many2one;account.move.line;Journal Item;False;both
+19;product_id;many2one;product.product;Product;many2one;product.product;Product;False;both
+20;name;char;;Description;char;;Description;True;both
+21;product_uom_id;many2one;product.uom;Unit of Measure;many2one;uom.uom;Unit of Measure;False;both
+22;so_line;many2one;sale.order.line;Sale Order Line;many2one;sale.order.line;Sales Order Item;False;both
+23;amount;monetary;;Amount;monetary;;Amount;True;both
+24;unit_amount;float;;Quantity;float;;Quantity;False;both
+;;;;
+25;company_currency_id;many2one;res.currency;Currency;;;;False;version 1
+26;analytic_amount_currency;monetary;;Amount Currency;;;;False;version 1
+27;amount_currency;monetary;;Amount currency;;;;False;version 1
+;;;;
+28;group_id;;;;many2one;account.analytic.group;Group;False;version 2
+29;product_uom_category_id;;;;many2one;uom.category;Category;False;version 2
+;;;;
+;;;;

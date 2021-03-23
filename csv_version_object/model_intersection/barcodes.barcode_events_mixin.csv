@@ -1,10 +1,10 @@
-model,barcodes.barcode_events_mixin,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,_barcode_scanned,char,,Barcode Scanned,char,,Barcode Scanned,False,both
-2,display_name,char,,Display Name,char,,Display Name,False,both
-3,id,integer,,ID,integer,,ID,False,both
-4,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-,,,,
-,,,,
-,,,,
-,,,,
+model;barcodes.barcode_events_mixin;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;_barcode_scanned;char;;Barcode Scanned;char;;Barcode Scanned;False;both
+2;display_name;char;;Display Name;char;;Display Name;False;both
+3;id;integer;;ID;integer;;ID;False;both
+4;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+;;;;
+;;;;
+;;;;
+;;;;

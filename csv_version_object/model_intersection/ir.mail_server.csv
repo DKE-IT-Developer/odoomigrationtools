@@ -1,22 +1,22 @@
-model,ir.mail_server,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-3,smtp_encryption,selection,,Connection Security,selection,,Connection Security,True,both
-4,display_name,char,,Display Name,char,,Display Name,False,both
-5,name,char,,Description,char,,Description,True,both
-6,sequence,integer,,Priority,integer,,Priority,False,both
-7,smtp_port,integer,,SMTP Port,integer,,SMTP Port,True,both
-8,smtp_host,char,,SMTP Server,char,,SMTP Server,True,both
-9,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-10,smtp_pass,char,,Password,char,,Password,False,both
-11,smtp_debug,boolean,,Debugging,boolean,,Debugging,False,both
-12,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-13,active,boolean,,Active,boolean,,Active,False,both
-14,create_date,datetime,,Created on,datetime,,Created on,False,both
-15,smtp_user,char,,Username,char,,Username,False,both
-16,id,integer,,ID,integer,,ID,False,both
-,,,,
-,,,,
-,,,,
-,,,,
+model;ir.mail_server;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+3;smtp_encryption;selection;;Connection Security;selection;;Connection Security;True;both
+4;display_name;char;;Display Name;char;;Display Name;False;both
+5;name;char;;Description;char;;Description;True;both
+6;sequence;integer;;Priority;integer;;Priority;False;both
+7;smtp_port;integer;;SMTP Port;integer;;SMTP Port;True;both
+8;smtp_host;char;;SMTP Server;char;;SMTP Server;True;both
+9;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+10;smtp_pass;char;;Password;char;;Password;False;both
+11;smtp_debug;boolean;;Debugging;boolean;;Debugging;False;both
+12;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+13;active;boolean;;Active;boolean;;Active;False;both
+14;create_date;datetime;;Created on;datetime;;Created on;False;both
+15;smtp_user;char;;Username;char;;Username;False;both
+16;id;integer;;ID;integer;;ID;False;both
+;;;;
+;;;;
+;;;;
+;;;;

@@ -1,97 +1,84 @@
-model,sale.order.line,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_date,datetime,,Created on,datetime,,Created on,False,both
-2,qty_to_invoice,float,,To Invoice,float,,To Invoice Quantity,False,both
-3,analytic_tag_ids,many2many,account.analytic.tag,Analytic Tags,many2many,account.analytic.tag,Analytic Tags,False,both
-4,price_unit,float,,Unit Price,float,,Unit Price,True,both
-5,product_uom_qty,float,,Quantity,float,,Quantity,True,both
-6,qty_invoiced,float,,Invoiced,float,,Invoiced Quantity,False,both
-7,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-8,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,False,both
-9,id,integer,,ID,integer,,ID,False,both
-10,price_reduce_taxexcl,monetary,,Price Reduce Tax excl,monetary,,Price Reduce Tax excl,False,both
-11,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-12,price_tax,monetary,,Taxes,float,,Total Tax,False,both
-13,product_uom,many2one,product.uom,Unit of Measure,many2one,uom.uom,Unit of Measure,False,both
-14,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-15,customer_lead,float,,Delivery Lead Time,float,,Lead Time,True,both
-16,sequence,integer,,Sequence,integer,,Sequence,False,both
-17,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-18,state,selection,,Order Status,selection,,Order Status,False,both
-19,order_partner_id,many2one,res.partner,Customer,many2one,res.partner,Customer,False,both
-20,product_packaging,many2one,product.packaging,Packaging,many2one,product.packaging,Package,False,both
-21,order_id,many2one,sale.order,Order Reference,many2one,sale.order,Order Reference,True,both
-22,price_subtotal,monetary,,Subtotal,monetary,,Subtotal,False,both
-23,discount,float,,Discount (%),float,,Discount (%),False,both
-24,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-25,price_reduce,monetary,,Price Reduce,float,,Price Reduce,False,both
-26,display_name,char,,Display Name,char,,Display Name,False,both
-27,qty_delivered,float,,Delivered,float,,Delivered Quantity,False,both
-28,tax_id,many2many,account.tax,Taxes,many2many,account.tax,Taxes,False,both
-29,price_reduce_taxinc,monetary,,Price Reduce Tax inc,monetary,,Price Reduce Tax inc,False,both
-30,price_total,monetary,,Total,monetary,,Total,False,both
-31,invoice_status,selection,,Invoice Status,selection,,Invoice Status,False,both
-32,name,text,,Description,text,,Description,True,both
-33,invoice_lines,many2many,account.invoice.line,Invoice Lines,many2many,account.move.line,Invoice Lines,False,both
-34,salesman_id,many2one,res.users,Salesperson,many2one,res.users,Salesperson,False,both
-35,route_id,many2one,stock.location.route,Route,many2one,stock.location.route,Route,False,both
-36,product_id,many2one,product.product,Product,many2one,product.product,Product,False,both
-,,,,
-37,percentage_margin,float,,Percentage Margin,,,,False,version 1
-38,qty_returned,float,,Returned,,,,False,version 1
-39,layout_category_sequence,integer,,Layout Sequence,,,,False,version 1
-40,product_qty,float,,Quantity,,,,False,version 1
-41,date_order,datetime,,Date Order,,,,False,version 1
-42,is_delivery,boolean,,Is a Delivery,,,,False,version 1
-43,qty_received,float,,Received,,,,False,version 1
-44,procurement_ids,one2many,procurement.order,Procurements,,,,False,version 1
-45,qty_delivered_updateable,boolean,,Can Edit Delivered,,,,False,version 1
-46,product_tmpl_id,many2one,product.template,Product Template,,,,False,version 1
-47,date_order_clean,date,,Date (only) Order,,,,False,version 1
-48,amount_margin,float,,Product Margin,,,,False,version 1
-49,product_standard_price,float,,Product Cost,,,,False,version 1
-50,ongkir_city_id,many2one,res.city.ongkir,City,,,,False,version 1
-51,area_categ_id,many2one,area.category,Area,,,,False,version 1
-52,layout_category_id,many2one,sale.layout_category,Section,,,,False,version 1
-53,subtotal_standard_price,float,,Subtotal Product Cost,,,,False,version 1
-54,state_id,many2one,res.country.state,Province,,,,False,version 1
-,,,,
-55,is_service,,,,boolean,,Is a Service,False,version 2
-56,qty_to_deliver,,,,float,,Qty To Deliver,False,version 2
-57,name_short,,,,char,,Name Short,False,version 2
-58,purchase_line_ids,,,,one2many,purchase.order.line,Generated Purchase Lines,False,version 2
-59,purchase_line_count,,,,integer,,Number of generated purchase items,False,version 2
-60,product_template_id,,,,many2one,product.template,Product Template,False,version 2
-61,project_id,,,,many2one,project.project,Generated Project,False,version 2
-62,qty_delivered_manual,,,,float,,Delivered Manually,False,version 2
-63,product_no_variant_attribute_value_ids,,,,many2many,product.template.attribute.value,Extra Values,False,version 2
-64,untaxed_amount_to_invoice,,,,monetary,,Untaxed Amount To Invoice,False,version 2
-65,is_expense,,,,boolean,,Is expense,False,version 2
-66,warehouse_id,,,,many2one,stock.warehouse,Warehouse,False,version 2
-67,scheduled_date,,,,datetime,,Scheduled Date,False,version 2
-68,product_type,,,,selection,,Product Type,False,version 2
-69,sale_order_option_ids,,,,one2many,sale.order.option,Optional Products Lines,False,version 2
-70,product_uom_category_id,,,,many2one,uom.category,Category,False,version 2
-71,forecast_expected_date,,,,datetime,,Forecast Expected Date,False,version 2
-72,linked_line_id,,,,many2one,sale.order.line,Linked Order Line,False,version 2
-73,warning_stock,,,,char,,Warning,False,version 2
-74,qty_available_today,,,,float,,Qty Available Today,False,version 2
-75,display_qty_widget,,,,boolean,,Display Qty Widget,False,version 2
-76,virtual_available_at_date,,,,float,,Virtual Available At Date,False,version 2
-77,move_ids,,,,one2many,stock.move,Stock Moves,False,version 2
-78,untaxed_amount_invoiced,,,,monetary,,Untaxed Invoiced Amount,False,version 2
-79,option_line_ids,,,,one2many,sale.order.line,Options Linked,False,version 2
-80,product_uom_readonly,,,,boolean,,Product Uom Readonly,False,version 2
-81,product_custom_attribute_value_ids,,,,one2many,product.attribute.custom.value,Custom Values,False,version 2
-82,product_template_attribute_value_ids,,,,many2many,product.template.attribute.value,Attribute Values,False,version 2
-83,analytic_line_ids,,,,one2many,account.analytic.line,Analytic lines,False,version 2
-84,is_mto,,,,boolean,,Is Mto,False,version 2
-85,free_qty_today,,,,float,,Free Qty Today,False,version 2
-86,display_type,,,,selection,,Display Type,False,version 2
-87,task_id,,,,many2one,project.task,Generated Task,False,version 2
-88,product_updatable,,,,boolean,,Can Edit Product,False,version 2
-89,qty_delivered_method,,,,selection,,Method to update delivered qty,False,version 2
-90,is_downpayment,,,,boolean,,Is a down payment,False,version 2
-91,is_configurable_product,,,,boolean,,Is the product configurable?,False,version 2
-,,,,
-,,,,
+model;sale.order.line;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_date;datetime;;Created on;datetime;;Created on;False;both
+2;qty_to_invoice;float;;To Invoice;float;;To Invoice Quantity;False;both
+3;analytic_tag_ids;many2many;account.analytic.tag;Analytic Tags;many2many;account.analytic.tag;Analytic Tags;False;both
+4;price_unit;float;;Unit Price;float;;Unit Price;True;both
+5;product_uom_qty;float;;Quantity;float;;Quantity;True;both
+6;qty_invoiced;float;;Invoiced;float;;Invoiced Quantity;False;both
+7;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+8;currency_id;many2one;res.currency;Currency;many2one;res.currency;Currency;False;both
+9;id;integer;;ID;integer;;ID;False;both
+10;price_reduce_taxexcl;monetary;;Price Reduce Tax excl;monetary;;Price Reduce Tax excl;False;both
+11;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+12;price_tax;monetary;;Taxes;float;;Total Tax;False;both
+13;product_uom;many2one;product.uom;Unit of Measure;many2one;uom.uom;Unit of Measure;False;both
+14;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+15;customer_lead;float;;Delivery Lead Time;float;;Lead Time;True;both
+16;sequence;integer;;Sequence;integer;;Sequence;False;both
+17;company_id;many2one;res.company;Company;many2one;res.company;Company;False;both
+18;state;selection;;Order Status;selection;;Order Status;False;both
+19;order_partner_id;many2one;res.partner;Customer;many2one;res.partner;Customer;False;both
+20;product_packaging;many2one;product.packaging;Packaging;many2one;product.packaging;Package;False;both
+21;order_id;many2one;sale.order;Order Reference;many2one;sale.order;Order Reference;True;both
+22;price_subtotal;monetary;;Subtotal;monetary;;Subtotal;False;both
+23;discount;float;;Discount (%);float;;Discount (%);False;both
+24;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+25;price_reduce;monetary;;Price Reduce;float;;Price Reduce;False;both
+26;display_name;char;;Display Name;char;;Display Name;False;both
+27;qty_delivered;float;;Delivered;float;;Delivered Quantity;False;both
+28;tax_id;many2many;account.tax;Taxes;many2many;account.tax;Taxes;False;both
+29;price_reduce_taxinc;monetary;;Price Reduce Tax inc;monetary;;Price Reduce Tax inc;False;both
+30;price_total;monetary;;Total;monetary;;Total;False;both
+31;invoice_status;selection;;Invoice Status;selection;;Invoice Status;False;both
+32;name;text;;Description;text;;Description;True;both
+33;invoice_lines;many2many;account.invoice.line;Invoice Lines;many2many;account.move.line;Invoice Lines;False;both
+34;salesman_id;many2one;res.users;Salesperson;many2one;res.users;Salesperson;False;both
+35;route_id;many2one;stock.location.route;Route;many2one;stock.location.route;Route;False;both
+36;product_id;many2one;product.product;Product;many2one;product.product;Product;False;both
+;;;;
+37;procurement_ids;one2many;procurement.order;Procurements;;;;False;version 1
+38;qty_delivered_updateable;boolean;;Can Edit Delivered;;;;False;version 1
+39;layout_category_sequence;integer;;Layout Sequence;;;;False;version 1
+40;product_tmpl_id;many2one;product.template;Product Template;;;;False;version 1
+41;layout_category_id;many2one;sale.layout_category;Section;;;;False;version 1
+;;;;
+42;is_service;;;;boolean;;Is a Service;False;version 2
+43;qty_to_deliver;;;;float;;Qty To Deliver;False;version 2
+44;name_short;;;;char;;Name Short;False;version 2
+45;purchase_line_ids;;;;one2many;purchase.order.line;Generated Purchase Lines;False;version 2
+46;purchase_line_count;;;;integer;;Number of generated purchase items;False;version 2
+47;product_template_id;;;;many2one;product.template;Product Template;False;version 2
+48;project_id;;;;many2one;project.project;Generated Project;False;version 2
+49;qty_delivered_manual;;;;float;;Delivered Manually;False;version 2
+50;product_no_variant_attribute_value_ids;;;;many2many;product.template.attribute.value;Extra Values;False;version 2
+51;untaxed_amount_to_invoice;;;;monetary;;Untaxed Amount To Invoice;False;version 2
+52;is_expense;;;;boolean;;Is expense;False;version 2
+53;warehouse_id;;;;many2one;stock.warehouse;Warehouse;False;version 2
+54;scheduled_date;;;;datetime;;Scheduled Date;False;version 2
+55;product_type;;;;selection;;Product Type;False;version 2
+56;sale_order_option_ids;;;;one2many;sale.order.option;Optional Products Lines;False;version 2
+57;product_uom_category_id;;;;many2one;uom.category;Category;False;version 2
+58;forecast_expected_date;;;;datetime;;Forecast Expected Date;False;version 2
+59;linked_line_id;;;;many2one;sale.order.line;Linked Order Line;False;version 2
+60;warning_stock;;;;char;;Warning;False;version 2
+61;qty_available_today;;;;float;;Qty Available Today;False;version 2
+62;display_qty_widget;;;;boolean;;Display Qty Widget;False;version 2
+63;virtual_available_at_date;;;;float;;Virtual Available At Date;False;version 2
+64;move_ids;;;;one2many;stock.move;Stock Moves;False;version 2
+65;untaxed_amount_invoiced;;;;monetary;;Untaxed Invoiced Amount;False;version 2
+66;option_line_ids;;;;one2many;sale.order.line;Options Linked;False;version 2
+67;product_uom_readonly;;;;boolean;;Product Uom Readonly;False;version 2
+68;product_custom_attribute_value_ids;;;;one2many;product.attribute.custom.value;Custom Values;False;version 2
+69;product_template_attribute_value_ids;;;;many2many;product.template.attribute.value;Attribute Values;False;version 2
+70;analytic_line_ids;;;;one2many;account.analytic.line;Analytic lines;False;version 2
+71;is_mto;;;;boolean;;Is Mto;False;version 2
+72;free_qty_today;;;;float;;Free Qty Today;False;version 2
+73;display_type;;;;selection;;Display Type;False;version 2
+74;task_id;;;;many2one;project.task;Generated Task;False;version 2
+75;product_updatable;;;;boolean;;Can Edit Product;False;version 2
+76;qty_delivered_method;;;;selection;;Method to update delivered qty;False;version 2
+77;is_downpayment;;;;boolean;;Is a down payment;False;version 2
+78;is_configurable_product;;;;boolean;;Is the product configurable?;False;version 2
+;;;;
+;;;;

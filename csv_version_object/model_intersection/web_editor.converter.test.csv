@@ -1,25 +1,25 @@
-model,web_editor.converter.test,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,binary,binary,,Binary,binary,,Binary,False,both
-2,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-3,display_name,char,,Display Name,char,,Display Name,False,both
-4,integer,integer,,Integer,integer,,Integer,False,both
-5,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-6,text,text,,Text,text,,Text,False,both
-7,float,float,,Float,float,,Float,False,both
-8,numeric,float,,Numeric,float,,Numeric,False,both
-9,datetime,datetime,,Datetime,datetime,,Datetime,False,both
-10,char,char,,Char,char,,Char,False,both
-11,html,html,,Html,html,,Html,False,both
-12,selection_str,selection,,"Lorsqu'un pancake prend l'avion à destination de Toronto et qu'il fait une escale technique à St Claude, on dit:",selection,,"Lorsqu'un pancake prend l'avion à destination de Toronto et qu'il fait une escale technique à St Claude, on dit:",False,both
-13,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-14,many2one,many2one,web_editor.converter.test.sub,Many2one,many2one,web_editor.converter.test.sub,Many2One,False,both
-15,date,date,,Date,date,,Date,False,both
-16,create_date,datetime,,Created on,datetime,,Created on,False,both
-17,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-18,id,integer,,ID,integer,,ID,False,both
-,,,,
-19,selection,selection,,Selection,,,,False,version 1
-,,,,
-,,,,
-,,,,
+model;web_editor.converter.test;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;binary;binary;;Binary;binary;;Binary;False;both
+2;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+3;display_name;char;;Display Name;char;;Display Name;False;both
+4;integer;integer;;Integer;integer;;Integer;False;both
+5;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+6;text;text;;Text;text;;Text;False;both
+7;float;float;;Float;float;;Float;False;both
+8;numeric;float;;Numeric;float;;Numeric;False;both
+9;datetime;datetime;;Datetime;datetime;;Datetime;False;both
+10;char;char;;Char;char;;Char;False;both
+11;html;html;;Html;html;;Html;False;both
+12;selection_str;selection;;Lorsqu'un pancake prend l'avion à destination de Toronto et qu'il fait une escale technique à St Claude, on dit:;selection;;Lorsqu'un pancake prend l'avion à destination de Toronto et qu'il fait une escale technique à St Claude, on dit:;False;both
+13;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+14;many2one;many2one;web_editor.converter.test.sub;Many2one;many2one;web_editor.converter.test.sub;Many2One;False;both
+15;date;date;;Date;date;;Date;False;both
+16;create_date;datetime;;Created on;datetime;;Created on;False;both
+17;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+18;id;integer;;ID;integer;;ID;False;both
+;;;;
+19;selection;selection;;Selection;;;;False;version 1
+;;;;
+;;;;
+;;;;

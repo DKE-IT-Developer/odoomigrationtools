@@ -1,56 +1,56 @@
-model,stock.warehouse,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,code,char,,Short Name,char,,Short Name,True,both
-2,create_date,datetime,,Created on,datetime,,Created on,False,both
-3,lot_stock_id,many2one,stock.location,Location Stock,many2one,stock.location,Location Stock,True,both
-4,manu_type_id,many2one,stock.picking.type,Manufacturing Picking Type,many2one,stock.picking.type,Manufacturing Operation Type,False,both
-5,wh_pack_stock_loc_id,many2one,stock.location,Packing Location,many2one,stock.location,Packing Location,False,both
-6,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
-7,pick_type_id,many2one,stock.picking.type,Pick Type,many2one,stock.picking.type,Pick Type,False,both
-8,crossdock_route_id,many2one,stock.location.route,Crossdock Route,many2one,stock.location.route,Crossdock Route,False,both
-9,manufacture_pull_id,many2one,procurement.rule,Manufacture Rule,many2one,stock.rule,Manufacture Rule,False,both
-10,partner_id,many2one,res.partner,Address,many2one,res.partner,Address,False,both
-11,id,integer,,ID,integer,,ID,False,both
-12,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-13,mto_pull_id,many2one,procurement.rule,MTO rule,many2one,stock.rule,MTO rule,False,both
-14,display_name,char,,Display Name,char,,Display Name,False,both
-15,wh_input_stock_loc_id,many2one,stock.location,Input Location,many2one,stock.location,Input Location,False,both
-16,reception_route_id,many2one,stock.location.route,Receipt Route,many2one,stock.location.route,Receipt Route,False,both
-17,manufacture_to_resupply,boolean,,Manufacture in this Warehouse,boolean,,Manufacture to Resupply,False,both
-18,delivery_steps,selection,,Outgoing Shippings,selection,,Outgoing Shipments,True,both
-19,view_location_id,many2one,stock.location,View Location,many2one,stock.location,View Location,True,both
-20,resupply_route_ids,one2many,stock.location.route,Resupply Routes,one2many,stock.location.route,Resupply Routes,False,both
-21,wh_qc_stock_loc_id,many2one,stock.location,Quality Control Location,many2one,stock.location,Quality Control Location,False,both
-22,reception_steps,selection,,Incoming Shipments,selection,,Incoming Shipments,True,both
-23,buy_pull_id,many2one,procurement.rule,Buy rule,many2one,stock.rule,Buy rule,False,both
-24,pack_type_id,many2one,stock.picking.type,Pack Type,many2one,stock.picking.type,Pack Type,False,both
-25,resupply_wh_ids,many2many,stock.warehouse,Resupply Warehouses,many2many,stock.warehouse,Resupply From,False,both
-26,wh_output_stock_loc_id,many2one,stock.location,Output Location,many2one,stock.location,Output Location,False,both
-27,route_ids,many2many,stock.location.route,Routes,many2many,stock.location.route,Routes,False,both
-28,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-29,active,boolean,,Active,boolean,,Active,False,both
-30,delivery_route_id,many2one,stock.location.route,Delivery Route,many2one,stock.location.route,Delivery Route,False,both
-31,name,char,,Warehouse Name,char,,Warehouse,True,both
-32,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-33,in_type_id,many2one,stock.picking.type,In Type,many2one,stock.picking.type,In Type,False,both
-34,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-35,out_type_id,many2one,stock.picking.type,Out Type,many2one,stock.picking.type,Out Type,False,both
-36,buy_to_resupply,boolean,,Purchase to resupply this warehouse,boolean,,Buy to Resupply,False,both
-37,int_type_id,many2one,stock.picking.type,Internal Type,many2one,stock.picking.type,Internal Type,False,both
-,,,,
-38,default_resupply_wh_id,many2one,stock.warehouse,Default Resupply Warehouse,,,,False,version 1
-,,,,
-39,sam_rule_id,,,,many2one,stock.rule,Stock After Manufacturing Rule,False,version 2
-40,warehouse_count,,,,integer,,Warehouse Count,False,version 2
-41,sequence,,,,integer,,Sequence,False,version 2
-42,pbm_type_id,,,,many2one,stock.picking.type,Picking Before Manufacturing Operation Type,False,version 2
-43,pbm_loc_id,,,,many2one,stock.location,Picking before Manufacturing Location,False,version 2
-44,pbm_route_id,,,,many2one,stock.location.route,Picking Before Manufacturing Route,False,version 2
-45,sam_loc_id,,,,many2one,stock.location,Stock after Manufacturing Location,False,version 2
-46,manufacture_steps,,,,selection,,Manufacture,True,version 2
-47,pbm_mto_pull_id,,,,many2one,stock.rule,Picking Before Manufacturing MTO Rule,False,version 2
-48,manufacture_mto_pull_id,,,,many2one,stock.rule,Manufacture MTO Rule,False,version 2
-49,show_resupply,,,,boolean,,Show Resupply,False,version 2
-50,sam_type_id,,,,many2one,stock.picking.type,Stock After Manufacturing Operation Type,False,version 2
-,,,,
-,,,,
+model;stock.warehouse;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;code;char;;Short Name;char;;Short Name;True;both
+2;create_date;datetime;;Created on;datetime;;Created on;False;both
+3;lot_stock_id;many2one;stock.location;Location Stock;many2one;stock.location;Location Stock;True;both
+4;manu_type_id;many2one;stock.picking.type;Manufacturing Picking Type;many2one;stock.picking.type;Manufacturing Operation Type;False;both
+5;wh_pack_stock_loc_id;many2one;stock.location;Packing Location;many2one;stock.location;Packing Location;False;both
+6;company_id;many2one;res.company;Company;many2one;res.company;Company;True;both
+7;pick_type_id;many2one;stock.picking.type;Pick Type;many2one;stock.picking.type;Pick Type;False;both
+8;crossdock_route_id;many2one;stock.location.route;Crossdock Route;many2one;stock.location.route;Crossdock Route;False;both
+9;manufacture_pull_id;many2one;procurement.rule;Manufacture Rule;many2one;stock.rule;Manufacture Rule;False;both
+10;partner_id;many2one;res.partner;Address;many2one;res.partner;Address;False;both
+11;id;integer;;ID;integer;;ID;False;both
+12;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+13;mto_pull_id;many2one;procurement.rule;MTO rule;many2one;stock.rule;MTO rule;False;both
+14;display_name;char;;Display Name;char;;Display Name;False;both
+15;wh_input_stock_loc_id;many2one;stock.location;Input Location;many2one;stock.location;Input Location;False;both
+16;reception_route_id;many2one;stock.location.route;Receipt Route;many2one;stock.location.route;Receipt Route;False;both
+17;manufacture_to_resupply;boolean;;Manufacture in this Warehouse;boolean;;Manufacture to Resupply;False;both
+18;delivery_steps;selection;;Outgoing Shippings;selection;;Outgoing Shipments;True;both
+19;view_location_id;many2one;stock.location;View Location;many2one;stock.location;View Location;True;both
+20;resupply_route_ids;one2many;stock.location.route;Resupply Routes;one2many;stock.location.route;Resupply Routes;False;both
+21;wh_qc_stock_loc_id;many2one;stock.location;Quality Control Location;many2one;stock.location;Quality Control Location;False;both
+22;reception_steps;selection;;Incoming Shipments;selection;;Incoming Shipments;True;both
+23;buy_pull_id;many2one;procurement.rule;Buy rule;many2one;stock.rule;Buy rule;False;both
+24;pack_type_id;many2one;stock.picking.type;Pack Type;many2one;stock.picking.type;Pack Type;False;both
+25;resupply_wh_ids;many2many;stock.warehouse;Resupply Warehouses;many2many;stock.warehouse;Resupply From;False;both
+26;wh_output_stock_loc_id;many2one;stock.location;Output Location;many2one;stock.location;Output Location;False;both
+27;route_ids;many2many;stock.location.route;Routes;many2many;stock.location.route;Routes;False;both
+28;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+29;active;boolean;;Active;boolean;;Active;False;both
+30;delivery_route_id;many2one;stock.location.route;Delivery Route;many2one;stock.location.route;Delivery Route;False;both
+31;name;char;;Warehouse Name;char;;Warehouse;True;both
+32;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+33;in_type_id;many2one;stock.picking.type;In Type;many2one;stock.picking.type;In Type;False;both
+34;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+35;out_type_id;many2one;stock.picking.type;Out Type;many2one;stock.picking.type;Out Type;False;both
+36;buy_to_resupply;boolean;;Purchase to resupply this warehouse;boolean;;Buy to Resupply;False;both
+37;int_type_id;many2one;stock.picking.type;Internal Type;many2one;stock.picking.type;Internal Type;False;both
+;;;;
+38;default_resupply_wh_id;many2one;stock.warehouse;Default Resupply Warehouse;;;;False;version 1
+;;;;
+39;sam_rule_id;;;;many2one;stock.rule;Stock After Manufacturing Rule;False;version 2
+40;warehouse_count;;;;integer;;Warehouse Count;False;version 2
+41;sequence;;;;integer;;Sequence;False;version 2
+42;pbm_type_id;;;;many2one;stock.picking.type;Picking Before Manufacturing Operation Type;False;version 2
+43;pbm_loc_id;;;;many2one;stock.location;Picking before Manufacturing Location;False;version 2
+44;pbm_route_id;;;;many2one;stock.location.route;Picking Before Manufacturing Route;False;version 2
+45;sam_loc_id;;;;many2one;stock.location;Stock after Manufacturing Location;False;version 2
+46;manufacture_steps;;;;selection;;Manufacture;True;version 2
+47;pbm_mto_pull_id;;;;many2one;stock.rule;Picking Before Manufacturing MTO Rule;False;version 2
+48;manufacture_mto_pull_id;;;;many2one;stock.rule;Manufacture MTO Rule;False;version 2
+49;show_resupply;;;;boolean;;Show Resupply;False;version 2
+50;sam_type_id;;;;many2one;stock.picking.type;Stock After Manufacturing Operation Type;False;version 2
+;;;;
+;;;;

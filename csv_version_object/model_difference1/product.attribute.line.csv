@@ -5,11 +5,10 @@ no,field,type1,relation1,string1,type2,relation2,string2,required,source
 3,__last_update,datetime,,Last Modified on,,,,False,version 1
 4,value_ids,many2many,product.attribute.value,Attribute Values,,,,False,version 1
 5,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
-6,product_tmpl_id,many2one,product.template,Product Template,,,,False,version 1
-7,product_group_id,many2one,product.group,Product Group,,,,False,version 1
-8,attribute_id,many2one,product.attribute,Attribute,,,,True,version 1
-9,write_date,datetime,,Last Updated on,,,,False,version 1
-10,create_date,datetime,,Created on,,,,False,version 1
-11,id,integer,,ID,,,,False,version 1
+6,product_tmpl_id,many2one,product.template,Product Template,,,,True,version 1
+7,attribute_id,many2one,product.attribute,Attribute,,,,True,version 1
+8,write_date,datetime,,Last Updated on,,,,False,version 1
+9,create_date,datetime,,Created on,,,,False,version 1
+10,id,integer,,ID,,,,False,version 1
 ,,,,
 ,,,,

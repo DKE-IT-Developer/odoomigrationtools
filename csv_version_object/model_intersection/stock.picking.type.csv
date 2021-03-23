@@ -1,46 +1,45 @@
-model,stock.picking.type,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,code,selection,,Type of Operation,selection,,Type of Operation,True,both
-2,create_date,datetime,,Created on,datetime,,Created on,False,both
-3,count_mo_late,integer,,Count mo late,integer,,Number of Manufacturing Orders Late,False,both
-4,sequence,integer,,Sequence,integer,,Sequence,False,both
-5,color,integer,,Color,integer,,Color,False,both
-6,count_picking_draft,integer,,Count picking draft,integer,,Count Picking Draft,False,both
-7,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-8,count_mo_waiting,integer,,Count mo waiting,integer,,Number of Manufacturing Orders Waiting,False,both
-9,count_mo_todo,integer,,Count mo todo,integer,,Number of Manufacturing Orders to Process,False,both
-10,use_create_lots,boolean,,Create New Lots/Serial Numbers,boolean,,Create New Lots/Serial Numbers,False,both
-11,id,integer,,ID,integer,,ID,False,both
-12,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-13,default_location_dest_id,many2one,stock.location,Default Destination Location,many2one,stock.location,Default Destination Location,False,both
-14,show_entire_packs,boolean,,Allow moving packs,boolean,,Move Entire Packages,False,both
-15,display_name,char,,Display Name,char,,Display Name,False,both
-16,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-17,use_existing_lots,boolean,,Use Existing Lots/Serial Numbers,boolean,,Use Existing Lots/Serial Numbers,False,both
-18,count_picking_waiting,integer,,Count picking waiting,integer,,Count Picking Waiting,False,both
-19,count_picking,integer,,Count picking,integer,,Count Picking,False,both
-20,warehouse_id,many2one,stock.warehouse,Warehouse,many2one,stock.warehouse,Warehouse,False,both
-21,sequence_id,many2one,ir.sequence,Reference Sequence,many2one,ir.sequence,Reference Sequence,False,both
-22,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-23,active,boolean,,Active,boolean,,Active,False,both
-24,count_picking_backorders,integer,,Count picking backorders,integer,,Count Picking Backorders,False,both
-25,name,char,,Picking Type Name,char,,Operation Type,True,both
-26,count_picking_ready,integer,,Count picking ready,integer,,Count Picking Ready,False,both
-27,return_picking_type_id,many2one,stock.picking.type,Picking Type for Returns,many2one,stock.picking.type,Operation Type for Returns,False,both
-28,count_picking_late,integer,,Count picking late,integer,,Count Picking Late,False,both
-29,default_location_src_id,many2one,stock.location,Default Source Location,many2one,stock.location,Default Source Location,False,both
-30,rate_picking_backorders,integer,,Rate picking backorders,integer,,Rate Picking Backorders,False,both
-31,rate_picking_late,integer,,Rate picking late,integer,,Rate Picking Late,False,both
-,,,,
-32,order_sequence_id,many2one,ir.sequence,Sequence for Production Order,,,,False,version 1
-33,last_done_picking,char,,Last 10 Done Pickings,,,,False,version 1
-34,barcode_nomenclature_id,many2one,barcode.nomenclature,Barcode Nomenclature,,,,False,version 1
-,,,,
-35,use_create_components_lots,,,,boolean,,Create New Lots/Serial Numbers for Components,False,version 2
-36,barcode,,,,char,,Barcode,False,version 2
-37,company_id,,,,many2one,res.company,Company,True,version 2
-38,sequence_code,,,,char,,Code,True,version 2
-39,show_reserved,,,,boolean,,Pre-fill Detailed Operations,False,version 2
-40,show_operations,,,,boolean,,Show Detailed Operations,False,version 2
-,,,,
-,,,,
+model;stock.picking.type;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;code;selection;;Type of Operation;selection;;Type of Operation;True;both
+2;create_date;datetime;;Created on;datetime;;Created on;False;both
+3;count_mo_late;integer;;Count mo late;integer;;Number of Manufacturing Orders Late;False;both
+4;sequence;integer;;Sequence;integer;;Sequence;False;both
+5;color;integer;;Color;integer;;Color;False;both
+6;count_picking_draft;integer;;Count picking draft;integer;;Count Picking Draft;False;both
+7;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+8;count_mo_waiting;integer;;Count mo waiting;integer;;Number of Manufacturing Orders Waiting;False;both
+9;count_mo_todo;integer;;Count mo todo;integer;;Number of Manufacturing Orders to Process;False;both
+10;use_create_lots;boolean;;Create New Lots/Serial Numbers;boolean;;Create New Lots/Serial Numbers;False;both
+11;id;integer;;ID;integer;;ID;False;both
+12;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+13;default_location_dest_id;many2one;stock.location;Default Destination Location;many2one;stock.location;Default Destination Location;False;both
+14;show_entire_packs;boolean;;Allow moving packs;boolean;;Move Entire Packages;False;both
+15;display_name;char;;Display Name;char;;Display Name;False;both
+16;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+17;use_existing_lots;boolean;;Use Existing Lots/Serial Numbers;boolean;;Use Existing Lots/Serial Numbers;False;both
+18;count_picking_waiting;integer;;Count picking waiting;integer;;Count Picking Waiting;False;both
+19;count_picking;integer;;Count picking;integer;;Count Picking;False;both
+20;warehouse_id;many2one;stock.warehouse;Warehouse;many2one;stock.warehouse;Warehouse;False;both
+21;sequence_id;many2one;ir.sequence;Reference Sequence;many2one;ir.sequence;Reference Sequence;False;both
+22;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+23;active;boolean;;Active;boolean;;Active;False;both
+24;count_picking_backorders;integer;;Count picking backorders;integer;;Count Picking Backorders;False;both
+25;name;char;;Picking Type Name;char;;Operation Type;True;both
+26;count_picking_ready;integer;;Count picking ready;integer;;Count Picking Ready;False;both
+27;return_picking_type_id;many2one;stock.picking.type;Picking Type for Returns;many2one;stock.picking.type;Operation Type for Returns;False;both
+28;count_picking_late;integer;;Count picking late;integer;;Count Picking Late;False;both
+29;default_location_src_id;many2one;stock.location;Default Source Location;many2one;stock.location;Default Source Location;False;both
+30;rate_picking_backorders;integer;;Rate picking backorders;integer;;Rate Picking Backorders;False;both
+31;rate_picking_late;integer;;Rate picking late;integer;;Rate Picking Late;False;both
+;;;;
+32;last_done_picking;char;;Last 10 Done Pickings;;;;False;version 1
+33;barcode_nomenclature_id;many2one;barcode.nomenclature;Barcode Nomenclature;;;;False;version 1
+;;;;
+34;use_create_components_lots;;;;boolean;;Create New Lots/Serial Numbers for Components;False;version 2
+35;barcode;;;;char;;Barcode;False;version 2
+36;company_id;;;;many2one;res.company;Company;True;version 2
+37;sequence_code;;;;char;;Code;True;version 2
+38;show_reserved;;;;boolean;;Pre-fill Detailed Operations;False;version 2
+39;show_operations;;;;boolean;;Show Detailed Operations;False;version 2
+;;;;
+;;;;

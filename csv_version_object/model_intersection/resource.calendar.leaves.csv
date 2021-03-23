@@ -1,20 +1,20 @@
-model,resource.calendar.leaves,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,calendar_id,many2one,resource.calendar,Working Time,many2one,resource.calendar,Working Hours,False,both
-3,display_name,char,,Display Name,char,,Display Name,False,both
-4,name,char,,Name,char,,Reason,False,both
-5,resource_id,many2one,resource.resource,Resource,many2one,resource.resource,Resource,False,both
-6,date_from,datetime,,Start Date,datetime,,Start Date,True,both
-7,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-8,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-9,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-10,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-11,date_to,datetime,,End Date,datetime,,End Date,True,both
-12,create_date,datetime,,Created on,datetime,,Created on,False,both
-13,id,integer,,ID,integer,,ID,False,both
-,,,,
-,,,,
-14,time_type,,,,selection,,Time Type,False,version 2
-,,,,
-,,,,
+model;resource.calendar.leaves;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;calendar_id;many2one;resource.calendar;Working Time;many2one;resource.calendar;Working Hours;False;both
+3;display_name;char;;Display Name;char;;Display Name;False;both
+4;name;char;;Name;char;;Reason;False;both
+5;resource_id;many2one;resource.resource;Resource;many2one;resource.resource;Resource;False;both
+6;date_from;datetime;;Start Date;datetime;;Start Date;True;both
+7;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+8;company_id;many2one;res.company;Company;many2one;res.company;Company;False;both
+9;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+10;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+11;date_to;datetime;;End Date;datetime;;End Date;True;both
+12;create_date;datetime;;Created on;datetime;;Created on;False;both
+13;id;integer;;ID;integer;;ID;False;both
+;;;;
+;;;;
+14;time_type;;;;selection;;Time Type;False;version 2
+;;;;
+;;;;

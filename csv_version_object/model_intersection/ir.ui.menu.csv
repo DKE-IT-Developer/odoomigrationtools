@@ -1,27 +1,27 @@
-model,ir.ui.menu,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,web_icon_data,binary,,Web Icon Image,binary,,Web Icon Image,False,both
-2,groups_id,many2many,res.groups,Groups,many2many,res.groups,Groups,False,both
-3,display_name,char,,Display Name,char,,Display Name,False,both
-4,name,char,,Menu,char,,Menu,True,both
-5,web_icon,char,,Web Icon File,char,,Web Icon File,False,both
-6,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-7,id,integer,,ID,integer,,ID,False,both
-8,sequence,integer,,Sequence,integer,,Sequence,False,both
-9,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-10,parent_id,many2one,ir.ui.menu,Parent Menu,many2one,ir.ui.menu,Parent Menu,False,both
-11,complete_name,char,,Full Path,char,,Full Path,False,both
-12,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-13,action,reference,,Action,reference,,Action,False,both
-14,create_date,datetime,,Created on,datetime,,Created on,False,both
-15,child_id,one2many,ir.ui.menu,Child IDs,one2many,ir.ui.menu,Child IDs,False,both
-16,active,boolean,,Active,boolean,,Active,False,both
-17,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-,,,,
-18,parent_right,integer,,Parent right,,,,False,version 1
-19,parent_left,integer,,Parent left,,,,False,version 1
-20,load_xmlid,boolean,,Load xmlid,,,,False,version 1
-,,,,
-21,parent_path,,,,char,,Parent Path,False,version 2
-,,,,
-,,,,
+model;ir.ui.menu;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;web_icon_data;binary;;Web Icon Image;binary;;Web Icon Image;False;both
+2;groups_id;many2many;res.groups;Groups;many2many;res.groups;Groups;False;both
+3;display_name;char;;Display Name;char;;Display Name;False;both
+4;name;char;;Menu;char;;Menu;True;both
+5;web_icon;char;;Web Icon File;char;;Web Icon File;False;both
+6;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+7;id;integer;;ID;integer;;ID;False;both
+8;sequence;integer;;Sequence;integer;;Sequence;False;both
+9;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+10;parent_id;many2one;ir.ui.menu;Parent Menu;many2one;ir.ui.menu;Parent Menu;False;both
+11;complete_name;char;;Full Path;char;;Full Path;False;both
+12;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+13;action;reference;;Action;reference;;Action;False;both
+14;create_date;datetime;;Created on;datetime;;Created on;False;both
+15;child_id;one2many;ir.ui.menu;Child IDs;one2many;ir.ui.menu;Child IDs;False;both
+16;active;boolean;;Active;boolean;;Active;False;both
+17;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+;;;;
+18;parent_right;integer;;Parent right;;;;False;version 1
+19;parent_left;integer;;Parent left;;;;False;version 1
+20;load_xmlid;boolean;;Load xmlid;;;;False;version 1
+;;;;
+21;parent_path;;;;char;;Parent Path;False;version 2
+;;;;
+;;;;

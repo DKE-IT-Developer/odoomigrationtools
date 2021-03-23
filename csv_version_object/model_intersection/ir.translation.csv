@@ -1,19 +1,19 @@
-model,ir.translation,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,lang,selection,,Language,selection,,Language,False,both
-2,src,text,,Internal Source,text,,Internal Source,False,both
-3,display_name,char,,Display Name,char,,Display Name,False,both
-4,name,char,,Translated field,char,,Translated field,True,both
-5,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-6,res_id,integer,,Record ID,integer,,Record ID,False,both
-7,module,char,,Module,char,,Module,False,both
-8,state,selection,,Status,selection,,Status,False,both
-9,comments,text,,Translation comments,text,,Translation comments,False,both
-10,value,text,,Translation Value,text,,Translation Value,False,both
-11,type,selection,,Type,selection,,Type,False,both
-12,id,integer,,ID,integer,,ID,False,both
-,,,,
-13,source,text,,Source term,,,,False,version 1
-,,,,
-,,,,
-,,,,
+model;ir.translation;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;lang;selection;;Language;selection;;Language;False;both
+2;src;text;;Internal Source;text;;Internal Source;False;both
+3;display_name;char;;Display Name;char;;Display Name;False;both
+4;name;char;;Translated field;char;;Translated field;True;both
+5;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+6;res_id;integer;;Record ID;integer;;Record ID;False;both
+7;module;char;;Module;char;;Module;False;both
+8;state;selection;;Status;selection;;Status;False;both
+9;comments;text;;Translation comments;text;;Translation comments;False;both
+10;value;text;;Translation Value;text;;Translation Value;False;both
+11;type;selection;;Type;selection;;Type;False;both
+12;id;integer;;ID;integer;;ID;False;both
+;;;;
+13;source;text;;Source term;;;;False;version 1
+;;;;
+;;;;
+;;;;

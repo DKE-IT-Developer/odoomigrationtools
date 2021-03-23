@@ -1,17 +1,17 @@
-model,mail.followers,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,subtype_ids,many2many,mail.message.subtype,Subtype,many2many,mail.message.subtype,Subtype,False,both
-2,display_name,char,,Display Name,char,,Display Name,False,both
-3,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-4,res_model,char,,Related Document Model,char,,Related Document Model Name,True,both
-5,channel_id,many2one,mail.channel,Listener,many2one,mail.channel,Listener,False,both
-6,res_id,integer,,Related Document ID,many2one_reference,,Related Document ID,False,both
-7,partner_id,many2one,res.partner,Related Partner,many2one,res.partner,Related Partner,False,both
-8,id,integer,,ID,integer,,ID,False,both
-,,,,
-,,,,
-9,name,,,,char,,Name,False,version 2
-10,is_active,,,,boolean,,Is Active,False,version 2
-11,email,,,,char,,Email,False,version 2
-,,,,
-,,,,
+model;mail.followers;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;subtype_ids;many2many;mail.message.subtype;Subtype;many2many;mail.message.subtype;Subtype;False;both
+2;display_name;char;;Display Name;char;;Display Name;False;both
+3;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+4;res_model;char;;Related Document Model;char;;Related Document Model Name;True;both
+5;channel_id;many2one;mail.channel;Listener;many2one;mail.channel;Listener;False;both
+6;res_id;integer;;Related Document ID;many2one_reference;;Related Document ID;False;both
+7;partner_id;many2one;res.partner;Related Partner;many2one;res.partner;Related Partner;False;both
+8;id;integer;;ID;integer;;ID;False;both
+;;;;
+;;;;
+9;name;;;;char;;Name;False;version 2
+10;is_active;;;;boolean;;Is Active;False;version 2
+11;email;;;;char;;Email;False;version 2
+;;;;
+;;;;

@@ -1,27 +1,25 @@
-model,stock.quant.package,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,display_name,char,,Display Name,char,,Display Name,False,both
-3,name,char,,Package Reference,char,,Package Reference,False,both
-4,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-5,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-6,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-7,quant_ids,one2many,stock.quant,Bulk Content,one2many,stock.quant,Bulk Content,False,both
-8,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-9,packaging_id,many2one,product.packaging,Package Type,many2one,product.packaging,Package Type,False,both
-10,create_date,datetime,,Created on,datetime,,Created on,False,both
-11,location_id,many2one,stock.location,Location,many2one,stock.location,Location,False,both
-12,id,integer,,ID,integer,,ID,False,both
-13,owner_id,many2one,res.partner,Owner,many2one,res.partner,Owner,False,both
-,,,,
-14,ancestor_ids,one2many,stock.quant.package,Ancestors,,,,False,version 1
-15,children_ids,one2many,stock.quant.package,Contained Packages,,,,False,version 1
-16,weight,float,,Weight,,,,False,version 1
-17,children_quant_ids,one2many,stock.quant,All Bulk Content,,,,False,version 1
-18,shipping_weight,float,,Shipping Weight,,,,False,version 1
-19,parent_right,integer,,Right Parent,,,,False,version 1
-20,parent_id,many2one,stock.quant.package,Parent Package,,,,False,version 1
-21,parent_left,integer,,Left Parent,,,,False,version 1
-,,,,
-,,,,
-,,,,
+model;stock.quant.package;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;display_name;char;;Display Name;char;;Display Name;False;both
+3;name;char;;Package Reference;char;;Package Reference;False;both
+4;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+5;company_id;many2one;res.company;Company;many2one;res.company;Company;False;both
+6;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+7;quant_ids;one2many;stock.quant;Bulk Content;one2many;stock.quant;Bulk Content;False;both
+8;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+9;packaging_id;many2one;product.packaging;Package Type;many2one;product.packaging;Package Type;False;both
+10;create_date;datetime;;Created on;datetime;;Created on;False;both
+11;location_id;many2one;stock.location;Location;many2one;stock.location;Location;False;both
+12;id;integer;;ID;integer;;ID;False;both
+13;owner_id;many2one;res.partner;Owner;many2one;res.partner;Owner;False;both
+;;;;
+14;ancestor_ids;one2many;stock.quant.package;Ancestors;;;;False;version 1
+15;children_ids;one2many;stock.quant.package;Contained Packages;;;;False;version 1
+16;parent_right;integer;;Right Parent;;;;False;version 1
+17;children_quant_ids;one2many;stock.quant;All Bulk Content;;;;False;version 1
+18;parent_id;many2one;stock.quant.package;Parent Package;;;;False;version 1
+19;parent_left;integer;;Left Parent;;;;False;version 1
+;;;;
+;;;;
+;;;;

@@ -1,11 +1,11 @@
-model,web_tour.tour,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,user_id,many2one,res.users,Consumed by,many2one,res.users,Consumed by,False,both
-2,display_name,char,,Display Name,char,,Display Name,False,both
-3,id,integer,,ID,integer,,ID,False,both
-4,name,char,,Tour name,char,,Tour name,True,both
-5,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-,,,,
-,,,,
-,,,,
-,,,,
+model;web_tour.tour;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;user_id;many2one;res.users;Consumed by;many2one;res.users;Consumed by;False;both
+2;display_name;char;;Display Name;char;;Display Name;False;both
+3;id;integer;;ID;integer;;ID;False;both
+4;name;char;;Tour name;char;;Tour name;True;both
+5;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+;;;;
+;;;;
+;;;;
+;;;;

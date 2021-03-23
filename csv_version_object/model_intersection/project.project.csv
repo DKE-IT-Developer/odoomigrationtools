@@ -1,94 +1,94 @@
-model,project.project,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,message_follower_ids,one2many,mail.followers,Followers,one2many,mail.followers,Followers,False,both
-2,tasks,one2many,project.task,Task Activities,one2many,project.task,Task Activities,False,both
-3,create_date,datetime,,Created on,datetime,,Created on,False,both
-4,sequence,integer,,Sequence,integer,,Sequence,False,both
-5,color,integer,,Color Index,integer,,Color Index,False,both
-6,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
-7,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
-8,alias_id,many2one,mail.alias,Alias,many2one,mail.alias,Alias,True,both
-9,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-10,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,False,both
-11,date,date,,Expiration Date,date,,Expiration Date,False,both
-12,is_favorite,boolean,,Show Project on dashboard,boolean,,Show Project on dashboard,False,both
-13,task_ids,one2many,project.task,Tasks,one2many,project.task,Tasks,False,both
-14,label_tasks,char,,Use Tasks as,char,,Use Tasks as,False,both
-15,doc_count,integer,,Number of documents attached,integer,,Number of documents attached,False,both
-16,alias_name,char,,Alias Name,char,,Alias Name,False,both
-17,privacy_visibility,selection,,Privacy,selection,,Visibility,True,both
-18,analytic_account_id,many2one,account.analytic.account,Contract/Analytic,many2one,account.analytic.account,Analytic Account,False,both
-19,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-20,user_id,many2one,res.users,Project Manager,many2one,res.users,Project Manager,False,both
-21,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
-22,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-23,alias_force_thread_id,integer,,Record Thread ID,integer,,Record Thread ID,False,both
-24,partner_id,many2one,res.partner,Customer,many2one,res.partner,Customer,False,both
-25,date_start,date,,Start Date,date,,Start Date,False,both
-26,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
-27,id,integer,,ID,integer,,ID,False,both
-28,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
-29,favorite_user_ids,many2many,res.users,Members,many2many,res.users,Members,False,both
-30,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
-31,alias_domain,char,,Alias domain,char,,Alias domain,False,both
-32,alias_parent_model_id,many2one,ir.model,Parent Model,many2one,ir.model,Parent Model,False,both
-33,alias_contact,selection,,Alias Contact Security,selection,,Alias Contact Security,True,both
-34,alias_defaults,text,,Default Values,text,,Default Values,True,both
-35,alias_model_id,many2one,ir.model,Aliased Model,many2one,ir.model,Aliased Model,True,both
-36,task_count,integer,,Tasks,integer,,Task Count,False,both
-37,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-38,active,boolean,,Active,boolean,,Active,False,both
-39,alias_parent_thread_id,integer,,Parent Record Thread ID,integer,,Parent Record Thread ID,False,both
-40,display_name,char,,Display Name,char,,Display Name,False,both
-41,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
-42,name,char,,Analytic Account,char,,Name,True,both
-43,alias_user_id,many2one,res.users,Owner,many2one,res.users,Owner,False,both
-44,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
-45,type_ids,many2many,project.task.type,Tasks Stages,many2many,project.task.type,Tasks Stages,False,both
-46,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
-47,resource_calendar_id,many2one,resource.calendar,Working Time,many2one,resource.calendar,Working Time,False,both
-,,,,
-48,alias_model,selection,,Alias Model,,,,True,version 1
-49,project_count,integer,,Project Count,,,,False,version 1
-50,use_tasks,boolean,,Use Tasks,,,,False,version 1
-51,tag_ids,many2many,account.analytic.tag,Tags,,,,False,version 1
-52,code,char,,Reference,,,,False,version 1
-53,company_uom_id,many2one,product.uom,Company UOM,,,,False,version 1
-54,project_ids,one2many,project.project,Projects,,,,False,version 1
-55,message_last_post,datetime,,Last Message Date,,,,False,version 1
-56,task_needaction_count,integer,,Tasks,,,,False,version 1
-57,credit,monetary,,Credit,,,,False,version 1
-58,debit,monetary,,Debit,,,,False,version 1
-59,line_ids,one2many,account.analytic.line,Analytic Lines,,,,False,version 1
-60,balance,monetary,,Balance,,,,False,version 1
-,,,,
-61,allowed_internal_user_ids,,,,many2many,res.users,Allowed Internal Users,False,version 2
-62,allow_recurring_tasks,,,,boolean,,Recurring Tasks,False,version 2
-63,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
-64,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
-65,alias_enabled,,,,boolean,,Use email alias,False,version 2
-66,rating_status_period,,,,selection,,Rating Frequency,True,version 2
-67,subtask_project_id,,,,many2one,project.project,Sub-task Project,False,version 2
-68,sale_order_id,,,,many2one,sale.order,Sales Order,False,version 2
-69,rating_status,,,,selection,,Customer Ratings Status,True,version 2
-70,allow_subtasks,,,,boolean,,Sub-tasks,False,version 2
-71,alias_bounced_content,,,,html,,Custom Bounced Message,False,version 2
-72,access_token,,,,char,,Security Token,False,version 2
-73,rating_ids,,,,one2many,rating.rating,Ratings,False,version 2
-74,message_has_error,,,,boolean,,Message Delivery error,False,version 2
-75,access_warning,,,,text,,Access warning,False,version 2
-76,sale_line_id,,,,many2one,sale.order.line,Sales Order Item,False,version 2
-77,allowed_portal_user_ids,,,,many2many,res.users,Allowed Portal Users,False,version 2
-78,rating_active,,,,boolean,,Customer Ratings,False,version 2
-79,message_attachment_count,,,,integer,,Attachment Count,False,version 2
-80,partner_email,,,,char,,Email,False,version 2
-81,description,,,,html,,Description,False,version 2
-82,rating_request_deadline,,,,datetime,,Rating Request Deadline,False,version 2
-83,allowed_user_ids,,,,many2many,res.users,Allowed User,False,version 2
-84,message_has_error_counter,,,,integer,,Number of errors,False,version 2
-85,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
-86,rating_percentage_satisfaction,,,,integer,,Rating Satisfaction,False,version 2
-87,partner_phone,,,,char,,Phone,False,version 2
-88,access_url,,,,char,,Portal Access URL,False,version 2
-,,,,
-,,,,
+model;project.project;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;message_follower_ids;one2many;mail.followers;Followers;one2many;mail.followers;Followers;False;both
+2;tasks;one2many;project.task;Task Activities;one2many;project.task;Task Activities;False;both
+3;create_date;datetime;;Created on;datetime;;Created on;False;both
+4;sequence;integer;;Sequence;integer;;Sequence;False;both
+5;color;integer;;Color Index;integer;;Color Index;False;both
+6;message_channel_ids;many2many;mail.channel;Followers (Channels);many2many;mail.channel;Followers (Channels);False;both
+7;message_partner_ids;many2many;res.partner;Followers (Partners);many2many;res.partner;Followers (Partners);False;both
+8;alias_id;many2one;mail.alias;Alias;many2one;mail.alias;Alias;True;both
+9;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+10;currency_id;many2one;res.currency;Currency;many2one;res.currency;Currency;False;both
+11;date;date;;Expiration Date;date;;Expiration Date;False;both
+12;is_favorite;boolean;;Show Project on dashboard;boolean;;Show Project on dashboard;False;both
+13;task_ids;one2many;project.task;Tasks;one2many;project.task;Tasks;False;both
+14;label_tasks;char;;Use Tasks as;char;;Use Tasks as;False;both
+15;doc_count;integer;;Number of documents attached;integer;;Number of documents attached;False;both
+16;alias_name;char;;Alias Name;char;;Alias Name;False;both
+17;privacy_visibility;selection;;Privacy;selection;;Visibility;True;both
+18;analytic_account_id;many2one;account.analytic.account;Contract/Analytic;many2one;account.analytic.account;Analytic Account;False;both
+19;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+20;user_id;many2one;res.users;Project Manager;many2one;res.users;Project Manager;False;both
+21;message_is_follower;boolean;;Is Follower;boolean;;Is Follower;False;both
+22;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+23;alias_force_thread_id;integer;;Record Thread ID;integer;;Record Thread ID;False;both
+24;partner_id;many2one;res.partner;Customer;many2one;res.partner;Customer;False;both
+25;date_start;date;;Start Date;date;;Start Date;False;both
+26;company_id;many2one;res.company;Company;many2one;res.company;Company;True;both
+27;id;integer;;ID;integer;;ID;False;both
+28;message_needaction;boolean;;Action Needed;boolean;;Action Needed;False;both
+29;favorite_user_ids;many2many;res.users;Members;many2many;res.users;Members;False;both
+30;message_unread_counter;integer;;Unread Messages Counter;integer;;Unread Messages Counter;False;both
+31;alias_domain;char;;Alias domain;char;;Alias domain;False;both
+32;alias_parent_model_id;many2one;ir.model;Parent Model;many2one;ir.model;Parent Model;False;both
+33;alias_contact;selection;;Alias Contact Security;selection;;Alias Contact Security;True;both
+34;alias_defaults;text;;Default Values;text;;Default Values;True;both
+35;alias_model_id;many2one;ir.model;Aliased Model;many2one;ir.model;Aliased Model;True;both
+36;task_count;integer;;Tasks;integer;;Task Count;False;both
+37;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+38;active;boolean;;Active;boolean;;Active;False;both
+39;alias_parent_thread_id;integer;;Parent Record Thread ID;integer;;Parent Record Thread ID;False;both
+40;display_name;char;;Display Name;char;;Display Name;False;both
+41;message_unread;boolean;;Unread Messages;boolean;;Unread Messages;False;both
+42;name;char;;Analytic Account;char;;Name;True;both
+43;alias_user_id;many2one;res.users;Owner;many2one;res.users;Owner;False;both
+44;message_ids;one2many;mail.message;Messages;one2many;mail.message;Messages;False;both
+45;type_ids;many2many;project.task.type;Tasks Stages;many2many;project.task.type;Tasks Stages;False;both
+46;message_needaction_counter;integer;;Number of Actions;integer;;Number of Actions;False;both
+47;resource_calendar_id;many2one;resource.calendar;Working Time;many2one;resource.calendar;Working Time;False;both
+;;;;
+48;alias_model;selection;;Alias Model;;;;True;version 1
+49;project_count;integer;;Project Count;;;;False;version 1
+50;use_tasks;boolean;;Use Tasks;;;;False;version 1
+51;tag_ids;many2many;account.analytic.tag;Tags;;;;False;version 1
+52;code;char;;Reference;;;;False;version 1
+53;company_uom_id;many2one;product.uom;Company UOM;;;;False;version 1
+54;project_ids;one2many;project.project;Projects;;;;False;version 1
+55;message_last_post;datetime;;Last Message Date;;;;False;version 1
+56;task_needaction_count;integer;;Tasks;;;;False;version 1
+57;credit;monetary;;Credit;;;;False;version 1
+58;debit;monetary;;Debit;;;;False;version 1
+59;line_ids;one2many;account.analytic.line;Analytic Lines;;;;False;version 1
+60;balance;monetary;;Balance;;;;False;version 1
+;;;;
+61;allowed_internal_user_ids;;;;many2many;res.users;Allowed Internal Users;False;version 2
+62;allow_recurring_tasks;;;;boolean;;Recurring Tasks;False;version 2
+63;message_main_attachment_id;;;;many2one;ir.attachment;Main Attachment;False;version 2
+64;message_has_sms_error;;;;boolean;;SMS Delivery error;False;version 2
+65;alias_enabled;;;;boolean;;Use email alias;False;version 2
+66;rating_status_period;;;;selection;;Rating Frequency;True;version 2
+67;subtask_project_id;;;;many2one;project.project;Sub-task Project;False;version 2
+68;sale_order_id;;;;many2one;sale.order;Sales Order;False;version 2
+69;rating_status;;;;selection;;Customer Ratings Status;True;version 2
+70;allow_subtasks;;;;boolean;;Sub-tasks;False;version 2
+71;alias_bounced_content;;;;html;;Custom Bounced Message;False;version 2
+72;access_token;;;;char;;Security Token;False;version 2
+73;rating_ids;;;;one2many;rating.rating;Ratings;False;version 2
+74;message_has_error;;;;boolean;;Message Delivery error;False;version 2
+75;access_warning;;;;text;;Access warning;False;version 2
+76;sale_line_id;;;;many2one;sale.order.line;Sales Order Item;False;version 2
+77;allowed_portal_user_ids;;;;many2many;res.users;Allowed Portal Users;False;version 2
+78;rating_active;;;;boolean;;Customer Ratings;False;version 2
+79;message_attachment_count;;;;integer;;Attachment Count;False;version 2
+80;partner_email;;;;char;;Email;False;version 2
+81;description;;;;html;;Description;False;version 2
+82;rating_request_deadline;;;;datetime;;Rating Request Deadline;False;version 2
+83;allowed_user_ids;;;;many2many;res.users;Allowed User;False;version 2
+84;message_has_error_counter;;;;integer;;Number of errors;False;version 2
+85;website_message_ids;;;;one2many;mail.message;Website Messages;False;version 2
+86;rating_percentage_satisfaction;;;;integer;;Rating Satisfaction;False;version 2
+87;partner_phone;;;;char;;Phone;False;version 2
+88;access_url;;;;char;;Portal Access URL;False;version 2
+;;;;
+;;;;

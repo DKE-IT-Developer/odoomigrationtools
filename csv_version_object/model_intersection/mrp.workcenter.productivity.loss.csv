@@ -1,18 +1,18 @@
-model,mrp.workcenter.productivity.loss,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,display_name,char,,Display Name,char,,Display Name,False,both
-3,name,char,,Reason,char,,Blocking Reason,True,both
-4,loss_type,selection,,Effectiveness Category,selection,,Effectiveness Category,False,both
-5,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-6,sequence,integer,,Sequence,integer,,Sequence,False,both
-7,manual,boolean,,Is a Blocking Reason,boolean,,Is a Blocking Reason,False,both
-8,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-9,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-10,create_date,datetime,,Created on,datetime,,Created on,False,both
-11,id,integer,,ID,integer,,ID,False,both
-,,,,
-,,,,
-12,loss_id,,,,many2one,mrp.workcenter.productivity.loss.type,Category,False,version 2
-,,,,
-,,,,
+model;mrp.workcenter.productivity.loss;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;display_name;char;;Display Name;char;;Display Name;False;both
+3;name;char;;Reason;char;;Blocking Reason;True;both
+4;loss_type;selection;;Effectiveness Category;selection;;Effectiveness Category;False;both
+5;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+6;sequence;integer;;Sequence;integer;;Sequence;False;both
+7;manual;boolean;;Is a Blocking Reason;boolean;;Is a Blocking Reason;False;both
+8;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+9;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+10;create_date;datetime;;Created on;datetime;;Created on;False;both
+11;id;integer;;ID;integer;;ID;False;both
+;;;;
+;;;;
+12;loss_id;;;;many2one;mrp.workcenter.productivity.loss.type;Category;False;version 2
+;;;;
+;;;;

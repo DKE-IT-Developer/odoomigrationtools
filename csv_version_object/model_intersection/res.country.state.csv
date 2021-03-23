@@ -1,19 +1,16 @@
-model,res.country.state,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,code,char,,State Code,char,,State Code,True,both
-3,display_name,char,,Display Name,char,,Display Name,False,both
-4,name,char,,State Name,char,,State Name,True,both
-5,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-6,country_id,many2one,res.country,Country,many2one,res.country,Country,True,both
-7,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-8,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-9,create_date,datetime,,Created on,datetime,,Created on,False,both
-10,id,integer,,ID,integer,,ID,False,both
-,,,,
-11,area_ids,many2many,area.category,Area ids,,,,False,version 1
-12,city_ids,one2many,res.city.ongkir,Cities,,,,False,version 1
-13,kabupaten_line,one2many,res.kabupaten,Kabupaten,,,,False,version 1
-,,,,
-,,,,
-,,,,
+model;res.country.state;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;code;char;;State Code;char;;State Code;True;both
+3;display_name;char;;Display Name;char;;Display Name;False;both
+4;name;char;;State Name;char;;State Name;True;both
+5;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+6;country_id;many2one;res.country;Country;many2one;res.country;Country;True;both
+7;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+8;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+9;create_date;datetime;;Created on;datetime;;Created on;False;both
+10;id;integer;;ID;integer;;ID;False;both
+;;;;
+;;;;
+;;;;
+;;;;

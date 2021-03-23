@@ -1,22 +1,22 @@
-model,mail.message.subtype,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,display_name,char,,Display Name,char,,Display Name,False,both
-3,description,text,,Description,text,,Description,False,both
-4,sequence,integer,,Sequence,integer,,Sequence,False,both
-5,default,boolean,,Default,boolean,,Default,False,both
-6,res_model,char,,Model,char,,Model,False,both
-7,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-8,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-9,parent_id,many2one,mail.message.subtype,Parent,many2one,mail.message.subtype,Parent,False,both
-10,internal,boolean,,Internal Only,boolean,,Internal Only,False,both
-11,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-12,relation_field,char,,Relation field,char,,Relation field,False,both
-13,create_date,datetime,,Created on,datetime,,Created on,False,both
-14,hidden,boolean,,Hidden,boolean,,Hidden,False,both
-15,id,integer,,ID,integer,,ID,False,both
-16,name,char,,Message Type,char,,Message Type,True,both
-,,,,
-,,,,
-,,,,
-,,,,
+model;mail.message.subtype;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;display_name;char;;Display Name;char;;Display Name;False;both
+3;description;text;;Description;text;;Description;False;both
+4;sequence;integer;;Sequence;integer;;Sequence;False;both
+5;default;boolean;;Default;boolean;;Default;False;both
+6;res_model;char;;Model;char;;Model;False;both
+7;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+8;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+9;parent_id;many2one;mail.message.subtype;Parent;many2one;mail.message.subtype;Parent;False;both
+10;internal;boolean;;Internal Only;boolean;;Internal Only;False;both
+11;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+12;relation_field;char;;Relation field;char;;Relation field;False;both
+13;create_date;datetime;;Created on;datetime;;Created on;False;both
+14;hidden;boolean;;Hidden;boolean;;Hidden;False;both
+15;id;integer;;ID;integer;;ID;False;both
+16;name;char;;Message Type;char;;Message Type;True;both
+;;;;
+;;;;
+;;;;
+;;;;

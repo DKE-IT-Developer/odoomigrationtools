@@ -24,11 +24,11 @@ no,field,type1,relation1,string1,type2,relation2,string2,required,source
 22,sale_pricelist_setting_split_2,selection,,Sales Price,,,,False,version 1
 23,default_lang_code,char,,Default language code,,,,False,version 1
 24,social_googleplus,char,,Google+ Account,,,,False,version 1
-25,company_id,many2one,res.company,Company,,,,True,version 1
+25,module_delivery_temando,boolean,,Temando integration,,,,False,version 1
 26,salesteam_id,many2one,crm.team,Sales Team,,,,False,version 1
 27,module_portal,boolean,,Activate the customer portal,,,,False,version 1
 28,social_youtube,char,,Youtube Account,,,,False,version 1
-29,module_delivery_temando,boolean,,Temando integration,,,,False,version 1
+29,social_github,char,,GitHub Account,,,,False,version 1
 30,module_website_sale_delivery,boolean,,Add Delivery Costs to Online Sales,,,,False,version 1
 31,group_product_pricelist,boolean,,Show pricelists On Products,,,,False,version 1
 32,website_slide_google_app_key,char,,Google Doc Key,,,,False,version 1
@@ -47,8 +47,6 @@ no,field,type1,relation1,string1,type2,relation2,string2,required,source
 45,module_website_version,selection,,A/B Testing,,,,False,version 1
 46,module_website_form_editor,selection,,Form Builder,,,,False,version 1
 47,website_name,char,,Website Name,,,,False,version 1
-48,social_github,char,,GitHub Account,,,,False,version 1
-49,module_delivery_dhl,boolean,,DHL integration,,,,False,version 1
-50,minimum_days,integer,,Blog Minimum Days,,,,False,version 1
+48,module_delivery_dhl,boolean,,DHL integration,,,,False,version 1
 ,,,,
 ,,,,

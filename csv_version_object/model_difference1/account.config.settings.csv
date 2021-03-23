@@ -33,29 +33,28 @@ no,field,type1,relation1,string1,type2,relation2,string2,required,source
 31,module_l10n_us_check_printing,boolean,,Allow check printing and deposits,,,,False,version 1
 32,default_purchase_tax_id,many2one,account.tax,Default Purchase Tax,,,,False,version 1
 33,write_date,datetime,,Last Updated on,,,,False,version 1
-34,discount_efaktur_display,selection,,Display discount on efaktur,,,,False,version 1
+34,display_name,char,,Display Name,,,,False,version 1
 35,use_anglo_saxon,boolean,,Use Anglo-Saxon Accounting *,,,,False,version 1
 36,sale_tax_rate,float,,Sales tax (%),,,,False,version 1
 37,module_account_batch_deposit,boolean,,Use batch deposit,,,,False,version 1
-38,display_name,char,,Display Name,,,,False,version 1
-39,module_account_yodlee,boolean,,Bank Interface - Sync your bank feeds automatically,,,,False,version 1
-40,module_account_tax_cash_basis,boolean,,Allow Tax Cash Basis,,,,False,version 1
-41,code_digits,integer,,# of Digits *,,,,False,version 1
-42,module_account_reports_followup,boolean,,Enable payment followup management,,,,False,version 1
-43,chart_template_id,many2one,account.chart.template,Template,,,,False,version 1
-44,default_sale_tax_id,many2one,account.tax,Default Sale Tax,,,,False,version 1
-45,overdue_msg,text,,Overdue Payments Message *,,,,False,version 1
-46,sale_tax_id,many2one,account.tax.template,Default sale tax,,,,False,version 1
-47,has_default_company,boolean,,Has default company,,,,False,version 1
-48,module_account_bank_statement_import_qif,boolean,,Import .qif files,,,,False,version 1
-49,group_analytic_accounting,boolean,,Analytic accounting,,,,False,version 1
-50,group_analytic_account_for_purchases,boolean,,Analytic accounting for purchases,,,,False,version 1
-51,company_footer,text,,Bank accounts footer preview,,,,False,version 1
-52,module_account_sepa,boolean,,Use SEPA payments,,,,False,version 1
-53,fiscalyear_last_month,selection,,Fiscalyear last month,,,,False,version 1
-54,tax_calculation_rounding_method,selection,,Tax calculation rounding method *,,,,False,version 1
-55,default_acquirer,many2one,payment.acquirer,Default Acquirer,,,,False,version 1
-56,purchase_tax_id,many2one,account.tax.template,Default purchase tax,,,,False,version 1
-57,transfer_account_id,many2one,account.account,Inter-Banks Transfer Account,,,,False,version 1
+38,module_account_yodlee,boolean,,Bank Interface - Sync your bank feeds automatically,,,,False,version 1
+39,module_account_tax_cash_basis,boolean,,Allow Tax Cash Basis,,,,False,version 1
+40,code_digits,integer,,# of Digits *,,,,False,version 1
+41,module_account_reports_followup,boolean,,Enable payment followup management,,,,False,version 1
+42,chart_template_id,many2one,account.chart.template,Template,,,,False,version 1
+43,default_sale_tax_id,many2one,account.tax,Default Sale Tax,,,,False,version 1
+44,overdue_msg,text,,Overdue Payments Message *,,,,False,version 1
+45,sale_tax_id,many2one,account.tax.template,Default sale tax,,,,False,version 1
+46,has_default_company,boolean,,Has default company,,,,False,version 1
+47,module_account_bank_statement_import_qif,boolean,,Import .qif files,,,,False,version 1
+48,group_analytic_accounting,boolean,,Analytic accounting,,,,False,version 1
+49,group_analytic_account_for_purchases,boolean,,Analytic accounting for purchases,,,,False,version 1
+50,company_footer,text,,Bank accounts footer preview,,,,False,version 1
+51,module_account_sepa,boolean,,Use SEPA payments,,,,False,version 1
+52,fiscalyear_last_month,selection,,Fiscalyear last month,,,,False,version 1
+53,tax_calculation_rounding_method,selection,,Tax calculation rounding method *,,,,False,version 1
+54,default_acquirer,many2one,payment.acquirer,Default Acquirer,,,,False,version 1
+55,purchase_tax_id,many2one,account.tax.template,Default purchase tax,,,,False,version 1
+56,transfer_account_id,many2one,account.account,Inter-Banks Transfer Account,,,,False,version 1
 ,,,,
 ,,,,

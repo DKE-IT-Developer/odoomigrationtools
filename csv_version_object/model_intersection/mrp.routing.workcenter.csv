@@ -1,31 +1,31 @@
-model,mrp.routing.workcenter,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,workorder_ids,one2many,mrp.workorder,Work Orders,one2many,mrp.workorder,Work Orders,False,both
-3,create_date,datetime,,Created on,datetime,,Created on,False,both
-4,time_mode_batch,integer,,Based on,integer,,Based on,False,both
-5,sequence,integer,,Sequence,integer,,Sequence,False,both
-6,worksheet,binary,,worksheet,binary,,PDF,False,both
-7,workorder_count,integer,,# Work Orders,integer,,# Work Orders,False,both
-8,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-9,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-10,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-11,note,text,,Description,text,,Description,False,both
-12,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-13,workcenter_id,many2one,mrp.workcenter,Work Center,many2one,mrp.workcenter,Work Center,True,both
-14,display_name,char,,Display Name,char,,Display Name,False,both
-15,time_mode,selection,,Duration Computation,selection,,Duration Computation,False,both
-16,time_cycle_manual,float,,Manual Duration,float,,Manual Duration,False,both
-17,id,integer,,ID,integer,,ID,False,both
-18,time_cycle,float,,Duration,float,,Duration,False,both
-19,name,char,,Operation,char,,Operation,True,both
-,,,,
-20,routing_id,many2one,mrp.routing,Parent Routing,,,,True,version 1
-21,batch,selection,,Next Operation,,,,True,version 1
-22,batch_size,float,,Quantity to Process,,,,False,version 1
-,,,,
-23,bom_id,,,,many2one,mrp.bom,Bill of Material,False,version 2
-24,worksheet_type,,,,selection,,Work Sheet,False,version 2
-25,worksheet_google_slide,,,,char,,Google Slide,False,version 2
-,,,,
-,,,,
+model;mrp.routing.workcenter;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;workorder_ids;one2many;mrp.workorder;Work Orders;one2many;mrp.workorder;Work Orders;False;both
+3;create_date;datetime;;Created on;datetime;;Created on;False;both
+4;time_mode_batch;integer;;Based on;integer;;Based on;False;both
+5;sequence;integer;;Sequence;integer;;Sequence;False;both
+6;worksheet;binary;;worksheet;binary;;PDF;False;both
+7;workorder_count;integer;;# Work Orders;integer;;# Work Orders;False;both
+8;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+9;company_id;many2one;res.company;Company;many2one;res.company;Company;False;both
+10;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+11;note;text;;Description;text;;Description;False;both
+12;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+13;workcenter_id;many2one;mrp.workcenter;Work Center;many2one;mrp.workcenter;Work Center;True;both
+14;display_name;char;;Display Name;char;;Display Name;False;both
+15;time_mode;selection;;Duration Computation;selection;;Duration Computation;False;both
+16;time_cycle_manual;float;;Manual Duration;float;;Manual Duration;False;both
+17;id;integer;;ID;integer;;ID;False;both
+18;time_cycle;float;;Duration;float;;Duration;False;both
+19;name;char;;Operation;char;;Operation;True;both
+;;;;
+20;routing_id;many2one;mrp.routing;Parent Routing;;;;True;version 1
+21;batch;selection;;Next Operation;;;;True;version 1
+22;batch_size;float;;Quantity to Process;;;;False;version 1
+;;;;
+23;bom_id;;;;many2one;mrp.bom;Bill of Material;False;version 2
+24;worksheet_type;;;;selection;;Work Sheet;False;version 2
+25;worksheet_google_slide;;;;char;;Google Slide;False;version 2
+;;;;
+;;;;

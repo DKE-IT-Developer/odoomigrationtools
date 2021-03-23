@@ -1,20 +1,20 @@
-model,stock.return.picking,transient,True
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,move_dest_exists,boolean,,Chained Move Exists,boolean,,Chained Move Exists,False,both
-2,original_location_id,many2one,stock.location,Original location id,many2one,stock.location,Original Location,False,both
-3,display_name,char,,Display Name,char,,Display Name,False,both
-4,product_return_moves,one2many,stock.return.picking.line,Moves,one2many,stock.return.picking.line,Moves,False,both
-5,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-6,parent_location_id,many2one,stock.location,Parent location id,many2one,stock.location,Parent Location,False,both
-7,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-8,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-9,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-10,create_date,datetime,,Created on,datetime,,Created on,False,both
-11,location_id,many2one,stock.location,Return Location,many2one,stock.location,Return Location,False,both
-12,id,integer,,ID,integer,,ID,False,both
-,,,,
-,,,,
-13,company_id,,,,many2one,res.company,Company,False,version 2
-14,picking_id,,,,many2one,stock.picking,Picking,False,version 2
-,,,,
-,,,,
+model;stock.return.picking;transient;True
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;move_dest_exists;boolean;;Chained Move Exists;boolean;;Chained Move Exists;False;both
+2;original_location_id;many2one;stock.location;Original location id;many2one;stock.location;Original Location;False;both
+3;display_name;char;;Display Name;char;;Display Name;False;both
+4;product_return_moves;one2many;stock.return.picking.line;Moves;one2many;stock.return.picking.line;Moves;False;both
+5;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+6;parent_location_id;many2one;stock.location;Parent location id;many2one;stock.location;Parent Location;False;both
+7;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+8;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+9;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+10;create_date;datetime;;Created on;datetime;;Created on;False;both
+11;location_id;many2one;stock.location;Return Location;many2one;stock.location;Return Location;False;both
+12;id;integer;;ID;integer;;ID;False;both
+;;;;
+;;;;
+13;company_id;;;;many2one;res.company;Company;False;version 2
+14;picking_id;;;;many2one;stock.picking;Picking;False;version 2
+;;;;
+;;;;

@@ -1,30 +1,30 @@
-model,stock.location.route,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,supplier_wh_id,many2one,stock.warehouse,Supplying Warehouse,many2one,stock.warehouse,Supplying Warehouse,False,both
-2,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-3,create_date,datetime,,Created on,datetime,,Created on,False,both
-4,name,char,,Route Name,char,,Route,True,both
-5,categ_ids,many2many,product.category,Product Categories,many2many,product.category,Product Categories,False,both
-6,sequence,integer,,Sequence,integer,,Sequence,False,both
-7,warehouse_selectable,boolean,,Applicable on Warehouse,boolean,,Applicable on Warehouse,False,both
-8,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-9,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-10,supplied_wh_id,many2one,stock.warehouse,Supplied Warehouse,many2one,stock.warehouse,Supplied Warehouse,False,both
-11,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-12,product_selectable,boolean,,Applicable on Product,boolean,,Applicable on Product,False,both
-13,product_categ_selectable,boolean,,Applicable on Product Category,boolean,,Applicable on Product Category,False,both
-14,product_ids,many2many,product.template,Products,many2many,product.template,Products,False,both
-15,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-16,warehouse_ids,many2many,stock.warehouse,Warehouses,many2many,stock.warehouse,Warehouses,False,both
-17,active,boolean,,Active,boolean,,Active,False,both
-18,display_name,char,,Display Name,char,,Display Name,False,both
-19,sale_selectable,boolean,,Selectable on Sales Order Line,boolean,,Selectable on Sales Order Line,False,both
-20,id,integer,,ID,integer,,ID,False,both
-,,,,
-21,pull_ids,one2many,procurement.rule,Procurement Rules,,,,False,version 1
-22,push_ids,one2many,stock.location.path,Push Rules,,,,False,version 1
-,,,,
-23,rule_ids,,,,one2many,stock.rule,Rules,False,version 2
-24,warehouse_domain_ids,,,,one2many,stock.warehouse,Warehouse Domain,False,version 2
-,,,,
-,,,,
+model;stock.location.route;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;supplier_wh_id;many2one;stock.warehouse;Supplying Warehouse;many2one;stock.warehouse;Supplying Warehouse;False;both
+2;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+3;create_date;datetime;;Created on;datetime;;Created on;False;both
+4;name;char;;Route Name;char;;Route;True;both
+5;categ_ids;many2many;product.category;Product Categories;many2many;product.category;Product Categories;False;both
+6;sequence;integer;;Sequence;integer;;Sequence;False;both
+7;warehouse_selectable;boolean;;Applicable on Warehouse;boolean;;Applicable on Warehouse;False;both
+8;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+9;company_id;many2one;res.company;Company;many2one;res.company;Company;False;both
+10;supplied_wh_id;many2one;stock.warehouse;Supplied Warehouse;many2one;stock.warehouse;Supplied Warehouse;False;both
+11;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+12;product_selectable;boolean;;Applicable on Product;boolean;;Applicable on Product;False;both
+13;product_categ_selectable;boolean;;Applicable on Product Category;boolean;;Applicable on Product Category;False;both
+14;product_ids;many2many;product.template;Products;many2many;product.template;Products;False;both
+15;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+16;warehouse_ids;many2many;stock.warehouse;Warehouses;many2many;stock.warehouse;Warehouses;False;both
+17;active;boolean;;Active;boolean;;Active;False;both
+18;display_name;char;;Display Name;char;;Display Name;False;both
+19;sale_selectable;boolean;;Selectable on Sales Order Line;boolean;;Selectable on Sales Order Line;False;both
+20;id;integer;;ID;integer;;ID;False;both
+;;;;
+21;pull_ids;one2many;procurement.rule;Procurement Rules;;;;False;version 1
+22;push_ids;one2many;stock.location.path;Push Rules;;;;False;version 1
+;;;;
+23;rule_ids;;;;one2many;stock.rule;Rules;False;version 2
+24;warehouse_domain_ids;;;;one2many;stock.warehouse;Warehouse Domain;False;version 2
+;;;;
+;;;;

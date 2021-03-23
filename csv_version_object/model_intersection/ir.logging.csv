@@ -1,21 +1,21 @@
-model,ir.logging,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,integer,,Uid,integer,,Created by,False,both
-2,create_date,datetime,,Create date,datetime,,Created on,False,both
-3,name,char,,Name,char,,Name,True,both
-4,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-5,level,char,,Level,char,,Level,False,both
-6,line,char,,Line,char,,Line,True,both
-7,dbname,char,,Database Name,char,,Database Name,False,both
-8,write_uid,integer,,Last Updated by,integer,,Last Updated by,False,both
-9,func,char,,Function,char,,Function,True,both
-10,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-11,path,char,,Path,char,,Path,True,both
-12,message,text,,Message,text,,Message,True,both
-13,type,selection,,Type,selection,,Type,True,both
-14,id,integer,,ID,integer,,ID,False,both
-15,display_name,char,,Display Name,char,,Display Name,False,both
-,,,,
-,,,,
-,,,,
-,,,,
+model;ir.logging;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;integer;;Created by;integer;;Created by;False;both
+2;create_date;datetime;;Created on;datetime;;Created on;False;both
+3;name;char;;Name;char;;Name;True;both
+4;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+5;level;char;;Level;char;;Level;False;both
+6;line;char;;Line;char;;Line;True;both
+7;dbname;char;;Database Name;char;;Database Name;False;both
+8;write_uid;integer;;Last Updated by;integer;;Last Updated by;False;both
+9;func;char;;Function;char;;Function;True;both
+10;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+11;path;char;;Path;char;;Path;True;both
+12;message;text;;Message;text;;Message;True;both
+13;type;selection;;Type;selection;;Type;True;both
+14;id;integer;;ID;integer;;ID;False;both
+15;display_name;char;;Display Name;char;;Display Name;False;both
+;;;;
+;;;;
+;;;;
+;;;;

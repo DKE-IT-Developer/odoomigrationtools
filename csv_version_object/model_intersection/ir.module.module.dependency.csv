@@ -1,18 +1,18 @@
-model,ir.module.module.dependency,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,display_name,char,,Display Name,char,,Display Name,False,both
-3,name,char,,Name,char,,Name,False,both
-4,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-5,depend_id,many2one,ir.module.module,Dependency,many2one,ir.module.module,Dependency,False,both
-6,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-7,state,selection,,Status,selection,,Status,False,both
-8,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-9,module_id,many2one,ir.module.module,Module,many2one,ir.module.module,Module,False,both
-10,create_date,datetime,,Created on,datetime,,Created on,False,both
-11,id,integer,,ID,integer,,ID,False,both
-,,,,
-,,,,
-12,auto_install_required,,,,boolean,,Auto Install Required,False,version 2
-,,,,
-,,,,
+model;ir.module.module.dependency;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;display_name;char;;Display Name;char;;Display Name;False;both
+3;name;char;;Name;char;;Name;False;both
+4;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+5;depend_id;many2one;ir.module.module;Dependency;many2one;ir.module.module;Dependency;False;both
+6;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+7;state;selection;;Status;selection;;Status;False;both
+8;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+9;module_id;many2one;ir.module.module;Module;many2one;ir.module.module;Module;False;both
+10;create_date;datetime;;Created on;datetime;;Created on;False;both
+11;id;integer;;ID;integer;;ID;False;both
+;;;;
+;;;;
+12;auto_install_required;;;;boolean;;Auto Install Required;False;version 2
+;;;;
+;;;;

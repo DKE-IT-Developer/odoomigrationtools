@@ -1,23 +1,23 @@
-model,account.account.template,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,code,char,,Code,char,,Code,True,both
-3,display_name,char,,Display Name,char,,Display Name,False,both
-4,name,char,,Name,char,,Name,True,both
-5,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-6,chart_template_id,many2one,account.chart.template,Chart Template,many2one,account.chart.template,Chart Template,False,both
-7,tag_ids,many2many,account.account.tag,Account tag,many2many,account.account.tag,Account tag,False,both
-8,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-9,currency_id,many2one,res.currency,Account Currency,many2one,res.currency,Account Currency,False,both
-10,note,text,,Note,text,,Note,False,both
-11,nocreate,boolean,,Optional Create,boolean,,Optional Create,False,both
-12,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-13,user_type_id,many2one,account.account.type,Type,many2one,account.account.type,Type,True,both
-14,create_date,datetime,,Created on,datetime,,Created on,False,both
-15,id,integer,,ID,integer,,ID,False,both
-16,reconcile,boolean,,Allow Invoices & payments Matching,boolean,,Allow Invoices & payments Matching,False,both
-17,tax_ids,many2many,account.tax.template,Default Taxes,many2many,account.tax.template,Default Taxes,False,both
-,,,,
-,,,,
-,,,,
-,,,,
+model;account.account.template;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;code;char;;Code;char;;Code;True;both
+3;display_name;char;;Display Name;char;;Display Name;False;both
+4;name;char;;Name;char;;Name;True;both
+5;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+6;chart_template_id;many2one;account.chart.template;Chart Template;many2one;account.chart.template;Chart Template;False;both
+7;tag_ids;many2many;account.account.tag;Account tag;many2many;account.account.tag;Account tag;False;both
+8;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+9;currency_id;many2one;res.currency;Account Currency;many2one;res.currency;Account Currency;False;both
+10;note;text;;Note;text;;Note;False;both
+11;nocreate;boolean;;Optional Create;boolean;;Optional Create;False;both
+12;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+13;user_type_id;many2one;account.account.type;Type;many2one;account.account.type;Type;True;both
+14;create_date;datetime;;Created on;datetime;;Created on;False;both
+15;id;integer;;ID;integer;;ID;False;both
+16;reconcile;boolean;;Allow Invoices & payments Matching;boolean;;Allow Invoices & payments Matching;False;both
+17;tax_ids;many2many;account.tax.template;Default Taxes;many2many;account.tax.template;Default Taxes;False;both
+;;;;
+;;;;
+;;;;
+;;;;

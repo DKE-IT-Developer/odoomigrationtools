@@ -1,62 +1,62 @@
-model,ir.cron,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,user_id,many2one,res.users,User,many2one,res.users,Scheduler User,True,both
-3,name,char,,Name,char,,Action Name,True,both
-4,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-5,interval_type,selection,,Interval Unit,selection,,Interval Unit,False,both
-6,numbercall,integer,,Number of Calls,integer,,Number of Calls,False,both
-7,nextcall,datetime,,Next Execution Date,datetime,,Next Execution Date,True,both
-8,priority,integer,,Priority,integer,,Priority,False,both
-9,doall,boolean,,Repeat Missed,boolean,,Repeat Missed,False,both
-10,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-11,active,boolean,,Active,boolean,,Active,False,both
-12,create_date,datetime,,Created on,datetime,,Created on,False,both
-13,interval_number,integer,,Interval number,integer,,Interval Number,False,both
-14,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-15,id,integer,,ID,integer,,ID,False,both
-16,display_name,char,,Display Name,char,,Display Name,False,both
-,,,,
-17,function,char,,Method,,,,False,version 1
-18,model,char,,Object,,,,False,version 1
-19,args,text,,Arguments,,,,False,version 1
-,,,,
-20,groups_id,,,,many2many,res.groups,Groups,False,version 2
-21,code,,,,text,,Python Code,False,version 2
-22,help,,,,html,,Action Description,False,version 2
-23,sequence,,,,integer,,Sequence,False,version 2
-24,crud_model_id,,,,many2one,ir.model,Target Model,False,version 2
-25,activity_date_deadline_range_type,,,,selection,,Due type,False,version 2
-26,activity_user_field_name,,,,char,,User field name,False,version 2
-27,xml_id,,,,char,,External ID,False,version 2
-28,lastcall,,,,datetime,,Last Execution Date,False,version 2
-29,activity_note,,,,html,,Note,False,version 2
-30,sms_template_id,,,,many2one,sms.template,SMS Template,False,version 2
-31,crud_model_name,,,,char,,Target Model Name,False,version 2
-32,state,,,,selection,,Action To Do,True,version 2
-33,binding_type,,,,selection,,Binding Type,True,version 2
-34,activity_user_id,,,,many2one,res.users,Responsible,False,version 2
-35,usage,,,,selection,,Usage,True,version 2
-36,partner_ids,,,,many2many,res.partner,Add Followers,False,version 2
-37,type,,,,char,,Action Type,True,version 2
-38,website_published,,,,boolean,,Available on the Website,False,version 2
-39,website_url,,,,char,,Website Url,False,version 2
-40,model_id,,,,many2one,ir.model,Model,True,version 2
-41,channel_ids,,,,many2many,mail.channel,Add Channels,False,version 2
-42,child_ids,,,,many2many,ir.actions.server,Child Actions,False,version 2
-43,binding_view_types,,,,char,,Binding View Types,False,version 2
-44,activity_user_type,,,,selection,,Activity User Type,True,version 2
-45,binding_model_id,,,,many2one,ir.model,Binding Model,False,version 2
-46,activity_type_id,,,,many2one,mail.activity.type,Activity,False,version 2
-47,fields_lines,,,,one2many,ir.server.object.lines,Value Mapping,False,version 2
-48,activity_summary,,,,char,,Summary,False,version 2
-49,ir_actions_server_id,,,,many2one,ir.actions.server,Server action,True,version 2
-50,sms_mass_keep_log,,,,boolean,,Log as Note,False,version 2
-51,template_id,,,,many2one,mail.template,Email Template,False,version 2
-52,link_field_id,,,,many2one,ir.model.fields,Link Field,False,version 2
-53,activity_date_deadline_range,,,,integer,,Due Date In,False,version 2
-54,website_path,,,,char,,Website Path,False,version 2
-55,model_name,,,,char,,Model Name,False,version 2
-56,cron_name,,,,char,,Name,False,version 2
-,,,,
-,,,,
+model;ir.cron;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;user_id;many2one;res.users;User;many2one;res.users;Scheduler User;True;both
+3;name;char;;Name;char;;Action Name;True;both
+4;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+5;interval_type;selection;;Interval Unit;selection;;Interval Unit;False;both
+6;numbercall;integer;;Number of Calls;integer;;Number of Calls;False;both
+7;nextcall;datetime;;Next Execution Date;datetime;;Next Execution Date;True;both
+8;priority;integer;;Priority;integer;;Priority;False;both
+9;doall;boolean;;Repeat Missed;boolean;;Repeat Missed;False;both
+10;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+11;active;boolean;;Active;boolean;;Active;False;both
+12;create_date;datetime;;Created on;datetime;;Created on;False;both
+13;interval_number;integer;;Interval number;integer;;Interval Number;False;both
+14;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+15;id;integer;;ID;integer;;ID;False;both
+16;display_name;char;;Display Name;char;;Display Name;False;both
+;;;;
+17;function;char;;Method;;;;False;version 1
+18;model;char;;Object;;;;False;version 1
+19;args;text;;Arguments;;;;False;version 1
+;;;;
+20;groups_id;;;;many2many;res.groups;Groups;False;version 2
+21;code;;;;text;;Python Code;False;version 2
+22;help;;;;html;;Action Description;False;version 2
+23;sequence;;;;integer;;Sequence;False;version 2
+24;crud_model_id;;;;many2one;ir.model;Target Model;False;version 2
+25;activity_date_deadline_range_type;;;;selection;;Due type;False;version 2
+26;activity_user_field_name;;;;char;;User field name;False;version 2
+27;xml_id;;;;char;;External ID;False;version 2
+28;lastcall;;;;datetime;;Last Execution Date;False;version 2
+29;activity_note;;;;html;;Note;False;version 2
+30;sms_template_id;;;;many2one;sms.template;SMS Template;False;version 2
+31;crud_model_name;;;;char;;Target Model Name;False;version 2
+32;state;;;;selection;;Action To Do;True;version 2
+33;binding_type;;;;selection;;Binding Type;True;version 2
+34;activity_user_id;;;;many2one;res.users;Responsible;False;version 2
+35;usage;;;;selection;;Usage;True;version 2
+36;partner_ids;;;;many2many;res.partner;Add Followers;False;version 2
+37;type;;;;char;;Action Type;True;version 2
+38;website_published;;;;boolean;;Available on the Website;False;version 2
+39;website_url;;;;char;;Website Url;False;version 2
+40;model_id;;;;many2one;ir.model;Model;True;version 2
+41;channel_ids;;;;many2many;mail.channel;Add Channels;False;version 2
+42;child_ids;;;;many2many;ir.actions.server;Child Actions;False;version 2
+43;binding_view_types;;;;char;;Binding View Types;False;version 2
+44;activity_user_type;;;;selection;;Activity User Type;True;version 2
+45;binding_model_id;;;;many2one;ir.model;Binding Model;False;version 2
+46;activity_type_id;;;;many2one;mail.activity.type;Activity;False;version 2
+47;fields_lines;;;;one2many;ir.server.object.lines;Value Mapping;False;version 2
+48;activity_summary;;;;char;;Summary;False;version 2
+49;ir_actions_server_id;;;;many2one;ir.actions.server;Server action;True;version 2
+50;sms_mass_keep_log;;;;boolean;;Log as Note;False;version 2
+51;template_id;;;;many2one;mail.template;Email Template;False;version 2
+52;link_field_id;;;;many2one;ir.model.fields;Link Field;False;version 2
+53;activity_date_deadline_range;;;;integer;;Due Date In;False;version 2
+54;website_path;;;;char;;Website Path;False;version 2
+55;model_name;;;;char;;Model Name;False;version 2
+56;cron_name;;;;char;;Name;False;version 2
+;;;;
+;;;;

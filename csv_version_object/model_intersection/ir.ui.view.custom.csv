@@ -1,16 +1,16 @@
-model,ir.ui.view.custom,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,create_date,datetime,,Created on,datetime,,Created on,False,both
-3,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-4,ref_id,many2one,ir.ui.view,Original View,many2one,ir.ui.view,Original View,True,both
-5,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-6,user_id,many2one,res.users,User,many2one,res.users,User,True,both
-7,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-8,arch,text,,View Architecture,text,,View Architecture,True,both
-9,id,integer,,ID,integer,,ID,False,both
-10,display_name,char,,Display Name,char,,Display Name,False,both
-,,,,
-,,,,
-,,,,
-,,,,
+model;ir.ui.view.custom;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;create_date;datetime;;Created on;datetime;;Created on;False;both
+3;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+4;ref_id;many2one;ir.ui.view;Original View;many2one;ir.ui.view;Original View;True;both
+5;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+6;user_id;many2one;res.users;User;many2one;res.users;User;True;both
+7;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+8;arch;text;;View Architecture;text;;View Architecture;True;both
+9;id;integer;;ID;integer;;ID;False;both
+10;display_name;char;;Display Name;char;;Display Name;False;both
+;;;;
+;;;;
+;;;;
+;;;;

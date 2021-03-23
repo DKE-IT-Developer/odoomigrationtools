@@ -1,22 +1,22 @@
-model,resource.resource,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,time_efficiency,float,,Efficiency Factor,float,,Efficiency Factor,True,both
-3,user_id,many2one,res.users,User,many2one,res.users,User,False,both
-4,name,char,,Name,char,,Name,True,both
-5,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-6,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-7,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-8,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-9,calendar_id,many2one,resource.calendar,Working Time,many2one,resource.calendar,Working Time,True,both
-10,active,boolean,,Active,boolean,,Active,False,both
-11,create_date,datetime,,Created on,datetime,,Created on,False,both
-12,id,integer,,ID,integer,,ID,False,both
-13,resource_type,selection,,Resource Type,selection,,Resource Type,True,both
-14,display_name,char,,Display Name,char,,Display Name,False,both
-,,,,
-15,code,char,,Code,,,,False,version 1
-,,,,
-16,tz,,,,selection,,Timezone,True,version 2
-,,,,
-,,,,
+model;resource.resource;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;time_efficiency;float;;Efficiency Factor;float;;Efficiency Factor;True;both
+3;user_id;many2one;res.users;User;many2one;res.users;User;False;both
+4;name;char;;Name;char;;Name;True;both
+5;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+6;company_id;many2one;res.company;Company;many2one;res.company;Company;False;both
+7;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+8;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+9;calendar_id;many2one;resource.calendar;Working Time;many2one;resource.calendar;Working Time;True;both
+10;active;boolean;;Active;boolean;;Active;False;both
+11;create_date;datetime;;Created on;datetime;;Created on;False;both
+12;id;integer;;ID;integer;;ID;False;both
+13;resource_type;selection;;Resource Type;selection;;Resource Type;True;both
+14;display_name;char;;Display Name;char;;Display Name;False;both
+;;;;
+15;code;char;;Code;;;;False;version 1
+;;;;
+16;tz;;;;selection;;Timezone;True;version 2
+;;;;
+;;;;

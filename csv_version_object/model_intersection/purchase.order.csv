@@ -1,83 +1,82 @@
-model,purchase.order,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,origin,char,,Source Document,char,,Source Document,False,both
-2,message_follower_ids,one2many,mail.followers,Followers,one2many,mail.followers,Followers,False,both
-3,create_date,datetime,,Created on,datetime,,Created on,False,both
-4,order_line,one2many,purchase.order.line,Order Lines,one2many,purchase.order.line,Order Lines,False,both
-5,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
-6,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
-7,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
-8,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-9,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,True,both
-10,invoice_ids,many2many,account.invoice,Bills,many2many,account.move,Bills,False,both
-11,date_order,datetime,,Order Date,datetime,,Order Deadline,True,both
-12,partner_id,many2one,res.partner,Vendor,many2one,res.partner,Vendor,True,both
-13,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
-14,dest_address_id,many2one,res.partner,Drop Ship Address,many2one,res.partner,Drop Ship Address,False,both
-15,create_uid,many2one,res.users,Responsible,many2one,res.users,Created by,False,both
-16,amount_untaxed,monetary,,Untaxed Amount,monetary,,Untaxed Amount,False,both
-17,invoice_status,selection,,Billing Status,selection,,Billing Status,False,both
-18,is_shipped,boolean,,Is shipped,boolean,,Is Shipped,False,both
-19,picking_type_id,many2one,stock.picking.type,Deliver To,many2one,stock.picking.type,Deliver To,True,both
-20,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
-21,id,integer,,ID,integer,,ID,False,both
-22,amount_tax,monetary,,Taxes,monetary,,Taxes,False,both
-23,state,selection,,Status,selection,,Status,False,both
-24,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
-25,fiscal_position_id,many2one,account.fiscal.position,Fiscal Position,many2one,account.fiscal.position,Fiscal Position,False,both
-26,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
-27,incoterm_id,many2one,stock.incoterms,Incoterm,many2one,account.incoterms,Incoterm,False,both
-28,payment_term_id,many2one,account.payment.term,Payment Terms,many2one,account.payment.term,Payment Terms,False,both
-29,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-30,display_name,char,,Display Name,char,,Display Name,False,both
-31,partner_ref,char,,Vendor Reference,char,,Vendor Reference,False,both
-32,picking_ids,many2many,stock.picking,Receptions,many2many,stock.picking,Receptions,False,both
-33,date_approve,date,,Approval Date,datetime,,Confirmation Date,False,both
-34,amount_total,monetary,,Total,monetary,,Total,False,both
-35,picking_count,integer,,Receptions,integer,,Picking count,False,both
-36,group_id,many2one,procurement.group,Procurement Group,many2one,procurement.group,Procurement Group,False,both
-37,invoice_count,integer,,# of Bills,integer,,Bill Count,False,both
-38,name,char,,Order Reference,char,,Order Reference,True,both
-39,date_planned,datetime,,Scheduled Date,datetime,,Receipt Date,False,both
-40,notes,text,,Terms and Conditions,text,,Terms and Conditions,False,both
-41,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-42,product_id,many2one,product.product,Product,many2one,product.product,Product,False,both
-43,default_location_dest_id_usage,selection,,Destination Location Type,selection,,Destination Location Type,False,both
-44,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
-45,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
-,,,,
-46,message_last_post,datetime,,Last Message Date,,,,False,version 1
-47,printer_data,text,,Printer Data,,,,False,version 1
-,,,,
-48,date_calendar_start,,,,datetime,,Date Calendar Start,False,version 2
-49,sale_order_count,,,,integer,,Number of Source Sale,False,version 2
-50,activity_type_icon,,,,char,,Activity Type Icon,False,version 2
-51,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
-52,activity_date_deadline,,,,date,,Next Activity Deadline,False,version 2
-53,receipt_reminder_email,,,,boolean,,Receipt Reminder Email,False,version 2
-54,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
-55,priority,,,,selection,,Priority,False,version 2
-56,mail_reminder_confirmed,,,,boolean,,Reminder Confirmed,False,version 2
-57,activity_user_id,,,,many2one,res.users,Responsible User,False,version 2
-58,effective_date,,,,datetime,,Effective Date,False,version 2
-59,activity_ids,,,,one2many,mail.activity,Activities,False,version 2
-60,activity_type_id,,,,many2one,mail.activity.type,Next Activity Type,False,version 2
-61,access_token,,,,char,,Security Token,False,version 2
-62,activity_exception_icon,,,,char,,Icon,False,version 2
-63,on_time_rate,,,,float,,On-Time Delivery Rate,False,version 2
-64,activity_state,,,,selection,,Activity State,False,version 2
-65,message_has_error,,,,boolean,,Message Delivery error,False,version 2
-66,access_warning,,,,text,,Access warning,False,version 2
-67,activity_exception_decoration,,,,selection,,Activity Exception Decoration,False,version 2
-68,reminder_date_before_receipt,,,,integer,,Days Before Receipt,False,version 2
-69,mail_reception_confirmed,,,,boolean,,Reception Confirmed,False,version 2
-70,message_attachment_count,,,,integer,,Attachment Count,False,version 2
-71,message_has_error_counter,,,,integer,,Number of errors,False,version 2
-72,currency_rate,,,,float,,Currency Rate,False,version 2
-73,user_id,,,,many2one,res.users,Purchase Representative,False,version 2
-74,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
-75,activity_summary,,,,char,,Next Activity Summary,False,version 2
-76,mrp_production_count,,,,integer,,Count of MO Source,False,version 2
-77,access_url,,,,char,,Portal Access URL,False,version 2
-,,,,
-,,,,
+model;purchase.order;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;origin;char;;Source Document;char;;Source Document;False;both
+2;message_follower_ids;one2many;mail.followers;Followers;one2many;mail.followers;Followers;False;both
+3;create_date;datetime;;Created on;datetime;;Created on;False;both
+4;order_line;one2many;purchase.order.line;Order Lines;one2many;purchase.order.line;Order Lines;False;both
+5;message_needaction;boolean;;Action Needed;boolean;;Action Needed;False;both
+6;message_channel_ids;many2many;mail.channel;Followers (Channels);many2many;mail.channel;Followers (Channels);False;both
+7;message_partner_ids;many2many;res.partner;Followers (Partners);many2many;res.partner;Followers (Partners);False;both
+8;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+9;currency_id;many2one;res.currency;Currency;many2one;res.currency;Currency;True;both
+10;invoice_ids;many2many;account.invoice;Bills;many2many;account.move;Bills;False;both
+11;date_order;datetime;;Order Date;datetime;;Order Deadline;True;both
+12;partner_id;many2one;res.partner;Vendor;many2one;res.partner;Vendor;True;both
+13;message_ids;one2many;mail.message;Messages;one2many;mail.message;Messages;False;both
+14;dest_address_id;many2one;res.partner;Drop Ship Address;many2one;res.partner;Drop Ship Address;False;both
+15;create_uid;many2one;res.users;Responsible;many2one;res.users;Created by;False;both
+16;amount_untaxed;monetary;;Untaxed Amount;monetary;;Untaxed Amount;False;both
+17;invoice_status;selection;;Billing Status;selection;;Billing Status;False;both
+18;is_shipped;boolean;;Is shipped;boolean;;Is Shipped;False;both
+19;picking_type_id;many2one;stock.picking.type;Deliver To;many2one;stock.picking.type;Deliver To;True;both
+20;company_id;many2one;res.company;Company;many2one;res.company;Company;True;both
+21;id;integer;;ID;integer;;ID;False;both
+22;amount_tax;monetary;;Taxes;monetary;;Taxes;False;both
+23;state;selection;;Status;selection;;Status;False;both
+24;message_is_follower;boolean;;Is Follower;boolean;;Is Follower;False;both
+25;fiscal_position_id;many2one;account.fiscal.position;Fiscal Position;many2one;account.fiscal.position;Fiscal Position;False;both
+26;message_unread_counter;integer;;Unread Messages Counter;integer;;Unread Messages Counter;False;both
+27;incoterm_id;many2one;stock.incoterms;Incoterm;many2one;account.incoterms;Incoterm;False;both
+28;payment_term_id;many2one;account.payment.term;Payment Terms;many2one;account.payment.term;Payment Terms;False;both
+29;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+30;display_name;char;;Display Name;char;;Display Name;False;both
+31;partner_ref;char;;Vendor Reference;char;;Vendor Reference;False;both
+32;picking_ids;many2many;stock.picking;Receptions;many2many;stock.picking;Receptions;False;both
+33;date_approve;date;;Approval Date;datetime;;Confirmation Date;False;both
+34;amount_total;monetary;;Total;monetary;;Total;False;both
+35;picking_count;integer;;Receptions;integer;;Picking count;False;both
+36;group_id;many2one;procurement.group;Procurement Group;many2one;procurement.group;Procurement Group;False;both
+37;invoice_count;integer;;# of Bills;integer;;Bill Count;False;both
+38;name;char;;Order Reference;char;;Order Reference;True;both
+39;date_planned;datetime;;Scheduled Date;datetime;;Receipt Date;False;both
+40;notes;text;;Terms and Conditions;text;;Terms and Conditions;False;both
+41;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+42;product_id;many2one;product.product;Product;many2one;product.product;Product;False;both
+43;default_location_dest_id_usage;selection;;Destination Location Type;selection;;Destination Location Type;False;both
+44;message_unread;boolean;;Unread Messages;boolean;;Unread Messages;False;both
+45;message_needaction_counter;integer;;Number of Actions;integer;;Number of Actions;False;both
+;;;;
+46;message_last_post;datetime;;Last Message Date;;;;False;version 1
+;;;;
+47;date_calendar_start;;;;datetime;;Date Calendar Start;False;version 2
+48;sale_order_count;;;;integer;;Number of Source Sale;False;version 2
+49;activity_type_icon;;;;char;;Activity Type Icon;False;version 2
+50;message_main_attachment_id;;;;many2one;ir.attachment;Main Attachment;False;version 2
+51;activity_date_deadline;;;;date;;Next Activity Deadline;False;version 2
+52;receipt_reminder_email;;;;boolean;;Receipt Reminder Email;False;version 2
+53;message_has_sms_error;;;;boolean;;SMS Delivery error;False;version 2
+54;priority;;;;selection;;Priority;False;version 2
+55;mail_reminder_confirmed;;;;boolean;;Reminder Confirmed;False;version 2
+56;activity_user_id;;;;many2one;res.users;Responsible User;False;version 2
+57;effective_date;;;;datetime;;Effective Date;False;version 2
+58;activity_ids;;;;one2many;mail.activity;Activities;False;version 2
+59;activity_type_id;;;;many2one;mail.activity.type;Next Activity Type;False;version 2
+60;access_token;;;;char;;Security Token;False;version 2
+61;activity_exception_icon;;;;char;;Icon;False;version 2
+62;on_time_rate;;;;float;;On-Time Delivery Rate;False;version 2
+63;activity_state;;;;selection;;Activity State;False;version 2
+64;message_has_error;;;;boolean;;Message Delivery error;False;version 2
+65;access_warning;;;;text;;Access warning;False;version 2
+66;activity_exception_decoration;;;;selection;;Activity Exception Decoration;False;version 2
+67;reminder_date_before_receipt;;;;integer;;Days Before Receipt;False;version 2
+68;mail_reception_confirmed;;;;boolean;;Reception Confirmed;False;version 2
+69;message_attachment_count;;;;integer;;Attachment Count;False;version 2
+70;message_has_error_counter;;;;integer;;Number of errors;False;version 2
+71;currency_rate;;;;float;;Currency Rate;False;version 2
+72;user_id;;;;many2one;res.users;Purchase Representative;False;version 2
+73;website_message_ids;;;;one2many;mail.message;Website Messages;False;version 2
+74;activity_summary;;;;char;;Next Activity Summary;False;version 2
+75;mrp_production_count;;;;integer;;Count of MO Source;False;version 2
+76;access_url;;;;char;;Portal Access URL;False;version 2
+;;;;
+;;;;

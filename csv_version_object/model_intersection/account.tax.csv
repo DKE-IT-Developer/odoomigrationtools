@@ -1,38 +1,38 @@
-model,account.tax,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,amount_type,selection,,Tax Computation,selection,,Tax Computation,True,both
-2,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-3,create_date,datetime,,Created on,datetime,,Created on,False,both
-4,description,char,,Label on Invoices,char,,Label on Invoices,False,both
-5,sequence,integer,,Sequence,integer,,Sequence,True,both
-6,children_tax_ids,many2many,account.tax,Children Taxes,many2many,account.tax,Children Taxes,False,both
-7,tax_group_id,many2one,account.tax.group,Tax Group,many2one,account.tax.group,Tax Group,True,both
-8,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-9,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
-10,type_tax_use,selection,,Tax Scope,selection,,Tax Type,True,both
-11,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-12,analytic,boolean,,Include in Analytic Cost,boolean,,Include in Analytic Cost,False,both
-13,amount,float,,Amount,float,,Amount,True,both
-14,include_base_amount,boolean,,Affect Base of Subsequent Taxes,boolean,,Affect Base of Subsequent Taxes,False,both
-15,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-16,active,boolean,,Active,boolean,,Active,False,both
-17,display_name,char,,Display Name,char,,Display Name,False,both
-18,price_include,boolean,,Included in Price,boolean,,Included in Price,False,both
-19,id,integer,,ID,integer,,ID,False,both
-20,name,char,,Tax Name,char,,Tax Name,True,both
-,,,,
-21,account_id,many2one,account.account,Tax Account,,,,False,version 1
-22,tax_adjustment,boolean,,Tax adjustment,,,,False,version 1
-23,tag_ids,many2many,account.account.tag,Tags,,,,False,version 1
-24,refund_account_id,many2one,account.account,Tax Account on Refunds,,,,False,version 1
-,,,,
-25,hide_tax_exigibility,,,,boolean,,Hide Use Cash Basis Option,False,version 2
-26,tax_fiscal_country_id,,,,many2one,res.country,Fiscal Country,False,version 2
-27,country_code,,,,char,,Country Code,False,version 2
-28,tax_scope,,,,selection,,Tax Scope,False,version 2
-29,refund_repartition_line_ids,,,,one2many,account.tax.repartition.line,Distribution for Refund Invoices,False,version 2
-30,tax_exigibility,,,,selection,,Tax Due,False,version 2
-31,invoice_repartition_line_ids,,,,one2many,account.tax.repartition.line,Distribution for Invoices,False,version 2
-32,cash_basis_transition_account_id,,,,many2one,account.account,Cash Basis Transition Account,False,version 2
-,,,,
-,,,,
+model;account.tax;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;amount_type;selection;;Tax Computation;selection;;Tax Computation;True;both
+2;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+3;create_date;datetime;;Created on;datetime;;Created on;False;both
+4;description;char;;Label on Invoices;char;;Label on Invoices;False;both
+5;sequence;integer;;Sequence;integer;;Sequence;True;both
+6;children_tax_ids;many2many;account.tax;Children Taxes;many2many;account.tax;Children Taxes;False;both
+7;tax_group_id;many2one;account.tax.group;Tax Group;many2one;account.tax.group;Tax Group;True;both
+8;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+9;company_id;many2one;res.company;Company;many2one;res.company;Company;True;both
+10;type_tax_use;selection;;Tax Scope;selection;;Tax Type;True;both
+11;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+12;analytic;boolean;;Include in Analytic Cost;boolean;;Include in Analytic Cost;False;both
+13;amount;float;;Amount;float;;Amount;True;both
+14;include_base_amount;boolean;;Affect Base of Subsequent Taxes;boolean;;Affect Base of Subsequent Taxes;False;both
+15;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+16;active;boolean;;Active;boolean;;Active;False;both
+17;display_name;char;;Display Name;char;;Display Name;False;both
+18;price_include;boolean;;Included in Price;boolean;;Included in Price;False;both
+19;id;integer;;ID;integer;;ID;False;both
+20;name;char;;Tax Name;char;;Tax Name;True;both
+;;;;
+21;account_id;many2one;account.account;Tax Account;;;;False;version 1
+22;tax_adjustment;boolean;;Tax adjustment;;;;False;version 1
+23;tag_ids;many2many;account.account.tag;Tags;;;;False;version 1
+24;refund_account_id;many2one;account.account;Tax Account on Refunds;;;;False;version 1
+;;;;
+25;hide_tax_exigibility;;;;boolean;;Hide Use Cash Basis Option;False;version 2
+26;tax_fiscal_country_id;;;;many2one;res.country;Fiscal Country;False;version 2
+27;country_code;;;;char;;Country Code;False;version 2
+28;tax_scope;;;;selection;;Tax Scope;False;version 2
+29;refund_repartition_line_ids;;;;one2many;account.tax.repartition.line;Distribution for Refund Invoices;False;version 2
+30;tax_exigibility;;;;selection;;Tax Due;False;version 2
+31;invoice_repartition_line_ids;;;;one2many;account.tax.repartition.line;Distribution for Invoices;False;version 2
+32;cash_basis_transition_account_id;;;;many2one;account.account;Cash Basis Transition Account;False;version 2
+;;;;
+;;;;

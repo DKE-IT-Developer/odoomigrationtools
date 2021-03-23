@@ -1,25 +1,25 @@
-model,mrp.workcenter.productivity,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,date_start,datetime,,Start Date,datetime,,Start Date,True,both
-3,user_id,many2one,res.users,User,many2one,res.users,User,False,both
-4,description,text,,Description,text,,Description,False,both
-5,loss_type,selection,,Effectiveness Category,selection,,Effectiveness,False,both
-6,loss_id,many2one,mrp.workcenter.productivity.loss,Loss Reason,many2one,mrp.workcenter.productivity.loss,Loss Reason,True,both
-7,date_end,datetime,,End Date,datetime,,End Date,False,both
-8,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-9,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-10,workorder_id,many2one,mrp.workorder,Work Order,many2one,mrp.workorder,Work Order,False,both
-11,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-12,workcenter_id,many2one,mrp.workcenter,Work Center,many2one,mrp.workcenter,Work Center,True,both
-13,duration,float,,Duration,float,,Duration,False,both
-14,create_date,datetime,,Created on,datetime,,Created on,False,both
-15,id,integer,,ID,integer,,ID,False,both
-16,display_name,char,,Display Name,char,,Display Name,False,both
-,,,,
-,,,,
-17,production_id,,,,many2one,mrp.production,Manufacturing Order,False,version 2
-18,cost_already_recorded,,,,boolean,,Cost Recorded,False,version 2
-19,company_id,,,,many2one,res.company,Company,True,version 2
-,,,,
-,,,,
+model;mrp.workcenter.productivity;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;date_start;datetime;;Start Date;datetime;;Start Date;True;both
+3;user_id;many2one;res.users;User;many2one;res.users;User;False;both
+4;description;text;;Description;text;;Description;False;both
+5;loss_type;selection;;Effectiveness Category;selection;;Effectiveness;False;both
+6;loss_id;many2one;mrp.workcenter.productivity.loss;Loss Reason;many2one;mrp.workcenter.productivity.loss;Loss Reason;True;both
+7;date_end;datetime;;End Date;datetime;;End Date;False;both
+8;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+9;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+10;workorder_id;many2one;mrp.workorder;Work Order;many2one;mrp.workorder;Work Order;False;both
+11;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+12;workcenter_id;many2one;mrp.workcenter;Work Center;many2one;mrp.workcenter;Work Center;True;both
+13;duration;float;;Duration;float;;Duration;False;both
+14;create_date;datetime;;Created on;datetime;;Created on;False;both
+15;id;integer;;ID;integer;;ID;False;both
+16;display_name;char;;Display Name;char;;Display Name;False;both
+;;;;
+;;;;
+17;production_id;;;;many2one;mrp.production;Manufacturing Order;False;version 2
+18;cost_already_recorded;;;;boolean;;Cost Recorded;False;version 2
+19;company_id;;;;many2one;res.company;Company;True;version 2
+;;;;
+;;;;

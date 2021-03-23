@@ -1,41 +1,41 @@
-model,hr.department,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,message_follower_ids,one2many,mail.followers,Followers,one2many,mail.followers,Followers,False,both
-2,member_ids,one2many,hr.employee,Members,one2many,hr.employee,Members,False,both
-3,create_date,datetime,,Created on,datetime,,Created on,False,both
-4,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
-5,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
-6,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
-7,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-8,expense_sheets_to_approve_count,integer,,Expenses Reports to Approve,integer,,Expenses Reports to Approve,False,both
-9,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
-10,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-11,display_name,char,,Display Name,char,,Display Name,False,both
-12,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
-13,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-14,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-15,id,integer,,ID,integer,,ID,False,both
-16,note,text,,Note,text,,Note,False,both
-17,parent_id,many2one,hr.department,Parent Department,many2one,hr.department,Parent Department,False,both
-18,manager_id,many2one,hr.employee,Manager,many2one,hr.employee,Manager,False,both
-19,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
-20,child_ids,one2many,hr.department,Child Departments,one2many,hr.department,Child Departments,False,both
-21,jobs_ids,one2many,hr.job,Jobs,one2many,hr.job,Jobs,False,both
-22,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-23,active,boolean,,Active,boolean,,Active,False,both
-24,color,integer,,Color Index,integer,,Color Index,False,both
-25,name,char,,Department Name,char,,Department Name,True,both
-26,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
-27,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
-,,,,
-28,message_last_post,datetime,,Last Message Date,,,,False,version 1
-,,,,
-29,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
-30,message_has_error_counter,,,,integer,,Number of errors,False,version 2
-31,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
-32,message_has_error,,,,boolean,,Message Delivery error,False,version 2
-33,complete_name,,,,char,,Complete Name,False,version 2
-34,message_attachment_count,,,,integer,,Attachment Count,False,version 2
-35,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
-,,,,
-,,,,
+model;hr.department;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;message_follower_ids;one2many;mail.followers;Followers;one2many;mail.followers;Followers;False;both
+2;member_ids;one2many;hr.employee;Members;one2many;hr.employee;Members;False;both
+3;create_date;datetime;;Created on;datetime;;Created on;False;both
+4;message_needaction;boolean;;Action Needed;boolean;;Action Needed;False;both
+5;message_channel_ids;many2many;mail.channel;Followers (Channels);many2many;mail.channel;Followers (Channels);False;both
+6;message_partner_ids;many2many;res.partner;Followers (Partners);many2many;res.partner;Followers (Partners);False;both
+7;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+8;expense_sheets_to_approve_count;integer;;Expenses Reports to Approve;integer;;Expenses Reports to Approve;False;both
+9;message_ids;one2many;mail.message;Messages;one2many;mail.message;Messages;False;both
+10;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+11;display_name;char;;Display Name;char;;Display Name;False;both
+12;message_is_follower;boolean;;Is Follower;boolean;;Is Follower;False;both
+13;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+14;company_id;many2one;res.company;Company;many2one;res.company;Company;False;both
+15;id;integer;;ID;integer;;ID;False;both
+16;note;text;;Note;text;;Note;False;both
+17;parent_id;many2one;hr.department;Parent Department;many2one;hr.department;Parent Department;False;both
+18;manager_id;many2one;hr.employee;Manager;many2one;hr.employee;Manager;False;both
+19;message_unread_counter;integer;;Unread Messages Counter;integer;;Unread Messages Counter;False;both
+20;child_ids;one2many;hr.department;Child Departments;one2many;hr.department;Child Departments;False;both
+21;jobs_ids;one2many;hr.job;Jobs;one2many;hr.job;Jobs;False;both
+22;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+23;active;boolean;;Active;boolean;;Active;False;both
+24;color;integer;;Color Index;integer;;Color Index;False;both
+25;name;char;;Department Name;char;;Department Name;True;both
+26;message_unread;boolean;;Unread Messages;boolean;;Unread Messages;False;both
+27;message_needaction_counter;integer;;Number of Actions;integer;;Number of Actions;False;both
+;;;;
+28;message_last_post;datetime;;Last Message Date;;;;False;version 1
+;;;;
+29;message_has_sms_error;;;;boolean;;SMS Delivery error;False;version 2
+30;message_has_error_counter;;;;integer;;Number of errors;False;version 2
+31;message_main_attachment_id;;;;many2one;ir.attachment;Main Attachment;False;version 2
+32;message_has_error;;;;boolean;;Message Delivery error;False;version 2
+33;complete_name;;;;char;;Complete Name;False;version 2
+34;message_attachment_count;;;;integer;;Attachment Count;False;version 2
+35;website_message_ids;;;;one2many;mail.message;Website Messages;False;version 2
+;;;;
+;;;;

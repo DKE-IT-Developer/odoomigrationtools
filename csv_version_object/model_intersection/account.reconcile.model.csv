@@ -1,62 +1,62 @@
-model,account.reconcile.model,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,create_date,datetime,,Created on,datetime,,Created on,False,both
-3,name,char,,Button Label,char,,Name,True,both
-4,sequence,integer,,Sequence,integer,,Sequence,True,both
-5,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-6,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
-7,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-8,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-9,display_name,char,,Display Name,char,,Display Name,False,both
-10,id,integer,,ID,integer,,ID,False,both
-,,,,
-11,second_analytic_account_id,many2one,account.analytic.account,Second Analytic Account,,,,False,version 1
-12,second_account_id,many2one,account.account,Second Account,,,,False,version 1
-13,account_id,many2one,account.account,Account,,,,False,version 1
-14,second_amount_type,selection,,Second Amount type,,,,True,version 1
-15,second_journal_id,many2one,account.journal,Second Journal,,,,False,version 1
-16,tax_id,many2one,account.tax,Tax,,,,False,version 1
-17,analytic_account_id,many2one,account.analytic.account,Analytic Account,,,,False,version 1
-18,second_tax_id,many2one,account.tax,Second Tax,,,,False,version 1
-19,has_second_line,boolean,,Add a second line,,,,False,version 1
-20,journal_id,many2one,account.journal,Journal,,,,False,version 1
-21,label,char,,Journal Item Label,,,,False,version 1
-22,amount,float,,Amount,,,,True,version 1
-23,second_label,char,,Second Journal Item Label,,,,False,version 1
-24,second_amount,float,,Second Amount,,,,True,version 1
-25,amount_type,selection,,Amount type,,,,True,version 1
-,,,,
-26,match_text_location_note,,,,boolean,,Match Text Location Note,False,version 2
-27,decimal_separator,,,,char,,Decimal Separator,False,version 2
-28,match_transaction_type_param,,,,char,,Transaction Type Parameter,False,version 2
-29,match_same_currency,,,,boolean,,Same Currency Matching,False,version 2
-30,match_text_location_reference,,,,boolean,,Match Text Location Reference,False,version 2
-31,match_note,,,,selection,,Note,False,version 2
-32,matching_order,,,,selection,,Matching Order,True,version 2
-33,auto_reconcile,,,,boolean,,Auto-validate,False,version 2
-34,match_amount_max,,,,float,,Amount Max Parameter,False,version 2
-35,match_total_amount_param,,,,float,,Amount Matching %,False,version 2
-36,match_journal_ids,,,,many2many,account.journal,Journals,False,version 2
-37,match_nature,,,,selection,,Amount Nature,True,version 2
-38,match_amount,,,,selection,,Amount,False,version 2
-39,partner_mapping_line_ids,,,,one2many,account.reconcile.model.partner.mapping,Partner Mapping Lines,False,version 2
-40,match_partner,,,,boolean,,Partner Is Set,False,version 2
-41,match_transaction_type,,,,selection,,Transaction Type,False,version 2
-42,match_label_param,,,,char,,Label Parameter,False,version 2
-43,match_partner_category_ids,,,,many2many,res.partner.category,Restrict Partner Categories to,False,version 2
-44,past_months_limit,,,,integer,,Past Months Limit,False,version 2
-45,match_note_param,,,,char,,Note Parameter,False,version 2
-46,match_amount_min,,,,float,,Amount Min Parameter,False,version 2
-47,active,,,,boolean,,Active,False,version 2
-48,rule_type,,,,selection,,Type,True,version 2
-49,show_decimal_separator,,,,boolean,,Show Decimal Separator,False,version 2
-50,number_entries,,,,integer,,Number of entries related to this model,False,version 2
-51,match_total_amount,,,,boolean,,Amount Matching,False,version 2
-52,match_text_location_label,,,,boolean,,Match Text Location Label,False,version 2
-53,match_partner_ids,,,,many2many,res.partner,Restrict Partners to,False,version 2
-54,line_ids,,,,one2many,account.reconcile.model.line,Line,False,version 2
-55,match_label,,,,selection,,Label,False,version 2
-56,to_check,,,,boolean,,To Check,False,version 2
-,,,,
-,,,,
+model;account.reconcile.model;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;create_date;datetime;;Created on;datetime;;Created on;False;both
+3;name;char;;Button Label;char;;Name;True;both
+4;sequence;integer;;Sequence;integer;;Sequence;True;both
+5;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+6;company_id;many2one;res.company;Company;many2one;res.company;Company;True;both
+7;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+8;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+9;display_name;char;;Display Name;char;;Display Name;False;both
+10;id;integer;;ID;integer;;ID;False;both
+;;;;
+11;second_analytic_account_id;many2one;account.analytic.account;Second Analytic Account;;;;False;version 1
+12;second_account_id;many2one;account.account;Second Account;;;;False;version 1
+13;account_id;many2one;account.account;Account;;;;False;version 1
+14;second_amount_type;selection;;Second Amount type;;;;True;version 1
+15;second_journal_id;many2one;account.journal;Second Journal;;;;False;version 1
+16;tax_id;many2one;account.tax;Tax;;;;False;version 1
+17;analytic_account_id;many2one;account.analytic.account;Analytic Account;;;;False;version 1
+18;second_tax_id;many2one;account.tax;Second Tax;;;;False;version 1
+19;has_second_line;boolean;;Add a second line;;;;False;version 1
+20;journal_id;many2one;account.journal;Journal;;;;False;version 1
+21;label;char;;Journal Item Label;;;;False;version 1
+22;amount;float;;Amount;;;;True;version 1
+23;second_label;char;;Second Journal Item Label;;;;False;version 1
+24;second_amount;float;;Second Amount;;;;True;version 1
+25;amount_type;selection;;Amount type;;;;True;version 1
+;;;;
+26;match_text_location_note;;;;boolean;;Match Text Location Note;False;version 2
+27;decimal_separator;;;;char;;Decimal Separator;False;version 2
+28;match_transaction_type_param;;;;char;;Transaction Type Parameter;False;version 2
+29;match_same_currency;;;;boolean;;Same Currency Matching;False;version 2
+30;match_text_location_reference;;;;boolean;;Match Text Location Reference;False;version 2
+31;match_note;;;;selection;;Note;False;version 2
+32;matching_order;;;;selection;;Matching Order;True;version 2
+33;auto_reconcile;;;;boolean;;Auto-validate;False;version 2
+34;match_amount_max;;;;float;;Amount Max Parameter;False;version 2
+35;match_total_amount_param;;;;float;;Amount Matching %;False;version 2
+36;match_journal_ids;;;;many2many;account.journal;Journals;False;version 2
+37;match_nature;;;;selection;;Amount Nature;True;version 2
+38;match_amount;;;;selection;;Amount;False;version 2
+39;partner_mapping_line_ids;;;;one2many;account.reconcile.model.partner.mapping;Partner Mapping Lines;False;version 2
+40;match_partner;;;;boolean;;Partner Is Set;False;version 2
+41;match_transaction_type;;;;selection;;Transaction Type;False;version 2
+42;match_label_param;;;;char;;Label Parameter;False;version 2
+43;match_partner_category_ids;;;;many2many;res.partner.category;Restrict Partner Categories to;False;version 2
+44;past_months_limit;;;;integer;;Past Months Limit;False;version 2
+45;match_note_param;;;;char;;Note Parameter;False;version 2
+46;match_amount_min;;;;float;;Amount Min Parameter;False;version 2
+47;active;;;;boolean;;Active;False;version 2
+48;rule_type;;;;selection;;Type;True;version 2
+49;show_decimal_separator;;;;boolean;;Show Decimal Separator;False;version 2
+50;number_entries;;;;integer;;Number of entries related to this model;False;version 2
+51;match_total_amount;;;;boolean;;Amount Matching;False;version 2
+52;match_text_location_label;;;;boolean;;Match Text Location Label;False;version 2
+53;match_partner_ids;;;;many2many;res.partner;Restrict Partners to;False;version 2
+54;line_ids;;;;one2many;account.reconcile.model.line;Line;False;version 2
+55;match_label;;;;selection;;Label;False;version 2
+56;to_check;;;;boolean;;To Check;False;version 2
+;;;;
+;;;;

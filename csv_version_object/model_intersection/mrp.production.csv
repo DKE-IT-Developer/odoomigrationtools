@@ -1,115 +1,113 @@
-model,mrp.production,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,origin,char,,Source,char,,Source,False,both
-2,message_follower_ids,one2many,mail.followers,Followers,one2many,mail.followers,Followers,False,both
-3,create_date,datetime,,Created on,datetime,,Created on,False,both
-4,message_needaction,boolean,,Action Needed,boolean,,Action Needed,False,both
-5,message_channel_ids,many2many,mail.channel,Followers (Channels),many2many,mail.channel,Followers (Channels),False,both
-6,message_partner_ids,many2many,res.partner,Followers (Partners),many2many,res.partner,Followers (Partners),False,both
-7,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-8,scrap_ids,one2many,stock.scrap,Scraps,one2many,stock.scrap,Scraps,False,both
-9,product_qty,float,,Quantity To Produce,float,,Quantity To Produce,True,both
-10,message_ids,one2many,mail.message,Messages,one2many,mail.message,Messages,False,both
-11,priority,selection,,Priority,selection,,Priority,False,both
-12,procurement_group_id,many2one,procurement.group,Procurement Group,many2one,procurement.group,Procurement Group,False,both
-13,display_name,char,,Display Name,char,,Display Name,False,both
-14,location_src_id,many2one,stock.location,Raw Materials Location,many2one,stock.location,Components Location,True,both
-15,message_is_follower,boolean,,Is Follower,boolean,,Is Follower,False,both
-16,picking_type_id,many2one,stock.picking.type,Picking Type,many2one,stock.picking.type,Operation Type,True,both
-17,date_start,datetime,,Start Date,datetime,,Start Date,False,both
-18,company_id,many2one,res.company,Company,many2one,res.company,Company,True,both
-19,id,integer,,ID,integer,,ID,False,both
-20,product_tmpl_id,many2one,product.template,Product Template,many2one,product.template,Product Template,False,both
-21,state,selection,,State,selection,,State,False,both
-22,bom_id,many2one,mrp.bom,Bill of Material,many2one,mrp.bom,Bill of Material,False,both
-23,message_unread_counter,integer,,Unread Messages Counter,integer,,Unread Messages Counter,False,both
-24,workorder_done_count,integer,,# Done Work Orders,integer,,# Done Work Orders,False,both
-25,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-26,date_finished,datetime,,End Date,datetime,,End Date,False,both
-27,qty_produced,float,,Quantity Produced,float,,Quantity Produced,False,both
-28,move_finished_ids,one2many,stock.move,Finished Products,one2many,stock.move,Finished Products,False,both
-29,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-30,user_id,many2one,res.users,Responsible,many2one,res.users,Responsible,False,both
-31,scrap_count,integer,,Scrap Move,integer,,Scrap Move,False,both
-32,name,char,,Reference,char,,Reference,False,both
-33,unreserve_visible,boolean,,Inventory Unreserve Visible,boolean,,Allowed to Unreserve Production,False,both
-34,workorder_ids,one2many,mrp.workorder,Work Orders,one2many,mrp.workorder,Work Orders,False,both
-35,date_planned_start,datetime,,Deadline Start,datetime,,Scheduled Date,True,both
-36,product_id,many2one,product.product,Product,many2one,product.product,Product,True,both
-37,move_raw_ids,one2many,stock.move,Raw Materials,one2many,stock.move,Components,False,both
-38,product_uom_id,many2one,product.uom,Product Unit of Measure,many2one,uom.uom,Product Unit of Measure,True,both
-39,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-40,date_planned_finished,datetime,,Deadline End,datetime,,Scheduled End Date,False,both
-41,location_dest_id,many2one,stock.location,Finished Products Location,many2one,stock.location,Finished Products Location,True,both
-42,message_unread,boolean,,Unread Messages,boolean,,Unread Messages,False,both
-43,message_needaction_counter,integer,,Number of Actions,integer,,Number of Actions,False,both
-,,,,
-44,check_to_done,boolean,,Check Produced Qty,,,,False,version 1
-45,company_currency_id,many2one,res.currency,Company Currency,,,,False,version 1
-46,sale_ref,char,,Sale Reference,,,,False,version 1
-47,propagate,boolean,,Propagate cancel and split,,,,False,version 1
-48,availability,selection,,Availability,,,,False,version 1
-49,procurement_ids,one2many,procurement.order,Related Procurements,,,,False,version 1
-50,sale_name,char,,Sale Name,,,,False,version 1
-51,workorder_count,integer,,# Work Orders,,,,False,version 1
-52,message_last_post,datetime,,Last Message Date,,,,False,version 1
-53,post_visible,boolean,,Inventory Post Visible,,,,False,version 1
-54,has_moves,boolean,,Has moves,,,,False,version 1
-55,unit_cost,float,,Unit Cost,,,,False,version 1
-56,routing_id,many2one,mrp.routing,Routing,,,,False,version 1
-,,,,
-57,sale_order_count,,,,integer,,Count of Source SO,False,version 2
-58,purchase_order_count,,,,integer,,Count of generated PO,False,version 2
-59,reserve_visible,,,,boolean,,Allowed to Reserve Production,False,version 2
-60,extra_cost,,,,float,,Extra Cost,False,version 2
-61,activity_date_deadline,,,,date,,Next Activity Deadline,False,version 2
-62,consumption,,,,selection,,Consumption,True,version 2
-63,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
-64,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
-65,activity_user_id,,,,many2one,res.users,Responsible User,False,version 2
-66,allowed_product_ids,,,,many2many,product.product,Allowed Product,False,version 2
-67,show_lock,,,,boolean,,Show Lock/unlock buttons,False,version 2
-68,finished_move_line_ids,,,,one2many,stock.move.line,Finished Product,False,version 2
-69,backorder_sequence,,,,integer,,Backorder Sequence,False,version 2
-70,show_lot_ids,,,,boolean,,Display the serial number shortcut on the moves,False,version 2
-71,mrp_production_source_count,,,,integer,,Number of source MO,False,version 2
-72,activity_ids,,,,one2many,mail.activity,Activities,False,version 2
-73,picking_ids,,,,many2many,stock.picking,Picking associated to this manufacturing order,False,version 2
-74,activity_type_id,,,,many2one,mail.activity.type,Next Activity Type,False,version 2
-75,date_deadline,,,,datetime,,Deadline,False,version 2
-76,show_final_lots,,,,boolean,,Show Final Lots,False,version 2
-77,activity_exception_icon,,,,char,,Icon,False,version 2
-78,product_uom_category_id,,,,many2one,uom.category,Category,False,version 2
-79,move_dest_ids,,,,one2many,stock.move,Stock Movements of Produced Goods,False,version 2
-80,components_availability_state,,,,selection,,Components Availability State,False,version 2
-81,activity_state,,,,selection,,Activity State,False,version 2
-82,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
-83,product_tracking,,,,selection,,Tracking,False,version 2
-84,product_uom_qty,,,,float,,Total Quantity,False,version 2
-85,is_planned,,,,boolean,,Its Operations are Planned,False,version 2
-86,message_has_error,,,,boolean,,Message Delivery error,False,version 2
-87,reservation_state,,,,selection,,Material Availability,False,version 2
-88,mrp_production_child_count,,,,integer,,Number of generated MO,False,version 2
-89,move_byproduct_ids,,,,one2many,stock.move,Move Byproduct,False,version 2
-90,use_create_components_lots,,,,boolean,,Create New Lots/Serial Numbers for Components,False,version 2
-91,components_availability,,,,char,,Component Availability,False,version 2
-92,activity_exception_decoration,,,,selection,,Activity Exception Decoration,False,version 2
-93,mrp_production_backorder_count,,,,integer,,Count of linked backorder,False,version 2
-94,activity_type_icon,,,,char,,Activity Type Icon,False,version 2
-95,production_location_id,,,,many2one,stock.location,Production Location,False,version 2
-96,product_description_variants,,,,char,,Custom Description,False,version 2
-97,message_attachment_count,,,,integer,,Attachment Count,False,version 2
-98,show_valuation,,,,boolean,,Show Valuation,False,version 2
-99,delivery_count,,,,integer,,Delivery Orders,False,version 2
-100,message_has_error_counter,,,,integer,,Number of errors,False,version 2
-101,propagate_cancel,,,,boolean,,Propagate cancel and split,False,version 2
-102,json_popover,,,,char,,JSON data for the popover widget,False,version 2
-103,activity_summary,,,,char,,Next Activity Summary,False,version 2
-104,qty_producing,,,,float,,Quantity Producing,False,version 2
-105,is_locked,,,,boolean,,Is Locked,False,version 2
-106,orderpoint_id,,,,many2one,stock.warehouse.orderpoint,Orderpoint,False,version 2
-107,delay_alert_date,,,,datetime,,Delay Alert Date,False,version 2
-108,lot_producing_id,,,,many2one,stock.production.lot,Lot/Serial Number,False,version 2
-109,confirm_cancel,,,,boolean,,Confirm Cancel,False,version 2
-,,,,
-,,,,
+model;mrp.production;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;origin;char;;Source;char;;Source;False;both
+2;message_follower_ids;one2many;mail.followers;Followers;one2many;mail.followers;Followers;False;both
+3;create_date;datetime;;Created on;datetime;;Created on;False;both
+4;message_needaction;boolean;;Action Needed;boolean;;Action Needed;False;both
+5;message_channel_ids;many2many;mail.channel;Followers (Channels);many2many;mail.channel;Followers (Channels);False;both
+6;message_partner_ids;many2many;res.partner;Followers (Partners);many2many;res.partner;Followers (Partners);False;both
+7;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+8;scrap_ids;one2many;stock.scrap;Scraps;one2many;stock.scrap;Scraps;False;both
+9;product_qty;float;;Quantity To Produce;float;;Quantity To Produce;True;both
+10;message_ids;one2many;mail.message;Messages;one2many;mail.message;Messages;False;both
+11;priority;selection;;Priority;selection;;Priority;False;both
+12;procurement_group_id;many2one;procurement.group;Procurement Group;many2one;procurement.group;Procurement Group;False;both
+13;display_name;char;;Display Name;char;;Display Name;False;both
+14;location_src_id;many2one;stock.location;Raw Materials Location;many2one;stock.location;Components Location;True;both
+15;message_is_follower;boolean;;Is Follower;boolean;;Is Follower;False;both
+16;picking_type_id;many2one;stock.picking.type;Picking Type;many2one;stock.picking.type;Operation Type;True;both
+17;date_start;datetime;;Start Date;datetime;;Start Date;False;both
+18;company_id;many2one;res.company;Company;many2one;res.company;Company;True;both
+19;id;integer;;ID;integer;;ID;False;both
+20;product_tmpl_id;many2one;product.template;Product Template;many2one;product.template;Product Template;False;both
+21;state;selection;;State;selection;;State;False;both
+22;bom_id;many2one;mrp.bom;Bill of Material;many2one;mrp.bom;Bill of Material;False;both
+23;message_unread_counter;integer;;Unread Messages Counter;integer;;Unread Messages Counter;False;both
+24;workorder_done_count;integer;;# Done Work Orders;integer;;# Done Work Orders;False;both
+25;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+26;date_finished;datetime;;End Date;datetime;;End Date;False;both
+27;qty_produced;float;;Quantity Produced;float;;Quantity Produced;False;both
+28;move_finished_ids;one2many;stock.move;Finished Products;one2many;stock.move;Finished Products;False;both
+29;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+30;user_id;many2one;res.users;Responsible;many2one;res.users;Responsible;False;both
+31;scrap_count;integer;;Scrap Move;integer;;Scrap Move;False;both
+32;name;char;;Reference;char;;Reference;False;both
+33;unreserve_visible;boolean;;Inventory Unreserve Visible;boolean;;Allowed to Unreserve Production;False;both
+34;workorder_ids;one2many;mrp.workorder;Work Orders;one2many;mrp.workorder;Work Orders;False;both
+35;date_planned_start;datetime;;Deadline Start;datetime;;Scheduled Date;True;both
+36;product_id;many2one;product.product;Product;many2one;product.product;Product;True;both
+37;move_raw_ids;one2many;stock.move;Raw Materials;one2many;stock.move;Components;False;both
+38;product_uom_id;many2one;product.uom;Product Unit of Measure;many2one;uom.uom;Product Unit of Measure;True;both
+39;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+40;date_planned_finished;datetime;;Deadline End;datetime;;Scheduled End Date;False;both
+41;location_dest_id;many2one;stock.location;Finished Products Location;many2one;stock.location;Finished Products Location;True;both
+42;message_unread;boolean;;Unread Messages;boolean;;Unread Messages;False;both
+43;message_needaction_counter;integer;;Number of Actions;integer;;Number of Actions;False;both
+;;;;
+44;check_to_done;boolean;;Check Produced Qty;;;;False;version 1
+45;sale_ref;char;;Sale Reference;;;;False;version 1
+46;propagate;boolean;;Propagate cancel and split;;;;False;version 1
+47;availability;selection;;Availability;;;;False;version 1
+48;procurement_ids;one2many;procurement.order;Related Procurements;;;;False;version 1
+49;sale_name;char;;Sale Name;;;;False;version 1
+50;workorder_count;integer;;# Work Orders;;;;False;version 1
+51;message_last_post;datetime;;Last Message Date;;;;False;version 1
+52;post_visible;boolean;;Inventory Post Visible;;;;False;version 1
+53;has_moves;boolean;;Has moves;;;;False;version 1
+54;routing_id;many2one;mrp.routing;Routing;;;;False;version 1
+;;;;
+55;sale_order_count;;;;integer;;Count of Source SO;False;version 2
+56;purchase_order_count;;;;integer;;Count of generated PO;False;version 2
+57;reserve_visible;;;;boolean;;Allowed to Reserve Production;False;version 2
+58;extra_cost;;;;float;;Extra Cost;False;version 2
+59;activity_date_deadline;;;;date;;Next Activity Deadline;False;version 2
+60;consumption;;;;selection;;Consumption;True;version 2
+61;message_has_sms_error;;;;boolean;;SMS Delivery error;False;version 2
+62;message_main_attachment_id;;;;many2one;ir.attachment;Main Attachment;False;version 2
+63;activity_user_id;;;;many2one;res.users;Responsible User;False;version 2
+64;allowed_product_ids;;;;many2many;product.product;Allowed Product;False;version 2
+65;show_lock;;;;boolean;;Show Lock/unlock buttons;False;version 2
+66;finished_move_line_ids;;;;one2many;stock.move.line;Finished Product;False;version 2
+67;backorder_sequence;;;;integer;;Backorder Sequence;False;version 2
+68;show_lot_ids;;;;boolean;;Display the serial number shortcut on the moves;False;version 2
+69;mrp_production_source_count;;;;integer;;Number of source MO;False;version 2
+70;activity_ids;;;;one2many;mail.activity;Activities;False;version 2
+71;picking_ids;;;;many2many;stock.picking;Picking associated to this manufacturing order;False;version 2
+72;activity_type_id;;;;many2one;mail.activity.type;Next Activity Type;False;version 2
+73;date_deadline;;;;datetime;;Deadline;False;version 2
+74;show_final_lots;;;;boolean;;Show Final Lots;False;version 2
+75;activity_exception_icon;;;;char;;Icon;False;version 2
+76;product_uom_category_id;;;;many2one;uom.category;Category;False;version 2
+77;move_dest_ids;;;;one2many;stock.move;Stock Movements of Produced Goods;False;version 2
+78;components_availability_state;;;;selection;;Components Availability State;False;version 2
+79;activity_state;;;;selection;;Activity State;False;version 2
+80;website_message_ids;;;;one2many;mail.message;Website Messages;False;version 2
+81;product_tracking;;;;selection;;Tracking;False;version 2
+82;product_uom_qty;;;;float;;Total Quantity;False;version 2
+83;is_planned;;;;boolean;;Its Operations are Planned;False;version 2
+84;message_has_error;;;;boolean;;Message Delivery error;False;version 2
+85;reservation_state;;;;selection;;Material Availability;False;version 2
+86;mrp_production_child_count;;;;integer;;Number of generated MO;False;version 2
+87;move_byproduct_ids;;;;one2many;stock.move;Move Byproduct;False;version 2
+88;use_create_components_lots;;;;boolean;;Create New Lots/Serial Numbers for Components;False;version 2
+89;components_availability;;;;char;;Component Availability;False;version 2
+90;activity_exception_decoration;;;;selection;;Activity Exception Decoration;False;version 2
+91;mrp_production_backorder_count;;;;integer;;Count of linked backorder;False;version 2
+92;activity_type_icon;;;;char;;Activity Type Icon;False;version 2
+93;production_location_id;;;;many2one;stock.location;Production Location;False;version 2
+94;product_description_variants;;;;char;;Custom Description;False;version 2
+95;message_attachment_count;;;;integer;;Attachment Count;False;version 2
+96;show_valuation;;;;boolean;;Show Valuation;False;version 2
+97;delivery_count;;;;integer;;Delivery Orders;False;version 2
+98;message_has_error_counter;;;;integer;;Number of errors;False;version 2
+99;propagate_cancel;;;;boolean;;Propagate cancel and split;False;version 2
+100;json_popover;;;;char;;JSON data for the popover widget;False;version 2
+101;activity_summary;;;;char;;Next Activity Summary;False;version 2
+102;qty_producing;;;;float;;Quantity Producing;False;version 2
+103;is_locked;;;;boolean;;Is Locked;False;version 2
+104;orderpoint_id;;;;many2one;stock.warehouse.orderpoint;Orderpoint;False;version 2
+105;delay_alert_date;;;;datetime;;Delay Alert Date;False;version 2
+106;lot_producing_id;;;;many2one;stock.production.lot;Lot/Serial Number;False;version 2
+107;confirm_cancel;;;;boolean;;Confirm Cancel;False;version 2
+;;;;
+;;;;

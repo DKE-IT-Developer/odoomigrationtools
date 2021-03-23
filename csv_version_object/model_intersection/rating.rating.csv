@@ -1,37 +1,37 @@
-model,rating.rating,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,partner_id,many2one,res.partner,Customer,many2one,res.partner,Customer,False,both
-3,display_name,char,,Display Name,char,,Display Name,False,both
-4,feedback,text,,Feedback reason,text,,Comment,False,both
-5,rating,float,,Rating,float,,Rating Value,False,both
-6,access_token,char,,Security Token,char,,Security Token,False,both
-7,res_model,char,,Document Model,char,,Document Model,False,both
-8,consumed,boolean,,Filled Rating,boolean,,Filled Rating,False,both
-9,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-10,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-11,res_name,char,,Resource Name,char,,Resource name,False,both
-12,message_id,many2one,mail.message,Linked message,many2one,mail.message,Message,False,both
-13,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-14,create_date,datetime,,Created on,datetime,,Submitted on,False,both
-15,rated_partner_id,many2one,res.partner,Rated Partner,many2one,res.partner,Rated person,False,both
-16,res_id,integer,,Document ID,integer,,Document,True,both
-17,id,integer,,ID,integer,,ID,False,both
-,,,,
-18,website_published,boolean,,Published,,,,False,version 1
-,,,,
-19,is_internal,,,,boolean,,Visible Internally Only,False,version 2
-20,rating_text,,,,selection,,Rating,False,version 2
-21,publisher_comment,,,,text,,Publisher comment,False,version 2
-22,rating_image,,,,binary,,Image,False,version 2
-23,resource_ref,,,,reference,,Resource Ref,False,version 2
-24,parent_res_id,,,,integer,,Parent Document,False,version 2
-25,parent_res_model_id,,,,many2one,ir.model,Parent Related Document Model,False,version 2
-26,parent_res_name,,,,char,,Parent Document Name,False,version 2
-27,publisher_datetime,,,,datetime,,Commented on,False,version 2
-28,res_model_id,,,,many2one,ir.model,Related Document Model,False,version 2
-29,parent_ref,,,,reference,,Parent Ref,False,version 2
-30,publisher_id,,,,many2one,res.partner,Commented by,False,version 2
-31,parent_res_model,,,,char,,Parent Document Model,False,version 2
-,,,,
-,,,,
+model;rating.rating;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;partner_id;many2one;res.partner;Customer;many2one;res.partner;Customer;False;both
+3;display_name;char;;Display Name;char;;Display Name;False;both
+4;feedback;text;;Feedback reason;text;;Comment;False;both
+5;rating;float;;Rating;float;;Rating Value;False;both
+6;access_token;char;;Security Token;char;;Security Token;False;both
+7;res_model;char;;Document Model;char;;Document Model;False;both
+8;consumed;boolean;;Filled Rating;boolean;;Filled Rating;False;both
+9;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+10;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+11;res_name;char;;Resource Name;char;;Resource name;False;both
+12;message_id;many2one;mail.message;Linked message;many2one;mail.message;Message;False;both
+13;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+14;create_date;datetime;;Created on;datetime;;Submitted on;False;both
+15;rated_partner_id;many2one;res.partner;Rated Partner;many2one;res.partner;Rated person;False;both
+16;res_id;integer;;Document ID;integer;;Document;True;both
+17;id;integer;;ID;integer;;ID;False;both
+;;;;
+18;website_published;boolean;;Published;;;;False;version 1
+;;;;
+19;is_internal;;;;boolean;;Visible Internally Only;False;version 2
+20;rating_text;;;;selection;;Rating;False;version 2
+21;publisher_comment;;;;text;;Publisher comment;False;version 2
+22;rating_image;;;;binary;;Image;False;version 2
+23;resource_ref;;;;reference;;Resource Ref;False;version 2
+24;parent_res_id;;;;integer;;Parent Document;False;version 2
+25;parent_res_model_id;;;;many2one;ir.model;Parent Related Document Model;False;version 2
+26;parent_res_name;;;;char;;Parent Document Name;False;version 2
+27;publisher_datetime;;;;datetime;;Commented on;False;version 2
+28;res_model_id;;;;many2one;ir.model;Related Document Model;False;version 2
+29;parent_ref;;;;reference;;Parent Ref;False;version 2
+30;publisher_id;;;;many2one;res.partner;Commented by;False;version 2
+31;parent_res_model;;;;char;;Parent Document Model;False;version 2
+;;;;
+;;;;

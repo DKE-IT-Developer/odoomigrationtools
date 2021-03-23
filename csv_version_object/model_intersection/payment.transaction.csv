@@ -1,59 +1,50 @@
-model,payment.transaction,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,state_message,text,,Message,text,,Message,False,both
-2,create_date,datetime,,Creation Date,datetime,,Created on,False,both
-3,reference,char,,Reference,char,,Reference,True,both
-4,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-5,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,True,both
-6,acquirer_id,many2one,payment.acquirer,Acquirer,many2one,payment.acquirer,Acquirer,True,both
-7,fees,float,,Fees,monetary,,Fees,False,both
-8,partner_id,many2one,res.partner,Partner,many2one,res.partner,Customer,False,both
-9,id,integer,,ID,integer,,ID,False,both
-10,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-11,display_name,char,,Display Name,char,,Display Name,False,both
-12,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-13,partner_name,char,,Partner Name,char,,Partner Name,False,both
-14,amount,float,,Amount,monetary,,Amount,True,both
-15,state,selection,,Status,selection,,Status,True,both
-16,type,selection,,Type,selection,,Type,True,both
-17,partner_country_id,many2one,res.country,Country,many2one,res.country,Country,True,both
-18,acquirer_reference,char,,Acquirer Reference,char,,Acquirer Reference,False,both
-19,partner_address,char,,Address,char,,Address,False,both
-20,partner_email,char,,Email,char,,Email,False,both
-21,partner_lang,selection,,Language,selection,,Language,False,both
-22,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-23,payment_token_id,many2one,payment.token,Payment Token,many2one,payment.token,Payment Token,False,both
-24,partner_zip,char,,Zip,char,,Zip,False,both
-25,html_3ds,char,,3D Secure HTML,char,,3D Secure HTML,False,both
-26,partner_city,char,,City,char,,City,False,both
-27,partner_phone,char,,Phone,char,,Phone,False,both
-,,,,
-28,callback_eval,char,,S2S Callback,,,,False,version 1
-29,name_sender,char,,On Behalf of,,,,False,version 1
-30,bank_sender,many2one,res.bank,Your Bank,,,,False,version 1
-31,partner_account_name,char,,Partner Account Name,,,,False,version 1
-32,sale_order_id,many2one,sale.order,Sale Order,,,,False,version 1
-33,upload_image,binary,,Image,,,,False,version 1
-34,so_state,selection,,Sale Order State,,,,False,version 1
-35,account_number_sender,char,,Account Number,,,,False,version 1
-36,date_validate,datetime,,Validation Date,,,,False,version 1
-37,bank_sender_other,char,,Bank Name,,,,False,version 1
-38,note,text,,Note,,,,False,version 1
-39,partner_bank,char,,Partner Bank,,,,False,version 1
-40,partner_account_number,char,,Partner Account Number,,,,False,version 1
-,,,,
-41,is_processed,,,,boolean,,Has the payment been post processed,False,version 2
-42,date,,,,datetime,,Validation Date,False,version 2
-43,sale_order_ids_nbr,,,,integer,,# of Sales Orders,False,version 2
-44,callback_method,,,,char,,Callback Method,False,version 2
-45,sale_order_ids,,,,many2many,sale.order,Sales Orders,False,version 2
-46,payment_id,,,,many2one,account.payment,Payment,False,version 2
-47,invoice_ids_nbr,,,,integer,,# of Invoices,False,version 2
-48,callback_model_id,,,,many2one,ir.model,Callback Document Model,False,version 2
-49,invoice_ids,,,,many2many,account.move,Invoices,False,version 2
-50,callback_hash,,,,char,,Callback Hash,False,version 2
-51,provider,,,,selection,,Provider,False,version 2
-52,callback_res_id,,,,integer,,Callback Document ID,False,version 2
-53,return_url,,,,char,,Return URL after payment,False,version 2
-,,,,
-,,,,
+model;payment.transaction;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;state_message;text;;Message;text;;Message;False;both
+2;create_date;datetime;;Creation Date;datetime;;Created on;False;both
+3;reference;char;;Reference;char;;Reference;True;both
+4;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+5;currency_id;many2one;res.currency;Currency;many2one;res.currency;Currency;True;both
+6;acquirer_id;many2one;payment.acquirer;Acquirer;many2one;payment.acquirer;Acquirer;True;both
+7;fees;float;;Fees;monetary;;Fees;False;both
+8;partner_id;many2one;res.partner;Partner;many2one;res.partner;Customer;False;both
+9;id;integer;;ID;integer;;ID;False;both
+10;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+11;display_name;char;;Display Name;char;;Display Name;False;both
+12;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+13;partner_name;char;;Partner Name;char;;Partner Name;False;both
+14;partner_phone;char;;Phone;char;;Phone;False;both
+15;state;selection;;Status;selection;;Status;True;both
+16;type;selection;;Type;selection;;Type;True;both
+17;partner_country_id;many2one;res.country;Country;many2one;res.country;Country;True;both
+18;acquirer_reference;char;;Acquirer Reference;char;;Acquirer Reference;False;both
+19;partner_address;char;;Address;char;;Address;False;both
+20;partner_email;char;;Email;char;;Email;False;both
+21;partner_lang;selection;;Language;selection;;Language;False;both
+22;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+23;payment_token_id;many2one;payment.token;Payment Token;many2one;payment.token;Payment Token;False;both
+24;partner_zip;char;;Zip;char;;Zip;False;both
+25;html_3ds;char;;3D Secure HTML;char;;3D Secure HTML;False;both
+26;partner_city;char;;City;char;;City;False;both
+27;amount;float;;Amount;monetary;;Amount;True;both
+;;;;
+28;so_state;selection;;Sale Order State;;;;False;version 1
+29;callback_eval;char;;S2S Callback;;;;False;version 1
+30;date_validate;datetime;;Validation Date;;;;False;version 1
+31;sale_order_id;many2one;sale.order;Sale Order;;;;False;version 1
+;;;;
+32;is_processed;;;;boolean;;Has the payment been post processed;False;version 2
+33;date;;;;datetime;;Validation Date;False;version 2
+34;sale_order_ids_nbr;;;;integer;;# of Sales Orders;False;version 2
+35;callback_method;;;;char;;Callback Method;False;version 2
+36;sale_order_ids;;;;many2many;sale.order;Sales Orders;False;version 2
+37;payment_id;;;;many2one;account.payment;Payment;False;version 2
+38;invoice_ids_nbr;;;;integer;;# of Invoices;False;version 2
+39;callback_model_id;;;;many2one;ir.model;Callback Document Model;False;version 2
+40;invoice_ids;;;;many2many;account.move;Invoices;False;version 2
+41;callback_hash;;;;char;;Callback Hash;False;version 2
+42;provider;;;;selection;;Provider;False;version 2
+43;callback_res_id;;;;integer;;Callback Document ID;False;version 2
+44;return_url;;;;char;;Return URL after payment;False;version 2
+;;;;
+;;;;

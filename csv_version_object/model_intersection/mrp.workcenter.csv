@@ -1,48 +1,48 @@
-model,mrp.workcenter,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,code,char,,Code,char,,Code,False,both
-2,time_ids,one2many,mrp.workcenter.productivity,Time Logs,one2many,mrp.workcenter.productivity,Time Logs,False,both
-3,workorder_pending_count,integer,,Total Running Orders,integer,,Total Pending Orders,False,both
-4,time_stop,float,,Time after prod.,float,,Time after prod.,False,both
-5,color,integer,,Color,integer,,Color,False,both
-6,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-7,create_date,datetime,,Created on,datetime,,Created on,False,both
-8,id,integer,,ID,integer,,ID,False,both
-9,blocked_time,float,,Blocked Time,float,,Blocked Time,False,both
-10,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-11,time_efficiency,float,,Efficiency Factor,float,,Time Efficiency,False,both
-12,capacity,float,,Capacity,float,,Capacity,False,both
-13,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-14,resource_id,many2one,resource.resource,Resource,many2one,resource.resource,Resource,True,both
-15,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-16,note,text,,Description,text,,Description,False,both
-17,workcenter_load,float,,Work Center Load,float,,Work Center Load,False,both
-18,performance,integer,,Performance,integer,,Performance,False,both
-19,order_ids,one2many,mrp.workorder,Orders,one2many,mrp.workorder,Orders,False,both
-20,productive_time,float,,Productive Time,float,,Productive Time,False,both
-21,routing_line_ids,one2many,mrp.routing.workcenter,Routing Lines,one2many,mrp.routing.workcenter,Routing Lines,False,both
-22,workorder_ready_count,integer,,# Read Work Orders,integer,,# Read Work Orders,False,both
-23,sequence,integer,,Sequence,integer,,Sequence,True,both
-24,workorder_progress_count,integer,,Total Running Orders,integer,,Total Running Orders,False,both
-25,workorder_late_count,integer,,Total Late Orders,integer,,Total Late Orders,False,both
-26,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-27,active,boolean,,Active,boolean,,Active,False,both
-28,time_start,float,,Time before prod.,float,,Time before prod.,False,both
-29,oee,float,,Oee,float,,Oee,False,both
-30,display_name,char,,Display Name,char,,Display Name,False,both
-31,oee_target,float,,OEE Target,float,,OEE Target,False,both
-32,name,char,,Name,char,,Work Center,False,both
-33,workorder_count,integer,,# Work Orders,integer,,# Work Orders,False,both
-34,working_state,selection,,Status,selection,,Workcenter Status,False,both
-,,,,
-35,user_id,many2one,res.users,User,,,,False,version 1
-36,calendar_id,many2one,resource.calendar,Working Time,,,,False,version 1
-37,resource_type,selection,,Resource Type,,,,True,version 1
-,,,,
-38,tz,,,,selection,,Timezone,False,version 2
-39,costs_hour,,,,float,,Cost per hour,False,version 2
-40,alternative_workcenter_ids,,,,many2many,mrp.workcenter,Alternative Workcenters,False,version 2
-41,costs_hour_account_id,,,,many2one,account.analytic.account,Analytic Account,False,version 2
-42,resource_calendar_id,,,,many2one,resource.calendar,Working Hours,False,version 2
-,,,,
-,,,,
+model;mrp.workcenter;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;code;char;;Code;char;;Code;False;both
+2;time_ids;one2many;mrp.workcenter.productivity;Time Logs;one2many;mrp.workcenter.productivity;Time Logs;False;both
+3;workorder_pending_count;integer;;Total Running Orders;integer;;Total Pending Orders;False;both
+4;time_stop;float;;Time after prod.;float;;Time after prod.;False;both
+5;color;integer;;Color;integer;;Color;False;both
+6;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+7;create_date;datetime;;Created on;datetime;;Created on;False;both
+8;id;integer;;ID;integer;;ID;False;both
+9;blocked_time;float;;Blocked Time;float;;Blocked Time;False;both
+10;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+11;time_efficiency;float;;Efficiency Factor;float;;Time Efficiency;False;both
+12;capacity;float;;Capacity;float;;Capacity;False;both
+13;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+14;resource_id;many2one;resource.resource;Resource;many2one;resource.resource;Resource;True;both
+15;company_id;many2one;res.company;Company;many2one;res.company;Company;False;both
+16;note;text;;Description;text;;Description;False;both
+17;workcenter_load;float;;Work Center Load;float;;Work Center Load;False;both
+18;performance;integer;;Performance;integer;;Performance;False;both
+19;order_ids;one2many;mrp.workorder;Orders;one2many;mrp.workorder;Orders;False;both
+20;productive_time;float;;Productive Time;float;;Productive Time;False;both
+21;routing_line_ids;one2many;mrp.routing.workcenter;Routing Lines;one2many;mrp.routing.workcenter;Routing Lines;False;both
+22;workorder_ready_count;integer;;# Read Work Orders;integer;;# Read Work Orders;False;both
+23;sequence;integer;;Sequence;integer;;Sequence;True;both
+24;workorder_progress_count;integer;;Total Running Orders;integer;;Total Running Orders;False;both
+25;workorder_late_count;integer;;Total Late Orders;integer;;Total Late Orders;False;both
+26;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+27;active;boolean;;Active;boolean;;Active;False;both
+28;time_start;float;;Time before prod.;float;;Time before prod.;False;both
+29;oee;float;;Oee;float;;Oee;False;both
+30;display_name;char;;Display Name;char;;Display Name;False;both
+31;oee_target;float;;OEE Target;float;;OEE Target;False;both
+32;name;char;;Name;char;;Work Center;False;both
+33;workorder_count;integer;;# Work Orders;integer;;# Work Orders;False;both
+34;working_state;selection;;Status;selection;;Workcenter Status;False;both
+;;;;
+35;user_id;many2one;res.users;User;;;;False;version 1
+36;calendar_id;many2one;resource.calendar;Working Time;;;;False;version 1
+37;resource_type;selection;;Resource Type;;;;True;version 1
+;;;;
+38;tz;;;;selection;;Timezone;False;version 2
+39;costs_hour;;;;float;;Cost per hour;False;version 2
+40;alternative_workcenter_ids;;;;many2many;mrp.workcenter;Alternative Workcenters;False;version 2
+41;costs_hour_account_id;;;;many2one;account.analytic.account;Analytic Account;False;version 2
+42;resource_calendar_id;;;;many2one;resource.calendar;Working Hours;False;version 2
+;;;;
+;;;;

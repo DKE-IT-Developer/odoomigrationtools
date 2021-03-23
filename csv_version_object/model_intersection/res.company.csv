@@ -1,219 +1,177 @@
-model,res.company,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,fiscalyear_lock_date,date,,Lock Date,date,,Lock Date,False,both
-2,bank_account_code_prefix,char,,Prefix of the bank accounts,char,,Prefix of the bank accounts,False,both
-3,cash_account_code_prefix,char,,Prefix of the cash accounts,char,,Prefix of the cash accounts,False,both
-4,create_date,datetime,,Created on,datetime,,Created on,False,both
-5,sequence,integer,,Sequence,integer,,Sequence,False,both
-6,security_lead,float,,Sales Safety Days,float,,Sales Safety Days,True,both
-7,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-8,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,True,both
-9,anglo_saxon_accounting,boolean,,Use anglo-saxon accounting,boolean,,Use anglo-saxon accounting,False,both
-10,logo_web,binary,,Logo web,binary,,Logo Web,False,both
-11,street,char,,Street,char,,Street,False,both
-12,fiscalyear_last_day,integer,,Fiscalyear last day,integer,,Fiscalyear Last Day,True,both
-13,logo,binary,,Image,binary,,Company Logo,False,both
-14,property_stock_valuation_account_id,many2one,account.account,Account Template for Stock Valuation,many2one,account.account,Account Template for Stock Valuation,False,both
-15,partner_id,many2one,res.partner,Partner,many2one,res.partner,Partner,True,both
-16,expects_chart_of_accounts,boolean,,Expects a Chart of Accounts,boolean,,Expects a Chart of Accounts,False,both
-17,po_double_validation_amount,monetary,,Double validation amount,monetary,,Double validation amount,False,both
-18,manufacturing_lead,float,,Manufacturing Lead Time,float,,Manufacturing Lead Time,True,both
-19,font,many2one,res.font,Font,selection,,Font,False,both
-20,display_name,char,,Display Name,char,,Display Name,False,both
-21,zip,char,,Zip,char,,Zip,False,both
-22,property_stock_account_output_categ_id,many2one,account.account,Output Account for Stock Valuation,many2one,account.account,Output Account for Stock Valuation,False,both
-23,transfer_account_id,many2one,account.account,Inter-Banks Transfer Account,many2one,account.account,Inter-Banks Transfer Account,False,both
-24,bank_journal_ids,one2many,account.journal,Bank Journals,one2many,account.journal,Bank Journals,False,both
-25,country_id,many2one,res.country,Country,many2one,res.country,Country,False,both
-26,expense_currency_exchange_account_id,many2one,account.account,Loss Exchange Rate Account,many2one,account.account,Loss Exchange Rate Account,False,both
-27,id,integer,,ID,integer,,ID,False,both
-28,website,char,,Website,char,,Website Link,False,both
-29,parent_id,many2one,res.company,Parent Company,many2one,res.company,Parent Company,False,both
-30,paperformat_id,many2one,report.paperformat,Paper format,many2one,report.paperformat,Paper format,False,both
-31,po_lock,selection,,Purchase Order Modification,selection,,Purchase Order Modification,False,both
-32,currency_exchange_journal_id,many2one,account.journal,Exchange Gain or Loss Journal,many2one,account.journal,Exchange Gain or Loss Journal,False,both
-33,vat,char,,Tax ID,char,,Tax ID,False,both
-34,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-35,bank_ids,one2many,res.partner.bank,Bank Accounts,one2many,res.partner.bank,Bank Accounts,False,both
-36,city,char,,City,char,,City,False,both
-37,street2,char,,Street2,char,,Street2,False,both
-38,child_ids,one2many,res.company,Child Companies,one2many,res.company,Child Companies,False,both
-39,phone,char,,Phone,char,,Phone,False,both
-40,user_ids,many2many,res.users,Accepted Users,many2many,res.users,Accepted Users,False,both
-41,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-42,company_registry,char,,Company registry,char,,Company Registry,False,both
-43,name,char,,Company Name,char,,Company Name,True,both
-44,po_double_validation,selection,,Levels of Approvals,selection,,Levels of Approvals,False,both
-45,chart_template_id,many2one,account.chart.template,Chart template id,many2one,account.chart.template,Chart Template,False,both
-46,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-47,property_stock_account_input_categ_id,many2one,account.account,Input Account for Stock Valuation,many2one,account.account,Input Account for Stock Valuation,False,both
-48,po_lead,float,,Purchase Lead Time,float,,Purchase Lead Time,True,both
-49,period_lock_date,date,,Lock Date for Non-Advisers,date,,Lock Date for Non-Advisers,False,both
-50,state_id,many2one,res.country.state,Fed. State,many2one,res.country.state,Fed. State,False,both
-51,fiscalyear_last_month,selection,,Fiscalyear last month,selection,,Fiscalyear Last Month,True,both
-52,tax_calculation_rounding_method,selection,,Tax Calculation Rounding Method,selection,,Tax Calculation Rounding Method,False,both
-53,internal_transit_location_id,many2one,stock.location,Internal Transit Location,many2one,stock.location,Internal Transit Location,False,both
-54,email,char,,Email,char,,Email,False,both
-55,income_currency_exchange_account_id,many2one,account.account,Gain Exchange Rate Account,many2one,account.account,Gain Exchange Rate Account,False,both
-,,,,
-56,rml_footer,text,,Custom Report Footer,,,,False,version 1
-57,waboxapp_phone_number_broadcast,char,,Waboxapp Phone Number for Broadcast,,,,False,version 1
-58,rml_paper_format,selection,,Paper Format,,,,True,version 1
-59,kelurahan_id,many2one,res.kelurahan,Kelurahan,,,,False,version 1
-60,warkana_firebase_authorization,char,,WArkana Firebase Authorization,,,,False,version 1
-61,product_deposit_id,many2one,product.product,Product deposit id,,,,False,version 1
-62,sale_deposit_account_id,many2one,account.account,Sale deposit account id,,,,False,version 1
-63,discount_efaktur_display,selection,,Display discount on efaktur,,,,False,version 1
-64,account_no,char,,Account No.,,,,False,version 1
-65,bca_api_account_number,char,,Account Number,,,,False,version 1
-66,premium_partner_days_limit,integer,,Premium partner days limit,,,,False,version 1
-67,blok,char,,Blok,,,,False,version 1
-68,bca_api_base_url,char,,Base URL,,,,False,version 1
-69,discount_account_id,many2one,account.account,Discount Account,,,,False,version 1
-70,propagation_minimum_delta,integer,,Minimum Delta for Propagation of a Date Change on moves linked together,,,,False,version 1
-71,fax,char,,Fax,,,,False,version 1
-72,premium_partner_value_limit,monetary,,Premium partner value limit,,,,False,version 1
-73,ongkir_city_id,many2one,res.city.ongkir,Location,,,,False,version 1
-74,bca_api_corporate_id,char,,Corporate ID,,,,False,version 1
-75,java_path,char,,Java Path,,,,False,version 1
-76,rml_header2,text,,RML Internal Header,,,,True,version 1
-77,kabupaten_id,many2one,res.kabupaten,Kabupaten,,,,False,version 1
-78,rml_header1,char,,Company Tagline,,,,False,version 1
-79,credit_point_feed_create,float,,CP for Posting Feed,,,,False,version 1
-80,waboxapp_token,char,,Waboxapp Token,,,,False,version 1
-81,sale_note,text,,Default Terms and Conditions,,,,False,version 1
-82,rml_header,text,,Rml header,,,,True,version 1
-83,bca_api_api_key,char,,API Key,,,,False,version 1
-84,accounts_code_digits,integer,,Number of digits in an account code,,,,False,version 1
-85,escpos_gs,integer,,GS,,,,False,version 1
-86,rt,char,,RT,,,,False,version 1
-87,bca_api_access_token,char,,Access Token,,,,False,version 1
-88,rw,char,,RW,,,,False,version 1
-89,bca_api_pending_statement_id,many2one,account.bank.statement,BCA Pending Statement,,,,False,version 1
-90,notification_partner_id,many2one,res.partner,Notification Partner,,,,False,version 1
-91,waboxapp_phone_number,char,,Waboxapp Phone Number,,,,False,version 1
-92,rml_footer_readonly,text,,Report Footer,,,,False,version 1
-93,warkana_firebase_token,char,,WArkana Firebase Token,,,,False,version 1
-94,kecamatan_id,many2one,res.kecamatan,Kecamatan,,,,False,version 1
-95,bca_api_client_id,char,,Client ID,,,,False,version 1
-96,count_last_invoices_to_trust,integer,,Count last invoices to trust,,,,False,version 1
-97,warkana_customer_ok,boolean,,Allow WArkana for Customer,,,,False,version 1
-98,nomor,char,,Nomor,,,,False,version 1
-99,bca_api_api_secret,char,,API Secret,,,,False,version 1
-100,custom_footer,boolean,,Custom footer,,,,False,version 1
-101,ongkir_subdistrict_id,many2one,res.subdistrict.ongkir,Subdistrict,,,,False,version 1
-102,normal_partner_days_limit,integer,,Normal partner days limit,,,,False,version 1
-103,warkana_internal_ok,boolean,,Allow WArkana for Internal,,,,False,version 1
-104,project_time_mode_id,many2one,product.uom,Project Time Unit,,,,False,version 1
-105,purchase_discount_account_id,many2one,account.account,Purchase Discount Account,,,,False,version 1
-106,bca_api_journal_id,many2one,account.journal,BCA Journal,,,,False,version 1
-107,good_partner_days_limit,integer,,Good partner days limit,,,,False,version 1
-108,overdue_msg,text,,Overdue Payments Message,,,,False,version 1
-109,bca_api_client_secret,char,,Client Secret,,,,False,version 1
-110,escpos_esc,integer,,ESC,,,,False,version 1
-111,minimum_days,integer,,Number of Min Transaction,,,,False,version 1
-112,rml_header3,text,,RML Internal Header for Landscape Reports,,,,True,version 1
-,,,,
-113,invoicing_switch_threshold,,,,date,,Invoicing Switch Threshold,False,version 2
-114,days_to_purchase,,,,float,,Days to Purchase,False,version 2
-115,stock_move_email_validation,,,,boolean,,Email Confirmation picking,False,version 2
-116,account_revaluation_expense_provision_account_id,,,,many2one,account.account,Expense Provision Account,False,version 2
-117,revenue_accrual_account_id,,,,many2one,account.account,Revenue Accrual Account,False,version 2
-118,country_code,,,,char,,Country Code,False,version 2
-119,quotation_validity_days,,,,integer,,Default Quotation Validity (Days),False,version 2
-120,account_invoice_onboarding_state,,,,selection,,State of the account invoice onboarding panel,False,version 2
-121,qr_code,,,,boolean,,Display QR-code on invoices,False,version 2
-122,extract_show_ocr_option_selection,,,,selection,,Send mode on invoices attachments,False,version 2
-123,primary_color,,,,char,,Primary Color,False,version 2
-124,invoice_is_print,,,,boolean,,Print by default,False,version 2
-125,external_report_layout_id,,,,many2one,ir.ui.view,Document Template,False,version 2
-126,invoice_is_email,,,,boolean,,Email by default,False,version 2
-127,account_tax_original_periodicity_reminder_day,,,,integer,,Start from original,False,version 2
-128,account_tax_periodicity,,,,selection,,Delay units,False,version 2
-129,snailmail_cover,,,,boolean,,Add a Cover Page,False,version 2
-130,tax_cash_basis_journal_id,,,,many2one,account.journal,Cash Basis Journal,False,version 2
-131,account_tax_next_activity_type,,,,many2one,mail.activity.type,Account Tax Next Activity Type,False,version 2
-132,account_setup_fy_data_state,,,,selection,,State of the onboarding fiscal year step,False,version 2
-133,invoice_is_snailmail,,,,boolean,,Send by Post,False,version 2
-134,hr_presence_control_email_amount,,,,integer,,# emails to send,False,version 2
-135,tax_exigibility,,,,boolean,,Use Cash Basis,False,version 2
-136,social_instagram,,,,char,,Instagram Account,False,version 2
-137,account_setup_coa_state,,,,selection,,State of the onboarding charts of account step,False,version 2
-138,social_linkedin,,,,char,,LinkedIn Account,False,version 2
-139,stock_sms_confirmation_template_id,,,,many2one,sms.template,SMS Template,False,version 2
-140,account_onboarding_sale_tax_state,,,,selection,,State of the onboarding sale tax step,False,version 2
-141,account_sale_tax_id,,,,many2one,account.tax,Default Sale Tax,False,version 2
-142,account_tax_periodicity_journal_id,,,,many2one,account.journal,Journal,False,version 2
-143,secondary_color,,,,char,,Secondary Color,False,version 2
-144,account_tax_periodicity_reminder_day,,,,integer,,Start from,False,version 2
-145,sale_onboarding_order_confirmation_state,,,,selection,,State of the onboarding confirmation order step,False,version 2
-146,totals_below_sections,,,,boolean,,Add totals below sections,False,version 2
-147,currency_interval_unit,,,,selection,,Interval Unit,False,version 2
-148,sale_onboarding_sample_quotation_state,,,,selection,,State of the onboarding sample quotation step,False,version 2
-149,default_cash_difference_expense_account_id,,,,many2one,account.account,Cash Difference Expense Account,False,version 2
-150,catchall_formatted,,,,char,,Catchall,False,version 2
-151,transfer_account_code_prefix,,,,char,,Prefix of the transfer accounts,False,version 2
-152,account_cash_basis_base_account_id,,,,many2one,account.account,Base Tax Received Account,False,version 2
-153,resource_calendar_id,,,,many2one,resource.calendar,Default Working Hours,False,version 2
-154,tax_lock_date,,,,date,,Tax Lock Date,False,version 2
-155,website_sale_dashboard_onboarding_state,,,,selection,,State of the website sale onboarding panel,False,version 2
-156,portal_confirmation_pay,,,,boolean,,Online Payment,False,version 2
-157,account_setup_bill_state,,,,selection,,State of the onboarding bill step,False,version 2
-158,invoice_terms,,,,text,,Default Terms and Conditions,False,version 2
-159,gain_account_id,,,,many2one,account.account,Gain Account,False,version 2
-160,payment_acquirer_onboarding_state,,,,selection,,State of the onboarding payment acquirer step,False,version 2
-161,base_onboarding_company_state,,,,selection,,State of the onboarding company step,False,version 2
-162,loss_account_id,,,,many2one,account.account,Loss Account,False,version 2
-163,social_facebook,,,,char,,Facebook Account,False,version 2
-164,partner_gid,,,,integer,,Company database ID,False,version 2
-165,account_revaluation_income_provision_account_id,,,,many2one,account.account,Income Provision Account,False,version 2
-166,account_onboarding_create_invoice_state,,,,selection,,State of the onboarding create invoice step,False,version 2
-167,email_formatted,,,,char,,Formatted Email,False,version 2
-168,report_footer,,,,text,,Report Footer,False,version 2
-169,has_received_warning_stock_sms,,,,boolean,,Has Received Warning Stock Sms,False,version 2
-170,nomenclature_id,,,,many2one,barcode.nomenclature,Nomenclature,False,version 2
-171,incoterm_id,,,,many2one,account.incoterms,Default incoterm,False,version 2
-172,website_sale_onboarding_payment_acquirer_state,,,,selection,,State of the website sale onboarding payment acquirer step,False,version 2
-173,resource_calendar_ids,,,,one2many,resource.calendar,Working Hours,False,version 2
-174,account_onboarding_invoice_layout_state,,,,selection,,State of the onboarding invoice layout step,False,version 2
-175,yodlee_user_login,,,,char,,Yodlee login,False,version 2
-176,account_revaluation_journal_id,,,,many2one,account.journal,Account Revaluation Journal,False,version 2
-177,vat_check_vies,,,,boolean,,Verify VAT Numbers,False,version 2
-178,snailmail_color,,,,boolean,,Color,False,version 2
-179,stock_mail_confirmation_template_id,,,,many2one,mail.template,Email Template confirmation picking,False,version 2
-180,account_purchase_tax_id,,,,many2one,account.tax,Default Purchase Tax,False,version 2
-181,snailmail_duplex,,,,boolean,,Both sides,False,version 2
-182,stock_move_sms_validation,,,,boolean,,SMS Confirmation,False,version 2
-183,sale_onboarding_payment_method,,,,selection,,Sale onboarding selected payment method,False,version 2
-184,account_journal_suspense_account_id,,,,many2one,account.account,Journal Suspense Account,False,version 2
-185,account_default_pos_receivable_account_id,,,,many2one,account.account,Default PoS Receivable Account,False,version 2
-186,website_theme_onboarding_done,,,,boolean,,Onboarding website theme step done,False,version 2
-187,account_opening_date,,,,date,,Opening Entry,True,version 2
-188,yodlee_user_access_token,,,,char,,Yodlee access token,False,version 2
-189,account_tax_fiscal_country_id,,,,many2one,res.country,Fiscal Country,False,version 2
-190,favicon,,,,binary,,Company Favicon,False,version 2
-191,account_dashboard_onboarding_state,,,,selection,,State of the account dashboard onboarding panel,False,version 2
-192,social_twitter,,,,char,,Twitter Account,False,version 2
-193,report_header,,,,text,,Company Tagline,False,version 2
-194,automatic_entry_default_journal_id,,,,many2one,account.journal,Automatic Entry Default Journal,False,version 2
-195,account_opening_journal_id,,,,many2one,account.journal,Opening Journal,False,version 2
-196,account_opening_move_id,,,,many2one,account.move,Opening Journal Entry,False,version 2
-197,social_github,,,,char,,GitHub Account,False,version 2
-198,social_youtube,,,,char,,Youtube Account,False,version 2
-199,catchall_email,,,,char,,Catchall Email,False,version 2
-200,default_cash_difference_income_account_id,,,,many2one,account.account,Cash Difference Income Account,False,version 2
-201,expense_accrual_account_id,,,,many2one,account.account,Expense Accrual Account,False,version 2
-202,expense_extract_show_ocr_option_selection,,,,selection,,Send mode on expense attachments,False,version 2
-203,account_setup_bank_data_state,,,,selection,,State of the onboarding bank data step,False,version 2
-204,extract_single_line_per_tax,,,,boolean,,OCR Single Invoice Line Per Tax,False,version 2
-205,portal_confirmation_sign,,,,boolean,,Online Signature,False,version 2
-206,sale_order_template_id,,,,many2one,sale.order.template,Default Sale Template,False,version 2
-207,payment_onboarding_payment_method,,,,selection,,Selected onboarding payment method,False,version 2
-208,currency_provider,,,,selection,,Service Provider,False,version 2
-209,yodlee_access_token,,,,char,,access_token,False,version 2
-210,currency_next_execution_date,,,,date,,Next Execution Date,False,version 2
-211,sale_quotation_onboarding_state,,,,selection,,State of the sale onboarding panel,False,version 2
-212,yodlee_user_password,,,,char,,Yodlee password,False,version 2
-213,hr_presence_control_ip_list,,,,char,,Valid IP addresses,False,version 2
-,,,,
-,,,,
+model;res.company;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;fiscalyear_lock_date;date;;Lock Date;date;;Lock Date;False;both
+2;bank_account_code_prefix;char;;Prefix of the bank accounts;char;;Prefix of the bank accounts;False;both
+3;cash_account_code_prefix;char;;Prefix of the cash accounts;char;;Prefix of the cash accounts;False;both
+4;create_date;datetime;;Created on;datetime;;Created on;False;both
+5;sequence;integer;;Sequence;integer;;Sequence;False;both
+6;security_lead;float;;Sales Safety Days;float;;Sales Safety Days;True;both
+7;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+8;currency_id;many2one;res.currency;Currency;many2one;res.currency;Currency;True;both
+9;anglo_saxon_accounting;boolean;;Use anglo-saxon accounting;boolean;;Use anglo-saxon accounting;False;both
+10;logo_web;binary;;Logo web;binary;;Logo Web;False;both
+11;po_lead;float;;Purchase Lead Time;float;;Purchase Lead Time;True;both
+12;fiscalyear_last_day;integer;;Fiscalyear last day;integer;;Fiscalyear Last Day;True;both
+13;logo;binary;;Image;binary;;Company Logo;False;both
+14;font;many2one;res.font;Font;selection;;Font;False;both
+15;partner_id;many2one;res.partner;Partner;many2one;res.partner;Partner;True;both
+16;expects_chart_of_accounts;boolean;;Expects a Chart of Accounts;boolean;;Expects a Chart of Accounts;False;both
+17;po_double_validation_amount;monetary;;Double validation amount;monetary;;Double validation amount;False;both
+18;city;char;;City;char;;City;False;both
+19;property_stock_valuation_account_id;many2one;account.account;Account Template for Stock Valuation;many2one;account.account;Account Template for Stock Valuation;False;both
+20;display_name;char;;Display Name;char;;Display Name;False;both
+21;zip;char;;Zip;char;;Zip;False;both
+22;parent_id;many2one;res.company;Parent Company;many2one;res.company;Parent Company;False;both
+23;transfer_account_id;many2one;account.account;Inter-Banks Transfer Account;many2one;account.account;Inter-Banks Transfer Account;False;both
+24;bank_journal_ids;one2many;account.journal;Bank Journals;one2many;account.journal;Bank Journals;False;both
+25;country_id;many2one;res.country;Country;many2one;res.country;Country;False;both
+26;expense_currency_exchange_account_id;many2one;account.account;Loss Exchange Rate Account;many2one;account.account;Loss Exchange Rate Account;False;both
+27;id;integer;;ID;integer;;ID;False;both
+28;property_stock_account_output_categ_id;many2one;account.account;Output Account for Stock Valuation;many2one;account.account;Output Account for Stock Valuation;False;both
+29;paperformat_id;many2one;report.paperformat;Paper format;many2one;report.paperformat;Paper format;False;both
+30;po_lock;selection;;Purchase Order Modification;selection;;Purchase Order Modification;False;both
+31;property_stock_account_input_categ_id;many2one;account.account;Input Account for Stock Valuation;many2one;account.account;Input Account for Stock Valuation;False;both
+32;period_lock_date;date;;Lock Date for Non-Advisers;date;;Lock Date for Non-Advisers;False;both
+33;website;char;;Website;char;;Website Link;False;both
+34;bank_ids;one2many;res.partner.bank;Bank Accounts;one2many;res.partner.bank;Bank Accounts;False;both
+35;manufacturing_lead;float;;Manufacturing Lead Time;float;;Manufacturing Lead Time;True;both
+36;street2;char;;Street2;char;;Street2;False;both
+37;child_ids;one2many;res.company;Child Companies;one2many;res.company;Child Companies;False;both
+38;phone;char;;Phone;char;;Phone;False;both
+39;user_ids;many2many;res.users;Accepted Users;many2many;res.users;Accepted Users;False;both
+40;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+41;company_registry;char;;Company registry;char;;Company Registry;False;both
+42;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+43;name;char;;Company Name;char;;Company Name;True;both
+44;po_double_validation;selection;;Levels of Approvals;selection;;Levels of Approvals;False;both
+45;chart_template_id;many2one;account.chart.template;Chart template id;many2one;account.chart.template;Chart Template;False;both
+46;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+47;currency_exchange_journal_id;many2one;account.journal;Exchange Gain or Loss Journal;many2one;account.journal;Exchange Gain or Loss Journal;False;both
+48;street;char;;Street;char;;Street;False;both
+49;vat;char;;Tax ID;char;;Tax ID;False;both
+50;state_id;many2one;res.country.state;Fed. State;many2one;res.country.state;Fed. State;False;both
+51;fiscalyear_last_month;selection;;Fiscalyear last month;selection;;Fiscalyear Last Month;True;both
+52;tax_calculation_rounding_method;selection;;Tax Calculation Rounding Method;selection;;Tax Calculation Rounding Method;False;both
+53;internal_transit_location_id;many2one;stock.location;Internal Transit Location;many2one;stock.location;Internal Transit Location;False;both
+54;email;char;;Email;char;;Email;False;both
+55;income_currency_exchange_account_id;many2one;account.account;Gain Exchange Rate Account;many2one;account.account;Gain Exchange Rate Account;False;both
+;;;;
+56;sale_note;text;;Default Terms and Conditions;;;;False;version 1
+57;fax;char;;Fax;;;;False;version 1
+58;rml_footer;text;;Custom Report Footer;;;;False;version 1
+59;rml_header;text;;Rml header;;;;True;version 1
+60;propagation_minimum_delta;integer;;Minimum Delta for Propagation of a Date Change on moves linked together;;;;False;version 1
+61;rml_paper_format;selection;;Paper Format;;;;True;version 1
+62;custom_footer;boolean;;Custom footer;;;;False;version 1
+63;accounts_code_digits;integer;;Number of digits in an account code;;;;False;version 1
+64;rml_header2;text;;RML Internal Header;;;;True;version 1
+65;rml_header3;text;;RML Internal Header for Landscape Reports;;;;True;version 1
+66;rml_header1;char;;Company Tagline;;;;False;version 1
+67;account_no;char;;Account No.;;;;False;version 1
+68;overdue_msg;text;;Overdue Payments Message;;;;False;version 1
+69;rml_footer_readonly;text;;Report Footer;;;;False;version 1
+70;project_time_mode_id;many2one;product.uom;Project Time Unit;;;;False;version 1
+;;;;
+71;invoicing_switch_threshold;;;;date;;Invoicing Switch Threshold;False;version 2
+72;days_to_purchase;;;;float;;Days to Purchase;False;version 2
+73;stock_move_email_validation;;;;boolean;;Email Confirmation picking;False;version 2
+74;account_revaluation_expense_provision_account_id;;;;many2one;account.account;Expense Provision Account;False;version 2
+75;revenue_accrual_account_id;;;;many2one;account.account;Revenue Accrual Account;False;version 2
+76;country_code;;;;char;;Country Code;False;version 2
+77;quotation_validity_days;;;;integer;;Default Quotation Validity (Days);False;version 2
+78;account_invoice_onboarding_state;;;;selection;;State of the account invoice onboarding panel;False;version 2
+79;qr_code;;;;boolean;;Display QR-code on invoices;False;version 2
+80;extract_show_ocr_option_selection;;;;selection;;Send mode on invoices attachments;False;version 2
+81;primary_color;;;;char;;Primary Color;False;version 2
+82;invoice_is_print;;;;boolean;;Print by default;False;version 2
+83;external_report_layout_id;;;;many2one;ir.ui.view;Document Template;False;version 2
+84;invoice_is_email;;;;boolean;;Email by default;False;version 2
+85;account_tax_original_periodicity_reminder_day;;;;integer;;Start from original;False;version 2
+86;account_tax_periodicity;;;;selection;;Delay units;False;version 2
+87;snailmail_cover;;;;boolean;;Add a Cover Page;False;version 2
+88;tax_cash_basis_journal_id;;;;many2one;account.journal;Cash Basis Journal;False;version 2
+89;account_tax_next_activity_type;;;;many2one;mail.activity.type;Account Tax Next Activity Type;False;version 2
+90;account_setup_fy_data_state;;;;selection;;State of the onboarding fiscal year step;False;version 2
+91;invoice_is_snailmail;;;;boolean;;Send by Post;False;version 2
+92;hr_presence_control_email_amount;;;;integer;;# emails to send;False;version 2
+93;tax_exigibility;;;;boolean;;Use Cash Basis;False;version 2
+94;social_instagram;;;;char;;Instagram Account;False;version 2
+95;account_setup_coa_state;;;;selection;;State of the onboarding charts of account step;False;version 2
+96;social_linkedin;;;;char;;LinkedIn Account;False;version 2
+97;stock_sms_confirmation_template_id;;;;many2one;sms.template;SMS Template;False;version 2
+98;account_onboarding_sale_tax_state;;;;selection;;State of the onboarding sale tax step;False;version 2
+99;account_sale_tax_id;;;;many2one;account.tax;Default Sale Tax;False;version 2
+100;account_tax_periodicity_journal_id;;;;many2one;account.journal;Journal;False;version 2
+101;secondary_color;;;;char;;Secondary Color;False;version 2
+102;account_tax_periodicity_reminder_day;;;;integer;;Start from;False;version 2
+103;sale_onboarding_order_confirmation_state;;;;selection;;State of the onboarding confirmation order step;False;version 2
+104;totals_below_sections;;;;boolean;;Add totals below sections;False;version 2
+105;currency_interval_unit;;;;selection;;Interval Unit;False;version 2
+106;sale_onboarding_sample_quotation_state;;;;selection;;State of the onboarding sample quotation step;False;version 2
+107;default_cash_difference_expense_account_id;;;;many2one;account.account;Cash Difference Expense Account;False;version 2
+108;catchall_formatted;;;;char;;Catchall;False;version 2
+109;transfer_account_code_prefix;;;;char;;Prefix of the transfer accounts;False;version 2
+110;account_cash_basis_base_account_id;;;;many2one;account.account;Base Tax Received Account;False;version 2
+111;resource_calendar_id;;;;many2one;resource.calendar;Default Working Hours;False;version 2
+112;tax_lock_date;;;;date;;Tax Lock Date;False;version 2
+113;website_sale_dashboard_onboarding_state;;;;selection;;State of the website sale onboarding panel;False;version 2
+114;portal_confirmation_pay;;;;boolean;;Online Payment;False;version 2
+115;account_setup_bill_state;;;;selection;;State of the onboarding bill step;False;version 2
+116;invoice_terms;;;;text;;Default Terms and Conditions;False;version 2
+117;gain_account_id;;;;many2one;account.account;Gain Account;False;version 2
+118;payment_acquirer_onboarding_state;;;;selection;;State of the onboarding payment acquirer step;False;version 2
+119;base_onboarding_company_state;;;;selection;;State of the onboarding company step;False;version 2
+120;loss_account_id;;;;many2one;account.account;Loss Account;False;version 2
+121;social_facebook;;;;char;;Facebook Account;False;version 2
+122;partner_gid;;;;integer;;Company database ID;False;version 2
+123;account_revaluation_income_provision_account_id;;;;many2one;account.account;Income Provision Account;False;version 2
+124;account_onboarding_create_invoice_state;;;;selection;;State of the onboarding create invoice step;False;version 2
+125;email_formatted;;;;char;;Formatted Email;False;version 2
+126;report_footer;;;;text;;Report Footer;False;version 2
+127;has_received_warning_stock_sms;;;;boolean;;Has Received Warning Stock Sms;False;version 2
+128;nomenclature_id;;;;many2one;barcode.nomenclature;Nomenclature;False;version 2
+129;incoterm_id;;;;many2one;account.incoterms;Default incoterm;False;version 2
+130;website_sale_onboarding_payment_acquirer_state;;;;selection;;State of the website sale onboarding payment acquirer step;False;version 2
+131;resource_calendar_ids;;;;one2many;resource.calendar;Working Hours;False;version 2
+132;account_onboarding_invoice_layout_state;;;;selection;;State of the onboarding invoice layout step;False;version 2
+133;yodlee_user_login;;;;char;;Yodlee login;False;version 2
+134;account_revaluation_journal_id;;;;many2one;account.journal;Account Revaluation Journal;False;version 2
+135;vat_check_vies;;;;boolean;;Verify VAT Numbers;False;version 2
+136;snailmail_color;;;;boolean;;Color;False;version 2
+137;stock_mail_confirmation_template_id;;;;many2one;mail.template;Email Template confirmation picking;False;version 2
+138;account_purchase_tax_id;;;;many2one;account.tax;Default Purchase Tax;False;version 2
+139;snailmail_duplex;;;;boolean;;Both sides;False;version 2
+140;stock_move_sms_validation;;;;boolean;;SMS Confirmation;False;version 2
+141;sale_onboarding_payment_method;;;;selection;;Sale onboarding selected payment method;False;version 2
+142;account_journal_suspense_account_id;;;;many2one;account.account;Journal Suspense Account;False;version 2
+143;account_default_pos_receivable_account_id;;;;many2one;account.account;Default PoS Receivable Account;False;version 2
+144;website_theme_onboarding_done;;;;boolean;;Onboarding website theme step done;False;version 2
+145;account_opening_date;;;;date;;Opening Entry;True;version 2
+146;yodlee_user_access_token;;;;char;;Yodlee access token;False;version 2
+147;account_tax_fiscal_country_id;;;;many2one;res.country;Fiscal Country;False;version 2
+148;favicon;;;;binary;;Company Favicon;False;version 2
+149;account_dashboard_onboarding_state;;;;selection;;State of the account dashboard onboarding panel;False;version 2
+150;social_twitter;;;;char;;Twitter Account;False;version 2
+151;report_header;;;;text;;Company Tagline;False;version 2
+152;automatic_entry_default_journal_id;;;;many2one;account.journal;Automatic Entry Default Journal;False;version 2
+153;account_opening_journal_id;;;;many2one;account.journal;Opening Journal;False;version 2
+154;account_opening_move_id;;;;many2one;account.move;Opening Journal Entry;False;version 2
+155;social_github;;;;char;;GitHub Account;False;version 2
+156;social_youtube;;;;char;;Youtube Account;False;version 2
+157;catchall_email;;;;char;;Catchall Email;False;version 2
+158;default_cash_difference_income_account_id;;;;many2one;account.account;Cash Difference Income Account;False;version 2
+159;expense_accrual_account_id;;;;many2one;account.account;Expense Accrual Account;False;version 2
+160;expense_extract_show_ocr_option_selection;;;;selection;;Send mode on expense attachments;False;version 2
+161;account_setup_bank_data_state;;;;selection;;State of the onboarding bank data step;False;version 2
+162;extract_single_line_per_tax;;;;boolean;;OCR Single Invoice Line Per Tax;False;version 2
+163;portal_confirmation_sign;;;;boolean;;Online Signature;False;version 2
+164;sale_order_template_id;;;;many2one;sale.order.template;Default Sale Template;False;version 2
+165;payment_onboarding_payment_method;;;;selection;;Selected onboarding payment method;False;version 2
+166;currency_provider;;;;selection;;Service Provider;False;version 2
+167;yodlee_access_token;;;;char;;access_token;False;version 2
+168;currency_next_execution_date;;;;date;;Next Execution Date;False;version 2
+169;sale_quotation_onboarding_state;;;;selection;;State of the sale onboarding panel;False;version 2
+170;yodlee_user_password;;;;char;;Yodlee password;False;version 2
+171;hr_presence_control_ip_list;;;;char;;Valid IP addresses;False;version 2
+;;;;
+;;;;

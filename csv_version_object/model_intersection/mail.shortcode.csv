@@ -1,18 +1,18 @@
-model,mail.shortcode,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,display_name,char,,Display Name,char,,Display Name,False,both
-3,description,char,,Description,char,,Description,False,both
-4,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-5,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-6,source,char,,Shortcut,char,,Shortcut,True,both
-7,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-8,substitution,text,,Substitution,text,,Substitution,True,both
-9,create_date,datetime,,Created on,datetime,,Created on,False,both
-10,id,integer,,ID,integer,,ID,False,both
-,,,,
-11,shortcode_type,selection,,Shortcode type,,,,True,version 1
-,,,,
-12,message_ids,,,,many2one,mail.message,Messages,False,version 2
-,,,,
-,,,,
+model;mail.shortcode;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;display_name;char;;Display Name;char;;Display Name;False;both
+3;description;char;;Description;char;;Description;False;both
+4;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+5;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+6;source;char;;Shortcut;char;;Shortcut;True;both
+7;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+8;substitution;text;;Substitution;text;;Substitution;True;both
+9;create_date;datetime;;Created on;datetime;;Created on;False;both
+10;id;integer;;ID;integer;;ID;False;both
+;;;;
+11;shortcode_type;selection;;Shortcode type;;;;True;version 1
+;;;;
+12;message_ids;;;;many2one;mail.message;Messages;False;version 2
+;;;;
+;;;;

@@ -1,20 +1,20 @@
-model,account.payment.term.line,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,payment_id,many2one,account.payment.term,Payment Terms,many2one,account.payment.term,Payment Terms,True,both
-2,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-3,display_name,char,,Display Name,char,,Display Name,False,both
-4,option,selection,,Options,selection,,Options,True,both
-5,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-6,sequence,integer,,Sequence,integer,,Sequence,False,both
-7,days,integer,,Number of Days,integer,,Number of Days,True,both
-8,value,selection,,Type,selection,,Type,True,both
-9,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-10,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-11,create_date,datetime,,Created on,datetime,,Created on,False,both
-12,id,integer,,ID,integer,,ID,False,both
-13,value_amount,float,,Value,float,,Value,False,both
-,,,,
-,,,,
-14,day_of_the_month,,,,integer,,Day of the month,False,version 2
-,,,,
-,,,,
+model;account.payment.term.line;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;payment_id;many2one;account.payment.term;Payment Terms;many2one;account.payment.term;Payment Terms;True;both
+2;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+3;display_name;char;;Display Name;char;;Display Name;False;both
+4;option;selection;;Options;selection;;Options;True;both
+5;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+6;sequence;integer;;Sequence;integer;;Sequence;False;both
+7;days;integer;;Number of Days;integer;;Number of Days;True;both
+8;value;selection;;Type;selection;;Type;True;both
+9;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+10;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+11;create_date;datetime;;Created on;datetime;;Created on;False;both
+12;id;integer;;ID;integer;;ID;False;both
+13;value_amount;float;;Value;float;;Value;False;both
+;;;;
+;;;;
+14;day_of_the_month;;;;integer;;Day of the month;False;version 2
+;;;;
+;;;;

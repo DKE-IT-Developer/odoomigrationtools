@@ -1,22 +1,22 @@
-model,payment.token,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,display_name,char,,Display Name,char,,Display Name,False,both
-3,name,char,,Name,char,,Name,False,both
-4,short_name,char,,Short name,char,,Short name,False,both
-5,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-6,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-7,acquirer_ref,char,,Acquirer Ref.,char,,Acquirer Ref.,True,both
-8,acquirer_id,many2one,payment.acquirer,Acquirer Account,many2one,payment.acquirer,Acquirer Account,True,both
-9,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-10,active,boolean,,Active,boolean,,Active,False,both
-11,create_date,datetime,,Created on,datetime,,Created on,False,both
-12,partner_id,many2one,res.partner,Partner,many2one,res.partner,Partner,True,both
-13,id,integer,,ID,integer,,ID,False,both
-14,payment_ids,one2many,payment.transaction,Payment Transactions,one2many,payment.transaction,Payment Transactions,False,both
-,,,,
-,,,,
-15,verified,,,,boolean,,Verified,False,version 2
-16,company_id,,,,many2one,res.company,Company,False,version 2
-,,,,
-,,,,
+model;payment.token;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;display_name;char;;Display Name;char;;Display Name;False;both
+3;name;char;;Name;char;;Name;False;both
+4;short_name;char;;Short name;char;;Short name;False;both
+5;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+6;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+7;acquirer_ref;char;;Acquirer Ref.;char;;Acquirer Ref.;True;both
+8;acquirer_id;many2one;payment.acquirer;Acquirer Account;many2one;payment.acquirer;Acquirer Account;True;both
+9;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+10;active;boolean;;Active;boolean;;Active;False;both
+11;create_date;datetime;;Created on;datetime;;Created on;False;both
+12;partner_id;many2one;res.partner;Partner;many2one;res.partner;Partner;True;both
+13;id;integer;;ID;integer;;ID;False;both
+14;payment_ids;one2many;payment.transaction;Payment Transactions;one2many;payment.transaction;Payment Transactions;False;both
+;;;;
+;;;;
+15;verified;;;;boolean;;Verified;False;version 2
+16;company_id;;;;many2one;res.company;Company;False;version 2
+;;;;
+;;;;

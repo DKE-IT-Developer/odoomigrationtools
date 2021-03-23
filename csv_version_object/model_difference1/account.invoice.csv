@@ -1,103 +1,68 @@
 model,account.invoice,transient,False
 no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,origin,char,,Source Document,,,,False,version 1
-2,nomor_faktur_partner,char,,Nomor Faktur,,,,False,version 1
-3,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
-4,journal_bank_id,many2one,account.journal,Payment Method,,,,False,version 1
-5,display_name,char,,Display Name,,,,False,version 1
-6,company_id,many2one,res.company,Company,,,,True,version 1
-7,printer_data,text,,Printer Data,,,,False,version 1
-8,sent,boolean,,Sent,,,,False,version 1
-9,account_id,many2one,account.account,Account,,,,True,version 1
-10,ongkir_city_id,many2one,res.city.ongkir,City,,,,False,version 1
-11,amount_total,monetary,,Total,,,,False,version 1
-12,amount_untaxed_signed,monetary,,Untaxed Amount in Company Currency,,,,False,version 1
-13,amount_discount,monetary,,Discount,,,,False,version 1
-14,name,char,,Reference/Description,,,,False,version 1
-15,commercial_partner_id,many2one,res.partner,Commercial Entity,,,,False,version 1
-16,message_follower_ids,one2many,mail.followers,Followers,,,,False,version 1
-17,date_due,date,,Due Date,,,,False,version 1
-18,create_date,datetime,,Created on,,,,False,version 1
-19,reference,char,,Vendor Reference,,,,False,version 1
-20,message_needaction,boolean,,Action Needed,,,,False,version 1
-21,revised,boolean,,Revisi,,,,False,version 1
-22,currency_id,many2one,res.currency,Currency,,,,True,version 1
-23,amount_total_company_signed,monetary,,Total in Company Currency,,,,False,version 1
-24,date_paid_off,date,,Paid Off Date,,,,False,version 1
-25,transaction_status,char,,Transaction status,,,,False,version 1
-26,amount_delivery,monetary,,Delivery,,,,False,version 1
-27,partner_id,many2one,res.partner,Partner,,,,True,version 1
-28,production_order_id,many2one,production.order,Production Order,,,,False,version 1
-29,amount_untaxed,monetary,,Untaxed Amount,,,,False,version 1
-30,reference_type,selection,,Payment Reference,,,,True,version 1
-31,journal_id,many2one,account.journal,Journal,,,,True,version 1
-32,written,char,,Written,,,,False,version 1
-33,message_unread_counter,integer,,Unread Messages Counter,,,,False,version 1
-34,incoterms_id,many2one,stock.incoterms,Incoterms,,,,False,version 1
-35,code_transaction,selection,,Kode Faktur,,,,False,version 1
-36,state,selection,,Status,,,,False,version 1
-37,payment_move_line_ids,many2many,account.move.line,Payment Move Lines,,,,False,version 1
+1,comment,text,,Additional Information,,,,False,version 1
+2,message_follower_ids,one2many,mail.followers,Followers,,,,False,version 1
+3,date_due,date,,Due Date,,,,False,version 1
+4,create_date,datetime,,Created on,,,,False,version 1
+5,partner_bank_id,many2one,res.partner.bank,Bank Account,,,,False,version 1
+6,message_last_post,datetime,,Last Message Date,,,,False,version 1
+7,message_needaction,boolean,,Action Needed,,,,False,version 1
+8,message_channel_ids,many2many,mail.channel,Followers (Channels),,,,False,version 1
+9,message_partner_ids,many2many,res.partner,Followers (Partners),,,,False,version 1
+10,number,char,,Number,,,,False,version 1
+11,journal_id,many2one,account.journal,Journal,,,,True,version 1
+12,company_currency_id,many2one,res.currency,Company Currency,,,,False,version 1
+13,amount_total_company_signed,monetary,,Total in Company Currency,,,,False,version 1
+14,team_id,many2one,crm.team,Sales Team,,,,False,version 1
+15,payments_widget,text,,Payments widget,,,,False,version 1
+16,partner_id,many2one,res.partner,Partner,,,,True,version 1
+17,message_ids,one2many,mail.message,Messages,,,,False,version 1
+18,purchase_id,many2one,purchase.order,Add Purchase Order,,,,False,version 1
+19,create_uid,many2one,res.users,Created by,,,,False,version 1
+20,amount_untaxed,monetary,,Untaxed Amount,,,,False,version 1
+21,reference,char,,Vendor Reference,,,,False,version 1
+22,message_is_follower,boolean,,Is Follower,,,,False,version 1
+23,residual_company_signed,monetary,,Amount Due in Company Currency,,,,False,version 1
+24,amount_total_signed,monetary,,Total in Invoice Currency,,,,False,version 1
+25,reference_type,selection,,Payment Reference,,,,True,version 1
+26,company_id,many2one,res.company,Company,,,,True,version 1
+27,id,integer,,ID,,,,False,version 1
+28,amount_tax,monetary,,Tax,,,,False,version 1
+29,state,selection,,Status,,,,False,version 1
+30,move_id,many2one,account.move,Journal Entry,,,,False,version 1
+31,message_unread_counter,integer,,Unread Messages Counter,,,,False,version 1
+32,incoterms_id,many2one,stock.incoterms,Incoterms,,,,False,version 1
+33,sent,boolean,,Sent,,,,False,version 1
+34,account_id,many2one,account.account,Account,,,,True,version 1
+35,payment_ids,many2many,account.payment,Payments,,,,False,version 1
+36,reconciled,boolean,,Paid/Reconciled,,,,False,version 1
+37,origin,char,,Source Document,,,,False,version 1
 38,residual,monetary,,Amount Due,,,,False,version 1
-39,fp_export,boolean,,FP Is Exported,,,,False,version 1
-40,tax_line_ids,one2many,account.invoice.tax,Tax Lines,,,,False,version 1
-41,tag_id,many2one,account.invoice.tag,Event Tag,,,,False,version 1
-42,attn,char,,Attention,,,,False,version 1
-43,bank_transfer_type,selection,,Bank Type,,,,False,version 1
-44,comment,text,,Additional Information,,,,False,version 1
-45,fp_date,datetime,,FP Exported Date,,,,False,version 1
-46,signature,char,,Signature,,,,False,version 1
-47,message_unread,boolean,,Unread Messages,,,,False,version 1
-48,message_needaction_counter,integer,,Number of Actions,,,,False,version 1
-49,virtual_account_midtrans,char,,Virtual account midtrans,,,,False,version 1
-50,partner_bank_id,many2one,res.partner.bank,Bank Account,,,,False,version 1
-51,transaction_time,datetime,,Transaction time,,,,False,version 1
-52,number,char,,Number,,,,False,version 1
-53,team_id,many2one,crm.team,Sales Team,,,,False,version 1
-54,amount_product,monetary,,Product Sale,,,,False,version 1
-55,npwp_efaktur,char,,NPWP for eFaktur,,,,False,version 1
-56,create_uid,many2one,res.users,Created by,,,,False,version 1
-57,user_id,many2one,res.users,Salesperson,,,,False,version 1
-58,message_is_follower,boolean,,Is Follower,,,,False,version 1
-59,__last_update,datetime,,Last Modified on,,,,False,version 1
-60,amount_total_signed,monetary,,Total in Invoice Currency,,,,False,version 1
-61,message_last_post,datetime,,Last Message Date,,,,False,version 1
-62,amount_tax,monetary,,Tax,,,,False,version 1
-63,vat_supplier,char,,Faktur Pajak No,,,,False,version 1
-64,faktur_no,char,,Faktur No,,,,False,version 1
-65,type,selection,,Type,,,,False,version 1
-66,payment_ids,many2many,account.payment,Payments,,,,False,version 1
-67,date_invoice,date,,Invoice Date,,,,False,version 1
-68,payment_term_id,many2one,account.payment.term,Payment Terms,,,,False,version 1
-69,residual_signed,monetary,,Amount Due in Invoice Currency,,,,False,version 1
-70,area_categ_id,many2one,area.category,Area,,,,False,version 1
-71,fiscal_position_id,many2one,account.fiscal.position,Fiscal Position,,,,False,version 1
-72,amount_deposit,monetary,,Deposit,,,,False,version 1
-73,partner_shipping_id,many2one,res.partner,Delivery Address,,,,False,version 1
-74,is_taxed,boolean,,Is Taxed,,,,False,version 1
-75,payment_midtrans_id,char,,Payment midtrans id,,,,False,version 1
-76,state_id,many2one,res.country.state,Province,,,,False,version 1
-77,non_faktur_pajak,boolean,,Non-FP,,,,False,version 1
-78,message_channel_ids,many2many,mail.channel,Followers (Channels),,,,False,version 1
-79,message_partner_ids,many2many,res.partner,Followers (Partners),,,,False,version 1
-80,company_currency_id,many2one,res.currency,Company Currency,,,,False,version 1
-81,payments_widget,text,,Payments widget,,,,False,version 1
-82,id,integer,,ID,,,,False,version 1
-83,nomor_faktur_id,many2one,nomor.faktur.pajak,Nomor Faktur Pajak,,,,False,version 1
-84,purchase_id,many2one,purchase.order,Add Purchase Order,,,,False,version 1
-85,npwp_name,char,,NPWP Name,,,,False,version 1
-86,message_ids,one2many,mail.message,Messages,,,,False,version 1
-87,npwp,char,,NPWP,,,,False,version 1
-88,npwp_no,char,,NPWP,,,,False,version 1
-89,reconciled,boolean,,Paid/Reconciled,,,,False,version 1
-90,move_name,char,,Journal Entry Name,,,,False,version 1
-91,amount_total_deposit,monetary,,Total Deposit,,,,False,version 1
-92,outstanding_credits_debits_widget,text,,Outstanding credits debits widget,,,,False,version 1
-93,write_date,datetime,,Last Updated on,,,,False,version 1
-94,date,date,,Accounting Date,,,,False,version 1
-95,move_id,many2one,account.move,Journal Entry,,,,False,version 1
-96,refund_invoice_id,many2one,account.invoice,Invoice for which this invoice is the refund,,,,False,version 1
-97,residual_company_signed,monetary,,Amount Due in Company Currency,,,,False,version 1
-98,has_outstanding,boolean,,Has outstanding,,,,False,version 1
-99,invoice_line_ids,one2many,account.invoice.line,Invoice Lines,,,,False,version 1
+39,move_name,char,,Journal Entry Name,,,,False,version 1
+40,payment_move_line_ids,many2many,account.move.line,Payment Move Lines,,,,False,version 1
+41,date_invoice,date,,Invoice Date,,,,False,version 1
+42,payment_term_id,many2one,account.payment.term,Payment Terms,,,,False,version 1
+43,outstanding_credits_debits_widget,text,,Outstanding credits debits widget,,,,False,version 1
+44,write_date,datetime,,Last Updated on,,,,False,version 1
+45,residual_signed,monetary,,Amount Due in Invoice Currency,,,,False,version 1
+46,date,date,,Accounting Date,,,,False,version 1
+47,display_name,char,,Display Name,,,,False,version 1
+48,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
+49,fiscal_position_id,many2one,account.fiscal.position,Fiscal Position,,,,False,version 1
+50,amount_total,monetary,,Total,,,,False,version 1
+51,amount_untaxed_signed,monetary,,Untaxed Amount in Company Currency,,,,False,version 1
+52,currency_id,many2one,res.currency,Currency,,,,True,version 1
+53,refund_invoice_id,many2one,account.invoice,Invoice for which this invoice is the refund,,,,False,version 1
+54,name,char,,Reference/Description,,,,False,version 1
+55,partner_shipping_id,many2one,res.partner,Delivery Address,,,,False,version 1
+56,user_id,many2one,res.users,Salesperson,,,,False,version 1
+57,type,selection,,Type,,,,False,version 1
+58,__last_update,datetime,,Last Modified on,,,,False,version 1
+59,has_outstanding,boolean,,Has outstanding,,,,False,version 1
+60,tax_line_ids,one2many,account.invoice.tax,Tax Lines,,,,False,version 1
+61,invoice_line_ids,one2many,account.invoice.line,Invoice Lines,,,,False,version 1
+62,message_unread,boolean,,Unread Messages,,,,False,version 1
+63,message_needaction_counter,integer,,Number of Actions,,,,False,version 1
+64,commercial_partner_id,many2one,res.partner,Commercial Entity,,,,False,version 1
 ,,,,
 ,,,,

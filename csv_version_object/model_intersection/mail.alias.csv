@@ -1,23 +1,23 @@
-model,mail.alias,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,alias_parent_thread_id,integer,,Parent Record Thread ID,integer,,Parent Record Thread ID,False,both
-3,alias_defaults,text,,Default Values,text,,Default Values,True,both
-4,alias_contact,selection,,Alias Contact Security,selection,,Alias Contact Security,True,both
-5,alias_parent_model_id,many2one,ir.model,Parent Model,many2one,ir.model,Parent Model,False,both
-6,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-7,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-8,alias_force_thread_id,integer,,Record Thread ID,integer,,Record Thread ID,False,both
-9,create_date,datetime,,Created on,datetime,,Created on,False,both
-10,alias_model_id,many2one,ir.model,Aliased Model,many2one,ir.model,Aliased Model,True,both
-11,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-12,display_name,char,,Display Name,char,,Display Name,False,both
-13,alias_domain,char,,Alias domain,char,,Alias domain,False,both
-14,alias_name,char,,Alias Name,char,,Alias Name,False,both
-15,id,integer,,ID,integer,,ID,False,both
-16,alias_user_id,many2one,res.users,Owner,many2one,res.users,Owner,False,both
-,,,,
-,,,,
-17,alias_bounced_content,,,,html,,Custom Bounced Message,False,version 2
-,,,,
-,,,,
+model;mail.alias;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;alias_parent_thread_id;integer;;Parent Record Thread ID;integer;;Parent Record Thread ID;False;both
+3;alias_defaults;text;;Default Values;text;;Default Values;True;both
+4;alias_contact;selection;;Alias Contact Security;selection;;Alias Contact Security;True;both
+5;alias_parent_model_id;many2one;ir.model;Parent Model;many2one;ir.model;Parent Model;False;both
+6;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+7;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+8;alias_force_thread_id;integer;;Record Thread ID;integer;;Record Thread ID;False;both
+9;create_date;datetime;;Created on;datetime;;Created on;False;both
+10;alias_model_id;many2one;ir.model;Aliased Model;many2one;ir.model;Aliased Model;True;both
+11;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+12;display_name;char;;Display Name;char;;Display Name;False;both
+13;alias_domain;char;;Alias domain;char;;Alias domain;False;both
+14;alias_name;char;;Alias Name;char;;Alias Name;False;both
+15;id;integer;;ID;integer;;ID;False;both
+16;alias_user_id;many2one;res.users;Owner;many2one;res.users;Owner;False;both
+;;;;
+;;;;
+17;alias_bounced_content;;;;html;;Custom Bounced Message;False;version 2
+;;;;
+;;;;

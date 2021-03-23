@@ -1,15 +1,15 @@
-model,rating.mixin,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,display_name,char,,Display Name,char,,Display Name,False,both
-2,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-3,rating_count,integer,,Rating count,integer,,Rating count,False,both
-4,rating_last_value,float,,Rating Last Value,float,,Rating Last Value,False,both
-5,rating_ids,one2many,rating.rating,Rating,one2many,rating.rating,Rating,False,both
-6,id,integer,,ID,integer,,ID,False,both
-,,,,
-,,,,
-7,rating_last_feedback,,,,text,,Rating Last Feedback,False,version 2
-8,rating_avg,,,,float,,Rating Average,False,version 2
-9,rating_last_image,,,,binary,,Rating Last Image,False,version 2
-,,,,
-,,,,
+model;rating.mixin;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;display_name;char;;Display Name;char;;Display Name;False;both
+2;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+3;rating_count;integer;;Rating count;integer;;Rating count;False;both
+4;rating_last_value;float;;Rating Last Value;float;;Rating Last Value;False;both
+5;rating_ids;one2many;rating.rating;Rating;one2many;rating.rating;Rating;False;both
+6;id;integer;;ID;integer;;ID;False;both
+;;;;
+;;;;
+7;rating_last_feedback;;;;text;;Rating Last Feedback;False;version 2
+8;rating_avg;;;;float;;Rating Average;False;version 2
+9;rating_last_image;;;;binary;;Rating Last Image;False;version 2
+;;;;
+;;;;

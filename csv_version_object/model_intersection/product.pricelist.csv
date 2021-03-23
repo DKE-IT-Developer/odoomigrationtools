@@ -1,25 +1,24 @@
-model,product.pricelist,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,many2one,res.users,Created by,False,both
-2,code,char,,E-commerce Promotional Code,char,,E-commerce Promotional Code,False,both
-3,display_name,char,,Display Name,char,,Display Name,False,both
-4,name,char,,Pricelist Name,char,,Pricelist Name,True,both
-5,item_ids,one2many,product.pricelist.item,Pricelist Items,one2many,product.pricelist.item,Pricelist Items,False,both
-6,__last_update,datetime,,Last Modified on,datetime,,Last Modified on,False,both
-7,sequence,integer,,Sequence,integer,,Sequence,False,both
-8,company_id,many2one,res.company,Company,many2one,res.company,Company,False,both
-9,discount_policy,selection,,Discount policy,selection,,Discount Policy,True,both
-10,currency_id,many2one,res.currency,Currency,many2one,res.currency,Currency,True,both
-11,country_group_ids,many2many,res.country.group,Country Groups,many2many,res.country.group,Country Groups,False,both
-12,website_id,many2one,website,website,many2one,website,Website,False,both
-13,write_date,datetime,,Last Updated on,datetime,,Last Updated on,False,both
-14,active,boolean,,Active,boolean,,Active,False,both
-15,create_date,datetime,,Created on,datetime,,Created on,False,both
-16,selectable,boolean,,Selectable,boolean,,Selectable,False,both
-17,write_uid,many2one,res.users,Last Updated by,many2one,res.users,Last Updated by,False,both
-18,id,integer,,ID,integer,,ID,False,both
-,,,,
-19,rebrand_ok,boolean,,Pricelist for Rebrand Products,,,,False,version 1
-,,,,
-,,,,
-,,,,
+model;product.pricelist;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;many2one;res.users;Created by;False;both
+2;code;char;;E-commerce Promotional Code;char;;E-commerce Promotional Code;False;both
+3;display_name;char;;Display Name;char;;Display Name;False;both
+4;name;char;;Pricelist Name;char;;Pricelist Name;True;both
+5;item_ids;one2many;product.pricelist.item;Pricelist Items;one2many;product.pricelist.item;Pricelist Items;False;both
+6;__last_update;datetime;;Last Modified on;datetime;;Last Modified on;False;both
+7;sequence;integer;;Sequence;integer;;Sequence;False;both
+8;website_id;many2one;website;website;many2one;website;Website;False;both
+9;company_id;many2one;res.company;Company;many2one;res.company;Company;False;both
+10;discount_policy;selection;;Discount policy;selection;;Discount Policy;True;both
+11;currency_id;many2one;res.currency;Currency;many2one;res.currency;Currency;True;both
+12;country_group_ids;many2many;res.country.group;Country Groups;many2many;res.country.group;Country Groups;False;both
+13;write_date;datetime;;Last Updated on;datetime;;Last Updated on;False;both
+14;active;boolean;;Active;boolean;;Active;False;both
+15;create_date;datetime;;Created on;datetime;;Created on;False;both
+16;selectable;boolean;;Selectable;boolean;;Selectable;False;both
+17;write_uid;many2one;res.users;Last Updated by;many2one;res.users;Last Updated by;False;both
+18;id;integer;;ID;integer;;ID;False;both
+;;;;
+;;;;
+;;;;
+;;;;
