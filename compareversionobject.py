@@ -63,7 +63,7 @@ models2_difference = model2_names_set.difference(model1_names_set)
 
 for model_name in models_intersection:
     with open('%s/'%(csv_model_inter)+model_name+'.csv', mode='w') as model_file:
-        model_writer = csv.writer(model_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
+        model_writer = csv.writer(model_file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
         print('Writing %s structure' %model_name)
         print('====================================================================')
         no=1
@@ -87,6 +87,7 @@ for model_name in models_intersection:
             field1_attr = fields1_dict[field]
             field2_attr = fields2_dict[field]
             model_writer.writerow([no, field, field1_attr['type'], field1_attr.get('relation', ''), field1_attr['string'].encode('utf-8'), field2_attr['type'], field2_attr.get('relation', ''), field2_attr['string'].encode('utf-8'), field2_attr.get('required', False), 'both'])
+            no+=1
         model_writer.writerow(['', '', '', '', ''])
         for field in fields1_difference:
             field_attr = fields1[field]
@@ -102,7 +103,7 @@ for model_name in models_intersection:
 
 for model_name in models1_difference:
     with open('%s/'%(csv_model_diff1)+model_name+'.csv', mode='w') as model_file:
-        model_writer = csv.writer(model_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
+        model_writer = csv.writer(model_file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
         print('Writing %s structure' %model_name)
         print('====================================================================')
         no=1
@@ -124,7 +125,7 @@ for model_name in models1_difference:
 
 for model_name in models2_difference:
     with open('%s/'%(csv_model_diff2)+model_name+'.csv', mode='w') as model_file:
-        model_writer = csv.writer(model_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
+        model_writer = csv.writer(model_file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
         print('Writing %s structure' %model_name)
         print('====================================================================')
         no=1
