@@ -1,3 +1,4 @@
+source_model;res.partner;target_model;res.partner;;;;
 no;field1;type1;relation1;field2;type2;relation2;default
 1;signup_valid;boolean;;signup_valid;boolean;;
 2;sale_order_count;integer;;sale_order_count;integer;;
