@@ -1,60 +1,60 @@
-model,account.config.settings,transient,True
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,fiscalyear_lock_date,date,,Lock Date,,,,False,version 1
-2,bank_account_code_prefix,char,,Bank Accounts Prefix *,,,,False,version 1
-3,cash_account_code_prefix,char,,Cash Accounts Prefix *,,,,False,version 1
-4,create_date,datetime,,Created on,,,,False,version 1
-5,module_account_asset,boolean,,Assets management,,,,False,version 1
-6,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
-7,currency_id,many2one,res.currency,Default company currency,,,,True,version 1
-8,module_account_accountant,boolean,,"Full accounting features: journals, legal statements, chart of accounts, etc.",,,,False,version 1
-9,fiscalyear_last_day,integer,,Fiscalyear last day,,,,False,version 1
-10,expects_chart_of_accounts,boolean,,This company has its own chart of accounts,,,,False,version 1
-11,has_chart_of_accounts,boolean,,Company has a chart of accounts,,,,False,version 1
-12,create_uid,many2one,res.users,Created by,,,,False,version 1
-13,complete_tax_set,boolean,,Complete set of taxes,,,,False,version 1
-14,template_transfer_account_id,many2one,account.account.template,Template transfer account id,,,,False,version 1
-15,__last_update,datetime,,Last Modified on,,,,False,version 1
-16,module_account_bank_statement_import_csv,boolean,,Import in .csv format,,,,False,version 1
-17,module_account_budget,boolean,,Budget management,,,,False,version 1
-18,company_id,many2one,res.company,Company,,,,True,version 1
-19,id,integer,,ID,,,,False,version 1
-20,group_analytic_account_for_sales,boolean,,Analytic accounting for sales,,,,False,version 1
-21,group_warning_account,selection,,Warning,,,,False,version 1
-22,group_multi_currency,boolean,,Allow multi currencies,,,,False,version 1
-23,group_proforma_invoices,boolean,,Allow pro-forma invoices,,,,False,version 1
-24,module_account_deferred_revenue,boolean,,Revenue Recognition,,,,False,version 1
-25,module_account_reports,boolean,,Get dynamic accounting reports,,,,False,version 1
-26,module_account_plaid,boolean,,Plaid Connector,,,,False,version 1
-27,currency_exchange_journal_id,many2one,account.journal,Rate Difference Journal,,,,False,version 1
-28,period_lock_date,date,,Lock Date for Non-Advisers,,,,False,version 1
-29,purchase_tax_rate,float,,Purchase tax (%),,,,False,version 1
-30,module_account_bank_statement_import_ofx,boolean,,Import in .ofx format,,,,False,version 1
-31,module_l10n_us_check_printing,boolean,,Allow check printing and deposits,,,,False,version 1
-32,default_purchase_tax_id,many2one,account.tax,Default Purchase Tax,,,,False,version 1
-33,write_date,datetime,,Last Updated on,,,,False,version 1
-34,display_name,char,,Display Name,,,,False,version 1
-35,use_anglo_saxon,boolean,,Use Anglo-Saxon Accounting *,,,,False,version 1
-36,sale_tax_rate,float,,Sales tax (%),,,,False,version 1
-37,module_account_batch_deposit,boolean,,Use batch deposit,,,,False,version 1
-38,module_account_yodlee,boolean,,Bank Interface - Sync your bank feeds automatically,,,,False,version 1
-39,module_account_tax_cash_basis,boolean,,Allow Tax Cash Basis,,,,False,version 1
-40,code_digits,integer,,# of Digits *,,,,False,version 1
-41,module_account_reports_followup,boolean,,Enable payment followup management,,,,False,version 1
-42,chart_template_id,many2one,account.chart.template,Template,,,,False,version 1
-43,default_sale_tax_id,many2one,account.tax,Default Sale Tax,,,,False,version 1
-44,overdue_msg,text,,Overdue Payments Message *,,,,False,version 1
-45,sale_tax_id,many2one,account.tax.template,Default sale tax,,,,False,version 1
-46,has_default_company,boolean,,Has default company,,,,False,version 1
-47,module_account_bank_statement_import_qif,boolean,,Import .qif files,,,,False,version 1
-48,group_analytic_accounting,boolean,,Analytic accounting,,,,False,version 1
-49,group_analytic_account_for_purchases,boolean,,Analytic accounting for purchases,,,,False,version 1
-50,company_footer,text,,Bank accounts footer preview,,,,False,version 1
-51,module_account_sepa,boolean,,Use SEPA payments,,,,False,version 1
-52,fiscalyear_last_month,selection,,Fiscalyear last month,,,,False,version 1
-53,tax_calculation_rounding_method,selection,,Tax calculation rounding method *,,,,False,version 1
-54,default_acquirer,many2one,payment.acquirer,Default Acquirer,,,,False,version 1
-55,purchase_tax_id,many2one,account.tax.template,Default purchase tax,,,,False,version 1
-56,transfer_account_id,many2one,account.account,Inter-Banks Transfer Account,,,,False,version 1
-,,,,
-,,,,
+model;account.config.settings;transient;True
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;fiscalyear_lock_date;date;;Lock Date;;;;False;version 1
+2;bank_account_code_prefix;char;;Bank Accounts Prefix *;;;;False;version 1
+3;cash_account_code_prefix;char;;Cash Accounts Prefix *;;;;False;version 1
+4;create_date;datetime;;Created on;;;;False;version 1
+5;module_account_asset;boolean;;Assets management;;;;False;version 1
+6;write_uid;many2one;res.users;Last Updated by;;;;False;version 1
+7;currency_id;many2one;res.currency;Default company currency;;;;True;version 1
+8;module_account_accountant;boolean;;Full accounting features: journals, legal statements, chart of accounts, etc.;;;;False;version 1
+9;fiscalyear_last_day;integer;;Fiscalyear last day;;;;False;version 1
+10;expects_chart_of_accounts;boolean;;This company has its own chart of accounts;;;;False;version 1
+11;has_chart_of_accounts;boolean;;Company has a chart of accounts;;;;False;version 1
+12;create_uid;many2one;res.users;Created by;;;;False;version 1
+13;complete_tax_set;boolean;;Complete set of taxes;;;;False;version 1
+14;template_transfer_account_id;many2one;account.account.template;Template transfer account id;;;;False;version 1
+15;__last_update;datetime;;Last Modified on;;;;False;version 1
+16;module_account_bank_statement_import_csv;boolean;;Import in .csv format;;;;False;version 1
+17;module_account_budget;boolean;;Budget management;;;;False;version 1
+18;company_id;many2one;res.company;Company;;;;True;version 1
+19;id;integer;;ID;;;;False;version 1
+20;group_analytic_account_for_sales;boolean;;Analytic accounting for sales;;;;False;version 1
+21;group_warning_account;selection;;Warning;;;;False;version 1
+22;group_multi_currency;boolean;;Allow multi currencies;;;;False;version 1
+23;group_proforma_invoices;boolean;;Allow pro-forma invoices;;;;False;version 1
+24;module_account_deferred_revenue;boolean;;Revenue Recognition;;;;False;version 1
+25;module_account_reports;boolean;;Get dynamic accounting reports;;;;False;version 1
+26;module_account_plaid;boolean;;Plaid Connector;;;;False;version 1
+27;currency_exchange_journal_id;many2one;account.journal;Rate Difference Journal;;;;False;version 1
+28;period_lock_date;date;;Lock Date for Non-Advisers;;;;False;version 1
+29;purchase_tax_rate;float;;Purchase tax (%);;;;False;version 1
+30;module_account_bank_statement_import_ofx;boolean;;Import in .ofx format;;;;False;version 1
+31;module_l10n_us_check_printing;boolean;;Allow check printing and deposits;;;;False;version 1
+32;default_purchase_tax_id;many2one;account.tax;Default Purchase Tax;;;;False;version 1
+33;write_date;datetime;;Last Updated on;;;;False;version 1
+34;display_name;char;;Display Name;;;;False;version 1
+35;use_anglo_saxon;boolean;;Use Anglo-Saxon Accounting *;;;;False;version 1
+36;sale_tax_rate;float;;Sales tax (%);;;;False;version 1
+37;module_account_batch_deposit;boolean;;Use batch deposit;;;;False;version 1
+38;module_account_yodlee;boolean;;Bank Interface - Sync your bank feeds automatically;;;;False;version 1
+39;module_account_tax_cash_basis;boolean;;Allow Tax Cash Basis;;;;False;version 1
+40;code_digits;integer;;# of Digits *;;;;False;version 1
+41;module_account_reports_followup;boolean;;Enable payment followup management;;;;False;version 1
+42;chart_template_id;many2one;account.chart.template;Template;;;;False;version 1
+43;default_sale_tax_id;many2one;account.tax;Default Sale Tax;;;;False;version 1
+44;overdue_msg;text;;Overdue Payments Message *;;;;False;version 1
+45;sale_tax_id;many2one;account.tax.template;Default sale tax;;;;False;version 1
+46;has_default_company;boolean;;Has default company;;;;False;version 1
+47;module_account_bank_statement_import_qif;boolean;;Import .qif files;;;;False;version 1
+48;group_analytic_accounting;boolean;;Analytic accounting;;;;False;version 1
+49;group_analytic_account_for_purchases;boolean;;Analytic accounting for purchases;;;;False;version 1
+50;company_footer;text;;Bank accounts footer preview;;;;False;version 1
+51;module_account_sepa;boolean;;Use SEPA payments;;;;False;version 1
+52;fiscalyear_last_month;selection;;Fiscalyear last month;;;;False;version 1
+53;tax_calculation_rounding_method;selection;;Tax calculation rounding method *;;;;False;version 1
+54;default_acquirer;many2one;payment.acquirer;Default Acquirer;;;;False;version 1
+55;purchase_tax_id;many2one;account.tax.template;Default purchase tax;;;;False;version 1
+56;transfer_account_id;many2one;account.account;Inter-Banks Transfer Account;;;;False;version 1
+;;;;
+;;;;

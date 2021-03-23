@@ -1,40 +1,40 @@
-model,sale.config.settings,transient,True
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,sale_note,text,,Default Terms and Conditions *,,,,False,version 1
-2,create_date,datetime,,Created on,,,,False,version 1
-3,sale_show_tax,selection,,Tax Display,,,,True,version 1
-4,security_lead,float,,Sales Safety Days *,,,,False,version 1
-5,deposit_product_id_setting,many2one,product.product,Deposit Product,,,,False,version 1
-6,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
-7,sale_pricelist_setting,selection,,Sale pricelist setting,,,,True,version 1
-8,group_display_incoterm,selection,,Incoterms,,,,False,version 1
-9,group_pricelist_item,boolean,,Show pricelists to customers,,,,False,version 1
-10,module_sale_order_dates,selection,,Date,,,,False,version 1
-11,module_delivery,selection,,Shipping,,,,False,version 1
-12,group_product_variant,selection,,Product Variants,,,,False,version 1
-13,id,integer,,ID,,,,False,version 1
-14,create_uid,many2one,res.users,Created by,,,,False,version 1
-15,display_name,char,,Display Name,,,,False,version 1
-16,__last_update,datetime,,Last Modified on,,,,False,version 1
-17,group_warning_sale,selection,,Warning,,,,False,version 1
-18,group_mrp_properties,selection,,Properties on SO Lines,,,,False,version 1
-19,module_website_quote,selection,,Online Quotations,,,,False,version 1
-20,group_route_so_lines,selection,,Order Routing,,,,False,version 1
-21,company_id,many2one,res.company,Company,,,,True,version 1
-22,default_invoice_policy,selection,,Default Invoicing,,,,False,version 1
-23,group_sale_layout,selection,,Sales Reports Layout,,,,False,version 1
-24,group_product_pricelist,boolean,,Show pricelists On Products,,,,False,version 1
-25,group_uom,selection,,Units of Measure,,,,False,version 1
-26,group_sale_pricelist,boolean,,Use pricelists to adapt your price per customers,,,,False,version 1
-27,group_discount_per_so_line,selection,,Discount,,,,False,version 1
-28,module_sale_margin,selection,,Margins,,,,False,version 1
-29,write_date,datetime,,Last Updated on,,,,False,version 1
-30,auto_done_setting,selection,,Sale Order Modification,,,,False,version 1
-31,module_website_sale_digital,boolean,,Sell digital products - provide downloadable content on your customer portal,,,,False,version 1
-32,group_show_price_total,boolean,,Show total,,,,False,version 1
-33,default_picking_policy,selection,,Default Shipping Policy,,,,False,version 1
-34,group_show_price_subtotal,boolean,,Show subtotal,,,,False,version 1
-35,group_sale_delivery_address,selection,,Addresses,,,,False,version 1
-36,module_sale_contract,boolean,,Manage subscriptions and recurring invoicing,,,,False,version 1
-,,,,
-,,,,
+model;sale.config.settings;transient;True
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;sale_note;text;;Default Terms and Conditions *;;;;False;version 1
+2;create_date;datetime;;Created on;;;;False;version 1
+3;sale_show_tax;selection;;Tax Display;;;;True;version 1
+4;security_lead;float;;Sales Safety Days *;;;;False;version 1
+5;deposit_product_id_setting;many2one;product.product;Deposit Product;;;;False;version 1
+6;write_uid;many2one;res.users;Last Updated by;;;;False;version 1
+7;sale_pricelist_setting;selection;;Sale pricelist setting;;;;True;version 1
+8;group_display_incoterm;selection;;Incoterms;;;;False;version 1
+9;group_pricelist_item;boolean;;Show pricelists to customers;;;;False;version 1
+10;module_sale_order_dates;selection;;Date;;;;False;version 1
+11;module_delivery;selection;;Shipping;;;;False;version 1
+12;group_product_variant;selection;;Product Variants;;;;False;version 1
+13;id;integer;;ID;;;;False;version 1
+14;create_uid;many2one;res.users;Created by;;;;False;version 1
+15;display_name;char;;Display Name;;;;False;version 1
+16;__last_update;datetime;;Last Modified on;;;;False;version 1
+17;group_warning_sale;selection;;Warning;;;;False;version 1
+18;group_mrp_properties;selection;;Properties on SO Lines;;;;False;version 1
+19;module_website_quote;selection;;Online Quotations;;;;False;version 1
+20;group_route_so_lines;selection;;Order Routing;;;;False;version 1
+21;company_id;many2one;res.company;Company;;;;True;version 1
+22;default_invoice_policy;selection;;Default Invoicing;;;;False;version 1
+23;group_sale_layout;selection;;Sales Reports Layout;;;;False;version 1
+24;group_product_pricelist;boolean;;Show pricelists On Products;;;;False;version 1
+25;group_uom;selection;;Units of Measure;;;;False;version 1
+26;group_sale_pricelist;boolean;;Use pricelists to adapt your price per customers;;;;False;version 1
+27;group_discount_per_so_line;selection;;Discount;;;;False;version 1
+28;module_sale_margin;selection;;Margins;;;;False;version 1
+29;write_date;datetime;;Last Updated on;;;;False;version 1
+30;auto_done_setting;selection;;Sale Order Modification;;;;False;version 1
+31;module_website_sale_digital;boolean;;Sell digital products - provide downloadable content on your customer portal;;;;False;version 1
+32;group_show_price_total;boolean;;Show total;;;;False;version 1
+33;default_picking_policy;selection;;Default Shipping Policy;;;;False;version 1
+34;group_show_price_subtotal;boolean;;Show subtotal;;;;False;version 1
+35;group_sale_delivery_address;selection;;Addresses;;;;False;version 1
+36;module_sale_contract;boolean;;Manage subscriptions and recurring invoicing;;;;False;version 1
+;;;;
+;;;;

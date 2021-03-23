@@ -1,19 +1,19 @@
-model,website.rewrite,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,,,,many2one,res.users,Created by,False,version 2
-2,__last_update,,,,datetime,,Last Modified on,False,version 2
-3,url_to,,,,char,,URL to,False,version 2
-4,display_name,,,,char,,Display Name,False,version 2
-5,name,,,,char,,Name,True,version 2
-6,sequence,,,,integer,,Sequence,False,version 2
-7,website_id,,,,many2one,website,Website,False,version 2
-8,redirect_type,,,,selection,,Action,False,version 2
-9,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-10,route_id,,,,many2one,website.route,Route,False,version 2
-11,url_from,,,,char,,URL from,False,version 2
-12,write_date,,,,datetime,,Last Updated on,False,version 2
-13,active,,,,boolean,,Active,False,version 2
-14,create_date,,,,datetime,,Created on,False,version 2
-15,id,,,,integer,,ID,False,version 2
-,,,,
-,,,,
+model;website.rewrite;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;;;;many2one;res.users;Created by;False;version 2
+2;__last_update;;;;datetime;;Last Modified on;False;version 2
+3;url_to;;;;char;;URL to;False;version 2
+4;display_name;;;;char;;Display Name;False;version 2
+5;name;;;;char;;Name;True;version 2
+6;sequence;;;;integer;;Sequence;False;version 2
+7;website_id;;;;many2one;website;Website;False;version 2
+8;redirect_type;;;;selection;;Action;False;version 2
+9;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+10;route_id;;;;many2one;website.route;Route;False;version 2
+11;url_from;;;;char;;URL from;False;version 2
+12;write_date;;;;datetime;;Last Updated on;False;version 2
+13;active;;;;boolean;;Active;False;version 2
+14;create_date;;;;datetime;;Created on;False;version 2
+15;id;;;;integer;;ID;False;version 2
+;;;;
+;;;;

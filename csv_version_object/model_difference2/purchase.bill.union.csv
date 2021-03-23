@@ -1,16 +1,16 @@
-model,purchase.bill.union,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,display_name,,,,char,,Display Name,False,version 2
-2,name,,,,char,,Reference,False,version 2
-3,reference,,,,char,,Source,False,version 2
-4,__last_update,,,,datetime,,Last Modified on,False,version 2
-5,vendor_bill_id,,,,many2one,account.move,Vendor Bill,False,version 2
-6,company_id,,,,many2one,res.company,Company,False,version 2
-7,purchase_order_id,,,,many2one,purchase.order,Purchase Order,False,version 2
-8,currency_id,,,,many2one,res.currency,Currency,False,version 2
-9,amount,,,,float,,Amount,False,version 2
-10,date,,,,date,,Date,False,version 2
-11,partner_id,,,,many2one,res.partner,Vendor,False,version 2
-12,id,,,,integer,,ID,False,version 2
-,,,,
-,,,,
+model;purchase.bill.union;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;display_name;;;;char;;Display Name;False;version 2
+2;name;;;;char;;Reference;False;version 2
+3;reference;;;;char;;Source;False;version 2
+4;__last_update;;;;datetime;;Last Modified on;False;version 2
+5;vendor_bill_id;;;;many2one;account.move;Vendor Bill;False;version 2
+6;company_id;;;;many2one;res.company;Company;False;version 2
+7;purchase_order_id;;;;many2one;purchase.order;Purchase Order;False;version 2
+8;currency_id;;;;many2one;res.currency;Currency;False;version 2
+9;amount;;;;float;;Amount;False;version 2
+10;date;;;;date;;Date;False;version 2
+11;partner_id;;;;many2one;res.partner;Vendor;False;version 2
+12;id;;;;integer;;ID;False;version 2
+;;;;
+;;;;

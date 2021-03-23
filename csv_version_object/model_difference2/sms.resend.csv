@@ -1,16 +1,16 @@
-model,sms.resend,transient,True
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,mail_message_id,,,,many2one,mail.message,Message,True,version 2
-2,create_uid,,,,many2one,res.users,Created by,False,version 2
-3,has_cancel,,,,boolean,,Has Cancel,False,version 2
-4,display_name,,,,char,,Display Name,False,version 2
-5,__last_update,,,,datetime,,Last Modified on,False,version 2
-6,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-7,recipient_ids,,,,one2many,sms.resend.recipient,Recipients,False,version 2
-8,has_insufficient_credit,,,,boolean,,Has Insufficient Credit,False,version 2
-9,write_date,,,,datetime,,Last Updated on,False,version 2
-10,create_date,,,,datetime,,Created on,False,version 2
-11,id,,,,integer,,ID,False,version 2
-12,has_unregistered_account,,,,boolean,,Has Unregistered Account,False,version 2
-,,,,
-,,,,
+model;sms.resend;transient;True
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;mail_message_id;;;;many2one;mail.message;Message;True;version 2
+2;create_uid;;;;many2one;res.users;Created by;False;version 2
+3;has_cancel;;;;boolean;;Has Cancel;False;version 2
+4;display_name;;;;char;;Display Name;False;version 2
+5;__last_update;;;;datetime;;Last Modified on;False;version 2
+6;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+7;recipient_ids;;;;one2many;sms.resend.recipient;Recipients;False;version 2
+8;has_insufficient_credit;;;;boolean;;Has Insufficient Credit;False;version 2
+9;write_date;;;;datetime;;Last Updated on;False;version 2
+10;create_date;;;;datetime;;Created on;False;version 2
+11;id;;;;integer;;ID;False;version 2
+12;has_unregistered_account;;;;boolean;;Has Unregistered Account;False;version 2
+;;;;
+;;;;

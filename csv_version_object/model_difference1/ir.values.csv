@@ -1,22 +1,22 @@
-model,ir.values,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,,,,False,version 1
-2,__last_update,datetime,,Last Modified on,,,,False,version 1
-3,user_id,many2one,res.users,User,,,,False,version 1
-4,name,char,,Name,,,,True,version 1
-5,display_name,char,,Display Name,,,,False,version 1
-6,model_id,many2one,ir.model,Model (change only),,,,False,version 1
-7,key2,char,,Qualifier,,,,False,version 1
-8,value_unpickle,text,,Default value or action reference,,,,False,version 1
-9,company_id,many2one,res.company,Company,,,,False,version 1
-10,value,text,,Value,,,,False,version 1
-11,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
-12,key,selection,,Type,,,,True,version 1
-13,write_date,datetime,,Last Updated on,,,,False,version 1
-14,create_date,datetime,,Created on,,,,False,version 1
-15,model,char,,Model Name,,,,True,version 1
-16,res_id,integer,,Record ID,,,,False,version 1
-17,id,integer,,ID,,,,False,version 1
-18,action_id,many2one,ir.actions.actions,Action (change only),,,,False,version 1
-,,,,
-,,,,
+model;ir.values;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;;;;False;version 1
+2;__last_update;datetime;;Last Modified on;;;;False;version 1
+3;user_id;many2one;res.users;User;;;;False;version 1
+4;name;char;;Name;;;;True;version 1
+5;display_name;char;;Display Name;;;;False;version 1
+6;model_id;many2one;ir.model;Model (change only);;;;False;version 1
+7;key2;char;;Qualifier;;;;False;version 1
+8;value_unpickle;text;;Default value or action reference;;;;False;version 1
+9;company_id;many2one;res.company;Company;;;;False;version 1
+10;value;text;;Value;;;;False;version 1
+11;write_uid;many2one;res.users;Last Updated by;;;;False;version 1
+12;key;selection;;Type;;;;True;version 1
+13;write_date;datetime;;Last Updated on;;;;False;version 1
+14;create_date;datetime;;Created on;;;;False;version 1
+15;model;char;;Model Name;;;;True;version 1
+16;res_id;integer;;Record ID;;;;False;version 1
+17;id;integer;;ID;;;;False;version 1
+18;action_id;many2one;ir.actions.actions;Action (change only);;;;False;version 1
+;;;;
+;;;;

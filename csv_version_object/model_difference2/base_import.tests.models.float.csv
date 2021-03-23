@@ -1,14 +1,14 @@
-model,base_import.tests.models.float,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,,,,many2one,res.users,Created by,False,version 2
-2,display_name,,,,char,,Display Name,False,version 2
-3,__last_update,,,,datetime,,Last Modified on,False,version 2
-4,value,,,,float,,Value,False,version 2
-5,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-6,currency_id,,,,many2one,res.currency,Currency,False,version 2
-7,value2,,,,monetary,,Value2,False,version 2
-8,write_date,,,,datetime,,Last Updated on,False,version 2
-9,create_date,,,,datetime,,Created on,False,version 2
-10,id,,,,integer,,ID,False,version 2
-,,,,
-,,,,
+model;base_import.tests.models.float;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;;;;many2one;res.users;Created by;False;version 2
+2;display_name;;;;char;;Display Name;False;version 2
+3;__last_update;;;;datetime;;Last Modified on;False;version 2
+4;value;;;;float;;Value;False;version 2
+5;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+6;currency_id;;;;many2one;res.currency;Currency;False;version 2
+7;value2;;;;monetary;;Value2;False;version 2
+8;write_date;;;;datetime;;Last Updated on;False;version 2
+9;create_date;;;;datetime;;Created on;False;version 2
+10;id;;;;integer;;ID;False;version 2
+;;;;
+;;;;

@@ -1,39 +1,39 @@
-model,stock.config.settings,transient,True
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,module_stock_landed_costs,selection,,Landed Costs,,,,False,version 1
-2,group_stock_inventory_valuation,selection,,Inventory Valuation,,,,False,version 1
-3,module_stock_calendar,selection,,Minimum Stock Rules,,,,False,version 1
-4,module_stock_barcode,boolean,,Barcode scanner support,,,,False,version 1
-5,module_stock_picking_wave,selection,,Picking Waves,,,,False,version 1
-6,company_id,many2one,res.company,Company,,,,True,version 1
-7,group_stock_tracking_lot,selection,,Packages,,,,False,version 1
-8,create_date,datetime,,Created on,,,,False,version 1
-9,group_product_variant,selection,,Product Variants,,,,False,version 1
-10,id,integer,,ID,,,,False,version 1
-11,create_uid,many2one,res.users,Created by,,,,False,version 1
-12,group_warning_stock,selection,,Warning,,,,False,version 1
-13,__last_update,datetime,,Last Modified on,,,,False,version 1
-14,module_delivery_temando,boolean,,Temando integration,,,,False,version 1
-15,group_stock_production_lot,selection,,Lots and Serial Numbers,,,,False,version 1
-16,group_stock_multi_warehouses,boolean,,Manage several warehouses,,,,False,version 1
-17,group_stock_tracking_owner,selection,,Product Owners,,,,False,version 1
-18,propagation_minimum_delta,integer,,Minimum days to trigger a propagation of date change in pushed/pull flows.,,,,False,version 1
-19,module_delivery_usps,boolean,,USPS integration,,,,False,version 1
-20,module_stock_dropshipping,selection,,Dropshipping,,,,False,version 1
-21,module_quality,boolean,,Quality,,,,False,version 1
-22,module_procurement_jit,selection,,Procurements,,,,False,version 1
-23,group_stock_packaging,selection,,Packaging Methods,,,,False,version 1
-24,write_date,datetime,,Last Updated on,,,,False,version 1
-25,module_delivery_fedex,boolean,,Fedex integration,,,,False,version 1
-26,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
-27,decimal_precision,integer,,Decimal precision on weight,,,,False,version 1
-28,display_name,char,,Display Name,,,,False,version 1
-29,group_uom,selection,,Units of Measure,,,,False,version 1
-30,warehouse_and_location_usage_level,selection,,Warehouses and Locations usage level,,,,False,version 1
-31,module_delivery_ups,boolean,,UPS integration,,,,False,version 1
-32,module_product_expiry,selection,,Expiration Dates,,,,False,version 1
-33,group_stock_multi_locations,boolean,,Manage several stock locations,,,,False,version 1
-34,group_stock_adv_location,selection,,Routes,,,,False,version 1
-35,module_delivery_dhl,boolean,,DHL integration,,,,False,version 1
-,,,,
-,,,,
+model;stock.config.settings;transient;True
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;module_stock_landed_costs;selection;;Landed Costs;;;;False;version 1
+2;group_stock_inventory_valuation;selection;;Inventory Valuation;;;;False;version 1
+3;module_stock_calendar;selection;;Minimum Stock Rules;;;;False;version 1
+4;module_stock_barcode;boolean;;Barcode scanner support;;;;False;version 1
+5;module_stock_picking_wave;selection;;Picking Waves;;;;False;version 1
+6;company_id;many2one;res.company;Company;;;;True;version 1
+7;group_stock_tracking_lot;selection;;Packages;;;;False;version 1
+8;create_date;datetime;;Created on;;;;False;version 1
+9;group_product_variant;selection;;Product Variants;;;;False;version 1
+10;id;integer;;ID;;;;False;version 1
+11;create_uid;many2one;res.users;Created by;;;;False;version 1
+12;group_warning_stock;selection;;Warning;;;;False;version 1
+13;__last_update;datetime;;Last Modified on;;;;False;version 1
+14;module_delivery_temando;boolean;;Temando integration;;;;False;version 1
+15;group_stock_production_lot;selection;;Lots and Serial Numbers;;;;False;version 1
+16;group_stock_multi_warehouses;boolean;;Manage several warehouses;;;;False;version 1
+17;group_stock_tracking_owner;selection;;Product Owners;;;;False;version 1
+18;propagation_minimum_delta;integer;;Minimum days to trigger a propagation of date change in pushed/pull flows.;;;;False;version 1
+19;module_delivery_usps;boolean;;USPS integration;;;;False;version 1
+20;module_stock_dropshipping;selection;;Dropshipping;;;;False;version 1
+21;module_quality;boolean;;Quality;;;;False;version 1
+22;module_procurement_jit;selection;;Procurements;;;;False;version 1
+23;group_stock_packaging;selection;;Packaging Methods;;;;False;version 1
+24;write_date;datetime;;Last Updated on;;;;False;version 1
+25;module_delivery_fedex;boolean;;Fedex integration;;;;False;version 1
+26;write_uid;many2one;res.users;Last Updated by;;;;False;version 1
+27;decimal_precision;integer;;Decimal precision on weight;;;;False;version 1
+28;display_name;char;;Display Name;;;;False;version 1
+29;group_uom;selection;;Units of Measure;;;;False;version 1
+30;warehouse_and_location_usage_level;selection;;Warehouses and Locations usage level;;;;False;version 1
+31;module_delivery_ups;boolean;;UPS integration;;;;False;version 1
+32;module_product_expiry;selection;;Expiration Dates;;;;False;version 1
+33;group_stock_multi_locations;boolean;;Manage several stock locations;;;;False;version 1
+34;group_stock_adv_location;selection;;Routes;;;;False;version 1
+35;module_delivery_dhl;boolean;;DHL integration;;;;False;version 1
+;;;;
+;;;;

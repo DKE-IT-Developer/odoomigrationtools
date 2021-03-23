@@ -1,18 +1,18 @@
-model,reset.view.arch.wizard,transient,True
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,,,,many2one,res.users,Created by,False,version 2
-2,__last_update,,,,datetime,,Last Modified on,False,version 2
-3,display_name,,,,char,,Display Name,False,version 2
-4,has_diff,,,,boolean,,Has Diff,False,version 2
-5,arch_diff,,,,html,,Architecture Diff,False,version 2
-6,view_id,,,,many2one,ir.ui.view,View,False,version 2
-7,reset_mode,,,,selection,,Reset Mode,True,version 2
-8,view_name,,,,char,,View Name,False,version 2
-9,arch_to_compare,,,,text,,Arch To Compare To,False,version 2
-10,compare_view_id,,,,many2one,ir.ui.view,Compare To View,False,version 2
-11,write_date,,,,datetime,,Last Updated on,False,version 2
-12,create_date,,,,datetime,,Created on,False,version 2
-13,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-14,id,,,,integer,,ID,False,version 2
-,,,,
-,,,,
+model;reset.view.arch.wizard;transient;True
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;;;;many2one;res.users;Created by;False;version 2
+2;__last_update;;;;datetime;;Last Modified on;False;version 2
+3;display_name;;;;char;;Display Name;False;version 2
+4;has_diff;;;;boolean;;Has Diff;False;version 2
+5;arch_diff;;;;html;;Architecture Diff;False;version 2
+6;view_id;;;;many2one;ir.ui.view;View;False;version 2
+7;reset_mode;;;;selection;;Reset Mode;True;version 2
+8;view_name;;;;char;;View Name;False;version 2
+9;arch_to_compare;;;;text;;Arch To Compare To;False;version 2
+10;compare_view_id;;;;many2one;ir.ui.view;Compare To View;False;version 2
+11;write_date;;;;datetime;;Last Updated on;False;version 2
+12;create_date;;;;datetime;;Created on;False;version 2
+13;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+14;id;;;;integer;;ID;False;version 2
+;;;;
+;;;;

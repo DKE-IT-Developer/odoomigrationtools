@@ -1,28 +1,28 @@
-model,stock.report,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,picking_name,,,,char,,Picking Name,False,version 2
-2,date_done,,,,datetime,,Transfer Date,False,version 2
-3,creation_date,,,,datetime,,Creation Date,False,version 2
-4,product_qty,,,,float,,Product Quantity,False,version 2
-5,is_late,,,,boolean,,Is Late,False,version 2
-6,id,,,,integer,,ID,False,version 2
-7,display_name,,,,char,,Display Name,False,version 2
-8,reference,,,,char,,Reference,False,version 2
-9,__last_update,,,,datetime,,Last Modified on,False,version 2
-10,valuation,,,,float,,Valuation of Inventory using a Domain,False,version 2
-11,company_id,,,,many2one,res.company,Company,False,version 2
-12,delay,,,,float,,Delay (Days),False,version 2
-13,state,,,,selection,,Status,False,version 2
-14,picking_type_code,,,,selection,,Type,False,version 2
-15,inventory_id,,,,many2one,stock.inventory,Inventory Adjustment,False,version 2
-16,scheduled_date,,,,datetime,,Expected Date,False,version 2
-17,stock_value,,,,float,,Total Valuation of Inventory,False,version 2
-18,categ_id,,,,many2one,product.category,Product Category,False,version 2
-19,partner_id,,,,many2one,res.partner,Partner,False,version 2
-20,cycle_time,,,,float,,Cycle Time (Days),False,version 2
-21,product_id,,,,many2one,product.product,Product,False,version 2
-22,is_backorder,,,,boolean,,Is a Backorder,False,version 2
-23,operation_type,,,,char,,Operation Type,False,version 2
-24,picking_id,,,,many2one,stock.picking,Transfer Reference,False,version 2
-,,,,
-,,,,
+model;stock.report;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;picking_name;;;;char;;Picking Name;False;version 2
+2;date_done;;;;datetime;;Transfer Date;False;version 2
+3;creation_date;;;;datetime;;Creation Date;False;version 2
+4;product_qty;;;;float;;Product Quantity;False;version 2
+5;is_late;;;;boolean;;Is Late;False;version 2
+6;id;;;;integer;;ID;False;version 2
+7;display_name;;;;char;;Display Name;False;version 2
+8;reference;;;;char;;Reference;False;version 2
+9;__last_update;;;;datetime;;Last Modified on;False;version 2
+10;valuation;;;;float;;Valuation of Inventory using a Domain;False;version 2
+11;company_id;;;;many2one;res.company;Company;False;version 2
+12;delay;;;;float;;Delay (Days);False;version 2
+13;state;;;;selection;;Status;False;version 2
+14;picking_type_code;;;;selection;;Type;False;version 2
+15;inventory_id;;;;many2one;stock.inventory;Inventory Adjustment;False;version 2
+16;scheduled_date;;;;datetime;;Expected Date;False;version 2
+17;stock_value;;;;float;;Total Valuation of Inventory;False;version 2
+18;categ_id;;;;many2one;product.category;Product Category;False;version 2
+19;partner_id;;;;many2one;res.partner;Partner;False;version 2
+20;cycle_time;;;;float;;Cycle Time (Days);False;version 2
+21;product_id;;;;many2one;product.product;Product;False;version 2
+22;is_backorder;;;;boolean;;Is a Backorder;False;version 2
+23;operation_type;;;;char;;Operation Type;False;version 2
+24;picking_id;;;;many2one;stock.picking;Transfer Reference;False;version 2
+;;;;
+;;;;

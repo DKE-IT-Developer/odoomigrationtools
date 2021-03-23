@@ -1,38 +1,38 @@
-model,account.aged.receivable,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,journal_code,,,,char,,Journal Code,False,version 2
-2,analytic_tag_ids,,,,many2many,account.analytic.tag,Analytic Tag,False,version 2
-3,expected_pay_date,,,,date,,Exp. Date,False,version 2
-4,company_id,,,,many2one,res.company,Company,False,version 2
-5,currency_id,,,,many2one,res.currency,Currency,False,version 2
-6,report_date,,,,date,,Report Date,False,version 2
-7,partner_id,,,,many2one,res.partner,Partner,False,version 2
-8,account_name,,,,char,,Account Name,False,version 2
-9,analytic_account_id,,,,many2one,account.analytic.account,Analytic Account,False,version 2
-10,display_name,,,,char,,Display Name,False,version 2
-11,__last_update,,,,datetime,,Last Modified on,False,version 2
-12,partner_name,,,,char,,Partner Name,False,version 2
-13,move_type,,,,char,,Move Type,False,version 2
-14,journal_id,,,,many2one,account.journal,Journal,False,version 2
-15,id,,,,integer,,ID,False,version 2
-16,debit,,,,monetary,,Debit,False,version 2
-17,report_currency_id,,,,many2one,res.currency,Report Currency,False,version 2
-18,account_id,,,,many2one,account.account,Account,False,version 2
-19,move_name,,,,char,,Move Name,False,version 2
-20,period4,,,,monetary,,91 - 120,False,version 2
-21,period5,,,,monetary,,Older,False,version 2
-22,period2,,,,monetary,,31 - 60,False,version 2
-23,period3,,,,monetary,,61 - 90,False,version 2
-24,period0,,,,monetary,,As of: ,False,version 2
-25,period1,,,,monetary,,1 - 30,False,version 2
-26,date,,,,date,,Date,False,version 2
-27,move_id,,,,many2one,account.move,Move,False,version 2
-28,payment_id,,,,many2one,account.payment,Payment,False,version 2
-29,balance,,,,monetary,,Balance,False,version 2
-30,name,,,,char,,Name,False,version 2
-31,partner_trust,,,,char,,Partner Trust,False,version 2
-32,credit,,,,monetary,,Credit,False,version 2
-33,account_code,,,,char,,Account Code,False,version 2
-34,display_type,,,,char,,Display Type,False,version 2
-,,,,
-,,,,
+model;account.aged.receivable;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;journal_code;;;;char;;Journal Code;False;version 2
+2;analytic_tag_ids;;;;many2many;account.analytic.tag;Analytic Tag;False;version 2
+3;expected_pay_date;;;;date;;Exp. Date;False;version 2
+4;company_id;;;;many2one;res.company;Company;False;version 2
+5;currency_id;;;;many2one;res.currency;Currency;False;version 2
+6;report_date;;;;date;;Report Date;False;version 2
+7;partner_id;;;;many2one;res.partner;Partner;False;version 2
+8;account_name;;;;char;;Account Name;False;version 2
+9;analytic_account_id;;;;many2one;account.analytic.account;Analytic Account;False;version 2
+10;display_name;;;;char;;Display Name;False;version 2
+11;__last_update;;;;datetime;;Last Modified on;False;version 2
+12;partner_name;;;;char;;Partner Name;False;version 2
+13;move_type;;;;char;;Move Type;False;version 2
+14;journal_id;;;;many2one;account.journal;Journal;False;version 2
+15;id;;;;integer;;ID;False;version 2
+16;debit;;;;monetary;;Debit;False;version 2
+17;report_currency_id;;;;many2one;res.currency;Report Currency;False;version 2
+18;account_id;;;;many2one;account.account;Account;False;version 2
+19;move_name;;;;char;;Move Name;False;version 2
+20;period4;;;;monetary;;91 - 120;False;version 2
+21;period5;;;;monetary;;Older;False;version 2
+22;period2;;;;monetary;;31 - 60;False;version 2
+23;period3;;;;monetary;;61 - 90;False;version 2
+24;period0;;;;monetary;;As of: ;False;version 2
+25;period1;;;;monetary;;1 - 30;False;version 2
+26;date;;;;date;;Date;False;version 2
+27;move_id;;;;many2one;account.move;Move;False;version 2
+28;payment_id;;;;many2one;account.payment;Payment;False;version 2
+29;balance;;;;monetary;;Balance;False;version 2
+30;name;;;;char;;Name;False;version 2
+31;partner_trust;;;;char;;Partner Trust;False;version 2
+32;credit;;;;monetary;;Credit;False;version 2
+33;account_code;;;;char;;Account Code;False;version 2
+34;display_type;;;;char;;Display Type;False;version 2
+;;;;
+;;;;

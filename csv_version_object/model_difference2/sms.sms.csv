@@ -1,17 +1,17 @@
-model,sms.sms,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,body,,,,text,,Body,False,version 2
-2,mail_message_id,,,,many2one,mail.message,Mail Message,False,version 2
-3,display_name,,,,char,,Display Name,False,version 2
-4,create_uid,,,,many2one,res.users,Created by,False,version 2
-5,partner_id,,,,many2one,res.partner,Customer,False,version 2
-6,__last_update,,,,datetime,,Last Modified on,False,version 2
-7,number,,,,char,,Number,False,version 2
-8,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-9,state,,,,selection,,SMS Status,True,version 2
-10,write_date,,,,datetime,,Last Updated on,False,version 2
-11,create_date,,,,datetime,,Created on,False,version 2
-12,error_code,,,,selection,,Error Code,False,version 2
-13,id,,,,integer,,ID,False,version 2
-,,,,
-,,,,
+model;sms.sms;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;body;;;;text;;Body;False;version 2
+2;mail_message_id;;;;many2one;mail.message;Mail Message;False;version 2
+3;display_name;;;;char;;Display Name;False;version 2
+4;create_uid;;;;many2one;res.users;Created by;False;version 2
+5;partner_id;;;;many2one;res.partner;Customer;False;version 2
+6;__last_update;;;;datetime;;Last Modified on;False;version 2
+7;number;;;;char;;Number;False;version 2
+8;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+9;state;;;;selection;;SMS Status;True;version 2
+10;write_date;;;;datetime;;Last Updated on;False;version 2
+11;create_date;;;;datetime;;Created on;False;version 2
+12;error_code;;;;selection;;Error Code;False;version 2
+13;id;;;;integer;;ID;False;version 2
+;;;;
+;;;;

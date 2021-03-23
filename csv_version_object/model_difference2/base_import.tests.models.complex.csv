@@ -1,17 +1,17 @@
-model,base_import.tests.models.complex,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,,,,many2one,res.users,Created by,False,version 2
-2,c,,,,char,,C,False,version 2
-3,display_name,,,,char,,Display Name,False,version 2
-4,d,,,,date,,D,False,version 2
-5,f,,,,float,,F,False,version 2
-6,__last_update,,,,datetime,,Last Modified on,False,version 2
-7,m,,,,monetary,,M,False,version 2
-8,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-9,currency_id,,,,many2one,res.currency,Currency,False,version 2
-10,write_date,,,,datetime,,Last Updated on,False,version 2
-11,create_date,,,,datetime,,Created on,False,version 2
-12,dt,,,,datetime,,Dt,False,version 2
-13,id,,,,integer,,ID,False,version 2
-,,,,
-,,,,
+model;base_import.tests.models.complex;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;;;;many2one;res.users;Created by;False;version 2
+2;c;;;;char;;C;False;version 2
+3;display_name;;;;char;;Display Name;False;version 2
+4;d;;;;date;;D;False;version 2
+5;f;;;;float;;F;False;version 2
+6;__last_update;;;;datetime;;Last Modified on;False;version 2
+7;m;;;;monetary;;M;False;version 2
+8;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+9;currency_id;;;;many2one;res.currency;Currency;False;version 2
+10;write_date;;;;datetime;;Last Updated on;False;version 2
+11;create_date;;;;datetime;;Created on;False;version 2
+12;dt;;;;datetime;;Dt;False;version 2
+13;id;;;;integer;;ID;False;version 2
+;;;;
+;;;;

@@ -1,28 +1,28 @@
-model,account.reconcile.model.line,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_date,,,,datetime,,Created on,False,version 2
-2,sequence,,,,integer,,Sequence,True,version 2
-3,journal_id,,,,many2one,account.journal,Journal,False,version 2
-4,amount_string,,,,char,,Amount,True,version 2
-5,show_force_tax_included,,,,boolean,,Show Force Tax Included,False,version 2
-6,force_tax_included,,,,boolean,,Tax Included in Price,False,version 2
-7,id,,,,integer,,ID,False,version 2
-8,analytic_account_id,,,,many2one,account.analytic.account,Analytic Account,False,version 2
-9,create_uid,,,,many2one,res.users,Created by,False,version 2
-10,display_name,,,,char,,Display Name,False,version 2
-11,match_total_amount_param,,,,float,,Amount Matching %,False,version 2
-12,__last_update,,,,datetime,,Last Modified on,False,version 2
-13,analytic_tag_ids,,,,many2many,account.analytic.tag,Analytic Tags,False,version 2
-14,company_id,,,,many2one,res.company,Company,False,version 2
-15,label,,,,char,,Journal Item Label,False,version 2
-16,amount_type,,,,selection,,Amount Type,True,version 2
-17,tax_ids,,,,many2many,account.tax,Taxes,False,version 2
-18,model_id,,,,many2one,account.reconcile.model,Model,False,version 2
-19,account_id,,,,many2one,account.account,Account,True,version 2
-20,write_date,,,,datetime,,Last Updated on,False,version 2
-21,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-22,rule_type,,,,selection,,Type,False,version 2
-23,match_total_amount,,,,boolean,,Amount Matching,False,version 2
-24,amount,,,,float,,Float Amount,False,version 2
-,,,,
-,,,,
+model;account.reconcile.model.line;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_date;;;;datetime;;Created on;False;version 2
+2;sequence;;;;integer;;Sequence;True;version 2
+3;journal_id;;;;many2one;account.journal;Journal;False;version 2
+4;amount_string;;;;char;;Amount;True;version 2
+5;show_force_tax_included;;;;boolean;;Show Force Tax Included;False;version 2
+6;force_tax_included;;;;boolean;;Tax Included in Price;False;version 2
+7;id;;;;integer;;ID;False;version 2
+8;analytic_account_id;;;;many2one;account.analytic.account;Analytic Account;False;version 2
+9;create_uid;;;;many2one;res.users;Created by;False;version 2
+10;display_name;;;;char;;Display Name;False;version 2
+11;match_total_amount_param;;;;float;;Amount Matching %;False;version 2
+12;__last_update;;;;datetime;;Last Modified on;False;version 2
+13;analytic_tag_ids;;;;many2many;account.analytic.tag;Analytic Tags;False;version 2
+14;company_id;;;;many2one;res.company;Company;False;version 2
+15;label;;;;char;;Journal Item Label;False;version 2
+16;amount_type;;;;selection;;Amount Type;True;version 2
+17;tax_ids;;;;many2many;account.tax;Taxes;False;version 2
+18;model_id;;;;many2one;account.reconcile.model;Model;False;version 2
+19;account_id;;;;many2one;account.account;Account;True;version 2
+20;write_date;;;;datetime;;Last Updated on;False;version 2
+21;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+22;rule_type;;;;selection;;Type;False;version 2
+23;match_total_amount;;;;boolean;;Amount Matching;False;version 2
+24;amount;;;;float;;Float Amount;False;version 2
+;;;;
+;;;;

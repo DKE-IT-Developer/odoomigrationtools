@@ -1,39 +1,39 @@
-model,account.invoice.line,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,origin,char,,Source Document,,,,False,version 1
-2,sale_line_ids,many2many,sale.order.line,Sale Order Lines,,,,False,version 1
-3,create_date,datetime,,Created on,,,,False,version 1
-4,analytic_tag_ids,many2many,account.analytic.tag,Analytic Tags,,,,False,version 1
-5,price_unit,float,,Unit Price,,,,True,version 1
-6,price_subtotal,monetary,,Amount,,,,False,version 1
-7,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
-8,currency_id,many2one,res.currency,Currency,,,,False,version 1
-9,uom_id,many2one,product.uom,Unit of Measure,,,,False,version 1
-10,partner_id,many2one,res.partner,Partner,,,,False,version 1
-11,id,integer,,ID,,,,False,version 1
-12,purchase_id,many2one,purchase.order,Purchase Order,,,,False,version 1
-13,create_uid,many2one,res.users,Created by,,,,False,version 1
-14,asset_category_id,many2one,account.asset.category,Asset Category,,,,False,version 1
-15,__last_update,datetime,,Last Modified on,,,,False,version 1
-16,sequence,integer,,Sequence,,,,False,version 1
-17,company_id,many2one,res.company,Company,,,,False,version 1
-18,account_analytic_id,many2one,account.analytic.account,Analytic Account,,,,False,version 1
-19,purchase_line_id,many2one,purchase.order.line,Purchase Order Line,,,,False,version 1
-20,account_id,many2one,account.account,Account,,,,True,version 1
-21,asset_end_date,date,,Asset End Date,,,,False,version 1
-22,discount,float,,Discount (%),,,,False,version 1
-23,write_date,datetime,,Last Updated on,,,,False,version 1
-24,price_subtotal_signed,monetary,,Amount Signed,,,,False,version 1
-25,display_name,char,,Display Name,,,,False,version 1
-26,layout_category_id,many2one,sale.layout_category,Section,,,,False,version 1
-27,name,text,,Description,,,,True,version 1
-28,company_currency_id,many2one,res.currency,Company Currency,,,,False,version 1
-29,asset_start_date,date,,Asset Start Date,,,,False,version 1
-30,product_id,many2one,product.product,Product,,,,False,version 1
-31,invoice_id,many2one,account.invoice,Invoice Reference,,,,False,version 1
-32,asset_mrr,float,,Monthly Recurring Revenue,,,,False,version 1
-33,layout_category_sequence,integer,,Layout Sequence,,,,False,version 1
-34,invoice_line_tax_ids,many2many,account.tax,Taxes,,,,False,version 1
-35,quantity,float,,Quantity,,,,True,version 1
-,,,,
-,,,,
+model;account.invoice.line;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;origin;char;;Source Document;;;;False;version 1
+2;sale_line_ids;many2many;sale.order.line;Sale Order Lines;;;;False;version 1
+3;create_date;datetime;;Created on;;;;False;version 1
+4;analytic_tag_ids;many2many;account.analytic.tag;Analytic Tags;;;;False;version 1
+5;price_unit;float;;Unit Price;;;;True;version 1
+6;price_subtotal;monetary;;Amount;;;;False;version 1
+7;write_uid;many2one;res.users;Last Updated by;;;;False;version 1
+8;currency_id;many2one;res.currency;Currency;;;;False;version 1
+9;uom_id;many2one;product.uom;Unit of Measure;;;;False;version 1
+10;partner_id;many2one;res.partner;Partner;;;;False;version 1
+11;id;integer;;ID;;;;False;version 1
+12;purchase_id;many2one;purchase.order;Purchase Order;;;;False;version 1
+13;create_uid;many2one;res.users;Created by;;;;False;version 1
+14;asset_category_id;many2one;account.asset.category;Asset Category;;;;False;version 1
+15;__last_update;datetime;;Last Modified on;;;;False;version 1
+16;sequence;integer;;Sequence;;;;False;version 1
+17;company_id;many2one;res.company;Company;;;;False;version 1
+18;account_analytic_id;many2one;account.analytic.account;Analytic Account;;;;False;version 1
+19;purchase_line_id;many2one;purchase.order.line;Purchase Order Line;;;;False;version 1
+20;account_id;many2one;account.account;Account;;;;True;version 1
+21;asset_end_date;date;;Asset End Date;;;;False;version 1
+22;discount;float;;Discount (%);;;;False;version 1
+23;write_date;datetime;;Last Updated on;;;;False;version 1
+24;price_subtotal_signed;monetary;;Amount Signed;;;;False;version 1
+25;display_name;char;;Display Name;;;;False;version 1
+26;layout_category_id;many2one;sale.layout_category;Section;;;;False;version 1
+27;name;text;;Description;;;;True;version 1
+28;company_currency_id;many2one;res.currency;Company Currency;;;;False;version 1
+29;asset_start_date;date;;Asset Start Date;;;;False;version 1
+30;product_id;many2one;product.product;Product;;;;False;version 1
+31;invoice_id;many2one;account.invoice;Invoice Reference;;;;False;version 1
+32;asset_mrr;float;;Monthly Recurring Revenue;;;;False;version 1
+33;layout_category_sequence;integer;;Layout Sequence;;;;False;version 1
+34;invoice_line_tax_ids;many2many;account.tax;Taxes;;;;False;version 1
+35;quantity;float;;Quantity;;;;True;version 1
+;;;;
+;;;;

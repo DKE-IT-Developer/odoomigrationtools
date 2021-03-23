@@ -1,22 +1,22 @@
-model,account.tax.report.line,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,children_line_ids,,,,one2many,account.tax.report.line,Children Lines,False,version 2
-2,create_uid,,,,many2one,res.users,Created by,False,version 2
-3,code,,,,char,,Code,False,version 2
-4,display_name,,,,char,,Display Name,False,version 2
-5,parent_path,,,,char,,Parent Path,False,version 2
-6,sequence,,,,integer,,Sequence,True,version 2
-7,__last_update,,,,datetime,,Last Modified on,False,version 2
-8,tag_ids,,,,many2many,account.account.tag,Tags,False,version 2
-9,name,,,,char,,Name,True,version 2
-10,report_action_id,,,,many2one,ir.actions.act_window,Report Action,False,version 2
-11,tag_name,,,,char,,Tag Name,False,version 2
-12,parent_id,,,,many2one,account.tax.report.line,Parent Line,False,version 2
-13,write_date,,,,datetime,,Last Updated on,False,version 2
-14,formula,,,,char,,Formula,False,version 2
-15,create_date,,,,datetime,,Created on,False,version 2
-16,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-17,id,,,,integer,,ID,False,version 2
-18,report_id,,,,many2one,account.tax.report,Tax Report,True,version 2
-,,,,
-,,,,
+model;account.tax.report.line;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;children_line_ids;;;;one2many;account.tax.report.line;Children Lines;False;version 2
+2;create_uid;;;;many2one;res.users;Created by;False;version 2
+3;code;;;;char;;Code;False;version 2
+4;display_name;;;;char;;Display Name;False;version 2
+5;parent_path;;;;char;;Parent Path;False;version 2
+6;sequence;;;;integer;;Sequence;True;version 2
+7;__last_update;;;;datetime;;Last Modified on;False;version 2
+8;tag_ids;;;;many2many;account.account.tag;Tags;False;version 2
+9;name;;;;char;;Name;True;version 2
+10;report_action_id;;;;many2one;ir.actions.act_window;Report Action;False;version 2
+11;tag_name;;;;char;;Tag Name;False;version 2
+12;parent_id;;;;many2one;account.tax.report.line;Parent Line;False;version 2
+13;write_date;;;;datetime;;Last Updated on;False;version 2
+14;formula;;;;char;;Formula;False;version 2
+15;create_date;;;;datetime;;Created on;False;version 2
+16;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+17;id;;;;integer;;ID;False;version 2
+18;report_id;;;;many2one;account.tax.report;Tax Report;True;version 2
+;;;;
+;;;;

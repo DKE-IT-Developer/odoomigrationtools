@@ -1,11 +1,11 @@
-model,workflow.triggers,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,display_name,char,,Display Name,,,,False,version 1
-2,__last_update,datetime,,Last Modified on,,,,False,version 1
-3,instance_id,many2one,workflow.instance,Destination Instance,,,,False,version 1
-4,workitem_id,many2one,workflow.workitem,Workitem,,,,True,version 1
-5,model,char,,Object,,,,False,version 1
-6,res_id,integer,,Resource ID,,,,False,version 1
-7,id,integer,,ID,,,,False,version 1
-,,,,
-,,,,
+model;workflow.triggers;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;display_name;char;;Display Name;;;;False;version 1
+2;__last_update;datetime;;Last Modified on;;;;False;version 1
+3;instance_id;many2one;workflow.instance;Destination Instance;;;;False;version 1
+4;workitem_id;many2one;workflow.workitem;Workitem;;;;True;version 1
+5;model;char;;Object;;;;False;version 1
+6;res_id;integer;;Resource ID;;;;False;version 1
+7;id;integer;;ID;;;;False;version 1
+;;;;
+;;;;

@@ -1,75 +1,75 @@
-model,account.asset,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,message_follower_ids,,,,one2many,mail.followers,Followers,False,version 2
-2,children_ids,,,,one2many,account.asset,Children,False,version 2
-3,create_date,,,,datetime,,Created on,False,version 2
-4,gross_increase_count,,,,integer,,# Gross Increases,False,version 2
-5,account_asset_id,,,,many2one,account.account,Fixed Asset Account,False,version 2
-6,original_move_line_ids,,,,many2many,account.move.line,Journal Items,False,version 2
-7,account_depreciation_id,,,,many2one,account.account,Depreciation Account,False,version 2
-8,__last_update,,,,datetime,,Last Modified on,False,version 2
-9,salvage_value,,,,monetary,,Not Depreciable Value,False,version 2
-10,display_model_choice,,,,boolean,,Display Model Choice,False,version 2
-11,journal_id,,,,many2one,account.journal,Journal,False,version 2
-12,currency_id,,,,many2one,res.currency,Currency,True,version 2
-13,account_depreciation_expense_id,,,,many2one,account.account,Expense Account,False,version 2
-14,message_has_error,,,,boolean,,Message Delivery error,False,version 2
-15,depreciation_move_ids,,,,one2many,account.move,Depreciation Lines,False,version 2
-16,user_type_id,,,,many2one,account.account.type,Type of the account,False,version 2
-17,prorata_date,,,,date,,Prorata Date,False,version 2
-18,message_ids,,,,one2many,mail.message,Messages,False,version 2
-19,activity_date_deadline,,,,date,,Next Activity Deadline,False,version 2
-20,create_uid,,,,many2one,res.users,Created by,False,version 2
-21,display_name,,,,char,,Display Name,False,version 2
-22,original_value,,,,monetary,,Original Value,False,version 2
-23,message_is_follower,,,,boolean,,Is Follower,False,version 2
-24,parent_id,,,,many2one,account.asset,Parent,False,version 2
-25,message_has_sms_error,,,,boolean,,SMS Delivery error,False,version 2
-26,already_depreciated_amount_import,,,,monetary,,Already Depreciated Amount Import,False,version 2
-27,analytic_tag_ids,,,,many2many,account.analytic.tag,Analytic Tag,False,version 2
-28,activity_type_icon,,,,char,,Activity Type Icon,False,version 2
-29,company_id,,,,many2one,res.company,Company,True,version 2
-30,id,,,,integer,,ID,False,version 2
-31,prorata,,,,boolean,,Prorata Temporis,False,version 2
-32,state,,,,selection,,Status,False,version 2
-33,message_needaction_counter,,,,integer,,Number of Actions,False,version 2
-34,method_period,,,,selection,,Number of Months in a Period,False,version 2
-35,activity_user_id,,,,many2one,res.users,Responsible User,False,version 2
-36,message_channel_ids,,,,many2many,mail.channel,Followers (Channels),False,version 2
-37,account_analytic_id,,,,many2one,account.analytic.account,Analytic Account,False,version 2
-38,message_unread_counter,,,,integer,,Unread Messages Counter,False,version 2
-39,method,,,,selection,,Method,False,version 2
-40,book_value,,,,monetary,,Book Value,False,version 2
-41,method_number,,,,integer,,Number of Depreciations,False,version 2
-42,model_id,,,,many2one,account.asset,Model,False,version 2
-43,message_needaction,,,,boolean,,Action Needed,False,version 2
-44,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-45,acquisition_date,,,,date,,Acquisition Date,False,version 2
-46,message_attachment_count,,,,integer,,Attachment Count,False,version 2
-47,total_depreciation_entries_count,,,,integer,,# Depreciation Entries,False,version 2
-48,depreciation_entries_count,,,,integer,,# Posted Depreciation Entries,False,version 2
-49,value_residual,,,,monetary,,Depreciable Value,False,version 2
-50,write_date,,,,datetime,,Last Updated on,False,version 2
-51,active,,,,boolean,,Active,False,version 2
-52,message_has_error_counter,,,,integer,,Number of errors,False,version 2
-53,asset_type,,,,selection,,Asset Type,False,version 2
-54,method_progress_factor,,,,float,,Declining Factor,False,version 2
-55,display_account_asset_id,,,,boolean,,Display Account Asset,False,version 2
-56,activity_type_id,,,,many2one,mail.activity.type,Next Activity Type,False,version 2
-57,website_message_ids,,,,one2many,mail.message,Website Messages,False,version 2
-58,activity_ids,,,,one2many,mail.activity,Activities,False,version 2
-59,name,,,,char,,Asset Name,True,version 2
-60,activity_summary,,,,char,,Next Activity Summary,False,version 2
-61,message_main_attachment_id,,,,many2one,ir.attachment,Main Attachment,False,version 2
-62,first_depreciation_date_import,,,,date,,First Depreciation Date Import,False,version 2
-63,first_depreciation_date,,,,date,,First Depreciation Date,False,version 2
-64,activity_exception_decoration,,,,selection,,Activity Exception Decoration,False,version 2
-65,activity_exception_icon,,,,char,,Icon,False,version 2
-66,gross_increase_value,,,,monetary,,Gross Increase Value,False,version 2
-67,depreciation_number_import,,,,integer,,Depreciation Number Import,False,version 2
-68,activity_state,,,,selection,,Activity State,False,version 2
-69,message_unread,,,,boolean,,Unread Messages,False,version 2
-70,disposal_date,,,,date,,Disposal Date,False,version 2
-71,message_partner_ids,,,,many2many,res.partner,Followers (Partners),False,version 2
-,,,,
-,,,,
+model;account.asset;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;message_follower_ids;;;;one2many;mail.followers;Followers;False;version 2
+2;children_ids;;;;one2many;account.asset;Children;False;version 2
+3;create_date;;;;datetime;;Created on;False;version 2
+4;gross_increase_count;;;;integer;;# Gross Increases;False;version 2
+5;account_asset_id;;;;many2one;account.account;Fixed Asset Account;False;version 2
+6;original_move_line_ids;;;;many2many;account.move.line;Journal Items;False;version 2
+7;account_depreciation_id;;;;many2one;account.account;Depreciation Account;False;version 2
+8;__last_update;;;;datetime;;Last Modified on;False;version 2
+9;salvage_value;;;;monetary;;Not Depreciable Value;False;version 2
+10;display_model_choice;;;;boolean;;Display Model Choice;False;version 2
+11;journal_id;;;;many2one;account.journal;Journal;False;version 2
+12;currency_id;;;;many2one;res.currency;Currency;True;version 2
+13;account_depreciation_expense_id;;;;many2one;account.account;Expense Account;False;version 2
+14;message_has_error;;;;boolean;;Message Delivery error;False;version 2
+15;depreciation_move_ids;;;;one2many;account.move;Depreciation Lines;False;version 2
+16;user_type_id;;;;many2one;account.account.type;Type of the account;False;version 2
+17;prorata_date;;;;date;;Prorata Date;False;version 2
+18;message_ids;;;;one2many;mail.message;Messages;False;version 2
+19;activity_date_deadline;;;;date;;Next Activity Deadline;False;version 2
+20;create_uid;;;;many2one;res.users;Created by;False;version 2
+21;display_name;;;;char;;Display Name;False;version 2
+22;original_value;;;;monetary;;Original Value;False;version 2
+23;message_is_follower;;;;boolean;;Is Follower;False;version 2
+24;parent_id;;;;many2one;account.asset;Parent;False;version 2
+25;message_has_sms_error;;;;boolean;;SMS Delivery error;False;version 2
+26;already_depreciated_amount_import;;;;monetary;;Already Depreciated Amount Import;False;version 2
+27;analytic_tag_ids;;;;many2many;account.analytic.tag;Analytic Tag;False;version 2
+28;activity_type_icon;;;;char;;Activity Type Icon;False;version 2
+29;company_id;;;;many2one;res.company;Company;True;version 2
+30;id;;;;integer;;ID;False;version 2
+31;prorata;;;;boolean;;Prorata Temporis;False;version 2
+32;state;;;;selection;;Status;False;version 2
+33;message_needaction_counter;;;;integer;;Number of Actions;False;version 2
+34;method_period;;;;selection;;Number of Months in a Period;False;version 2
+35;activity_user_id;;;;many2one;res.users;Responsible User;False;version 2
+36;message_channel_ids;;;;many2many;mail.channel;Followers (Channels);False;version 2
+37;account_analytic_id;;;;many2one;account.analytic.account;Analytic Account;False;version 2
+38;message_unread_counter;;;;integer;;Unread Messages Counter;False;version 2
+39;method;;;;selection;;Method;False;version 2
+40;book_value;;;;monetary;;Book Value;False;version 2
+41;method_number;;;;integer;;Number of Depreciations;False;version 2
+42;model_id;;;;many2one;account.asset;Model;False;version 2
+43;message_needaction;;;;boolean;;Action Needed;False;version 2
+44;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+45;acquisition_date;;;;date;;Acquisition Date;False;version 2
+46;message_attachment_count;;;;integer;;Attachment Count;False;version 2
+47;total_depreciation_entries_count;;;;integer;;# Depreciation Entries;False;version 2
+48;depreciation_entries_count;;;;integer;;# Posted Depreciation Entries;False;version 2
+49;value_residual;;;;monetary;;Depreciable Value;False;version 2
+50;write_date;;;;datetime;;Last Updated on;False;version 2
+51;active;;;;boolean;;Active;False;version 2
+52;message_has_error_counter;;;;integer;;Number of errors;False;version 2
+53;asset_type;;;;selection;;Asset Type;False;version 2
+54;method_progress_factor;;;;float;;Declining Factor;False;version 2
+55;display_account_asset_id;;;;boolean;;Display Account Asset;False;version 2
+56;activity_type_id;;;;many2one;mail.activity.type;Next Activity Type;False;version 2
+57;website_message_ids;;;;one2many;mail.message;Website Messages;False;version 2
+58;activity_ids;;;;one2many;mail.activity;Activities;False;version 2
+59;name;;;;char;;Asset Name;True;version 2
+60;activity_summary;;;;char;;Next Activity Summary;False;version 2
+61;message_main_attachment_id;;;;many2one;ir.attachment;Main Attachment;False;version 2
+62;first_depreciation_date_import;;;;date;;First Depreciation Date Import;False;version 2
+63;first_depreciation_date;;;;date;;First Depreciation Date;False;version 2
+64;activity_exception_decoration;;;;selection;;Activity Exception Decoration;False;version 2
+65;activity_exception_icon;;;;char;;Icon;False;version 2
+66;gross_increase_value;;;;monetary;;Gross Increase Value;False;version 2
+67;depreciation_number_import;;;;integer;;Depreciation Number Import;False;version 2
+68;activity_state;;;;selection;;Activity State;False;version 2
+69;message_unread;;;;boolean;;Unread Messages;False;version 2
+70;disposal_date;;;;date;;Disposal Date;False;version 2
+71;message_partner_ids;;;;many2many;res.partner;Followers (Partners);False;version 2
+;;;;
+;;;;

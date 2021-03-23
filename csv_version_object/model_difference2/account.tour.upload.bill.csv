@@ -1,40 +1,40 @@
-model,account.tour.upload.bill,transient,True
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,auto_delete_message,,,,boolean,,Delete Message Copy,False,version 2
-2,selection,,,,selection,,Selection,False,version 2
-3,create_date,,,,datetime,,Created on,False,version 2
-4,no_auto_thread,,,,boolean,,No threading for answers,False,version 2
-5,auto_delete,,,,boolean,,Delete Emails,False,version 2
-6,mail_server_id,,,,many2one,ir.mail_server,Outgoing mail server,False,version 2
-7,add_sign,,,,boolean,,Add Sign,False,version 2
-8,notify,,,,boolean,,Notify followers,False,version 2
-9,active_domain,,,,text,,Active domain,False,version 2
-10,id,,,,integer,,ID,False,version 2
-11,subject,,,,char,,Subject,False,version 2
-12,composition_mode,,,,selection,,Composition mode,False,version 2
-13,create_uid,,,,many2one,res.users,Created by,False,version 2
-14,display_name,,,,char,,Display Name,False,version 2
-15,attachment_ids,,,,many2many,ir.attachment,Attachments,False,version 2
-16,__last_update,,,,datetime,,Last Modified on,False,version 2
-17,sample_bill_preview,,,,binary,,Sample Bill Preview,False,version 2
-18,is_log,,,,boolean,,Log an Internal Note,False,version 2
-19,composer_id,,,,many2one,mail.compose.message,Composer,True,version 2
-20,parent_id,,,,many2one,mail.message,Parent Message,False,version 2
-21,subtype_id,,,,many2one,mail.message.subtype,Subtype,False,version 2
-22,partner_ids,,,,many2many,res.partner,Additional Contacts,False,version 2
-23,mail_activity_type_id,,,,many2one,mail.activity.type,Mail Activity Type,False,version 2
-24,res_id,,,,integer,,Related Document ID,False,version 2
-25,body,,,,html,,Contents,False,version 2
-26,record_name,,,,char,,Message Record Name,False,version 2
-27,write_date,,,,datetime,,Last Updated on,False,version 2
-28,layout,,,,char,,Layout,False,version 2
-29,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-30,author_id,,,,many2one,res.partner,Author,False,version 2
-31,use_active_domain,,,,boolean,,Use active domain,False,version 2
-32,template_id,,,,many2one,mail.template,Use template,False,version 2
-33,reply_to,,,,char,,Reply-To,False,version 2
-34,model,,,,char,,Related Document Model,False,version 2
-35,message_type,,,,selection,,Type,True,version 2
-36,email_from,,,,char,,From,False,version 2
-,,,,
-,,,,
+model;account.tour.upload.bill;transient;True
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;auto_delete_message;;;;boolean;;Delete Message Copy;False;version 2
+2;selection;;;;selection;;Selection;False;version 2
+3;create_date;;;;datetime;;Created on;False;version 2
+4;no_auto_thread;;;;boolean;;No threading for answers;False;version 2
+5;auto_delete;;;;boolean;;Delete Emails;False;version 2
+6;mail_server_id;;;;many2one;ir.mail_server;Outgoing mail server;False;version 2
+7;add_sign;;;;boolean;;Add Sign;False;version 2
+8;notify;;;;boolean;;Notify followers;False;version 2
+9;active_domain;;;;text;;Active domain;False;version 2
+10;id;;;;integer;;ID;False;version 2
+11;subject;;;;char;;Subject;False;version 2
+12;composition_mode;;;;selection;;Composition mode;False;version 2
+13;create_uid;;;;many2one;res.users;Created by;False;version 2
+14;display_name;;;;char;;Display Name;False;version 2
+15;attachment_ids;;;;many2many;ir.attachment;Attachments;False;version 2
+16;__last_update;;;;datetime;;Last Modified on;False;version 2
+17;sample_bill_preview;;;;binary;;Sample Bill Preview;False;version 2
+18;is_log;;;;boolean;;Log an Internal Note;False;version 2
+19;composer_id;;;;many2one;mail.compose.message;Composer;True;version 2
+20;parent_id;;;;many2one;mail.message;Parent Message;False;version 2
+21;subtype_id;;;;many2one;mail.message.subtype;Subtype;False;version 2
+22;partner_ids;;;;many2many;res.partner;Additional Contacts;False;version 2
+23;mail_activity_type_id;;;;many2one;mail.activity.type;Mail Activity Type;False;version 2
+24;res_id;;;;integer;;Related Document ID;False;version 2
+25;body;;;;html;;Contents;False;version 2
+26;record_name;;;;char;;Message Record Name;False;version 2
+27;write_date;;;;datetime;;Last Updated on;False;version 2
+28;layout;;;;char;;Layout;False;version 2
+29;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+30;author_id;;;;many2one;res.partner;Author;False;version 2
+31;use_active_domain;;;;boolean;;Use active domain;False;version 2
+32;template_id;;;;many2one;mail.template;Use template;False;version 2
+33;reply_to;;;;char;;Reply-To;False;version 2
+34;model;;;;char;;Related Document Model;False;version 2
+35;message_type;;;;selection;;Type;True;version 2
+36;email_from;;;;char;;From;False;version 2
+;;;;
+;;;;

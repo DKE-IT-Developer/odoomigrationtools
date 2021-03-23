@@ -1,10 +1,10 @@
-model,portal.mixin,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,display_name,,,,char,,Display Name,False,version 2
-2,__last_update,,,,datetime,,Last Modified on,False,version 2
-3,access_token,,,,char,,Security Token,False,version 2
-4,access_warning,,,,text,,Access warning,False,version 2
-5,access_url,,,,char,,Portal Access URL,False,version 2
-6,id,,,,integer,,ID,False,version 2
-,,,,
-,,,,
+model;portal.mixin;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;display_name;;;;char;;Display Name;False;version 2
+2;__last_update;;;;datetime;;Last Modified on;False;version 2
+3;access_token;;;;char;;Security Token;False;version 2
+4;access_warning;;;;text;;Access warning;False;version 2
+5;access_url;;;;char;;Portal Access URL;False;version 2
+6;id;;;;integer;;ID;False;version 2
+;;;;
+;;;;

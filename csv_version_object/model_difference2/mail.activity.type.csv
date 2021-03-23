@@ -1,32 +1,32 @@
-model,mail.activity.type,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_date,,,,datetime,,Created on,False,version 2
-2,sequence,,,,integer,,Sequence,False,version 2
-3,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-4,delay_unit,,,,selection,,Delay units,True,version 2
-5,active,,,,boolean,,Active,False,version 2
-6,delay_label,,,,char,,Delay Label,False,version 2
-7,initial_res_model_id,,,,many2one,ir.model,Initial model,False,version 2
-8,id,,,,integer,,ID,False,version 2
-9,category,,,,selection,,Action to Perform,False,version 2
-10,create_uid,,,,many2one,res.users,Create Uid,False,version 2
-11,display_name,,,,char,,Display Name,False,version 2
-12,__last_update,,,,datetime,,Last Modified on,False,version 2
-13,delay_from,,,,selection,,Delay Type,True,version 2
-14,force_next,,,,boolean,,Trigger Next Activity,False,version 2
-15,decoration_type,,,,selection,,Decoration Type,False,version 2
-16,default_user_id,,,,many2one,res.users,Default User,False,version 2
-17,previous_type_ids,,,,many2many,mail.activity.type,Preceding Activities,False,version 2
-18,res_model_change,,,,boolean,,Model has change,False,version 2
-19,default_description,,,,html,,Default Description,False,version 2
-20,write_date,,,,datetime,,Last Updated on,False,version 2
-21,default_next_type_id,,,,many2one,mail.activity.type,Default Next Activity,False,version 2
-22,icon,,,,char,,Icon,False,version 2
-23,name,,,,char,,Name,True,version 2
-24,mail_template_ids,,,,many2many,mail.template,Email templates,False,version 2
-25,next_type_ids,,,,many2many,mail.activity.type,Recommended Next Activities,False,version 2
-26,delay_count,,,,integer,,Scheduled Date,False,version 2
-27,summary,,,,char,,Default Summary,False,version 2
-28,res_model_id,,,,many2one,ir.model,Model,False,version 2
-,,,,
-,,,,
+model;mail.activity.type;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_date;;;;datetime;;Created on;False;version 2
+2;sequence;;;;integer;;Sequence;False;version 2
+3;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+4;delay_unit;;;;selection;;Delay units;True;version 2
+5;active;;;;boolean;;Active;False;version 2
+6;delay_label;;;;char;;Delay Label;False;version 2
+7;initial_res_model_id;;;;many2one;ir.model;Initial model;False;version 2
+8;id;;;;integer;;ID;False;version 2
+9;category;;;;selection;;Action to Perform;False;version 2
+10;create_uid;;;;many2one;res.users;Create Uid;False;version 2
+11;display_name;;;;char;;Display Name;False;version 2
+12;__last_update;;;;datetime;;Last Modified on;False;version 2
+13;delay_from;;;;selection;;Delay Type;True;version 2
+14;force_next;;;;boolean;;Trigger Next Activity;False;version 2
+15;decoration_type;;;;selection;;Decoration Type;False;version 2
+16;default_user_id;;;;many2one;res.users;Default User;False;version 2
+17;previous_type_ids;;;;many2many;mail.activity.type;Preceding Activities;False;version 2
+18;res_model_change;;;;boolean;;Model has change;False;version 2
+19;default_description;;;;html;;Default Description;False;version 2
+20;write_date;;;;datetime;;Last Updated on;False;version 2
+21;default_next_type_id;;;;many2one;mail.activity.type;Default Next Activity;False;version 2
+22;icon;;;;char;;Icon;False;version 2
+23;name;;;;char;;Name;True;version 2
+24;mail_template_ids;;;;many2many;mail.template;Email templates;False;version 2
+25;next_type_ids;;;;many2many;mail.activity.type;Recommended Next Activities;False;version 2
+26;delay_count;;;;integer;;Scheduled Date;False;version 2
+27;summary;;;;char;;Default Summary;False;version 2
+28;res_model_id;;;;many2one;ir.model;Model;False;version 2
+;;;;
+;;;;

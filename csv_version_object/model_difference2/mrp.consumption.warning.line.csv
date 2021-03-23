@@ -1,18 +1,18 @@
-model,mrp.consumption.warning.line,transient,True
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,,,,many2one,res.users,Created by,False,version 2
-2,display_name,,,,char,,Display Name,False,version 2
-3,product_id,,,,many2one,product.product,Product,True,version 2
-4,consumption,,,,selection,,Consumption,False,version 2
-5,__last_update,,,,datetime,,Last Modified on,False,version 2
-6,product_uom_id,,,,many2one,uom.uom,Unit of Measure,False,version 2
-7,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-8,mrp_production_id,,,,many2one,mrp.production,Manufacturing Order,True,version 2
-9,create_date,,,,datetime,,Created on,False,version 2
-10,write_date,,,,datetime,,Last Updated on,False,version 2
-11,mrp_consumption_warning_id,,,,many2one,mrp.consumption.warning,Parent Wizard,True,version 2
-12,product_expected_qty_uom,,,,float,,To Consume,False,version 2
-13,id,,,,integer,,ID,False,version 2
-14,product_consumed_qty_uom,,,,float,,Consumed,False,version 2
-,,,,
-,,,,
+model;mrp.consumption.warning.line;transient;True
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;;;;many2one;res.users;Created by;False;version 2
+2;display_name;;;;char;;Display Name;False;version 2
+3;product_id;;;;many2one;product.product;Product;True;version 2
+4;consumption;;;;selection;;Consumption;False;version 2
+5;__last_update;;;;datetime;;Last Modified on;False;version 2
+6;product_uom_id;;;;many2one;uom.uom;Unit of Measure;False;version 2
+7;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+8;mrp_production_id;;;;many2one;mrp.production;Manufacturing Order;True;version 2
+9;create_date;;;;datetime;;Created on;False;version 2
+10;write_date;;;;datetime;;Last Updated on;False;version 2
+11;mrp_consumption_warning_id;;;;many2one;mrp.consumption.warning;Parent Wizard;True;version 2
+12;product_expected_qty_uom;;;;float;;To Consume;False;version 2
+13;id;;;;integer;;ID;False;version 2
+14;product_consumed_qty_uom;;;;float;;Consumed;False;version 2
+;;;;
+;;;;

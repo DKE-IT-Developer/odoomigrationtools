@@ -1,26 +1,26 @@
-model,account_followup.followup.line,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_date,,,,datetime,,Created on,False,version 2
-2,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-3,send_email,,,,boolean,,Send an Email,False,version 2
-4,manual_action_type_id,,,,many2one,mail.activity.type,Manual Action Type,False,version 2
-5,sms_description,,,,char,,SMS Text Message,False,version 2
-6,id,,,,integer,,ID,False,version 2
-7,create_uid,,,,many2one,res.users,Created by,False,version 2
-8,display_name,,,,char,,Display Name,False,version 2
-9,send_letter,,,,boolean,,Send a Letter,False,version 2
-10,__last_update,,,,datetime,,Last Modified on,False,version 2
-11,company_id,,,,many2one,res.company,Company,True,version 2
-12,delay,,,,integer,,Due Days,True,version 2
-13,auto_execute,,,,boolean,,Auto Execute,False,version 2
-14,manual_action,,,,boolean,,Manual Action,False,version 2
-15,manual_action_note,,,,text,,Action To Do,False,version 2
-16,print_letter,,,,boolean,,Print a Letter,False,version 2
-17,description,,,,text,,Printed Message,False,version 2
-18,write_date,,,,datetime,,Last Updated on,False,version 2
-19,name,,,,char,,Follow-Up Action,True,version 2
-20,join_invoices,,,,boolean,,Join open Invoices,False,version 2
-21,send_sms,,,,boolean,,Send an SMS Message,False,version 2
-22,manual_action_responsible_id,,,,many2one,res.users,Assign a Responsible,False,version 2
-,,,,
-,,,,
+model;account_followup.followup.line;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_date;;;;datetime;;Created on;False;version 2
+2;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+3;send_email;;;;boolean;;Send an Email;False;version 2
+4;manual_action_type_id;;;;many2one;mail.activity.type;Manual Action Type;False;version 2
+5;sms_description;;;;char;;SMS Text Message;False;version 2
+6;id;;;;integer;;ID;False;version 2
+7;create_uid;;;;many2one;res.users;Created by;False;version 2
+8;display_name;;;;char;;Display Name;False;version 2
+9;send_letter;;;;boolean;;Send a Letter;False;version 2
+10;__last_update;;;;datetime;;Last Modified on;False;version 2
+11;company_id;;;;many2one;res.company;Company;True;version 2
+12;delay;;;;integer;;Due Days;True;version 2
+13;auto_execute;;;;boolean;;Auto Execute;False;version 2
+14;manual_action;;;;boolean;;Manual Action;False;version 2
+15;manual_action_note;;;;text;;Action To Do;False;version 2
+16;print_letter;;;;boolean;;Print a Letter;False;version 2
+17;description;;;;text;;Printed Message;False;version 2
+18;write_date;;;;datetime;;Last Updated on;False;version 2
+19;name;;;;char;;Follow-Up Action;True;version 2
+20;join_invoices;;;;boolean;;Join open Invoices;False;version 2
+21;send_sms;;;;boolean;;Send an SMS Message;False;version 2
+22;manual_action_responsible_id;;;;many2one;res.users;Assign a Responsible;False;version 2
+;;;;
+;;;;

@@ -1,15 +1,15 @@
-model,product.ribbon,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,html_class,,,,char,,Ribbon class,True,version 2
-2,create_uid,,,,many2one,res.users,Created by,False,version 2
-3,display_name,,,,char,,Display Name,False,version 2
-4,__last_update,,,,datetime,,Last Modified on,False,version 2
-5,text_color,,,,char,,Ribbon text color,False,version 2
-6,bg_color,,,,char,,Ribbon background color,False,version 2
-7,html,,,,char,,Ribbon html,True,version 2
-8,write_date,,,,datetime,,Last Updated on,False,version 2
-9,create_date,,,,datetime,,Created on,False,version 2
-10,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-11,id,,,,integer,,ID,False,version 2
-,,,,
-,,,,
+model;product.ribbon;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;html_class;;;;char;;Ribbon class;True;version 2
+2;create_uid;;;;many2one;res.users;Created by;False;version 2
+3;display_name;;;;char;;Display Name;False;version 2
+4;__last_update;;;;datetime;;Last Modified on;False;version 2
+5;text_color;;;;char;;Ribbon text color;False;version 2
+6;bg_color;;;;char;;Ribbon background color;False;version 2
+7;html;;;;char;;Ribbon html;True;version 2
+8;write_date;;;;datetime;;Last Updated on;False;version 2
+9;create_date;;;;datetime;;Created on;False;version 2
+10;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+11;id;;;;integer;;ID;False;version 2
+;;;;
+;;;;

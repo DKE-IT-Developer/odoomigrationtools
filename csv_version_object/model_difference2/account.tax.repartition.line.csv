@@ -1,23 +1,23 @@
-model,account.tax.repartition.line,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,,,,many2one,res.users,Created by,False,version 2
-2,use_in_tax_closing,,,,boolean,,Tax Closing Entry,False,version 2
-3,display_name,,,,char,,Display Name,False,version 2
-4,account_id,,,,many2one,account.account,Account,False,version 2
-5,sequence,,,,integer,,Sequence,False,version 2
-6,__last_update,,,,datetime,,Last Modified on,False,version 2
-7,tag_ids,,,,many2many,account.account.tag,Tax Grids,False,version 2
-8,company_id,,,,many2one,res.company,Company,False,version 2
-9,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-10,factor_percent,,,,float,,%,True,version 2
-11,invoice_tax_id,,,,many2one,account.tax,Invoice Tax,False,version 2
-12,tax_fiscal_country_id,,,,many2one,res.country,Fiscal Country,False,version 2
-13,write_date,,,,datetime,,Last Updated on,False,version 2
-14,factor,,,,float,,Factor Ratio,False,version 2
-15,create_date,,,,datetime,,Created on,False,version 2
-16,repartition_type,,,,selection,,Based On,True,version 2
-17,tax_id,,,,many2one,account.tax,Tax,False,version 2
-18,id,,,,integer,,ID,False,version 2
-19,refund_tax_id,,,,many2one,account.tax,Refund Tax,False,version 2
-,,,,
-,,,,
+model;account.tax.repartition.line;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;;;;many2one;res.users;Created by;False;version 2
+2;use_in_tax_closing;;;;boolean;;Tax Closing Entry;False;version 2
+3;display_name;;;;char;;Display Name;False;version 2
+4;account_id;;;;many2one;account.account;Account;False;version 2
+5;sequence;;;;integer;;Sequence;False;version 2
+6;__last_update;;;;datetime;;Last Modified on;False;version 2
+7;tag_ids;;;;many2many;account.account.tag;Tax Grids;False;version 2
+8;company_id;;;;many2one;res.company;Company;False;version 2
+9;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+10;factor_percent;;;;float;;%;True;version 2
+11;invoice_tax_id;;;;many2one;account.tax;Invoice Tax;False;version 2
+12;tax_fiscal_country_id;;;;many2one;res.country;Fiscal Country;False;version 2
+13;write_date;;;;datetime;;Last Updated on;False;version 2
+14;factor;;;;float;;Factor Ratio;False;version 2
+15;create_date;;;;datetime;;Created on;False;version 2
+16;repartition_type;;;;selection;;Based On;True;version 2
+17;tax_id;;;;many2one;account.tax;Tax;False;version 2
+18;id;;;;integer;;ID;False;version 2
+19;refund_tax_id;;;;many2one;account.tax;Refund Tax;False;version 2
+;;;;
+;;;;

@@ -1,35 +1,35 @@
-model,snailmail.letter,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,attachment_id,,,,many2one,ir.attachment,Attachment,False,version 2
-2,attachment_datas,,,,binary,,Document,False,version 2
-3,reference,,,,char,,Related Record,False,version 2
-4,color,,,,boolean,,Color,False,version 2
-5,notification_ids,,,,one2many,mail.notification,Notifications,False,version 2
-6,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-7,street,,,,char,,Street,False,version 2
-8,create_date,,,,datetime,,Created on,False,version 2
-9,partner_id,,,,many2one,res.partner,Recipient,True,version 2
-10,id,,,,integer,,ID,False,version 2
-11,city,,,,char,,City,False,version 2
-12,info_msg,,,,char,,Information,False,version 2
-13,user_id,,,,many2one,res.users,Sent by,False,version 2
-14,zip,,,,char,,Zip,False,version 2
-15,__last_update,,,,datetime,,Last Modified on,False,version 2
-16,duplex,,,,boolean,,Both side,False,version 2
-17,country_id,,,,many2one,res.country,Country,False,version 2
-18,company_id,,,,many2one,res.company,Company,True,version 2
-19,report_template,,,,many2one,ir.actions.report,Optional report to print and attach,False,version 2
-20,state,,,,selection,,Status,True,version 2
-21,res_id,,,,integer,,Document ID,True,version 2
-22,message_id,,,,many2one,mail.message,Snailmail Status Message,False,version 2
-23,create_uid,,,,many2one,res.users,Created by,False,version 2
-24,street2,,,,char,,Street2,False,version 2
-25,write_date,,,,datetime,,Last Updated on,False,version 2
-26,display_name,,,,char,,Display Name,False,version 2
-27,cover,,,,boolean,,Cover Page,False,version 2
-28,attachment_fname,,,,char,,Attachment Filename,False,version 2
-29,state_id,,,,many2one,res.country.state,State,False,version 2
-30,model,,,,char,,Model,True,version 2
-31,error_code,,,,selection,,Error,False,version 2
-,,,,
-,,,,
+model;snailmail.letter;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;attachment_id;;;;many2one;ir.attachment;Attachment;False;version 2
+2;attachment_datas;;;;binary;;Document;False;version 2
+3;reference;;;;char;;Related Record;False;version 2
+4;color;;;;boolean;;Color;False;version 2
+5;notification_ids;;;;one2many;mail.notification;Notifications;False;version 2
+6;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+7;street;;;;char;;Street;False;version 2
+8;create_date;;;;datetime;;Created on;False;version 2
+9;partner_id;;;;many2one;res.partner;Recipient;True;version 2
+10;id;;;;integer;;ID;False;version 2
+11;city;;;;char;;City;False;version 2
+12;info_msg;;;;char;;Information;False;version 2
+13;user_id;;;;many2one;res.users;Sent by;False;version 2
+14;zip;;;;char;;Zip;False;version 2
+15;__last_update;;;;datetime;;Last Modified on;False;version 2
+16;duplex;;;;boolean;;Both side;False;version 2
+17;country_id;;;;many2one;res.country;Country;False;version 2
+18;company_id;;;;many2one;res.company;Company;True;version 2
+19;report_template;;;;many2one;ir.actions.report;Optional report to print and attach;False;version 2
+20;state;;;;selection;;Status;True;version 2
+21;res_id;;;;integer;;Document ID;True;version 2
+22;message_id;;;;many2one;mail.message;Snailmail Status Message;False;version 2
+23;create_uid;;;;many2one;res.users;Created by;False;version 2
+24;street2;;;;char;;Street2;False;version 2
+25;write_date;;;;datetime;;Last Updated on;False;version 2
+26;display_name;;;;char;;Display Name;False;version 2
+27;cover;;;;boolean;;Cover Page;False;version 2
+28;attachment_fname;;;;char;;Attachment Filename;False;version 2
+29;state_id;;;;many2one;res.country.state;State;False;version 2
+30;model;;;;char;;Model;True;version 2
+31;error_code;;;;selection;;Error;False;version 2
+;;;;
+;;;;

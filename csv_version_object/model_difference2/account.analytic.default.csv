@@ -1,21 +1,21 @@
-model,account.analytic.default,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,,,,many2one,res.users,Created by,False,version 2
-2,date_stop,,,,date,,End Date,False,version 2
-3,date_start,,,,date,,Start Date,False,version 2
-4,user_id,,,,many2one,res.users,User,False,version 2
-5,product_id,,,,many2one,product.product,Product,False,version 2
-6,analytic_tag_ids,,,,many2many,account.analytic.tag,Analytic Tags,False,version 2
-7,__last_update,,,,datetime,,Last Modified on,False,version 2
-8,sequence,,,,integer,,Sequence,False,version 2
-9,company_id,,,,many2one,res.company,Company,False,version 2
-10,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-11,analytic_id,,,,many2one,account.analytic.account,Analytic Account,False,version 2
-12,create_date,,,,datetime,,Created on,False,version 2
-13,write_date,,,,datetime,,Last Updated on,False,version 2
-14,display_name,,,,char,,Display Name,False,version 2
-15,partner_id,,,,many2one,res.partner,Partner,False,version 2
-16,id,,,,integer,,ID,False,version 2
-17,account_id,,,,many2one,account.account,Account,False,version 2
-,,,,
-,,,,
+model;account.analytic.default;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;;;;many2one;res.users;Created by;False;version 2
+2;date_stop;;;;date;;End Date;False;version 2
+3;date_start;;;;date;;Start Date;False;version 2
+4;user_id;;;;many2one;res.users;User;False;version 2
+5;product_id;;;;many2one;product.product;Product;False;version 2
+6;analytic_tag_ids;;;;many2many;account.analytic.tag;Analytic Tags;False;version 2
+7;__last_update;;;;datetime;;Last Modified on;False;version 2
+8;sequence;;;;integer;;Sequence;False;version 2
+9;company_id;;;;many2one;res.company;Company;False;version 2
+10;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+11;analytic_id;;;;many2one;account.analytic.account;Analytic Account;False;version 2
+12;create_date;;;;datetime;;Created on;False;version 2
+13;write_date;;;;datetime;;Last Updated on;False;version 2
+14;display_name;;;;char;;Display Name;False;version 2
+15;partner_id;;;;many2one;res.partner;Partner;False;version 2
+16;id;;;;integer;;ID;False;version 2
+17;account_id;;;;many2one;account.account;Account;False;version 2
+;;;;
+;;;;

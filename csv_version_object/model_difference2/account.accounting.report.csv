@@ -1,20 +1,20 @@
-model,account.accounting.report,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,analytic_account_id,,,,many2one,account.analytic.account,Analytic Account,False,version 2
-2,display_name,,,,char,,Display Name,False,version 2
-3,name,,,,char,,Name,False,version 2
-4,analytic_tag_ids,,,,many2many,account.analytic.tag,Analytic Tag,False,version 2
-5,__last_update,,,,datetime,,Last Modified on,False,version 2
-6,company_id,,,,many2one,res.company,Company,False,version 2
-7,journal_id,,,,many2one,account.journal,Journal,False,version 2
-8,currency_id,,,,many2one,res.currency,Currency,False,version 2
-9,credit,,,,monetary,,Credit,False,version 2
-10,display_type,,,,char,,Display Type,False,version 2
-11,debit,,,,monetary,,Debit,False,version 2
-12,date,,,,date,,Date,False,version 2
-13,balance,,,,monetary,,Balance,False,version 2
-14,id,,,,integer,,ID,False,version 2
-15,move_id,,,,many2one,account.move,Move,False,version 2
-16,account_id,,,,many2one,account.account,Account,False,version 2
-,,,,
-,,,,
+model;account.accounting.report;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;analytic_account_id;;;;many2one;account.analytic.account;Analytic Account;False;version 2
+2;display_name;;;;char;;Display Name;False;version 2
+3;name;;;;char;;Name;False;version 2
+4;analytic_tag_ids;;;;many2many;account.analytic.tag;Analytic Tag;False;version 2
+5;__last_update;;;;datetime;;Last Modified on;False;version 2
+6;company_id;;;;many2one;res.company;Company;False;version 2
+7;journal_id;;;;many2one;account.journal;Journal;False;version 2
+8;currency_id;;;;many2one;res.currency;Currency;False;version 2
+9;credit;;;;monetary;;Credit;False;version 2
+10;display_type;;;;char;;Display Type;False;version 2
+11;debit;;;;monetary;;Debit;False;version 2
+12;date;;;;date;;Date;False;version 2
+13;balance;;;;monetary;;Balance;False;version 2
+14;id;;;;integer;;ID;False;version 2
+15;move_id;;;;many2one;account.move;Move;False;version 2
+16;account_id;;;;many2one;account.account;Account;False;version 2
+;;;;
+;;;;

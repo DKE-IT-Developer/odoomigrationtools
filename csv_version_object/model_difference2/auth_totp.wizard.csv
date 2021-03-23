@@ -1,16 +1,16 @@
-model,auth_totp.wizard,transient,True
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,,,,many2one,res.users,Created by,False,version 2
-2,code,,,,char,,Verification Code,False,version 2
-3,user_id,,,,many2one,res.users,User,True,version 2
-4,__last_update,,,,datetime,,Last Modified on,False,version 2
-5,url,,,,char,,Url,False,version 2
-6,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-7,secret,,,,char,,Secret,True,version 2
-8,write_date,,,,datetime,,Last Updated on,False,version 2
-9,qrcode,,,,binary,,Qrcode,False,version 2
-10,display_name,,,,char,,Display Name,False,version 2
-11,create_date,,,,datetime,,Created on,False,version 2
-12,id,,,,integer,,ID,False,version 2
-,,,,
-,,,,
+model;auth_totp.wizard;transient;True
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;;;;many2one;res.users;Created by;False;version 2
+2;code;;;;char;;Verification Code;False;version 2
+3;user_id;;;;many2one;res.users;User;True;version 2
+4;__last_update;;;;datetime;;Last Modified on;False;version 2
+5;url;;;;char;;Url;False;version 2
+6;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+7;secret;;;;char;;Secret;True;version 2
+8;write_date;;;;datetime;;Last Updated on;False;version 2
+9;qrcode;;;;binary;;Qrcode;False;version 2
+10;display_name;;;;char;;Display Name;False;version 2
+11;create_date;;;;datetime;;Created on;False;version 2
+12;id;;;;integer;;ID;False;version 2
+;;;;
+;;;;

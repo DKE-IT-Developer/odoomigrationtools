@@ -1,16 +1,16 @@
-model,account.invoice.refund,transient,True
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,,,,False,version 1
-2,filter_refund,selection,,Refund Method,,,,True,version 1
-3,display_name,char,,Display Name,,,,False,version 1
-4,description,char,,Reason,,,,True,version 1
-5,__last_update,datetime,,Last Modified on,,,,False,version 1
-6,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
-7,date_invoice,date,,Refund Date,,,,True,version 1
-8,refund_only,boolean,,Technical field to hide filter_refund in case invoice is partially paid,,,,False,version 1
-9,write_date,datetime,,Last Updated on,,,,False,version 1
-10,date,date,,Accounting Date,,,,False,version 1
-11,create_date,datetime,,Created on,,,,False,version 1
-12,id,integer,,ID,,,,False,version 1
-,,,,
-,,,,
+model;account.invoice.refund;transient;True
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;;;;False;version 1
+2;filter_refund;selection;;Refund Method;;;;True;version 1
+3;display_name;char;;Display Name;;;;False;version 1
+4;description;char;;Reason;;;;True;version 1
+5;__last_update;datetime;;Last Modified on;;;;False;version 1
+6;write_uid;many2one;res.users;Last Updated by;;;;False;version 1
+7;date_invoice;date;;Refund Date;;;;True;version 1
+8;refund_only;boolean;;Technical field to hide filter_refund in case invoice is partially paid;;;;False;version 1
+9;write_date;datetime;;Last Updated on;;;;False;version 1
+10;date;date;;Accounting Date;;;;False;version 1
+11;create_date;datetime;;Created on;;;;False;version 1
+12;id;integer;;ID;;;;False;version 1
+;;;;
+;;;;

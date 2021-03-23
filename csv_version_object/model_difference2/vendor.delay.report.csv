@@ -1,14 +1,14 @@
-model,vendor.delay.report,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,display_name,,,,char,,Display Name,False,version 2
-2,product_id,,,,many2one,product.product,Product,False,version 2
-3,__last_update,,,,datetime,,Last Modified on,False,version 2
-4,qty_on_time,,,,float,,On-Time Quantity,False,version 2
-5,on_time_rate,,,,float,,On-Time Delivery Rate,False,version 2
-6,qty_total,,,,float,,Total Quantity,False,version 2
-7,date,,,,datetime,,Effective Date,False,version 2
-8,category_id,,,,many2one,product.category,Product Category,False,version 2
-9,partner_id,,,,many2one,res.partner,Vendor,False,version 2
-10,id,,,,integer,,ID,False,version 2
-,,,,
-,,,,
+model;vendor.delay.report;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;display_name;;;;char;;Display Name;False;version 2
+2;product_id;;;;many2one;product.product;Product;False;version 2
+3;__last_update;;;;datetime;;Last Modified on;False;version 2
+4;qty_on_time;;;;float;;On-Time Quantity;False;version 2
+5;on_time_rate;;;;float;;On-Time Delivery Rate;False;version 2
+6;qty_total;;;;float;;Total Quantity;False;version 2
+7;date;;;;datetime;;Effective Date;False;version 2
+8;category_id;;;;many2one;product.category;Product Category;False;version 2
+9;partner_id;;;;many2one;res.partner;Vendor;False;version 2
+10;id;;;;integer;;ID;False;version 2
+;;;;
+;;;;

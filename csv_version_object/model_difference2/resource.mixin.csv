@@ -1,11 +1,11 @@
-model,resource.mixin,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,display_name,,,,char,,Display Name,False,version 2
-2,resource_id,,,,many2one,resource.resource,Resource,True,version 2
-3,__last_update,,,,datetime,,Last Modified on,False,version 2
-4,company_id,,,,many2one,res.company,Company,False,version 2
-5,tz,,,,selection,,Timezone,False,version 2
-6,id,,,,integer,,ID,False,version 2
-7,resource_calendar_id,,,,many2one,resource.calendar,Working Hours,False,version 2
-,,,,
-,,,,
+model;resource.mixin;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;display_name;;;;char;;Display Name;False;version 2
+2;resource_id;;;;many2one;resource.resource;Resource;True;version 2
+3;__last_update;;;;datetime;;Last Modified on;False;version 2
+4;company_id;;;;many2one;res.company;Company;False;version 2
+5;tz;;;;selection;;Timezone;False;version 2
+6;id;;;;integer;;ID;False;version 2
+7;resource_calendar_id;;;;many2one;resource.calendar;Working Hours;False;version 2
+;;;;
+;;;;

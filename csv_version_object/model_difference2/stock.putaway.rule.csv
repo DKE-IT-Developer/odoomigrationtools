@@ -1,17 +1,17 @@
-model,stock.putaway.rule,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,,,,many2one,res.users,Created by,False,version 2
-2,location_out_id,,,,many2one,stock.location,Store to,True,version 2
-3,display_name,,,,char,,Display Name,False,version 2
-4,product_id,,,,many2one,product.product,Product,False,version 2
-5,sequence,,,,integer,,Priority,False,version 2
-6,__last_update,,,,datetime,,Last Modified on,False,version 2
-7,company_id,,,,many2one,res.company,Company,True,version 2
-8,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-9,create_date,,,,datetime,,Created on,False,version 2
-10,write_date,,,,datetime,,Last Updated on,False,version 2
-11,location_in_id,,,,many2one,stock.location,When product arrives in,True,version 2
-12,category_id,,,,many2one,product.category,Product Category,False,version 2
-13,id,,,,integer,,ID,False,version 2
-,,,,
-,,,,
+model;stock.putaway.rule;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;;;;many2one;res.users;Created by;False;version 2
+2;location_out_id;;;;many2one;stock.location;Store to;True;version 2
+3;display_name;;;;char;;Display Name;False;version 2
+4;product_id;;;;many2one;product.product;Product;False;version 2
+5;sequence;;;;integer;;Priority;False;version 2
+6;__last_update;;;;datetime;;Last Modified on;False;version 2
+7;company_id;;;;many2one;res.company;Company;True;version 2
+8;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+9;create_date;;;;datetime;;Created on;False;version 2
+10;write_date;;;;datetime;;Last Updated on;False;version 2
+11;location_in_id;;;;many2one;stock.location;When product arrives in;True;version 2
+12;category_id;;;;many2one;product.category;Product Category;False;version 2
+13;id;;;;integer;;ID;False;version 2
+;;;;
+;;;;

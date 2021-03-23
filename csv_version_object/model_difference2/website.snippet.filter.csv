@@ -1,21 +1,21 @@
-model,website.snippet.filter,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,can_publish,,,,boolean,,Can Publish,False,version 2
-2,__last_update,,,,datetime,,Last Modified on,False,version 2
-3,display_name,,,,char,,Display Name,False,version 2
-4,name,,,,char,,Name,True,version 2
-5,create_uid,,,,many2one,res.users,Created by,False,version 2
-6,website_id,,,,many2one,website,Website,True,version 2
-7,action_server_id,,,,many2one,ir.actions.server,Server Action,False,version 2
-8,id,,,,integer,,ID,False,version 2
-9,limit,,,,integer,,Limit,True,version 2
-10,write_date,,,,datetime,,Last Updated on,False,version 2
-11,filter_id,,,,many2one,ir.filters,Filter,False,version 2
-12,create_date,,,,datetime,,Created on,False,version 2
-13,field_names,,,,char,,Field Names,True,version 2
-14,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-15,website_published,,,,boolean,,Visible on current website,False,version 2
-16,website_url,,,,char,,Website URL,False,version 2
-17,is_published,,,,boolean,,Is Published,False,version 2
-,,,,
-,,,,
+model;website.snippet.filter;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;can_publish;;;;boolean;;Can Publish;False;version 2
+2;__last_update;;;;datetime;;Last Modified on;False;version 2
+3;display_name;;;;char;;Display Name;False;version 2
+4;name;;;;char;;Name;True;version 2
+5;create_uid;;;;many2one;res.users;Created by;False;version 2
+6;website_id;;;;many2one;website;Website;True;version 2
+7;action_server_id;;;;many2one;ir.actions.server;Server Action;False;version 2
+8;id;;;;integer;;ID;False;version 2
+9;limit;;;;integer;;Limit;True;version 2
+10;write_date;;;;datetime;;Last Updated on;False;version 2
+11;filter_id;;;;many2one;ir.filters;Filter;False;version 2
+12;create_date;;;;datetime;;Created on;False;version 2
+13;field_names;;;;char;;Field Names;True;version 2
+14;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+15;website_published;;;;boolean;;Visible on current website;False;version 2
+16;website_url;;;;char;;Website URL;False;version 2
+17;is_published;;;;boolean;;Is Published;False;version 2
+;;;;
+;;;;

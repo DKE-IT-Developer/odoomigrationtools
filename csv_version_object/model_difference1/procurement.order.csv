@@ -1,44 +1,44 @@
-model,procurement.order,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,origin,char,,Source Document,,,,False,version 1
-2,message_follower_ids,one2many,mail.followers,Followers,,,,False,version 1
-3,create_date,datetime,,Created on,,,,False,version 1
-4,write_date,datetime,,Last Updated on,,,,False,version 1
-5,product_uom,many2one,product.uom,Product Unit of Measure,,,,True,version 1
-6,message_needaction,boolean,,Action Needed,,,,False,version 1
-7,message_channel_ids,many2many,mail.channel,Followers (Channels),,,,False,version 1
-8,message_partner_ids,many2many,res.partner,Followers (Partners),,,,False,version 1
-9,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
-10,product_qty,float,,Quantity,,,,True,version 1
-11,location_id,many2one,stock.location,Procurement Location,,,,False,version 1
-12,message_ids,one2many,mail.message,Messages,,,,False,version 1
-13,purchase_id,many2one,purchase.order,Purchase Order,,,,False,version 1
-14,priority,selection,,Priority,,,,True,version 1
-15,partner_dest_id,many2one,res.partner,Customer Address,,,,False,version 1
-16,message_is_follower,boolean,,Is Follower,,,,False,version 1
-17,orderpoint_id,many2one,stock.warehouse.orderpoint,Minimum Stock Rule,,,,False,version 1
-18,message_last_post,datetime,,Last Message Date,,,,False,version 1
-19,company_id,many2one,res.company,Company,,,,True,version 1
-20,id,integer,,ID,,,,False,version 1
-21,move_ids,one2many,stock.move,Moves,,,,False,version 1
-22,state,selection,,Status,,,,True,version 1
-23,bom_id,many2one,mrp.bom,BoM,,,,False,version 1
-24,message_unread_counter,integer,,Unread Messages Counter,,,,False,version 1
-25,create_uid,many2one,res.users,Created by,,,,False,version 1
-26,warehouse_id,many2one,stock.warehouse,Warehouse,,,,False,version 1
-27,route_ids,many2many,stock.location.route,Preferred Routes,,,,False,version 1
-28,move_dest_id,many2one,stock.move,Destination Move,,,,False,version 1
-29,display_name,char,,Display Name,,,,False,version 1
-30,purchase_line_id,many2one,purchase.order.line,Purchase Order Line,,,,False,version 1
-31,product_id,many2one,product.product,Product,,,,True,version 1
-32,group_id,many2one,procurement.group,Procurement Group,,,,False,version 1
-33,name,text,,Description,,,,True,version 1
-34,date_planned,datetime,,Scheduled Date,,,,True,version 1
-35,__last_update,datetime,,Last Modified on,,,,False,version 1
-36,rule_id,many2one,procurement.rule,Rule,,,,False,version 1
-37,production_id,many2one,mrp.production,Manufacturing Order,,,,False,version 1
-38,message_unread,boolean,,Unread Messages,,,,False,version 1
-39,message_needaction_counter,integer,,Number of Actions,,,,False,version 1
-40,sale_line_id,many2one,sale.order.line,Sale Order Line,,,,False,version 1
-,,,,
-,,,,
+model;procurement.order;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;origin;char;;Source Document;;;;False;version 1
+2;message_follower_ids;one2many;mail.followers;Followers;;;;False;version 1
+3;create_date;datetime;;Created on;;;;False;version 1
+4;write_date;datetime;;Last Updated on;;;;False;version 1
+5;product_uom;many2one;product.uom;Product Unit of Measure;;;;True;version 1
+6;message_needaction;boolean;;Action Needed;;;;False;version 1
+7;message_channel_ids;many2many;mail.channel;Followers (Channels);;;;False;version 1
+8;message_partner_ids;many2many;res.partner;Followers (Partners);;;;False;version 1
+9;write_uid;many2one;res.users;Last Updated by;;;;False;version 1
+10;product_qty;float;;Quantity;;;;True;version 1
+11;location_id;many2one;stock.location;Procurement Location;;;;False;version 1
+12;message_ids;one2many;mail.message;Messages;;;;False;version 1
+13;purchase_id;many2one;purchase.order;Purchase Order;;;;False;version 1
+14;priority;selection;;Priority;;;;True;version 1
+15;partner_dest_id;many2one;res.partner;Customer Address;;;;False;version 1
+16;message_is_follower;boolean;;Is Follower;;;;False;version 1
+17;orderpoint_id;many2one;stock.warehouse.orderpoint;Minimum Stock Rule;;;;False;version 1
+18;message_last_post;datetime;;Last Message Date;;;;False;version 1
+19;company_id;many2one;res.company;Company;;;;True;version 1
+20;id;integer;;ID;;;;False;version 1
+21;move_ids;one2many;stock.move;Moves;;;;False;version 1
+22;state;selection;;Status;;;;True;version 1
+23;bom_id;many2one;mrp.bom;BoM;;;;False;version 1
+24;message_unread_counter;integer;;Unread Messages Counter;;;;False;version 1
+25;create_uid;many2one;res.users;Created by;;;;False;version 1
+26;warehouse_id;many2one;stock.warehouse;Warehouse;;;;False;version 1
+27;route_ids;many2many;stock.location.route;Preferred Routes;;;;False;version 1
+28;move_dest_id;many2one;stock.move;Destination Move;;;;False;version 1
+29;display_name;char;;Display Name;;;;False;version 1
+30;purchase_line_id;many2one;purchase.order.line;Purchase Order Line;;;;False;version 1
+31;product_id;many2one;product.product;Product;;;;True;version 1
+32;group_id;many2one;procurement.group;Procurement Group;;;;False;version 1
+33;name;text;;Description;;;;True;version 1
+34;date_planned;datetime;;Scheduled Date;;;;True;version 1
+35;__last_update;datetime;;Last Modified on;;;;False;version 1
+36;rule_id;many2one;procurement.rule;Rule;;;;False;version 1
+37;production_id;many2one;mrp.production;Manufacturing Order;;;;False;version 1
+38;message_unread;boolean;;Unread Messages;;;;False;version 1
+39;message_needaction_counter;integer;;Number of Actions;;;;False;version 1
+40;sale_line_id;many2one;sale.order.line;Sale Order Line;;;;False;version 1
+;;;;
+;;;;

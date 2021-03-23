@@ -1,23 +1,23 @@
-model,sale.payment.acquirer.onboarding.wizard,transient,True
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,,,,many2one,res.users,Created by,False,version 2
-2,display_name,,,,char,,Display Name,False,version 2
-3,stripe_publishable_key,,,,char,,Stripe Publishable Key,False,version 2
-4,__last_update,,,,datetime,,Last Modified on,False,version 2
-5,payment_method,,,,selection,,Payment Method,False,version 2
-6,stripe_secret_key,,,,char,,Stripe Secret Key,False,version 2
-7,paypal_seller_account,,,,char,,Merchant Account ID,False,version 2
-8,paypal_pdt_token,,,,char,,PDT Identity Token,False,version 2
-9,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-10,paypal_email_account,,,,char,,Email,False,version 2
-11,manual_name,,,,char,,Method,False,version 2
-12,_data_fetched,,,,boolean,, Data Fetched,False,version 2
-13,journal_name,,,,char,,Bank Name,False,version 2
-14,manual_post_msg,,,,html,,Payment Instructions,False,version 2
-15,write_date,,,,datetime,,Last Updated on,False,version 2
-16,create_date,,,,datetime,,Created on,False,version 2
-17,paypal_user_type,,,,selection,,Paypal User Type,False,version 2
-18,id,,,,integer,,ID,False,version 2
-19,acc_number,,,,char,,Account Number,False,version 2
-,,,,
-,,,,
+model;sale.payment.acquirer.onboarding.wizard;transient;True
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;;;;many2one;res.users;Created by;False;version 2
+2;display_name;;;;char;;Display Name;False;version 2
+3;stripe_publishable_key;;;;char;;Stripe Publishable Key;False;version 2
+4;__last_update;;;;datetime;;Last Modified on;False;version 2
+5;payment_method;;;;selection;;Payment Method;False;version 2
+6;stripe_secret_key;;;;char;;Stripe Secret Key;False;version 2
+7;paypal_seller_account;;;;char;;Merchant Account ID;False;version 2
+8;paypal_pdt_token;;;;char;;PDT Identity Token;False;version 2
+9;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+10;paypal_email_account;;;;char;;Email;False;version 2
+11;manual_name;;;;char;;Method;False;version 2
+12;_data_fetched;;;;boolean;; Data Fetched;False;version 2
+13;journal_name;;;;char;;Bank Name;False;version 2
+14;manual_post_msg;;;;html;;Payment Instructions;False;version 2
+15;write_date;;;;datetime;;Last Updated on;False;version 2
+16;create_date;;;;datetime;;Created on;False;version 2
+17;paypal_user_type;;;;selection;;Paypal User Type;False;version 2
+18;id;;;;integer;;ID;False;version 2
+19;acc_number;;;;char;;Account Number;False;version 2
+;;;;
+;;;;

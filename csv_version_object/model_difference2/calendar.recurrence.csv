@@ -1,33 +1,33 @@
-model,calendar.recurrence,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_date,,,,datetime,,Created on,False,version 2
-2,fr,,,,boolean,,Fr,False,version 2
-3,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-4,month_by,,,,selection,,Month By,False,version 2
-5,rrule,,,,char,,Rrule,False,version 2
-6,id,,,,integer,,ID,False,version 2
-7,create_uid,,,,many2one,res.users,Created by,False,version 2
-8,display_name,,,,char,,Display Name,False,version 2
-9,__last_update,,,,datetime,,Last Modified on,False,version 2
-10,tu,,,,boolean,,Tu,False,version 2
-11,th,,,,boolean,,Th,False,version 2
-12,until,,,,date,,Repeat Until,False,version 2
-13,we,,,,boolean,,We,False,version 2
-14,byday,,,,selection,,By day,False,version 2
-15,write_date,,,,datetime,,Last Updated on,False,version 2
-16,dtstart,,,,datetime,,Dtstart,False,version 2
-17,day,,,,integer,,Day,False,version 2
-18,count,,,,integer,,Count,False,version 2
-19,event_tz,,,,selection,,Timezone,False,version 2
-20,end_type,,,,selection,,End Type,False,version 2
-21,name,,,,char,,Name,False,version 2
-22,mo,,,,boolean,,Mo,False,version 2
-23,interval,,,,integer,,Interval,False,version 2
-24,su,,,,boolean,,Su,False,version 2
-25,weekday,,,,selection,,Weekday,False,version 2
-26,sa,,,,boolean,,Sa,False,version 2
-27,base_event_id,,,,many2one,calendar.event,Base Event,False,version 2
-28,rrule_type,,,,selection,,Rrule Type,False,version 2
-29,calendar_event_ids,,,,one2many,calendar.event,Calendar Event,False,version 2
-,,,,
-,,,,
+model;calendar.recurrence;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_date;;;;datetime;;Created on;False;version 2
+2;fr;;;;boolean;;Fr;False;version 2
+3;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+4;month_by;;;;selection;;Month By;False;version 2
+5;rrule;;;;char;;Rrule;False;version 2
+6;id;;;;integer;;ID;False;version 2
+7;create_uid;;;;many2one;res.users;Created by;False;version 2
+8;display_name;;;;char;;Display Name;False;version 2
+9;__last_update;;;;datetime;;Last Modified on;False;version 2
+10;tu;;;;boolean;;Tu;False;version 2
+11;th;;;;boolean;;Th;False;version 2
+12;until;;;;date;;Repeat Until;False;version 2
+13;we;;;;boolean;;We;False;version 2
+14;byday;;;;selection;;By day;False;version 2
+15;write_date;;;;datetime;;Last Updated on;False;version 2
+16;dtstart;;;;datetime;;Dtstart;False;version 2
+17;day;;;;integer;;Day;False;version 2
+18;count;;;;integer;;Count;False;version 2
+19;event_tz;;;;selection;;Timezone;False;version 2
+20;end_type;;;;selection;;End Type;False;version 2
+21;name;;;;char;;Name;False;version 2
+22;mo;;;;boolean;;Mo;False;version 2
+23;interval;;;;integer;;Interval;False;version 2
+24;su;;;;boolean;;Su;False;version 2
+25;weekday;;;;selection;;Weekday;False;version 2
+26;sa;;;;boolean;;Sa;False;version 2
+27;base_event_id;;;;many2one;calendar.event;Base Event;False;version 2
+28;rrule_type;;;;selection;;Rrule Type;False;version 2
+29;calendar_event_ids;;;;one2many;calendar.event;Calendar Event;False;version 2
+;;;;
+;;;;

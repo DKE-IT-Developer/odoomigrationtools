@@ -1,17 +1,17 @@
-model,hr.departure.wizard,transient,True
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,,,,many2one,res.users,Created by,False,version 2
-2,set_date_end,,,,boolean,,Set Contract End Date,False,version 2
-3,employee_id,,,,many2one,hr.employee,Employee,True,version 2
-4,display_name,,,,char,,Display Name,False,version 2
-5,departure_reason,,,,selection,,Departure Reason,False,version 2
-6,departure_date,,,,date,,Departure Date,True,version 2
-7,departure_description,,,,text,,Additional Information,False,version 2
-8,__last_update,,,,datetime,,Last Modified on,False,version 2
-9,archive_private_address,,,,boolean,,Archive Private Address,False,version 2
-10,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-11,write_date,,,,datetime,,Last Updated on,False,version 2
-12,create_date,,,,datetime,,Created on,False,version 2
-13,id,,,,integer,,ID,False,version 2
-,,,,
-,,,,
+model;hr.departure.wizard;transient;True
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;;;;many2one;res.users;Created by;False;version 2
+2;set_date_end;;;;boolean;;Set Contract End Date;False;version 2
+3;employee_id;;;;many2one;hr.employee;Employee;True;version 2
+4;display_name;;;;char;;Display Name;False;version 2
+5;departure_reason;;;;selection;;Departure Reason;False;version 2
+6;departure_date;;;;date;;Departure Date;True;version 2
+7;departure_description;;;;text;;Additional Information;False;version 2
+8;__last_update;;;;datetime;;Last Modified on;False;version 2
+9;archive_private_address;;;;boolean;;Archive Private Address;False;version 2
+10;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+11;write_date;;;;datetime;;Last Updated on;False;version 2
+12;create_date;;;;datetime;;Created on;False;version 2
+13;id;;;;integer;;ID;False;version 2
+;;;;
+;;;;

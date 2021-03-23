@@ -1,52 +1,52 @@
-model,website.config.settings,transient,True
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_date,datetime,,Created on,,,,False,version 1
-2,social_linkedin,char,,LinkedIn Account,,,,False,version 1
-3,cdn_filters,text,,CDN Filters,,,,False,version 1
-4,module_website_sale_options,selection,,Optional Products,,,,False,version 1
-5,sale_delivery_settings,selection,,Shipping Management,,,,False,version 1
-6,social_twitter,char,,Twitter Account,,,,False,version 1
-7,language_ids,many2many,res.lang,Languages,,,,False,version 1
-8,favicon,binary,,Favicon,,,,False,version 1
-9,google_analytics_key,char,,Google Analytics Key,,,,False,version 1
-10,group_pricelist_item,boolean,,Show pricelists to customers,,,,False,version 1
-11,social_facebook,char,,Facebook Account,,,,False,version 1
-12,module_delivery,boolean,,Manage shipping internally,,,,False,version 1
-13,id,integer,,ID,,,,False,version 1
-14,module_sale_ebay,boolean,,eBay connector,,,,False,version 1
-15,google_maps_api_key,char,,Google Maps API Key,,,,False,version 1
-16,cdn_url,char,,CDN Base URL,,,,False,version 1
-17,create_uid,many2one,res.users,Created by,,,,False,version 1
-18,display_name,char,,Display Name,,,,False,version 1
-19,__last_update,datetime,,Last Modified on,,,,False,version 1
-20,group_website_multiimage,selection,,Multi Images,,,,False,version 1
-21,sale_pricelist_setting_split_1,selection,,Pricing Strategy,,,,False,version 1
-22,sale_pricelist_setting_split_2,selection,,Sales Price,,,,False,version 1
-23,default_lang_code,char,,Default language code,,,,False,version 1
-24,social_googleplus,char,,Google+ Account,,,,False,version 1
-25,module_delivery_temando,boolean,,Temando integration,,,,False,version 1
-26,salesteam_id,many2one,crm.team,Sales Team,,,,False,version 1
-27,module_portal,boolean,,Activate the customer portal,,,,False,version 1
-28,social_youtube,char,,Youtube Account,,,,False,version 1
-29,social_github,char,,GitHub Account,,,,False,version 1
-30,module_website_sale_delivery,boolean,,Add Delivery Costs to Online Sales,,,,False,version 1
-31,group_product_pricelist,boolean,,Show pricelists On Products,,,,False,version 1
-32,website_slide_google_app_key,char,,Google Doc Key,,,,False,version 1
-33,website_id,many2one,website,website,,,,True,version 1
-34,module_delivery_usps,boolean,,USPS integration,,,,False,version 1
-35,group_sale_pricelist,boolean,,Use pricelists to adapt your price per customers,,,,False,version 1
-36,default_lang_id,many2one,res.lang,Default Language,,,,True,version 1
-37,write_date,datetime,,Last Updated on,,,,False,version 1
-38,order_mail_template,many2one,mail.template,Order Confirmation Email,,,,False,version 1
-39,module_delivery_fedex,boolean,,Fedex integration,,,,False,version 1
-40,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
-41,module_delivery_ups,boolean,,UPS integration,,,,False,version 1
-42,cdn_activated,boolean,,Use a Content Delivery Network (CDN),,,,False,version 1
-43,salesperson_id,many2one,res.users,Salesperson,,,,False,version 1
-44,compress_html,boolean,,Compress rendered HTML,,,,False,version 1
-45,module_website_version,selection,,A/B Testing,,,,False,version 1
-46,module_website_form_editor,selection,,Form Builder,,,,False,version 1
-47,website_name,char,,Website Name,,,,False,version 1
-48,module_delivery_dhl,boolean,,DHL integration,,,,False,version 1
-,,,,
-,,,,
+model;website.config.settings;transient;True
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_date;datetime;;Created on;;;;False;version 1
+2;social_linkedin;char;;LinkedIn Account;;;;False;version 1
+3;cdn_filters;text;;CDN Filters;;;;False;version 1
+4;module_website_sale_options;selection;;Optional Products;;;;False;version 1
+5;sale_delivery_settings;selection;;Shipping Management;;;;False;version 1
+6;social_twitter;char;;Twitter Account;;;;False;version 1
+7;language_ids;many2many;res.lang;Languages;;;;False;version 1
+8;favicon;binary;;Favicon;;;;False;version 1
+9;google_analytics_key;char;;Google Analytics Key;;;;False;version 1
+10;group_pricelist_item;boolean;;Show pricelists to customers;;;;False;version 1
+11;social_facebook;char;;Facebook Account;;;;False;version 1
+12;module_delivery;boolean;;Manage shipping internally;;;;False;version 1
+13;id;integer;;ID;;;;False;version 1
+14;module_sale_ebay;boolean;;eBay connector;;;;False;version 1
+15;google_maps_api_key;char;;Google Maps API Key;;;;False;version 1
+16;cdn_url;char;;CDN Base URL;;;;False;version 1
+17;create_uid;many2one;res.users;Created by;;;;False;version 1
+18;display_name;char;;Display Name;;;;False;version 1
+19;__last_update;datetime;;Last Modified on;;;;False;version 1
+20;group_website_multiimage;selection;;Multi Images;;;;False;version 1
+21;sale_pricelist_setting_split_1;selection;;Pricing Strategy;;;;False;version 1
+22;sale_pricelist_setting_split_2;selection;;Sales Price;;;;False;version 1
+23;default_lang_code;char;;Default language code;;;;False;version 1
+24;social_googleplus;char;;Google+ Account;;;;False;version 1
+25;module_delivery_temando;boolean;;Temando integration;;;;False;version 1
+26;salesteam_id;many2one;crm.team;Sales Team;;;;False;version 1
+27;module_portal;boolean;;Activate the customer portal;;;;False;version 1
+28;social_youtube;char;;Youtube Account;;;;False;version 1
+29;social_github;char;;GitHub Account;;;;False;version 1
+30;module_website_sale_delivery;boolean;;Add Delivery Costs to Online Sales;;;;False;version 1
+31;group_product_pricelist;boolean;;Show pricelists On Products;;;;False;version 1
+32;website_slide_google_app_key;char;;Google Doc Key;;;;False;version 1
+33;website_id;many2one;website;website;;;;True;version 1
+34;module_delivery_usps;boolean;;USPS integration;;;;False;version 1
+35;group_sale_pricelist;boolean;;Use pricelists to adapt your price per customers;;;;False;version 1
+36;default_lang_id;many2one;res.lang;Default Language;;;;True;version 1
+37;write_date;datetime;;Last Updated on;;;;False;version 1
+38;order_mail_template;many2one;mail.template;Order Confirmation Email;;;;False;version 1
+39;module_delivery_fedex;boolean;;Fedex integration;;;;False;version 1
+40;write_uid;many2one;res.users;Last Updated by;;;;False;version 1
+41;module_delivery_ups;boolean;;UPS integration;;;;False;version 1
+42;cdn_activated;boolean;;Use a Content Delivery Network (CDN);;;;False;version 1
+43;salesperson_id;many2one;res.users;Salesperson;;;;False;version 1
+44;compress_html;boolean;;Compress rendered HTML;;;;False;version 1
+45;module_website_version;selection;;A/B Testing;;;;False;version 1
+46;module_website_form_editor;selection;;Form Builder;;;;False;version 1
+47;website_name;char;;Website Name;;;;False;version 1
+48;module_delivery_dhl;boolean;;DHL integration;;;;False;version 1
+;;;;
+;;;;

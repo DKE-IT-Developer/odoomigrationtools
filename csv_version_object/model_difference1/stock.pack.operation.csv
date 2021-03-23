@@ -1,35 +1,35 @@
-model,stock.pack.operation,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,lots_visible,boolean,,Lots visible,,,,False,version 1
-2,create_date,datetime,,Created on,,,,False,version 1
-3,result_package_id,many2one,stock.quant.package,Destination Package,,,,False,version 1
-4,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
-5,package_id,many2one,stock.quant.package,Source Package,,,,False,version 1
-6,product_qty,float,,To Do,,,,True,version 1
-7,to_loc,char,,To,,,,False,version 1
-8,location_id,many2one,stock.location,Source Location,,,,True,version 1
-9,id,integer,,ID,,,,False,version 1
-10,remaining_qty,float,,Remaining Qty,,,,False,version 1
-11,qty_done_uom_ordered,float,,Quantity Done,,,,False,version 1
-12,display_name,char,,Display Name,,,,False,version 1
-13,__last_update,datetime,,Last Modified on,,,,False,version 1
-14,is_done,boolean,,Done,,,,False,version 1
-15,linked_move_operation_ids,one2many,stock.move.operation.link,Linked Moves,,,,False,version 1
-16,state,selection,,Status,,,,False,version 1
-17,ordered_qty,float,,Ordered Quantity,,,,False,version 1
-18,qty_done,float,,Done,,,,False,version 1
-19,owner_id,many2one,res.partner,Owner,,,,False,version 1
-20,picking_source_location_id,many2one,stock.location,Source Location Zone,,,,False,version 1
-21,create_uid,many2one,res.users,Created by,,,,False,version 1
-22,fresh_record,boolean,,Newly created pack operation,,,,False,version 1
-23,write_date,datetime,,Last Updated on,,,,False,version 1
-24,date,datetime,,Date,,,,True,version 1
-25,picking_destination_location_id,many2one,stock.location,Destination Location Zone,,,,False,version 1
-26,product_id,many2one,product.product,Product,,,,False,version 1
-27,product_uom_id,many2one,product.uom,Unit of Measure,,,,False,version 1
-28,pack_lot_ids,one2many,stock.pack.operation.lot,Lots/Serial Numbers Used,,,,False,version 1
-29,location_dest_id,many2one,stock.location,Destination Location,,,,True,version 1
-30,from_loc,char,,From,,,,False,version 1
-31,picking_id,many2one,stock.picking,Stock Picking,,,,True,version 1
-,,,,
-,,,,
+model;stock.pack.operation;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;lots_visible;boolean;;Lots visible;;;;False;version 1
+2;create_date;datetime;;Created on;;;;False;version 1
+3;result_package_id;many2one;stock.quant.package;Destination Package;;;;False;version 1
+4;write_uid;many2one;res.users;Last Updated by;;;;False;version 1
+5;package_id;many2one;stock.quant.package;Source Package;;;;False;version 1
+6;product_qty;float;;To Do;;;;True;version 1
+7;to_loc;char;;To;;;;False;version 1
+8;location_id;many2one;stock.location;Source Location;;;;True;version 1
+9;id;integer;;ID;;;;False;version 1
+10;remaining_qty;float;;Remaining Qty;;;;False;version 1
+11;qty_done_uom_ordered;float;;Quantity Done;;;;False;version 1
+12;display_name;char;;Display Name;;;;False;version 1
+13;__last_update;datetime;;Last Modified on;;;;False;version 1
+14;is_done;boolean;;Done;;;;False;version 1
+15;linked_move_operation_ids;one2many;stock.move.operation.link;Linked Moves;;;;False;version 1
+16;state;selection;;Status;;;;False;version 1
+17;ordered_qty;float;;Ordered Quantity;;;;False;version 1
+18;qty_done;float;;Done;;;;False;version 1
+19;owner_id;many2one;res.partner;Owner;;;;False;version 1
+20;picking_source_location_id;many2one;stock.location;Source Location Zone;;;;False;version 1
+21;create_uid;many2one;res.users;Created by;;;;False;version 1
+22;fresh_record;boolean;;Newly created pack operation;;;;False;version 1
+23;write_date;datetime;;Last Updated on;;;;False;version 1
+24;date;datetime;;Date;;;;True;version 1
+25;picking_destination_location_id;many2one;stock.location;Destination Location Zone;;;;False;version 1
+26;product_id;many2one;product.product;Product;;;;False;version 1
+27;product_uom_id;many2one;product.uom;Unit of Measure;;;;False;version 1
+28;pack_lot_ids;one2many;stock.pack.operation.lot;Lots/Serial Numbers Used;;;;False;version 1
+29;location_dest_id;many2one;stock.location;Destination Location;;;;True;version 1
+30;from_loc;char;;From;;;;False;version 1
+31;picking_id;many2one;stock.picking;Stock Picking;;;;True;version 1
+;;;;
+;;;;

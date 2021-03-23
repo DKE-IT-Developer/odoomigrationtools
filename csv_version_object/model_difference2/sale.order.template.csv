@@ -1,21 +1,21 @@
-model,sale.order.template,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,,,,many2one,res.users,Created by,False,version 2
-2,display_name,,,,char,,Display Name,False,version 2
-3,name,,,,char,,Quotation Template,True,version 2
-4,__last_update,,,,datetime,,Last Modified on,False,version 2
-5,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-6,company_id,,,,many2one,res.company,Company,False,version 2
-7,id,,,,integer,,ID,False,version 2
-8,note,,,,text,,Terms and conditions,False,version 2
-9,sale_order_template_line_ids,,,,one2many,sale.order.template.line,Lines,False,version 2
-10,write_date,,,,datetime,,Last Updated on,False,version 2
-11,require_signature,,,,boolean,,Online Signature,False,version 2
-12,active,,,,boolean,,Active,False,version 2
-13,create_date,,,,datetime,,Created on,False,version 2
-14,sale_order_template_option_ids,,,,one2many,sale.order.template.option,Optional Products,False,version 2
-15,number_of_days,,,,integer,,Quotation Duration,False,version 2
-16,require_payment,,,,boolean,,Online Payment,False,version 2
-17,mail_template_id,,,,many2one,mail.template,Confirmation Mail,False,version 2
-,,,,
-,,,,
+model;sale.order.template;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;;;;many2one;res.users;Created by;False;version 2
+2;display_name;;;;char;;Display Name;False;version 2
+3;name;;;;char;;Quotation Template;True;version 2
+4;__last_update;;;;datetime;;Last Modified on;False;version 2
+5;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+6;company_id;;;;many2one;res.company;Company;False;version 2
+7;id;;;;integer;;ID;False;version 2
+8;note;;;;text;;Terms and conditions;False;version 2
+9;sale_order_template_line_ids;;;;one2many;sale.order.template.line;Lines;False;version 2
+10;write_date;;;;datetime;;Last Updated on;False;version 2
+11;require_signature;;;;boolean;;Online Signature;False;version 2
+12;active;;;;boolean;;Active;False;version 2
+13;create_date;;;;datetime;;Created on;False;version 2
+14;sale_order_template_option_ids;;;;one2many;sale.order.template.option;Optional Products;False;version 2
+15;number_of_days;;;;integer;;Quotation Duration;False;version 2
+16;require_payment;;;;boolean;;Online Payment;False;version 2
+17;mail_template_id;;;;many2one;mail.template;Confirmation Mail;False;version 2
+;;;;
+;;;;

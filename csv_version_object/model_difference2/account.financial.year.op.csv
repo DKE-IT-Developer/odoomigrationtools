@@ -1,19 +1,19 @@
-model,account.financial.year.op,transient,True
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,,,,many2one,res.users,Created by,False,version 2
-2,display_name,,,,char,,Display Name,False,version 2
-3,account_tax_periodicity_journal_id,,,,many2one,account.journal,Journal,False,version 2
-4,__last_update,,,,datetime,,Last Modified on,False,version 2
-5,company_id,,,,many2one,res.company,Company,True,version 2
-6,id,,,,integer,,ID,False,version 2
-7,account_tax_periodicity,,,,selection,,Periodicity in month,True,version 2
-8,account_tax_periodicity_reminder_day,,,,integer,,Reminder,True,version 2
-9,fiscalyear_last_day,,,,integer,,Fiscalyear Last Day,True,version 2
-10,write_date,,,,datetime,,Last Updated on,False,version 2
-11,opening_date,,,,date,,Opening Date,True,version 2
-12,create_date,,,,datetime,,Created on,False,version 2
-13,fiscalyear_last_month,,,,selection,,Fiscalyear Last Month,True,version 2
-14,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-15,opening_move_posted,,,,boolean,,Opening Move Posted,False,version 2
-,,,,
-,,,,
+model;account.financial.year.op;transient;True
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;;;;many2one;res.users;Created by;False;version 2
+2;display_name;;;;char;;Display Name;False;version 2
+3;account_tax_periodicity_journal_id;;;;many2one;account.journal;Journal;False;version 2
+4;__last_update;;;;datetime;;Last Modified on;False;version 2
+5;company_id;;;;many2one;res.company;Company;True;version 2
+6;id;;;;integer;;ID;False;version 2
+7;account_tax_periodicity;;;;selection;;Periodicity in month;True;version 2
+8;account_tax_periodicity_reminder_day;;;;integer;;Reminder;True;version 2
+9;fiscalyear_last_day;;;;integer;;Fiscalyear Last Day;True;version 2
+10;write_date;;;;datetime;;Last Updated on;False;version 2
+11;opening_date;;;;date;;Opening Date;True;version 2
+12;create_date;;;;datetime;;Created on;False;version 2
+13;fiscalyear_last_month;;;;selection;;Fiscalyear Last Month;True;version 2
+14;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+15;opening_move_posted;;;;boolean;;Opening Move Posted;False;version 2
+;;;;
+;;;;

@@ -1,62 +1,62 @@
-model,website.page,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,is_visible,,,,boolean,,Is Visible,False,version 2
-2,xml_id,,,,char,,External ID,False,version 2
-3,create_date,,,,datetime,,Created on,False,version 2
-4,key,,,,char,,Key,False,version 2
-5,header_color,,,,char,,Header Color,False,version 2
-6,page_ids,,,,one2many,website.page,Page,False,version 2
-7,website_id,,,,many2one,website,Website,False,version 2
-8,header_overlay,,,,boolean,,Header Overlay,False,version 2
-9,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-10,arch_updated,,,,boolean,,Modified Architecture,False,version 2
-11,customize_show,,,,boolean,,Show As Optional Inherit,False,version 2
-12,arch_prev,,,,text,,Previous View Architecture,False,version 2
-13,theme_template_id,,,,many2one,theme.website.page,Theme Template,False,version 2
-14,priority,,,,integer,,Sequence,True,version 2
-15,footer_visible,,,,boolean,,Footer Visible,False,version 2
-16,id,,,,integer,,ID,False,version 2
-17,field_parent,,,,char,,Child Field,False,version 2
-18,create_uid,,,,many2one,res.users,Created by,False,version 2
-19,display_name,,,,char,,Display Name,False,version 2
-20,__last_update,,,,datetime,,Last Modified on,False,version 2
-21,is_homepage,,,,boolean,,Homepage,False,version 2
-22,first_page_id,,,,many2one,website.page,Website Page,False,version 2
-23,model_data_id,,,,many2one,ir.model.data,Model Data,False,version 2
-24,cache_time,,,,integer,,Cache Time,False,version 2
-25,track,,,,boolean,,Track,False,version 2
-26,website_meta_title,,,,char,,Website meta title,False,version 2
-27,type,,,,selection,,View Type,False,version 2
-28,website_published,,,,boolean,,Visible on current website,False,version 2
-29,website_url,,,,char,,Website URL,False,version 2
-30,can_publish,,,,boolean,,Can Publish,False,version 2
-31,arch_db,,,,text,,Arch Blob,False,version 2
-32,inherit_id,,,,many2one,ir.ui.view,Inherited View,False,version 2
-33,date_publish,,,,datetime,,Publishing Date,False,version 2
-34,view_id,,,,many2one,ir.ui.view,View,True,version 2
-35,header_visible,,,,boolean,,Header Visible,False,version 2
-36,website_meta_description,,,,text,,Website meta description,False,version 2
-37,is_seo_optimized,,,,boolean,,SEO optimized,False,version 2
-38,website_indexed,,,,boolean,,Is Indexed,False,version 2
-39,write_date,,,,datetime,,Last Updated on,False,version 2
-40,active,,,,boolean,,Active,False,version 2
-41,arch,,,,text,,View Architecture,False,version 2
-42,arch_fs,,,,char,,Arch Filename,False,version 2
-43,cache_key_expr,,,,char,,Cache Key Expr,False,version 2
-44,arch_base,,,,text,,Base View Architecture,False,version 2
-45,groups_id,,,,many2many,res.groups,Groups,False,version 2
-46,name,,,,char,,View Name,True,version 2
-47,website_meta_og_img,,,,char,,Website opengraph image,False,version 2
-48,url,,,,char,,Page URL,False,version 2
-49,menu_ids,,,,one2many,website.menu,Related Menus,False,version 2
-50,visibility_password,,,,char,,Visibility Password,False,version 2
-51,seo_name,,,,char,,Seo name,False,version 2
-52,visibility,,,,selection,,Visibility,False,version 2
-53,mode,,,,selection,,View inheritance mode,True,version 2
-54,inherit_children_ids,,,,one2many,ir.ui.view,Views which inherit from this one,False,version 2
-55,visibility_password_display,,,,char,,Visibility Password Display,False,version 2
-56,website_meta_keywords,,,,char,,Website meta keywords,False,version 2
-57,model,,,,char,,Model,False,version 2
-58,is_published,,,,boolean,,Is Published,False,version 2
-,,,,
-,,,,
+model;website.page;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;is_visible;;;;boolean;;Is Visible;False;version 2
+2;xml_id;;;;char;;External ID;False;version 2
+3;create_date;;;;datetime;;Created on;False;version 2
+4;key;;;;char;;Key;False;version 2
+5;header_color;;;;char;;Header Color;False;version 2
+6;page_ids;;;;one2many;website.page;Page;False;version 2
+7;website_id;;;;many2one;website;Website;False;version 2
+8;header_overlay;;;;boolean;;Header Overlay;False;version 2
+9;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+10;arch_updated;;;;boolean;;Modified Architecture;False;version 2
+11;customize_show;;;;boolean;;Show As Optional Inherit;False;version 2
+12;arch_prev;;;;text;;Previous View Architecture;False;version 2
+13;theme_template_id;;;;many2one;theme.website.page;Theme Template;False;version 2
+14;priority;;;;integer;;Sequence;True;version 2
+15;footer_visible;;;;boolean;;Footer Visible;False;version 2
+16;id;;;;integer;;ID;False;version 2
+17;field_parent;;;;char;;Child Field;False;version 2
+18;create_uid;;;;many2one;res.users;Created by;False;version 2
+19;display_name;;;;char;;Display Name;False;version 2
+20;__last_update;;;;datetime;;Last Modified on;False;version 2
+21;is_homepage;;;;boolean;;Homepage;False;version 2
+22;first_page_id;;;;many2one;website.page;Website Page;False;version 2
+23;model_data_id;;;;many2one;ir.model.data;Model Data;False;version 2
+24;cache_time;;;;integer;;Cache Time;False;version 2
+25;track;;;;boolean;;Track;False;version 2
+26;website_meta_title;;;;char;;Website meta title;False;version 2
+27;type;;;;selection;;View Type;False;version 2
+28;website_published;;;;boolean;;Visible on current website;False;version 2
+29;website_url;;;;char;;Website URL;False;version 2
+30;can_publish;;;;boolean;;Can Publish;False;version 2
+31;arch_db;;;;text;;Arch Blob;False;version 2
+32;inherit_id;;;;many2one;ir.ui.view;Inherited View;False;version 2
+33;date_publish;;;;datetime;;Publishing Date;False;version 2
+34;view_id;;;;many2one;ir.ui.view;View;True;version 2
+35;header_visible;;;;boolean;;Header Visible;False;version 2
+36;website_meta_description;;;;text;;Website meta description;False;version 2
+37;is_seo_optimized;;;;boolean;;SEO optimized;False;version 2
+38;website_indexed;;;;boolean;;Is Indexed;False;version 2
+39;write_date;;;;datetime;;Last Updated on;False;version 2
+40;active;;;;boolean;;Active;False;version 2
+41;arch;;;;text;;View Architecture;False;version 2
+42;arch_fs;;;;char;;Arch Filename;False;version 2
+43;cache_key_expr;;;;char;;Cache Key Expr;False;version 2
+44;arch_base;;;;text;;Base View Architecture;False;version 2
+45;groups_id;;;;many2many;res.groups;Groups;False;version 2
+46;name;;;;char;;View Name;True;version 2
+47;website_meta_og_img;;;;char;;Website opengraph image;False;version 2
+48;url;;;;char;;Page URL;False;version 2
+49;menu_ids;;;;one2many;website.menu;Related Menus;False;version 2
+50;visibility_password;;;;char;;Visibility Password;False;version 2
+51;seo_name;;;;char;;Seo name;False;version 2
+52;visibility;;;;selection;;Visibility;False;version 2
+53;mode;;;;selection;;View inheritance mode;True;version 2
+54;inherit_children_ids;;;;one2many;ir.ui.view;Views which inherit from this one;False;version 2
+55;visibility_password_display;;;;char;;Visibility Password Display;False;version 2
+56;website_meta_keywords;;;;char;;Website meta keywords;False;version 2
+57;model;;;;char;;Model;False;version 2
+58;is_published;;;;boolean;;Is Published;False;version 2
+;;;;
+;;;;

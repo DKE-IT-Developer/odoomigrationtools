@@ -1,12 +1,12 @@
-model,website.published.multi.mixin,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,can_publish,,,,boolean,,Can Publish,False,version 2
-2,display_name,,,,char,,Display Name,False,version 2
-3,__last_update,,,,datetime,,Last Modified on,False,version 2
-4,website_id,,,,many2one,website,Website,False,version 2
-5,website_published,,,,boolean,,Visible on current website,False,version 2
-6,id,,,,integer,,ID,False,version 2
-7,website_url,,,,char,,Website URL,False,version 2
-8,is_published,,,,boolean,,Is Published,False,version 2
-,,,,
-,,,,
+model;website.published.multi.mixin;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;can_publish;;;;boolean;;Can Publish;False;version 2
+2;display_name;;;;char;;Display Name;False;version 2
+3;__last_update;;;;datetime;;Last Modified on;False;version 2
+4;website_id;;;;many2one;website;Website;False;version 2
+5;website_published;;;;boolean;;Visible on current website;False;version 2
+6;id;;;;integer;;ID;False;version 2
+7;website_url;;;;char;;Website URL;False;version 2
+8;is_published;;;;boolean;;Is Published;False;version 2
+;;;;
+;;;;

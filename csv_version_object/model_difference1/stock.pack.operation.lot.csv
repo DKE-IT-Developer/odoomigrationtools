@@ -1,17 +1,17 @@
-model,stock.pack.operation.lot,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,create_uid,many2one,res.users,Created by,,,,False,version 1
-2,display_name,char,,Display Name,,,,False,version 1
-3,__last_update,datetime,,Last Modified on,,,,False,version 1
-4,lot_name,char,,Lot/Serial Number,,,,False,version 1
-5,qty_todo,float,,To Do,,,,False,version 1
-6,qty,float,,Done,,,,False,version 1
-7,create_date,datetime,,Created on,,,,False,version 1
-8,write_date,datetime,,Last Updated on,,,,False,version 1
-9,operation_id,many2one,stock.pack.operation,Operation id,,,,False,version 1
-10,lot_id,many2one,stock.production.lot,Lot/Serial Number,,,,False,version 1
-11,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
-12,id,integer,,ID,,,,False,version 1
-13,plus_visible,boolean,,Plus visible,,,,False,version 1
-,,,,
-,,,,
+model;stock.pack.operation.lot;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;create_uid;many2one;res.users;Created by;;;;False;version 1
+2;display_name;char;;Display Name;;;;False;version 1
+3;__last_update;datetime;;Last Modified on;;;;False;version 1
+4;lot_name;char;;Lot/Serial Number;;;;False;version 1
+5;qty_todo;float;;To Do;;;;False;version 1
+6;qty;float;;Done;;;;False;version 1
+7;create_date;datetime;;Created on;;;;False;version 1
+8;write_date;datetime;;Last Updated on;;;;False;version 1
+9;operation_id;many2one;stock.pack.operation;Operation id;;;;False;version 1
+10;lot_id;many2one;stock.production.lot;Lot/Serial Number;;;;False;version 1
+11;write_uid;many2one;res.users;Last Updated by;;;;False;version 1
+12;id;integer;;ID;;;;False;version 1
+13;plus_visible;boolean;;Plus visible;;;;False;version 1
+;;;;
+;;;;

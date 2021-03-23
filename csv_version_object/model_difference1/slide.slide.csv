@@ -1,51 +1,51 @@
-model,slide.slide,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,message_follower_ids,one2many,mail.followers,Followers,,,,False,version 1
-2,create_date,datetime,,Created on,,,,False,version 1
-3,message_needaction,boolean,,Action Needed,,,,False,version 1
-4,message_channel_ids,many2many,mail.channel,Followers (Channels),,,,False,version 1
-5,image,binary,,Image,,,,False,version 1
-6,dislikes,integer,,Dislikes,,,,False,version 1
-7,embed_views,integer,,# of Embedded Views,,,,False,version 1
-8,download_security,selection,,Download Security,,,,True,version 1
-9,likes,integer,,Likes,,,,False,version 1
-10,message_unread,boolean,,Unread Messages,,,,False,version 1
-11,message_ids,one2many,mail.message,Messages,,,,False,version 1
-12,create_uid,many2one,res.users,Created by,,,,False,version 1
-13,total_views,integer,,Total # Views,,,,False,version 1
-14,embed_code,text,,Embed Code,,,,False,version 1
-15,display_name,char,,Display Name,,,,False,version 1
-16,message_is_follower,boolean,,Is Follower,,,,False,version 1
-17,__last_update,datetime,,Last Modified on,,,,False,version 1
-18,message_last_post,datetime,,Last Message Date,,,,False,version 1
-19,id,integer,,ID,,,,False,version 1
-20,website_meta_title,char,,Website meta title,,,,False,version 1
-21,index_content,text,,Transcript,,,,False,version 1
-22,image_thumb,binary,,Thumbnail,,,,False,version 1
-23,message_unread_counter,integer,,Unread Messages Counter,,,,False,version 1
-24,message_partner_ids,many2many,res.partner,Followers (Partners),,,,False,version 1
-25,mime_type,char,,Mime-type,,,,False,version 1
-26,embedcount_ids,one2many,slide.embed,Embed Count,,,,False,version 1
-27,description,text,,Description,,,,False,version 1
-28,date_published,datetime,,Publish Date,,,,False,version 1
-29,website_meta_description,text,,Website meta description,,,,False,version 1
-30,website_message_ids,one2many,mail.message,Website Messages,,,,False,version 1
-31,write_date,datetime,,Last Updated on,,,,False,version 1
-32,slide_views,integer,,# of Website Views,,,,False,version 1
-33,active,boolean,,Active,,,,False,version 1
-34,write_uid,many2one,res.users,Last Updated by,,,,False,version 1
-35,document_id,char,,Document ID,,,,False,version 1
-36,slide_type,selection,,Type,,,,True,version 1
-37,image_medium,binary,,Medium,,,,False,version 1
-38,name,char,,Title,,,,True,version 1
-39,url,char,,Document URL,,,,False,version 1
-40,website_published,boolean,,Visible in Website,,,,False,version 1
-41,channel_id,many2one,slide.channel,Channel,,,,True,version 1
-42,website_url,char,,Website URL,,,,False,version 1
-43,tag_ids,many2many,slide.tag,Tags,,,,False,version 1
-44,website_meta_keywords,char,,Website meta keywords,,,,False,version 1
-45,category_id,many2one,slide.category,Category,,,,False,version 1
-46,message_needaction_counter,integer,,Number of Actions,,,,False,version 1
-47,datas,binary,,Content,,,,False,version 1
-,,,,
-,,,,
+model;slide.slide;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;message_follower_ids;one2many;mail.followers;Followers;;;;False;version 1
+2;create_date;datetime;;Created on;;;;False;version 1
+3;message_needaction;boolean;;Action Needed;;;;False;version 1
+4;message_channel_ids;many2many;mail.channel;Followers (Channels);;;;False;version 1
+5;image;binary;;Image;;;;False;version 1
+6;dislikes;integer;;Dislikes;;;;False;version 1
+7;embed_views;integer;;# of Embedded Views;;;;False;version 1
+8;download_security;selection;;Download Security;;;;True;version 1
+9;likes;integer;;Likes;;;;False;version 1
+10;message_unread;boolean;;Unread Messages;;;;False;version 1
+11;message_ids;one2many;mail.message;Messages;;;;False;version 1
+12;create_uid;many2one;res.users;Created by;;;;False;version 1
+13;total_views;integer;;Total # Views;;;;False;version 1
+14;embed_code;text;;Embed Code;;;;False;version 1
+15;display_name;char;;Display Name;;;;False;version 1
+16;message_is_follower;boolean;;Is Follower;;;;False;version 1
+17;__last_update;datetime;;Last Modified on;;;;False;version 1
+18;message_last_post;datetime;;Last Message Date;;;;False;version 1
+19;id;integer;;ID;;;;False;version 1
+20;website_meta_title;char;;Website meta title;;;;False;version 1
+21;index_content;text;;Transcript;;;;False;version 1
+22;image_thumb;binary;;Thumbnail;;;;False;version 1
+23;message_unread_counter;integer;;Unread Messages Counter;;;;False;version 1
+24;message_partner_ids;many2many;res.partner;Followers (Partners);;;;False;version 1
+25;mime_type;char;;Mime-type;;;;False;version 1
+26;embedcount_ids;one2many;slide.embed;Embed Count;;;;False;version 1
+27;description;text;;Description;;;;False;version 1
+28;date_published;datetime;;Publish Date;;;;False;version 1
+29;website_meta_description;text;;Website meta description;;;;False;version 1
+30;website_message_ids;one2many;mail.message;Website Messages;;;;False;version 1
+31;write_date;datetime;;Last Updated on;;;;False;version 1
+32;slide_views;integer;;# of Website Views;;;;False;version 1
+33;active;boolean;;Active;;;;False;version 1
+34;write_uid;many2one;res.users;Last Updated by;;;;False;version 1
+35;document_id;char;;Document ID;;;;False;version 1
+36;slide_type;selection;;Type;;;;True;version 1
+37;image_medium;binary;;Medium;;;;False;version 1
+38;name;char;;Title;;;;True;version 1
+39;url;char;;Document URL;;;;False;version 1
+40;website_published;boolean;;Visible in Website;;;;False;version 1
+41;channel_id;many2one;slide.channel;Channel;;;;True;version 1
+42;website_url;char;;Website URL;;;;False;version 1
+43;tag_ids;many2many;slide.tag;Tags;;;;False;version 1
+44;website_meta_keywords;char;;Website meta keywords;;;;False;version 1
+45;category_id;many2one;slide.category;Category;;;;False;version 1
+46;message_needaction_counter;integer;;Number of Actions;;;;False;version 1
+47;datas;binary;;Content;;;;False;version 1
+;;;;
+;;;;

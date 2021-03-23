@@ -1,43 +1,43 @@
-model,hr.employee.public,transient,False
-no,field,type1,relation1,string1,type2,relation2,string2,required,source
-1,address_id,,,,many2one,res.partner,Work Address,False,version 2
-2,user_partner_id,,,,many2one,res.partner,User's partner,False,version 2
-3,create_date,,,,datetime,,Create Date,False,version 2
-4,coach_id,,,,many2one,hr.employee.public,Coach,False,version 2
-5,resource_id,,,,many2one,resource.resource,Resource,False,version 2
-6,color,,,,integer,,Color Index,False,version 2
-7,image_1024,,,,binary,,Image 1024,False,version 2
-8,subordinate_ids,,,,one2many,hr.employee.public,Subordinates,False,version 2
-9,write_uid,,,,many2one,res.users,Last Updated by,False,version 2
-10,last_activity,,,,date,,Last Activity,False,version 2
-11,display_name,,,,char,,Display Name,False,version 2
-12,id,,,,integer,,ID,False,version 2
-13,create_uid,,,,many2one,res.users,Created by,False,version 2
-14,tz,,,,selection,,Timezone,False,version 2
-15,job_id,,,,many2one,hr.job,Job Position,False,version 2
-16,__last_update,,,,datetime,,Last Modified on,False,version 2
-17,work_phone,,,,char,,Work Phone,False,version 2
-18,company_id,,,,many2one,res.company,Company,False,version 2
-19,parent_id,,,,many2one,hr.employee.public,Manager,False,version 2
-20,child_all_count,,,,integer,,Indirect Subordinates Count,False,version 2
-21,hr_presence_state,,,,selection,,Hr Presence State,False,version 2
-22,last_activity_time,,,,char,,Last Activity Time,False,version 2
-23,department_id,,,,many2one,hr.department,Department,False,version 2
-24,mobile_phone,,,,char,,Work Mobile,False,version 2
-25,child_ids,,,,one2many,hr.employee.public,Direct subordinates,False,version 2
-26,write_date,,,,datetime,,Last Updated on,False,version 2
-27,active,,,,boolean,,Active,False,version 2
-28,user_id,,,,many2one,res.users,User,False,version 2
-29,work_email,,,,char,,Work Email,False,version 2
-30,hr_icon_display,,,,selection,,Hr Icon Display,False,version 2
-31,resource_calendar_id,,,,many2one,resource.calendar,Resource Calendar,False,version 2
-32,work_location,,,,char,,Work Location,False,version 2
-33,image_128,,,,binary,,Image 128,False,version 2
-34,name,,,,char,,Name,False,version 2
-35,expense_manager_id,,,,many2one,res.users,Expense Manager,False,version 2
-36,image_512,,,,binary,,Image 512,False,version 2
-37,image_256,,,,binary,,Image 256,False,version 2
-38,image_1920,,,,binary,,Original Image,False,version 2
-39,job_title,,,,char,,Job Title,False,version 2
-,,,,
-,,,,
+model;hr.employee.public;transient;False
+no;field;type1;relation1;string1;type2;relation2;string2;required;source
+1;address_id;;;;many2one;res.partner;Work Address;False;version 2
+2;user_partner_id;;;;many2one;res.partner;User's partner;False;version 2
+3;create_date;;;;datetime;;Create Date;False;version 2
+4;coach_id;;;;many2one;hr.employee.public;Coach;False;version 2
+5;resource_id;;;;many2one;resource.resource;Resource;False;version 2
+6;color;;;;integer;;Color Index;False;version 2
+7;image_1024;;;;binary;;Image 1024;False;version 2
+8;subordinate_ids;;;;one2many;hr.employee.public;Subordinates;False;version 2
+9;write_uid;;;;many2one;res.users;Last Updated by;False;version 2
+10;last_activity;;;;date;;Last Activity;False;version 2
+11;display_name;;;;char;;Display Name;False;version 2
+12;id;;;;integer;;ID;False;version 2
+13;create_uid;;;;many2one;res.users;Created by;False;version 2
+14;tz;;;;selection;;Timezone;False;version 2
+15;job_id;;;;many2one;hr.job;Job Position;False;version 2
+16;__last_update;;;;datetime;;Last Modified on;False;version 2
+17;work_phone;;;;char;;Work Phone;False;version 2
+18;company_id;;;;many2one;res.company;Company;False;version 2
+19;parent_id;;;;many2one;hr.employee.public;Manager;False;version 2
+20;child_all_count;;;;integer;;Indirect Subordinates Count;False;version 2
+21;hr_presence_state;;;;selection;;Hr Presence State;False;version 2
+22;last_activity_time;;;;char;;Last Activity Time;False;version 2
+23;department_id;;;;many2one;hr.department;Department;False;version 2
+24;mobile_phone;;;;char;;Work Mobile;False;version 2
+25;child_ids;;;;one2many;hr.employee.public;Direct subordinates;False;version 2
+26;write_date;;;;datetime;;Last Updated on;False;version 2
+27;active;;;;boolean;;Active;False;version 2
+28;user_id;;;;many2one;res.users;User;False;version 2
+29;work_email;;;;char;;Work Email;False;version 2
+30;hr_icon_display;;;;selection;;Hr Icon Display;False;version 2
+31;resource_calendar_id;;;;many2one;resource.calendar;Resource Calendar;False;version 2
+32;work_location;;;;char;;Work Location;False;version 2
+33;image_128;;;;binary;;Image 128;False;version 2
+34;name;;;;char;;Name;False;version 2
+35;expense_manager_id;;;;many2one;res.users;Expense Manager;False;version 2
+36;image_512;;;;binary;;Image 512;False;version 2
+37;image_256;;;;binary;;Image 256;False;version 2
+38;image_1920;;;;binary;;Original Image;False;version 2
+39;job_title;;;;char;;Job Title;False;version 2
+;;;;
+;;;;
