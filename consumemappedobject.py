@@ -3,6 +3,7 @@ import os
 import sys
 import odoorpc
 import psycopg2
+import requests
 
 # set source directory of mapped object csv file
 # read file of object in file format 'object.csv'
@@ -12,6 +13,8 @@ import psycopg2
 # insert to inherited object's table
 # insert to related object's table
 # insert to object's table
+
+transport_protocol = 'https://'
 
 host1 = sys.argv[1]
 port1 = sys.argv[2]
@@ -37,10 +40,34 @@ print('====================================================================')
 file_consumed = []
 directory = 'csv_mapped'
 listdir = os.listdir(directory)
-for file_name in listdir:
+
+try:
+	requests.get(transport_protocol+host2+':'+port2)
+except:
+	transport_protocol = 'http://'
+	requests.get(transport_protocol+host2+':'+port2)
+
+def send_request(values):
+	import pdb;pdb.set_trace()
+	response = requests.post(transport_protocol+host2+':'+port2+'/base_import/sql', json=values)
+	return
+
+def migrate_csv(file_name):
+	if not os.path.exists(directory+'/'+file_name):
+		return
 	csv_file = open(directory+'/'+file_name)
 	csv_read = csv.reader(csv_file, delimiter=';')
-	import pdb;pdb.set_trace()
+	model_source_target = csv_read.next()
+	source_model = model_source_target[1]
+	target_model = model_source_target[3]
+	file_consumed.append(file_name)
+	csv_read.next()
+	# dictionary format
+	# [{field_name: values}] payload format values
+	# {fields_name: {convert: False, default: False}} fields_info
+	fields_convert = []
+	fields_info = {}
+	fields_list = []
 	for row in csv_read:
 		field1 = row[1]
 		type1 = row[2]
@@ -49,5 +76,28 @@ for file_name in listdir:
 		type2 = row[5]
 		relation2 = row[6]
 		default = row[7]
+		if type2 == 'one2many' or type2 == 'many2many':
+			continue
+		if field1:
+			if type1 == type2:
+				if type2 == 'many2one' and relation2+'.csv' not in file_consumed:
+					migrate_csv(relation2+'.csv')
+				fields_info.update({field2: {'convert': False, 'default': default or False}})
+			else:
+				fields_info.update({field2: {'convert': True, 'default': default or False}})
+			fields_list.append(field1)
+		elif not field1 and field2:
+			fields_info.update({field2: {'convert': False, 'default': default or False}})
+	
+	values = odoo1.env[source_model].search_read([], fields_list, order='id')
+	payload = {'username': username2, 'password': password2, 'model': target_model, 'fields_info': fields_info, 'values': values}
+	import pdb;pdb.set_trace()
+	send_request(payload)
+	return
+
+for file_name in listdir:
+	if file_name in file_consumed:
+		continue
+	migrate_csv(file_name)
 
 import pdb;pdb.set_trace()
