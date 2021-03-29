@@ -48,13 +48,12 @@ except:
 	requests.get(transport_protocol+host2+':'+port2)
 
 def send_request(values):
-	import pdb;pdb.set_trace()
-	response = requests.post(transport_protocol+host2+':'+port2+'/base_import/sql', json=values)
+	response = requests.post(transport_protocol+host2+':'+port2+'/base_import/json', json=values)
 	return
 
 def migrate_csv(file_name):
 	if not os.path.exists(directory+'/'+file_name):
-		return
+		return False
 	csv_file = open(directory+'/'+file_name)
 	csv_read = csv.reader(csv_file, delimiter=';')
 	model_source_target = csv_read.next()
@@ -68,6 +67,7 @@ def migrate_csv(file_name):
 	fields_convert = []
 	fields_info = {}
 	fields_list = []
+	fields_many2one = []
 	for row in csv_read:
 		field1 = row[1]
 		type1 = row[2]
@@ -78,22 +78,52 @@ def migrate_csv(file_name):
 		default = row[7]
 		if type2 == 'one2many' or type2 == 'many2many':
 			continue
+		if not field1 and not field2:
+			continue
+
+		if type2 == 'boolean' and default:
+			if default.lower() == 'true':
+				default = True
+			elif default.lower() == 'false':
+				default = False
+			
 		if field1:
 			if type1 == type2:
 				if type2 == 'many2one' and relation2+'.csv' not in file_consumed:
+					# is_relation_called = 
 					migrate_csv(relation2+'.csv')
-				fields_info.update({field2: {'convert': False, 'default': default or False}})
+				fields_info.update({field2: {'convert': False, 'default': default or None, 'type': type2}})
 			else:
-				fields_info.update({field2: {'convert': True, 'default': default or False}})
-			fields_list.append(field1)
+				fields_info.update({field2: {'convert': True, 'default': default or None, 'type': type2}})
 		elif not field1 and field2:
-			fields_info.update({field2: {'convert': False, 'default': default or False}})
-	
+			fields_info.update({field2: {'convert': False, 'default': default or None, 'type': type2}})
+
+		fields_list.append(field2)
+		if type2 == 'many2one':
+			fields_many2one.append(field2)
 	values = odoo1.env[source_model].search_read([], fields_list, order='id')
+	not_existed_fields = set(fields_list).difference(set(values[0].keys()))
+	i = 0
+	values_len = len(values)
+	while i < values_len:
+		val = values[i]
+		for field_many2one in fields_many2one:
+			val[field_many2one] = val[field_many2one] and val[field_many2one][0] or False
+		del val['__last_update']
+		del val['display_name']
+		for k,v in val.items():
+			if type(v) == bool and fields_info[k]['type'] != 'boolean':
+				default = fields_info[k]['default']
+				val[k] = default
+		for not_existed_field in not_existed_fields:
+			val.update({not_existed_field: fields_info[not_existed_field]['default']})
+		val['create_uid'] = val['write_uid'] = odoo2.env.user.id
+		i+=1
 	payload = {'username': username2, 'password': password2, 'model': target_model, 'fields_info': fields_info, 'values': values}
-	import pdb;pdb.set_trace()
+	print('Sending values of %s to target.....' %target_model)
+	print('====================================================================')
 	send_request(payload)
-	return
+	return True
 
 for file_name in listdir:
 	if file_name in file_consumed:
