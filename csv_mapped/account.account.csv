@@ -18,4 +18,4 @@ no;field1;type1;relation1;field2;type2;relation2;default
 16;id;integer;;id;integer;;
 17;reconcile;boolean;;reconcile;boolean;;
 18;tax_ids;many2many;account.tax;tax_ids;many2many;account.tax;
-19;;;;create_asset;selection;no;
+19;;;;create_asset;selection;;no

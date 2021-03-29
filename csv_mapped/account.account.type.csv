@@ -1,0 +1,14 @@
+source_model;account.account.type;target_model;account.account.type;;;;
+no;field1;type1;relation1;field2;type2;relation2;default
+1;create_uid;many2one;res.users;create_uid;many2one;res.users;
+2;display_name;char;;display_name;char;;
+3;name;char;;name;char;;
+4;__last_update;datetime;;__last_update;datetime;;
+5;write_uid;many2one;res.users;write_uid;many2one;res.users;
+6;note;text;;note;text;;
+7;write_date;datetime;;write_date;datetime;;
+8;create_date;datetime;;create_date;datetime;;
+9;include_initial_balance;boolean;;include_initial_balance;boolean;;
+10;type;selection;;type;selection;;
+11;id;integer;;id;integer;;
+12;;;;internal_group;selection;;equity
