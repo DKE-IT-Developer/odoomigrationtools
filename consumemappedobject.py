@@ -49,7 +49,7 @@ except:
 
 def send_request(values):
 	response = requests.post(transport_protocol+host2+':'+port2+'/base_import/json', json=values)
-	return
+	return response.text
 
 def migrate_csv(file_name):
 	if not os.path.exists(directory+'/'+file_name):
@@ -80,13 +80,18 @@ def migrate_csv(file_name):
 			continue
 		if not field1 and not field2:
 			continue
-
-		if type2 == 'boolean' and default:
-			if default.lower() == 'true':
-				default = True
-			elif default.lower() == 'false':
-				default = False
-			
+		
+		if default:
+			if type2 == 'integer':
+				default = int(default)
+			elif type2 == 'float':
+				default = float(default)
+			elif type2 == 'boolean':
+				if default.lower() == 'true':
+					default = True
+				elif default.lower() == 'false':
+					default = False
+		
 		if field1:
 			if type1 == type2:
 				if type2 == 'many2one' and relation2+'.csv' not in file_consumed:
@@ -99,9 +104,12 @@ def migrate_csv(file_name):
 			fields_info.update({field2: {'convert': False, 'default': default or None, 'type': type2}})
 
 		fields_list.append(field2)
-		if type2 == 'many2one':
+		if type2 == 'many2one' and field1:
 			fields_many2one.append(field2)
-	values = odoo1.env[source_model].search_read([], fields_list, order='id')
+	domain = []
+	if 'active' in odoo1.env[source_model].fields_get():
+		domain = ['|', ('active', '=', False), ('active', '=', True)]
+	values = odoo1.env[source_model].search_read(domain, fields_list, order='id')
 	not_existed_fields = set(fields_list).difference(set(values[0].keys()))
 	i = 0
 	values_len = len(values)
@@ -122,11 +130,12 @@ def migrate_csv(file_name):
 	payload = {'username': username2, 'password': password2, 'model': target_model, 'fields_info': fields_info, 'values': values}
 	print('Sending values of %s to target.....' %target_model)
 	print('====================================================================')
-	send_request(payload)
+	import pdb;pdb.set_trace()
+	print(send_request(payload))
 	return True
 
 for file_name in listdir:
-	if file_name in file_consumed:
+	if file_name in file_consumed or os.path.isdir(directory+'/'+file_name):
 		continue
 	migrate_csv(file_name)
 
