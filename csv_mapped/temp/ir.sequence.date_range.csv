@@ -1,0 +1,14 @@
+source_model;ir.sequence.date_range;target_model;ir.sequence.date_range;;;;
+no;field1;type1;relation1;field2;type2;relation2;default
+1;create_uid;many2one;res.users;create_uid;many2one;res.users;
+2;display_name;char;;display_name;char;;
+3;number_next;integer;;number_next;integer;;
+4;__last_update;datetime;;__last_update;datetime;;
+5;date_from;date;;date_from;date;;
+6;write_uid;many2one;res.users;write_uid;many2one;res.users;
+7;sequence_id;many2one;ir.sequence;sequence_id;many2one;ir.sequence;
+8;write_date;datetime;;write_date;datetime;;
+9;date_to;date;;date_to;date;;
+10;number_next_actual;integer;;number_next_actual;integer;;
+11;create_date;datetime;;create_date;datetime;;
+12;id;integer;;id;integer;;
