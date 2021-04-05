@@ -113,6 +113,7 @@ def migrate_csv(file_name):
 	not_existed_fields = set(fields_list).difference(set(values[0].keys()))
 	i = 0
 	values_len = len(values)
+	odoo2_user_id = odoo2.env.user.id
 	while i < values_len:
 		val = values[i]
 		for field_many2one in fields_many2one:
@@ -125,12 +126,11 @@ def migrate_csv(file_name):
 				val[k] = default
 		for not_existed_field in not_existed_fields:
 			val.update({not_existed_field: fields_info[not_existed_field]['default']})
-		val['create_uid'] = val['write_uid'] = odoo2.env.user.id
+		val['create_uid'] = val['write_uid'] = odoo2_user_id
 		i+=1
 	payload = {'username': username2, 'password': password2, 'model': target_model, 'fields_info': fields_info, 'values': values}
 	print('Sending values of %s to target.....' %target_model)
 	print('====================================================================')
-	import pdb;pdb.set_trace()
 	print(send_request(payload))
 	return True
 
