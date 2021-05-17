@@ -14,5 +14,9 @@ python compareobjectmodel.py source_host source_db source_username source_passwo
 example:
 
 ```
-python compareobjectmodel.py http://localhost:8069 db_default admin 1 http://localhost:8069 db_custom admin 1
+python compareobjectmodel.py http://localhost:8069 db_default admin mypassword http://localhost:8069 db_custom admin mypassword
+```
+
+```
+python consumemappedobject.py localhost 8069 db_default admin mypassword localhost 8014 db_defaultv2 admin mypassword
 ```
